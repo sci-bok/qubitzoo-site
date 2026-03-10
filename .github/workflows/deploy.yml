@@ -43,6 +43,9 @@ jobs:
       - name: Sync vault content
         run: bash scripts/sync-vault.sh vault
 
+      - name: Generate sunburst data
+        run: npx tsx scripts/build-sunburst-data.ts
+
       - name: Build Quartz
         run: npx quartz build
 
