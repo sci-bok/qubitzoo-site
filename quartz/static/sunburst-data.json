@@ -1,0 +1,419 @@
+{
+  "name": "Qubit Zoo",
+  "children": [
+    {
+      "name": "Ion Trap",
+      "color": "#eab308",
+      "children": [
+        {
+          "name": "Cirac-Zoller gate for trapped ion qubits",
+          "slug": "Zoo/cirac-zoller-gate-for-trapped-ion-qubits",
+          "type": "gate",
+          "status": "seed",
+          "influence": 0.5,
+          "size": 1
+        },
+        {
+          "name": "Mølmer-Sørensen Gate",
+          "slug": "Zoo/molmer-sorenson-gate",
+          "type": "gate",
+          "status": "demonstrated",
+          "influence": 0.79,
+          "size": 1
+        },
+        {
+          "name": "Shuttling Ion-Trap Qubit (QCCD)",
+          "slug": "Zoo/shuttling-ion-trap-qubit",
+          "type": "qubit",
+          "status": "demonstrated",
+          "influence": 0.75,
+          "size": 1
+        },
+        {
+          "name": "Trapped-Ion Qubit",
+          "slug": "Zoo/trapped-ion-qubit",
+          "type": "qubit",
+          "status": "demonstrated",
+          "influence": 0.92,
+          "size": 1
+        }
+      ]
+    },
+    {
+      "name": "Molecular",
+      "color": "#6b7280",
+      "children": [
+        {
+          "name": "Molecular Qubit",
+          "slug": "Zoo/molecular-qubit",
+          "type": "qubit",
+          "status": "demonstrated",
+          "influence": 0.66,
+          "size": 1
+        }
+      ]
+    },
+    {
+      "name": "Neutral Atom",
+      "color": "#f97316",
+      "children": [
+        {
+          "name": "Alkaline-Earth Neutral-Atom Clock Qubit",
+          "slug": "Zoo/alkaline-earth-neutral-atom-clock-qubit",
+          "type": "qubit",
+          "status": "demonstrated",
+          "influence": 0.69,
+          "size": 1
+        },
+        {
+          "name": "Nuclear-Spin Neutral-Atom Qubit",
+          "slug": "Zoo/nuclear-spin-neutral-atom-qubit",
+          "type": "qubit",
+          "status": "demonstrated",
+          "influence": 0.71,
+          "size": 1
+        },
+        {
+          "name": "Rydberg Neutral-Atom Qubit",
+          "slug": "Zoo/rydberg-neutral-atom-qubit",
+          "type": "qubit",
+          "status": "demonstrated",
+          "influence": 0.72,
+          "size": 1
+        }
+      ]
+    },
+    {
+      "name": "Photonic",
+      "color": "#ef4444",
+      "children": [
+        {
+          "name": "Dual-Rail Photonic Qubit",
+          "slug": "Zoo/dual-rail-photonic-qubit",
+          "type": "qubit",
+          "status": "demonstrated",
+          "influence": 0.72,
+          "size": 1
+        },
+        {
+          "name": "Linear-Optical Photonic Qubit",
+          "slug": "Zoo/linear-optical-photonic-qubit",
+          "type": "qubit",
+          "status": "demonstrated",
+          "influence": 0.71,
+          "size": 1
+        },
+        {
+          "name": "Photonic Cluster-State MBQC Qubit",
+          "slug": "Zoo/photonic-cluster-state-mbqc-qubit",
+          "type": "qubit",
+          "status": "demonstrated",
+          "influence": 0.7,
+          "size": 1
+        }
+      ]
+    },
+    {
+      "name": "Semiconducting",
+      "color": "#22c55e",
+      "children": [
+        {
+          "name": "Always-on Exchange Only (AEON)",
+          "slug": "Zoo/always-on-exchange-only-aeon",
+          "type": "qubit",
+          "status": "seed",
+          "influence": 0.5,
+          "size": 1
+        },
+        {
+          "name": "Exchange-only qubit",
+          "slug": "Zoo/exchange-only-qubit",
+          "type": "qubit",
+          "status": "seed",
+          "influence": 0.5,
+          "size": 1
+        },
+        {
+          "name": "Hole Spin Qubit",
+          "slug": "Zoo/hole-spin-qubit",
+          "type": "qubit",
+          "status": "demonstrated",
+          "influence": 0.74,
+          "size": 1
+        },
+        {
+          "name": "Hybrid Qubit (Semiconductor Triple-Dot)",
+          "slug": "Zoo/hybrid-qubit",
+          "type": "qubit",
+          "status": "demonstrated",
+          "influence": 0.66,
+          "size": 1
+        },
+        {
+          "name": "Kane Qubit (Phosphorus-in-Silicon)",
+          "slug": "Zoo/kane-qubit",
+          "type": "qubit",
+          "status": "seed",
+          "influence": 0.76,
+          "size": 1
+        },
+        {
+          "name": "RX Qubit (Resonant Exchange)",
+          "slug": "Zoo/rx-qubit",
+          "type": "qubit",
+          "status": "demonstrated",
+          "influence": 0.69,
+          "size": 1
+        },
+        {
+          "name": "Semiconductor charge qubit",
+          "slug": "Zoo/semiconductor-charge-qubit",
+          "type": "qubit",
+          "status": "seed",
+          "influence": 0.5,
+          "size": 1
+        },
+        {
+          "name": "Single spin quantum dot (Loss-DiVincenzo) qubit",
+          "slug": "Zoo/single-spin-quantum-dot-loss-divincenzo-qubit",
+          "type": "qubit",
+          "status": "seed",
+          "influence": 0.5,
+          "size": 1
+        },
+        {
+          "name": "Singlet-Triplet Qubit",
+          "slug": "Zoo/singlet-triplet-qubit",
+          "type": "qubit",
+          "status": "seed",
+          "influence": 0.5,
+          "size": 1
+        },
+        {
+          "name": "Spin Qubit (Loss-DiVincenzo)",
+          "slug": "Zoo/spin-qubit",
+          "type": "qubit",
+          "status": "demonstrated",
+          "influence": 0.88,
+          "size": 1
+        }
+      ]
+    },
+    {
+      "name": "Solid State",
+      "color": "#6b7280",
+      "children": [
+        {
+          "name": "Nitrogen-Vacancy (NV) Center Qubit",
+          "slug": "Zoo/nv-center-qubit",
+          "type": "qubit",
+          "status": "demonstrated",
+          "influence": 0.78,
+          "size": 1
+        }
+      ]
+    },
+    {
+      "name": "Super-Semi",
+      "color": "#6b7280",
+      "children": [
+        {
+          "name": "Andreev spin qubit",
+          "slug": "Zoo/andreev-spin-qubit",
+          "type": "qubit",
+          "status": "seed",
+          "influence": 0.5,
+          "size": 1
+        },
+        {
+          "name": "Gatemon",
+          "slug": "Zoo/gatemon",
+          "type": "qubit",
+          "status": "seed",
+          "influence": 0.68,
+          "size": 1
+        },
+        {
+          "name": "Gatemonium",
+          "slug": "Zoo/gatemonium",
+          "type": "qubit",
+          "status": "seed",
+          "influence": 0.5,
+          "size": 1
+        }
+      ]
+    },
+    {
+      "name": "Superconducting",
+      "color": "#3b82f6",
+      "children": [
+        {
+          "name": "\"Binomial code\" fault-tolerant logical qubits encoded in bosonic modes of superconducting cavities",
+          "slug": "Zoo/binomial-code-fault-tolerant-logical-qubits-encoded-in",
+          "type": "encoding",
+          "status": "seed",
+          "influence": 0.5,
+          "size": 1
+        },
+        {
+          "name": "0-π Qubit",
+          "slug": "Zoo/0-pi-qubit",
+          "type": "qubit",
+          "status": "seed",
+          "influence": 0.76,
+          "size": 1
+        },
+        {
+          "name": "A tunable coupling scheme for implementing high-fidelity superconducting two-qubit gates",
+          "slug": "Zoo/a-tunable-coupling-scheme-for-implementing-high-fidelity",
+          "type": "coupling",
+          "status": "seed",
+          "influence": 0.5,
+          "size": 1
+        },
+        {
+          "name": "Blochnium: superconducting quasicharge qubit",
+          "slug": "Zoo/blochnium-superconducting-quasicharge-qubit",
+          "type": "qubit",
+          "status": "seed",
+          "influence": 0.5,
+          "size": 1
+        },
+        {
+          "name": "Cat Qubit (Cat Codes)",
+          "slug": "Zoo/cat-codes",
+          "type": "qubit",
+          "status": "seed",
+          "influence": 0.82,
+          "size": 1
+        },
+        {
+          "name": "Circuit Quantum Electrodynamics (Circuit QED)",
+          "slug": "Zoo/circuit-qed",
+          "type": "coupling",
+          "status": "demonstrated",
+          "influence": 0.85,
+          "size": 1
+        },
+        {
+          "name": "Cooper-pair box (charge) qubit",
+          "slug": "Zoo/cooper-pair-box-charge-qubit",
+          "type": "qubit",
+          "status": "seed",
+          "influence": 0.5,
+          "size": 1
+        },
+        {
+          "name": "Flux Qubit",
+          "slug": "Zoo/flux-qubit",
+          "type": "qubit",
+          "status": "seed",
+          "influence": 0.75,
+          "size": 1
+        },
+        {
+          "name": "Fluxonium",
+          "slug": "Zoo/fluxonium",
+          "type": "qubit",
+          "status": "demonstrated",
+          "influence": 0.9,
+          "size": 1
+        },
+        {
+          "name": "GKP Qubit (Gottesman-Kitaev-Preskill Code)",
+          "slug": "Zoo/gkp-codes",
+          "type": "qubit",
+          "status": "seed",
+          "influence": 0.84,
+          "size": 1
+        },
+        {
+          "name": "Gmon",
+          "slug": "Zoo/gmon",
+          "type": "qubit",
+          "status": "seed",
+          "influence": 0.7,
+          "size": 1
+        },
+        {
+          "name": "Heavy Fluxonium Qubit",
+          "slug": "Zoo/heavy-fluxonium-qubit",
+          "type": "qubit",
+          "status": "demonstrated",
+          "influence": 0.8,
+          "size": 1
+        },
+        {
+          "name": "High-quality superconducting cavities coupled to nonlinear oscillators",
+          "slug": "Zoo/high-quality-superconducting-cavities-coupled-to-nonlinear",
+          "type": "coupling",
+          "status": "seed",
+          "influence": 0.5,
+          "size": 1
+        },
+        {
+          "name": "Phase Qubit",
+          "slug": "Zoo/phase-qubit",
+          "type": "qubit",
+          "status": "seed",
+          "influence": 0.65,
+          "size": 1
+        },
+        {
+          "name": "Transmon",
+          "slug": "Zoo/transmon",
+          "type": "qubit",
+          "status": "demonstrated",
+          "influence": 0.95,
+          "size": 1
+        },
+        {
+          "name": "Xmon",
+          "slug": "Zoo/xmon",
+          "type": "qubit",
+          "status": "seed",
+          "influence": 0.72,
+          "size": 1
+        }
+      ]
+    },
+    {
+      "name": "Topological",
+      "color": "#a855f7",
+      "children": [
+        {
+          "name": "Color-Code Logical Qubit",
+          "slug": "Zoo/color-code-logical-qubit",
+          "type": "qubit",
+          "status": "demonstrated",
+          "influence": 0.77,
+          "size": 1
+        },
+        {
+          "name": "Coulomb blockade spectroscopy towards topological Majorana zero mode qubit in the 1D semiconductor-superconductor nanowire",
+          "slug": "Zoo/coulomb-blockade-spectroscopy-towards-topological-majorana",
+          "type": "qubit",
+          "status": "seed",
+          "influence": 0.5,
+          "size": 1
+        },
+        {
+          "name": "Majorana Topological Qubit",
+          "slug": "Zoo/majorana-topological-qubit",
+          "type": "qubit",
+          "status": "demonstrated",
+          "influence": 0.69,
+          "size": 1
+        },
+        {
+          "name": "Surface-Code Logical Qubit",
+          "slug": "Zoo/surface-code-logical-qubit",
+          "type": "qubit",
+          "status": "demonstrated",
+          "influence": 0.83,
+          "size": 1
+        }
+      ]
+    }
+  ]
+}
