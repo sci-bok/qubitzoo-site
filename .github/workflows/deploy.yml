@@ -1,0 +1,63 @@
+name: Deploy Qubit Zoo to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    # Nightly build at 07:00 UTC (03:00 EDT) — after daily pipeline finishes
+    - cron: '0 7 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout site repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Checkout vault content
+        uses: actions/checkout@v4
+        with:
+          repository: sci-bok/qubit-zettelkasten
+          path: vault
+          token: ${{ secrets.VAULT_PAT }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Sync vault content
+        run: bash scripts/sync-vault.sh vault
+
+      - name: Build Quartz
+        run: npx quartz build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
