@@ -47,9 +47,15 @@ export const defaultContentPageLayout: PageLayout = {
       folderClickBehavior: "link",
       folderDefaultState: "collapsed",
       filterFn: (node) => {
-        // Hide internal/working folders
-        const excluded = ["deleted", "Inbox", "Meta", "reports", "specs"]
+        // Hide internal/working folders + Welcome
+        const excluded = ["deleted", "Inbox", "Meta", "reports", "specs", "Welcome"]
         return !excluded.includes(node.name)
+      },
+      mapFn: (node) => {
+        if (node.name === "index") {
+          node.displayName = "Home"
+        }
+        return node
       },
     }),
   ],

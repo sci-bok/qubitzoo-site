@@ -22,7 +22,7 @@ const config: QuartzConfig = {
       "reports",
       "specs",
     ],
-    defaultDateType: "modified",
+    defaultDateType: "published",
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
