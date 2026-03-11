@@ -26,13 +26,8 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Checkout vault content
-        continue-on-error: true
-        uses: actions/checkout@v4
-        with:
-          repository: sci-bok/qubit-zettelkasten
-          path: vault
-          token: ${{ secrets.VAULT_PAT || github.token }}
+      - name: Use repository content
+        run: echo "Using checked-in content/ for this deployment."
 
       - uses: actions/setup-node@v4
         with:
@@ -46,13 +41,6 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Sync vault content
-        if: ${{ hashFiles('vault/**') != '' }}
-        run: bash scripts/sync-vault.sh vault
-
-      - name: Skip vault sync (vault repo unavailable)
-        if: ${{ hashFiles('vault/**') == '' }}
-        run: echo "Vault checkout unavailable; deploying with repository content only."
 
       - name: Fix publication dates
         run: python scripts/fix-dates.py
