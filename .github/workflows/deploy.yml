@@ -40,8 +40,16 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
       - name: Sync vault content
         run: bash scripts/sync-vault.sh vault
+
+      - name: Fix publication dates
+        run: python scripts/fix-dates.py
 
       - name: Generate sunburst data
         run: npx tsx scripts/build-sunburst-data.ts
