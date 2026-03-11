@@ -27,16 +27,12 @@ jobs:
           fetch-depth: 0
 
       - name: Checkout vault content
-        if: ${{ secrets.VAULT_PAT != '' }}
+        continue-on-error: true
         uses: actions/checkout@v4
         with:
           repository: sci-bok/qubit-zettelkasten
           path: vault
-          token: ${{ secrets.VAULT_PAT }}
-
-      - name: Skip vault sync (VAULT_PAT not set)
-        if: ${{ secrets.VAULT_PAT == '' }}
-        run: echo "VAULT_PAT is not set; deploying with repository content only."
+          token: ${{ secrets.VAULT_PAT || github.token }}
 
       - uses: actions/setup-node@v4
         with:
@@ -51,8 +47,12 @@ jobs:
           python-version: '3.11'
 
       - name: Sync vault content
-        if: ${{ secrets.VAULT_PAT != '' }}
+        if: ${{ hashFiles('vault/**') != '' }}
         run: bash scripts/sync-vault.sh vault
+
+      - name: Skip vault sync (vault repo unavailable)
+        if: ${{ hashFiles('vault/**') == '' }}
+        run: echo "Vault checkout unavailable; deploying with repository content only."
 
       - name: Fix publication dates
         run: python scripts/fix-dates.py
