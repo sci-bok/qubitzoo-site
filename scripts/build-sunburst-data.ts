@@ -42,24 +42,28 @@ const outFile = path.resolve(__dirname, "../quartz/static/sunburst-data.json")
 
 const families = new Map<string, Entry[]>()
 
-for (const file of fs.readdirSync(zooDir).filter((f) => f.endsWith(".md"))) {
-  const raw = fs.readFileSync(path.join(zooDir, file), "utf-8")
-  const { data: fm } = matter(raw)
+if (!fs.existsSync(zooDir)) {
+  console.warn(`Warning: Zoo directory not found at ${zooDir}; writing empty sunburst data.`)
+} else {
+  for (const file of fs.readdirSync(zooDir).filter((f) => f.endsWith(".md"))) {
+    const raw = fs.readFileSync(path.join(zooDir, file), "utf-8")
+    const { data: fm } = matter(raw)
 
-  const family = (fm.technology_family as string) || "Other"
-  const slug = "Zoo/" + file.replace(/\.md$/, "")
+    const family = (fm.technology_family as string) || "Other"
+    const slug = "Zoo/" + file.replace(/\.md$/, "")
 
-  const entry: Entry = {
-    name: (fm.title as string) || file.replace(/\.md$/, ""),
-    slug,
-    type: (fm.entry_type as string) || "unknown",
-    status: (fm.status as string) || "seed",
-    influence: typeof fm.influence_score === "number" ? fm.influence_score : 0.5,
-    size: 1,
+    const entry: Entry = {
+      name: (fm.title as string) || file.replace(/\.md$/, ""),
+      slug,
+      type: (fm.entry_type as string) || "unknown",
+      status: (fm.status as string) || "seed",
+      influence: typeof fm.influence_score === "number" ? fm.influence_score : 0.5,
+      size: 1,
+    }
+
+    if (!families.has(family)) families.set(family, [])
+    families.get(family)!.push(entry)
   }
-
-  if (!families.has(family)) families.set(family, [])
-  families.get(family)!.push(entry)
 }
 
 const data: SunburstData = {

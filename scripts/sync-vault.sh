@@ -17,6 +17,20 @@ fi
 
 echo "Syncing vault content from $VAULT_PATH → $CONTENT_DIR"
 
+# Guardrail: only sync when source vault has expected folders.
+found_expected=0
+for folder in Zoo References Evergreen MOCs Figures; do
+  if [ -d "$VAULT_PATH/$folder" ]; then
+    found_expected=1
+    break
+  fi
+done
+
+if [ "$found_expected" -eq 0 ]; then
+  echo "WARNING: No expected vault folders found in $VAULT_PATH; skipping sync to avoid wiping content/."
+  exit 0
+fi
+
 # Clean existing content (except index.md and static pages we maintain)
 find "$CONTENT_DIR" -mindepth 1 -maxdepth 1 \
   ! -name 'index.md' \
