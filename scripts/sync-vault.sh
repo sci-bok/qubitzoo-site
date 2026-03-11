@@ -33,9 +33,6 @@ for folder in Zoo References Evergreen MOCs Figures; do
   fi
 done
 
-# Copy Welcome.md as a reference
-if [ -f "$VAULT_PATH/Welcome.md" ]; then
-  cp "$VAULT_PATH/Welcome.md" "$CONTENT_DIR/Welcome.md"
-fi
+# Welcome.md excluded — replaced by index.md landing page
 
 echo "Sync complete."

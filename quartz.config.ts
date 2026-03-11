@@ -3,7 +3,7 @@ import * as Plugin from "./quartz/plugins"
 
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "🧬 Qubit Zoo",
+    pageTitle: "Qubit Zoo",
     pageTitleSuffix: " | Qubit Zoo",
     enableSPA: true,
     enablePopovers: true,
@@ -21,6 +21,7 @@ const config: QuartzConfig = {
       "Meta",
       "reports",
       "specs",
+      "Welcome.md",
     ],
     defaultDateType: "published",
     theme: {
