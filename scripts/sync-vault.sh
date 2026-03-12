@@ -37,6 +37,8 @@ find "$CONTENT_DIR" -mindepth 1 -maxdepth 1 \
   ! -name 'faq.md' \
   ! -name 'about.md' \
   ! -name 'racing.md' \
+  ! -name 'genealogy.md' \
+  ! -name '_meta' \
   -exec rm -rf {} +
 
 # Copy vault folders
