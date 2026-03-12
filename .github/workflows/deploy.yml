@@ -3,9 +3,6 @@ name: Deploy Qubit Zoo to GitHub Pages
 on:
   push:
     branches: [main]
-  schedule:
-    # Nightly build at 12:30 UTC (07:30 EST / 08:30 EDT) — safely after daily pipeline run.
-    - cron: '30 12 * * *'
   workflow_dispatch:
 
 permissions:
