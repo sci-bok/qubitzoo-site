@@ -43,20 +43,12 @@ const FAMILY_COLORS: Record<string, string> = {
 }
 
 function getBaseUrl(): string {
-  // Try <base> tag first, then derive from document.body dataset (Quartz sets data-slug)
-  const base = document.querySelector("base")?.getAttribute("href")
-  if (base) return base.endsWith("/") ? base : base + "/"
-  // Fallback: derive from current path by stripping the slug portion
-  const slug = document.body.getAttribute("data-slug") ?? ""
-  const path = window.location.pathname
-  const idx = slug ? path.lastIndexOf(slug) : -1
-  if (idx > 0) return path.slice(0, idx)
-  // Last resort: use origin + first path segment for GitHub Pages project sites
-  const segments = path.split("/").filter(Boolean)
-  if (segments.length > 0 && window.location.hostname.includes("github.io")) {
-    return "/" + segments[0] + "/"
-  }
-  return "/"
+  // Use document.baseURI which browsers resolve correctly including <base> tags
+  // and the current document location
+  const baseURI = document.baseURI
+  // Strip the last path segment (current page) to get the base
+  const url = new URL("./", baseURI)
+  return url.pathname
 }
 
 async function renderFidelityTracker() {

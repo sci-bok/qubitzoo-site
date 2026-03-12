@@ -24,17 +24,8 @@ interface GenealogyData {
 interface SimNode extends d3.SimulationNodeDatum, GNode {}
 
 function getBaseUrl(): string {
-  const base = document.querySelector("base")?.getAttribute("href")
-  if (base) return base.endsWith("/") ? base : base + "/"
-  const slug = document.body.getAttribute("data-slug") ?? ""
-  const path = window.location.pathname
-  const idx = slug ? path.lastIndexOf(slug) : -1
-  if (idx > 0) return path.slice(0, idx)
-  const segments = path.split("/").filter(Boolean)
-  if (segments.length > 0 && window.location.hostname.includes("github.io")) {
-    return "/" + segments[0] + "/"
-  }
-  return "/"
+  const url = new URL("./", document.baseURI)
+  return url.pathname
 }
 
 async function renderGenealogy() {
