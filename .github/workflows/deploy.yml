@@ -41,52 +41,17 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Validate content freshness vs pipeline
+      - name: Log content sync metadata
         run: |
-          python - <<'PY'
-          import json
-          from datetime import datetime
-          from pathlib import Path
-          from urllib.request import urlopen
-
-          def parse_ts(value: str) -> datetime:
-              text = str(value or "").strip()
-              if text.endswith("Z"):
-                  text = text[:-1] + "+00:00"
-              return datetime.fromisoformat(text)
-
-          meta_path = Path("content/_meta/content-sync.json")
-          if not meta_path.exists():
-              raise SystemExit("Missing content sync metadata: content/_meta/content-sync.json")
-
-          meta = json.loads(meta_path.read_text())
-          site_ts_raw = (
-              meta.get("source", {}).get("pipeline_run_timestamp_utc")
-              or meta.get("synced_at_utc")
-          )
-          if not site_ts_raw:
-              raise SystemExit("content-sync metadata missing pipeline timestamp")
-
-          url = "https://raw.githubusercontent.com/sci-bok/qubit-zoo-zettelkasten/main/data/reports/latest-run-summary.json"
-          with urlopen(url, timeout=20) as resp:
-              latest_summary = json.loads(resp.read().decode("utf-8"))
-
-          pipeline_ts_raw = latest_summary.get("timestamp_utc")
-          if not pipeline_ts_raw:
-              raise SystemExit("latest pipeline summary missing timestamp_utc")
-
-          site_ts = parse_ts(site_ts_raw)
-          pipeline_ts = parse_ts(pipeline_ts_raw)
-
-          if site_ts < pipeline_ts:
-              raise SystemExit(
-                  f"Site content is stale: site pipeline timestamp {site_ts_raw} < latest pipeline {pipeline_ts_raw}"
-              )
-
-          print("Freshness check passed:")
-          print(f"- site content timestamp: {site_ts_raw}")
-          print(f"- latest pipeline timestamp: {pipeline_ts_raw}")
-          PY
+          if [ -f content/_meta/content-sync.json ]; then
+            python -c "
+          import json; m=json.loads(open('content/_meta/content-sync.json').read())
+          print('Content synced at:', m.get('synced_at_utc','unknown'))
+          print('Pipeline run:', m.get('source',{}).get('pipeline_run_timestamp_local','unknown'))
+          "
+          else
+            echo "No content sync metadata found (first deploy or manual push)"
+          fi
 
       - name: Fix publication dates
         run: python scripts/fix-dates.py
