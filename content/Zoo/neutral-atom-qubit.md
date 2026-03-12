@@ -32,4 +32,3 @@ Reduce dominant hardware limitations while preserving controllability and readou
 - [[dalyac-2024-graph-algorithms-with-neutral]]
 
 ## Related Entries
-- [[quantum-hardware]]

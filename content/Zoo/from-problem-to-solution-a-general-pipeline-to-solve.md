@@ -30,4 +30,3 @@ Reduce dominant hardware limitations while preserving controllability and readou
 - [[rohe-2024-from-problem-to-solution]]
 
 ## Related Entries
-- [[quantum-hardware]]

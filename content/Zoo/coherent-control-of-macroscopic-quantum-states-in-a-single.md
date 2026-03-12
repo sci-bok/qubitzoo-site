@@ -32,4 +32,3 @@ Reduce dominant hardware limitations while preserving controllability and readou
 - [[nakamura-1999-coherent-control-of-macroscopic]]
 
 ## Related Entries
-- [[quantum-hardware]]
