@@ -33,8 +33,8 @@ In case you didn't qnow* (*the q is silent*), qubits are needed for [quantum com
 
 ## Interactive Tools
 
-- **[[racing|🏁 The Qubit Race]]** — Cross-modality gate fidelity chart. See who's winning.
 - **[[genealogy|🧬 Qubit Genealogy]]** — Interactive family tree of qubit evolution.
+- **[[racing|🏁 The Qubit Race]]** — Cross-modality gate fidelity chart. *(Coming soon)*
 
 ## Why a Qubit Zoo?
 
