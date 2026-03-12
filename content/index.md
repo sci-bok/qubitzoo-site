@@ -31,6 +31,11 @@ In case you didn't qnow* (*the q is silent*), qubits are needed for [quantum com
 - [[spin-qubit]] — Silicon-based quantum dots for scalable processors
 - [[trapped-ion-qubit]] — Record gate fidelities with atomic ions
 
+## Interactive Tools
+
+- **[[racing|🏁 The Qubit Race]]** — Cross-modality gate fidelity chart. See who's winning.
+- **[[genealogy|🧬 Qubit Genealogy]]** — Interactive family tree of qubit evolution.
+
 ## Why a Qubit Zoo?
 
 Qubits improve based on knowledge gained from previous qubit proposals and realizations. As we better understand what limits performance — decoherence mechanisms, material parameters, control overhead — we can sometimes use that knowledge to radically advance the state of the art. Many ideas from the early days of quantum computing, since forgotten, may be applicable again now that we have working qubits.

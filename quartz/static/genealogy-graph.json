@@ -1,0 +1,828 @@
+{
+  "schema": "qubitzoo.genealogy.v1",
+  "generated_at": "2026-03-12T13:32:06.949949+00:00",
+  "nodes": [
+    {
+      "id": "0-pi-qubit",
+      "title": "0-\u03c0 Qubit",
+      "family": "Superconducting",
+      "year": 2013,
+      "status": "seed",
+      "color": "#3b82f6",
+      "influence": 0.76
+    },
+    {
+      "id": "a-tunable-coupling-scheme-for-implementing-high-fidelity",
+      "title": "A tunable coupling scheme for implementing high-fidelity superconducting two-qubit gates",
+      "family": "Superconducting",
+      "year": 2018,
+      "status": "seed",
+      "color": "#3b82f6",
+      "influence": 0.0
+    },
+    {
+      "id": "alkaline-earth-neutral-atom-clock-qubit",
+      "title": "Alkaline-Earth Neutral-Atom Clock Qubit",
+      "family": "Neutral Atom",
+      "year": 2008,
+      "status": "demonstrated",
+      "color": "#f97316",
+      "influence": 0.69
+    },
+    {
+      "id": "always-on-exchange-only-aeon",
+      "title": "Always-on Exchange Only (AEON)",
+      "family": "Semiconducting",
+      "year": 2016,
+      "status": "seed",
+      "color": "#22c55e",
+      "influence": 0.0
+    },
+    {
+      "id": "andreev-spin-qubit",
+      "title": "Andreev spin qubit",
+      "family": "Super-Semi",
+      "year": 2021,
+      "status": "seed",
+      "color": "#06b6d4",
+      "influence": 0.0
+    },
+    {
+      "id": "binomial-code-fault-tolerant-logical-qubits-encoded-in",
+      "title": "Binomial code\" fault-tolerant logical qubits encoded in bosonic modes of superconducting cavities",
+      "family": "Superconducting",
+      "year": 2016,
+      "status": "seed",
+      "color": "#3b82f6",
+      "influence": 0.0
+    },
+    {
+      "id": "blochnium-superconducting-quasicharge-qubit",
+      "title": "Blochnium: superconducting quasicharge qubit",
+      "family": "Superconducting",
+      "year": 2020,
+      "status": "seed",
+      "color": "#3b82f6",
+      "influence": 0.0
+    },
+    {
+      "id": "cat-codes",
+      "title": "Cat Qubit (Cat Codes)",
+      "family": "Superconducting",
+      "year": 2001,
+      "status": "seed",
+      "color": "#3b82f6",
+      "influence": 0.82
+    },
+    {
+      "id": "cirac-zoller-gate-for-trapped-ion-qubits",
+      "title": "Cirac-Zoller gate for trapped ion qubits",
+      "family": "Ion Trap",
+      "year": 2015,
+      "status": "seed",
+      "color": "#eab308",
+      "influence": 0.0
+    },
+    {
+      "id": "circuit-qed",
+      "title": "Circuit Quantum Electrodynamics (Circuit QED)",
+      "family": "Superconducting",
+      "year": 2004,
+      "status": "demonstrated",
+      "color": "#3b82f6",
+      "influence": 0.85
+    },
+    {
+      "id": "coherent-control-of-macroscopic-quantum-states-in-a-single",
+      "title": "Coherent Control Of Macroscopic Quantum States In A Single Cooper Pair Box",
+      "family": "Unknown",
+      "year": 1999,
+      "status": "demonstrated",
+      "color": "#6b7280",
+      "influence": 0.68
+    },
+    {
+      "id": "color-code-logical-qubit",
+      "title": "Color-Code Logical Qubit",
+      "family": "Topological",
+      "year": 2006,
+      "status": "demonstrated",
+      "color": "#a855f7",
+      "influence": 0.77
+    },
+    {
+      "id": "cooper-pair-box-charge-qubit",
+      "title": "Cooper-pair box (charge) qubit",
+      "family": "Superconducting",
+      "year": 1999,
+      "status": "seed",
+      "color": "#3b82f6",
+      "influence": 0.0
+    },
+    {
+      "id": "coulomb-blockade-spectroscopy-towards-topological-majorana",
+      "title": "Coulomb blockade spectroscopy towards topological Majorana zero mode qubit in the 1D semiconductor-superconductor nanowire",
+      "family": "Topological",
+      "year": 2021,
+      "status": "seed",
+      "color": "#a855f7",
+      "influence": 0.0
+    },
+    {
+      "id": "dual-rail-photonic-qubit",
+      "title": "Dual-Rail Photonic Qubit",
+      "family": "Photonic",
+      "year": 1998,
+      "status": "demonstrated",
+      "color": "#ef4444",
+      "influence": 0.72
+    },
+    {
+      "id": "exchange-only-qubit",
+      "title": "Exchange-only qubit",
+      "family": "Semiconducting",
+      "year": 2000,
+      "status": "seed",
+      "color": "#22c55e",
+      "influence": 0.0
+    },
+    {
+      "id": "flux-qubit",
+      "title": "Flux Qubit",
+      "family": "Superconducting",
+      "year": 1999,
+      "status": "seed",
+      "color": "#3b82f6",
+      "influence": 0.75
+    },
+    {
+      "id": "fluxonium",
+      "title": "Fluxonium",
+      "family": "Superconducting",
+      "year": 2009,
+      "status": "demonstrated",
+      "color": "#3b82f6",
+      "influence": 0.9
+    },
+    {
+      "id": "from-problem-to-solution-a-general-pipeline-to-solve",
+      "title": "From Problem To Solution: A General Pipeline To Solve Optimisation Problems",
+      "family": "Unknown",
+      "year": 2024,
+      "status": "demonstrated",
+      "color": "#6b7280",
+      "influence": 0.68
+    },
+    {
+      "id": "gatemon",
+      "title": "Gatemon",
+      "family": "Super-Semi",
+      "year": 2015,
+      "status": "seed",
+      "color": "#06b6d4",
+      "influence": 0.68
+    },
+    {
+      "id": "gatemonium",
+      "title": "Gatemonium",
+      "family": "Super-Semi",
+      "year": 2024,
+      "status": "seed",
+      "color": "#06b6d4",
+      "influence": 0.0
+    },
+    {
+      "id": "gkp-codes",
+      "title": "GKP Qubit (Gottesman-Kitaev-Preskill Code)",
+      "family": "Superconducting",
+      "year": 2001,
+      "status": "seed",
+      "color": "#3b82f6",
+      "influence": 0.84
+    },
+    {
+      "id": "gmon",
+      "title": "Gmon",
+      "family": "Superconducting",
+      "year": 2014,
+      "status": "seed",
+      "color": "#3b82f6",
+      "influence": 0.7
+    },
+    {
+      "id": "heavy-fluxonium-qubit",
+      "title": "Heavy Fluxonium Qubit",
+      "family": "Superconducting",
+      "year": 2019,
+      "status": "demonstrated",
+      "color": "#3b82f6",
+      "influence": 0.8
+    },
+    {
+      "id": "high-quality-superconducting-cavities-coupled-to-nonlinear",
+      "title": "High-quality superconducting cavities coupled to nonlinear oscillators",
+      "family": "Superconducting",
+      "year": 2016,
+      "status": "seed",
+      "color": "#3b82f6",
+      "influence": 0.0
+    },
+    {
+      "id": "hole-spin-qubit",
+      "title": "Hole Spin Qubit",
+      "family": "Semiconducting",
+      "year": 2013,
+      "status": "demonstrated",
+      "color": "#22c55e",
+      "influence": 0.74
+    },
+    {
+      "id": "hybrid-qubit",
+      "title": "Hybrid Qubit (Semiconductor Triple-Dot)",
+      "family": "Semiconducting",
+      "year": 2012,
+      "status": "demonstrated",
+      "color": "#22c55e",
+      "influence": 0.66
+    },
+    {
+      "id": "kane-qubit",
+      "title": "Kane Qubit (Phosphorus-in-Silicon)",
+      "family": "Semiconducting",
+      "year": 1998,
+      "status": "seed",
+      "color": "#22c55e",
+      "influence": 0.76
+    },
+    {
+      "id": "linear-optical-photonic-qubit",
+      "title": "Linear-Optical Photonic Qubit",
+      "family": "Photonic",
+      "year": 1998,
+      "status": "demonstrated",
+      "color": "#ef4444",
+      "influence": 0.71
+    },
+    {
+      "id": "majorana-topological-qubit",
+      "title": "Majorana Topological Qubit",
+      "family": "Topological",
+      "year": 2016,
+      "status": "demonstrated",
+      "color": "#a855f7",
+      "influence": 0.69
+    },
+    {
+      "id": "molecular-qubit",
+      "title": "Molecular Qubit",
+      "family": "Molecular",
+      "year": 2007,
+      "status": "demonstrated",
+      "color": "#ec4899",
+      "influence": 0.66
+    },
+    {
+      "id": "molmer-sorenson-gate",
+      "title": "M\u00f8lmer-S\u00f8rensen Gate",
+      "family": "Ion Trap",
+      "year": 1999,
+      "status": "demonstrated",
+      "color": "#eab308",
+      "influence": 0.79
+    },
+    {
+      "id": "neutral-atom-qubit",
+      "title": "Neutral Atom Qubit",
+      "family": "Neutral Atom",
+      "year": 2024,
+      "status": "demonstrated",
+      "color": "#f97316",
+      "influence": 0.68
+    },
+    {
+      "id": "nuclear-spin-neutral-atom-qubit",
+      "title": "Nuclear-Spin Neutral-Atom Qubit",
+      "family": "Neutral Atom",
+      "year": 2008,
+      "status": "demonstrated",
+      "color": "#f97316",
+      "influence": 0.71
+    },
+    {
+      "id": "nv-center-qubit",
+      "title": "Nitrogen-Vacancy (NV) Center Qubit",
+      "family": "Solid State",
+      "year": 1997,
+      "status": "demonstrated",
+      "color": "#64748b",
+      "influence": 0.78
+    },
+    {
+      "id": "phase-qubit",
+      "title": "Phase Qubit",
+      "family": "Superconducting",
+      "year": 2002,
+      "status": "seed",
+      "color": "#3b82f6",
+      "influence": 0.65
+    },
+    {
+      "id": "photonic-cluster-state-mbqc-qubit",
+      "title": "Photonic Cluster-State MBQC Qubit",
+      "family": "Photonic",
+      "year": 2004,
+      "status": "demonstrated",
+      "color": "#ef4444",
+      "influence": 0.7
+    },
+    {
+      "id": "rx-qubit",
+      "title": "RX Qubit (Resonant Exchange)",
+      "family": "Semiconducting",
+      "year": 2012,
+      "status": "demonstrated",
+      "color": "#22c55e",
+      "influence": 0.69
+    },
+    {
+      "id": "rydberg-neutral-atom-qubit",
+      "title": "Rydberg Neutral-Atom Qubit",
+      "family": "Neutral Atom",
+      "year": 2000,
+      "status": "demonstrated",
+      "color": "#f97316",
+      "influence": 0.72
+    },
+    {
+      "id": "semiconductor-charge-qubit",
+      "title": "Semiconductor charge qubit",
+      "family": "Semiconducting",
+      "year": 2003,
+      "status": "seed",
+      "color": "#22c55e",
+      "influence": 0.0
+    },
+    {
+      "id": "shuttling-ion-trap-qubit",
+      "title": "Shuttling Ion-Trap Qubit (QCCD)",
+      "family": "Ion Trap",
+      "year": 2002,
+      "status": "demonstrated",
+      "color": "#eab308",
+      "influence": 0.75
+    },
+    {
+      "id": "single-spin-quantum-dot-loss-divincenzo-qubit",
+      "title": "Single spin quantum dot (Loss-DiVincenzo) qubit",
+      "family": "Semiconducting",
+      "year": 1998,
+      "status": "seed",
+      "color": "#22c55e",
+      "influence": 0.0
+    },
+    {
+      "id": "singlet-triplet-qubit",
+      "title": "Singlet-Triplet Qubit",
+      "family": "Semiconducting",
+      "year": 2002,
+      "status": "seed",
+      "color": "#22c55e",
+      "influence": 0.0
+    },
+    {
+      "id": "spin-qubit",
+      "title": "Spin Qubit (Loss-DiVincenzo)",
+      "family": "Semiconducting",
+      "year": 1998,
+      "status": "demonstrated",
+      "color": "#22c55e",
+      "influence": 0.88
+    },
+    {
+      "id": "surface-code-logical-qubit",
+      "title": "Surface-Code Logical Qubit",
+      "family": "Topological",
+      "year": 1998,
+      "status": "demonstrated",
+      "color": "#a855f7",
+      "influence": 0.83
+    },
+    {
+      "id": "transmon",
+      "title": "Transmon",
+      "family": "Superconducting",
+      "year": 2007,
+      "status": "demonstrated",
+      "color": "#3b82f6",
+      "influence": 0.95
+    },
+    {
+      "id": "trapped-ion-qubit",
+      "title": "Trapped-Ion Qubit",
+      "family": "Ion Trap",
+      "year": 1995,
+      "status": "demonstrated",
+      "color": "#eab308",
+      "influence": 0.92
+    },
+    {
+      "id": "xmon",
+      "title": "Xmon",
+      "family": "Superconducting",
+      "year": 2013,
+      "status": "seed",
+      "color": "#3b82f6",
+      "influence": 0.72
+    }
+  ],
+  "edges": [
+    {
+      "source": "fluxonium",
+      "target": "0-pi-qubit"
+    },
+    {
+      "source": "transmon",
+      "target": "0-pi-qubit"
+    },
+    {
+      "source": "transmon",
+      "target": "a-tunable-coupling-scheme-for-implementing-high-fidelity"
+    },
+    {
+      "source": "xmon",
+      "target": "a-tunable-coupling-scheme-for-implementing-high-fidelity"
+    },
+    {
+      "source": "gmon",
+      "target": "a-tunable-coupling-scheme-for-implementing-high-fidelity"
+    },
+    {
+      "source": "rydberg-neutral-atom-qubit",
+      "target": "alkaline-earth-neutral-atom-clock-qubit"
+    },
+    {
+      "source": "trapped-ion-qubit",
+      "target": "alkaline-earth-neutral-atom-clock-qubit"
+    },
+    {
+      "source": "rx-qubit",
+      "target": "always-on-exchange-only-aeon"
+    },
+    {
+      "source": "single-spin-quantum-dot-loss-divincenzo-qubit",
+      "target": "always-on-exchange-only-aeon"
+    },
+    {
+      "source": "exchange-only-qubit",
+      "target": "always-on-exchange-only-aeon"
+    },
+    {
+      "source": "transmon",
+      "target": "andreev-spin-qubit"
+    },
+    {
+      "source": "spin-qubit",
+      "target": "andreev-spin-qubit"
+    },
+    {
+      "source": "gatemon",
+      "target": "andreev-spin-qubit"
+    },
+    {
+      "source": "andreev-spin-qubit",
+      "target": "gatemonium"
+    },
+    {
+      "source": "cat-codes",
+      "target": "binomial-code-fault-tolerant-logical-qubits-encoded-in"
+    },
+    {
+      "source": "gkp-codes",
+      "target": "binomial-code-fault-tolerant-logical-qubits-encoded-in"
+    },
+    {
+      "source": "transmon",
+      "target": "blochnium-superconducting-quasicharge-qubit"
+    },
+    {
+      "source": "cooper-pair-box-charge-qubit",
+      "target": "blochnium-superconducting-quasicharge-qubit"
+    },
+    {
+      "source": "fluxonium",
+      "target": "blochnium-superconducting-quasicharge-qubit"
+    },
+    {
+      "source": "cat-codes",
+      "target": "gkp-codes"
+    },
+    {
+      "source": "cat-codes",
+      "target": "circuit-qed"
+    },
+    {
+      "source": "cat-codes",
+      "target": "transmon"
+    },
+    {
+      "source": "molmer-sorenson-gate",
+      "target": "cirac-zoller-gate-for-trapped-ion-qubits"
+    },
+    {
+      "source": "circuit-qed",
+      "target": "transmon"
+    },
+    {
+      "source": "cooper-pair-box-charge-qubit",
+      "target": "circuit-qed"
+    },
+    {
+      "source": "circuit-qed",
+      "target": "high-quality-superconducting-cavities-coupled-to-nonlinear"
+    },
+    {
+      "source": "surface-code-logical-qubit",
+      "target": "color-code-logical-qubit"
+    },
+    {
+      "source": "color-code-logical-qubit",
+      "target": "transmon"
+    },
+    {
+      "source": "trapped-ion-qubit",
+      "target": "color-code-logical-qubit"
+    },
+    {
+      "source": "cooper-pair-box-charge-qubit",
+      "target": "phase-qubit"
+    },
+    {
+      "source": "cooper-pair-box-charge-qubit",
+      "target": "flux-qubit"
+    },
+    {
+      "source": "dual-rail-photonic-qubit",
+      "target": "linear-optical-photonic-qubit"
+    },
+    {
+      "source": "dual-rail-photonic-qubit",
+      "target": "photonic-cluster-state-mbqc-qubit"
+    },
+    {
+      "source": "exchange-only-qubit",
+      "target": "singlet-triplet-qubit"
+    },
+    {
+      "source": "exchange-only-qubit",
+      "target": "rx-qubit"
+    },
+    {
+      "source": "exchange-only-qubit",
+      "target": "hybrid-qubit"
+    },
+    {
+      "source": "flux-qubit",
+      "target": "transmon"
+    },
+    {
+      "source": "flux-qubit",
+      "target": "fluxonium"
+    },
+    {
+      "source": "flux-qubit",
+      "target": "phase-qubit"
+    },
+    {
+      "source": "transmon",
+      "target": "fluxonium"
+    },
+    {
+      "source": "cooper-pair-box-charge-qubit",
+      "target": "fluxonium"
+    },
+    {
+      "source": "circuit-qed",
+      "target": "fluxonium"
+    },
+    {
+      "source": "transmon",
+      "target": "gatemon"
+    },
+    {
+      "source": "gatemon",
+      "target": "gatemonium"
+    },
+    {
+      "source": "fluxonium",
+      "target": "gatemonium"
+    },
+    {
+      "source": "transmon",
+      "target": "gatemonium"
+    },
+    {
+      "source": "flux-qubit",
+      "target": "gatemonium"
+    },
+    {
+      "source": "gkp-codes",
+      "target": "circuit-qed"
+    },
+    {
+      "source": "xmon",
+      "target": "gmon"
+    },
+    {
+      "source": "transmon",
+      "target": "gmon"
+    },
+    {
+      "source": "circuit-qed",
+      "target": "gmon"
+    },
+    {
+      "source": "fluxonium",
+      "target": "heavy-fluxonium-qubit"
+    },
+    {
+      "source": "0-pi-qubit",
+      "target": "heavy-fluxonium-qubit"
+    },
+    {
+      "source": "transmon",
+      "target": "heavy-fluxonium-qubit"
+    },
+    {
+      "source": "high-quality-superconducting-cavities-coupled-to-nonlinear",
+      "target": "binomial-code-fault-tolerant-logical-qubits-encoded-in"
+    },
+    {
+      "source": "cat-codes",
+      "target": "high-quality-superconducting-cavities-coupled-to-nonlinear"
+    },
+    {
+      "source": "gkp-codes",
+      "target": "high-quality-superconducting-cavities-coupled-to-nonlinear"
+    },
+    {
+      "source": "spin-qubit",
+      "target": "hole-spin-qubit"
+    },
+    {
+      "source": "singlet-triplet-qubit",
+      "target": "hole-spin-qubit"
+    },
+    {
+      "source": "kane-qubit",
+      "target": "hole-spin-qubit"
+    },
+    {
+      "source": "spin-qubit",
+      "target": "hybrid-qubit"
+    },
+    {
+      "source": "hybrid-qubit",
+      "target": "hole-spin-qubit"
+    },
+    {
+      "source": "kane-qubit",
+      "target": "spin-qubit"
+    },
+    {
+      "source": "kane-qubit",
+      "target": "single-spin-quantum-dot-loss-divincenzo-qubit"
+    },
+    {
+      "source": "linear-optical-photonic-qubit",
+      "target": "gkp-codes"
+    },
+    {
+      "source": "linear-optical-photonic-qubit",
+      "target": "cat-codes"
+    },
+    {
+      "source": "majorana-topological-qubit",
+      "target": "coulomb-blockade-spectroscopy-towards-topological-majorana"
+    },
+    {
+      "source": "surface-code-logical-qubit",
+      "target": "majorana-topological-qubit"
+    },
+    {
+      "source": "color-code-logical-qubit",
+      "target": "majorana-topological-qubit"
+    },
+    {
+      "source": "nv-center-qubit",
+      "target": "molecular-qubit"
+    },
+    {
+      "source": "spin-qubit",
+      "target": "molecular-qubit"
+    },
+    {
+      "source": "trapped-ion-qubit",
+      "target": "molmer-sorenson-gate"
+    },
+    {
+      "source": "nuclear-spin-neutral-atom-qubit",
+      "target": "alkaline-earth-neutral-atom-clock-qubit"
+    },
+    {
+      "source": "rydberg-neutral-atom-qubit",
+      "target": "nuclear-spin-neutral-atom-qubit"
+    },
+    {
+      "source": "nv-center-qubit",
+      "target": "single-spin-quantum-dot-loss-divincenzo-qubit"
+    },
+    {
+      "source": "phase-qubit",
+      "target": "transmon"
+    },
+    {
+      "source": "linear-optical-photonic-qubit",
+      "target": "photonic-cluster-state-mbqc-qubit"
+    },
+    {
+      "source": "gkp-codes",
+      "target": "photonic-cluster-state-mbqc-qubit"
+    },
+    {
+      "source": "singlet-triplet-qubit",
+      "target": "rx-qubit"
+    },
+    {
+      "source": "trapped-ion-qubit",
+      "target": "rydberg-neutral-atom-qubit"
+    },
+    {
+      "source": "single-spin-quantum-dot-loss-divincenzo-qubit",
+      "target": "semiconductor-charge-qubit"
+    },
+    {
+      "source": "trapped-ion-qubit",
+      "target": "shuttling-ion-trap-qubit"
+    },
+    {
+      "source": "shuttling-ion-trap-qubit",
+      "target": "cirac-zoller-gate-for-trapped-ion-qubits"
+    },
+    {
+      "source": "single-spin-quantum-dot-loss-divincenzo-qubit",
+      "target": "singlet-triplet-qubit"
+    },
+    {
+      "source": "single-spin-quantum-dot-loss-divincenzo-qubit",
+      "target": "exchange-only-qubit"
+    },
+    {
+      "source": "singlet-triplet-qubit",
+      "target": "always-on-exchange-only-aeon"
+    },
+    {
+      "source": "spin-qubit",
+      "target": "single-spin-quantum-dot-loss-divincenzo-qubit"
+    },
+    {
+      "source": "spin-qubit",
+      "target": "singlet-triplet-qubit"
+    },
+    {
+      "source": "spin-qubit",
+      "target": "exchange-only-qubit"
+    },
+    {
+      "source": "spin-qubit",
+      "target": "always-on-exchange-only-aeon"
+    },
+    {
+      "source": "spin-qubit",
+      "target": "semiconductor-charge-qubit"
+    },
+    {
+      "source": "surface-code-logical-qubit",
+      "target": "transmon"
+    },
+    {
+      "source": "trapped-ion-qubit",
+      "target": "surface-code-logical-qubit"
+    },
+    {
+      "source": "cooper-pair-box-charge-qubit",
+      "target": "transmon"
+    },
+    {
+      "source": "transmon",
+      "target": "xmon"
+    },
+    {
+      "source": "trapped-ion-qubit",
+      "target": "cirac-zoller-gate-for-trapped-ion-qubits"
+    },
+    {
+      "source": "circuit-qed",
+      "target": "xmon"
+    }
+  ]
+}

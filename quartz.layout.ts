@@ -25,6 +25,14 @@ export const defaultContentPageLayout: PageLayout = {
       component: Component.QubitSunburst(),
       condition: (page) => page.fileData.slug === "index",
     }),
+    Component.ConditionalRender({
+      component: Component.FidelityTracker(),
+      condition: (page) => page.fileData.slug === "racing",
+    }),
+    Component.ConditionalRender({
+      component: Component.QubitGenealogy(),
+      condition: (page) => page.fileData.slug === "genealogy",
+    }),
     Component.ArticleTitle(),
     Component.ContentMeta(),
     Component.TagList(),

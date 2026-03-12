@@ -1,0 +1,480 @@
+{
+  "schema": "qubitzoo.fidelity_tracker.v1",
+  "generated_at": "2026-03-12T13:31:54.725431+00:00",
+  "families": [
+    {
+      "name": "Superconducting",
+      "entries": [
+        {
+          "slug": "a-tunable-coupling-scheme-for-implementing-high-fidelity",
+          "title": "A tunable coupling scheme for implementing high-fidelity superconducting two-qubit gates",
+          "year": 2018,
+          "status": "seed",
+          "influence": 0.0,
+          "metrics": {
+            "2Q_fidelity": {
+              "value": 99.9,
+              "raw": "99.5\u201399.9%",
+              "ref": "https://journals.aps.org/prapplied/abstract/10.1103/PhysRevA"
+            }
+          }
+        },
+        {
+          "slug": "gmon",
+          "title": "Gmon",
+          "year": 2014,
+          "status": "seed",
+          "influence": 0.7,
+          "metrics": {
+            "1Q_fidelity": {
+              "value": 99.9,
+              "raw": "99.9%+",
+              "ref": "\u2014"
+            },
+            "2Q_fidelity": {
+              "value": 99.9,
+              "raw": "99.5\u201399.9%",
+              "ref": "[Chen 2014](https://doi.org/10.1103/PhysRevLett.113.220502)"
+            }
+          }
+        },
+        {
+          "slug": "transmon",
+          "title": "Transmon",
+          "year": 2007,
+          "status": "demonstrated",
+          "influence": 0.95,
+          "metrics": {
+            "1Q_fidelity": {
+              "value": 99.99,
+              "raw": "99.9\u201399.99%",
+              "ref": "\u2014"
+            },
+            "2Q_fidelity": {
+              "value": 99.9,
+              "raw": "99.0\u201399.9%",
+              "ref": "\u2014"
+            },
+            "readout": {
+              "value": 99.9,
+              "raw": "97\u201399.9%",
+              "ref": "\u2014"
+            },
+            "T1": {
+              "value_us": 500.0,
+              "raw": "100\u2013500 \u03bcs"
+            },
+            "T2": {
+              "value_us": 500.0,
+              "raw": "100\u2013500 \u03bcs"
+            }
+          }
+        },
+        {
+          "slug": "xmon",
+          "title": "Xmon",
+          "year": 2013,
+          "status": "seed",
+          "influence": 0.72,
+          "metrics": {
+            "1Q_fidelity": {
+              "value": 99.9,
+              "raw": "99.9%+",
+              "ref": "\u2014"
+            },
+            "2Q_fidelity": {
+              "value": 99.9,
+              "raw": "99.5\u201399.9%",
+              "ref": "\u2014"
+            },
+            "T1": {
+              "value_us": 99.99999999999999,
+              "raw": "20\u2013100 \u03bcs"
+            }
+          }
+        },
+        {
+          "slug": "fluxonium",
+          "title": "Fluxonium",
+          "year": 2009,
+          "status": "demonstrated",
+          "influence": 0.9,
+          "metrics": {
+            "1Q_fidelity": {
+              "value": 99.99,
+              "raw": "99.97\u201399.99%",
+              "ref": "\u2014"
+            },
+            "2Q_fidelity": {
+              "value": 99.7,
+              "raw": "99.2\u201399.7%",
+              "ref": "\u2014"
+            },
+            "T1": {
+              "value_us": 1500.0,
+              "raw": "100 \u03bcs \u2013 1.5 ms"
+            },
+            "T2": {
+              "value_us": 500.0,
+              "raw": "100\u2013500 \u03bcs"
+            }
+          }
+        },
+        {
+          "slug": "cooper-pair-box-charge-qubit",
+          "title": "Cooper-pair box (charge) qubit",
+          "year": 1999,
+          "status": "seed",
+          "influence": 0.0,
+          "metrics": {
+            "readout": {
+              "value": 95.0,
+              "raw": "~90\u201395%",
+              "ref": "https://www.nature.com/articles/19718"
+            }
+          }
+        },
+        {
+          "slug": "flux-qubit",
+          "title": "Flux Qubit",
+          "year": 1999,
+          "status": "seed",
+          "influence": 0.75,
+          "metrics": {
+            "1Q_fidelity": {
+              "value": 99.9,
+              "raw": "99\u201399.9%",
+              "ref": "\u2014"
+            },
+            "T1": {
+              "value_us": 54.99999999999999,
+              "raw": "1\u201355 \u03bcs"
+            },
+            "T2": {
+              "value_us": 80.0,
+              "raw": "5\u201380 \u03bcs"
+            }
+          }
+        },
+        {
+          "slug": "phase-qubit",
+          "title": "Phase Qubit",
+          "year": 2002,
+          "status": "seed",
+          "influence": 0.65,
+          "metrics": {
+            "readout": {
+              "value": 96.0,
+              "raw": "85\u201396%",
+              "ref": "\u2014"
+            },
+            "T1": {
+              "value_us": 5.0,
+              "raw": "0.5\u20135 \u03bcs"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Semiconducting",
+      "entries": [
+        {
+          "slug": "spin-qubit",
+          "title": "Spin Qubit (Loss-DiVincenzo)",
+          "year": 1998,
+          "status": "demonstrated",
+          "influence": 0.88,
+          "metrics": {
+            "1Q_fidelity": {
+              "value": 99.96,
+              "raw": "99.9\u201399.96%",
+              "ref": "[Yoneda 2018](https://doi.org/10.1038/s41565-017-0014-x)"
+            },
+            "2Q_fidelity": {
+              "value": 99.8,
+              "raw": "99.5\u201399.8%",
+              "ref": "[Noiri 2022](https://doi.org/10.1038/s41586-021-04182-y)"
+            },
+            "readout": {
+              "value": 99.5,
+              "raw": "97\u201399.5%",
+              "ref": "\u2014"
+            },
+            "T1": {
+              "value_us": 50000000.0,
+              "raw": "1\u201350 s"
+            },
+            "T2": {
+              "value_us": 28000.0,
+              "raw": "1\u201328 ms"
+            }
+          }
+        },
+        {
+          "slug": "kane-qubit",
+          "title": "Kane Qubit (Phosphorus-in-Silicon)",
+          "year": 1998,
+          "status": "seed",
+          "influence": 0.76,
+          "metrics": {
+            "1Q_fidelity": {
+              "value": 99.95,
+              "raw": "99.95%",
+              "ref": "\u2014"
+            },
+            "2Q_fidelity": {
+              "value": 99.4,
+              "raw": "99.4%",
+              "ref": "\u2014"
+            }
+          }
+        },
+        {
+          "slug": "exchange-only-qubit",
+          "title": "Exchange-only qubit",
+          "year": 2000,
+          "status": "seed",
+          "influence": 0.0,
+          "metrics": {
+            "readout": {
+              "value": 99.0,
+              "raw": "95\u201399%",
+              "ref": "https://www.nature.com/articles/35042541"
+            }
+          }
+        },
+        {
+          "slug": "rx-qubit",
+          "title": "RX Qubit (Resonant Exchange)",
+          "year": 2012,
+          "status": "demonstrated",
+          "influence": 0.69,
+          "metrics": {
+            "1Q_fidelity": {
+              "value": 99.9,
+              "raw": "98\u201399.9%",
+              "ref": "\u2014"
+            }
+          }
+        },
+        {
+          "slug": "semiconductor-charge-qubit",
+          "title": "Semiconductor charge qubit",
+          "year": 2003,
+          "status": "seed",
+          "influence": 0.0,
+          "metrics": {
+            "readout": {
+              "value": 95.0,
+              "raw": "~95%",
+              "ref": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.91"
+            }
+          }
+        },
+        {
+          "slug": "single-spin-quantum-dot-loss-divincenzo-qubit",
+          "title": "Single spin quantum dot (Loss-DiVincenzo) qubit",
+          "year": 1998,
+          "status": "seed",
+          "influence": 0.0,
+          "metrics": {
+            "readout": {
+              "value": 99.5,
+              "raw": "98\u201399.5%",
+              "ref": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.57.12"
+            }
+          }
+        },
+        {
+          "slug": "singlet-triplet-qubit",
+          "title": "Singlet-Triplet Qubit",
+          "year": 2002,
+          "status": "seed",
+          "influence": 0.0,
+          "metrics": {
+            "readout": {
+              "value": 99.0,
+              "raw": "95\u201399%",
+              "ref": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.89"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Ion Trap",
+      "entries": [
+        {
+          "slug": "molmer-sorenson-gate",
+          "title": "M\u00f8lmer-S\u00f8rensen Gate",
+          "year": 1999,
+          "status": "demonstrated",
+          "influence": 0.79,
+          "metrics": {
+            "2Q_fidelity": {
+              "value": 99.9,
+              "raw": "99.5\u201399.9%",
+              "ref": "\u2014"
+            }
+          }
+        },
+        {
+          "slug": "trapped-ion-qubit",
+          "title": "Trapped-Ion Qubit",
+          "year": 1995,
+          "status": "demonstrated",
+          "influence": 0.92,
+          "metrics": {
+            "1Q_fidelity": {
+              "value": 99.9999,
+              "raw": "99.9999%",
+              "ref": "[Harty 2014](https://doi.org/10.1103/PhysRevLett.113.220501)"
+            },
+            "2Q_fidelity": {
+              "value": 99.9,
+              "raw": "99.9%",
+              "ref": "[Ballance 2016](https://doi.org/10.1103/PhysRevLett.117.060504)"
+            },
+            "readout": {
+              "value": 99.99,
+              "raw": "99.99%",
+              "ref": "[Myerson 2008](https://doi.org/10.1103/PhysRevLett.100.200502)"
+            },
+            "T2": {
+              "value_us": 600000000.0,
+              "raw": ">600 s"
+            }
+          }
+        },
+        {
+          "slug": "shuttling-ion-trap-qubit",
+          "title": "Shuttling Ion-Trap Qubit (QCCD)",
+          "year": 2002,
+          "status": "demonstrated",
+          "influence": 0.75,
+          "metrics": {
+            "2Q_fidelity": {
+              "value": 99.0,
+              "raw": "99%+",
+              "ref": "\u2014"
+            }
+          }
+        },
+        {
+          "slug": "cirac-zoller-gate-for-trapped-ion-qubits",
+          "title": "Cirac-Zoller gate for trapped ion qubits",
+          "year": 2015,
+          "status": "seed",
+          "influence": 0.0,
+          "metrics": {
+            "readout": {
+              "value": 99.9,
+              "raw": "99.9%+",
+              "ref": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.74"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Super-Semi",
+      "entries": [
+        {
+          "slug": "andreev-spin-qubit",
+          "title": "Andreev spin qubit",
+          "year": 2021,
+          "status": "seed",
+          "influence": 0.0,
+          "metrics": {
+            "readout": {
+              "value": 90.0,
+              "raw": "~90%",
+              "ref": "https://science.sciencemag.org/content/373/6553/430"
+            }
+          }
+        },
+        {
+          "slug": "gatemon",
+          "title": "Gatemon",
+          "year": 2015,
+          "status": "seed",
+          "influence": 0.68,
+          "metrics": {
+            "1Q_fidelity": {
+              "value": 99.5,
+              "raw": "98\u201399.5%",
+              "ref": "\u2014"
+            },
+            "T1": {
+              "value_us": 10.0,
+              "raw": "1\u201310 \u03bcs"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Photonic",
+      "entries": [
+        {
+          "slug": "dual-rail-photonic-qubit",
+          "title": "Dual-Rail Photonic Qubit",
+          "year": 1998,
+          "status": "demonstrated",
+          "influence": 0.72,
+          "metrics": {
+            "1Q_fidelity": {
+              "value": 99.0,
+              "raw": ">99%",
+              "ref": "\u2014"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Solid State",
+      "entries": [
+        {
+          "slug": "nv-center-qubit",
+          "title": "Nitrogen-Vacancy (NV) Center Qubit",
+          "year": 1997,
+          "status": "demonstrated",
+          "influence": 0.78,
+          "metrics": {
+            "1Q_fidelity": {
+              "value": 99.9,
+              "raw": "99\u201399.9%",
+              "ref": "\u2014"
+            },
+            "2Q_fidelity": {
+              "value": 99.0,
+              "raw": "95\u201399%",
+              "ref": "\u2014"
+            },
+            "readout": {
+              "value": 99.0,
+              "raw": "95% (RT), >99% (cryo)",
+              "ref": "\u2014"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "thresholds": [
+    {
+      "label": "99%",
+      "value": 99.0
+    },
+    {
+      "label": "99.9%",
+      "value": 99.9
+    },
+    {
+      "label": "99.99%",
+      "value": 99.99
+    }
+  ]
+}

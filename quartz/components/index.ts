@@ -24,6 +24,8 @@ import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
 import QubitSunburst from "./QubitSunburst"
+import FidelityTracker from "./FidelityTracker"
+import QubitGenealogy from "./QubitGenealogy"
 
 export {
   ArticleTitle,
@@ -52,4 +54,6 @@ export {
   Flex,
   ConditionalRender,
   QubitSunburst,
+  FidelityTracker,
+  QubitGenealogy,
 }

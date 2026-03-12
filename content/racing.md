@@ -1,19 +1,11 @@
 ---
-title: Racing Qubits
+title: The Qubit Race
 ---
 
-# 🏁 Racing Qubits
+# The Qubit Race
 
-*Coming soon.*
+How do different qubit technologies compare on gate fidelity? This chart pulls best-reported metrics from every Zoo entry, plotted side-by-side across technology families.
 
-A comparative metrics dashboard showing how different qubit modalities stack up across key performance parameters:
+**Bars** show 2-qubit gate fidelity. **Diamonds** mark 1-qubit gate fidelity. Dashed lines mark key thresholds. Click any bar to jump to the Zoo entry.
 
-- **Coherence** ($T_1$, $T_2$)
-- **Gate fidelities** (1Q, 2Q)
-- **Gate speeds**
-- **Readout fidelity**
-- **Connectivity and scalability**
-
-Data will be drawn directly from the Zoo entries' metrics tables, enabling apples-to-apples comparisons across superconducting, semiconducting, ion trap, neutral atom, photonic, and topological platforms.
-
-In the meantime, explore individual entries in the [[qubit-zoo-index-moc|Zoo Index]] to see per-qubit metrics.
+> *Data is auto-generated from the curated Qubit Zoo vault. Updated with each pipeline run.*
