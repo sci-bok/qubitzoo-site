@@ -36,11 +36,16 @@ async function renderGenealogy() {
 
   const baseUrl = getBaseUrl()
   let data: GenealogyData
+  const dataUrl = baseUrl + "static/genealogy-graph.json"
   try {
-    const resp = await fetch(baseUrl + "static/genealogy-graph.json")
+    const resp = await fetch(dataUrl)
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`)
     data = await resp.json()
-  } catch {
-    container.innerHTML = "<p>Could not load genealogy data.</p>"
+  } catch (err) {
+    console.error("[genealogy] fetch failed:", dataUrl, err)
+    if (!document.getElementById("genealogy-tooltip")) {
+      container.innerHTML = `<p>Could not load genealogy data from ${dataUrl}</p>`
+    }
     return
   }
 

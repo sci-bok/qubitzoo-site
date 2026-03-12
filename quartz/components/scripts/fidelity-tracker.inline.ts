@@ -59,11 +59,17 @@ async function renderFidelityTracker() {
 
   const baseUrl = getBaseUrl()
   let data: FidelityData
+  const dataUrl = baseUrl + "static/fidelity-tracker.json"
   try {
-    const resp = await fetch(baseUrl + "static/fidelity-tracker.json")
+    const resp = await fetch(dataUrl)
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`)
     data = await resp.json()
-  } catch {
-    container.innerHTML = "<p>Could not load fidelity data.</p>"
+  } catch (err) {
+    console.error("[fidelity-tracker] fetch failed:", dataUrl, err)
+    // Don't clobber container if tooltip exists (allows retry on next nav)
+    if (!document.getElementById("fidelity-tooltip")) {
+      container.innerHTML = `<p>Could not load fidelity data from ${dataUrl}</p>`
+    }
     return
   }
 
