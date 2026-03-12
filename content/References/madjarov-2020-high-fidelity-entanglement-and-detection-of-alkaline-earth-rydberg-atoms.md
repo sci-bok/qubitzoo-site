@@ -18,7 +18,6 @@ extracted_by: scibok-curation
 verified_by: scibok
 disputes: 0
 generated_by: pipeline-v1
-published: 2020-01-01
 ---
 
 Demonstrates high-fidelity entanglement and detection in alkaline-earth Rydberg atoms, supporting practical neutral-atom architectures that can pair Rydberg interactions with clock-compatible internal-state structure.

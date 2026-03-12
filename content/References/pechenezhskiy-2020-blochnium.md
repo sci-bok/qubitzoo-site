@@ -18,7 +18,6 @@ tags:
   - superconducting-qubit
   - quasicharge
   - phase-slip
-published: 2020-01-01
 ---
 
 # The Superconducting Quasicharge Qubit

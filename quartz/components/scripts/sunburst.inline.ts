@@ -22,8 +22,7 @@ const FAMILY_MOC_SLUGS: Record<string, string> = {
 }
 
 function getBaseUrl(): string {
-  const baseEl = document.querySelector<HTMLElement>("[data-slug]")
-  // Quartz puts the base path in the pathPrefix or we can derive from location
+  // Quartz puts the base path in the <base> href.
   const base = document.querySelector("base")?.getAttribute("href") ?? "/"
   return base.endsWith("/") ? base : base + "/"
 }
@@ -55,14 +54,13 @@ async function renderSunburst() {
   const radius = width / 2
 
   // Build hierarchy
-  const root = d3
+  const hierarchy = d3
     .hierarchy<Entry>(data)
-    .sum((d) => (d.children ? 0 : d.size ?? 1))
+    .sum((d) => (d.children ? 0 : (d.size ?? 1)))
     .sort((a, b) => (b.value ?? 0) - (a.value ?? 0))
 
   const partition = d3.partition<Entry>().size([2 * Math.PI, radius])
-
-  partition(root)
+  const root = partition(hierarchy)
 
   // Create SVG
   const svg = d3
@@ -111,7 +109,7 @@ async function renderSunburst() {
     .attr("stroke", "var(--light)")
     .attr("stroke-width", 0.5)
     .attr("cursor", "pointer")
-    .on("mouseenter", function (event, d) {
+    .on("mouseenter", function (_event, d) {
       d3.select(this).attr("fill-opacity", 1)
       if (d.depth === 1) {
         tooltip.textContent = d.data.name

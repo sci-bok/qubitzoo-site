@@ -13,7 +13,6 @@ last_updated: '2026-03-05'
 generated_by: seed-ingest-v1
 extracted_by: airtable-seed
 verified_by: pending
-published: 2003-01-01
 ---
 
 

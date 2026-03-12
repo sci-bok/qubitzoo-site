@@ -17,7 +17,6 @@ extracted_by: claude-code
 verified_by: codex
 disputes: 0
 generated_by: pipeline-v1
-published: 2008-01-01
 ---
 
 Trapped Ion Qubit is a ion trap qubit approach for quantum computing hardware. Source: latex text.

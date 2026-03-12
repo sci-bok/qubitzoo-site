@@ -19,7 +19,6 @@ tags:
   - semiconductor
   - quantum-dot
   - coherent-oscillation
-published: 2003-01-01
 ---
 
 # Coherent Manipulation of Electronic States in a Double Quantum Dot

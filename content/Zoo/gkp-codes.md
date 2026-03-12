@@ -19,7 +19,6 @@ generated_by: scibok-curation
 extracted_by: scibok
 verified_by: scibok
 figure_reviewed: true
-published: 2001-01-01
 ---
 
 

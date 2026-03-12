@@ -13,7 +13,6 @@ influence_score: 0.69
 last_updated: '2026-03-10'
 generated_by: scibok-curation
 verified_by: scibok
-published: 2008-01-01
 ---
 
 # Alkaline-Earth Neutral-Atom Clock Qubit

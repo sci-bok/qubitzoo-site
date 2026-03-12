@@ -18,7 +18,6 @@ novelty_flag: high
 extracted_by: scibok
 verified_by: scibok
 generated_by: scibok-curation
-published: 2004-01-01
 ---
 
 Seminal NV-center result demonstrating coherent control (Rabi oscillations) of a single electron spin in diamond.

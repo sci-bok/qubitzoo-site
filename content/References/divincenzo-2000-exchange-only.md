@@ -19,7 +19,6 @@ tags:
   - spin-qubit
   - decoherence-free-subspace
   - encoded-qubit
-published: 2000-01-01
 ---
 
 # Universal Quantum Computation with the Exchange Interaction

@@ -49,10 +49,10 @@ export const defaultContentPageLayout: PageLayout = {
       filterFn: (node) => {
         // Hide internal/working folders + Welcome
         const excluded = ["deleted", "Inbox", "Meta", "reports", "specs", "Welcome"]
-        return !excluded.includes(node.name)
+        return !excluded.includes(node.slugSegment)
       },
       mapFn: (node) => {
-        if (node.name === "index") {
+        if (node.slugSegment === "index") {
           node.displayName = "Home"
         }
         return node

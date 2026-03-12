@@ -13,7 +13,6 @@ influence_score: 0.71
 last_updated: '2026-03-10'
 generated_by: scibok-curation
 verified_by: scibok
-published: 1998-01-01
 ---
 
 # Linear-Optical Photonic Qubit

@@ -14,7 +14,6 @@ influence_score: 0.75
 last_updated: '2026-03-10'
 generated_by: scibok-curation
 verified_by: scibok
-published: 2002-01-01
 ---
 
 ## Description

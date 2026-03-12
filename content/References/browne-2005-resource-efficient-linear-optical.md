@@ -16,7 +16,6 @@ extracted_by: scibok-curation
 verified_by: scibok
 disputes: 0
 generated_by: pipeline-v1
-published: 2005-01-01
 ---
 
 Develops a resource-efficient linear-optical architecture that explicitly uses the cluster-state measurement-based model and fusion-style operations.

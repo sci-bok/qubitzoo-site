@@ -17,7 +17,6 @@ last_updated: '2026-03-10'
 generated_by: scibok-curation
 extracted_by: scibok
 verified_by: scibok
-published: 2009-01-01
 ---
 
 ## Description

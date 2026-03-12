@@ -3,8 +3,8 @@ title: Molecular MOC
 type: moc
 technology_family: Molecular
 note_count: 1
-last_updated: '2026-03-10'
-generated_by: scibok-curation
+last_updated: '2026-03-12'
+generated_by: pipeline-v1
 ---
 
 # Molecular MOC

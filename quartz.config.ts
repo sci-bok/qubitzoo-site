@@ -19,6 +19,7 @@ const config: QuartzConfig = {
       "deleted",
       "Inbox",
       "Meta",
+      "_meta",
       "reports",
       "specs",
       "Welcome.md",

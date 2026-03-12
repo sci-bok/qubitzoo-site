@@ -25,7 +25,6 @@ tags:
   - andreev-spin-qubit
   - semiconductor-superconductor
   - andreev-bound-state
-published: 2021-01-01
 ---
 
 # Coherent Manipulation of an Andreev Spin Qubit

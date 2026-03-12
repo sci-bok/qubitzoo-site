@@ -20,7 +20,6 @@ extracted_by: claude-code
 verified_by: codex
 disputes: 0
 generated_by: pipeline-v1
-published: 2025-01-01
 ---
 
 Quantum Interior Point Methods: A Review Of Developments And An Optimally Scaling Framework is a unknown other approach for quantum computing hardware. Source: latex text.

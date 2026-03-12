@@ -16,7 +16,6 @@ tags:
   - quantum-dot
   - exchange-interaction
   - foundational
-published: 1998-01-01
 ---
 
 # Quantum Computation with Quantum Dots

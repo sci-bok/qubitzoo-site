@@ -15,7 +15,6 @@ tags:
   - quantum-gate
   - foundational
   - phonon-bus
-published: 1995-01-01
 ---
 
 # Quantum Computations with Cold Trapped Ions

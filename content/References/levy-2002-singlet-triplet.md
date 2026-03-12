@@ -15,7 +15,6 @@ tags:
   - spin-qubit
   - exchange-interaction
   - encoded-qubit
-published: 2002-01-01
 ---
 
 # Universal Quantum Computation with Spin-1/2 Pairs and Heisenberg Exchange

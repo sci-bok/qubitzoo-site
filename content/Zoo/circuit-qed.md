@@ -20,7 +20,6 @@ generated_by: pipeline-v1
 extracted_by: claude-code
 verified_by: pending
 figure_reviewed: true
-published: 2004-01-01
 ---
 
 

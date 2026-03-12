@@ -18,7 +18,6 @@ tags:
   - superconducting-qubit
   - charging-effects
   - superinductance
-published: 2009-01-01
 ---
 
 # Charging Effects in the Inductively Shunted Josephson Junction

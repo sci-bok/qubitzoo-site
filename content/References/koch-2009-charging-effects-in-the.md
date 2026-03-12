@@ -18,7 +18,6 @@ extracted_by: claude-code
 verified_by: codex
 disputes: 0
 generated_by: pipeline-v1
-published: 2009-01-01
 ---
 
 Charging Effects In The Inductively Shunted Josephson Junction is a unknown other approach for quantum computing hardware. Source: latex text.

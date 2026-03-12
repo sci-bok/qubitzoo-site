@@ -15,7 +15,6 @@ generated_by: seed-ingest-v1
 extracted_by: airtable-seed
 verified_by: pending
 figure_reviewed: true
-published: 2002-01-01
 ---
 
 

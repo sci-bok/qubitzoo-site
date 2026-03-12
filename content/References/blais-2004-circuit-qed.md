@@ -19,7 +19,6 @@ extracted_by: claude-code
 verified_by: pending
 disputes: 0
 generated_by: pipeline-v1
-published: 2004-01-01
 ---
 
 Proposes circuit QED: coupling a Cooper pair box qubit to a 1D superconducting transmission line resonator to reach the strong-coupling regime of cavity QED on a chip.

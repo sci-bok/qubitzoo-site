@@ -16,7 +16,6 @@ extracted_by: scibok-curation
 verified_by: scibok
 disputes: 0
 generated_by: pipeline-v1
-published: 2000-01-01
 ---
 
 Foundational measurement-based model introducing cluster states as a universal substrate where computation proceeds via adaptive single-particle measurements.

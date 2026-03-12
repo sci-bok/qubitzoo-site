@@ -16,7 +16,6 @@ tags:
   - topological
   - nanowire
   - zero-bias-peak
-published: 2021-01-01
 ---
 
 # InAs-Al Hybrid Devices — Towards Topological Majorana Zero Modes

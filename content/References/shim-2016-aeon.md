@@ -20,7 +20,6 @@ tags:
   - always-on
   - charge-noise
   - spin-qubit
-published: 2016-01-01
 ---
 
 # Charge-Noise-Insensitive Gate Operations for Always-On, Always-Coupled Qubits

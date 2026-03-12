@@ -18,7 +18,6 @@ tags:
   - cooper-pair-box
   - first-demonstration
   - foundational
-published: 1999-01-01
 ---
 
 # Coherent Control of Macroscopic Quantum States in a Single-Cooper-Pair Box

@@ -13,7 +13,6 @@ tags:
   - superconducting-qubit
   - semiconductor-superconductor
   - gatemon
-published: 2024-01-01
 ---
 
 # Gatemonium

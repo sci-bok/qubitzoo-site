@@ -21,7 +21,6 @@ tags:
   - quantum-error-correction
   - binomial-code
   - cavity-qubit
-published: 2016-01-01
 ---
 
 # New Class of Quantum Error-Correcting Codes for a Bosonic Mode

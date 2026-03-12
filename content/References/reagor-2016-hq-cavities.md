@@ -29,7 +29,6 @@ tags:
   - quantum-memory
   - bosonic-qubit
   - millisecond-coherence
-published: 2016-01-01
 ---
 
 # Quantum Memory with Millisecond Coherence in Circuit QED
