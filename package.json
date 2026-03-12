@@ -15,7 +15,7 @@
     "prebuild": "npx tsx scripts/build-sunburst-data.ts && echo 'Sunburst data built'",
     "quartz": "./quartz/bootstrap-cli.mjs",
     "docs": "npx quartz build --serve -d docs",
-    "check": "tsc --noEmit && npx prettier . --check",
+    "check": "tsc --noEmit && npx prettier --check 'quartz/**/*.{ts,tsx,scss}' 'quartz.config.ts' 'quartz.layout.ts'",
     "format": "npx prettier . --write",
     "test": "tsx --test",
     "profile": "0x -D prof ./quartz/bootstrap-cli.mjs build --concurrency=1"

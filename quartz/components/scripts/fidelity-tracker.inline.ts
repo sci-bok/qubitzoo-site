@@ -91,7 +91,10 @@ async function renderFidelityTracker() {
   const svg = d3
     .select(container)
     .append("svg")
-    .attr("viewBox", `0 0 ${width + margin.left + margin.right} ${height + margin.top + margin.bottom}`)
+    .attr(
+      "viewBox",
+      `0 0 ${width + margin.left + margin.right} ${height + margin.top + margin.bottom}`,
+    )
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
     .style("max-width", "700px")
@@ -203,11 +206,13 @@ async function renderFidelityTracker() {
   // X axis labels (rotated)
   g.append("g")
     .attr("transform", `translate(0,${height})`)
-    .call(d3.axisBottom(x).tickFormat((slug) => {
-      const e = allEntries.find((e) => e.slug === slug)
-      const name = e?.title ?? slug
-      return name.length > 14 ? name.slice(0, 12) + "…" : name
-    }))
+    .call(
+      d3.axisBottom(x).tickFormat((slug) => {
+        const e = allEntries.find((e) => e.slug === slug)
+        const name = e?.title ?? slug
+        return name.length > 14 ? name.slice(0, 12) + "…" : name
+      }),
+    )
     .selectAll("text")
     .attr("transform", "rotate(-45)")
     .attr("text-anchor", "end")
@@ -228,10 +233,7 @@ async function renderFidelityTracker() {
 
   // Legend
   const legendG = svg.append("g").attr("transform", `translate(${margin.left + 5}, 24)`)
-  legendG
-    .append("path")
-    .attr("d", d3.symbol(d3.symbolDiamond, 30)())
-    .attr("fill", "var(--dark)")
+  legendG.append("path").attr("d", d3.symbol(d3.symbolDiamond, 30)()).attr("fill", "var(--dark)")
   legendG
     .append("text")
     .attr("x", 8)
