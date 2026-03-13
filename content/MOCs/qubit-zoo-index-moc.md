@@ -2,8 +2,8 @@
 title: Qubit Zoo Index MOC
 type: moc
 technology_family: index
-note_count: 44
-last_updated: '2026-03-12'
+note_count: 52
+last_updated: '2026-03-13'
 generated_by: pipeline-moc-v1
 ---
 
@@ -20,6 +20,7 @@ Top-level navigation for the Qubit Zoo by technology family.
 - [[super-semi-moc]] (3 entries)
 - [[superconducting-moc]] (16 entries)
 - [[topological-moc]] (4 entries)
+- [[unknown-moc]] (8 entries)
 
 ## Editorial policy
 

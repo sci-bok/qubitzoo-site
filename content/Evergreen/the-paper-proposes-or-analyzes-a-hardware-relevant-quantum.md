@@ -1,11 +1,11 @@
 ---
-source_paper: '[[rohe-2024-from-problem-to-solution]]'
+source_paper: '[[jain-2026-quantum-information-advantage-based]]'
 qubit_types:
-- '[[from-problem-to-solution-a-general-pipeline-to-solve]]'
+- '[[quantum-information-advantage-based-on-bell-inequalities]]'
 tags:
 - other
 - unknown
-date_created: '2026-03-12'
+date_created: '2026-03-13'
 influence_score: 0.31
 verification_confidence: confirmed
 generated_by: pipeline-v1

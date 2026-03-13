@@ -1,6 +1,6 @@
 {
   "schema": "qubitzoo.genealogy.v1",
-  "generated_at": "2026-03-12T14:15:56.339630+00:00",
+  "generated_at": "2026-03-13T14:02:15.667797+00:00",
   "nodes": [
     {
       "id": "0-pi-qubit",
@@ -10,6 +10,15 @@
       "status": "seed",
       "color": "#3b82f6",
       "influence": 0.76
+    },
+    {
+      "id": "a-note-on-large-scale-quantum-chemistry-on-quantum",
+      "title": "A Note On Large Scale Quantum Chemistry On Quantum Computers: The Case Of",
+      "family": "Unknown",
+      "year": 2026,
+      "status": "demonstrated",
+      "color": "#6b7280",
+      "influence": 0.68
     },
     {
       "id": "a-tunable-coupling-scheme-for-implementing-high-fidelity",
@@ -145,6 +154,15 @@
       "status": "seed",
       "color": "#22c55e",
       "influence": 0.0
+    },
+    {
+      "id": "experimental-realization-of-the-markov-chain-monte-carlo",
+      "title": "Experimental Realization Of The Markov Chain Monte Carlo Algorithm On A Quantum",
+      "family": "Unknown",
+      "year": 2026,
+      "status": "demonstrated",
+      "color": "#6b7280",
+      "influence": 0.68
     },
     {
       "id": "flux-qubit",
@@ -336,6 +354,24 @@
       "influence": 0.7
     },
     {
+      "id": "practical-implementation-of-arbitrary-nonlocal-controlled",
+      "title": "Practical Implementation Of Arbitrary Nonlocal Controlled Unitary Gate Via",
+      "family": "Unknown",
+      "year": 2026,
+      "status": "demonstrated",
+      "color": "#6b7280",
+      "influence": 0.68
+    },
+    {
+      "id": "quantum-information-advantage-based-on-bell-inequalities",
+      "title": "Quantum Information Advantage Based On Bell Inequalities",
+      "family": "Unknown",
+      "year": 2026,
+      "status": "demonstrated",
+      "color": "#6b7280",
+      "influence": 0.68
+    },
+    {
       "id": "rx-qubit",
       "title": "RX Qubit (Resonant Exchange)",
       "family": "Semiconducting",
@@ -408,6 +444,15 @@
       "influence": 0.83
     },
     {
+      "id": "symmetry-based-perturbation-theory-for-electronic-structure",
+      "title": "Symmetry Based Perturbation Theory For Electronic Structure Calculations",
+      "family": "Unknown",
+      "year": 2026,
+      "status": "demonstrated",
+      "color": "#6b7280",
+      "influence": 0.68
+    },
+    {
       "id": "transmon",
       "title": "Transmon",
       "family": "Superconducting",
@@ -424,6 +469,15 @@
       "status": "demonstrated",
       "color": "#eab308",
       "influence": 0.92
+    },
+    {
+      "id": "visualization-of-three-qubit-pure-states-with-separation-of",
+      "title": "Visualization Of Three Qubit Pure States With Separation Of Local And Nonlocal",
+      "family": "Unknown",
+      "year": 2026,
+      "status": "demonstrated",
+      "color": "#6b7280",
+      "influence": 0.68
     },
     {
       "id": "xmon",

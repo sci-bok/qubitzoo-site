@@ -3,7 +3,7 @@ title: Semiconducting MOC
 type: moc
 technology_family: Semiconducting
 note_count: 10
-last_updated: '2026-03-12'
+last_updated: '2026-03-13'
 generated_by: pipeline-moc-v1
 ---
 
