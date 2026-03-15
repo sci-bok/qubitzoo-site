@@ -8,7 +8,7 @@ authors:
 year: 2009
 journal: Science
 doi: 10.1126/science.1175552
-arxiv_id:
+arxiv_id: '0906.0831'
 language: en
 date_ingested: '2026-03-10'
 verification_status: curated
@@ -23,4 +23,4 @@ Seminal fluxonium paper introducing the superinductance-shunted Josephson circui
 
 ## Links
 - **Journal:** [Science](https://doi.org/10.1126/science.1175552)
-- **arXiv:** [language: en](https://arxiv.org/abs/language: en)
+- **arXiv:** [0906.0831](https://arxiv.org/abs/0906.0831)

@@ -9,7 +9,7 @@ authors:
 year: 2004
 journal: Physical Review Letters
 doi: 10.1103/PhysRevLett.92.076401
-arxiv_id:
+arxiv_id: null
 language: en
 date_ingested: '2026-03-10'
 verification_status: curated
@@ -24,4 +24,3 @@ Seminal NV-center result demonstrating coherent control (Rabi oscillations) of a
 
 ## Links
 - **Journal:** [Physical Review Letters](https://doi.org/10.1103/PhysRevLett.92.076401)
-- **arXiv:** [language: en](https://arxiv.org/abs/language: en)

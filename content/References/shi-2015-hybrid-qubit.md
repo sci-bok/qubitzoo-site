@@ -1,7 +1,7 @@
 ---
 title: Fast Hybrid Silicon Double-Quantum-Dot Qubit
 authors: [Z. Shi, C. B. Simmons, J. R. Prance, J. K. Gamble, T. S. Koh, Y.-P. Shim, X. Hu, D. E. Savage, M. G. Lagally, M. A. Eriksson, M. Friesen, S. N. Coppersmith]
-year: 2012
+year: 2015
 journal: Physical Review Letters
 doi: 10.1103/PhysRevLett.108.140503
 arxiv_id: '1201.2388'

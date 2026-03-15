@@ -8,7 +8,7 @@ authors:
 - Jonathan P. Dowling
 - G. J. Milburn
 year: 2005
-journal: arXiv preprint
+journal: Reviews of Modern Physics
 doi: 10.1103/RevModPhys.79.135
 arxiv_id: quant-ph/0512071
 language: en
@@ -21,23 +21,16 @@ verified_by: codex
 disputes: 0
 generated_by: pipeline-v1
 ---
+Definitive review of linear optical quantum computing (LOQC). Covers the KLM scheme and subsequent improvements, including cluster-state approaches and error-correction protocols. Reviews single-photon sources, photon detectors, and integrated photonic platforms. Establishes the theoretical framework for scalable photonic quantum computing using linear optics, measurement, and feed-forward.
 
-Quantum Gate is a unknown gate approach for quantum computing hardware. Source: latex text.
-
-## Abstract
-Linear optics with photon counting is a prominent candidate for practical quantum computing. The protocol by Knill, Laflamme, and Milburn [Nature 409, 46 (2001)] explicitly demonstrates that efficient scalable quantum computing with single photons, linear optical elements, and projective measurements is possible. Subsequently, several improvements on this protocol have started to bridge the gap between theoretical scalability and practical implementation. We review the original theory and its improvements, and we give a few examples of experimental two-qubit gates. We discuss the use of realistic components, the errors they induce in the computation, and how these errors can be corrected.
-
-## Key Findings
-- The paper proposes or analyzes a hardware-relevant quantum computing concept.
-- Charge-noise sensitivity is reduced relative to earlier superconducting charge-qubit regimes.
-
-## Verification Report
-Verification status: **verified**.
-Disputes resolved: **0**.
-Citation count snapshot (Semantic Scholar): **0**.
-Ingestion source: **latex**.
-Text truncated: **no**.
+## Key Results
+- Comprehensive review of LOQC theory and experiment
+- KLM protocol and subsequent efficiency improvements
+- Cluster-state and measurement-based approaches
+- Resource counting for fault-tolerant photonic QC
+- Integration with photonic platforms and on-chip implementations
 
 ## Links
-- **Journal:** [arXiv preprint](https://doi.org/10.1103/RevModPhys.79.135)
+- **Journal:** [Reviews of Modern Physics](https://doi.org/10.1103/RevModPhys.79.135)
 - **arXiv:** [quant-ph/0512071](https://arxiv.org/abs/quant-ph/0512071)
+

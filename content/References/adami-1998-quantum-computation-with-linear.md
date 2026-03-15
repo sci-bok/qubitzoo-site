@@ -4,8 +4,8 @@ authors:
 - C. Adami
 - N. J. Cerf
 year: 1998
-journal: arXiv preprint
-doi: null
+journal: Lecture Notes in Computer Science (Springer)
+doi: 10.1007/3-540-49208-9_12
 arxiv_id: quant-ph/9806048
 language: en
 date_ingested: '2026-03-09'
@@ -17,21 +17,15 @@ verified_by: codex
 disputes: 0
 generated_by: pipeline-v1
 ---
+Early proposal for quantum computation using linear optical components. Shows how to translate quantum circuits into optical implementations using beam splitters, phase shifters, and photon detectors. Represents multiple qubits using a single photon in multiple modes (dual-rail encoding). Demonstrates the method with an optical implementation of Brassard et al.'s teleportation circuit.
 
-Quantum Gate is a unknown gate approach for quantum computing hardware. Source: latex text.
-
-## Abstract
-We present a constructive method to translate small quantum circuits into their optical analogues, using linear components of present-day quantum optics technology only. These optical circuits perform precisely the computation that the quantum circuits are designed for, and can thus be used to test the performance of quantum algorithms. The method relies on the representation of several quantum bits by a single photon, and on the implementation of universal quantum gates using simple optical components (beam splitters, phase shifters, etc.). The optical implementation of Brassard et al.'s teleportation circuit, a non-trivial 3-bit quantum computation, is presented as an illustration.
-
-## Key Findings
-- The paper proposes or analyzes a hardware-relevant quantum computing concept.
-
-## Verification Report
-Verification status: **verified**.
-Disputes resolved: **0**.
-Citation count snapshot (Semantic Scholar): **0**.
-Ingestion source: **latex**.
-Text truncated: **no**.
+## Key Results
+- Constructive method to map quantum circuits to linear optical implementations
+- Multi-qubit encoding using single photons across multiple spatial modes
+- Demonstrated with 3-qubit teleportation circuit
+- Uses only present-day optical components (beam splitters, phase shifters)
 
 ## Links
+- **Journal:** [Lecture Notes in Computer Science (Springer)](https://doi.org/10.1007/3-540-49208-9_12)
 - **arXiv:** [quant-ph/9806048](https://arxiv.org/abs/quant-ph/9806048)
+

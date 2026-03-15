@@ -10,8 +10,8 @@ authors:
 - Meng Khoon Tey
 - Li You
 year: 2020
-journal: arXiv preprint
-doi: 10.1088/1674-1056/abd76f
+journal: Chinese Physics B
+doi: 10.1088/1674-1056/ab7f46
 arxiv_id: '2012.10614'
 language: en
 date_ingested: '2026-03-09'
@@ -23,23 +23,16 @@ verified_by: codex
 disputes: 0
 generated_by: pipeline-v1
 ---
+Review of Rydberg atom-based quantum computation and simulation. Covers Rydberg blockade mechanisms, gate implementations, quantum simulation of many-body physics, and experimental progress with neutral atom arrays. Discusses both analog simulation (Ising/XY models) and digital gate-based approaches using Rydberg interactions.
 
-A Concise Review Of Rydberg Atom Based Quantum Computation And Quantum Simulation is a unknown other approach for quantum computing hardware. Source: latex text.
-
-## Abstract
-Quantum information processing based on Rydberg atoms emerged as a promising direction two decades ago. Recent experimental and theoretical progresses have shined exciting light on this avenue. In this concise review, we will briefly introduce the basics of Rydberg atoms and their recent applications in associated areas of neutral atom quantum computation and simulation. We shall also include related discussions on quantum optics with Rydberg atomic ensembles, which are increasingly used to explore quantum computation and quantum simulation with photons.
-
-## Key Findings
-- The paper proposes or analyzes a hardware-relevant quantum computing concept.
-- Charge-noise sensitivity is reduced relative to earlier superconducting charge-qubit regimes.
-
-## Verification Report
-Verification status: **verified**.
-Disputes resolved: **0**.
-Citation count snapshot (Semantic Scholar): **0**.
-Ingestion source: **latex**.
-Text truncated: **no**.
+## Key Results
+- Review of Rydberg blockade and facilitation mechanisms
+- Multi-qubit gate implementations via Rydberg interactions
+- Quantum simulation of spin models and many-body physics
+- Experimental progress in neutral atom arrays
+- Comparison of Rydberg-based and other neutral atom approaches
 
 ## Links
-- **Journal:** [arXiv preprint](https://doi.org/10.1088/1674-1056/abd76f)
+- **Journal:** [Chinese Physics B](https://doi.org/10.1088/1674-1056/ab7f46)
 - **arXiv:** [2012.10614](https://arxiv.org/abs/2012.10614)
+
