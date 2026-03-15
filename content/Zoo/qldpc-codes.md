@@ -1,7 +1,7 @@
 ---
 title: Quantum Low-Density Parity-Check (qLDPC) Codes
 entry_type: qubit
-technology_family: Topological
+technology_family: Codes
 status: proposed
 first_proposed_year: 2021
 keywords:

@@ -1,7 +1,7 @@
 ---
 title: Color-Code Logical Qubit
 entry_type: qubit
-technology_family: Topological
+technology_family: Codes
 status: demonstrated
 first_proposed_year: 2006
 keywords:

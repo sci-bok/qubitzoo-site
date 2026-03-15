@@ -78,6 +78,8 @@ which motivates long wires and hard-gap devices for robust parity protection.
 - [[aghaee-2021-majorana-spectroscopy]]
 
 ## Related Entries
+- [[planar-josephson-junction-qubit]]
+- [[tetron-qubit]]
 
 - [[majorana-topological-qubit]]
 - [[surface-code-logical-qubit]]
