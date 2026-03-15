@@ -50,10 +50,13 @@ QCCD shuttling addresses the core scaling problem of trapped-ion systems: long c
 |--------|-------|-------|--------------------|
 | Transport speed | 10–100 μs / hop | Device dependent | — |
 | Added motional excitation | <1 phonon (optimized) | Key transport quality metric | — |
-| 2Q gate fidelity | 99%+ | In interaction zones | — |
+| 2Q gate fidelity | 99%+ | In interaction zones | [Moses et al. 2023](https://doi.org/10.48550/arXiv.2305.03828) |
 | Main scaling bottleneck | transport scheduling + heating | architecture-level challenge | — |
+
+## Linked Papers
+- [[kielpinski-2002-shuttling]]
 
 ## Related Entries
 
 - [[trapped-ion-qubit]]
-- [[cirac-zoller-gate-for-trapped-ion-qubits]]
+- [[cirac-zoller-gate]]

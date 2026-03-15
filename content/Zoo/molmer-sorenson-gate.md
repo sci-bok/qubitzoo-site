@@ -47,11 +47,14 @@ The Mølmer-Sørensen gate became dominant because it is experimentally robust: 
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| 2Q gate fidelity | 99.5–99.9% | state of the art trapped-ion gates | — |
+| 2Q gate fidelity | 99.5–99.9% | state of the art trapped-ion gates | [Ballance et al. 2016](https://doi.org/10.1103/PhysRevLett.117.060504) |
 | Gate time | 10–200 μs | detuning/fidelity tradeoff | — |
 | Cooling requirement | no ground-state requirement (robust variants) | major practical advantage | — |
+
+## Linked Papers
+- [[sorensen-1999-ms-gate]]
 
 ## Related Entries
 
 - [[trapped-ion-qubit]]
-- [[cirac-zoller-gate-for-trapped-ion-qubits]]
+- [[cirac-zoller-gate]]

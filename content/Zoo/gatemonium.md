@@ -33,6 +33,9 @@ Tunable super semi fluxonium: tune between different parameter regimes of fluxon
 ## References
 - https://arxiv.org/abs/2406.09002
 
+## Linked Papers
+- [[strickland-2024-gatemonium]]
+
 ## Related Entries
 - [[gatemon]]
 - [[fluxonium]]
@@ -56,7 +59,7 @@ where $E_J(V_g)$ is voltage-tunable via the semiconductor channel. This enables 
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| Qubit coherence $T_1$ | TBD | Early-stage device (2024) | — |
+| Qubit coherence $T_1$ | TBD | Early-stage device (2024) | [Strickland et al. 2024](https://arxiv.org/abs/2406.09002) |
 | Qubit coherence $T_2$ | TBD |  | — |
 | $E_J$ tunability | Gate voltage | No flux bias needed | — |
 | Anharmonicity | Large (fluxonium-like) | $E_L \ll E_J$ | — |

@@ -71,7 +71,7 @@ Trapped ions offer natural identical qubits (every $^{171}\text{Yb}^+$ ion is id
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| $T_1$ | >10,000 s (hyperfine) | Hyperfine ground states have no decay | — |
+| $T_1$ | >10,000 s (hyperfine) | Hyperfine ground states have no decay | [Bruzewicz et al. 2019](https://doi.org/10.1103/RevModPhys.91.025001) |
 | $T_2$ (echo) | >600 s | $^{171}\text{Yb}^+$ with DD sequences | — |
 | 1Q gate fidelity | 99.9999% | $^{43}\text{Ca}^+$ RB (Harty et al. 2014) | [Harty 2014](https://doi.org/10.1103/PhysRevLett.113.220501) |
 | 2Q gate fidelity | 99.9% | MS gate, $^{43}\text{Ca}^+$ | [Ballance 2016](https://doi.org/10.1103/PhysRevLett.117.060504) |
@@ -94,5 +94,5 @@ Trapped ions offer natural identical qubits (every $^{171}\text{Yb}^+$ ion is id
 
 ## Related Entries
 
-- [[cirac-zoller-gate-for-trapped-ion-qubits]]
+- [[cirac-zoller-gate]]
 - [[rydberg-neutral-atom-qubit]]

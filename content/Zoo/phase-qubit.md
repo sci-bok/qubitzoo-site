@@ -2,7 +2,7 @@
 title: Phase Qubit
 entry_type: qubit
 technology_family: Superconducting
-status: seed
+status: demonstrated
 seed_id: '2'
 seed_source: qubitzoo-airtable
 first_proposed_year: 2002
@@ -56,12 +56,15 @@ The phase qubit provided early demonstrations of quantum coherence and entanglem
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| $T_1$ | 0.5–5 μs | Limited by dielectric loss | — |
+| $T_1$ | 0.5–5 μs | Limited by dielectric loss | [Martinis et al. 2002](https://doi.org/10.1103/PhysRevLett.89.117901) |
 | $T_2$ | 0.1–2 μs | Bias noise dominated | — |
 | Anharmonicity | 1–5% of $\omega_{01}$ | Cubic potential shape | — |
 | Transition frequency | 5–10 GHz | Tunable via bias current | — |
 | Readout fidelity | 85–96% | Tunneling-based, destructive | — |
 | Operating temperature | 10–25 mK | Dilution refrigerator | — |
+
+## Linked Papers
+- [[martinis-2002-phase-qubit]]
 
 ## Related Entries
 

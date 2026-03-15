@@ -6,6 +6,7 @@ tags:
 - circuit-qed
 - strong-coupling
 created: '2026-03-05'
+status: evergreen
 ---
 
 The rms vacuum voltage in a transmission line resonator scales as:

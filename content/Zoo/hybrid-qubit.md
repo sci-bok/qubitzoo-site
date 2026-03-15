@@ -51,6 +51,9 @@ Pure spin qubits can be coherence-rich but slower to drive electrically; pure ch
 | 1Q fidelity | ~99% | platform dependent | — |
 | Main tradeoff | speed vs charge-noise sensitivity | core design tension | — |
 
+## Linked Papers
+- [[shi-2015-hybrid-qubit]]
+
 ## Related Entries
 
 - [[exchange-only-qubit]]

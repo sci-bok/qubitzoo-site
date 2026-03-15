@@ -57,6 +57,9 @@ Molecular qubits offer a distinct advantage over lithographic platforms: the qub
 | Addressability | Ensemble/single-molecule emerging | Readout remains a bottleneck | — |
 | Main challenge | Decoherence + control integration | Interface to circuit/QED hardware | — |
 
+## Linked Papers
+- [[yu-2023-molecular-qubit]]
+
 ## Related Entries
 
 - [[nv-center-qubit]]

@@ -1,7 +1,7 @@
 ---
 title: "Heisenberg Exchange in Quantum Dots"
 type: evergreen
-status: seed
+status: evergreen
 tags:
   - exchange-interaction
   - quantum-dot
@@ -20,7 +20,7 @@ where the exchange constant $J(t) = 4t_0^2(t)/u$ depends on the tunneling matrix
 ## Key Properties
 
 - **Purely electrical control**: Modulated by gate voltages on the tunnel barrier, not by magnetic fields or microwave drives.
-- **Always-on problem**: In practice, residual exchange $J$ is never perfectly zero — motivates [[always-on-exchange-only-aeon]] and dynamical decoupling schemes.
+- **Always-on problem**: In practice, residual exchange $J$ is never perfectly zero — motivates [[aeon-qubit]] and dynamical decoupling schemes.
 - **Validity conditions**: Requires single-band approximation ($u > t_0$), adiabatic pulsing ($\tau_s > \hbar/\Delta E$), and $\Delta E \gg kT$.
 - **Swap and $\sqrt{\text{SWAP}}$**: Pulsing $J$ for $\int J\,dt = \pi$ gives SWAP; half that gives [[sqrt-swap-as-universal-gate]].
 
@@ -31,5 +31,5 @@ Three aligned dots with a higher-energy middle dot provide superexchange: $J = 4
 ## References
 
 - [[loss-divincenzo-1998-quantum-dots]] — original proposal
-- [[single-spin-quantum-dot-loss-divincenzo-qubit]]
+- [[loss-divincenzo-qubit]]
 - [[exchange-only-qubit]]

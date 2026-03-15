@@ -63,12 +63,12 @@ NV centers operate at room temperature, can be optically initialized and read ou
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| Electron $T_1$ | >1 hour (77 K) | At room temperature: ~5 ms | — |
-| Electron $T_2$ (echo) | 1–2 ms (RT) | In isotopically pure $^{12}\text{C}$ diamond | — |
-| Nuclear $T_2$ ($^{13}\text{C}$) | >1 s | Used as quantum memory | — |
-| 1Q gate fidelity | 99–99.9% | Microwave ESR at RT | — |
-| 2Q gate fidelity | 95–99% | NV-$^{13}$C hyperfine gate | — |
-| Readout fidelity | 95% (RT), >99% (cryo) | ODMR; improved with SIL or cavity | — |
+| $T_1$ (electron spin) | >1 hour (77 K); ~5 ms (RT) | Unique room-temperature operation possible | [Astner et al. 2018](https://doi.org/10.1038/s41563-017-0008-y) |
+| $T_2$ (electron, echo) | 1–2 ms (RT) | In isotopically pure $^{12}\text{C}$ diamond | [Balasubramanian et al. 2009](https://doi.org/10.1038/nmat2420) |
+| $T_2$ (nuclear $^{13}\text{C}$) | >1 s | Used as quantum memory | [Maurer et al. 2012](https://doi.org/10.1126/science.1220513) |
+| 1Q gate fidelity | 99.9–99.999% | SOTA 99.999% via GST (Fujitsu/QuTech 2025) | [Rong et al. 2015](https://doi.org/10.1038/ncomms9748), [Bradley et al. 2019](https://doi.org/10.1103/PhysRevX.9.031045) |
+| 2Q gate fidelity | 97–99.93% | NV-$^{13}$C hyperfine gate; SOTA 99.93% GST (2025) | [Bradley et al. 2019](https://doi.org/10.1103/PhysRevX.9.031045) |
+| Readout fidelity | 95% (RT), >99% (cryo) | ODMR; improved with SIL or cavity | [Robledo et al. 2011](https://doi.org/10.1038/nature10401) |
 | Zero-field splitting $D$ | 2.87 GHz | Temperature-dependent (~77 kHz/K) | — |
 | Photon emission wavelength | 637 nm (ZPL) | Debye-Waller factor ~3%; rest in phonon sideband | — |
 | Operating temperature | 4 K – 300 K | Unique room-temperature operation | — |
@@ -79,4 +79,4 @@ NV centers operate at room temperature, can be optically initialized and read ou
 
 ## Related Entries
 
-- [[single-spin-quantum-dot-loss-divincenzo-qubit]]
+- [[loss-divincenzo-qubit]]

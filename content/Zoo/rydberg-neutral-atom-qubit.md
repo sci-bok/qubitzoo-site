@@ -54,8 +54,14 @@ suppresses double excitation $|rr\rangle$, enabling controlled-phase entangling 
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| Demonstrated two-qubit gate mechanism | Rydberg blockade | Foundational proposal and subsequent implementations | [[jaksch-2000-fast-quantum-gates-for]] |
-| Typical architecture scale target | 100–1000+ physical atoms | Scalability emphasized in neutral-atom reviews | [[henriet-2020-quantum-computing-with-neutral]], [[wu-2020-a-concise-review-of]] |
+| $T_1$ (qubit lifetime) | 1–10 s | Hyperfine clock states in optical traps; vacuum-limited | [Evered et al. 2023](https://doi.org/10.1038/s41586-023-06927-3) |
+| $T_2$ (coherence) | 1–4 s | With spin-echo; limited by trap-induced dephasing | [Evered et al. 2023](https://doi.org/10.1038/s41586-023-06927-3) |
+| 1Q gate fidelity | 99.5–99.90% | Global and local Raman gates | [Evered et al. 2023](https://doi.org/10.1038/s41586-023-06927-3) |
+| 2Q gate fidelity (CZ) | 99.5% | Rydberg blockade CZ; SOTA with erasure conversion | [Evered et al. 2023](https://doi.org/10.1038/s41586-023-06927-3) |
+| Gate time (2Q) | 200–500 ns | Rydberg pulse sequence | [Evered et al. 2023](https://doi.org/10.1038/s41586-023-06927-3) |
+| Architecture scale | 100–1000+ physical atoms | Optical tweezer arrays; reconfigurable | [[henriet-2020-quantum-computing-with-neutral]], [[wu-2020-a-concise-review-of]] |
+| 2Q gate mechanism | Rydberg blockade | $C_6/R^6$ van der Waals interaction | [[jaksch-2000-fast-quantum-gates-for]] |
+| Operating temperature | ~10–50 μK | Laser-cooled; in ultrahigh vacuum | [Evered et al. 2023](https://doi.org/10.1038/s41586-023-06927-3) |
 | Fault-tolerant logical gate regime | Not yet established | Active experimental frontier | [[henriet-2020-quantum-computing-with-neutral]] |
 
 ## Linked Papers

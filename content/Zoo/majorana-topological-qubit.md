@@ -79,6 +79,6 @@ which motivates long wires and hard-gap devices for robust parity protection.
 
 ## Related Entries
 
-- [[coulomb-blockade-spectroscopy-towards-topological-majorana]]
+- [[majorana-topological-qubit]]
 - [[surface-code-logical-qubit]]
 - [[color-code-logical-qubit]]

@@ -46,6 +46,9 @@ Color codes are a leading alternative to surface code when gate-transversality a
 | Qubit overhead | Comparable order to surface code | Constants depend on layout | — |
 | Experimental status | Early-scale demonstrations | Not yet full fault-tolerant stack | — |
 
+## Linked Papers
+- [[bombin-2006-color-codes]]
+
 ## Related Entries
 
 - [[surface-code-logical-qubit]]

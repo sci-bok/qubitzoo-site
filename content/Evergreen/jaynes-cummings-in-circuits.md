@@ -5,6 +5,7 @@ tags:
 - jaynes-cummings
 - superconducting
 created: '2026-03-05'
+status: evergreen
 ---
 
 At the charge degeneracy point ($N_g = 1/2$) of a Cooper pair box inside a transmission line resonator, the full circuit Hamiltonian reduces exactly to the Jaynes-Cummings Hamiltonian of atomic cavity QED. The qubit splitting $\Omega = E_J$ is set by the Josephson energy, and the coupling $g = (\beta e/\hbar)\sqrt{\hbar\omega_r/cL}$ is determined entirely by geometry and circuit parameters.

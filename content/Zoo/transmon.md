@@ -70,14 +70,14 @@ The Cooper pair box suffered from extreme sensitivity to $1/f$ charge noise, lim
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
 | $T_1$ | 100–500 μs | Planar: ~100–300 μs; 3D cavity: >500 μs | [Koch 2007](https://doi.org/10.1103/PhysRevA.76.042319) |
-| $T_2$ (echo) | 100–500 μs | Often $T_2 \approx 2T_1$ with echo | — |
+| $T_2$ (echo) | 100–500 μs | Often $T_2 \approx 2T_1$ with echo | [Place et al. 2021](https://doi.org/10.1038/s41467-021-22030-5) |
 | Anharmonicity $\alpha/2\pi$ | −200 to −350 MHz | $\approx -E_C/\hbar$ | [Koch 2007](https://doi.org/10.1103/PhysRevA.76.042319) |
 | $E_J/E_C$ | 20–100 | Typical operating regime | [Koch 2007](https://doi.org/10.1103/PhysRevA.76.042319) |
-| 1Q gate fidelity | 99.9–99.99% | Randomized benchmarking | — |
-| 2Q gate fidelity (CZ/CR) | 99.0–99.9% | Cross-resonance or tunable coupler | — |
-| Readout fidelity | 97–99.9% | Dispersive, with Purcell filter + JPA | — |
-| Gate time (1Q) | 20–50 ns | DRAG pulse | — |
-| Gate time (2Q) | 100–400 ns | Depends on gate scheme | — |
+| 1Q gate fidelity | 99.9–99.99% | Randomized benchmarking; SOTA 99.9926% (Li et al. 2023) | [Arute et al. 2019](https://doi.org/10.1038/s41586-019-1666-5), [Li et al. 2023](https://doi.org/10.1038/s41534-023-00781-x) |
+| 2Q gate fidelity (CZ/CR) | 99.0–99.9% | Cross-resonance or tunable coupler; Sycamore 99.4% CZ, Willow 99.7–99.85% | [Arute et al. 2019](https://doi.org/10.1038/s41586-019-1666-5), [Google Willow 2024](https://doi.org/10.1038/s41586-024-08449-y) |
+| Readout fidelity | 97–99.9% | Dispersive, with Purcell filter + JPA | [Arute et al. 2019](https://doi.org/10.1038/s41586-019-1666-5) |
+| Gate time (1Q) | 20–50 ns | DRAG pulse | [Arute et al. 2019](https://doi.org/10.1038/s41586-019-1666-5) |
+| Gate time (2Q) | 100–400 ns | Depends on gate scheme | [Arute et al. 2019](https://doi.org/10.1038/s41586-019-1666-5) |
 | Transition frequency | 4–6 GHz | Design-tunable | — |
 | Operating temperature | 10–20 mK | Dilution refrigerator | — |
 | Chip footprint per qubit | ~300 μm × 300 μm | Pad + junction + readout resonator | — |

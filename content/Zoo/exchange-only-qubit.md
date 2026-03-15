@@ -39,11 +39,14 @@ This qubit has inherent protection against fluctuation of global magnetic field.
 - https://journals.aps.org/pra/abstract/10.1103/PhysRevA.63.042307
 - http://advances.sciencemag.org/content/1/4/e1500214
 
+## Linked Papers
+- [[divincenzo-2000-exchange-only]]
+
 ## Related Entries
 - [[singlet-triplet-qubit]]
 - [[rx-qubit]]
 - [[hybrid-qubit]]
-- [[always-on-exchange-only-aeon]]
+- [[aeon-qubit]]
 
 ## Seed Metadata
 - date_published: 2000-11-16
@@ -60,7 +63,7 @@ Universal control uses only pairwise Heisenberg exchange $J_{ij}\,\vec{S}_i \cdo
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| Qubit coherence $T_1$ | >1 s | Spin relaxation | — |
+| Qubit coherence $T_1$ | >1 s | Spin relaxation | [DiVincenzo et al. 2000](https://doi.org/10.1038/35042541) |
 | Qubit coherence $T_2$ | 1–100 μs | DFS protects against uniform $B$ noise | — |
 | Gate fidelity (1Q) | 99–99.5% | All-exchange rotations | https://www.nature.com/articles/35042541 |
 | Gate fidelity (2Q) | 95–99% | Between adjacent triples | https://www.nature.com/articles/35042541 |
@@ -73,6 +76,6 @@ Universal control uses only pairwise Heisenberg exchange $J_{ij}\,\vec{S}_i \cdo
 
 ## Related Qubits
 
-- [[single-spin-quantum-dot-loss-divincenzo-qubit]] — single-spin ancestor
+- [[loss-divincenzo-qubit]] — single-spin ancestor
 - [[singlet-triplet-qubit]] — two-spin encoding (needs gradient)
-- [[always-on-exchange-only-aeon]] — always-on variant
+- [[aeon-qubit]] — always-on variant

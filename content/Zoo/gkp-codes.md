@@ -2,7 +2,7 @@
 title: GKP Qubit (Gottesman-Kitaev-Preskill Code)
 entry_type: qubit
 technology_family: Superconducting
-status: seed
+status: demonstrated
 seed_id: '15'
 seed_source: qubitzoo-airtable
 first_proposed_year: 2001
@@ -78,8 +78,11 @@ GKP codes protect against the dominant error channel in bosonic systems — smal
 | Error correction threshold | ~10 dB squeezing | Below this, QEC helps | [GKP 2001](https://doi.org/10.1103/PhysRevA.64.012310) |
 | Operating temperature | 10–20 mK | Superconducting implementation | — |
 
+## Linked Papers
+- [[gottesman-2001-gkp]]
+
 ## Related Entries
 
 - [[cat-codes]]
 - [[circuit-qed]]
-- [[binomial-code-fault-tolerant-logical-qubits-encoded-in]]
+- [[binomial-codes]]

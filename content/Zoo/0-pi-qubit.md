@@ -2,7 +2,7 @@
 title: 0-π Qubit
 entry_type: qubit
 technology_family: Superconducting
-status: seed
+status: demonstrated
 first_proposed_year: 2013
 keywords:
 - 0-pi qubit
@@ -48,6 +48,9 @@ with design target $E_L \ll E_J$ and anisotropic capacitances producing disjoint
 | Dominant challenge | Disorder / parameter spread | Breaks ideal protection symmetry | — |
 | Experimental status | Early prototypes / partial regimes | Not yet transmon-level maturity | — |
 | Operating temperature | 10–20 mK | Dilution refrigerator | — |
+
+## Linked Papers
+- [[brooks-2013-0-pi-qubit]]
 
 ## Related Entries
 

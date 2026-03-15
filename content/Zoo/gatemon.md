@@ -2,7 +2,7 @@
 title: Gatemon
 entry_type: qubit
 technology_family: Super-Semi
-status: seed
+status: demonstrated
 seed_id: '11'
 seed_source: qubitzoo-airtable
 first_proposed_year: 2015
@@ -60,8 +60,12 @@ Flux-tunable transmons require magnetic flux bias lines that add wiring complexi
 | $T_1$ | 1–10 μs | Limited by semiconductor junction loss | [Larsen 2015](https://doi.org/10.1103/PhysRevLett.115.127001) |
 | $T_2$ | 1–5 μs | Dominated by charge and junction noise | — |
 | Frequency tunability | 4–8 GHz | Via gate voltage | — |
-| 1Q gate fidelity | 98–99.5% | Improving with materials | — |
+| 1Q gate fidelity | 98–99.5% | Improving with materials | [Larsen et al. 2015](https://doi.org/10.1103/PhysRevLett.115.127001) |
 | Operating temperature | 10–20 mK | Dilution refrigerator | — |
+
+## Linked Papers
+- [[casparis-2018-ge-gatemon]]
+- [[larsen-2015-gatemon]]
 
 ## Related Entries
 

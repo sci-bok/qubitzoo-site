@@ -71,7 +71,7 @@ Semiconductor spin qubits promise integration with existing CMOS fabrication inf
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| $T_1$ | 1–50 s | Spin relaxation in Si at ~100 mK | — |
+| $T_1$ | 1–50 s | Spin relaxation in Si at ~100 mK | [Zwanenburg et al. 2013](https://doi.org/10.1103/RevModPhys.85.961) |
 | $T_2^*$ | 1–120 μs | $^{28}$Si; GaAs ~10 ns without echo | — |
 | $T_2$ (echo) | 1–28 ms | $^{28}$Si with Hahn echo | — |
 | 1Q gate fidelity | 99.9–99.96% | $^{28}$Si, randomized benchmarking | [Yoneda 2018](https://doi.org/10.1038/s41565-017-0014-x) |
@@ -95,9 +95,9 @@ Semiconductor spin qubits promise integration with existing CMOS fabrication inf
 
 ## Related Entries
 
-- [[single-spin-quantum-dot-loss-divincenzo-qubit]]
+- [[loss-divincenzo-qubit]]
 - [[singlet-triplet-qubit]]
 - [[exchange-only-qubit]]
-- [[always-on-exchange-only-aeon]]
+- [[aeon-qubit]]
 - [[semiconductor-charge-qubit]]
 - [[kane-qubit]]

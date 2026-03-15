@@ -1,7 +1,7 @@
 ---
 title: "√SWAP as a Universal Two-Qubit Gate"
 type: evergreen
-status: seed
+status: evergreen
 tags:
   - quantum-gate
   - spin-qubit

@@ -35,8 +35,11 @@ A semiconductor system in, e.g., GaAs or Silicon, much like a classical transist
 - T. Fujisawa et al., Physica E 21, 1046 (2004)
 - https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.105.246804
 
+## Linked Papers
+- [[petersson-2010-semiconductor-charge]]
+
 ## Related Entries
-- [[single-spin-quantum-dot-loss-divincenzo-qubit]]
+- [[loss-divincenzo-qubit]]
 
 ## Seed Metadata
 - date_published: 2003-11-26
@@ -55,7 +58,7 @@ where $\epsilon$ is the detuning (gate-voltage controlled) and $t_c$ is the tunn
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| Qubit coherence $T_1$ | ~10 ns | Charge relaxation | — |
+| Qubit coherence $T_1$ | ~10 ns | Charge relaxation | [Hayashi et al. 2003](https://doi.org/10.1103/PhysRevLett.91.226804) |
 | Qubit coherence $T_2$ | ~1 ns | Dominated by charge noise | — |
 | Gate time (1Q) | <1 ns | Very fast (voltage pulses) | — |
 | Gate fidelity (1Q) | ~90% | Limited by decoherence | https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.91 |
@@ -65,6 +68,6 @@ where $\epsilon$ is the detuning (gate-voltage controlled) and $t_c$ is the tunn
 
 ## Related Qubits
 
-- [[single-spin-quantum-dot-loss-divincenzo-qubit]] — spin encoding (much longer $T_2$)
+- [[loss-divincenzo-qubit]] — spin encoding (much longer $T_2$)
 - [[singlet-triplet-qubit]] — spin encoding in same platform
 - [[cooper-pair-box-charge-qubit]] — superconducting charge qubit analogue

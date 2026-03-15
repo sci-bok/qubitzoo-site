@@ -65,9 +65,12 @@ Previous proposals for coupling superconducting qubits used discrete LC circuits
 
 - [[transmon]]
 - [[cooper-pair-box-charge-qubit]]
-- [[high-quality-superconducting-cavities-coupled-to-nonlinear]]
-- [[dispersive-readout]]
-- [[jaynes-cummings-model]]
+- [[circuit-qed]]
+- [[dispersive-readout-mechanism]]
+- [[jaynes-cummings-in-circuits]]
+- [[vacuum-rms-field-scaling]]
+- [[purcell-protection-via-detuning]]
+- [[resonator-as-quantum-bus]]
 
 ## Physics
 

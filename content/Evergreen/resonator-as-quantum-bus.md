@@ -6,6 +6,7 @@ tags:
 - circuit-qed
 - two-qubit-gate
 created: '2026-03-05'
+status: evergreen
 ---
 
 Two qubits placed at different antinodes of the same transmission line resonator can be entangled even when both are detuned from the cavity. The mechanism is virtual photon exchange: qubit 1 emits a virtual photon into the resonator mode, and qubit 2 absorbs it, producing an effective coupling:

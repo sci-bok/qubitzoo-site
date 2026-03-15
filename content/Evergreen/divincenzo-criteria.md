@@ -1,7 +1,7 @@
 ---
 title: "DiVincenzo Criteria for Quantum Computation"
 type: evergreen
-status: seed
+status: evergreen
 tags:
   - quantum-computing
   - criteria
@@ -33,4 +33,4 @@ These criteria provide a universal scorecard for comparing qubit implementations
 
 - D. P. DiVincenzo, "The Physical Implementation of Quantum Computation," Fortschritte der Physik 48, 771 (2000). [arXiv:quant-ph/0002077](https://arxiv.org/abs/quant-ph/0002077)
 - [[loss-divincenzo-1998-quantum-dots]] — applies criteria to quantum dots
-- [[cirac-zoller-gate-for-trapped-ion-qubits]] — applies criteria to trapped ions
+- [[cirac-zoller-gate]] — applies criteria to trapped ions

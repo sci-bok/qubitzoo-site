@@ -47,12 +47,15 @@ The RX qubit was designed to keep the control simplicity of exchange-only qubits
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| 1Q gate fidelity | 98–99.9% | Device dependent | — |
+| 1Q gate fidelity | 98–99.9% | Device dependent | [Gyenis et al. 2021](https://doi.org/10.1103/PRXQuantum.2.030101) |
 | 2Q coupling path | exchange / resonator-mediated | architecture dependent | — |
 | Operating temperature | 20–100 mK | semiconductor dilution setups | — |
+
+## Linked Papers
+- [[medford-2013-rx-qubit]]
 
 ## Related Entries
 
 - [[exchange-only-qubit]]
-- [[always-on-exchange-only-aeon]]
+- [[aeon-qubit]]
 - [[singlet-triplet-qubit]]

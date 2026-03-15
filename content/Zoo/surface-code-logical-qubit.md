@@ -52,6 +52,9 @@ Surface code is currently the dominant QEC architecture for superconducting and 
 | Stabilizer cycle time | 0.5–5 μs | Platform dependent | — |
 | Current status | Early logical demonstrations | Below full fault tolerance | — |
 
+## Linked Papers
+- [[fowler-2012-surface-code-roadmap]]
+
 ## Related Entries
 
 - [[color-code-logical-qubit]]

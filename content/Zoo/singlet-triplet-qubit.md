@@ -37,11 +37,14 @@ The most attractive property of the singlet-triplet qubit is the fact that both 
 ## References
 - https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.89.147902
 
+## Linked Papers
+- [[petta-2005-singlet-triplet]]
+
 ## Related Entries
-- [[single-spin-quantum-dot-loss-divincenzo-qubit]]
+- [[loss-divincenzo-qubit]]
 - [[exchange-only-qubit]]
 - [[rx-qubit]]
-- [[always-on-exchange-only-aeon]]
+- [[aeon-qubit]]
 
 ## Seed Metadata
 - date_published: 2002-09-17
@@ -56,15 +59,15 @@ Both states have total $m_s = 0$, providing first-order insensitivity to uniform
 
 ## Related Qubits
 
-- [[single-spin-quantum-dot-loss-divincenzo-qubit]] — single-spin ancestor
+- [[loss-divincenzo-qubit]] — single-spin ancestor
 - [[exchange-only-qubit]] — three-spin descendant (no gradient needed)
-- [[always-on-exchange-only-aeon]] — always-on variant
+- [[aeon-qubit]] — always-on variant
 
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| Qubit coherence $T_1$ | >1 s | Spin relaxation in GaAs/Si | — |
+| Qubit coherence $T_1$ | >1 s | Spin relaxation in GaAs/Si | [Petta et al. 2005](https://doi.org/10.1126/science.1116955) |
 | Qubit coherence $T_2$ | 1–200 μs | Limited by nuclear spin bath (GaAs) or charge noise | — |
 | Gate fidelity (1Q) | 99–99.9% | Exchange + gradient control | https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.89 |
 | Gate fidelity (2Q) | 90–99% | Capacitive or exchange-mediated | https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.89 |

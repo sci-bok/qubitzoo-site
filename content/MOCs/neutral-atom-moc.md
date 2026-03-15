@@ -3,8 +3,8 @@ title: Neutral Atom MOC
 type: moc
 technology_family: Neutral Atom
 note_count: 4
-last_updated: '2026-03-13'
-generated_by: pipeline-moc-v1
+last_updated: '2026-03-15'
+generated_by: scibok-curation
 ---
 
 # Neutral Atom MOC

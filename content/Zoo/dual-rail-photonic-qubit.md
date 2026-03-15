@@ -50,9 +50,12 @@ Dual-rail is robust to global phase noise, naturally compatible with telecom/opt
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
 | Encoding overhead | 2 modes / qubit | One photon across two rails | — |
-| 1Q gate fidelity | >99% | High-quality integrated optics | — |
+| 1Q gate fidelity | >99% | High-quality integrated optics | [Knill et al. 2001](https://doi.org/10.1038/35051009) |
 | 2Q interaction | Measurement-induced | Ancilla + feed-forward required | — |
 | Dominant error | Loss | Photon loss is primary failure mode | — |
+
+## Linked Papers
+- [[knill-2001-klm]]
 
 ## Related Entries
 

@@ -6,6 +6,7 @@ tags:
 - circuit-qed
 - qnd
 created: '2026-03-05'
+status: evergreen
 ---
 
 When a qubit is detuned from its cavity by $\Delta = \omega_r - \Omega \gg g$, the Jaynes-Cummings interaction produces a qubit-state-dependent cavity frequency shift:

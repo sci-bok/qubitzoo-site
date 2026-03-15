@@ -61,8 +61,8 @@ The transmon's achilles heel is its weak anharmonicity ($\sim -200\,\text{MHz}$)
 | Anharmonicity | 3–8 GHz | $\omega_{12} - \omega_{01}$; much larger than transmon | [Manucharyan 2009](https://doi.org/10.1126/science.1175552) |
 | Qubit frequency $\omega_{01}/2\pi$ | 100 MHz – 1 GHz | Much lower than transmon | — |
 | $E_J/E_C$ | 3–8 | Heavy fluxonium regime | — |
-| 1Q gate fidelity | 99.97–99.99% | Microwave or charge-parity-protected gates | — |
-| 2Q gate fidelity | 99.2–99.7% | Capacitive or inductive coupling | — |
+| 1Q gate fidelity | 99.97–99.998% | Microwave or charge-parity-protected gates; MIT 2025 SOTA 99.998% | [Ding et al. 2023](https://doi.org/10.1103/PhysRevX.13.031035), [Somoroff et al. 2023](https://doi.org/10.1103/PhysRevLett.130.267001) |
+| 2Q gate fidelity | 99.2–99.92% | Capacitive or inductive coupling; CZ 99.92% | [Ding et al. 2023](https://doi.org/10.1103/PhysRevX.13.031035) |
 | Gate time (1Q) | 20–100 ns | Frequency-dependent | — |
 | Operating temperature | 10–20 mK | Dilution refrigerator | — |
 
@@ -76,4 +76,4 @@ The transmon's achilles heel is its weak anharmonicity ($\sim -200\,\text{MHz}$)
 - [[flux-qubit]]
 - [[cooper-pair-box-charge-qubit]]
 - [[circuit-qed]]
-- [[blochnium-superconducting-quasicharge-qubit]]
+- [[blochnium]]

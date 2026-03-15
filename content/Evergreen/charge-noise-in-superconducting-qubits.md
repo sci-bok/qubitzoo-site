@@ -1,7 +1,7 @@
 ---
 title: "Charge Noise in Superconducting Qubits"
 type: evergreen
-status: seed
+status: evergreen
 tags:
   - decoherence
   - charge-noise

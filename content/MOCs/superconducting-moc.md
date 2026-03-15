@@ -2,9 +2,9 @@
 title: Superconducting MOC
 type: moc
 technology_family: Superconducting
-note_count: 16
-last_updated: '2026-03-13'
-generated_by: pipeline-moc-v1
+note_count: 19
+last_updated: '2026-03-15'
+generated_by: scibok-curation
 ---
 
 # Superconducting MOC
@@ -15,25 +15,28 @@ Curated map of Zoo entries in the **Superconducting** family.
 
 | Entry | Type | Status |
 |---|---|---|
-| [[a-tunable-coupling-scheme-for-implementing-high-fidelity]] | coupling | seed |
 | [[circuit-qed]] | coupling | demonstrated |
-| [[high-quality-superconducting-cavities-coupled-to-nonlinear]] | coupling | seed |
-| [[binomial-code-fault-tolerant-logical-qubits-encoded-in]] | encoding | seed |
-| [[0-pi-qubit]] | qubit | seed |
-| [[blochnium-superconducting-quasicharge-qubit]] | qubit | seed |
-| [[cat-codes]] | qubit | seed |
+| [[tunable-coupler]] | coupling | demonstrated |
+| [[binomial-codes]] | encoding | seed |
+| [[0-pi-qubit]] | qubit | demonstrated |
+| [[blochnium]] | qubit | seed |
+| [[cat-codes]] | qubit | demonstrated |
 | [[cooper-pair-box-charge-qubit]] | qubit | seed |
-| [[flux-qubit]] | qubit | seed |
+| [[cos2phi-qubit]] | qubit | proposed |
+| [[dual-rail-superconducting-qubit]] | qubit | demonstrated |
+| [[flux-qubit]] | qubit | demonstrated |
 | [[fluxonium]] | qubit | demonstrated |
-| [[gkp-codes]] | qubit | seed |
-| [[gmon]] | qubit | seed |
+| [[gkp-codes]] | qubit | demonstrated |
+| [[gmon]] | qubit | demonstrated |
 | [[heavy-fluxonium-qubit]] | qubit | demonstrated |
-| [[phase-qubit]] | qubit | seed |
+| [[kerr-cat-qubit]] | qubit | demonstrated |
+| [[mergemon]] | qubit | demonstrated |
+| [[phase-qubit]] | qubit | demonstrated |
 | [[transmon]] | qubit | demonstrated |
-| [[xmon]] | qubit | seed |
+| [[xmon]] | qubit | demonstrated |
 
 ## Composition
 
-- coupling: 3
+- coupling: 2
 - encoding: 1
-- qubit: 12
+- qubit: 16

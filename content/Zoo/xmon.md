@@ -2,7 +2,7 @@
 title: Xmon
 entry_type: qubit
 technology_family: Superconducting
-status: seed
+status: demonstrated
 seed_id: '8'
 seed_source: qubitzoo-airtable
 first_proposed_year: 2013
@@ -56,12 +56,15 @@ Earlier transmon designs used coaxial or lumped-element capacitors that did not 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
 | $T_1$ | 20–100 μs | Planar geometry | [Barends 2013](https://doi.org/10.1103/PhysRevLett.111.080502) |
-| 1Q gate fidelity | 99.9%+ | Sycamore/Willow benchmarks | — |
-| 2Q gate fidelity | 99.5–99.9% | CZ or $i$SWAP via flux pulse | — |
+| 1Q gate fidelity | 99.84–99.9%+ | Sycamore RB: 99.84% avg; Willow improved | [Barends et al. 2014](https://doi.org/10.1038/nature13171), [Arute et al. 2019](https://doi.org/10.1038/s41586-019-1666-5) |
+| 2Q gate fidelity | 99.4–99.9% | CZ or $i$SWAP via flux pulse; Sycamore 99.4% CZ avg | [Barends et al. 2014](https://doi.org/10.1038/nature13171), [Arute et al. 2019](https://doi.org/10.1038/s41586-019-1666-5) |
 | Anharmonicity | −200 to −250 MHz | Same as transmon | — |
 | Transition frequency | 4–7 GHz | Tunable via flux | — |
 | Coupling to neighbors | 4 (cross arms) | Square lattice layout | — |
 | Operating temperature | 10–20 mK | Dilution refrigerator | — |
+
+## Linked Papers
+- [[barends-2013-xmon]]
 
 ## Related Entries
 

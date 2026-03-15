@@ -2,7 +2,7 @@
 title: Cat Qubit (Cat Codes)
 entry_type: qubit
 technology_family: Superconducting
-status: seed
+status: demonstrated
 seed_id: '14'
 seed_source: qubitzoo-airtable
 first_proposed_year: 2001
@@ -81,9 +81,12 @@ Standard bosonic codes (like GKP) require complex active error correction. The c
 | CNOT gate fidelity | ~99% | Bias-preserving gate | — |
 | Operating temperature | 10–20 mK | Dilution refrigerator | — |
 
+## Linked Papers
+- [[mirrahimi-2014-cat-codes]]
+
 ## Related Entries
 
 - [[gkp-codes]]
 - [[circuit-qed]]
 - [[transmon]]
-- [[binomial-code-fault-tolerant-logical-qubits-encoded-in]]
+- [[binomial-codes]]

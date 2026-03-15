@@ -2,7 +2,7 @@
 title: Kane Qubit (Phosphorus-in-Silicon)
 entry_type: qubit
 technology_family: Semiconducting
-status: seed
+status: demonstrated
 seed_id: '26'
 seed_source: qubitzoo-airtable
 first_proposed_year: 1998
@@ -59,16 +59,19 @@ Nuclear spins in silicon offer the longest coherence times of any solid-state qu
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| Nuclear $T_1$ | >30 hours | $^{31}$P in $^{28}$Si at 1.5 K | — |
+| Nuclear $T_1$ | >30 hours | $^{31}$P in $^{28}$Si at 1.5 K | [Muhonen et al. 2014](https://doi.org/10.1038/nnano.2014.211) |
 | Nuclear $T_2$ (echo) | >35 s | World record for solid-state qubit | [Muhonen 2014](https://doi.org/10.1038/nnano.2014.211) |
 | Electron $T_2$ | 0.5–1 s | In $^{28}$Si | — |
-| 1Q gate fidelity | 99.95% | Nuclear spin, NMR control | — |
-| 2Q gate fidelity | 99.4% | Exchange-mediated | — |
+| 1Q gate fidelity | 99.95% | Nuclear spin, NMR control | [Muhonen et al. 2014](https://doi.org/10.1038/nnano.2014.211) |
+| 2Q gate fidelity | 99.4% | Exchange-mediated | [Mądzik et al. 2022](https://doi.org/10.1038/s41586-021-04292-7) |
 | Donor spacing | 10–20 nm | STM lithography placement | — |
 | Hyperfine coupling $A$ | ~117 MHz | Bulk value; gate-tunable | [Kane 1998](https://doi.org/10.1038/front_23906a0) |
 | Operating temperature | 100 mK – 1 K | Electron spin relaxation limited | — |
 
+## Linked Papers
+- [[kane-1998-silicon-nuclear-spin]]
+
 ## Related Entries
 
 - [[spin-qubit]]
-- [[single-spin-quantum-dot-loss-divincenzo-qubit]]
+- [[loss-divincenzo-qubit]]

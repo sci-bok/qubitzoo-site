@@ -61,6 +61,7 @@ Single-qubit operations in dual-rail encoding are realized with beam splitters a
 | Hardware bottleneck | Loss + source/detector efficiency | Dominant practical scaling limit in reviews | [[kok-2005-review-article-linear-optical]] |
 
 ## Linked Papers
+- [[knill-2001-klm]]
 
 - [[adami-1998-quantum-computation-with-linear]]
 - [[knill-2000-efficient-linear-optics-quantum]]

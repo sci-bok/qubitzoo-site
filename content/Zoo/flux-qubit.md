@@ -2,7 +2,7 @@
 title: Flux Qubit
 entry_type: qubit
 technology_family: Superconducting
-status: seed
+status: demonstrated
 seed_id: '3'
 seed_source: qubitzoo-airtable
 first_proposed_year: 1999
@@ -65,17 +65,20 @@ The flux qubit was one of the three original superconducting qubit types (alongs
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| $T_1$ | 1–55 μs | C-shunt: ~40–55 μs; traditional: ~1–5 μs | — |
+| $T_1$ | 1–55 μs | C-shunt: ~40–55 μs; traditional: ~1–5 μs | [Yan et al. 2016](https://doi.org/10.1038/ncomms12964) |
 | $T_2$ (echo) | 5–80 μs | At degeneracy point; C-shunt improved | — |
 | Anharmonicity | 3–10 GHz | Much larger than transmon | — |
 | Persistent current $I_p$ | 200–500 nA | Circulating supercurrent | [Orlando 1999](https://doi.org/10.1103/PhysRevB.60.15398) |
 | Qubit frequency | 1–10 GHz | Tunable via external flux | — |
-| 1Q gate fidelity | 99–99.9% | Microwave + flux pulses | — |
+| 1Q gate fidelity | 99–99.9% | Microwave + flux pulses | [Yan et al. 2016](https://doi.org/10.1038/ncomms12964) |
 | Operating temperature | 10–20 mK | Dilution refrigerator | — |
 
 ## References
 
 - https://doi.org/10.1103/PhysRevB.60.15398
+
+## Linked Papers
+- [[mooij-1999-flux-qubit]]
 
 ## Related Entries
 

@@ -50,10 +50,13 @@ Heavy fluxonium targets a "hardware-protected" operating regime where coherence 
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| $T_1$ | 0.5–1.5 ms | Sweet-spot operation | — |
+| $T_1$ | 0.5–1.5 ms | Sweet-spot operation | [Nguyen et al. 2019](https://doi.org/10.1103/PhysRevX.9.041041) |
 | 1Q fidelity | 99.9%+ | Microwave control | — |
 | Anharmonicity | GHz-scale | Much larger than transmon | — |
 | Operating temperature | 10–20 mK | Dilution refrigerator | — |
+
+## Linked Papers
+- [[lin-2018-heavy-fluxonium]]
 
 ## Related Entries
 

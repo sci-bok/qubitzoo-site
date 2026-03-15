@@ -50,6 +50,9 @@ The most promising solid-state approaches for developing quantum information-pro
 - https://science.sciencemag.org/content/349/6253/1199.abstract
 - https://www.nature.com/articles/nphys4150
 
+## Linked Papers
+- [[hays-2021-andreev-spin-qubit]]
+
 ## Related Entries
 - [[transmon]]
 - [[spin-qubit]]
@@ -67,7 +70,7 @@ Qubit encoded in the spin degree of freedom of an Andreev bound state in a semic
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| Qubit coherence $T_1$ | 1–10 μs | Limited by quasiparticle poisoning | — |
+| Qubit coherence $T_1$ | 1–10 μs | Limited by quasiparticle poisoning | [Hays et al. 2021](https://doi.org/10.1126/science.abi7515) |
 | Qubit coherence $T_2$ | 0.1–1 μs | Early devices (2021) | — |
 | Gate fidelity (1Q) | ~95% | Microwave-driven spin transitions | https://science.sciencemag.org/content/373/6553/430 |
 | Readout fidelity | ~90% | Dispersive via resonator | https://science.sciencemag.org/content/373/6553/430 |
@@ -78,5 +81,5 @@ Qubit encoded in the spin degree of freedom of an Andreev bound state in a semic
 
 - [[gatemon]] — same material platform, charge degree of freedom
 - [[gatemonium]] — semiconductor-superconductor hybrid
-- [[coulomb-blockade-spectroscopy-towards-topological-majorana]] — related InAs-Al platform
+- [[majorana-topological-qubit]] — related InAs-Al platform
 - [[transmon]] — shares dispersive readout mechanism

@@ -6,6 +6,7 @@ tags:
 - circuit-qed
 - lifetime
 created: '2026-03-05'
+status: evergreen
 ---
 
 A qubit resonant with a lossy cavity inherits the cavity's decay rate — the Purcell effect enhances spontaneous emission. But when the qubit is detuned by $\Delta \gg g$, the effective decay rate through the cavity drops to:

@@ -53,10 +53,14 @@ Hole-spin platforms are attractive because spin-orbit coupling turns electric fi
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
 | 1Q gate time | 1–50 ns | Fast EDSR control | — |
-| 1Q fidelity | 99–99.9% | Rapid progress in Ge devices | — |
-| 2Q fidelity | 98–99.5% | Exchange-based | — |
+| 1Q fidelity | 99–99.9% | Rapid progress in Ge devices | [Hendrickx et al. 2021](https://doi.org/10.1038/s41586-021-03332-6) |
+| 2Q fidelity | 98–99.5% | Exchange-based | [Hendrickx et al. 2021](https://doi.org/10.1038/s41586-021-03332-6) |
 | $T_2^*$ | 1–20 μs | Device/material dependent | — |
 | Operating temperature | 20 mK – 1 K | Some hot-qubit demonstrations | — |
+
+## Linked Papers
+- [[scappucci-2021-ge-review]]
+- [[hendrickx-2021-ge-4qubit]]
 
 ## Related Entries
 

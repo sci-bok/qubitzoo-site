@@ -53,6 +53,9 @@ Nuclear-spin encodings are a coherence-first strategy for neutral-atom computing
 | Entangling mechanism | Rydberg or cavity-mediated | architecture dependent | — |
 | Main challenge | balancing coherence and gate speed | open optimization frontier | — |
 
+## Linked Papers
+- [[ma-2022-nuclear-spin-atom]]
+
 ## Related Entries
 
 - [[alkaline-earth-neutral-atom-clock-qubit]]

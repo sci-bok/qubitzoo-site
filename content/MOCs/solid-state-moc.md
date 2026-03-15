@@ -2,9 +2,9 @@
 title: Solid State MOC
 type: moc
 technology_family: Solid State
-note_count: 1
-last_updated: '2026-03-13'
-generated_by: pipeline-v1
+note_count: 2
+last_updated: '2026-03-15'
+generated_by: scibok-curation
 ---
 
 # Solid State MOC
@@ -16,7 +16,8 @@ Curated map of Zoo entries in the **Solid State** family.
 | Entry | Type | Status |
 |---|---|---|
 | [[nv-center-qubit]] | qubit | demonstrated |
+| [[siv-color-center-qubit]] | qubit | demonstrated |
 
 ## Composition
 
-- qubit: 1
+- qubit: 2

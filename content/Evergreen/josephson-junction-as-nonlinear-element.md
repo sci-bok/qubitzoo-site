@@ -1,7 +1,7 @@
 ---
 title: "Josephson Junction as Nonlinear Element"
 type: evergreen
-status: seed
+status: evergreen
 tags:
   - josephson-junction
   - superconducting-qubit
@@ -39,7 +39,7 @@ The potential energy $U = -E_J\cos\varphi$ (with $E_J = \Phi_0 I_c / 2\pi$) is t
 | [[transmon]] | Same physics, but $E_J/E_C \gg 1$ flattens charge dispersion |
 | [[fluxonium]] | JJ + superinductance creates double-well potential |
 | [[gatemonium]] | Semiconductor weak link replaces tunnel junction |
-| [[blochnium-superconducting-quasicharge-qubit]] | Operates in phase-slip regime (dual to JJ tunneling) |
+| [[blochnium]] | Operates in phase-slip regime (dual to JJ tunneling) |
 
 ## References
 

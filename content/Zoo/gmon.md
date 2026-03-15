@@ -2,7 +2,7 @@
 title: Gmon
 entry_type: qubit
 technology_family: Superconducting
-status: seed
+status: demonstrated
 seed_id: '9'
 seed_source: qubitzoo-airtable
 first_proposed_year: 2014
@@ -61,8 +61,11 @@ Fixed-coupling architectures suffer from always-on $ZZ$ interaction, causing idl
 | 2Q gate fidelity | 99.5–99.9% | CZ or $i$SWAP | [Chen 2014](https://doi.org/10.1103/PhysRevLett.113.220502) |
 | 2Q gate time | 10–30 ns | Fast parametric gates | — |
 | Residual $ZZ$ (off) | <10 kHz | At idle point | — |
-| 1Q gate fidelity | 99.9%+ | Same as Xmon | — |
+| 1Q gate fidelity | 99.9%+ | Same as Xmon | [Chen et al. 2014](https://doi.org/10.1103/PhysRevLett.113.220502) |
 | Operating temperature | 10–20 mK | Dilution refrigerator | — |
+
+## Linked Papers
+- [[chen-2014-gmon]]
 
 ## Related Entries
 
