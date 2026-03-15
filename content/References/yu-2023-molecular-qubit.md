@@ -16,5 +16,10 @@ Demonstrates dipolar spin-exchange interactions between ultracold NaCs molecules
 - Long-range dipole-dipole interaction (1/r³, ~kHz at μm scale)
 - Optical tweezer array of individually controlled molecules
 - Potential for dense qubit arrays with always-on long-range coupling
+
+## Links
+- **Journal:** [Nature](https://doi.org/10.1038/s41586-024-07067-y)
+- **arXiv:** [2211.09780](https://arxiv.org/abs/2211.09780)
+
 ## Zoo Links
 - [[molecular-qubit]]

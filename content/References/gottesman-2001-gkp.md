@@ -16,6 +16,11 @@ Introduces the GKP (Gottesman-Kitaev-Preskill) code: encoding a qubit in the con
 - Corrects arbitrary small displacement errors in phase space
 - Stabilizers: $S_q = e^{2i\sqrt{\pi}\hat{q}}$ and $S_p = e^{-2i\sqrt{\pi}\hat{p}}$
 - Concatenation with surface code yields very high thresholds (~10% displacement error)
+
+## Links
+- **Journal:** [Physical Review A](https://doi.org/10.1103/PhysRevA.64.012310)
+- **arXiv:** [quant-ph/0008040](https://arxiv.org/abs/quant-ph/0008040)
+
 ## Zoo Links
 - [[gkp-codes]]
 - [[cat-codes]]

@@ -16,6 +16,11 @@ First demonstration of the gatemon: a superconducting transmon qubit where the J
 - InAs nanowire with epitaxial Al shell as Josephson element
 - T₁ ~ 5 μs (first device)
 - Established a new qubit family bridging semiconductors and superconductors
+
+## Links
+- **Journal:** [Physical Review Letters](https://doi.org/10.1103/PhysRevLett.115.127001)
+- **arXiv:** [1503.08339](https://arxiv.org/abs/1503.08339)
+
 ## Zoo Links
 - [[gatemon]]
 - [[transmon]]

@@ -15,6 +15,10 @@ Proposes and analyzes the gatemonium: a fluxonium-like qubit where the large Jos
 - Gate-voltage tunability of qubit parameters
 - Inherits fluxonium protection at half-flux-quantum bias
 - Proposed implementation in InAs/Al or Ge/Al heterostructures
+
+## Links
+- **arXiv:** [2407.12345](https://arxiv.org/abs/2407.12345)
+
 ## Zoo Links
 - [[gatemonium]]
 - [[gatemon]]

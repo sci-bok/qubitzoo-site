@@ -16,6 +16,11 @@ Introduces the Xmon: a planar transmon variant with a cross-shaped capacitor geo
 - Cross-shaped capacitor with 4 coupling ports
 - Scalable 2D tiling with individual XY and Z control
 - Single-qubit gate fidelity >99.9%, two-qubit CZ >99.4%
+
+## Links
+- **Journal:** [Physical Review Letters](https://doi.org/10.1103/PhysRevLett.111.080502)
+- **arXiv:** [1304.2322](https://arxiv.org/abs/1304.2322)
+
 ## Zoo Links
 - [[xmon]]
 - [[transmon]]

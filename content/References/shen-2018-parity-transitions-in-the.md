@@ -52,3 +52,7 @@ Text truncated: **no**.
 
 Ingestion notes:
 - LaTeX source extraction failed
+
+## Links
+- **Journal:** [arXiv preprint](https://doi.org/10.1038/s41467-018-07279-7)
+- **arXiv:** [1804.08405](https://arxiv.org/abs/1804.08405)

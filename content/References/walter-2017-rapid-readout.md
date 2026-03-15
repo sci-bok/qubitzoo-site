@@ -16,6 +16,11 @@ Demonstrates rapid, high-fidelity dispersive readout of a superconducting transm
 - 99.2% fidelity in 24 ns
 - Uses JPA (Josephson parametric amplifier) for quantum-limited amplification
 - Purcell filter prevents readout-induced qubit decay
+
+## Links
+- **Journal:** [Physical Review Applied](https://doi.org/10.1103/PhysRevApplied.7.054020)
+- **arXiv:** [1701.06933](https://arxiv.org/abs/1701.06933)
+
 ## Zoo Links
 - [[qubit-readout]]
 - [[transmon]]

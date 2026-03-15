@@ -30,6 +30,11 @@ Proposes a universal gate set for Kerr-cat qubits that preserves the exponential
 - Toffoli gate achievable with constant overhead
 - Concatenation with repetition code achieves 10⁻¹⁵ logical error rate with ~1500 physical qubits (vs ~100,000 for surface code with unbiased noise)
 
+
+## Links
+- **Journal:** [Science Advances](https://doi.org/10.1126/sciadv.aay5901)
+- **arXiv:** [1905.00450](https://arxiv.org/abs/1905.00450)
+
 ## Zoo Links
 - [[kerr-cat-qubit]]
 - [[cat-codes]]

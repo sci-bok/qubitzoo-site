@@ -15,6 +15,10 @@ Proposes using the nuclear spin of ³¹P donor atoms in isotopically pure ²⁸S
 - Single-qubit gates via NMR with A-gate tuning of hyperfine coupling
 - Two-qubit gates via J-gate control of exchange between donor electrons
 - Predicted coherence: nuclear T₂ > seconds in enriched ²⁸Si
+
+## Links
+- **Journal:** [Nature](https://doi.org/10.1038/30156)
+
 ## Zoo Links
 - [[kane-qubit]]
 - [[silicon-spin-qubit]]

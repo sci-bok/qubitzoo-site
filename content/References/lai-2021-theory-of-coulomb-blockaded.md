@@ -34,3 +34,7 @@ Disputes resolved: **0**.
 Citation count snapshot (Semantic Scholar): **0**.
 Ingestion source: **latex**.
 Text truncated: **no**.
+
+## Links
+- **Journal:** [arXiv preprint](https://doi.org/10.1103/PhysRevB.104.085403)
+- **arXiv:** [2104.00659](https://arxiv.org/abs/2104.00659)

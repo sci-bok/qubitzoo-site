@@ -23,6 +23,11 @@ Demonstrates a two-qubit gate fidelity of 99.9(1)% for ⁴³Ca⁺ hyperfine qubi
 - Gate time: ~100 μs
 - Platform: ⁴³Ca⁺ ions in a macroscopic linear Paul trap
 
+
+## Links
+- **Journal:** [Physical Review Letters](https://doi.org/10.1103/PhysRevLett.117.060504)
+- **arXiv:** [1512.04600](https://arxiv.org/abs/1512.04600)
+
 ## Zoo Links
 - [[ytterbium-hyperfine-qubit]]
 - [[trapped-ion-qubit]]

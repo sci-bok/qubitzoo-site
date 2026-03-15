@@ -16,6 +16,11 @@ Proposes the AEON (Always-on Exchange-Only) qubit: a variant of the three-spin e
 - Operates at symmetric charge-noise sweet spot
 - All-electrical control via asymmetric detuning pulses
 - Eliminates the need for rapid on/off switching of exchange
+
+## Links
+- **Journal:** [Physical Review B](https://doi.org/10.1103/PhysRevB.93.121410)
+- **arXiv:** [1507.03026](https://arxiv.org/abs/1507.03026)
+
 ## Zoo Links
 - [[aeon-qubit]]
 - [[exchange-only-qubit]]

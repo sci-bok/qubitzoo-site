@@ -15,6 +15,10 @@ Proposes and analyzes the cos(2φ) qubit (bifluxon), a protected superconducting
 - Exponential suppression of both bit-flip and phase-flip matrix elements
 - Requires superinductance + junction pair with controlled asymmetry
 - Predicted T₁ enhancement: 10²–10⁴× over transmon
+
+## Links
+- **arXiv:** [1910.03769](https://arxiv.org/abs/1910.03769)
+
 ## Zoo Links
 - [[cos2phi-qubit]]
 - [[0-pi-qubit]]

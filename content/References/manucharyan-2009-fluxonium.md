@@ -20,3 +20,7 @@ generated_by: scibok-curation
 ---
 
 Seminal fluxonium paper introducing the superinductance-shunted Josephson circuit with strong suppression of charge offsets and high anharmonicity.
+
+## Links
+- **Journal:** [Science](https://doi.org/10.1126/science.1175552)
+- **arXiv:** [language: en](https://arxiv.org/abs/language: en)

@@ -31,6 +31,11 @@ Introduces fusion-based quantum computation (FBQC), a modular architecture for f
 - Architecture is inherently modular: compatible with multiplexed photon sources and reconfigurable networks
 - Simulated logical error rates competitive with matter-based approaches
 
+
+## Links
+- **Journal:** [Nature Communications](https://doi.org/10.1038/s41467-023-36493-1)
+- **arXiv:** [2101.09310](https://arxiv.org/abs/2101.09310)
+
 ## Zoo Links
 - [[fusion-based-photonic-qubit]]
 - [[linear-optical-photonic-qubit]]

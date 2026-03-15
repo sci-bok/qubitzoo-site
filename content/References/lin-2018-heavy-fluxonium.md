@@ -16,6 +16,11 @@ Demonstrates the heavy fluxonium qubit: a fluxonium with very large shunt capaci
 - E_C/h ≈ 0.5 GHz (heavy, i.e., large capacitance)
 - Operated at external flux Φ = Φ₀/2
 - Protection mechanism: wavefunctions localized in separate potential wells
+
+## Links
+- **Journal:** [Physical Review Letters](https://doi.org/10.1103/PhysRevLett.120.150503)
+- **arXiv:** [1705.07873](https://arxiv.org/abs/1705.07873)
+
 ## Zoo Links
 - [[heavy-fluxonium-qubit]]
 - [[fluxonium]]

@@ -16,5 +16,10 @@ Demonstrates spin coherence exceeding 10 ms for a single SiV⁻ center in diamon
 - Single-shot readout fidelity: 89%
 - Spin relaxation T₁ > 1 s at 100 mK
 - Platform: SiV⁻ in bulk diamond, dilution refrigerator
+
+## Links
+- **Journal:** [Physical Review Letters](https://doi.org/10.1103/PhysRevLett.119.223602)
+- **arXiv:** [1708.08852](https://arxiv.org/abs/1708.08852)
+
 ## Zoo Links
 - [[siv-color-center-qubit]]

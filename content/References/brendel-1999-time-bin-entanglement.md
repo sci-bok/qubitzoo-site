@@ -21,5 +21,9 @@ Introduces the time-bin encoding scheme for photonic qubits, where quantum infor
 - Uses unbalanced Mach-Zehnder interferometers for preparation and analysis
 - Became the standard encoding for long-distance quantum communication
 
+
+## Links
+- **Journal:** [Physical Review Letters](https://doi.org/10.1103/PhysRevLett.82.2594)
+
 ## Zoo Links
 - [[time-bin-photonic-qubit]]

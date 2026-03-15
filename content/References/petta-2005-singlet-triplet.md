@@ -16,6 +16,11 @@ First demonstration of coherent manipulation of a singlet-triplet qubit in a GaA
 - Exchange gate time: ~200 ps
 - Readout via spin-to-charge conversion through Pauli spin blockade
 - First two-electron qubit with all-electrical control
+
+## Links
+- **Journal:** [Science](https://doi.org/10.1126/science.1116955)
+- **arXiv:** [cond-mat/0510735](https://arxiv.org/abs/cond-mat/0510735)
+
 ## Zoo Links
 - [[singlet-triplet-qubit]]
 - [[spin-qubit]]

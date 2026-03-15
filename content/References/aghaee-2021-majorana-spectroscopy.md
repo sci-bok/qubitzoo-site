@@ -37,6 +37,11 @@ Reports Coulomb blockade spectroscopy measurements on InAs-Al semiconductor-supe
 
 Majorana-based qubits would encode information non-locally in pairs of Majorana zero modes, providing topological protection against local perturbations. However, experimental realization remains controversial and unconfirmed as of 2026.
 
+
+## Links
+- **Journal:** [Physical Review B](https://doi.org/10.1103/PhysRevB.104.085403)
+- **arXiv:** [2104.00659](https://arxiv.org/abs/2104.00659)
+
 ## Zoo Links
 
 - [[coulomb-blockade-spectroscopy-towards-topological-majorana]]

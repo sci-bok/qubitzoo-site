@@ -24,5 +24,10 @@ Demonstrates distribution of time-bin entangled photon pairs over 50 km of optic
 - Time-bin encoding maintains coherence through chromatic dispersion and birefringence
 - Key milestone for fiber-based quantum key distribution
 
+
+## Links
+- **Journal:** [Physical Review Letters](https://doi.org/10.1103/PhysRevLett.93.180502)
+- **arXiv:** [quant-ph/0404124](https://arxiv.org/abs/quant-ph/0404124)
+
 ## Zoo Links
 - [[time-bin-photonic-qubit]]

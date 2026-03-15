@@ -25,6 +25,11 @@ First comprehensive characterization of the ¹⁷¹Yb⁺ hyperfine qubit, demons
 - Coherence time T₂ > 1.5 s (spin-echo)
 - First-order magnetic field insensitive (clock states)
 
+
+## Links
+- **Journal:** [Physical Review A](https://doi.org/10.1103/PhysRevA.76.052314)
+- **arXiv:** [0708.0657](https://arxiv.org/abs/0708.0657)
+
 ## Zoo Links
 - [[ytterbium-hyperfine-qubit]]
 - [[trapped-ion-qubit]]

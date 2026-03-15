@@ -15,5 +15,9 @@ First demonstration of coherent Rabi oscillations in a current-biased Josephson 
 - Phase qubit: |0⟩ and |1⟩ are levels in anharmonic washboard potential
 - Readout via tunneling: |1⟩ tunnels to voltage state, |0⟩ stays trapped
 - Junction area: ~10 μm² (large by modern standards)
+
+## Links
+- **Journal:** [Physical Review Letters](https://doi.org/10.1103/PhysRevLett.89.117901)
+
 ## Zoo Links
 - [[phase-qubit]]

@@ -16,6 +16,11 @@ Demonstrates entanglement between two SiV⁻ quantum memory nodes connected by 3
 - Distance: 35 km deployed fiber (Boston)
 - Quantum frequency conversion: 737 nm → 1350 nm telecom band
 - Entanglement rate: ~100 per hour
+
+## Links
+- **Journal:** [Nature](https://doi.org/10.1038/s41586-024-07252-z)
+- **arXiv:** [2310.01316](https://arxiv.org/abs/2310.01316)
+
 ## Zoo Links
 - [[siv-color-center-qubit]]
 - [[nv-center-qubit]]

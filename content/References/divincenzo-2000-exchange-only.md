@@ -16,6 +16,11 @@ Shows that universal quantum computation can be achieved using only the isotropi
 - Only exchange interactions required (all-electrical control)
 - Immune to collective dephasing (decoherence-free subspace)
 - Universal gate set from exchange pulses on 3 pairs
+
+## Links
+- **Journal:** [Nature](https://doi.org/10.1038/35002001)
+- **arXiv:** [quant-ph/0005116](https://arxiv.org/abs/quant-ph/0005116)
+
 ## Zoo Links
 - [[exchange-only-qubit]]
 - [[aeon-qubit]]

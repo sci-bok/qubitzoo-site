@@ -16,6 +16,11 @@ Demonstrates universal quantum logic on nuclear spin qubits of ¹⁷¹Yb atoms i
 - T₂ > 10 s (spin echo, magnetic field insensitive)
 - Single-qubit gate fidelity: 99.96%
 - Two-qubit gate via Rydberg blockade
+
+## Links
+- **Journal:** [Physical Review X](https://doi.org/10.1103/PhysRevX.12.021028)
+- **arXiv:** [2112.13487](https://arxiv.org/abs/2112.13487)
+
 ## Zoo Links
 - [[nuclear-spin-neutral-atom-qubit]]
 - [[alkaline-earth-neutral-atom-clock-qubit]]

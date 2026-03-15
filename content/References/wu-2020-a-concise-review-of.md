@@ -39,3 +39,7 @@ Disputes resolved: **0**.
 Citation count snapshot (Semantic Scholar): **0**.
 Ingestion source: **latex**.
 Text truncated: **no**.
+
+## Links
+- **Journal:** [arXiv preprint](https://doi.org/10.1088/1674-1056/abd76f)
+- **arXiv:** [2012.10614](https://arxiv.org/abs/2012.10614)

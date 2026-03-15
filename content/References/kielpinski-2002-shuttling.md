@@ -15,6 +15,10 @@ Proposes the QCCD (quantum charge-coupled device) architecture for scalable trap
 - Ion shuttling between zones via time-varying electrode voltages
 - Avoids the need for very long ion chains (which limit gate fidelity)
 - Enables modular, scalable architecture for >1000 qubits
+
+## Links
+- **Journal:** [Nature](https://doi.org/10.1038/nature00784)
+
 ## Zoo Links
 - [[shuttling-ion-trap-qubit]]
 - [[trapped-ion-qubit]]

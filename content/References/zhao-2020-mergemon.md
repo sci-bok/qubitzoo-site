@@ -16,6 +16,10 @@ First experimental demonstration of the merged-element transmon (mergemon): a su
 - >90% electromagnetic energy confinement in barrier
 - Qubit-state-dependent readout demonstrated at 10 mK
 - Amorphous barrier dielectric loss identified as coherence limiter
+
+## Links
+- **Journal:** [Physical Review Applied](https://doi.org/10.1103/PhysRevApplied.14.064006)
+
 ## Zoo Links
 - [[mergemon]]
 - [[transmon]]

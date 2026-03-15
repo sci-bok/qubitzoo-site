@@ -16,6 +16,11 @@ Proposes and demonstrates the hybrid qubit: a three-electron qubit in a double q
 - T₂* ~ 10 ns at sweet spot
 - Three electrons in double quantum dot (not triple dot)
 - Combines fast manipulation with improved dephasing protection
+
+## Links
+- **Journal:** [Physical Review Letters](https://doi.org/10.1103/PhysRevLett.108.140503)
+- **arXiv:** [1201.2388](https://arxiv.org/abs/1201.2388)
+
 ## Zoo Links
 - [[hybrid-qubit]]
 - [[spin-qubit]]

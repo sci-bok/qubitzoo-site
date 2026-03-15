@@ -28,3 +28,7 @@ Trapped neutral atoms have become a prominent platform for quantum science, wher
 ## Key Findings
 - Experimental milestone for alkaline-earth neutral-atom entanglement performance.
 - Provides practical support for alkaline-earth-specific architecture pathways.
+
+## Links
+- **Journal:** [Nature Physics](https://doi.org/10.1038/s41567-020-0903-z)
+- **arXiv:** [2001.04455](https://arxiv.org/abs/2001.04455)

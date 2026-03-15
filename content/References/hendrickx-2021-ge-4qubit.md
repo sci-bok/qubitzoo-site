@@ -17,6 +17,11 @@ First demonstration of a four-qubit quantum processor in germanium (Ge/SiGe) hol
 - Two-qubit CZ gate via exchange interaction
 - All-electrical control (no micromagnets or ESR — spin-orbit-driven EDSR)
 - Operated at ~20 mK
+
+## Links
+- **Journal:** [Nature](https://doi.org/10.1038/s41586-021-03332-6)
+- **arXiv:** [2009.04268](https://arxiv.org/abs/2009.04268)
+
 ## Zoo Links
 - [[hole-spin-qubit]]
 - [[silicon-spin-qubit]]

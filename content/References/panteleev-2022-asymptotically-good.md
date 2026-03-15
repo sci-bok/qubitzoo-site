@@ -16,6 +16,11 @@ Constructs the first asymptotically good quantum LDPC codes: families of $[[n, k
 - Encoding rate: k/n → constant as n → ∞
 - Distance: d = Θ(n) (optimal scaling)
 - Based on balanced product of classical LDPC codes over suitable groups
+
+## Links
+- **Journal:** [Proceedings of the 54th ACM STOC](https://doi.org/10.1145/3519935.3520017)
+- **arXiv:** [2111.03654](https://arxiv.org/abs/2111.03654)
+
 ## Zoo Links
 - [[qldpc-codes]]
 - [[surface-code-logical-qubit]]

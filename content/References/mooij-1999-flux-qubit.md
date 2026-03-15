@@ -15,5 +15,9 @@ Proposes the persistent-current (flux) qubit: a superconducting loop interrupted
 - Three-junction loop with one junction smaller by factor α ≈ 0.75
 - Tunnel splitting tunable via external flux
 - First proposed superconducting qubit with macroscopic persistent currents
+
+## Links
+- **Journal:** [Science](https://doi.org/10.1126/science.285.5430.1036)
+
 ## Zoo Links
 - [[flux-qubit]]

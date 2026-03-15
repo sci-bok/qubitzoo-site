@@ -16,6 +16,11 @@ Introduces and demonstrates the blochnium (quasicharge qubit): a single Josephso
 - Exponentially suppressed flux dispersion (dual of transmon's charge insensitivity)
 - Coherence limited by dielectric loss, not flux noise
 - T₁ ~ 2 μs, T₂ ~ 1 μs (first demonstration)
+
+## Links
+- **Journal:** [Nature](https://doi.org/10.1038/s41586-020-2687-9)
+- **arXiv:** [1907.02937](https://arxiv.org/abs/1907.02937)
+
 ## Zoo Links
 - [[blochnium]]
 - [[fluxonium]]

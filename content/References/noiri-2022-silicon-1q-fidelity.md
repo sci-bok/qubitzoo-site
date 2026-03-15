@@ -16,6 +16,11 @@ Demonstrates single-qubit gate fidelity of 99.8% and two-qubit gate fidelity of 
 - 2Q CZ gate fidelity: 99.5%
 - Platform: ²⁸Si/SiGe double quantum dot
 - Gate time: ~100 ns (1Q), ~50 ns (2Q)
+
+## Links
+- **Journal:** [Nature](https://doi.org/10.1038/s41586-021-04182-y)
+- **arXiv:** [2108.02626](https://arxiv.org/abs/2108.02626)
+
 ## Zoo Links
 - [[silicon-spin-qubit]]
 - [[spin-qubit]]

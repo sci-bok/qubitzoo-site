@@ -22,6 +22,11 @@ Proposes using metastable states of alkaline-earth atoms (⁸⁸Sr, ¹⁷¹Yb) t
 - Surface code threshold increases from ~1% (Pauli) to ~4% (erasure-dominated)
 - Compatible with existing tweezer array hardware (⁸⁸Sr, ¹⁷¹Yb platforms)
 
+
+## Links
+- **Journal:** [Nature Communications](https://doi.org/10.1038/s41467-022-32094-6)
+- **arXiv:** [2201.03540](https://arxiv.org/abs/2201.03540)
+
 ## Zoo Links
 - [[erasure-qubit]]
 - [[neutral-atom-qubit]]

@@ -36,3 +36,6 @@ Text truncated: **no**.
 
 Ingestion notes:
 - LaTeX source extraction failed
+
+## Links
+- **arXiv:** [quant-ph/0006088](https://arxiv.org/abs/quant-ph/0006088)

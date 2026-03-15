@@ -16,6 +16,11 @@ First observation of coherent quantum oscillations in a superconducting circuit 
 - Oscillation period ~0.15 ns, decay time ~2 ns
 - Operated at charge degeneracy point
 - Established superconducting circuits as a viable qubit platform
+
+## Links
+- **Journal:** [Nature](https://doi.org/10.1038/19718)
+- **arXiv:** [cond-mat/9904003](https://arxiv.org/abs/cond-mat/9904003)
+
 ## Zoo Links
 - [[cooper-pair-box-charge-qubit]]
 - [[transmon]]

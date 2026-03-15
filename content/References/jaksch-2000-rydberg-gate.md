@@ -16,6 +16,11 @@ Proposes the Rydberg blockade mechanism for two-qubit gates between neutral atom
 - Conditional phase gate in ~1 μs
 - Works for atoms separated by ~5–10 μm
 - Foundation for ALL neutral-atom entangling gate demonstrations
+
+## Links
+- **Journal:** [Physical Review Letters](https://doi.org/10.1103/PhysRevLett.85.2208)
+- **arXiv:** [quant-ph/0004038](https://arxiv.org/abs/quant-ph/0004038)
+
 ## Zoo Links
 - [[neutral-atom-qubit]]
 - [[rydberg-neutral-atom-qubit]]

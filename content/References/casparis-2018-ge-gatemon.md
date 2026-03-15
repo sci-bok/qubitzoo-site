@@ -16,6 +16,11 @@ Demonstrates a gatemon qubit based on a proximitized InAs/Al two-dimensional ele
 - T₁ ~ 1 μs, T₂* ~ 0.3 μs (early device)
 - Planar 2DEG junction (vs nanowire in original gatemon)
 - Compatible with standard lithographic fabrication
+
+## Links
+- **Journal:** [Nature Nanotechnology](https://doi.org/10.1038/s41565-018-0207-y)
+- **arXiv:** [1802.02627](https://arxiv.org/abs/1802.02627)
+
 ## Zoo Links
 - [[gatemon]]
 - [[transmon]]

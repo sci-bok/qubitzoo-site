@@ -32,3 +32,6 @@ Disputes resolved: **0**.
 Citation count snapshot (Semantic Scholar): **0**.
 Ingestion source: **latex**.
 Text truncated: **no**.
+
+## Links
+- **arXiv:** [quant-ph/9806048](https://arxiv.org/abs/quant-ph/9806048)

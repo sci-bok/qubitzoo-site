@@ -16,6 +16,11 @@ Introduces color codes: a family of topological quantum error-correcting codes d
 - Defined on 2D triangular/hexagonal lattices with 3-colorability
 - Distance-3 code: [[7,1,3]] (Steane code is a special case)
 - Topological protection equivalent to surface code
+
+## Links
+- **Journal:** [Physical Review Letters](https://doi.org/10.1103/PhysRevLett.97.180501)
+- **arXiv:** [quant-ph/0604085](https://arxiv.org/abs/quant-ph/0604085)
+
 ## Zoo Links
 - [[color-code-logical-qubit]]
 - [[surface-code-logical-qubit]]

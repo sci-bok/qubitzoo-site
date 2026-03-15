@@ -24,6 +24,11 @@ Shows that converting dominant decay errors (T₁) into detectable erasure error
 - Applicable to dual-rail superconducting cavities and metastable transmon schemes
 - Provides a concrete path to lower-overhead fault tolerance
 
+
+## Links
+- **Journal:** [Physical Review X (also arXiv:2208.05461)](https://doi.org/10.1103/PhysRevX.13.041022)
+- **arXiv:** [2208.05461](https://arxiv.org/abs/2208.05461)
+
 ## Zoo Links
 - [[erasure-qubit]]
 - [[surface-code-logical-qubit]]

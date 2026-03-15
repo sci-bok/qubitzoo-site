@@ -36,6 +36,11 @@ Demonstrates high-fidelity CZ (99.76%) and ZZ-free iSWAP (99.87%) gates using a 
 - Gate time: ~200 ns (CZ), ~120 ns (iSWAP)
 - Architecture adopted by Google and IBM for next-generation processors
 
+
+## Links
+- **Journal:** [Physical Review X](https://doi.org/10.1103/PhysRevX.11.021058)
+- **arXiv:** [2011.01261](https://arxiv.org/abs/2011.01261)
+
 ## Zoo Links
 - [[tunable-coupler]]
 - [[transmon]]

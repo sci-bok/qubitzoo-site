@@ -47,3 +47,7 @@ Text truncated: **no** (1977 lines, full paper).
 ## Zoo Entries
 
 - [[circuit-qed]]
+
+## Links
+- **Journal:** [Physical Review A](https://doi.org/10.1103/PhysRevA.69.062320)
+- **arXiv:** [cond-mat/0402216](https://arxiv.org/abs/cond-mat/0402216)

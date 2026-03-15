@@ -16,6 +16,11 @@ Introduces Floquet codes — dynamical quantum error-correcting codes where the 
 - Honeycomb lattice with 3-step XX/YY/ZZ cycle
 - Only weight-2 measurements (vs weight-4 for surface code)
 - Effective code after one cycle is topologically equivalent to toric code
+
+## Links
+- **Journal:** [Quantum](https://doi.org/10.22331/q-2021-10-19-564)
+- **arXiv:** [2107.02194](https://arxiv.org/abs/2107.02194)
+
 ## Zoo Links
 - [[floquet-codes]]
 - [[surface-code-logical-qubit]]

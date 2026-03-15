@@ -16,6 +16,11 @@ Comprehensive roadmap for implementing the surface code on superconducting hardw
 - Resource estimates for Shor's algorithm: ~20M physical qubits
 - Lattice surgery for logical operations
 - Concrete superconducting hardware requirements
+
+## Links
+- **Journal:** [Physical Review A](https://doi.org/10.1103/PhysRevA.86.032324)
+- **arXiv:** [1208.0928](https://arxiv.org/abs/1208.0928)
+
 ## Zoo Links
 - [[surface-code-logical-qubit]]
 - [[transmon]]

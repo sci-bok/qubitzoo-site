@@ -29,6 +29,11 @@ Demonstrates a universal gate set for ⁹Be⁺ hyperfine qubits with single-qubi
 - Platform: ⁹Be⁺ hyperfine qubits in surface-electrode trap
 - Error dominated by spontaneous emission from Raman beams
 
+
+## Links
+- **Journal:** [Physical Review Letters](https://doi.org/10.1103/PhysRevLett.117.060505)
+- **arXiv:** [1604.00032](https://arxiv.org/abs/1604.00032)
+
 ## Zoo Links
 - [[ytterbium-hyperfine-qubit]]
 - [[trapped-ion-qubit]]

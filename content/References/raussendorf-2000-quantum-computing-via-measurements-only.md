@@ -26,3 +26,6 @@ We propose a different model of a scalable quantum computer in which the entire 
 ## Key Findings
 - Establishes the core MBQC / one-way computation paradigm.
 - Provides the conceptual basis later specialized to photonic cluster-state architectures.
+
+## Links
+- **arXiv:** [quant-ph/0010033](https://arxiv.org/abs/quant-ph/0010033)

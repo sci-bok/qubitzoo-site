@@ -16,6 +16,11 @@ Introduces the resonant exchange (RX) qubit: a three-electron triple quantum dot
 - First-order insensitivity to charge noise (sweet spot)
 - Gate times: ~1 ns (fast, all-electrical)
 - T₂* ~ 1 μs at sweet spot (100× improvement over exchange-only at generic point)
+
+## Links
+- **Journal:** [Physical Review Letters](https://doi.org/10.1103/PhysRevLett.111.050501)
+- **arXiv:** [1302.1933](https://arxiv.org/abs/1302.1933)
+
 ## Zoo Links
 - [[rx-qubit]]
 - [[exchange-only-qubit]]

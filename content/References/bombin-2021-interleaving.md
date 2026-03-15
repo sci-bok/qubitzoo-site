@@ -24,6 +24,10 @@ Proposes the interleaving technique for photonic quantum computing, enabling fau
 - Compatible with ballistic (non-adaptive) photonic circuits
 - Thresholds comparable to bulk topological codes when combined with fusion-based approaches
 
+
+## Links
+- **arXiv:** [2103.08612](https://arxiv.org/abs/2103.08612)
+
 ## Zoo Links
 - [[fusion-based-photonic-qubit]]
 - [[photonic-cluster-state-mbqc-qubit]]

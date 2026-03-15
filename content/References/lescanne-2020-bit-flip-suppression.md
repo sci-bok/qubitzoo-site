@@ -27,6 +27,11 @@ Demonstrates exponential suppression of bit-flip errors in a dissipatively stabi
 - Uses engineered two-photon dissipation via a buffer mode
 - First experimental confirmation of exponential bit-flip suppression in a cat qubit
 
+
+## Links
+- **Journal:** [Nature Physics](https://doi.org/10.1038/s41567-020-0824-x)
+- **arXiv:** [1907.11729](https://arxiv.org/abs/1907.11729)
+
 ## Zoo Links
 - [[kerr-cat-qubit]]
 - [[cat-codes]]

@@ -28,3 +28,7 @@ We present a complete scheme for quantum information processing using the unique
 ## Key Findings
 - Introduces a clock-state-compatible neutral-atom qubit architecture.
 - Establishes a clear control/readout path using metastable manifolds.
+
+## Links
+- **Journal:** [Physical Review Letters](https://doi.org/10.1103/PhysRevLett.101.170504)
+- **arXiv:** [0808.1940](https://arxiv.org/abs/0808.1940)

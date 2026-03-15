@@ -17,6 +17,11 @@ Introduces the circuit-QED dual-rail qubit: a logical qubit encoded in |01⟩/|1
 - Erasure:Pauli error ratio strongly biased (>10:1)
 - QND parity measurement via transmon ancilla
 - Foundation for AWS and Yale erasure qubit programs
+
+## Links
+- **Journal:** [Proceedings of the National Academy of Sciences](https://doi.org/10.1073/pnas.2221736120)
+- **arXiv:** [2212.12077](https://arxiv.org/abs/2212.12077)
+
 ## Zoo Links
 - [[dual-rail-superconducting-qubit]]
 - [[erasure-qubit]]

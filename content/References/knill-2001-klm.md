@@ -15,6 +15,10 @@ The KLM scheme: proves that efficient quantum computation is possible using only
 - Success probability boosted to near-unity via teleportation gadgets
 - Requires only linear optics + single-photon detection + classical feed-forward
 - Resource overhead: ~10⁴ photons per gate (original), dramatically reduced by later schemes
+
+## Links
+- **Journal:** [Nature](https://doi.org/10.1038/35051009)
+
 ## Zoo Links
 - [[linear-optical-photonic-qubit]]
 - [[dual-rail-photonic-qubit]]

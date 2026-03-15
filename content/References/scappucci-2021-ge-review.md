@@ -17,6 +17,11 @@ Comprehensive review of germanium as a quantum computing platform. Covers the un
 - Natural Ge has 4 stable spin-0 isotopes (easier purification than Si)
 - Ge/SiGe heterostructures: high hole mobility >10⁶ cm²/Vs
 - Compatibility with superconducting hybrids (Ge-Al, Ge-Nb)
+
+## Links
+- **Journal:** [Nature Reviews Materials](https://doi.org/10.1038/s41578-020-00262-z)
+- **arXiv:** [2004.08133](https://arxiv.org/abs/2004.08133)
+
 ## Zoo Links
 - [[hole-spin-qubit]]
 - [[spin-qubit]]

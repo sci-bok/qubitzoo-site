@@ -17,6 +17,11 @@ Proposes building superconducting devices — wires, Josephson junctions, SQUIDs
 - Josephson junctions from doped-undoped-doped regions in single crystal
 - SQUIDs and qubits feasible with atomistic fabrication (STM lithography)
 - Motivates merging semiconductor and superconducting qubit technologies
+
+## Links
+- **Journal:** [Nature Communications](https://doi.org/10.1038/ncomms5225)
+- **arXiv:** [1309.0015](https://arxiv.org/abs/1309.0015)
+
 ## Zoo Links
 - [[all-semiconductor-superconducting-qubit]]
 - [[silicon-spin-qubit]]

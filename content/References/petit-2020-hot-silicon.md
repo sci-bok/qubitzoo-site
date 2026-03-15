@@ -16,6 +16,11 @@ Demonstrates universal quantum logic with silicon spin qubits at 1.1 K — more 
 - CZ gate fidelity: 98.0% at 1.1 K (vs 99.3% at base temperature)
 - Single-qubit fidelity: 99.3% at 1.1 K
 - Platform: Si/SiGe double quantum dot
+
+## Links
+- **Journal:** [Nature](https://doi.org/10.1038/s41586-020-2170-7)
+- **arXiv:** [2007.09034](https://arxiv.org/abs/2007.09034)
+
 ## Zoo Links
 - [[silicon-spin-qubit]]
 - [[spin-qubit]]

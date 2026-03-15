@@ -16,6 +16,11 @@ Introduces subsystem codes and the Bacon-Shor code family. Shows that by introdu
 - [[m²,1,m]] Bacon-Shor code on m×m grid
 - Syndrome extraction via weight-2 gauge measurements only
 - Can be made asymmetric (m₁×m₂) for biased noise
+
+## Links
+- **Journal:** [Physical Review A](https://doi.org/10.1103/PhysRevA.73.012340)
+- **arXiv:** [quant-ph/0506023](https://arxiv.org/abs/quant-ph/0506023)
+
 ## Zoo Links
 - [[bacon-shor-code]]
 - [[surface-code-logical-qubit]]

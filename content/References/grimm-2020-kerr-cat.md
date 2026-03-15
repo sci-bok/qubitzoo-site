@@ -27,6 +27,11 @@ First experimental demonstration of a Kerr-cat qubit: a bosonic qubit encoded in
 - Achieved bit-flip times > 1 ms at n̄ ≈ 4
 - Gate operations demonstrated via parametric drives
 
+
+## Links
+- **Journal:** [Nature](https://doi.org/10.1038/s41586-020-2587-z)
+- **arXiv:** [1907.12131](https://arxiv.org/abs/1907.12131)
+
 ## Zoo Links
 - [[kerr-cat-qubit]]
 - [[cat-codes]]

@@ -17,6 +17,11 @@ Demonstrates the superconducting composite qubit (CQB): two capacitively coupled
 - Clifford fidelity: >99.7% (randomized benchmarking)
 - Coupled CQB-CQB operations demonstrated
 - No microwave generators/mixers/filters needed
+
+## Links
+- **Journal:** [Physical Review X](https://doi.org/10.1103/PhysRevX.10.041051)
+- **arXiv:** [2003.13154](https://arxiv.org/abs/2003.13154)
+
 ## Zoo Links
 - [[dual-rail-superconducting-qubit]]
 - [[transmon]]

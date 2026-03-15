@@ -27,6 +27,11 @@ Proposes and analyzes a tunable coupling scheme for superconducting qubits using
 - Theoretical CZ gate fidelity > 99.9% with realistic parameters
 - Foundation for Google Sycamore and IBM Eagle/Heron architectures
 
+
+## Links
+- **Journal:** [Physical Review Applied](https://doi.org/10.1103/PhysRevApplied.10.054062)
+- **arXiv:** [1803.09813](https://arxiv.org/abs/1803.09813)
+
 ## Zoo Links
 - [[tunable-coupler]]
 - [[transmon]]

@@ -16,6 +16,11 @@ Demonstrates a quantum network node using a single SiV⁻ center in a diamond na
 - System detection efficiency: ~85% into ZPL
 - Memory-enhanced quantum communication protocol demonstrated
 - Platform: SiV⁻ in diamond photonic crystal cavity at 100 mK
+
+## Links
+- **Journal:** [Physical Review Letters](https://doi.org/10.1103/PhysRevLett.123.183602)
+- **arXiv:** [1907.13199](https://arxiv.org/abs/1907.13199)
+
 ## Zoo Links
 - [[siv-color-center-qubit]]
 - [[nv-center-qubit]]

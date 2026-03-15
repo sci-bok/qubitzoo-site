@@ -17,6 +17,11 @@ Proposes an encoded superconducting qubit using two coupled transmons with logic
 - Two-qubit CNOT between encoded pairs via capacitive coupling
 - Natural fit for gatemon/super-semi junctions (gate-voltage control)
 - Hamiltonian formally identical to singlet-triplet spin qubit
+
+## Links
+- **Journal:** [Nature Communications](https://doi.org/10.1038/ncomms11059)
+- **arXiv:** [1507.07923](https://arxiv.org/abs/1507.07923)
+
 ## Zoo Links
 - [[dual-rail-superconducting-qubit]]
 - [[gatemon]]

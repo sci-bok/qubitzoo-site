@@ -25,3 +25,7 @@ We propose an approach to optical quantum computation in which a deterministic e
 ## Key Findings
 - Establishes a concrete optical implementation route for cluster-state MBQC.
 - Clarifies feed-forward and resource overhead tradeoffs in photonic MBQC.
+
+## Links
+- **Journal:** [Physical Review Letters](https://doi.org/10.1103/PhysRevLett.93.040503)
+- **arXiv:** [quant-ph/0402005](https://arxiv.org/abs/quant-ph/0402005)

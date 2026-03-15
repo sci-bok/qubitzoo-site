@@ -16,6 +16,11 @@ Introduces the gmon qubit: an Xmon transmon with an integrated tunable coupler b
 - Integrated coupler (no separate coupler qubit needed)
 - Two-qubit iSWAP gate time: ~12 ns
 - Architecture used in Google's quantum supremacy processor
+
+## Links
+- **Journal:** [Physical Review Letters](https://doi.org/10.1103/PhysRevLett.113.220502)
+- **arXiv:** [1402.7367](https://arxiv.org/abs/1402.7367)
+
 ## Zoo Links
 - [[gmon]]
 - [[xmon]]

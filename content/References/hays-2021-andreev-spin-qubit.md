@@ -17,6 +17,11 @@ First demonstration of coherent manipulation of an Andreev spin qubit: a qubit e
 - T₂* ~ 50 ns (limited by charge noise in junction)
 - Readout via dispersive shift of a coupled microwave resonator
 - Platform: InAs nanowire Josephson junction
+
+## Links
+- **Journal:** [Science](https://doi.org/10.1126/science.abf0345)
+- **arXiv:** [2101.06701](https://arxiv.org/abs/2101.06701)
+
 ## Zoo Links
 - [[andreev-spin-qubit]]
 - [[gatemon]]

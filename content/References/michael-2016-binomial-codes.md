@@ -16,6 +16,11 @@ Introduces binomial quantum codes: a family of bosonic error-correcting codes wi
 - Smallest code corrects single photon loss: |0_L⟩ = (|0⟩+|4⟩)/√2, |1_L⟩ = |2⟩
 - Corrects t photon loss errors using ≤ 2t+1 photons
 - Experimentally demonstrated in superconducting cavities
+
+## Links
+- **Journal:** [Physical Review X](https://doi.org/10.1103/PhysRevX.6.031006)
+- **arXiv:** [1602.00008](https://arxiv.org/abs/1602.00008)
+
 ## Zoo Links
 - [[binomial-codes]]
 - [[cat-codes]]

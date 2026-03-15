@@ -16,6 +16,11 @@ Proposes the 0-π qubit: a superconducting circuit with two degenerate ground st
 - Qubit splitting exponentially small in circuit parameters
 - Requires superinductance >1 μH (challenging but achievable)
 - Related to the cos(2φ) qubit family
+
+## Links
+- **Journal:** [Physical Review A](https://doi.org/10.1103/PhysRevA.87.052306)
+- **arXiv:** [1302.4122](https://arxiv.org/abs/1302.4122)
+
 ## Zoo Links
 - [[0-pi-qubit]]
 - [[cos2phi-qubit]]

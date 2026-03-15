@@ -16,6 +16,11 @@ Demonstrates coherent oscillations in a semiconductor charge qubit: a single ele
 - Coherent oscillations with T₂* ~ 7 ns (charge-noise limited)
 - Gate time: ~30 ps (fastest semiconductor qubit gate)
 - Platform: GaAs/AlGaAs double quantum dot
+
+## Links
+- **Journal:** [Physical Review Letters](https://doi.org/10.1103/PhysRevLett.105.246804)
+- **arXiv:** [1004.5616](https://arxiv.org/abs/1004.5616)
+
 ## Zoo Links
 - [[semiconductor-charge-qubit]]
 - [[spin-qubit]]

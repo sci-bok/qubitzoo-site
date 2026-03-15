@@ -26,3 +26,7 @@ We introduce a scheme for linear optics quantum computation, that makes no use o
 ## Key Findings
 - Demonstrates practical cluster-state construction primitives in linear optics.
 - Improves resource efficiency versus earlier gate-teleportation-heavy approaches.
+
+## Links
+- **Journal:** [Physical Review Letters](https://doi.org/10.1103/PhysRevLett.95.010501)
+- **arXiv:** [quant-ph/0405157](https://arxiv.org/abs/quant-ph/0405157)

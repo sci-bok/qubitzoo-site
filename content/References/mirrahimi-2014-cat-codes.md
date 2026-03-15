@@ -16,6 +16,11 @@ Proposes the cat code paradigm: encoding a qubit in coherent state superposition
 - Bit-flip suppression: exponential in |α|²
 - Phase-flip rate: linear in |α|² (κ_1)
 - Universal gate set via concatenation with repetition code
+
+## Links
+- **Journal:** [New Journal of Physics](https://doi.org/10.1088/1367-2630/16/4/045014)
+- **arXiv:** [1312.2017](https://arxiv.org/abs/1312.2017)
+
 ## Zoo Links
 - [[cat-codes]]
 - [[kerr-cat-qubit]]

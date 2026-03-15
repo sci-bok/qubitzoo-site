@@ -27,3 +27,7 @@ Recent experimental progress with alkaline-earth atoms has opened the door to qu
 ## Key Findings
 - Refines the original alkaline-earth clock-state qubit proposal into a more detailed control architecture.
 - Clarifies implementation pathways for addressing and entangling operations.
+
+## Links
+- **Journal:** [European Physical Journal D](https://doi.org/10.1140/epjd/e2011-20095-2)
+- **arXiv:** [1102.1463](https://arxiv.org/abs/1102.1463)

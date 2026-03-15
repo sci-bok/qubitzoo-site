@@ -16,6 +16,11 @@ Proposes the Mølmer-Sørensen gate: a two-qubit entangling gate for trapped ion
 - Insensitive to motional state (works at finite temperature)
 - Gate time: ~100 μs (typical)
 - Became the dominant two-qubit gate in all major trapped-ion platforms
+
+## Links
+- **Journal:** [Physical Review Letters](https://doi.org/10.1103/PhysRevLett.82.1971)
+- **arXiv:** [quant-ph/9810039](https://arxiv.org/abs/quant-ph/9810039)
+
 ## Zoo Links
 - [[molmer-sorenson-gate]]
 - [[trapped-ion-qubit]]

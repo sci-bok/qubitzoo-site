@@ -16,5 +16,10 @@ First demonstration of coherent spin control of a SnV⁻ center in diamond at 1.
 - Coherent spin manipulation via microwave driving
 - Operating temperature: 1.7 K (³He, vs 100 mK for SiV)
 - Optical linewidth: near transform-limited
+
+## Links
+- **Journal:** [Physical Review X](https://doi.org/10.1103/PhysRevX.11.041041)
+- **arXiv:** [2106.00723](https://arxiv.org/abs/2106.00723)
+
 ## Zoo Links
 - [[siv-color-center-qubit]]

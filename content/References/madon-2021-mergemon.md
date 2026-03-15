@@ -17,6 +17,11 @@ Improved merged-element transmon using micrometer-scale Al/AlOₓ/Al overlap jun
 - Low subgap conduction indicates high-quality tunnel barrier
 - Junction loss is NOT the dominant limiter
 - Path to high-coherence compact qubits via improved barrier materials
+
+## Links
+- **Journal:** [Physical Review Applied](https://doi.org/10.1103/PhysRevApplied.16.024023)
+- **arXiv:** [2103.09163](https://arxiv.org/abs/2103.09163)
+
 ## Zoo Links
 - [[mergemon]]
 - [[transmon]]

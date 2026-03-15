@@ -29,6 +29,11 @@ First experimental demonstration of a dual-rail erasure qubit in superconducting
 - Dual-rail encoding: |0⟩ = |10⟩, |1⟩ = |01⟩ across two modes
 - Compatible with surface code error correction with reduced overhead
 
+
+## Links
+- **Journal:** [Physical Review X](https://doi.org/10.1103/PhysRevX.14.011051)
+- **arXiv:** [2307.08737](https://arxiv.org/abs/2307.08737)
+
 ## Zoo Links
 - [[erasure-qubit]]
 - [[transmon]]

@@ -16,6 +16,11 @@ Foundational proposal for spin-based quantum computing in semiconductor quantum 
 - Exchange interaction J(t) for two-qubit √SWAP gate
 - Readout via spin-to-charge conversion
 - Estimated gate times ~1 ns, decoherence times ~1 μs (GaAs, 1998 estimates)
+
+## Links
+- **Journal:** [Physical Review A](https://doi.org/10.1103/PhysRevA.57.120)
+- **arXiv:** [cond-mat/9701055](https://arxiv.org/abs/cond-mat/9701055)
+
 ## Zoo Links
 - [[loss-divincenzo-qubit]]
 - [[spin-qubit]]
