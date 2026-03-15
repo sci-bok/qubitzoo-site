@@ -22,6 +22,10 @@ The dual-rail superconducting qubit encodes quantum information in the single-ex
 
 ## Description
 
+### Photonic ancestry
+
+The dual-rail encoding itself originates in quantum optics: a single photon across two spatial modes ($|01\rangle$/$|10\rangle$) has been the canonical photonic qubit since the late 1990s (see [[dual-rail-photonic-qubit]]). The key insight of Shim & Tahan (2016) was recognizing that the *same encoding* applied to superconducting modes unlocks microwave-free control — because the logical splitting is the mode detuning, controllable by baseband flux/voltage pulses. The SC dual-rail is thus a cross-platform translation of a photonic concept through semiconductor physics.
+
 ### Semiconductor-inspired origin
 
 The dual-rail SC qubit was proposed by Shim et al. (2016) as a direct translation of semiconductor encoded qubit principles into superconducting circuits. In semiconductor spin qubits, two spins encode one logical qubit in $|01\rangle$/$|10\rangle$ because individual spins lack tunable frequencies. Superconducting qubits have tunable frequencies, making this encoding optional — but it brings profound advantages:
@@ -74,6 +78,7 @@ where $\Delta = \omega_1 - \omega_2$ is the detuning (baseband-controllable) and
 - [[levine-2024-dual-rail-erasure]]
 
 ## Related Entries
+- [[dual-rail-photonic-qubit]]
 - [[erasure-qubit]]
 - [[transmon]]
 - [[gatemon]]

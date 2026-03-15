@@ -1,15 +1,15 @@
 ---
-title: Solid State MOC
+title: Spin-Photon MOC
 type: moc
-technology_family: Solid State
-note_count: 2
+technology_family: Spin-Photon
+note_count: 3
 last_updated: '2026-03-15'
 generated_by: scibok-curation
 ---
 
-# Solid State MOC
+# Spin-Photon MOC
 
-Curated map of Zoo entries in the **Solid State** family.
+Curated map of Zoo entries in the **Spin-Photon** family.
 
 ## Entries
 
@@ -17,7 +17,8 @@ Curated map of Zoo entries in the **Solid State** family.
 |---|---|---|
 | [[nv-center-qubit]] | qubit | demonstrated |
 | [[siv-color-center-qubit]] | qubit | demonstrated |
+| [[t-center-qubit]] | qubit | demonstrated |
 
 ## Composition
 
-- qubit: 2
+- qubit: 3

@@ -1,7 +1,7 @@
 ---
 title: SiV / SnV Color Center Qubit
 entry_type: qubit
-technology_family: Solid State
+technology_family: Spin-Photon
 status: demonstrated
 first_proposed_year: 2017
 keywords:
@@ -59,5 +59,6 @@ Qubit states are typically the spin-up and spin-down states of the lower orbital
 - **Fabrication:** Requires implantation + annealing in high-purity diamond. Yield and placement precision improving but below semiconductor standards.
 
 ## Related Entries
+- [[t-center-qubit]]
 - [[nv-center-qubit]]
 - [[dual-rail-photonic-qubit]]

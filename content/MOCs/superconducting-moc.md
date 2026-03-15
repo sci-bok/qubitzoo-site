@@ -15,12 +15,11 @@ Curated map of Zoo entries in the **Superconducting** family.
 
 | Entry | Type | Status |
 |---|---|---|
-| [[circuit-qed]] | coupling | demonstrated |
-| [[tunable-coupler]] | coupling | demonstrated |
-| [[binomial-codes]] | encoding | seed |
 | [[0-pi-qubit]] | qubit | demonstrated |
+| [[binomial-codes]] | encoding | seed |
 | [[blochnium]] | qubit | seed |
 | [[cat-codes]] | qubit | demonstrated |
+| [[circuit-qed]] | coupling | demonstrated |
 | [[cooper-pair-box-charge-qubit]] | qubit | seed |
 | [[cos2phi-qubit]] | qubit | proposed |
 | [[dual-rail-superconducting-qubit]] | qubit | demonstrated |
@@ -33,6 +32,7 @@ Curated map of Zoo entries in the **Superconducting** family.
 | [[mergemon]] | qubit | demonstrated |
 | [[phase-qubit]] | qubit | demonstrated |
 | [[transmon]] | qubit | demonstrated |
+| [[tunable-coupler]] | coupling | demonstrated |
 | [[xmon]] | qubit | demonstrated |
 
 ## Composition

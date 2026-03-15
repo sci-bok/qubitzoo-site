@@ -58,6 +58,7 @@ Dual-rail is robust to global phase noise, naturally compatible with telecom/opt
 - [[knill-2001-klm]]
 
 ## Related Entries
+- [[dual-rail-superconducting-qubit]]
 
 - [[linear-optical-photonic-qubit]]
 - [[photonic-cluster-state-mbqc-qubit]]

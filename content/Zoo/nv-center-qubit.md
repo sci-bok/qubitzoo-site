@@ -1,7 +1,7 @@
 ---
 title: Nitrogen-Vacancy (NV) Center Qubit
 entry_type: qubit
-technology_family: Solid State
+technology_family: Spin-Photon
 status: demonstrated
 first_proposed_year: 1997
 keywords:
@@ -78,5 +78,7 @@ NV centers operate at room temperature, can be optically initialized and read ou
 - [[jelezko-2004-nv-center]]
 
 ## Related Entries
+- [[t-center-qubit]]
+- [[siv-color-center-qubit]]
 
 - [[loss-divincenzo-qubit]]
