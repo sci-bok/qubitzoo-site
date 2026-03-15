@@ -1,5 +1,5 @@
 ---
-title: Bifluxon: Fluxon-Parity-Protected Superconducting Qubit
+title: "Bifluxon: Fluxon-Parity-Protected Superconducting Qubit"
 authors: [K. Kalashnikov, W. T. Hsieh, W. Zhang, W.-S. Lu, P. Brink, M. Fuber, M. Pecht, A. Posada, R. McDermott, M. E. Gershenson]
 year: 2019
 journal: arXiv preprint
