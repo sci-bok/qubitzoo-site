@@ -27,7 +27,7 @@ This qubit consists of single electron spin trapped in a quantum dot (QD) in sem
 
 ## Figure
 
-![[single-spin-quantum-dot-loss-divincenzo-qubit-figure.png]]
+![[loss-divincenzo-qubit-figure.png]]
 
 ## Motivation
 Individual spin with S=1/2 is probably the simplest realization of a qubit. The electron spin qubit in semiconductor QD provides easy electrical control, potentially good scalability, and compatibility with current semiconductor technology.

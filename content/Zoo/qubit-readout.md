@@ -18,6 +18,11 @@ verified_by: manual
 
 Qubit readout is the process of extracting classical information from a quantum state. It is the final (and often limiting) step in any quantum computation, and readout fidelity directly bounds achievable logical error rates.
 
+
+## Figure
+
+![[qubit-readout-figure.png]]
+
 ## Description
 
 Readout mechanisms vary by platform but share the goal of mapping qubit states to distinguishable classical signals with minimal back-action:

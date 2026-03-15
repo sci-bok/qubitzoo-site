@@ -20,6 +20,11 @@ extracted_by: scibok
 verified_by: scibok
 ---
 
+
+## Figure
+
+![[erasure-qubit-figure.png]]
+
 ## Description
 
 An erasure qubit is a qubit encoding paradigm in which the dominant physical errors are converted into detectable erasure errors — the qubit leaks to a known non-computational state that can be identified by a non-destructive check, revealing the location (but not the content) of the error. The key insight, established by the quantum erasure channel theory, is that an error whose location is known costs dramatically less to correct than a Pauli error at an unknown location: the threshold error rate for erasure errors in the surface code is approximately $p_{\text{erasure}} \approx 50\%$, compared to $p_{\text{Pauli}} \approx 1\%$ for depolarizing noise. This 2–10$\times$ reduction in overhead motivates engineering qubits where the dominant failure mode is erasure.

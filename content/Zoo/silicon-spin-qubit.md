@@ -20,6 +20,11 @@ verified_by: manual
 
 The silicon spin qubit encodes quantum information in the spin of a single electron (or hole) confined in a gate-defined quantum dot fabricated on a silicon substrate (Si/SiGe heterostructure or Si-MOS). Silicon is uniquely suited to spin qubits because isotopic purification (²⁸Si) eliminates hyperfine noise from nuclear spins, enabling coherence times exceeding 10 ms — orders of magnitude beyond III-V semiconductors.
 
+
+## Figure
+
+![[silicon-spin-qubit-figure.png]]
+
 ## Description
 
 Gate-defined quantum dots in silicon confine individual electrons using electrostatic potentials created by nanoscale metallic gates on a Si/SiGe or Si-MOS stack. Qubit states are the spin-up and spin-down states of a single electron, split by an external magnetic field (Zeeman splitting, typically 5–40 GHz at 1–1.5 T). Single-qubit gates use electric dipole spin resonance (EDSR) via a micromagnet gradient or oscillating gate voltages exploiting spin-orbit coupling. Two-qubit gates use the exchange interaction $J$ between neighboring dots, controlled by barrier gate voltages.

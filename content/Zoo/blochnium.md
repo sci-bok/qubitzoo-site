@@ -22,13 +22,14 @@ verified_by: pending
 
 Blochnium: superconducting quasicharge qubit is a seed entry imported from the legacy Qubit Zoo Airtable dataset.
 
-## Description
-Blochnium is proposed as the dual of the transmon qubit, which exploits a coherent insulating response of a single Josephson junction that emerges from the extension of phase fluctuations beyond 2π. A weak junction is shunted by an extremely high inductance. The insulating character of the junction is manifested by the vanishing flux sensitivity of the qubit transition between the ground state and the first excited state, which recovers rapidly for transitions to higher-energy states. The spectrum agrees with a duality mapping of blochnium onto a transmon, which replaces the external flux by the offset charge and introduces a new collective quasicharge variable instead of the superconducting phase.
-
 
 ## Figure
 
-![[blochnium-superconducting-quasicharge-qubit-figure.png]]
+![[blochnium-figure.png]]
+
+## Description
+Blochnium is proposed as the dual of the transmon qubit, which exploits a coherent insulating response of a single Josephson junction that emerges from the extension of phase fluctuations beyond 2π. A weak junction is shunted by an extremely high inductance. The insulating character of the junction is manifested by the vanishing flux sensitivity of the qubit transition between the ground state and the first excited state, which recovers rapidly for transitions to higher-energy states. The spectrum agrees with a duality mapping of blochnium onto a transmon, which replaces the external flux by the offset charge and introduces a new collective quasicharge variable instead of the superconducting phase.
+
 
 ## Motivation
 Three fundamental types of superconducting qubit are known, each reflecting a distinct behaviour of quantum fluctuations in a Cooper pair condensate: single-charge tunnelling (charge qubit), single-flux tunnelling (flux qubit) and phase oscillations (phase qubit or transmon). Yet, the dual nature of charge and flux suggests that circuit atoms must come in pairs, 'blochnium' is proposed as the dual of the transmon.

@@ -21,6 +21,11 @@ extracted_by: scibok
 verified_by: scibok
 ---
 
+
+## Figure
+
+![[ytterbium-hyperfine-qubit-figure.png]]
+
 ## Description
 
 The ytterbium-171 hyperfine qubit encodes quantum information in the two hyperfine clock states of the $^{171}\text{Yb}^+$ ion's $^2S_{1/2}$ ground-state manifold: $|0\rangle \equiv |F=0, m_F=0\rangle$ and $|1\rangle \equiv |F=1, m_F=0\rangle$, separated by 12.642812 GHz. Both states have $m_F=0$, making the qubit first-order insensitive to magnetic field fluctuations — the transition frequency shifts only quadratically with field, enabling exceptionally long coherence times.

@@ -22,13 +22,14 @@ verified_by: pending
 
 "Binomial code" fault-tolerant logical qubits encoded in bosonic modes of superconducting cavities is a seed entry imported from the legacy Qubit Zoo Airtable dataset.
 
-## Description
-The bosonic modes of long-lifetime machined aluminum cavities may be universally controlled when coupled to a nonlinear oscillator, such as a transmon. This allows for the preparation and manipulation of exotic quantum states, some of which have desirable properties for quantum error detection and correction. One such scheme is a family of codes referred to as "binomial codes", which use finite superpositions of Fock states with definite generalized photon number parity to detect photon loss, the dominant error channel in the cavity.
-
 
 ## Figure
 
-![[binomial-code-fault-tolerant-logical-qubits-encoded-in-figure.png]]
+![[binomial-codes-figure.png]]
+
+## Description
+The bosonic modes of long-lifetime machined aluminum cavities may be universally controlled when coupled to a nonlinear oscillator, such as a transmon. This allows for the preparation and manipulation of exotic quantum states, some of which have desirable properties for quantum error detection and correction. One such scheme is a family of codes referred to as "binomial codes", which use finite superpositions of Fock states with definite generalized photon number parity to detect photon loss, the dominant error channel in the cavity.
+
 
 ## Motivation
 A superconducting qubit with long lifetime, a known dominant error channel, and a readily-implementable error correction scheme is desirable for quantum information processing.

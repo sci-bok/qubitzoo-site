@@ -18,6 +18,11 @@ verified_by: manual
 
 The Bacon-Shor code is a family of subsystem quantum error-correcting codes defined on a 2D grid of physical qubits. It encodes one logical qubit in $m \times m$ physical qubits with distance $d = m$, using only two-body gauge measurements (weight-2 XX and ZZ checks on neighboring pairs). The stabilizers are products of gauge operators and have weight $2m$, but syndrome extraction requires only weight-2 measurements — a major hardware simplification.
 
+
+## Figure
+
+![[bacon-shor-code-figure.png]]
+
 ## Description
 
 The Bacon-Shor code exploits the subsystem code framework: the physical Hilbert space decomposes into a logical subsystem, a gauge subsystem, and a stabilizer-fixed subsystem. Only the logical subsystem encodes information; the gauge subsystem is "don't care" degrees of freedom.

@@ -21,6 +21,11 @@ extracted_by: scibok
 verified_by: scibok
 ---
 
+
+## Figure
+
+![[kerr-cat-qubit-figure.png]]
+
 ## Description
 
 The Kerr-cat qubit is a superconducting bosonic qubit that encodes quantum information in two coherent-state superpositions $|\pm\alpha\rangle$ of a Kerr nonlinear oscillator stabilized by a resonant two-photon drive. The two computational states are the even and odd Schrödinger cat states $|\mathcal{C}_\alpha^\pm\rangle \propto |\alpha\rangle \pm |-\alpha\rangle$, which are confined to a two-dimensional manifold within the oscillator's infinite-dimensional Hilbert space by the interplay of the Kerr nonlinearity and the parametric drive.

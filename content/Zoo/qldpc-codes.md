@@ -19,6 +19,11 @@ verified_by: manual
 
 Quantum low-density parity-check (qLDPC) codes are a family of quantum error-correcting codes where each stabilizer check acts on a bounded number of qubits and each qubit participates in a bounded number of checks, regardless of code size. This sparsity enables asymptotically constant encoding overhead — potentially requiring only $O(1)$ physical qubits per logical qubit — a dramatic improvement over the $O(d^2)$ overhead of the surface code.
 
+
+## Figure
+
+![[qldpc-codes-figure.png]]
+
 ## Description
 
 Classical LDPC codes revolutionized telecommunications (5G, Wi-Fi, DVB-S2). Their quantum analogues face additional constraints: stabilizer checks must commute, which makes constructing good qLDPC codes far harder. The breakthrough came in 2021–2022 with several families achieving constant-rate, growing-distance codes:

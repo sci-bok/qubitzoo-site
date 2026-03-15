@@ -20,6 +20,11 @@ verified_by: manual
 
 The T center is a carbon-hydrogen defect complex (C–C–H) in silicon that functions as a spin-photon interface with native emission at telecom wavelengths (~1326 nm, O-band). Each T center hosts up to four spin qubits (one electron spin, three nuclear spins from ¹³C and ¹H), combining long-lived quantum memory with a photonic interface — all within silicon, compatible with existing photonic integrated circuit fabrication.
 
+
+## Figure
+
+![[t-center-qubit-figure.png]]
+
 ## Description
 
 ### Structure and physics

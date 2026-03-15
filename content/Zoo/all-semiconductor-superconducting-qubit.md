@@ -22,6 +22,11 @@ verified_by: manual
 
 The all-semiconductor superconducting qubit is a proposed architecture in which every component of a superconducting quantum circuit — Josephson junctions, wires, inductors, capacitors — is fabricated within a single group-IV semiconductor crystal (Si or Ge) using precision atomic-scale doping. The heavily doped regions become superconducting below ~1 K, and the undoped crystal between them forms the tunnel barrier. No deposited metal is involved: superconductivity is *intrinsic* to the doped semiconductor.
 
+
+## Figure
+
+![[all-semiconductor-superconducting-qubit-figure.png]]
+
 ## Description
 
 Conventional superconducting qubits use deposited metal films (Al, Nb, Ta) on a semiconductor or sapphire substrate. Even "hybrid" super-semi devices like the gatemon deposit a metal superconductor onto a semiconductor nanowire or 2DEG. The all-semiconductor approach eliminates the metal entirely:

@@ -22,6 +22,11 @@ extracted_by: scibok
 verified_by: scibok
 ---
 
+
+## Figure
+
+![[tunable-coupler-figure.png]]
+
 ## Description
 
 A tunable coupler is a superconducting coupling element — typically a frequency-tunable transmon or a flux-tunable resonator — placed between two computational qubits to enable fast, high-fidelity ON/OFF switching of qubit-qubit interactions. By modulating the coupler's frequency via an external flux bias, the effective coupling $g_{\text{eff}}$ between the computational qubits can be tuned from a large value (ON, enabling fast entangling gates) to near zero (OFF, suppressing unwanted always-on $ZZ$ crosstalk during idle periods).

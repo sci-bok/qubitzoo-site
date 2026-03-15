@@ -21,6 +21,11 @@ verified_by: manual
 
 The merged-element transmon (mergemon or MET) is a superconducting qubit in which the Josephson junction's intrinsic self-capacitance replaces the large external shunt capacitor of a conventional transmon. This merges the two defining circuit elements into one, shrinking the qubit footprint by ~100× and confining >90% of the electromagnetic energy to the tunnel barrier region — away from the lossy interfaces that limit coherence in standard transmons.
 
+
+## Figure
+
+![[mergemon-figure.png]]
+
 ## Description
 
 ### Bottom-up origin

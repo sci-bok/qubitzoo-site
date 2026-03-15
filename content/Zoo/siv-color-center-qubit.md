@@ -19,6 +19,11 @@ verified_by: manual
 
 Silicon-vacancy (SiV⁻) and tin-vacancy (SnV⁻) centers in diamond are group-IV color center qubits with inversion symmetry that protects their optical transitions from electric field noise. This gives them spectrally stable, nearly transform-limited optical emission — a critical advantage over NV centers for quantum networking, where photon indistinguishability is essential for remote entanglement.
 
+
+## Figure
+
+![[siv-color-center-qubit-figure.png]]
+
 ## Description
 
 Group-IV color centers (SiV, GeV, SnV, PbV) share a split-vacancy structure: the impurity atom sits at an inversion center between two vacant carbon sites. This $D_{3d}$ symmetry eliminates first-order coupling to electric fields (Stark effect), producing narrow, stable optical lines even in nanostructures.

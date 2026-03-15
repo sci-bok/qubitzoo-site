@@ -18,6 +18,11 @@ verified_by: manual
 
 Floquet codes are a family of dynamical quantum error-correcting codes where the code space is not defined by a fixed set of stabilizers but instead emerges from a periodic sequence of two-body measurements. The codespace changes at each time step but returns to itself after a complete measurement cycle, defining logical qubits that persist stroboscopically.
 
+
+## Figure
+
+![[floquet-codes-figure.png]]
+
 ## Description
 
 Introduced by Hastings and Haah (2021), the honeycomb Floquet code is the prototypical example. The physical qubits sit on vertices of a honeycomb lattice, and at each time step, two-body Pauli measurements (XX, YY, or ZZ) are performed on pairs of qubits sharing an edge. The three edge colors are measured in a repeating 3-step cycle.

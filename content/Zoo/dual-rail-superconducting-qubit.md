@@ -20,6 +20,11 @@ verified_by: manual
 
 The dual-rail superconducting qubit encodes quantum information in the single-excitation subspace of two coupled superconducting modes: $|0_L\rangle = |01\rangle$ and $|1_L\rangle = |10\rangle$. This encoding — borrowed from semiconductor spin-qubit design — enables microwave-free control via baseband pulses, intrinsic leakage detection, and conversion of dominant $T_1$ decay into detectable erasure errors. The concept has been realized in two forms: transmon pairs (composite qubit) and cavity pairs (cavity dual-rail).
 
+
+## Figure
+
+![[dual-rail-superconducting-qubit-figure.png]]
+
 ## Description
 
 ### Photonic ancestry

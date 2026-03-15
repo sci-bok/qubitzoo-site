@@ -19,6 +19,11 @@ verified_by: manual
 
 The cos(2φ) qubit is a proposed superconducting qubit with intrinsic protection against both charge noise and flux noise simultaneously, achieved through a potential energy that is $\pi$-periodic in the superconducting phase $\phi$ rather than $2\pi$-periodic. The qubit states are encoded in two degenerate minima of this $\cos(2\phi)$ potential, and transitions between them require tunneling through a large barrier — exponentially suppressing both bit-flip and phase-flip errors.
 
+
+## Figure
+
+![[cos2phi-qubit-figure.png]]
+
 ## Description
 
 Most superconducting qubits are protected against one type of noise at the cost of sensitivity to another. The transmon suppresses charge noise by operating at large $E_J/E_C$, but gains sensitivity to flux noise. The flux qubit can be biased to a sweet spot for flux noise but remains charge-sensitive. The cos(2φ) qubit breaks this tradeoff.

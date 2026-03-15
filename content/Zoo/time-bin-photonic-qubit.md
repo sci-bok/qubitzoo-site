@@ -20,6 +20,11 @@ extracted_by: scibok
 verified_by: scibok
 ---
 
+
+## Figure
+
+![[time-bin-photonic-qubit-figure.png]]
+
 ## Description
 
 The time-bin qubit encodes quantum information in the temporal degree of freedom of a single photon: $|0\rangle \equiv |\text{early}\rangle$ and $|1\rangle \equiv |\text{late}\rangle$, corresponding to two well-separated time slots (typically $\Delta t \sim 1{-}5\,\text{ns}$) within a single optical pulse window. Superposition states $\alpha|\text{early}\rangle + \beta|\text{late}\rangle$ are prepared by passing a single photon through an unbalanced Mach-Zehnder interferometer, where the path-length difference defines the time-bin separation.

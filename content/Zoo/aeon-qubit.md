@@ -20,13 +20,14 @@ verified_by: pending
 
 Always-on Exchange Only (AEON) is a seed entry imported from the legacy Qubit Zoo Airtable dataset.
 
-## Description
-An always-on, exchange-only qubit made up of three localized semiconductor spins with always-on exchange coupling between each dot that offers a true "sweet spot" to fluctuations of the quantum dot energy levels to both detuning parameters. Both single- and two-qubit gate operations can be performed using only exchange pulses while maintaining this sweet spot. This qubit can be smootly converted to other three-spin encoded qubits for readout, coupling to a resonator, or memory.
-
 
 ## Figure
 
-![[always-on-exchange-only-aeon-figure.png]]
+![[aeon-qubit-figure.png]]
+
+## Description
+An always-on, exchange-only qubit made up of three localized semiconductor spins with always-on exchange coupling between each dot that offers a true "sweet spot" to fluctuations of the quantum dot energy levels to both detuning parameters. Both single- and two-qubit gate operations can be performed using only exchange pulses while maintaining this sweet spot. This qubit can be smootly converted to other three-spin encoded qubits for readout, coupling to a resonator, or memory.
+
 
 ## Hamiltonian
 

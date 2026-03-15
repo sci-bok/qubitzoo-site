@@ -21,6 +21,11 @@ extracted_by: scibok
 verified_by: scibok
 ---
 
+
+## Figure
+
+![[fusion-based-photonic-qubit-figure.png]]
+
 ## Description
 
 Fusion-based quantum computing (FBQC) is a photonic architecture proposed by Bartolucci et al. (2023) and developed primarily by PsiQuantum. Rather than building large entangled cluster states deterministically and then measuring them (as in standard measurement-based QC), FBQC uses small, constant-size entangled photonic resource states that are stitched together at computation time via probabilistic fusion gates.

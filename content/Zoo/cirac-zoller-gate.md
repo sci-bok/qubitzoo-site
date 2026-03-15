@@ -19,13 +19,14 @@ verified_by: pending
 
 Cirac-Zoller gate for trapped ion qubits is a seed entry imported from the legacy Qubit Zoo Airtable dataset.
 
-## Description
-The key idea of the Cirac–Zoller proposal is to mediate the interaction between two long-lived ion qubits through the joint motion of the complete chain of trapped ions. The first quantum computer proposal.
-
 
 ## Figure
 
-![[cirac-zoller-gate-for-trapped-ion-qubits-figure.png]]
+![[cirac-zoller-gate-figure.png]]
+
+## Description
+The key idea of the Cirac–Zoller proposal is to mediate the interaction between two long-lived ion qubits through the joint motion of the complete chain of trapped ions. The first quantum computer proposal.
+
 
 ## Motivation
 A quantum computer can be implemented with cold ions confined in a linear trap and interacting with laser beams. The quantized vibrations of the ions in the trap (“phonons”) can serve as a quantum bus, enabling highly controllable interactions between ions.
