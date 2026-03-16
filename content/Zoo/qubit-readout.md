@@ -1,7 +1,7 @@
 ---
 title: Qubit Readout
 entry_type: readout
-technology_family: Cross-Platform
+technology_family: Classical Hardware
 status: demonstrated
 first_proposed_year: 1999
 keywords:

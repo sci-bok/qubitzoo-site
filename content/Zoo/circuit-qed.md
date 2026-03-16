@@ -1,7 +1,7 @@
 ---
 title: Circuit Quantum Electrodynamics (Circuit QED)
 entry_type: coupling
-technology_family: Superconducting
+technology_family: Classical Hardware
 status: demonstrated
 first_proposed_year: 2004
 keywords:
