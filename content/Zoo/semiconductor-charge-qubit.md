@@ -59,10 +59,10 @@ where $\epsilon$ is the detuning (gate-voltage controlled) and $t_c$ is the tunn
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
 | Qubit coherence $T_1$ | ~10 ns | Charge relaxation | [Hayashi et al. 2003](https://doi.org/10.1103/PhysRevLett.91.226804) |
-| Qubit coherence $T_2$ | ~1 ns | Dominated by charge noise | — |
+| Qubit coherence $T_2$ | ~1 ns | Dominated by charge noise | [Hayashi et al. 2003](https://doi.org/10.1103/PhysRevLett.91.226804) |
 | Gate time (1Q) | <1 ns | Very fast (voltage pulses) | — |
-| Gate fidelity (1Q) | ~90% | Limited by decoherence | https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.91 |
-| Readout fidelity | ~95% | Quantum point contact | https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.91 |
+| Gate fidelity (1Q) | ~90% | Limited by decoherence | [Petersson et al. 2010](https://doi.org/10.1021/nl100663w) |
+| Readout fidelity | ~95% | Quantum point contact | [Petersson et al. 2010](https://doi.org/10.1021/nl100663w) |
 | Qubit footprint | ~100–200 nm | Double quantum dot | — |
 | Operating temperature | 20–100 mK | GaAs heterostructure | — |
 

@@ -68,10 +68,10 @@ Standard bosonic codes (GKP, binomial) require complex syndrome extraction. The 
 
 | Metric | Value | Notes | Fidelity reference |
 |---|---|---|---|
-| Bit-flip time | >1 ms | Exponentially suppressed with $ | \alpha ^2$ Lescanne et al. 2020 |
-| Phase-flip time | 1–10 μs | Grows linearly with $ | \alpha ^2$; dominant error Grimm et al. 2020 |
+| Bit-flip time | >1 ms | Exponentially suppressed with $\bar{n}$ | [Lescanne et al. 2020](https://doi.org/10.1038/s41567-020-0824-x) |
+| Phase-flip time | 1–10 μs | Grows linearly with $\bar{n}$; dominant error | [Grimm et al. 2020](https://doi.org/10.1038/s41586-020-2587-z) |
 | Noise bias ratio | $10^3$–$10^4$ | $\Gamma_{\text{phase}}/\Gamma_{\text{bit-flip}}$ | [Lescanne et al. 2020](https://doi.org/10.1038/s41567-020-0824-x) |
-| Cat size $ | \alpha | ^2$ | 2–8 photons Larger $\alpha$ increases bias but also phase-flip rate Grimm et al. 2020 |
+| Cat size $\bar{n}$ | 2–8 photons | Larger $\bar{n}$ increases bias but also phase-flip rate | [Grimm et al. 2020](https://doi.org/10.1038/s41586-020-2587-z) |
 | Kerr nonlinearity $K/2\pi$ | 1–10 MHz | Set by SNAIL or transmon nonlinearity | [Grimm et al. 2020](https://doi.org/10.1038/s41586-020-2587-z) |
 | 1Q gate fidelity (Z-rotation) | 99%+ | Bias-preserving via detuning of drive | [Puri et al. 2020](https://doi.org/10.1103/PhysRevX.10.011058) |
 | 2Q gate fidelity (ZZ-CNOT) | 98–99% | Bias-preserving CNOT | [Puri et al. 2020](https://doi.org/10.1103/PhysRevX.10.011058) |

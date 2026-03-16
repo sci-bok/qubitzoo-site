@@ -74,11 +74,11 @@ Standard bosonic codes (like GKP) require complex active error correction. The c
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| Bit-flip time | 0.1–10+ s | Scales with $\bar{n}$ and $\kappa_2/\kappa_1$ | — |
-| Phase-flip time | 1–100 μs | Scales as $e^{-2\bar{n}} / \kappa_\phi$ | — |
-| Mean photon number $\bar{n}$ | 4–16 | Typical operating regime | — |
-| $\kappa_2/\kappa_1$ | 10–100 | Two-photon vs single-photon loss ratio | — |
-| CNOT gate fidelity | ~99% | Bias-preserving gate | — |
+| Bit-flip time | 0.1–10+ s | Scales with $\bar{n}$ and $\kappa_2/\kappa_1$ | [Lescanne et al. 2020](https://doi.org/10.1038/s41567-020-0824-x) |
+| Phase-flip time | 1–100 μs | Scales as $e^{-2\bar{n}} / \kappa_\phi$ | [Lescanne et al. 2020](https://doi.org/10.1038/s41567-020-0824-x) |
+| Mean photon number $\bar{n}$ | 4–16 | Typical operating regime | [Lescanne et al. 2020](https://doi.org/10.1038/s41567-020-0824-x) |
+| $\kappa_2/\kappa_1$ | 10–100 | Two-photon vs single-photon loss ratio | [Lescanne et al. 2020](https://doi.org/10.1038/s41567-020-0824-x) |
+| CNOT gate fidelity | ~99% | Bias-preserving gate | [Guillaud & Mirrahimi 2019](https://doi.org/10.1103/PhysRevX.9.041053) |
 | Operating temperature | 10–20 mK | Dilution refrigerator | — |
 
 ## Linked Papers

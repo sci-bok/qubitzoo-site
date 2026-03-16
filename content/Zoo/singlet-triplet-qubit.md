@@ -68,12 +68,12 @@ Both states have total $m_s = 0$, providing first-order insensitivity to uniform
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
 | Qubit coherence $T_1$ | >1 s | Spin relaxation in GaAs/Si | [Petta et al. 2005](https://doi.org/10.1126/science.1116955) |
-| Qubit coherence $T_2$ | 1–200 μs | Limited by nuclear spin bath (GaAs) or charge noise | — |
-| Gate fidelity (1Q) | 99–99.9% | Exchange + gradient control | https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.89 |
-| Gate fidelity (2Q) | 90–99% | Capacitive or exchange-mediated | https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.89 |
+| Qubit coherence $T_2$ | 1–200 μs | Limited by nuclear spin bath (GaAs) or charge noise | [Bluhm et al. 2011](https://doi.org/10.1038/nphys1856) |
+| Gate fidelity (1Q) | 99–99.9% | Exchange + gradient control | [Nichol et al. 2017](https://doi.org/10.1038/s41534-017-0019-1) |
+| Gate fidelity (2Q) | 90–99% | Capacitive or exchange-mediated | [Nichol et al. 2017](https://doi.org/10.1038/s41534-017-0019-1) |
 | Gate time (1Q) | 1–100 ns | Exchange pulse (Z) or gradient (X) | — |
 | Gate time (2Q) | 10–200 ns | Inter-double-dot coupling | — |
-| Readout fidelity | 95–99% | Pauli spin blockade + charge sensor | https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.89 |
+| Readout fidelity | 95–99% | Pauli spin blockade + charge sensor | [Barthel et al. 2009](https://doi.org/10.1103/PhysRevLett.103.160503) |
 | Qubit footprint | ~100–200 nm pitch | Two dots per logical qubit | — |
 | Operating temperature | 20 mK–100 mK | GaAs or Si/SiGe | — |
 | Connectivity | Nearest-neighbor | Between adjacent double dots | — |

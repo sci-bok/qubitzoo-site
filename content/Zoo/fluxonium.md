@@ -57,7 +57,7 @@ The transmon's achilles heel is its weak anharmonicity ($\sim -200\,\text{MHz}$)
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
 | $T_1$ | 100 μs – 1.5 ms | Heavy fluxonium at half-flux sweet spot | [Manucharyan 2009](https://doi.org/10.1126/science.1175552) |
-| $T_2$ (echo) | 100–500 μs | Echo at sweet spot | — |
+| $T_2$ (echo) | 100–500 μs | Echo at sweet spot | [Somoroff et al. 2023](https://doi.org/10.1103/PhysRevLett.130.267001) |
 | Anharmonicity | 3–8 GHz | $\omega_{12} - \omega_{01}$; much larger than transmon | [Manucharyan 2009](https://doi.org/10.1126/science.1175552) |
 | Qubit frequency $\omega_{01}/2\pi$ | 100 MHz – 1 GHz | Much lower than transmon | — |
 | $E_J/E_C$ | 3–8 | Heavy fluxonium regime | — |

@@ -48,7 +48,7 @@ Pure spin qubits can be coherence-rich but slower to drive electrically; pure ch
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
 | 1Q gate time | 1–20 ns | fast all-electrical drive | — |
-| 1Q fidelity | ~99% | platform dependent | — |
+| 1Q fidelity | ~99% | platform dependent | [Shi et al. 2015](https://doi.org/10.1038/ncomms9381) |
 | Main tradeoff | speed vs charge-noise sensitivity | core design tension | — |
 
 ## Linked Papers

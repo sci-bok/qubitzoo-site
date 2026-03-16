@@ -68,9 +68,9 @@ Variant of the [[exchange-only-qubit]] designed for the realistic case where exc
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
 | Qubit coherence $T_1$ | >1 s | Spin relaxation | [Shulman et al. 2012](https://doi.org/10.1126/science.1217692) |
-| Qubit coherence $T_2$ | 10–100 μs | Enhanced by sweet-spot operation | — |
-| Gate fidelity (1Q) | 99–99.5% | Charge-noise-insensitive sequences | https://journals.aps.org/prb/abstract/10.1103/PhysRevB.93.12 |
-| Gate fidelity (2Q) | 95–99% |  | https://journals.aps.org/prb/abstract/10.1103/PhysRevB.93.12 |
+| Qubit coherence $T_2$ | 10–100 μs | Enhanced by sweet-spot operation | [Shim & Tahan 2016](https://doi.org/10.1103/PhysRevB.93.121410) |
+| Gate fidelity (1Q) | 99–99.5% | Charge-noise-insensitive sequences | [Shim & Tahan 2016](https://doi.org/10.1103/PhysRevB.93.121410) |
+| Gate fidelity (2Q) | 95–99% | Theoretical estimate | [Shim & Tahan 2016](https://doi.org/10.1103/PhysRevB.93.121410) |
 | Gate time (1Q) | 1–50 ns | Exchange pulses | — |
 | Operating temperature | 20–100 mK | Si/SiGe or GaAs | — |
 | Qubit footprint | ~150–300 nm pitch | 3 dots per logical qubit | — |

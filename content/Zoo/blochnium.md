@@ -61,7 +61,7 @@ Dual of the transmon: where the transmon flattens charge dispersion via $E_J/E_C
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
 | Qubit coherence $T_1$ | 10–100 μs | Early devices (2020) | [Pechenezhskiy et al. 2020](https://doi.org/10.1038/s41586-020-2687-9) |
-| Qubit coherence $T_2$ | 1–10 μs |  | — |
+| Qubit coherence $T_2$ | 1–10 μs | Echo measurement | [Pechenezhskiy et al. 2020](https://doi.org/10.1038/s41586-020-2687-9) |
 | Charge sensitivity | Exactly zero | No island in circuit | — |
 | Anharmonicity | Large | Unlike transmon | — |
 | Operating temperature | 10–20 mK | Dilution refrigerator | — |

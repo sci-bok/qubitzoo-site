@@ -71,9 +71,9 @@ Qubit encoded in the spin degree of freedom of an Andreev bound state in a semic
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
 | Qubit coherence $T_1$ | 1–10 μs | Limited by quasiparticle poisoning | [Hays et al. 2021](https://doi.org/10.1126/science.abi7515) |
-| Qubit coherence $T_2$ | 0.1–1 μs | Early devices (2021) | — |
-| Gate fidelity (1Q) | ~95% | Microwave-driven spin transitions | https://science.sciencemag.org/content/373/6553/430 |
-| Readout fidelity | ~90% | Dispersive via resonator | https://science.sciencemag.org/content/373/6553/430 |
+| Qubit coherence $T_2$ | 0.1–1 μs | Early devices (2021) | [Hays et al. 2021](https://doi.org/10.1126/science.abi7515) |
+| Gate fidelity (1Q) | ~95% | Microwave-driven spin transitions | [Hays et al. 2021](https://doi.org/10.1126/science.abi7515) |
+| Readout fidelity | ~90% | Dispersive via resonator | [Hays et al. 2021](https://doi.org/10.1126/science.abi7515) |
 | Qubit footprint | ~1 μm junction | Nanowire device | — |
 | Operating temperature | 10–30 mK | Dilution refrigerator | — |
 

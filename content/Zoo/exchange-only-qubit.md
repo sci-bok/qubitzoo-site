@@ -64,12 +64,12 @@ Universal control uses only pairwise Heisenberg exchange $J_{ij}\,\vec{S}_i \cdo
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
 | Qubit coherence $T_1$ | >1 s | Spin relaxation | [DiVincenzo et al. 2000](https://doi.org/10.1038/35042541) |
-| Qubit coherence $T_2$ | 1–100 μs | DFS protects against uniform $B$ noise | — |
-| Gate fidelity (1Q) | 99–99.5% | All-exchange rotations | https://www.nature.com/articles/35042541 |
-| Gate fidelity (2Q) | 95–99% | Between adjacent triples | https://www.nature.com/articles/35042541 |
+| Qubit coherence $T_2$ | 1–100 μs | DFS protects against uniform $B$ noise | [Medford et al. 2013](https://doi.org/10.1038/nnano.2013.174) |
+| Gate fidelity (1Q) | 99–99.5% | All-exchange rotations | [Medford et al. 2013](https://doi.org/10.1038/nnano.2013.174) |
+| Gate fidelity (2Q) | 95–99% | Between adjacent triples | [Medford et al. 2013](https://doi.org/10.1038/nnano.2013.174) |
 | Gate time (1Q) | 1–50 ns | Exchange pulses | — |
 | Gate time (2Q) | 10–100 ns | Inter-triple exchange | — |
-| Readout fidelity | 95–99% | Spin-to-charge + charge sensor | https://www.nature.com/articles/35042541 |
+| Readout fidelity | 95–99% | Spin-to-charge + charge sensor | [Medford et al. 2013](https://doi.org/10.1038/nnano.2013.174) |
 | Qubit footprint | ~150–300 nm pitch | 3 dots per logical qubit | — |
 | Operating temperature | 20–100 mK | GaAs or Si/SiGe | — |
 | Connectivity | Nearest-neighbor | Between adjacent triple dots | — |

@@ -47,13 +47,13 @@ The blockade condition $C_6/R^6 \gg \hbar\Omega$ prevents simultaneous Rydberg e
 
 | Metric | Value | Notes | Fidelity reference |
 |---|---|---|---|
-| 1Q gate fidelity | 99.97% | ¹³³Cs tweezers | Evered et al. 2023, Nature |
-| 2Q gate fidelity (CZ) | 99.5% | ¹³³Cs tweezers | Evered et al. 2023, Nature |
-| T₂ (Ramsey) | ~1 s | ⁸⁷Rb hyperfine | Levine et al. 2022 |
-| T₂ (spin echo) | ~10 s | ¹⁷¹Yb clock states | Ma et al. 2022 |
-| Readout fidelity | 99.8% | ¹³³Cs fluorescence | Bluvstein et al. 2024 |
-| Array size | 1225 atoms | Rb tweezer array | Pause et al. 2024 |
-| Atom loss per circuit | ~0.5% per layer | ¹³³Cs | Bluvstein et al. 2024 |
+| 1Q gate fidelity | 99.97% | ¹³³Cs tweezers | [Evered et al. 2023](https://doi.org/10.1038/s41586-023-06927-3) |
+| 2Q gate fidelity (CZ) | 99.5% | ¹³³Cs tweezers | [Evered et al. 2023](https://doi.org/10.1038/s41586-023-06927-3) |
+| T₂ (Ramsey) | ~1 s | ⁸⁷Rb hyperfine | [Levine et al. 2022](https://doi.org/10.1103/PhysRevLett.129.150501) |
+| T₂ (spin echo) | ~10 s | ¹⁷¹Yb clock states | [Ma et al. 2022](https://doi.org/10.1103/PhysRevX.12.021028) |
+| Readout fidelity | 99.8% | ¹³³Cs fluorescence | [Bluvstein et al. 2024](https://doi.org/10.1038/s41586-023-06927-3) |
+| Array size | 1225 atoms | Rb tweezer array | [Pause et al. 2024](https://doi.org/10.1364/OPTICA.513551) |
+| Atom loss per circuit | ~0.5% per layer | ¹³³Cs | [Bluvstein et al. 2024](https://doi.org/10.1038/s41586-023-06927-3) |
 
 ## Scaling Considerations
 

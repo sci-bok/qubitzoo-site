@@ -69,12 +69,12 @@ where $t_0$ is the tunneling matrix element and $u$ is the charging energy. Puls
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
 | Qubit coherence $T_1$ | 1–45 s | Electron spin in Si/SiGe (2024) | [Elzerman et al. 2004](https://doi.org/10.1038/nature02693) |
-| Qubit coherence $T_2$ | 0.5–28 ms | Hahn echo in $^{28}$Si | — |
-| Gate fidelity (1Q) | 99.6–99.95% | ESR or EDSR driven | https://journals.aps.org/pra/abstract/10.1103/PhysRevA.57.12 |
-| Gate fidelity (2Q) | 99–99.8% | Exchange-based $\sqrt{\text{SWAP}}$ | https://journals.aps.org/pra/abstract/10.1103/PhysRevA.57.12 |
+| Qubit coherence $T_2$ | 0.5–28 ms | Hahn echo in $^{28}$Si | [Veldhorst et al. 2014](https://doi.org/10.1038/nnano.2014.153) |
+| Gate fidelity (1Q) | 99.6–99.95% | ESR or EDSR driven | [Yoneda et al. 2018](https://doi.org/10.1038/s41565-017-0014-x) |
+| Gate fidelity (2Q) | 99–99.8% | Exchange-based $\sqrt{\text{SWAP}}$ | [Noiri et al. 2022](https://doi.org/10.1038/s41586-021-04182-y) |
 | Gate time (1Q) | 1–100 μs | Depends on drive mechanism | — |
 | Gate time (2Q) | 1–100 ns | Exchange pulse | — |
-| Readout fidelity | 98–99.5% | Spin-to-charge conversion + SET | https://journals.aps.org/pra/abstract/10.1103/PhysRevA.57.12 |
+| Readout fidelity | 98–99.5% | Spin-to-charge conversion + SET | [Noiri et al. 2022](https://doi.org/10.1038/s41586-021-04182-y) |
 | Qubit footprint | ~50–100 nm pitch | Very small; CMOS-compatible | — |
 | Operating temperature | 20 mK–1 K | Silicon: some operation at >1 K | — |
 | Connectivity | Nearest-neighbor (1D/2D) | Exchange range ~100 nm | — |

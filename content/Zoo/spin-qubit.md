@@ -76,7 +76,7 @@ Semiconductor spin qubits promise integration with existing CMOS fabrication inf
 | $T_2$ (echo) | 1–28 ms | $^{28}$Si with Hahn echo | — |
 | 1Q gate fidelity | 99.9–99.96% | $^{28}$Si, randomized benchmarking | [Yoneda 2018](https://doi.org/10.1038/s41565-017-0014-x) |
 | 2Q gate fidelity | 99.5–99.8% | Exchange-based $\sqrt{\text{SWAP}}$ | [Noiri 2022](https://doi.org/10.1038/s41586-021-04182-y) |
-| Readout fidelity | 97–99.5% | Spin-to-charge conversion + charge sensor | — |
+| Readout fidelity | 97–99.5% | Spin-to-charge conversion + charge sensor | [Noiri et al. 2022](https://doi.org/10.1038/s41586-021-04182-y) |
 | Gate time (1Q) | 50 ns – 1 μs | EDSR or ESR | — |
 | Gate time (2Q) | 5–200 ns | Exchange pulse | — |
 | Qubit pitch | ~80–150 nm | Gate-defined dot spacing | — |

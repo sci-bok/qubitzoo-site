@@ -60,12 +60,12 @@ Requires ground-state cooling of motional mode ($\bar{n} \approx 0$) and Lamb-Di
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
 | Qubit coherence $T_1$ | >1000 s | Hyperfine qubits (e.g., $^{171}$Yb$^+$) | [Cirac & Zoller 1995](https://doi.org/10.1103/PhysRevLett.74.4091) |
-| Qubit coherence $T_2$ | 1–600 s | With dynamical decoupling | — |
-| Gate fidelity (1Q) | 99.9999% | Record: Harty et al. 2014 | https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.74 |
-| Gate fidelity (2Q) | 99.5–99.9% | Mølmer-Sørensen or CZ variant | https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.74 |
+| Qubit coherence $T_2$ | 1–600 s | With dynamical decoupling | [Wang et al. 2021](https://doi.org/10.1038/s41567-021-01237-9) |
+| Gate fidelity (1Q) | 99.9999% | Record: Harty et al. 2014 | [Harty et al. 2014](https://doi.org/10.1103/PhysRevLett.113.220501) |
+| Gate fidelity (2Q) | 99.5–99.9% | Mølmer-Sørensen or CZ variant | [Ballance et al. 2016](https://doi.org/10.1103/PhysRevLett.117.060504) |
 | Gate time (1Q) | 1–10 μs | Microwave or Raman | — |
 | Gate time (2Q) | 10–200 μs | Laser-mediated | — |
-| Readout fidelity | 99.9%+ | Fluorescence detection | https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.74 |
+| Readout fidelity | 99.9%+ | Fluorescence detection | [Myerson et al. 2008](https://doi.org/10.1103/PhysRevLett.100.200502) |
 | Qubit footprint | ~5 μm ion spacing | In linear Paul trap | — |
 | Operating temperature | Room temp (trap) / 4K (cryo) | Vacuum chamber | — |
 | Connectivity | All-to-all (small chains) | Via shared phonon modes | — |

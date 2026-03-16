@@ -60,7 +60,7 @@ The phase qubit provided early demonstrations of quantum coherence and entanglem
 | $T_2$ | 0.1–2 μs | Bias noise dominated | — |
 | Anharmonicity | 1–5% of $\omega_{01}$ | Cubic potential shape | — |
 | Transition frequency | 5–10 GHz | Tunable via bias current | — |
-| Readout fidelity | 85–96% | Tunneling-based, destructive | — |
+| Readout fidelity | 85–96% | Tunneling-based, destructive | [Martinis et al. 2002](https://doi.org/10.1103/PhysRevLett.89.117901) |
 | Operating temperature | 10–25 mK | Dilution refrigerator | — |
 
 ## Linked Papers

@@ -64,12 +64,12 @@ Operating in the charge regime $E_C > E_J$, the qubit states are charge states $
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
 | Qubit coherence $T_1$ | ~1–10 μs | Limited by charge noise | [Nakamura et al. 1999](https://doi.org/10.1038/19718) |
-| Qubit coherence $T_2$ | ~0.5–5 μs | At sweet spot ($n_g = 1/2$) | — |
-| Gate fidelity (1Q) | ~99% | Voltage-pulse driven | https://www.nature.com/articles/19718 |
-| Gate fidelity (2Q) | ~95% | Capacitive coupling | https://www.nature.com/articles/19718 |
+| Qubit coherence $T_2$ | ~0.5–5 μs | At sweet spot ($n_g = 1/2$) | [Vion et al. 2002](https://doi.org/10.1126/science.1069372) |
+| Gate fidelity (1Q) | ~99% | Voltage-pulse driven | [Vion et al. 2002](https://doi.org/10.1126/science.1069372) |
+| Gate fidelity (2Q) | ~95% | Capacitive coupling | [Yamamoto et al. 2003](https://doi.org/10.1038/nature01365) |
 | Gate time (1Q) | ~1–10 ns | Fast voltage pulses | — |
 | Gate time (2Q) | ~10–50 ns |  | — |
-| Readout fidelity | ~90–95% | Probe junction or SET | https://www.nature.com/articles/19718 |
+| Readout fidelity | ~90–95% | Probe junction or SET | [Vion et al. 2002](https://doi.org/10.1126/science.1069372) |
 | Qubit footprint | ~1 × 1 μm² | Very compact | — |
 | Operating temperature | 20–50 mK | Dilution refrigerator | — |
 | Connectivity | Fixed capacitive | Nearest-neighbor | — |
