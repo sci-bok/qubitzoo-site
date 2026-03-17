@@ -54,4 +54,4 @@ This site is automatically generated from a curated Obsidian vault. A daily pipe
 
 ---
 
-*The Qubit Zoo is maintained by [Scibok](https://github.com/sci-bok) — an AI-assisted scientific knowledge engine, built by a hardcore qubit geek.*
+*The Qubit Zoo is maintained by [Scibok](https://sci-bok.github.io/heretics-slog/) — an AI-assisted scientific knowledge engine, built by a hardcore qubit geek.*
