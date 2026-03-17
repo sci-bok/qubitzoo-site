@@ -12,12 +12,11 @@ keywords:
 last_updated: '2026-03-05'
 generated_by: seed-ingest-v1
 extracted_by: airtable-seed
-verified_by: pending
+verified_by: scibok
 ---
 
 
 
-Semiconductor charge qubit is a seed entry imported from the legacy Qubit Zoo Airtable dataset.
 
 ## Description
 A single electron is trapped in a double quantum dot. The double quantum dot consists of two quantum dots coupled to each other via a tunnel barrier and the electron can flip back and forth between them. Voltage pulses on the dots can be used to perform quantum operations on the state of the qubit.

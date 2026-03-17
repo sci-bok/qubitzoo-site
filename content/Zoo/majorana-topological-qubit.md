@@ -64,12 +64,6 @@ which motivates long wires and hard-gap devices for robust parity protection.
 | Demonstrated topological logical gate fidelity | Not yet established | Full braiding-grade protected gates remain open | [[aghaee-2021-majorana-spectroscopy]], [[albrecht-2016-exponential-protection-of-zero]] |
 
 
-## Extracted Figures
-
-![[aghaee-2021-majorana-spectroscopy-paper-fig-1.png]]
-
-![[aghaee-2021-majorana-spectroscopy-paper-fig-2.png]]
-
 ## Linked Papers
 - [[albrecht-2016-exponential-protection-of-zero]]
 - [[lai-2021-theory-of-coulomb-blockaded]]

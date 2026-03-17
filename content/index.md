@@ -2,7 +2,7 @@
 title: Welcome to the Qubit Zoo
 ---
 
-![[qubitzoo-banner.png]]
+![[qubitzoo-banner.gif]]
 
 
 The [Qubit Zoo](/Zoo) is home to the qubits you qnow and love — and some you don't yet. Every qubit modality, architecture, and gate primitive we could find, organized as a living [Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten) with real physics: Hamiltonians, performance metrics, and links to the papers that started it all.

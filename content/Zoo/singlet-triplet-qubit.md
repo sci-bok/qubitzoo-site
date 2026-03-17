@@ -13,13 +13,12 @@ keywords:
 last_updated: '2026-03-05'
 generated_by: seed-ingest-v1
 extracted_by: airtable-seed
-verified_by: pending
+verified_by: scibok
 figure_reviewed: true
 ---
 
 
 
-Singlet-Triplet Qubit is a seed entry imported from the legacy Qubit Zoo Airtable dataset.
 
 ## Description
 This qubit is encoded in the Sz=0 subspace of two exchange-coupled electronic spins.  These two spins are trapped inside quantum dots realized by electronic gates on the surface of a semiconductor, usually Si or GaAs, and are subject to a magnetic field gradient.  The singlet state, (|up down>-|down up>)/sqrt(2), and the triplet state, (|up down>+|down up>)/sqrt(2), are the logical |0> and |1> states.  Single-qubit gates are realized by tuning the exchange coupling between the two spins, which is done in experiments by changing the voltage on the electronic gate separating the two dots.  The magnetic field gradient is required in order to perform rotations about axes other than the logical z axis.

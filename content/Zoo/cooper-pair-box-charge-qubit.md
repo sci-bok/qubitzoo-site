@@ -11,13 +11,12 @@ keywords:
 last_updated: '2026-03-05'
 generated_by: seed-ingest-v1
 extracted_by: airtable-seed
-verified_by: pending
+verified_by: scibok
 figure_reviewed: true
 ---
 
 
 
-Cooper-pair box (charge) qubit is a seed entry imported from the legacy Qubit Zoo Airtable dataset.
 
 ## Description
 A nanometre-scale superconducting electrode connected to a reservoir via a Josephson junction constitutes an artificial two-level electronic system: a single-Cooper-pair box. The two levels consist of charge states (differing by 2e, where e is the electronic charge) that are coupled by tunnelling of Cooper pairs through the junction. Although the two-level system is macroscopic, containing a large number of electrons, the two charge states can be coherently superposed. The Cooper-pair box has therefore been suggested as a candidate for a quantum bit or ‘qubit’—the basic component of a quantum computer.

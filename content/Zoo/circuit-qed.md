@@ -18,7 +18,7 @@ influence_score: 0.85
 last_updated: '2026-03-05'
 generated_by: pipeline-v1
 extracted_by: claude-code
-verified_by: pending
+verified_by: scibok
 figure_reviewed: true
 ---
 

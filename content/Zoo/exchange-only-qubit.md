@@ -16,12 +16,11 @@ keywords:
 last_updated: '2026-03-05'
 generated_by: seed-ingest-v1
 extracted_by: airtable-seed
-verified_by: pending
+verified_by: scibok
 ---
 
 
 
-Exchange-only qubit is a seed entry imported from the legacy Qubit Zoo Airtable dataset.
 
 ## Description
 This is an encoded qubit defined in the two-dimensional subspace of a three- spin-half system. The two qubit states have the same total spin quantum numbers (Stot=1/2, Stotz=1/2), providing protection against some global magnetic field fluctuation. All the gate operations can be implemented by sequences of exchange interactions between neighboring spins. Single qubit gates require at most 3 or 4 exchange steps, while two-qubit gates require much longer exchange sequences (about 20 exchange steps).
