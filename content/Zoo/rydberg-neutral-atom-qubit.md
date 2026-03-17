@@ -15,7 +15,6 @@ generated_by: scibok-curation
 verified_by: scibok
 ---
 
-# Rydberg Neutral-Atom Qubit
 
 A neutral-atom qubit architecture where long-lived hyperfine ground states encode \(|0\rangle, |1\rangle\), and entangling interactions are turned on transiently by laser excitation to high-lying Rydberg states. This is the core hardware model for modern optical-tweezer neutral-atom processors.
 

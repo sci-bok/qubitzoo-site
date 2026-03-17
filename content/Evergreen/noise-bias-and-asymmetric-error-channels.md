@@ -11,7 +11,6 @@ tags:
   - pauli-channel
 ---
 
-# Noise Bias and Asymmetric Error Channels
 
 In standard quantum error correction theory, errors are often modeled as depolarizing noise where $X$, $Y$, and $Z$ Pauli errors occur with equal probability. However, many physical qubit encodings have strongly asymmetric noise channels — one type of Pauli error is exponentially suppressed relative to others. Exploiting this noise bias enables dramatically more efficient error correction.
 

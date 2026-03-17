@@ -7,7 +7,6 @@ last_updated: '2026-03-15'
 generated_by: scibok-curation
 ---
 
-# Super-Semi MOC
 
 Curated map of Zoo entries in the **Super-Semi** family.
 

@@ -9,7 +9,6 @@ tags:
   - two-qubit-gate
 ---
 
-# Heisenberg Exchange in Quantum Dots
 
 The fundamental two-qubit interaction in semiconductor spin qubits. When the tunnel barrier between two single-electron quantum dots is lowered, virtual tunneling produces a Heisenberg exchange coupling:
 

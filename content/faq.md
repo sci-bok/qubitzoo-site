@@ -2,7 +2,6 @@
 title: FAQ
 ---
 
-# Frequently Asked Questions
 
 You might want to check out the [[qubit-zoo-inclusion-editorial-policy|editorial policy]] first.
 

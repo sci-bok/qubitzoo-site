@@ -6,7 +6,6 @@ status: active
 generated_by: scibok-curation
 ---
 
-# Qubit Zoo Inclusion & Editorial Policy
 
 This document defines what belongs in the Zoo, what belongs in References only, and the minimum quality bar for public-facing entries.
 

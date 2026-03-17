@@ -2,7 +2,6 @@
 title: Qubit Genealogy
 ---
 
-# Qubit Genealogy
 
 How did qubits evolve? This interactive force-directed graph shows the relationships between qubit designs based on their cross-references in the Zoo.
 

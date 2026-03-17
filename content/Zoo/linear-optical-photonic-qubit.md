@@ -15,7 +15,6 @@ generated_by: scibok-curation
 verified_by: scibok
 ---
 
-# Linear-Optical Photonic Qubit
 
 A photonic qubit architecture based on single-photon encoding (typically dual-rail or polarization) with state preparation, gates, and measurement implemented using linear optical elements, single-photon sources, and photodetectors.
 

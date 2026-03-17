@@ -6,7 +6,6 @@ last_updated: '2026-03-15'
 generated_by: scibok-curation
 ---
 
-# Qubit Zoo — Master Index
 
 Total entries: **64** across **12** technology families.
 

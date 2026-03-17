@@ -15,7 +15,6 @@ generated_by: scibok-curation
 verified_by: scibok
 ---
 
-# Alkaline-Earth Neutral-Atom Clock Qubit
 
 A neutral-atom qubit subtype where information is encoded in long-lived nuclear-spin / clock-compatible states of alkaline-earth(-like) atoms (e.g., Sr, Yb), with metastable electronic manifolds used for manipulation, addressing, or transport.
 

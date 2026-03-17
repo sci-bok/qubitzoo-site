@@ -11,7 +11,6 @@ tags:
   - CZ-gate
 ---
 
-# Rydberg Blockade Mechanism
 
 The Rydberg blockade is the fundamental mechanism enabling entangling gates between neutral atoms in optical tweezer arrays and optical lattices. It exploits the enormous electric dipole moments of Rydberg states ($n \gtrsim 50$) to create strong, long-range interactions that conditionally prevent double excitation of nearby atom pairs.
 

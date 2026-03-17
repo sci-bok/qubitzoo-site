@@ -13,7 +13,6 @@ tags:
   - dynamical-decoupling
 ---
 
-# Coherence Time Hierarchy
 
 Every qubit is characterized by a hierarchy of timescales that quantify how long quantum information survives. Understanding the relationships between $T_1$, $T_2$, $T_2^*$, and $T_\varphi$ is essential for diagnosing noise sources, comparing qubit technologies, and predicting gate fidelities.
 

@@ -9,7 +9,6 @@ tags:
   - nonlinearity
 ---
 
-# Josephson Junction as Nonlinear Element
 
 The Josephson junction provides the essential nonlinearity that makes superconducting qubits possible. Without it, superconducting circuits are harmonic oscillators — all transitions are degenerate, and you cannot address a single $|0\rangle \leftrightarrow |1\rangle$ transition.
 

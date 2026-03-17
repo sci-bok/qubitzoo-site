@@ -15,7 +15,6 @@ generated_by: scibok-curation
 verified_by: scibok
 ---
 
-# Majorana Topological Qubit
 
 A topological qubit concept encoded in fermion parity degrees of freedom built from spatially separated Majorana zero modes in hybrid semiconductor-superconductor nanostructures.
 

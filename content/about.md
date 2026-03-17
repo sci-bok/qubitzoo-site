@@ -2,7 +2,6 @@
 title: About
 ---
 
-# About the Qubit Zoo
 
 Hi.
 

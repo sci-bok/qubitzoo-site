@@ -8,7 +8,6 @@ tags:
   - universality
 ---
 
-# √SWAP as a Universal Two-Qubit Gate
 
 The square root of SWAP operation, $U_{\text{sw}}^{1/2}$, combined with single-qubit rotations, forms a universal gate set for quantum computation. This is the native entangling gate for exchange-coupled spin qubits.
 

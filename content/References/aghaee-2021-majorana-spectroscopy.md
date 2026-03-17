@@ -18,7 +18,6 @@ tags:
   - zero-bias-peak
 ---
 
-# InAs-Al Hybrid Devices — Towards Topological Majorana Zero Modes
 
 **Aghaee et al., PRB 104, 085403 (2021)** — [arXiv:2104.00659](https://arxiv.org/abs/2104.00659)
 
