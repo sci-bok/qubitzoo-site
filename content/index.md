@@ -2,7 +2,7 @@
 title: Welcome to the Qubit Zoo
 ---
 
-![[qubitzoo-banner.gif]]
+![[qubitzoo-banner.png]]
 
 
 The [Qubit Zoo](/Zoo) is home to the qubits you qnow and love — and some you don't yet. Every qubit modality, architecture, and gate primitive we could find, organized as a living [Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten) with real physics: Hamiltonians, performance metrics, and links to the papers that started it all.
@@ -21,7 +21,7 @@ In case you didn't qnow* (*the q is silent*), qubits are needed for [quantum com
 | [[neutral-atom-moc\|🟠 Neutral Atom]] | 3 | Rydberg atoms, optical tweezers |
 | [[photonic-moc\|🔴 Photonic]] | 3 | Linear optical, dual-rail, cluster-state |
 | [[topological-moc\|🟣 Topological]] | 4 | Majorana, surface codes, color codes |
-| [[super-semi-moc\|⚡ Hybrid]] | 3 | Superconducting-semiconducting hybrids |
+| [[super-semi-moc\|⚡ Super-Semi]] | 3 | Superconducting-semiconducting hybrids |
 
 ## Featured Quanimals
 
