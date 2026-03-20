@@ -9,6 +9,7 @@ tags:
   - 1-over-f-noise
 ---
 
+# Charge Noise in Superconducting Qubits
 
 The dominant decoherence mechanism in charge-sensitive superconducting qubits. Random fluctuations in background charge (from two-level systems in oxide layers, charge traps at interfaces) modulate the offset charge $n_g$ and dephase the qubit.
 

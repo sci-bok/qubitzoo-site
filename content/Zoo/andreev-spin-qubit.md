@@ -15,11 +15,12 @@ keywords:
 last_updated: '2026-03-05'
 generated_by: seed-ingest-v1
 extracted_by: airtable-seed
-verified_by: scibok
+verified_by: pending
 ---
 
 
 
+Andreev spin qubit is a seed entry imported from the legacy Qubit Zoo Airtable dataset.
 
 ## Description
 Andreev spin qubit: the spin degree of freedom of an electronic quasiparticle trapped in the supercurrent-carrying Andreev levels of a Josephson semiconductor nanowire.

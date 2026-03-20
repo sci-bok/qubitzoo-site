@@ -17,6 +17,7 @@ verification_confidence: confirmed
 generated_by: scibok-curation
 ---
 
+# $\cos(2\varphi)$ Element in Superconducting Circuits
 
 A $\cos(2\varphi)$ potential energy term can emerge in superconducting circuits through higher-order Cooper pair tunneling processes (coherent transport of pairs of Cooper pairs). This produces a potential with doubled periodicity compared to the standard Josephson $\cos(\varphi)$.
 

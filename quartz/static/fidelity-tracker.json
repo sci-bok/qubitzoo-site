@@ -1,21 +1,34 @@
 {
   "schema": "qubitzoo.fidelity_tracker.v1",
-  "generated_at": "2026-03-13T14:02:15.638106+00:00",
+  "generated_at": "2026-03-20T14:03:09.888833+00:00",
   "families": [
     {
       "name": "Superconducting",
       "entries": [
         {
-          "slug": "a-tunable-coupling-scheme-for-implementing-high-fidelity",
-          "title": "A tunable coupling scheme for implementing high-fidelity superconducting two-qubit gates",
-          "year": 2018,
-          "status": "seed",
-          "influence": 0.0,
+          "slug": "fluxonium",
+          "title": "Fluxonium",
+          "year": 2009,
+          "status": "demonstrated",
+          "influence": 0.9,
           "metrics": {
+            "1Q_fidelity": {
+              "value": 99.998,
+              "raw": "99.97\u201399.998%",
+              "ref": "[Ding et al. 2023](https://doi.org/10.1103/PhysRevX.13.031035), [Somoroff et al. 2023](https://doi.org/10.1103/PhysRevLett.130.267001)"
+            },
             "2Q_fidelity": {
-              "value": 99.9,
-              "raw": "99.5\u201399.9%",
-              "ref": "https://journals.aps.org/prapplied/abstract/10.1103/PhysRevA"
+              "value": 99.92,
+              "raw": "99.2\u201399.92%",
+              "ref": "[Ding et al. 2023](https://doi.org/10.1103/PhysRevX.13.031035)"
+            },
+            "T1": {
+              "value_us": 1500.0,
+              "raw": "100 \u03bcs \u2013 1.5 ms"
+            },
+            "T2": {
+              "value_us": 500.0,
+              "raw": "100\u2013500 \u03bcs"
             }
           }
         },
@@ -23,13 +36,13 @@
           "slug": "gmon",
           "title": "Gmon",
           "year": 2014,
-          "status": "seed",
+          "status": "demonstrated",
           "influence": 0.7,
           "metrics": {
             "1Q_fidelity": {
               "value": 99.9,
               "raw": "99.9%+",
-              "ref": "\u2014"
+              "ref": "[Chen et al. 2014](https://doi.org/10.1103/PhysRevLett.113.220502)"
             },
             "2Q_fidelity": {
               "value": 99.9,
@@ -48,17 +61,17 @@
             "1Q_fidelity": {
               "value": 99.99,
               "raw": "99.9\u201399.99%",
-              "ref": "\u2014"
+              "ref": "[Arute et al. 2019](https://doi.org/10.1038/s41586-019-1666-5), [Li et al. 2023](https://doi.org/10.1038/s41534-023-00781-x)"
             },
             "2Q_fidelity": {
               "value": 99.9,
               "raw": "99.0\u201399.9%",
-              "ref": "\u2014"
+              "ref": "[Arute et al. 2019](https://doi.org/10.1038/s41586-019-1666-5), [Google Willow 2024](https://doi.org/10.1038/s41586-024-08449-y)"
             },
             "readout": {
               "value": 99.9,
               "raw": "97\u201399.9%",
-              "ref": "\u2014"
+              "ref": "[Arute et al. 2019](https://doi.org/10.1038/s41586-019-1666-5)"
             },
             "T1": {
               "value_us": 500.0,
@@ -74,18 +87,18 @@
           "slug": "xmon",
           "title": "Xmon",
           "year": 2013,
-          "status": "seed",
+          "status": "demonstrated",
           "influence": 0.72,
           "metrics": {
             "1Q_fidelity": {
               "value": 99.9,
-              "raw": "99.9%+",
-              "ref": "\u2014"
+              "raw": "99.84\u201399.9%+",
+              "ref": "[Barends et al. 2014](https://doi.org/10.1038/nature13171), [Arute et al. 2019](https://doi.org/10.1038/s41586-019-1666-5)"
             },
             "2Q_fidelity": {
               "value": 99.9,
-              "raw": "99.5\u201399.9%",
-              "ref": "\u2014"
+              "raw": "99.4\u201399.9%",
+              "ref": "[Barends et al. 2014](https://doi.org/10.1038/nature13171), [Arute et al. 2019](https://doi.org/10.1038/s41586-019-1666-5)"
             },
             "T1": {
               "value_us": 99.99999999999999,
@@ -94,29 +107,21 @@
           }
         },
         {
-          "slug": "fluxonium",
-          "title": "Fluxonium",
-          "year": 2009,
+          "slug": "kerr-cat-qubit",
+          "title": "Kerr-Cat Qubit",
+          "year": 2019,
           "status": "demonstrated",
-          "influence": 0.9,
+          "influence": 0.84,
           "metrics": {
             "1Q_fidelity": {
-              "value": 99.99,
-              "raw": "99.97\u201399.99%",
-              "ref": "\u2014"
+              "value": 99.0,
+              "raw": "99%+",
+              "ref": "[Puri et al. 2020](https://doi.org/10.1103/PhysRevX.10.011058)"
             },
             "2Q_fidelity": {
-              "value": 99.7,
-              "raw": "99.2\u201399.7%",
-              "ref": "\u2014"
-            },
-            "T1": {
-              "value_us": 1500.0,
-              "raw": "100 \u03bcs \u2013 1.5 ms"
-            },
-            "T2": {
-              "value_us": 500.0,
-              "raw": "100\u2013500 \u03bcs"
+              "value": 99.0,
+              "raw": "98\u201399%",
+              "ref": "[Puri et al. 2020](https://doi.org/10.1103/PhysRevX.10.011058)"
             }
           }
         },
@@ -130,7 +135,7 @@
             "readout": {
               "value": 95.0,
               "raw": "~90\u201395%",
-              "ref": "https://www.nature.com/articles/19718"
+              "ref": "[Vion et al. 2002](https://doi.org/10.1126/science.1069372)"
             }
           }
         },
@@ -138,13 +143,13 @@
           "slug": "flux-qubit",
           "title": "Flux Qubit",
           "year": 1999,
-          "status": "seed",
+          "status": "demonstrated",
           "influence": 0.75,
           "metrics": {
             "1Q_fidelity": {
               "value": 99.9,
               "raw": "99\u201399.9%",
-              "ref": "\u2014"
+              "ref": "[Yan et al. 2016](https://doi.org/10.1038/ncomms12964)"
             },
             "T1": {
               "value_us": 54.99999999999999,
@@ -160,13 +165,13 @@
           "slug": "phase-qubit",
           "title": "Phase Qubit",
           "year": 2002,
-          "status": "seed",
+          "status": "demonstrated",
           "influence": 0.65,
           "metrics": {
             "readout": {
               "value": 96.0,
               "raw": "85\u201396%",
-              "ref": "\u2014"
+              "ref": "[Martinis et al. 2002](https://doi.org/10.1103/PhysRevLett.89.117901)"
             },
             "T1": {
               "value_us": 5.0,
@@ -199,7 +204,7 @@
             "readout": {
               "value": 99.5,
               "raw": "97\u201399.5%",
-              "ref": "\u2014"
+              "ref": "[Noiri et al. 2022](https://doi.org/10.1038/s41586-021-04182-y)"
             },
             "T1": {
               "value_us": 50000000.0,
@@ -215,18 +220,18 @@
           "slug": "kane-qubit",
           "title": "Kane Qubit (Phosphorus-in-Silicon)",
           "year": 1998,
-          "status": "seed",
+          "status": "demonstrated",
           "influence": 0.76,
           "metrics": {
             "1Q_fidelity": {
               "value": 99.95,
               "raw": "99.95%",
-              "ref": "\u2014"
+              "ref": "[Muhonen et al. 2014](https://doi.org/10.1038/nnano.2014.211)"
             },
             "2Q_fidelity": {
               "value": 99.4,
               "raw": "99.4%",
-              "ref": "\u2014"
+              "ref": "[M\u0105dzik et al. 2022](https://doi.org/10.1038/s41586-021-04292-7)"
             }
           }
         },
@@ -240,7 +245,21 @@
             "readout": {
               "value": 99.0,
               "raw": "95\u201399%",
-              "ref": "https://www.nature.com/articles/35042541"
+              "ref": "[Medford et al. 2013](https://doi.org/10.1038/nnano.2013.174)"
+            }
+          }
+        },
+        {
+          "slug": "loss-divincenzo-qubit",
+          "title": "Single spin quantum dot (Loss-DiVincenzo) qubit",
+          "year": 1998,
+          "status": "seed",
+          "influence": 0.0,
+          "metrics": {
+            "readout": {
+              "value": 99.5,
+              "raw": "98\u201399.5%",
+              "ref": "[Noiri et al. 2022](https://doi.org/10.1038/s41586-021-04182-y)"
             }
           }
         },
@@ -254,7 +273,7 @@
             "1Q_fidelity": {
               "value": 99.9,
               "raw": "98\u201399.9%",
-              "ref": "\u2014"
+              "ref": "[Gyenis et al. 2021](https://doi.org/10.1103/PRXQuantum.2.030101)"
             }
           }
         },
@@ -268,21 +287,7 @@
             "readout": {
               "value": 95.0,
               "raw": "~95%",
-              "ref": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.91"
-            }
-          }
-        },
-        {
-          "slug": "single-spin-quantum-dot-loss-divincenzo-qubit",
-          "title": "Single spin quantum dot (Loss-DiVincenzo) qubit",
-          "year": 1998,
-          "status": "seed",
-          "influence": 0.0,
-          "metrics": {
-            "readout": {
-              "value": 99.5,
-              "raw": "98\u201399.5%",
-              "ref": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.57.12"
+              "ref": "[Petersson et al. 2010](https://doi.org/10.1021/nl100663w)"
             }
           }
         },
@@ -296,7 +301,7 @@
             "readout": {
               "value": 99.0,
               "raw": "95\u201399%",
-              "ref": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.89"
+              "ref": "[Barthel et al. 2009](https://doi.org/10.1103/PhysRevLett.103.160503)"
             }
           }
         }
@@ -315,7 +320,7 @@
             "2Q_fidelity": {
               "value": 99.9,
               "raw": "99.5\u201399.9%",
-              "ref": "\u2014"
+              "ref": "[Ballance et al. 2016](https://doi.org/10.1103/PhysRevLett.117.060504)"
             }
           }
         },
@@ -348,6 +353,29 @@
           }
         },
         {
+          "slug": "ytterbium-hyperfine-qubit",
+          "title": "Ytterbium-171 Hyperfine Qubit",
+          "year": 2007,
+          "status": "demonstrated",
+          "influence": 0.88,
+          "metrics": {
+            "1Q_fidelity": {
+              "value": 99.99,
+              "raw": "99.99%+",
+              "ref": "[Gaebler et al. 2016](https://doi.org/10.1103/PhysRevLett.117.060505)"
+            },
+            "2Q_fidelity": {
+              "value": 99.9,
+              "raw": "99.9%",
+              "ref": "[Ballance et al. 2016](https://doi.org/10.1103/PhysRevLett.117.060504)"
+            },
+            "T1": {
+              "value_us": 10000000.0,
+              "raw": ">10 s"
+            }
+          }
+        },
+        {
           "slug": "shuttling-ion-trap-qubit",
           "title": "Shuttling Ion-Trap Qubit (QCCD)",
           "year": 2002,
@@ -357,12 +385,12 @@
             "2Q_fidelity": {
               "value": 99.0,
               "raw": "99%+",
-              "ref": "\u2014"
+              "ref": "[Moses et al. 2023](https://doi.org/10.48550/arXiv.2305.03828)"
             }
           }
         },
         {
-          "slug": "cirac-zoller-gate-for-trapped-ion-qubits",
+          "slug": "cirac-zoller-gate",
           "title": "Cirac-Zoller gate for trapped ion qubits",
           "year": 2015,
           "status": "seed",
@@ -371,7 +399,7 @@
             "readout": {
               "value": 99.9,
               "raw": "99.9%+",
-              "ref": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.74"
+              "ref": "[Myerson et al. 2008](https://doi.org/10.1103/PhysRevLett.100.200502)"
             }
           }
         }
@@ -390,7 +418,7 @@
             "readout": {
               "value": 90.0,
               "raw": "~90%",
-              "ref": "https://science.sciencemag.org/content/373/6553/430"
+              "ref": "[Hays et al. 2021](https://doi.org/10.1126/science.abi7515)"
             }
           }
         },
@@ -398,13 +426,13 @@
           "slug": "gatemon",
           "title": "Gatemon",
           "year": 2015,
-          "status": "seed",
+          "status": "demonstrated",
           "influence": 0.68,
           "metrics": {
             "1Q_fidelity": {
               "value": 99.5,
               "raw": "98\u201399.5%",
-              "ref": "\u2014"
+              "ref": "[Larsen et al. 2015](https://doi.org/10.1103/PhysRevLett.115.127001)"
             },
             "T1": {
               "value_us": 10.0,
@@ -427,14 +455,33 @@
             "1Q_fidelity": {
               "value": 99.0,
               "raw": ">99%",
-              "ref": "\u2014"
+              "ref": "[Knill et al. 2001](https://doi.org/10.1038/35051009)"
             }
           }
         }
       ]
     },
     {
-      "name": "Solid State",
+      "name": "Cross-Platform",
+      "entries": [
+        {
+          "slug": "erasure-qubit",
+          "title": "Erasure Qubit",
+          "year": 2022,
+          "status": "demonstrated",
+          "influence": 0.82,
+          "metrics": {
+            "2Q_fidelity": {
+              "value": 99.5,
+              "raw": "99.0\u201399.5%",
+              "ref": "[Wu et al. 2022](https://doi.org/10.1103/PhysRevLett.129.200501)"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Spin-Photon",
       "entries": [
         {
           "slug": "nv-center-qubit",
@@ -444,19 +491,51 @@
           "influence": 0.78,
           "metrics": {
             "1Q_fidelity": {
-              "value": 99.9,
-              "raw": "99\u201399.9%",
-              "ref": "\u2014"
+              "value": 99.999,
+              "raw": "99.9\u201399.999%",
+              "ref": "[Rong et al. 2015](https://doi.org/10.1038/ncomms9748), [Bradley et al. 2019](https://doi.org/10.1103/PhysRevX.9.031045)"
             },
             "2Q_fidelity": {
-              "value": 99.0,
-              "raw": "95\u201399%",
-              "ref": "\u2014"
+              "value": 99.93,
+              "raw": "97\u201399.93%",
+              "ref": "[Bradley et al. 2019](https://doi.org/10.1103/PhysRevX.9.031045)"
             },
             "readout": {
               "value": 99.0,
               "raw": "95% (RT), >99% (cryo)",
-              "ref": "\u2014"
+              "ref": "[Robledo et al. 2011](https://doi.org/10.1038/nature10401)"
+            },
+            "T1": {
+              "value_us": 5000.0,
+              "raw": ">1 hour (77 K); ~5 ms (RT)"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Neutral Atom",
+      "entries": [
+        {
+          "slug": "rydberg-neutral-atom-qubit",
+          "title": "Rydberg Neutral-Atom Qubit",
+          "year": 2000,
+          "status": "demonstrated",
+          "influence": 0.72,
+          "metrics": {
+            "1Q_fidelity": {
+              "value": 99.9,
+              "raw": "99.5\u201399.90%",
+              "ref": "[Evered et al. 2023](https://doi.org/10.1038/s41586-023-06927-3)"
+            },
+            "2Q_fidelity": {
+              "value": 99.5,
+              "raw": "99.5%",
+              "ref": "[Evered et al. 2023](https://doi.org/10.1038/s41586-023-06927-3)"
+            },
+            "T1": {
+              "value_us": 10000000.0,
+              "raw": "1\u201310 s"
             }
           }
         }

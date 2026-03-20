@@ -15,6 +15,7 @@ generated_by: scibok-curation
 verified_by: scibok
 ---
 
+# Majorana Topological Qubit
 
 A topological qubit concept encoded in fermion parity degrees of freedom built from spatially separated Majorana zero modes in hybrid semiconductor-superconductor nanostructures.
 
@@ -63,6 +64,12 @@ which motivates long wires and hard-gap devices for robust parity protection.
 | Coulomb-blockade parity signatures | 2e/1e regime transitions observed | Consistent with subgap-state / Majorana phenomenology | [[shen-2018-parity-transitions-in-the]], [[lai-2021-theory-of-coulomb-blockaded]] |
 | Demonstrated topological logical gate fidelity | Not yet established | Full braiding-grade protected gates remain open | [[aghaee-2021-majorana-spectroscopy]], [[albrecht-2016-exponential-protection-of-zero]] |
 
+
+## Extracted Figures
+
+![[aghaee-2021-majorana-spectroscopy-paper-fig-1.png]]
+
+![[aghaee-2021-majorana-spectroscopy-paper-fig-2.png]]
 
 ## Linked Papers
 - [[albrecht-2016-exponential-protection-of-zero]]

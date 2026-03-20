@@ -59,7 +59,7 @@ where $\gamma_i$ are Majorana operators ($\gamma_i^\dagger = \gamma_i$, $\{\gamm
 |---|---|---|---|
 | Topological gap | ~20–40 μeV | InAs/Al topoconductor | [[aghaee-2025-majorana-1]] |
 | MZM count | 4 per tetron | H-shaped device | [[karzig-2017-tetron]] |
-| Parity lifetime | Not yet reported | Key open metric | — |
+| Parity lifetime | TBD | Key open metric | — |
 | QEC overhead reduction | ~10× claimed | vs. transmon surface code | [[aghaee-2025-majorana-1]] |
 
 ## Scaling Considerations

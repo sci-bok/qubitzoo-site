@@ -1,27 +1,29 @@
 ---
-title: Qubit Zoo Index
+title: Qubit Zoo Index MOC
 type: moc
+technology_family: index
 note_count: 64
-last_updated: '2026-03-15'
-generated_by: scibok-curation
+last_updated: '2026-03-20'
+generated_by: pipeline-moc-v1
 ---
 
+# Qubit Zoo Index MOC
 
-Total entries: **64** across **12** technology families.
+Top-level navigation for the Qubit Zoo by technology family.
 
-## Families
+## Family MOCs
 
-| Family | Entries | MOC |
-|---|---|---|
-| Classical Hardware | 5 | [[classical-hardware-moc]] |
-| Codes | 5 | [[codes-moc]] |
-| Cross-Platform | 1 | [[cross-platform-moc]] |
-| Ion Trap | 5 | [[ion-trap-moc]] |
-| Molecular | 1 | [[molecular-moc]] |
-| Neutral Atom | 4 | [[neutral-atom-moc]] |
-| Photonic | 5 | [[photonic-moc]] |
-| Semiconducting | 11 | [[semiconducting-moc]] |
-| Spin-Photon | 3 | [[spin-photon-moc]] |
-| Super-Semi | 4 | [[super-semi-moc]] |
-| Superconducting | 17 | [[superconducting-moc]] |
-| Topological | 3 | [[topological-moc]] |
+- [[classical-hardware-moc]] (5 entries)
+- [[codes-moc]] (5 entries)
+- [[ion-trap-moc]] (5 entries)
+- [[neutral-atom-moc]] (4 entries)
+- [[photonic-moc]] (5 entries)
+- [[semiconducting-moc]] (11 entries)
+- [[spin-photon-moc]] (3 entries)
+- [[super-semi-moc]] (4 entries)
+- [[superconducting-moc]] (19 entries)
+- [[topological-moc]] (3 entries)
+
+## Editorial policy
+
+- [[qubit-zoo-inclusion-editorial-policy]]

@@ -8,6 +8,7 @@ tags:
   - foundational
 ---
 
+# DiVincenzo Criteria for Quantum Computation
 
 Five requirements for a physical system to implement quantum computation, articulated by David DiVincenzo (1996/2000). Every qubit platform in the [[Zoo]] is evaluated against these criteria.
 

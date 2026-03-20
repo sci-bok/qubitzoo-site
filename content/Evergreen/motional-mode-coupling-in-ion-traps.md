@@ -11,6 +11,7 @@ tags:
   - entangling-gate
 ---
 
+# Motional-Mode Coupling in Ion Traps
 
 The shared motional (phonon) modes of a trapped ion chain serve as a quantum bus for mediating entangling interactions between distant ion qubits. This mechanism — analogous to the photonic bus in circuit QED — is the physical basis for two-qubit gates in all trapped-ion quantum computers.
 

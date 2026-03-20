@@ -13,12 +13,13 @@ keywords:
 last_updated: '2026-03-05'
 generated_by: seed-ingest-v1
 extracted_by: airtable-seed
-verified_by: scibok
+verified_by: pending
 figure_reviewed: true
 ---
 
 
 
+Single spin quantum dot (Loss-DiVincenzo) qubit is a seed entry imported from the legacy Qubit Zoo Airtable dataset.
 
 ## Description
 This qubit consists of single electron spin trapped in a quantum dot (QD) in semiconductor system such as Si/SiGe or Si MOS heterostructures. The spin states of the electron defines the qubit |0> and |1> states. Since spin is a magnetic property, spin qubit does not directly interact with the electrical environment, which leads to long coherence times. Entangling gate between neighboring spins can be achieved by electrical control of the exchange coupling via tuning the tunneling between coupled QDs, and single qubit gates can be efficiently implemented using electric-dipole spin resonance (EDSR).

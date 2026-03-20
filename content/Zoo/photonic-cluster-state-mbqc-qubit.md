@@ -15,6 +15,7 @@ generated_by: scibok-curation
 verified_by: scibok
 ---
 
+# Photonic Cluster-State MBQC Qubit
 
 A photonic qubit architecture specialized for measurement-based quantum computing (MBQC), where large photonic cluster states are prepared as entangled resources and computation proceeds through adaptive single-qubit measurements and feed-forward.
 

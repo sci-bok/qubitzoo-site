@@ -15,11 +15,12 @@ keywords:
 last_updated: '2026-03-05'
 generated_by: seed-ingest-v1
 extracted_by: airtable-seed
-verified_by: scibok
+verified_by: pending
 ---
 
 
 
+"Binomial code" fault-tolerant logical qubits encoded in bosonic modes of superconducting cavities is a seed entry imported from the legacy Qubit Zoo Airtable dataset.
 
 
 ## Figure

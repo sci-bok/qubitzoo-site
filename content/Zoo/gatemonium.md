@@ -12,11 +12,12 @@ keywords:
 last_updated: '2026-03-05'
 generated_by: seed-ingest-v1
 extracted_by: airtable-seed
-verified_by: scibok
+verified_by: pending
 ---
 
 
 
+Gatemonium is a seed entry imported from the legacy Qubit Zoo Airtable dataset.
 
 ## Description
 This is a fluxonium qubit made entirely with super-semi junctions. The gate voltage tunability of the single junction in the fluxonium allows one to tune the fluxonium between light and heavy regimes, and equivalently between bit and phase flip protected regimes (fluxonium cannot simultaneously protect against both). Also, the array of super-semi junctions may have applications in microwave components due to a different plasma frequency than AlOx junctions. Finally, hybridization of fluxon and plasmon modes may lead to enhanced coherence times over standard gatemons, which are limited by dielectric loss to the ~1-10us range.
@@ -58,8 +59,8 @@ where $E_J(V_g)$ is voltage-tunable via the semiconductor channel. This enables 
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| Qubit coherence $T_1$ | Not yet reported | Early-stage device (2024) | [Strickland et al. 2024](https://arxiv.org/abs/2406.09002) |
-| Qubit coherence $T_2$ | Not yet reported |  | — |
+| Qubit coherence $T_1$ | TBD | Early-stage device (2024) | [Strickland et al. 2024](https://arxiv.org/abs/2406.09002) |
+| Qubit coherence $T_2$ | TBD |  | — |
 | $E_J$ tunability | Gate voltage | No flux bias needed | — |
 | Anharmonicity | Large (fluxonium-like) | $E_L \ll E_J$ | — |
 | Operating temperature | 10–20 mK | Dilution refrigerator | — |

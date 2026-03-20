@@ -16,7 +16,7 @@ verification_status: verified
 influence_score: 0.90
 novelty_flag: breakthrough
 extracted_by: claude-code
-verified_by: scibok
+verified_by: pending
 disputes: 0
 generated_by: pipeline-v1
 ---

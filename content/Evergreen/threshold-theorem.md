@@ -10,6 +10,7 @@ tags:
   - overhead
 ---
 
+# Threshold Theorem
 
 The threshold theorem is the foundational result of fault-tolerant quantum computation: if the error rate per physical gate is below a constant threshold $p_{\text{th}}$, then arbitrarily long quantum computations can be performed with arbitrarily small logical error rate, using only a polylogarithmic overhead in physical qubits and gates.
 
