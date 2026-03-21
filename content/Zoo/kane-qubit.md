@@ -3,9 +3,8 @@ title: Kane Qubit (Phosphorus-in-Silicon)
 entry_type: qubit
 technology_family: Semiconducting
 status: demonstrated
-seed_id: '26'
-seed_source: qubitzoo-airtable
 first_proposed_year: 1998
+first_demonstrated_year: 2012
 keywords:
 - kane qubit
 - phosphorus
@@ -15,13 +14,16 @@ keywords:
 - electron spin
 - exchange coupling
 influence_score: 0.76
-last_updated: '2026-03-10'
+last_updated: '2026-03-21'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok
+verified_by: scibok-manual-2026-03-21
 figure_reviewed: true
 ---
 
+## Figure
+
+![[kane-qubit-figure.png]]
 
 ## Description
 
@@ -35,11 +37,6 @@ The architecture uses three types of gate electrodes above each donor:
 Single-qubit gates are performed by NMR pulses on individual nuclei (made distinguishable by A-gate detuning of the hyperfine coupling). Two-qubit gates use the electron-mediated exchange interaction, controlled by the J-gate voltage.
 
 The silicon host is chosen for its nuclear-spin-free isotope ($^{28}\text{Si}$), eliminating magnetic noise from the lattice. Single-atom placement with scanning tunneling microscope (STM) lithography has been demonstrated by the Simmons group (UNSW), achieving atomic-precision donor placement.
-
-
-## Figure
-
-![[kane-qubit-figure.png]]
 
 ## Hamiltonian
 
@@ -55,23 +52,50 @@ At $B \sim 2\,\text{T}$, the electron Zeeman splitting ($\sim 56\,\text{GHz}$) f
 
 Nuclear spins in silicon offer the longest coherence times of any solid-state qubit, and silicon fabrication is the most mature semiconductor technology on Earth. Kane's proposal connects quantum computing to the existing trillion-dollar silicon fab infrastructure, with qubit densities potentially approaching CMOS transistor scales.
 
+## Experimental Status
+
+**Record solid-state coherence — Muhonen et al. (2014):**
+- Demonstrated nuclear $T_2 > 35\,\text{s}$ for $^{31}\text{P}$ in $^{28}\text{Si}$, the world record for a solid-state qubit
+- Nuclear $T_1 > 30$ hours at 1.5 K
+- Single-qubit gate fidelity of 99.95% via NMR control
+
+**Three-qubit donor processor — Mądzik et al. (2022):**
+- Precision tomography of a three-qubit donor quantum processor in silicon
+- Two-qubit gate fidelity of 99.4% via exchange-mediated coupling
+- Full process tomography with gate set tomography characterization
+
+**Atomic-precision fabrication (Simmons group, UNSW):**
+- STM lithography placement of individual $^{31}\text{P}$ donors with atomic precision
+- Donor spacing of 10–20 nm demonstrated
+- Foundation for scalable Kane architecture manufacturing
+
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
 | Nuclear $T_1$ | >30 hours | $^{31}$P in $^{28}$Si at 1.5 K | [Muhonen et al. 2014](https://doi.org/10.1038/nnano.2014.211) |
-| Nuclear $T_2$ (echo) | >35 s | World record for solid-state qubit | [Muhonen 2014](https://doi.org/10.1038/nnano.2014.211) |
+| Nuclear $T_2$ (echo) | >35 s | World record for solid-state qubit | [Muhonen et al. 2014](https://doi.org/10.1038/nnano.2014.211) |
 | Electron $T_2$ | 0.5–1 s | In $^{28}$Si | — |
 | 1Q gate fidelity | 99.95% | Nuclear spin, NMR control | [Muhonen et al. 2014](https://doi.org/10.1038/nnano.2014.211) |
 | 2Q gate fidelity | 99.4% | Exchange-mediated | [Mądzik et al. 2022](https://doi.org/10.1038/s41586-021-04292-7) |
 | Donor spacing | 10–20 nm | STM lithography placement | — |
-| Hyperfine coupling $A$ | ~117 MHz | Bulk value; gate-tunable | [Kane 1998](https://doi.org/10.1038/front_23906a0) |
+| Hyperfine coupling $A$ | ~117 MHz | Bulk value; gate-tunable | — |
 | Operating temperature | 100 mK – 1 K | Electron spin relaxation limited | — |
 
+## References
+
+### Original proposal
+- B. E. Kane, "A silicon-based nuclear spin quantum computer," [Nature 393, 133 (1998)](https://doi.org/10.1038/30156)
+
+### Experimental demonstrations
+- J. T. Muhonen et al., "Storing quantum information for 30 seconds in a nanoelectronic device," [Nat. Nanotechnol. 9, 986 (2014)](https://doi.org/10.1038/nnano.2014.211)
+- M. T. Mądzik et al., "Precision tomography of a three-qubit donor quantum processor in silicon," [Nature 601, 348 (2022)](https://doi.org/10.1038/s41586-021-04292-7)
+
 ## Linked Papers
+
 - [[kane-1998-silicon-nuclear-spin]]
 
 ## Related Entries
 
-- [[spin-qubit]]
-- [[loss-divincenzo-qubit]]
+- [[loss-divincenzo-qubit]] — foundational semiconductor spin qubit proposal
+- [[spin-qubit]] — broader spin qubit family

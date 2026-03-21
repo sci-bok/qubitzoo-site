@@ -3,9 +3,8 @@ title: Cat Qubit (Cat Codes)
 entry_type: qubit
 technology_family: Superconducting
 status: demonstrated
-seed_id: '14'
-seed_source: qubitzoo-airtable
 first_proposed_year: 2001
+first_demonstrated_year: 2020
 keywords:
 - cat qubit
 - cat code
@@ -15,13 +14,16 @@ keywords:
 - two-photon driven
 - bit-flip suppression
 influence_score: 0.82
-last_updated: '2026-03-10'
+last_updated: '2026-03-21'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok
+verified_by: scibok-manual-2026-03-21
 figure_reviewed: true
 ---
 
+## Figure
+
+![[cat-codes-figure.png]]
 
 ## Description
 
@@ -36,11 +38,6 @@ The key insight is that these states have exponentially different parity: $|0_L\
 Modern implementations use **two-photon driven-dissipative stabilization**: a nonlinear element (Josephson junction or SNAIL) drives two-photon exchange between the cavity and a lossy buffer, confining the cavity state to the manifold spanned by $|\alpha\rangle$ and $|{-\alpha}\rangle$. This makes the cat qubit autonomous — it continuously corrects itself against single-photon loss while maintaining exponential bit-flip protection.
 
 Alice & Bob (Paris) is developing cat qubits as their primary architecture, demonstrating bit-flip times exceeding 10 seconds with $|\alpha|^2 \approx 16$.
-
-
-## Figure
-
-![[cat-codes-figure.png]]
 
 ## Hamiltonian
 
@@ -62,13 +59,21 @@ The cat qubit error rates scale as:
 
 Standard bosonic codes (like GKP) require complex active error correction. The cat qubit achieves exponential suppression of one error type (phase flips) autonomously through hardware design, reducing the problem to correcting only bit flips. Combined with a repetition code for the remaining bit-flip errors, this creates an asymmetric error correction scheme with favorable resource scaling.
 
-## Key Findings
+## Experimental Status
 
-- Exponential suppression of phase-flip errors with $\bar{n}$ demonstrated experimentally.
-- Bit-flip times $> 10\,\text{s}$ achieved (Alice & Bob, 2024).
-- Two-photon dissipation stabilization provides autonomous error correction.
-- CNOT gate between cat qubits demonstrated maintaining error bias.
-- Compatible with repetition code for full fault tolerance.
+**First demonstration of exponential bit-flip suppression — Lescanne et al. (2020):**
+- Demonstrated exponential suppression of phase-flip errors with increasing $\bar{n}$
+- Used two-photon driven-dissipative stabilization in a superconducting cavity
+- Achieved bit-flip times scaling with $\kappa_2/\kappa_1$ ratio
+
+**Bias-preserving CNOT gate — Guillaud and Mirrahimi (2019):**
+- Proposed and analyzed CNOT gate between cat qubits that maintains the exponential error bias
+- Gate fidelity ~99% while preserving the noise asymmetry
+- Compatible with repetition code for full fault tolerance
+
+**Alice & Bob scaling results (2024):**
+- Bit-flip times exceeding 10 s achieved with $|\alpha|^2 \approx 16$
+- Demonstrated the practical viability of the cat qubit architecture for error-biased quantum computing
 
 ## Key Metrics
 
@@ -78,15 +83,28 @@ Standard bosonic codes (like GKP) require complex active error correction. The c
 | Phase-flip time | 1–100 μs | Scales as $e^{-2\bar{n}} / \kappa_\phi$ | [Lescanne et al. 2020](https://doi.org/10.1038/s41567-020-0824-x) |
 | Mean photon number $\bar{n}$ | 4–16 | Typical operating regime | [Lescanne et al. 2020](https://doi.org/10.1038/s41567-020-0824-x) |
 | $\kappa_2/\kappa_1$ | 10–100 | Two-photon vs single-photon loss ratio | [Lescanne et al. 2020](https://doi.org/10.1038/s41567-020-0824-x) |
-| CNOT gate fidelity | ~99% | Bias-preserving gate | [Guillaud & Mirrahimi 2019](https://doi.org/10.1103/PhysRevX.9.041053) |
+| CNOT gate fidelity | ~99% | Bias-preserving gate | [Guillaud and Mirrahimi 2019](https://doi.org/10.1103/PhysRevX.9.041053) |
 | Operating temperature | 10–20 mK | Dilution refrigerator | — |
 
+## References
+
+### Original proposal
+- M. Mirrahimi et al., "Dynamically protected cat-qubits: a new paradigm for universal quantum computation," [New J. Phys. 16, 045014 (2014)](https://doi.org/10.1088/1367-2630/16/4/045014) — [arXiv:1312.2017](https://arxiv.org/abs/1312.2017)
+
+### Experimental demonstrations
+- R. Lescanne et al., "Exponential suppression of bit-flips in a qubit encoded in an oscillator," [Nat. Phys. 16, 509 (2020)](https://doi.org/10.1038/s41567-020-0824-x) — [arXiv:1907.11729](https://arxiv.org/abs/1907.11729)
+
+### Related theory
+- J. Guillaud and M. Mirrahimi, "Repetition Cat Qubits for Fault-Tolerant Quantum Computation," [Phys. Rev. X 9, 041053 (2019)](https://doi.org/10.1103/PhysRevX.9.041053) — [arXiv:1904.09474](https://arxiv.org/abs/1904.09474)
+
 ## Linked Papers
+
 - [[mirrahimi-2014-cat-codes]]
 
 ## Related Entries
 
-- [[gkp-codes]]
-- [[circuit-qed]]
-- [[transmon]]
-- [[binomial-codes]]
+- [[gkp-codes]] — alternative bosonic code with grid-state encoding
+- [[kerr-cat-qubit]] — related cat qubit variant using Kerr nonlinearity
+- [[circuit-qed]] — underlying hardware platform
+- [[transmon]] — ancilla qubit used in cat qubit control
+- [[binomial-codes]] — another bosonic code family

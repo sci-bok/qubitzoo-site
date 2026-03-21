@@ -4,28 +4,29 @@ entry_type: qubit
 technology_family: Superconducting
 status: demonstrated
 first_proposed_year: 2019
+first_demonstrated_year: 2019
 keywords:
 - heavy fluxonium
 - superinductance
 - disjoint support
 - protected qubit
 - superconducting
-influence_score: 0.8
-last_updated: '2026-03-10'
+influence_score: 0.80
+last_updated: '2026-03-21'
 generated_by: scibok-curation
-verified_by: scibok
+verified_by: scibok-manual-2026-03-21
+figure_reviewed: true
 ---
+
+## Figure
+
+![[heavy-fluxonium-qubit-figure.png]]
 
 ## Description
 
 Heavy fluxonium is a fluxonium regime engineered for maximal coherence by increasing effective mass in phase space (large capacitance, moderate $E_J/E_C$), producing wavefunctions with disjoint support and suppressed relaxation matrix elements.
 
 Compared with conventional fluxonium, heavy fluxonium prioritizes coherence and error bias over speed, and has demonstrated millisecond-scale $T_1$ in sweet-spot operation.
-
-
-## Figure
-
-![[heavy-fluxonium-qubit-figure.png]]
 
 ## Hamiltonian
 
@@ -39,27 +40,42 @@ Heavy-fluxonium regime typically uses lower $E_C$ and operating points where wav
 
 Heavy fluxonium targets a "hardware-protected" operating regime where coherence is improved by circuit design rather than solely by control optimization. By engineering large effective mass in phase space and operating at sweet spots, matrix elements for dominant noise channels are strongly suppressed. This architecture is a practical bridge between conventional superconducting qubits and more strongly protected designs such as 0-π.
 
-## Key Findings
+## Experimental Status
 
-- Millisecond-scale $T_1$ has been reported in heavy-fluxonium-like parameter regimes.
-- Large anharmonicity enables selective control with low leakage.
-- Sweet-spot operation reduces flux-noise sensitivity to first order.
-- Heavy fluxonium is a strong candidate for low-error bosonic/encoded hybrid stacks.
+**High-coherence fluxonium — Nguyen et al. (2019):**
+- Demonstrated $T_1$ in the 0.5–1.5 ms range at the half-flux-quantum sweet spot
+- Large anharmonicity (GHz-scale) enables selective control with low leakage
+- First-order flux-noise insensitivity at the sweet spot
+
+**Millisecond coherence — Somoroff et al. (2023):**
+- Achieved millisecond-scale $T_1$ and $T_2$ coherence times
+- Single-qubit gate fidelity exceeding 99.9%
+- Confirmed heavy fluxonium as a strong candidate for low-error bosonic/encoded hybrid stacks
 
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
 | $T_1$ | 0.5–1.5 ms | Sweet-spot operation | [Nguyen et al. 2019](https://doi.org/10.1103/PhysRevX.9.041041) |
-| 1Q fidelity | 99.9%+ | Microwave control | [Somoroff et al. 2023](https://doi.org/10.1103/PhysRevLett.130.267001) |
+| 1Q gate fidelity | 99.9%+ | Microwave control | [Somoroff et al. 2023](https://doi.org/10.1103/PhysRevLett.130.267001) |
+| 2Q gate fidelity (CZ) | 99.2% | Conventional fluxonium regime; heavy-regime 2Q gates are active research frontier | — |
 | Anharmonicity | GHz-scale | Much larger than transmon | — |
 | Operating temperature | 10–20 mK | Dilution refrigerator | — |
 
+## References
+
+### Original proposal / first demonstration
+- L. B. Nguyen et al., "High-Coherence Fluxonium Qubit," [Phys. Rev. X 9, 041041 (2019)](https://doi.org/10.1103/PhysRevX.9.041041) — [arXiv:1907.12333](https://arxiv.org/abs/1907.12333)
+
+### Experimental demonstrations
+- A. Somoroff et al., "Millisecond Coherence in a Superconducting Qubit," [Phys. Rev. Lett. 130, 267001 (2023)](https://doi.org/10.1103/PhysRevLett.130.267001) — [arXiv:2301.09549](https://arxiv.org/abs/2301.09549)
+
 ## Linked Papers
+
 - [[lin-2018-heavy-fluxonium]]
 
 ## Related Entries
 
-- [[fluxonium]]
-- [[0-pi-qubit]]
-- [[transmon]]
+- [[fluxonium]] — parent qubit type
+- [[0-pi-qubit]] — related protected superconducting design
+- [[transmon]] — conventional superconducting qubit for comparison
