@@ -3,9 +3,9 @@ title: Flux Qubit
 entry_type: qubit
 technology_family: Superconducting
 status: demonstrated
-seed_id: '3'
-seed_source: qubitzoo-airtable
+figure_reviewed: true
 first_proposed_year: 1999
+first_demonstrated_year: 2000
 keywords:
 - flux qubit
 - persistent current
@@ -14,13 +14,15 @@ keywords:
 - rf squid
 - three junction
 influence_score: 0.75
-last_updated: '2026-03-10'
+last_updated: '2026-03-21'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok
-figure_reviewed: true
+verified_by: scibok-manual-2026-03-21
 ---
 
+## Figure
+
+![[flux-qubit-figure.png]]
 
 ## Description
 
@@ -29,11 +31,6 @@ The flux qubit (also called the persistent-current qubit) encodes quantum inform
 The original proposal by Orlando et al. (1999) uses a superconducting loop with three Josephson junctions, one of which is smaller by a factor $\alpha \approx 0.7{-}0.8$. This asymmetry frustrates the loop and creates a double-well potential in the phase space of the circuit. The qubit states $|0\rangle$ and $|1\rangle$ are the symmetric and antisymmetric superpositions of the persistent-current states, split by the tunnel coupling $\Delta$ through the potential barrier.
 
 Flux qubits operate in the regime $E_J/E_C \sim 20{-}80$, intermediate between the transmon and the CPB. Their large anharmonicity (the $|2\rangle$ state is GHz above $|1\rangle$) makes them attractive for certain applications, but their sensitivity to $1/f$ flux noise at the degeneracy point historically limited coherence. Modern variants include the C-shunt flux qubit (capacitively shunted for improved $T_1$) and the fluxonium (which can be viewed as a flux qubit with a superinductance replacing two of the three junctions).
-
-
-## Figure
-
-![[flux-qubit-figure.png]]
 
 ## Hamiltonian
 
@@ -53,13 +50,21 @@ where $f = \Phi_\text{ext}/\Phi_0$ is the frustration parameter and $\alpha < 1$
 
 The flux qubit was one of the three original superconducting qubit types (alongside charge and phase qubits). It provided the first macroscopic quantum superposition of persistent currents, demonstrating quantum coherence in a circuit carrying measurable electrical current. Its large anharmonicity and strong coupling to magnetic fields made it a testbed for fundamental quantum mechanics experiments and an early candidate for quantum annealing (D-Wave).
 
-## Key Findings
+## Experimental Status
 
-- First spectroscopic observation of quantum superposition of macroscopic persistent-current states (Friedman et al. 2000; van der Wal et al. 2000).
+**First spectroscopic observation — Friedman et al. (2000), van der Wal et al. (2000):**
+- Observed quantum superposition of macroscopic persistent-current states.
 - Three-junction design creates a controllable double-well potential via flux frustration.
-- C-shunt variant (You et al. 2007; Yan et al. 2016) improved $T_1$ to >40 μs by reducing dielectric loss.
-- Strong coupling to electromagnetic resonators demonstrated for readout and qubit-qubit coupling.
-- Widely used in quantum annealing processors (D-Wave systems).
+
+**C-shunt variant — Yan et al. (2016):**
+- Capacitive shunting improved $T_1$ to >40 μs by reducing dielectric loss.
+- Enhanced reproducibility compared to traditional flux qubits.
+
+**Coupling and readout:**
+- Strong coupling to electromagnetic resonators demonstrated for dispersive readout and qubit-qubit coupling.
+
+**Quantum annealing:**
+- Widely used in quantum annealing processors (D-Wave systems use flux-qubit-based architecture).
 
 ## Key Metrics
 
@@ -68,21 +73,27 @@ The flux qubit was one of the three original superconducting qubit types (alongs
 | $T_1$ | 1–55 μs | C-shunt: ~40–55 μs; traditional: ~1–5 μs | [Yan et al. 2016](https://doi.org/10.1038/ncomms12964) |
 | $T_2$ (echo) | 5–80 μs | At degeneracy point; C-shunt improved | — |
 | Anharmonicity | 3–10 GHz | Much larger than transmon | — |
-| Persistent current $I_p$ | 200–500 nA | Circulating supercurrent | [Orlando 1999](https://doi.org/10.1103/PhysRevB.60.15398) |
+| Persistent current $I_p$ | 200–500 nA | Circulating supercurrent | [Orlando et al. 1999](https://doi.org/10.1103/PhysRevB.60.15398) |
 | Qubit frequency | 1–10 GHz | Tunable via external flux | — |
 | 1Q gate fidelity | 99–99.9% | Microwave + flux pulses | [Yan et al. 2016](https://doi.org/10.1038/ncomms12964) |
+| 2Q gate fidelity | 95–99% | CZ/iSWAP; flux qubits also used in quantum annealing where gate fidelity is not the standard metric | [Yan et al. 2016](https://doi.org/10.1038/ncomms12964) |
 | Operating temperature | 10–20 mK | Dilution refrigerator | — |
 
 ## References
 
-- https://doi.org/10.1103/PhysRevB.60.15398
+### Original proposal
+- T. P. Orlando et al., "Superconducting persistent-current qubit," [Phys. Rev. B 60, 15398 (1999)](https://doi.org/10.1103/PhysRevB.60.15398) — [arXiv:cond-mat/9908283](https://arxiv.org/abs/cond-mat/9908283)
+
+### Experimental demonstrations
+- F. Yan et al., "The flux qubit revisited to enhance coherence and reproducibility," [Nat. Commun. 7, 12964 (2016)](https://doi.org/10.1038/ncomms12964)
 
 ## Linked Papers
+
 - [[mooij-1999-flux-qubit]]
 
 ## Related Entries
 
-- [[transmon]]
-- [[fluxonium]]
-- [[phase-qubit]]
-- [[cooper-pair-box-charge-qubit]]
+- [[transmon]] — complementary superconducting qubit with weak anharmonicity
+- [[fluxonium]] — flux qubit generalized with superinductance for enhanced coherence
+- [[phase-qubit]] — the third original superconducting qubit type
+- [[cooper-pair-box-charge-qubit]] — the charge-regime counterpart

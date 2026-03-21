@@ -1,9 +1,11 @@
 ---
 title: Trapped-Ion Qubit
 entry_type: qubit
-technology_family: Ion Trap
+technology_family: Trapped Ion
 status: demonstrated
+figure_reviewed: true
 first_proposed_year: 1995
+first_demonstrated_year: 1995
 keywords:
 - trapped ion
 - ion trap
@@ -14,11 +16,15 @@ keywords:
 - sympathetic cooling
 - shuttling
 influence_score: 0.92
-last_updated: '2026-03-10'
+last_updated: '2026-03-21'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok
+verified_by: scibok-manual-2026-03-21
 ---
+
+## Figure
+
+![[trapped-ion-qubit-figure.png]]
 
 ## Description
 
@@ -33,11 +39,6 @@ Two principal qubit encodings are used:
 Single-qubit gates are performed via resonant microwave or Raman laser pulses. Two-qubit entangling gates (Cirac-Zoller, Mølmer-Sørensen, or light-shift gates) couple the internal states to the shared motional mode of the ion chain, mediating effective spin-spin interactions.
 
 Trapped ions currently hold records for the highest single-qubit, two-qubit, and readout fidelities of any physical qubit platform.
-
-
-## Figure
-
-![[trapped-ion-qubit-figure.png]]
 
 ## Hamiltonian
 
@@ -58,41 +59,63 @@ The Mølmer-Sørensen gate drives both sidebands simultaneously on two ions, cre
 
 Trapped ions offer natural identical qubits (every $^{171}\text{Yb}^+$ ion is identical), extraordinarily long coherence times (minutes for hyperfine qubits), all-to-all connectivity within a chain via shared motional modes, and the highest demonstrated gate fidelities. The primary scaling challenge is that long ion chains become difficult to control (mode crowding, heating), motivating architectures based on ion shuttling between zones (QCCD) or photonic interconnects between separate traps.
 
-## Key Findings
+## Experimental Status
 
-- Cirac-Zoller (1995) proposal established ion traps as a viable quantum computing platform.
-- Mølmer-Sørensen gate enables two-qubit operations without ground-state cooling.
-- Hyperfine qubits in clock states achieve $T_2 > 10\,\text{min}$ with dynamical decoupling.
-- Two-qubit gate fidelities $> 99.9\%$ demonstrated (Ballance et al. 2016, Gaebler et al. 2016).
-- State detection via electron shelving achieves $> 99.99\%$ readout fidelity.
-- QCCD (quantum charge-coupled device) architecture demonstrated for scalable ion transport.
+**Original proposal — Cirac and Zoller (1995):**
+- Proposed using cold trapped ions with shared motional modes as a quantum bus for universal quantum computation.
+- Established ion traps as a viable quantum computing platform.
+
+**Mølmer-Sørensen gate development:**
+- Enables two-qubit operations without ground-state cooling.
+- Became the dominant entangling gate for trapped-ion QC.
+
+**Coherence records — hyperfine clock qubits:**
+- $T_2 > 10\,\text{min}$ demonstrated with dynamical decoupling in $^{171}\text{Yb}^+$.
+
+**High-fidelity gates — Ballance et al. (2016), Gaebler et al. (2016):**
+- Two-qubit gate fidelities $> 99.9\%$ demonstrated via Mølmer-Sørensen gates.
+
+**Readout via electron shelving:**
+- $> 99.99\%$ readout fidelity demonstrated (Myerson et al. 2008).
+
+**QCCD architecture:**
+- Quantum charge-coupled device architecture demonstrated for scalable ion transport between zones.
 
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| $T_1$ | >10,000 s (hyperfine) | Hyperfine ground states have no decay | [Bruzewicz et al. 2019](https://doi.org/10.1103/RevModPhys.91.025001) |
+| $T_1$ | >10,000 s (hyperfine) | Hyperfine ground states have no decay | [Bruzewicz et al. 2019](https://doi.org/10.1063/1.5088164) |
 | $T_2$ (echo) | >600 s | $^{171}\text{Yb}^+$ with DD sequences | — |
-| 1Q gate fidelity | 99.9999% | $^{43}\text{Ca}^+$ RB (Harty et al. 2014) | [Harty 2014](https://doi.org/10.1103/PhysRevLett.113.220501) |
-| 2Q gate fidelity | 99.9% | MS gate, $^{43}\text{Ca}^+$ | [Ballance 2016](https://doi.org/10.1103/PhysRevLett.117.060504) |
-| Readout fidelity | 99.99% | Electron shelving / fluorescence | [Myerson 2008](https://doi.org/10.1103/PhysRevLett.100.200502) |
+| 1Q gate fidelity | 99.9999% | $^{43}\text{Ca}^+$ RB | [Harty et al. 2014](https://doi.org/10.1103/PhysRevLett.113.220501) |
+| 2Q gate fidelity | 99.9% | MS gate, $^{43}\text{Ca}^+$ | [Ballance et al. 2016](https://doi.org/10.1103/PhysRevLett.117.060504) |
+| Readout fidelity | 99.99% | Electron shelving / fluorescence | [Myerson et al. 2008](https://doi.org/10.1103/PhysRevLett.100.200502) |
 | Gate time (1Q) | 1–10 μs | Microwave or Raman | — |
 | Gate time (2Q) | 10–200 μs | MS gate; speed-fidelity tradeoff | — |
 | Connectivity | All-to-all (in chain) | Via shared phonon modes | — |
 | Ions per chain | 10–50 | Practical limit before mode crowding | — |
 | Operating temperature | ~4 K (trap), ions at mK | Doppler + resolved sideband cooling | — |
 
+## References
 
-## Extracted Figures
+### Original proposal
+- J. I. Cirac and P. Zoller, "Quantum Computations with Cold Trapped Ions," [Phys. Rev. Lett. 74, 4091 (1995)](https://doi.org/10.1103/PhysRevLett.74.4091)
 
-![[trapped-ion-qubit-paper-fig-1.png]]
+### Experimental demonstrations
+- C. J. Ballance et al., "High-Fidelity Quantum Logic Gates Using Trapped-Ion Hyperfine Qubits," [Phys. Rev. Lett. 117, 060504 (2016)](https://doi.org/10.1103/PhysRevLett.117.060504)
+- T. P. Harty et al., "High-Fidelity Preparation, Gates, Memory, and Readout of a Trapped-Ion Quantum Bit," [Phys. Rev. Lett. 113, 220501 (2014)](https://doi.org/10.1103/PhysRevLett.113.220501)
+- A. H. Myerson et al., "High-Fidelity Readout of Trapped-Ion Qubits," [Phys. Rev. Lett. 100, 200502 (2008)](https://doi.org/10.1103/PhysRevLett.100.200502)
 
-![[trapped-ion-qubit-paper-fig-2.png]]
+### Reviews
+- C. D. Bruzewicz et al., "Trapped-ion quantum computing: Progress and challenges," [Appl. Phys. Rev. 6, 021314 (2019)](https://doi.org/10.1063/1.5088164)
 
 ## Linked Papers
+
 - [[cirac-zoller-1995-trapped-ion-gate]]
 
 ## Related Entries
 
-- [[cirac-zoller-gate]]
-- [[rydberg-neutral-atom-qubit]]
+- [[cirac-zoller-gate]] — the original Cirac-Zoller entangling gate proposal
+- [[molmer-sorenson-gate]] — dominant two-qubit gate for trapped ions
+- [[shuttling-ion-trap-qubit]] — QCCD scalable architecture variant
+- [[rydberg-neutral-atom-qubit]] — competing platform with similar atomic physics
