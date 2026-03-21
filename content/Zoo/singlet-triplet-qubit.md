@@ -2,40 +2,110 @@
 title: Singlet-Triplet Qubit
 entry_type: qubit
 technology_family: Semiconducting
-status: seed
+status: active
 seed_id: '23'
 seed_source: qubitzoo-airtable
 first_proposed_year: 2002
+first_demonstrated_year: 2005
 keywords:
 - singlet-triplet
 - spin
 - semiconductor
-last_updated: '2026-03-05'
+- double-quantum-dot
+last_updated: '2026-03-20'
 generated_by: seed-ingest-v1
 extracted_by: airtable-seed
-verified_by: pending
+verified_by: scibok-manual-2026-03-20
 figure_reviewed: true
 ---
 
-
-
-Singlet-Triplet Qubit is a seed entry imported from the legacy Qubit Zoo Airtable dataset.
-
 ## Description
-This qubit is encoded in the Sz=0 subspace of two exchange-coupled electronic spins.  These two spins are trapped inside quantum dots realized by electronic gates on the surface of a semiconductor, usually Si or GaAs, and are subject to a magnetic field gradient.  The singlet state, (|up down>-|down up>)/sqrt(2), and the triplet state, (|up down>+|down up>)/sqrt(2), are the logical |0> and |1> states.  Single-qubit gates are realized by tuning the exchange coupling between the two spins, which is done in experiments by changing the voltage on the electronic gate separating the two dots.  The magnetic field gradient is required in order to perform rotations about axes other than the logical z axis.
 
-These qubits may be coupled in one of two ways.  One method is capacitive coupling, which uses the difference in dipole moment between the logical |0> and |1> states in order to couple qubits via dipole-dipole interaction.  Another is exchange coupling, in which the exchange interaction between one of the spins in one qubit (say, the right-hand spin) and one of the spins in the other qubit (say, the left-hand spin) is used to couple the qubits.
+The singlet-triplet ($S$–$T_0$) qubit encodes a logical qubit in the $m_s = 0$ subspace of two exchange-coupled electron spins in a **double quantum dot** (DQD). The singlet $|S\rangle$ and unpolarized triplet $|T_0\rangle$ form the computational basis, while the polarized triplets $|T_+\rangle = |\!\uparrow\uparrow\rangle$ and $|T_-\rangle = |\!\downarrow\downarrow\rangle$ are split off by a uniform magnetic field and lie outside the computational subspace.
+
+Both single- and two-qubit gates are **fully electrical**:
+- **$Z$ rotations** (around the logical $\hat{z}$ axis): tuning the exchange coupling $J$ via the gate voltage on the barrier or detuning between dots
+- **$X$ rotations** (around the logical $\hat{x}$ axis): a magnetic field gradient $\Delta B_z$ between the two dots (from a micromagnet, nuclear polarization, or $g$-factor difference)
+
+Two-qubit coupling uses either **capacitive (dipole-dipole)** interaction, exploiting the charge-dipole difference between $|S\rangle$ and $|T_0\rangle$ at finite detuning, or **direct exchange** between adjacent spins of neighboring qubits.
+
+After the single-spin Loss-DiVincenzo qubit, this is the next-simplest spin qubit — requiring only 2 dots per logical qubit — and was the first encoded spin qubit to be experimentally demonstrated (Petta et al. 2005).
 
 
 ## Figure
 
 ![[singlet-triplet-qubit-figure.png]]
 
+## Hamiltonian
+
+In the $\{|S\rangle, |T_0\rangle\}$ basis:
+
+$$H = \frac{J(\varepsilon)}{2}\sigma_z + \frac{g\mu_B \Delta B_z}{2}\sigma_x$$
+
+where $J(\varepsilon)$ is the exchange splitting controlled by the detuning $\varepsilon$ between dots (or by the tunnel barrier), and $\Delta B_z$ is the magnetic field gradient. The exchange splitting $J$ depends on detuning as:
+
+$$J(\varepsilon) \approx \frac{2t_c^2}{\varepsilon + \sqrt{\varepsilon^2 + 4t_c^2}} + \frac{2t_c^2}{U - \varepsilon + \sqrt{(U-\varepsilon)^2 + 4t_c^2}}$$
+
+where $t_c$ is the tunnel coupling and $U$ the on-site Coulomb energy. At the symmetric operating point ($\varepsilon = 0$), $\partial J/\partial\varepsilon = 0$, providing a **charge noise sweet spot** for $J$.
+
+### Logical encoding
+
+$$|0_L\rangle = |S\rangle = \frac{1}{\sqrt{2}}(|\!\uparrow\downarrow\rangle - |\!\downarrow\uparrow\rangle), \quad |1_L\rangle = |T_0\rangle = \frac{1}{\sqrt{2}}(|\!\uparrow\downarrow\rangle + |\!\downarrow\uparrow\rangle)$$
+
+Both states have $m_s = 0$, giving first-order insensitivity to uniform magnetic field fluctuations.
+
+### Two-qubit coupling
+
+**Capacitive coupling** between DQDs produces an effective $ZZ$ interaction in the logical basis:
+
+$$H_\text{cap} = \alpha\,\sigma_z^{(1)} \sigma_z^{(2)}$$
+
+where $\alpha$ depends on the inter-dot capacitance and the charge-dipole difference between $|S\rangle$ and $|T_0\rangle$.
+
+**Exchange coupling** between adjacent spins of neighboring qubits gives an effective Heisenberg-type interaction in the logical basis.
+
 ## Motivation
-The most attractive property of the singlet-triplet qubit is the fact that both single- and two-qubit gates can be implemented entirely electronically, allowing for fast gates.  After the single-spin Loss-DiVincenzo qubit, this is the next-simplest realization of a qubit possible using electronic spins in semiconductor-based quantum dots.
+
+- **All-electrical control** — no microwave drive needed (unlike Loss-DiVincenzo)
+- **Only 2 dots** per logical qubit — simpler than exchange-only (3 dots)
+- **Fast gates** — exchange pulses at ns timescales
+- **Well-established platform** — demonstrated in GaAs and Si/SiGe with high fidelity
+- Foundation for more complex encodings (exchange-only, AEON, RX)
+
+## Experimental Status
+
+**First demonstration**: Petta et al. (2005) in GaAs/AlGaAs DQD — coherent singlet-triplet oscillations via exchange control, $T_2^* \sim 10$ ns (nuclear-limited).
+
+**Key experimental milestones**:
+- **Bluhm et al. (2011)**: Dynamical decoupling extended $T_2$ to ~200 μs in GaAs
+- **Maune et al. (2012)**: First Si/SiGe singlet-triplet qubit — isotopic purification dramatically improved coherence
+- **Shulman et al. (2012)**: Two-qubit entangling gate via capacitive coupling, Bell state fidelity ~72% (GaAs)
+- **Nichol et al. (2017)**: Two-qubit gate fidelity ~90% via capacitive coupling (GaAs)
+- **Jock et al. (2018)**: Si/SiGe with $T_2^* \sim 1\,\mu\text{s}$, single-qubit fidelity >99%
+- **Weinstein et al. (2023)**: Symmetric operation sweet spot, high-fidelity gates in Si/SiGe
+- **Bøttcher et al. (2022)**: Parametric longitudinal coupling to high-impedance SC resonator
 
 ## References
-- https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.89.147902
+
+### Original proposal
+- J. Levy, "Universal quantum computation with spin-1/2 pairs and Heisenberg exchange," [PRL 89, 147902 (2002)](https://doi.org/10.1103/PhysRevLett.89.147902)
+
+### Landmark experiment
+- J. R. Petta et al., "Coherent manipulation of coupled electron spins in semiconductor quantum dots," [Science 309, 2180 (2005)](https://doi.org/10.1126/science.1116955)
+
+### Coherence advances
+- H. Bluhm et al., "Dephasing time of GaAs electron-spin qubits coupled to a nuclear bath exceeding 200 μs," [Nature Phys. 7, 109 (2011)](https://doi.org/10.1038/nphys1856)
+- B. M. Maune et al., "Coherent singlet-triplet oscillations in a silicon-based double quantum dot," [Nature 481, 344 (2012)](https://doi.org/10.1038/nature10707)
+
+### Two-qubit gates
+- M. D. Shulman et al., "Demonstration of entanglement of electrostatically coupled singlet-triplet qubits," [Science 336, 202 (2012)](https://doi.org/10.1126/science.1217692)
+- J. M. Nichol et al., "High-fidelity entangling gate for double-quantum-dot spin qubits," [npj Quantum Info. 3, 3 (2017)](https://doi.org/10.1038/s41534-017-0019-1)
+
+### Readout
+- C. Barthel et al., "Rapid single-shot measurement of a singlet-triplet qubit," [PRL 103, 160503 (2009)](https://doi.org/10.1103/PhysRevLett.103.160503)
+
+### Resonator coupling
+- C. G. L. Bøttcher et al., "Parametric longitudinal coupling between a high-impedance superconducting resonator and a semiconductor quantum dot singlet-triplet spin qubit," [Nature Commun. 13, 4773 (2022)](https://doi.org/10.1038/s41467-022-32236-w)
 
 ## Linked Papers
 - [[petta-2005-singlet-triplet]]
@@ -49,31 +119,24 @@ The most attractive property of the singlet-triplet qubit is the fact that both 
 ## Seed Metadata
 - date_published: 2002-09-17
 
-## Physics
+## Key Metrics
 
-Logical qubit encoded in the singlet-triplet subspace of two electron spins in a double quantum dot:
-
-$$|0_L\rangle = |S\rangle = \frac{1}{\sqrt{2}}(|\!\uparrow\downarrow\rangle - |\!\downarrow\uparrow\rangle), \quad |1_L\rangle = |T_0\rangle = \frac{1}{\sqrt{2}}(|\!\uparrow\downarrow\rangle + |\!\downarrow\uparrow\rangle)$$
-
-Both states have total $m_s = 0$, providing first-order insensitivity to uniform magnetic field fluctuations. Control: exchange interaction $J$ (gate voltage) rotates around $\hat{z}$ of the logical Bloch sphere; magnetic field gradient $\Delta B_z$ between dots rotates around $\hat{x}$.
+| Metric | Value | Notes | Fidelity reference |
+|--------|-------|-------|--------------------|
+| Qubit coherence $T_2^*$ | 10 ns (GaAs), ~1 μs (Si) | Nuclear-limited (GaAs), charge-limited (Si) | [Petta et al. 2005](https://doi.org/10.1126/science.1116955) |
+| Qubit coherence $T_2^\text{echo}$ | ~200 μs (GaAs), >1 ms (Si) | With dynamical decoupling | [Bluhm et al. 2011](https://doi.org/10.1038/nphys1856) |
+| Gate fidelity (1Q) | >99% | Exchange + gradient control (Si) | [Jock et al. 2018](https://doi.org/10.1038/s41565-017-0014-x) |
+| Gate fidelity (2Q) | ~90% | Capacitive coupling (GaAs) | [Nichol et al. 2017](https://doi.org/10.1038/s41534-017-0019-1) |
+| Gate time (1Q) | 1–100 ns | Exchange pulse ($Z$) or gradient ($X$) | — |
+| Gate time (2Q) | 10–200 ns | Capacitive or exchange-mediated | — |
+| Readout fidelity | 95–99% | Pauli spin blockade + charge sensor | [Barthel et al. 2009](https://doi.org/10.1103/PhysRevLett.103.160503) |
+| Qubit footprint | ~100–200 nm pitch | 2 dots per logical qubit | — |
+| Operating temperature | 20–100 mK | GaAs or Si/SiGe | — |
+| Connectivity | Nearest-neighbor | Between adjacent double dots | — |
 
 ## Related Qubits
 
 - [[loss-divincenzo-qubit]] — single-spin ancestor
 - [[exchange-only-qubit]] — three-spin descendant (no gradient needed)
-- [[aeon-qubit]] — always-on variant
-
-## Key Metrics
-
-| Metric | Value | Notes | Fidelity reference |
-|--------|-------|-------|--------------------|
-| Qubit coherence $T_1$ | >1 s | Spin relaxation in GaAs/Si | [Petta et al. 2005](https://doi.org/10.1126/science.1116955) |
-| Qubit coherence $T_2$ | 1–200 μs | Limited by nuclear spin bath (GaAs) or charge noise | [Bluhm et al. 2011](https://doi.org/10.1038/nphys1856) |
-| Gate fidelity (1Q) | 99–99.9% | Exchange + gradient control | [Nichol et al. 2017](https://doi.org/10.1038/s41534-017-0019-1) |
-| Gate fidelity (2Q) | 90–99% | Capacitive or exchange-mediated | [Nichol et al. 2017](https://doi.org/10.1038/s41534-017-0019-1) |
-| Gate time (1Q) | 1–100 ns | Exchange pulse (Z) or gradient (X) | — |
-| Gate time (2Q) | 10–200 ns | Inter-double-dot coupling | — |
-| Readout fidelity | 95–99% | Pauli spin blockade + charge sensor | [Barthel et al. 2009](https://doi.org/10.1103/PhysRevLett.103.160503) |
-| Qubit footprint | ~100–200 nm pitch | Two dots per logical qubit | — |
-| Operating temperature | 20 mK–100 mK | GaAs or Si/SiGe | — |
-| Connectivity | Nearest-neighbor | Between adjacent double dots | — |
+- [[aeon-qubit]] — always-on variant with double sweet spot
+- [[rx-qubit]] — always-on three-spin variant with microwave control
