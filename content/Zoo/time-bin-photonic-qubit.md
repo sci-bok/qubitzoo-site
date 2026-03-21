@@ -3,7 +3,9 @@ title: Time-Bin Photonic Qubit
 entry_type: qubit
 technology_family: Photonic
 status: demonstrated
+figure_reviewed: true
 first_proposed_year: 1999
+first_demonstrated_year: 1999
 keywords:
 - time-bin
 - photonic qubit
@@ -14,12 +16,11 @@ keywords:
 - interferometric
 - quantum network
 influence_score: 0.70
-last_updated: '2026-03-14'
+last_updated: '2026-03-21'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok
+verified_by: scibok-manual-2026-03-21
 ---
-
 
 ## Figure
 
@@ -53,32 +54,52 @@ $$|\psi\rangle = \frac{1}{\sqrt{2}}(|\text{early}\rangle + e^{i\phi}|\text{late}
 
 Polarization qubits suffer rapid decoherence in optical fibers due to birefringence, polarization-mode dispersion, and mechanical stress — effects that fluctuate unpredictably over km-scale links. Time-bin encoding eliminates these issues because both temporal modes traverse the same fiber path and experience identical polarization evolution. This makes time-bin qubits the preferred encoding for deployed fiber-based quantum networks, QKD systems, and long-distance quantum teleportation, where stability over hours to days is required without active polarization compensation.
 
-## Key Findings
+## Experimental Status
 
-- Franson interferometry using time-bin entangled photon pairs demonstrated violation of Bell inequalities over 50 km of fiber (Brendel et al. 1999).
-- Quantum teleportation over 600 m of deployed fiber using time-bin qubits at telecom wavelengths (Marcikic et al. 2004).
-- Time-bin encoding adopted in commercial QKD systems (ID Quantique, Toshiba) operating over 100+ km fiber links.
-- Long-distance entanglement distribution with time-bin qubits over 300 km of fiber demonstrated using quantum repeater-like protocols (Takesue et al. 2015).
-- Compatible with integrated photonic circuits: on-chip time-bin sources and interferometers demonstrated in silicon photonics.
+**First demonstration — Brendel et al. (1999):**
+- Introduced time-bin encoding and demonstrated pulsed energy-time entangled twin-photon source
+- Franson interferometry using time-bin entangled photon pairs demonstrated violation of Bell inequalities
+
+**Fiber teleportation — Marcikic et al. (2004):**
+- Distribution of time-bin entangled qubits over 50 km of optical fiber at telecom wavelengths
+- Established viability of time-bin encoding for long-distance quantum communication
+
+**Long-distance distribution — Takesue et al. (2015):**
+- Quantum teleportation over 100 km of fiber using highly efficient superconducting nanowire single-photon detectors
+- Time-bin encoding at 1550 nm telecom wavelength
+
+**Commercial deployment:**
+- Time-bin encoding adopted in commercial QKD systems (ID Quantique, Toshiba) operating over 100+ km fiber links
+- Compatible with integrated photonic circuits: on-chip time-bin sources and interferometers demonstrated in silicon photonics
 
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
 | Time-bin separation | 1–5 ns | Set by interferometer path difference | [Brendel et al. 1999](https://doi.org/10.1103/PhysRevLett.82.2594) |
-| Fiber transmission distance | >300 km | At telecom wavelengths (1550 nm) | [Takesue et al. 2015](https://doi.org/10.1364/OPTICA.2.000832) |
+| Fiber transmission distance | >100 km | At telecom wavelengths (1550 nm) | [Takesue et al. 2015](https://doi.org/10.1364/OPTICA.2.000832) |
 | State preparation fidelity | >99% | Interferometric visibility | [Marcikic et al. 2004](https://doi.org/10.1103/PhysRevLett.93.180502) |
 | Bell-state visibility | >95% | Franson interferometry | [Brendel et al. 1999](https://doi.org/10.1103/PhysRevLett.82.2594) |
 | Photon loss rate | ~0.2 dB/km | Standard telecom fiber at 1550 nm | — |
 | Detector timing jitter | <100 ps | Superconducting nanowire SPDs | — |
 | Operating temperature | 300 K (fiber) / 1 K (detectors) | SNSPDs require cryogenics | — |
 
+## References
+
+### Original proposal
+- J. Brendel et al., "Pulsed Energy-Time Entangled Twin-Photon Source for Quantum Communication," [Phys. Rev. Lett. 82, 2594 (1999)](https://doi.org/10.1103/PhysRevLett.82.2594)
+
+### Experimental demonstrations
+- I. Marcikic et al., "Distribution of Time-Bin Entangled Qubits over 50 km of Optical Fiber," [Phys. Rev. Lett. 93, 180502 (2004)](https://doi.org/10.1103/PhysRevLett.93.180502)
+- H. Takesue et al., "Quantum teleportation over 100 km of fiber using highly efficient superconducting nanowire single-photon detectors," [Optica 2, 832 (2015)](https://doi.org/10.1364/OPTICA.2.000832)
+
 ## Linked Papers
+
 - [[brendel-1999-time-bin-entanglement]]
 - [[marcikic-2004-teleportation-fiber]]
 
 ## Related Entries
 
-- [[dual-rail-photonic-qubit]]
-- [[fusion-based-photonic-qubit]]
-- [[coherence-time-hierarchy]]
+- [[dual-rail-photonic-qubit]] — alternative photonic encoding using spatial modes
+- [[fusion-based-photonic-qubit]] — photonic architecture compatible with time-bin encoding
+- [[coherence-time-hierarchy]] — context for comparing decoherence mechanisms

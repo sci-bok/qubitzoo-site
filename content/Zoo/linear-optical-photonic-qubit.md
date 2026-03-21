@@ -3,31 +3,36 @@ title: Linear-Optical Photonic Qubit
 entry_type: qubit
 technology_family: Photonic
 status: demonstrated
-first_proposed_year: 1998
+figure_reviewed: true
+first_proposed_year: 2001
+first_demonstrated_year: 2003
 keywords:
-  - photonic qubit
-  - linear optics
-  - dual-rail encoding
-  - KLM
+- photonic qubit
+- linear optics
+- dual-rail encoding
+- KLM
 influence_score: 0.71
-last_updated: '2026-03-10'
+last_updated: '2026-03-21'
 generated_by: scibok-curation
-verified_by: scibok
+extracted_by: scibok
+verified_by: scibok-manual-2026-03-21
 ---
 
-# Linear-Optical Photonic Qubit
+## Figure
+
+![[linear-optical-photonic-qubit-figure.png]]
+
+## Description
 
 A photonic qubit architecture based on single-photon encoding (typically dual-rail or polarization) with state preparation, gates, and measurement implemented using linear optical elements, single-photon sources, and photodetectors.
 
-## Physics
+A common encoding is **dual-rail**, where the logical states are defined by a single photon occupying one of two spatial modes:
 
-A common encoding is dual-rail:
+$$|0_L\rangle = |1\rangle_a|0\rangle_b, \qquad |1_L\rangle = |0\rangle_a|1\rangle_b$$
 
-\[
-|0_L\rangle = |1\rangle_a|0\rangle_b, \qquad |1_L\rangle = |0\rangle_a|1\rangle_b
-\]
+Beam splitters and phase shifters implement single-qubit unitaries as passive transformations that conserve photon number. Entangling gates are induced through measurement and feed-forward (KLM-style), trading deterministic interactions for optical network + ancilla overhead.
 
-Beam splitters and phase shifters implement single-qubit unitaries. Entangling gates are induced through measurement and feed-forward (KLM-style), trading deterministic interactions for optical network + ancilla overhead.
+The foundational result of Knill, Laflamme, and Milburn (KLM, 2001) established that scalable universal quantum computation is possible using only linear optics, single-photon sources, and photon detectors — with no photon-photon nonlinearity required. The key insight is that measurement-induced nonlinearities, combined with teleportation-based gate constructions and offline resource state preparation, can achieve asymptotically deterministic entangling gates at the cost of significant ancilla overhead.
 
 ## Hamiltonian
 
@@ -39,35 +44,57 @@ which induces a unitary mode transformation $U = e^{-iHt}$ acting on creation op
 
 $$a_i^\dagger \mapsto \sum_j U_{ij} a_j^\dagger$$
 
-Single-qubit operations in dual-rail encoding are realized with beam splitters and phase shifters, while effective entangling operations are implemented by measurement-induced nonlinearities (ancilla + feed-forward in KLM-style protocols).
+Single-qubit operations in dual-rail encoding are realized with beam splitters and phase shifters (Mach-Zehnder interferometers), while effective entangling operations are implemented by measurement-induced nonlinearities (ancilla photons + feed-forward in KLM-style protocols).
 
+## Motivation
 
-## Figure
+- Photons have negligible decoherence during transmission, making this architecture naturally network-compatible
+- The KLM result established that scalable quantum computing is possible with linear optics + measurement alone — no photon-photon interaction needed
+- Provides a central route to distributed and communication-first quantum architectures
+- Room-temperature operation for the photonic components (only detectors require cryogenics)
 
-![[linear-optical-photonic-qubit-figure.png]]
+## Experimental Status
 
-## Why it matters
+**KLM foundational result — Knill, Laflamme, and Milburn (2001):**
+- Proved that efficient quantum computation is possible using only linear optics, single-photon sources, and photon detectors
+- Probabilistic nonlinear sign (NS) gate succeeds with probability 1/4; CZ gate with probability 1/16 in the basic scheme
+- Teleportation-based constructions boost effective success probability at the cost of ancilla overhead
 
-- Photons have low decoherence during transmission, making this architecture naturally network-compatible.
-- The KLM result established that scalable QC is possible with linear optics + measurement alone.
-- Provides a central route to distributed and communication-first quantum architectures.
+**Experimental demonstrations:**
+- Two-photon entangling gates demonstrated using linear optics and post-selection (O'Brien et al., 2003)
+- Integrated photonic circuits on silicon and silicon nitride chips have realized high-visibility single-qubit operations
+- Boson sampling demonstrations validated the linear optical platform
+
+**Scaling challenges:**
+- Loss and source/detector efficiency remain the dominant practical scaling limits
+- Photon indistinguishability (Hong-Ou-Mandel interference) is critical for gate operation
+- KLM overhead motivates alternative approaches (cluster-state MBQC, fusion-based QC)
 
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| Native two-qubit interaction | Measurement-induced (probabilistic) | No direct photon-photon interaction required | [[knill-2000-efficient-linear-optics-quantum]], [[adami-1998-quantum-computation-with-linear]] |
-| Deterministic universal QC path | Yes (with ancilla + feed-forward overhead) | Core KLM result | [[knill-2000-efficient-linear-optics-quantum]] |
-| Hardware bottleneck | Loss + source/detector efficiency | Dominant practical scaling limit in reviews | [[kok-2005-review-article-linear-optical]] |
+| Native 2Q interaction | Measurement-induced (probabilistic) | No direct photon-photon interaction | [Knill et al. 2001](https://doi.org/10.1038/35051009) |
+| Deterministic universal QC path | Yes (with ancilla + feed-forward) | Core KLM result; large overhead | [Knill et al. 2001](https://doi.org/10.1038/35051009) |
+| Hardware bottleneck | Loss + source/detector efficiency | Dominant practical scaling limit | [Kok et al. 2007](https://doi.org/10.1103/RevModPhys.79.135) |
+| Operating temperature | 300 K (optics) / 1–4 K (detectors) | SNSPDs require cryogenics | — |
+
+## References
+
+### Original proposal
+- E. Knill, R. Laflamme, and G. J. Milburn, "A scheme for efficient quantum computation with linear optics," [Nature 409, 46 (2001)](https://doi.org/10.1038/35051009)
+
+### Reviews
+- P. Kok et al., "Linear optical quantum computing with photonic qubits," [Rev. Mod. Phys. 79, 135 (2007)](https://doi.org/10.1103/RevModPhys.79.135)
 
 ## Linked Papers
-- [[knill-2001-klm]]
 
-- [[adami-1998-quantum-computation-with-linear]]
-- [[knill-2000-efficient-linear-optics-quantum]]
+- [[knill-2001-klm]]
 - [[kok-2005-review-article-linear-optical]]
 
 ## Related Entries
 
-- [[gkp-codes]]
-- [[cat-codes]]
+- [[dual-rail-photonic-qubit]] — specific encoding used in linear-optical QC
+- [[fusion-based-photonic-qubit]] — evolved architecture that embraces probabilistic gates
+- [[gkp-codes]] — bosonic code approach to photonic error correction
+- [[cat-codes]] — alternative bosonic encoding

@@ -3,7 +3,9 @@ title: Ytterbium-171 Hyperfine Qubit
 entry_type: qubit
 technology_family: Ion Trap
 status: demonstrated
+figure_reviewed: true
 first_proposed_year: 2007
+first_demonstrated_year: 2007
 keywords:
 - ytterbium
 - Yb-171
@@ -15,12 +17,11 @@ keywords:
 - Quantinuum
 - IonQ
 influence_score: 0.88
-last_updated: '2026-03-14'
+last_updated: '2026-03-21'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok
+verified_by: scibok-manual-2026-03-21
 ---
-
 
 ## Figure
 
@@ -54,20 +55,36 @@ where $\beta / 2\pi \approx 310.8\,\text{Hz/mT}^2$, providing excellent field in
 
 Trapped-ion qubits require long coherence times and high-fidelity operations to serve as building blocks for fault-tolerant quantum computing. Hyperfine clock states in $^{171}\text{Yb}^+$ provide first-order magnetic field insensitivity without active stabilization, coherence times exceeding 10 minutes, and a microwave-frequency splitting compatible with high-stability oscillators. The simple level structure and efficient state detection make $^{171}\text{Yb}^+$ the most widely deployed trapped-ion qubit platform.
 
-## Key Findings
+## Experimental Status
 
-- Clock-state encoding provides first-order insensitivity to magnetic field fluctuations, with coherence times $T_2 > 10$ minutes demonstrated using dynamical decoupling (Wang et al. 2021).
-- Two-qubit gate fidelities of 99.9(1)% achieved via light-shift gates (Ballance et al. 2016) and amplitude-modulated Mølmer-Sørensen gates (Gaebler et al. 2016).
-- Quantinuum H2 processor achieves system-level 2Q gate fidelities of 99.8% across a fully connected 56-qubit register.
-- State preparation and measurement (SPAM) fidelity exceeds 99.9% using electron shelving to the $^2D_{3/2}$ state.
-- Mid-circuit measurement and qubit reuse demonstrated, enabling real-time quantum error correction protocols.
+**First characterization — Olmschenk et al. (2007):**
+- Demonstrated manipulation and detection of a trapped $\text{Yb}^+$ hyperfine qubit
+- Characterized state preparation, single-qubit gates, and state-dependent fluorescence readout
+- Established the $^{171}\text{Yb}^+$ system as a viable qubit platform
+
+**High-fidelity two-qubit gates — Ballance et al. (2016):**
+- Achieved 99.9(1)% two-qubit gate fidelity using light-shift gates on $^{171}\text{Yb}^+$ hyperfine qubits
+- Oxford group demonstration using geometric phase gates
+
+**High-fidelity gate set — Gaebler et al. (2016):**
+- Demonstrated a high-fidelity universal gate set for $^9\text{Be}^+$ with amplitude-modulated Mølmer-Sørensen gates
+- Methods directly applicable and transferred to $\text{Yb}^+$ platforms
+
+**Long coherence — Wang et al. (2021):**
+- Single ion qubit with estimated coherence time exceeding one hour using dynamical decoupling sequences
+- Demonstrated the extraordinary coherence potential of clock-state encodings
+
+**System-level deployment — Quantinuum H2 (2024):**
+- 56-qubit fully connected $^{171}\text{Yb}^+$ register
+- System-level two-qubit gate fidelities of 99.8%
+- Mid-circuit measurement and qubit reuse demonstrated, enabling real-time quantum error correction
 
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
 | $T_1$ | >10 s | Radiative lifetime of ground state; effectively infinite | — |
-| $T_2$ (echo) | >10 min | With dynamical decoupling sequences | [Wang et al. 2021](https://doi.org/10.1038/s41567-021-01237-9) |
+| $T_2$ (echo) | >10 min | With dynamical decoupling sequences | [Wang et al. 2021](https://doi.org/10.1038/s41467-020-20330-w) |
 | $T_2^*$ | 1–10 s | Limited by magnetic field fluctuations | [Olmschenk et al. 2007](https://doi.org/10.1103/PhysRevA.76.052314) |
 | Hyperfine splitting | 12.642812 GHz | Clock transition, first-order field insensitive | [Olmschenk et al. 2007](https://doi.org/10.1103/PhysRevA.76.052314) |
 | 1Q gate fidelity | 99.99%+ | Randomized benchmarking | [Gaebler et al. 2016](https://doi.org/10.1103/PhysRevLett.117.060505) |
@@ -77,14 +94,30 @@ Trapped-ion qubits require long coherence times and high-fidelity operations to 
 | Gate time (2Q) | 30–600 μs | Depends on gate scheme and ion number | [Gaebler et al. 2016](https://doi.org/10.1103/PhysRevLett.117.060505) |
 | Operating temperature | ~4 K (trap) | Room-temperature vacuum; ions laser-cooled to ~mK | — |
 
+## References
+
+### Original characterization
+- S. Olmschenk et al., "Manipulation and detection of a trapped Yb⁺ hyperfine qubit," [Phys. Rev. A 76, 052314 (2007)](https://doi.org/10.1103/PhysRevA.76.052314)
+
+### High-fidelity gates
+- C. J. Ballance et al., "High-Fidelity Quantum Logic Gates Using Trapped-Ion Hyperfine Qubits," [Phys. Rev. Lett. 117, 060504 (2016)](https://doi.org/10.1103/PhysRevLett.117.060504)
+- J. P. Gaebler et al., "High-Fidelity Universal Gate Set for ⁹Be⁺ Ion Qubits," [Phys. Rev. Lett. 117, 060505 (2016)](https://doi.org/10.1103/PhysRevLett.117.060505)
+
+### Coherence
+- P. Wang et al., "Single ion qubit with estimated coherence time exceeding one hour," [Nat. Commun. 12, 233 (2021)](https://doi.org/10.1038/s41467-020-20330-w)
+
+### SPAM
+- R. Noek et al., "High speed, high fidelity detection of an atomic hyperfine qubit," [Opt. Express 21, 21449 (2013)](https://doi.org/10.1364/OE.21.021449)
+
 ## Linked Papers
+
 - [[olmschenk-2007-yb171-qubit]]
 - [[ballance-2016-ion-gate-fidelity]]
 - [[gaebler-2016-ms-gate]]
 
 ## Related Entries
 
-- [[trapped-ion-qubit]]
-- [[cirac-zoller-gate]]
-- [[motional-mode-coupling-in-ion-traps]]
-- [[coherence-time-hierarchy]]
+- [[trapped-ion-qubit]] — parent platform
+- [[cirac-zoller-gate]] — foundational trapped-ion gate proposal
+- [[motional-mode-coupling-in-ion-traps]] — physics of the Coulomb-mediated bus
+- [[coherence-time-hierarchy]] — context for coherence comparison
