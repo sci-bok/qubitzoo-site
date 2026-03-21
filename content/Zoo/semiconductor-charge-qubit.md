@@ -1,73 +1,102 @@
 ---
-title: Semiconductor charge qubit
+title: Semiconductor Charge Qubit
 entry_type: qubit
 technology_family: Semiconducting
-status: seed
+status: demonstrated
 figure_reviewed: true
-seed_id: '21'
-seed_source: qubitzoo-airtable
 first_proposed_year: 2003
+first_demonstrated_year: 2003
 keywords:
-- semiconductor; charge; gaas; silicon
-last_updated: '2026-03-05'
-generated_by: seed-ingest-v1
+  - semiconductor
+  - charge qubit
+  - double quantum dot
+  - GaAs
+  - silicon
+  - electrostatic control
+influence_score: 0.62
+last_updated: '2026-03-21'
+generated_by: scibok-curation
 extracted_by: airtable-seed
-verified_by: pending
+verified_by: scibok-manual-2026-03-21
 ---
-
-
-
-Semiconductor charge qubit is a seed entry imported from the legacy Qubit Zoo Airtable dataset.
-
-## Description
-A single electron is trapped in a double quantum dot. The double quantum dot consists of two quantum dots coupled to each other via a tunnel barrier and the electron can flip back and forth between them. Voltage pulses on the dots can be used to perform quantum operations on the state of the qubit.
-
 
 ## Figure
 
 ![[semiconductor-charge-qubit-figure.png]]
 
-## Motivation
-A semiconductor system in, e.g., GaAs or Silicon, much like a classical transistor can be used to create solid-state qubits. The charge qubit is the simplest semiconductor qubit. Although it typically suffers from fast decoherence and relaxation, the semiconductor charge qubit demonstrates first, that artificial atoms can be formed out of semiconductors, and two, that all electrical control of a qubit is possible.
+## Description
 
-## References
-- https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.91.226804
-- T. Fujisawa et al., Physica E 21, 1046 (2004)
-- https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.105.246804
+The **semiconductor charge qubit** encodes quantum information in the position of a single electron within a **double quantum dot** (DQD). The two computational basis states correspond to the electron being localized in the left dot ($|L\rangle$) or the right dot ($|R\rangle$), with the qubit state $|\Psi\rangle = \alpha|L\rangle + \beta|R\rangle$ representing a coherent superposition of charge configurations.
 
-## Linked Papers
-- [[petersson-2010-semiconductor-charge]]
+The double quantum dot is formed in a two-dimensional electron gas (2DEG) at a semiconductor heterointerface — typically GaAs/AlGaAs or Si/SiGe — using lithographically defined metallic gate electrodes that electrostatically confine electrons. Two quantum dots are coupled via a tunnel barrier, and the relative chemical potentials $\mu_L$ and $\mu_R$ of the dots are controlled by gate voltages $V_L$ and $V_R$. At zero detuning ($\epsilon = \mu_L - \mu_R = 0$), the eigenstates are symmetric and antisymmetric superpositions split by twice the tunnel coupling $2t_c$.
 
-## Related Entries
-- [[loss-divincenzo-qubit]]
+Qubit operations are performed entirely electrically using fast voltage pulses that modulate the detuning $\epsilon(t)$, driving coherent charge oscillations between the two dots. This all-electrical control is a major advantage, enabling gate times below 1 ns. However, the charge degree of freedom couples directly to electric field fluctuations (charge noise) in the solid-state environment, resulting in very short coherence times ($T_2^* \sim 1$ ns).
 
-## Seed Metadata
-- date_published: 2003-11-26
+The semiconductor charge qubit is historically significant as the **simplest semiconductor qubit** and the first demonstration that artificial atoms can be formed from semiconductors with coherent quantum control. Its rapid decoherence motivated the development of spin-based encodings (Loss-DiVincenzo, singlet-triplet, exchange-only) that exploit the weaker coupling of spin to the charge noise environment.
 
-## Physics
-
-Qubit encoded in the position of a single electron in a double quantum dot: $|L\rangle$ (left dot) and $|R\rangle$ (right dot). The Hamiltonian:
+## Hamiltonian
 
 $$H = \frac{\epsilon}{2}\sigma_z + t_c\,\sigma_x$$
 
-where $\epsilon$ is the detuning (gate-voltage controlled) and $t_c$ is the tunnel coupling. At zero detuning ($\epsilon = 0$), the eigenstates are symmetric/antisymmetric superpositions split by $2t_c$. Coherent charge oscillations between dots demonstrated by pulsed gate voltage.
+where:
+- $\epsilon = \mu_L - \mu_R$ is the detuning between dot chemical potentials, controlled by gate voltages
+- $t_c$ is the tunnel coupling between the two dots
+- $\sigma_z = |L\rangle\langle L| - |R\rangle\langle R|$ is the charge polarization operator
+- $\sigma_x = |L\rangle\langle R| + |R\rangle\langle L|$ is the tunneling operator
 
-**Key limitation**: Charge is directly coupled to electric field fluctuations in the solid-state environment → very short coherence times ($T_2^* \sim 1$ ns). This motivated the pivot to spin-based encodings.
+The energy eigenvalues are $E_\pm = \pm\frac{1}{2}\sqrt{\epsilon^2 + 4t_c^2}$, producing a characteristic hyperbolic anticrossing with minimum splitting $2t_c$ at $\epsilon = 0$. At large detuning ($|\epsilon| \gg t_c$), the eigenstates approach the localized charge states $|L\rangle$ and $|R\rangle$.
+
+**Key limitation:** Charge noise enters linearly through $\epsilon$ fluctuations, giving a dephasing rate $\Gamma_\phi \propto |\partial E/\partial\epsilon|$. At the **sweet spot** ($\epsilon = 0$), the first-order sensitivity vanishes ($\partial E/\partial\epsilon = 0$), but second-order sensitivity and the intrinsically strong charge-environment coupling still limit $T_2^*$ to the nanosecond scale.
+
+## Motivation
+
+- Demonstrates that **artificial atoms** can be formed from semiconductors with all-electrical quantum control — foundational proof of concept for the entire semiconductor qubit field.
+- Extremely fast gate times (<1 ns) due to direct electrical coupling, establishing the speed benchmark for semiconductor qubits.
+- Simplest semiconductor qubit, providing a pedagogical and experimental stepping stone to more complex encodings.
+- Compatible with semiconductor fabrication technology, motivating the search for charge-noise-insensitive encodings within the same platform.
+- The short coherence times directly motivated the development of **spin qubits** (Loss-DiVincenzo, singlet-triplet, exchange-only) that exploit the spin degree of freedom's weaker coupling to charge noise.
+
+## Experimental Status
+
+**First coherent manipulation — Hayashi et al. (2003):**
+- Demonstrated coherent charge oscillations in a GaAs/AlGaAs double quantum dot using pulsed gate voltages.
+- Observed $T_2^* \sim 1$ ns, confirming the dominant role of charge noise.
+- Used a quantum point contact for single-shot charge readout.
+
+**Charge qubit coherence — Petersson et al. (2010):**
+- Achieved quantum coherence in a one-electron semiconductor charge qubit with improved gate fidelity.
+- Demonstrated $T_2^*$ of a few nanoseconds, limited by $1/f$ charge noise.
+- Validated the double-quantum-dot charge qubit as a platform, while highlighting the need for spin-based approaches for longer coherence.
 
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
 | Qubit coherence $T_1$ | ~10 ns | Charge relaxation | [Hayashi et al. 2003](https://doi.org/10.1103/PhysRevLett.91.226804) |
-| Qubit coherence $T_2$ | ~1 ns | Dominated by charge noise | [Hayashi et al. 2003](https://doi.org/10.1103/PhysRevLett.91.226804) |
-| Gate time (1Q) | <1 ns | Very fast (voltage pulses) | — |
-| Gate fidelity (1Q) | ~90% | Limited by decoherence | [Petersson et al. 2010](https://doi.org/10.1021/nl100663w) |
-| Readout fidelity | ~95% | Quantum point contact | [Petersson et al. 2010](https://doi.org/10.1021/nl100663w) |
-| Qubit footprint | ~100–200 nm | Double quantum dot | — |
-| Operating temperature | 20–100 mK | GaAs heterostructure | — |
+| Qubit coherence $T_2^*$ | ~1 ns | Dominated by $1/f$ charge noise | [Hayashi et al. 2003](https://doi.org/10.1103/PhysRevLett.91.226804) |
+| Gate time (1Q) | <1 ns | Very fast voltage pulses | — |
+| Gate fidelity (1Q) | ~90% | Limited by decoherence | [Petersson et al. 2010](https://doi.org/10.1103/PhysRevLett.105.246804) |
+| Readout fidelity | ~95% | Quantum point contact | [Petersson et al. 2010](https://doi.org/10.1103/PhysRevLett.105.246804) |
+| Qubit footprint | ~100–200 nm | Double quantum dot pitch | — |
+| Operating temperature | 20–100 mK | GaAs or Si heterostructure | — |
 
-## Related Qubits
+## References
 
-- [[loss-divincenzo-qubit]] — spin encoding (much longer $T_2$)
-- [[singlet-triplet-qubit]] — spin encoding in same platform
+### Experimental demonstrations
+- T. Hayashi, T. Fujisawa, H. D. Cheong, Y. H. Jeong, and Y. Hirayama, "Coherent Manipulation of Electronic States in a Double Quantum Dot," [Phys. Rev. Lett. **91**, 226804 (2003)](https://doi.org/10.1103/PhysRevLett.91.226804)
+- K. D. Petersson, J. R. Petta, H. Lu, and A. C. Gossard, "Quantum Coherence in a One-Electron Semiconductor Charge Qubit," [Phys. Rev. Lett. **105**, 246804 (2010)](https://doi.org/10.1103/PhysRevLett.105.246804)
+
+### Related theory
+- T. Fujisawa, T. Hayashi, R. Tomita, and Y. Hirayama, "Bidirectional counting of single electrons," [Science **312**, 1634 (2006)](https://doi.org/10.1126/science.1126788)
+
+## Linked Papers
+
+- [[petersson-2010-semiconductor-charge]]
+
+## Related Entries
+
+- [[loss-divincenzo-qubit]] — spin encoding in the same platform, much longer $T_2$
+- [[singlet-triplet-qubit]] — two-electron spin encoding in a double quantum dot
 - [[cooper-pair-box-charge-qubit]] — superconducting charge qubit analogue
+- [[hybrid-qubit]] — exploits both charge and spin degrees of freedom
+- [[silicon-spin-qubit]] — spin qubit in isotopically purified silicon
