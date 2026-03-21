@@ -166,10 +166,3 @@ Two-qubit entangling gates and resonator coupling have **not yet been experiment
 | Gate time (2Q) | ~20–200 ns | Single exchange pulse (geometry-dependent) | [Shim & Tahan 2016](https://doi.org/10.1103/PhysRevB.93.121410) |
 | Operating temperature | 20–100 mK | Si/SiGe or GaAs | — |
 | Qubit footprint | ~150–300 nm pitch | 3 dots per logical qubit | — |
-
-## Related Qubits
-
-- [[exchange-only-qubit]] — parent architecture (sequential pulses, no sweet spot)
-- [[singlet-triplet-qubit]] — two-spin cousin
-- [[loss-divincenzo-qubit]] — single-spin ancestor
-- [[rx-qubit]] — related always-on 3-spin qubit (partial sweet spot, microwave control, transverse cavity coupling)

@@ -116,9 +116,6 @@ where $\alpha$ depends on the inter-dot capacitance and the charge-dipole differ
 - [[rx-qubit]]
 - [[aeon-qubit]]
 
-## Seed Metadata
-- date_published: 2002-09-17
-
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
@@ -133,10 +130,3 @@ where $\alpha$ depends on the inter-dot capacitance and the charge-dipole differ
 | Qubit footprint | ~100–200 nm pitch | 2 dots per logical qubit | — |
 | Operating temperature | 20–100 mK | GaAs or Si/SiGe | — |
 | Connectivity | Nearest-neighbor | Between adjacent double dots | — |
-
-## Related Qubits
-
-- [[loss-divincenzo-qubit]] — single-spin ancestor
-- [[exchange-only-qubit]] — three-spin descendant (no gradient needed)
-- [[aeon-qubit]] — always-on variant with double sweet spot
-- [[rx-qubit]] — always-on three-spin variant with microwave control

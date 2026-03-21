@@ -106,9 +106,6 @@ The always-on variant (AEON) demonstrated by **Broz et al. (2025)**:
 - [[hybrid-qubit]]
 - [[aeon-qubit]]
 
-## Seed Metadata
-- date_published: 2000-11-16
-
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
@@ -125,11 +122,3 @@ The always-on variant (AEON) demonstrated by **Broz et al. (2025)**:
 | Qubit footprint | ~150–300 nm pitch | 3 dots per logical qubit | — |
 | Operating temperature | 20–100 mK | GaAs or Si/SiGe | — |
 | Connectivity | Nearest-neighbor | Between adjacent triple dots | — |
-
-## Related Qubits
-
-- [[loss-divincenzo-qubit]] — single-spin ancestor
-- [[singlet-triplet-qubit]] — two-spin encoding (needs gradient)
-- [[rx-qubit]] — always-on variant with microwave control (partial sweet spot)
-- [[aeon-qubit]] — always-on variant with baseband control (double sweet spot)
-- [[aeon-qubit]] — always-on variant
