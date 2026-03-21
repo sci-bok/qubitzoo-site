@@ -1,34 +1,36 @@
 ---
-title: Andreev spin qubit
+title: Andreev Spin Qubit
 entry_type: qubit
 technology_family: Super-Semi
-status: seed
+status: demonstrated
 figure_reviewed: true
-seed_id: '18'
-seed_source: qubitzoo-airtable
-first_proposed_year: 2021
+first_proposed_year: 2015
+first_demonstrated_year: 2021
 keywords:
 - superconducting
 - spin
 - qubit
 - andreev
-last_updated: '2026-03-05'
-generated_by: seed-ingest-v1
-extracted_by: airtable-seed
-verified_by: pending
+- semiconductor nanowire
+- spin-orbit coupling
+influence_score: 0.70
+last_updated: '2026-03-21'
+generated_by: scibok-curation
+extracted_by: scibok
+verified_by: scibok-manual-2026-03-21
 ---
-
-
-
-Andreev spin qubit is a seed entry imported from the legacy Qubit Zoo Airtable dataset.
-
-## Description
-Andreev spin qubit: the spin degree of freedom of an electronic quasiparticle trapped in the supercurrent-carrying Andreev levels of a Josephson semiconductor nanowire.
-
 
 ## Figure
 
 ![[andreev-spin-qubit-figure.png]]
+
+## Description
+
+The **Andreev spin qubit** encodes quantum information in the spin degree of freedom of an electronic quasiparticle trapped in the supercurrent-carrying **Andreev bound states** of a semiconductor-superconductor nanowire Josephson junction. It combines the compact footprint and circuit-QED compatibility of superconducting qubits with the long-lived spin degree of freedom of semiconductor quantum dots.
+
+In a Josephson junction made from a semiconductor nanowire (typically InAs) with superconducting contacts (Al), Andreev reflection at each superconductor-semiconductor interface creates bound states below the superconducting gap. With **spin-orbit coupling** in the semiconductor (Rashba-type in InAs), these Andreev bound states become spin-split: the two spin states $|\!\uparrow\rangle$ and $|\!\downarrow\rangle$ carry different supercurrents. This spin-dependent supercurrent enables **dispersive readout** via a coupled microwave resonator, directly bridging spin and superconducting qubit paradigms.
+
+The qubit operates within a **fixed fermion parity** sector (odd parity — one quasiparticle occupying the Andreev level). At an optimal phase bias point, the spin transition frequency becomes first-order insensitive to phase fluctuations, providing a sweet spot for coherent operation. Quasiparticle poisoning (uncontrolled parity switches) is a primary decoherence mechanism.
 
 ## Hamiltonian
 
@@ -40,46 +42,54 @@ with Andreev level dispersion (short-junction limit):
 
 $$E_A(\varphi) = \Delta\sqrt{1 - \tau\sin^2(\varphi/2)}$$
 
-where $\tau$ is channel transparency, $\varphi$ the superconducting phase difference, and spin-orbit coupling $H_{\text{SO}}$ enables electrically driven spin control and spin-dependent supercurrent readout.
+where $\tau$ is the channel transparency, $\varphi$ the superconducting phase difference, and spin-orbit coupling $H_{\text{SO}}$ enables electrically driven spin control and spin-dependent supercurrent readout. The spin splitting at the optimal phase point depends on the spin-orbit energy and the Zeeman field.
 
 ## Motivation
-The most promising solid-state approaches for developing quantum information-processing systems have been based on the circulating supercurrents of superconducting circuits and manipulating the spin properties of electrons in semiconductor quantum dots. The Andreev spin qubit is an attempt to combine the desirable aspects of both approaches, the scalability of the superconducting circuits and the compact footprint of the quantum dots, to design and fabricate a superconducting spin qubit.
 
-## References
-- https://science.sciencemag.org/content/373/6553/430
-- https://science.sciencemag.org/content/349/6253/1199.abstract
-- https://www.nature.com/articles/nphys4150
+- Combines the **scalability of superconducting circuits** (microwave control, resonator readout) with the **compact footprint of quantum dots** (~1 μm junction).
+- The spin degree of freedom is potentially longer-lived than the charge/phase degrees of freedom used in standard superconducting qubits.
+- Spin-dependent supercurrent provides a natural readout mechanism without requiring separate spin-to-charge conversion.
+- Shares the InAs/Al material platform with topological qubit proposals, enabling technology cross-pollination.
 
-## Linked Papers
-- [[hays-2021-andreev-spin-qubit]]
+## Experimental Status
 
-## Related Entries
-- [[transmon]]
-- [[spin-qubit]]
-- [[gatemon]]
-- [[gatemonium]]
+**Coherent manipulation of Andreev states — Janvier et al. (2015):**
+- Demonstrated coherent manipulation of Andreev charge states (parity-changing transitions) in superconducting atomic contacts.
+- Established the circuit-QED framework for Andreev level spectroscopy.
 
-## Seed Metadata
-- date_published: 2021-07-23
-
-## Physics
-
-Qubit encoded in the spin degree of freedom of an Andreev bound state in a semiconductor-superconductor nanowire Josephson junction. Spin-orbit coupling in the semiconductor (InAs) creates spin-split Andreev levels $|\!\uparrow\rangle$, $|\!\downarrow\rangle$ below the superconducting gap. The different spin states carry different supercurrents, enabling dispersive readout via a coupled microwave resonator — bridging spin and superconducting qubit paradigms.
+**First Andreev spin qubit — Hays et al. (2021):**
+- Demonstrated coherent manipulation of the spin degree of freedom in Andreev bound states of an InAs/Al nanowire junction.
+- Achieved $T_1 \sim 1$–$10\,\mu$s (limited by quasiparticle poisoning), $T_2 \sim 0.1$–$1\,\mu$s.
+- Single-qubit gate fidelity ~95% via microwave-driven spin transitions.
+- Dispersive readout fidelity ~90% through spin-dependent supercurrent.
 
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| Qubit coherence $T_1$ | 1–10 μs | Limited by quasiparticle poisoning | [Hays et al. 2021](https://doi.org/10.1126/science.abi7515) |
-| Qubit coherence $T_2$ | 0.1–1 μs | Early devices (2021) | [Hays et al. 2021](https://doi.org/10.1126/science.abi7515) |
-| Gate fidelity (1Q) | ~95% | Microwave-driven spin transitions | [Hays et al. 2021](https://doi.org/10.1126/science.abi7515) |
-| Readout fidelity | ~90% | Dispersive via resonator | [Hays et al. 2021](https://doi.org/10.1126/science.abi7515) |
+| $T_1$ | 1–10 μs | Limited by quasiparticle poisoning | [Hays et al. 2021](https://doi.org/10.1126/science.abf0345) |
+| $T_2$ | 0.1–1 μs | Early devices (2021) | [Hays et al. 2021](https://doi.org/10.1126/science.abf0345) |
+| 1Q gate fidelity | ~95% | Microwave-driven spin transitions | [Hays et al. 2021](https://doi.org/10.1126/science.abf0345) |
+| Readout fidelity | ~90% | Dispersive via resonator | [Hays et al. 2021](https://doi.org/10.1126/science.abf0345) |
 | Qubit footprint | ~1 μm junction | Nanowire device | — |
 | Operating temperature | 10–30 mK | Dilution refrigerator | — |
 
-## Related Qubits
+## References
 
-- [[gatemon]] — same material platform, charge degree of freedom
-- [[gatemonium]] — semiconductor-superconductor hybrid
-- [[majorana-topological-qubit]] — related InAs-Al platform
+### First Andreev spin qubit
+- M. Hays et al., "Coherent manipulation of an Andreev spin qubit," [Science 373, 430 (2021)](https://doi.org/10.1126/science.abf0345)
+
+### Andreev state coherent manipulation
+- C. Janvier et al., "Coherent manipulation of Andreev states in superconducting atomic contacts," [Science 349, 1199 (2015)](https://doi.org/10.1126/science.aab2179)
+
+## Linked Papers
+
+- [[hays-2021-andreev-spin-qubit]]
+
+## Related Entries
+
+- [[gatemon]] — same InAs/Al material platform, charge degree of freedom
+- [[gatemonium]] — semiconductor-superconductor hybrid qubit
+- [[majorana-topological-qubit]] — related InAs/Al platform, topological protection
 - [[transmon]] — shares dispersive readout mechanism
+- [[spin-qubit]] — broader spin qubit family
