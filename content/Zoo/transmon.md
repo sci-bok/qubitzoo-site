@@ -3,7 +3,9 @@ title: Transmon
 entry_type: qubit
 technology_family: Superconducting
 status: demonstrated
+figure_reviewed: true
 first_proposed_year: 2007
+first_demonstrated_year: 2007
 keywords:
 - transmon
 - superconducting qubit
@@ -14,11 +16,15 @@ keywords:
 - circuit qed
 - dispersive readout
 influence_score: 0.95
-last_updated: '2026-03-10'
+last_updated: '2026-03-21'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok
+verified_by: scibok-manual-2026-03-21
 ---
+
+## Figure
+
+![[transmon-figure.png]]
 
 ## Description
 
@@ -27,11 +33,6 @@ The transmon (short for "transmission-line shunted plasma oscillation qubit") is
 The large $E_J/E_C$ ratio is achieved by shunting the Josephson junction with a large external capacitance (typically an interdigitated or pad capacitor). The qubit transition frequency $\omega_{01} \approx \sqrt{8E_JE_C} - E_C$ is set by lithographic design, and the anharmonicity $\alpha = \omega_{12} - \omega_{01} \approx -E_C$ is typically $-200$ to $-350\,\text{MHz}$ — small compared to the transition frequency ($\sim 4{-}6\,\text{GHz}$) but large enough for selective microwave control.
 
 The transmon is almost always operated inside a circuit QED architecture: coupled to a coplanar waveguide or 3D cavity resonator for dispersive readout and Purcell-filtered spontaneous emission suppression. It is the dominant qubit modality in current superconducting quantum processors (IBM, Google, Rigetti, IQM, OQC).
-
-
-## Figure
-
-![[transmon-figure.png]]
 
 ## Hamiltonian
 
@@ -57,45 +58,65 @@ $$E_m \approx -E_J + \sqrt{8E_JE_C}\left(m + \frac{1}{2}\right) - \frac{E_C}{12}
 
 The Cooper pair box suffered from extreme sensitivity to $1/f$ charge noise, limiting $T_2$ to nanoseconds away from the charge degeneracy point. Active feedback to maintain $n_g = 1/2$ was impractical at scale. The transmon eliminates this problem by operating in a regime where the transition frequency is essentially flat as a function of $n_g$, enabling "set and forget" operation with coherence limited by other mechanisms (dielectric loss, quasiparticles, radiation).
 
-## Key Findings
+## Experimental Status
 
-- Charge dispersion is exponentially suppressed: at $E_J/E_C = 50$, the charge dispersion of the 0→1 transition is $< 1\,\text{kHz}$, negligible compared to linewidths.
-- Anharmonicity $|\alpha| \approx E_C/\hbar \sim 200{-}350\,\text{MHz}$ is sufficient for high-fidelity single-qubit gates with shaped pulses (DRAG).
-- Dispersive readout via circuit QED provides QND measurement with high fidelity.
-- The design is compatible with fixed-frequency operation (simpler fabrication, no flux noise) or frequency-tunable variants (split-junction transmon with flux control for two-qubit gates).
-- State-of-the-art devices achieve $T_1 > 500\,\mu\text{s}$ in 3D cavities and $T_1 \sim 100{-}300\,\mu\text{s}$ in planar geometries.
+**Original proposal and demonstration — Koch et al. (2007):**
+- Showed charge dispersion $< 1\,\text{kHz}$ at $E_J/E_C = 50$ (negligible vs. linewidths)
+- Anharmonicity $|\alpha| \sim 200{-}350\,\text{MHz}$ sufficient for selective microwave control
+- Demonstrated dispersive readout via circuit QED
+- Compatible with fixed-frequency (no flux noise) or tunable (split-junction SQUID) variants
+
+**Scaling milestones:**
+- **Schreier et al. (2008)**: First experimental demonstration, $T_1 \sim 7\,\mu\text{s}$ in 2D CPW geometry
+- **Paik et al. (2011)**: 3D transmon in aluminum cavity, $T_1 > 60\,\mu\text{s}$
+- **Barends et al. (2014)**: Google Xmon variant, gate fidelities >99.4% (1Q) and >99.0% (2Q)
+- **Arute et al. (2019)**: Google Sycamore, 53-qubit quantum computational advantage demonstration
+- **Place et al. (2021)**: Tantalum-based transmon, $T_1 > 300\,\mu\text{s}$ in planar geometry
+- **Google Willow (2024)**: 105-qubit processor, below-threshold surface code error correction, 2Q CZ fidelity 99.7–99.85%
+
+State-of-the-art: $T_1 > 500\,\mu\text{s}$ (3D cavities), $T_1 \sim 100{-}300\,\mu\text{s}$ (planar), 1Q gate fidelity up to 99.9926% (Li et al. 2023).
 
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| $T_1$ | 100–500 μs | Planar: ~100–300 μs; 3D cavity: >500 μs | [Koch 2007](https://doi.org/10.1103/PhysRevA.76.042319) |
+| $T_1$ | 100–500 μs | Planar: ~100–300 μs; 3D cavity: >500 μs | [Place et al. 2021](https://doi.org/10.1038/s41467-021-22030-5) |
 | $T_2$ (echo) | 100–500 μs | Often $T_2 \approx 2T_1$ with echo | [Place et al. 2021](https://doi.org/10.1038/s41467-021-22030-5) |
-| Anharmonicity $\alpha/2\pi$ | −200 to −350 MHz | $\approx -E_C/\hbar$ | [Koch 2007](https://doi.org/10.1103/PhysRevA.76.042319) |
-| $E_J/E_C$ | 20–100 | Typical operating regime | [Koch 2007](https://doi.org/10.1103/PhysRevA.76.042319) |
-| 1Q gate fidelity | 99.9–99.99% | Randomized benchmarking; SOTA 99.9926% (Li et al. 2023) | [Arute et al. 2019](https://doi.org/10.1038/s41586-019-1666-5), [Li et al. 2023](https://doi.org/10.1038/s41534-023-00781-x) |
-| 2Q gate fidelity (CZ/CR) | 99.0–99.9% | Cross-resonance or tunable coupler; Sycamore 99.4% CZ, Willow 99.7–99.85% | [Arute et al. 2019](https://doi.org/10.1038/s41586-019-1666-5), [Google Willow 2024](https://doi.org/10.1038/s41586-024-08449-y) |
+| Anharmonicity $\alpha/2\pi$ | −200 to −350 MHz | $\approx -E_C/\hbar$ | [Koch et al. 2007](https://doi.org/10.1103/PhysRevA.76.042319) |
+| $E_J/E_C$ | 20–100 | Typical operating regime | [Koch et al. 2007](https://doi.org/10.1103/PhysRevA.76.042319) |
+| 1Q gate fidelity | 99.9–99.99% | RB; SOTA 99.9926% | [Li et al. 2023](https://doi.org/10.1038/s41534-023-00781-x) |
+| 2Q gate fidelity (CZ/CR) | 99.0–99.9% | Tunable coupler or cross-resonance; Willow 99.7–99.85% | [Google Willow 2024](https://doi.org/10.1038/s41586-024-08449-y) |
 | Readout fidelity | 97–99.9% | Dispersive, with Purcell filter + JPA | [Arute et al. 2019](https://doi.org/10.1038/s41586-019-1666-5) |
-| Gate time (1Q) | 20–50 ns | DRAG pulse | [Arute et al. 2019](https://doi.org/10.1038/s41586-019-1666-5) |
-| Gate time (2Q) | 100–400 ns | Depends on gate scheme | [Arute et al. 2019](https://doi.org/10.1038/s41586-019-1666-5) |
+| Gate time (1Q) | 20–50 ns | DRAG pulse | — |
+| Gate time (2Q) | 100–400 ns | Depends on gate scheme | — |
 | Transition frequency | 4–6 GHz | Design-tunable | — |
 | Operating temperature | 10–20 mK | Dilution refrigerator | — |
 | Chip footprint per qubit | ~300 μm × 300 μm | Pad + junction + readout resonator | — |
 
+## References
 
-## Extracted Figures
+### Original proposal
+- J. Koch et al., "Charge-insensitive qubit design derived from the Cooper pair box," [PRA 76, 042319 (2007)](https://doi.org/10.1103/PhysRevA.76.042319) — [arXiv:cond-mat/0703002](https://arxiv.org/abs/cond-mat/0703002)
 
-![[koch-2007-transmon-paper-fig-1.png]]
+### Key experimental milestones
+- J. A. Schreier et al., "Suppressing charge noise decoherence in superconducting charge qubits," [PRB 77, 180502(R) (2008)](https://doi.org/10.1103/PhysRevB.77.180502) — first experimental transmon
+- H. Paik et al., "Observation of high coherence in Josephson junction qubits measured in a three-dimensional circuit QED architecture," [PRL 107, 240501 (2011)](https://doi.org/10.1103/PhysRevLett.107.240501) — 3D transmon
+- R. Barends et al., "Superconducting quantum circuits at the surface code threshold for fault tolerance," [Nature 508, 500 (2014)](https://doi.org/10.1038/nature13171) — Xmon, surface code threshold
+- F. Arute et al., "Quantum supremacy using a programmable superconducting processor," [Nature 574, 505 (2019)](https://doi.org/10.1038/s41586-019-1666-5) — Sycamore, 53 qubits
+- A. P. M. Place et al., "New material platform for superconducting transmon qubits with coherence times exceeding 0.3 milliseconds," [Nature Commun. 12, 1779 (2021)](https://doi.org/10.1038/s41467-021-22030-5) — tantalum transmon
+- Google Quantum AI, "Quantum error correction below the surface code threshold," [Nature 638, 920 (2024)](https://doi.org/10.1038/s41586-024-08449-y) — Willow, 105 qubits
 
-![[koch-2007-transmon-paper-fig-2.png]]
+### Gate optimization
+- F. Motzoi et al., "Simple pulses for elimination of leakage in weakly nonlinear qubits," [PRL 103, 110501 (2009)](https://doi.org/10.1103/PhysRevLett.103.110501) — DRAG pulse
+- S. Li et al., "Realization of high-fidelity nonadiabatic CZ gates with superconducting qubits," [npj Quantum Info. 9, 68 (2023)](https://doi.org/10.1038/s41534-023-00781-x) — SOTA 1Q fidelity 99.9926%
 
 ## Linked Papers
 - [[koch-2007-transmon]]
 
 ## Related Entries
-
-- [[cooper-pair-box-charge-qubit]]
-- [[circuit-qed]]
-- [[fluxonium]]
-- [[xmon]]
-- [[gmon]]
+- [[cooper-pair-box-charge-qubit]] — ancestor (charge-sensitive limit)
+- [[circuit-qed]] — readout and coupling architecture
+- [[fluxonium]] — alternative SC qubit with higher anharmonicity
+- [[xmon]] — planar transmon variant (Google)
+- [[gmon]] — tunable-coupler transmon variant (Google)
+- [[dual-rail-superconducting-qubit]] — encoded transmon-pair qubit
