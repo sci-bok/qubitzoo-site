@@ -2,12 +2,10 @@
 title: Superconducting MOC
 type: moc
 technology_family: Superconducting
-note_count: 19
-last_updated: '2026-03-20'
+note_count: 21
+last_updated: '2026-03-23'
 generated_by: pipeline-moc-v1
 ---
-
-# Superconducting MOC
 
 Curated map of Zoo entries in the **Superconducting** family.
 
@@ -15,13 +13,15 @@ Curated map of Zoo entries in the **Superconducting** family.
 
 | Entry | Type | Status |
 |---|---|---|
+| [[tunable-coupler]] | coupling | demonstrated |
 | [[binomial-code]] | encoding | demonstrated |
-| [[binomial-codes]] | encoding | seed |
+| [[binomial-codes]] | encoding | demonstrated |
+| [[circuit-qed]] | infrastructure | demonstrated |
 | [[0-pi-qubit]] | qubit | demonstrated |
-| [[blochnium]] | qubit | seed |
+| [[blochnium]] | qubit | demonstrated |
 | [[bosonic-qubit]] | qubit | demonstrated |
 | [[cat-codes]] | qubit | demonstrated |
-| [[cooper-pair-box-charge-qubit]] | qubit | seed |
+| [[cooper-pair-box-charge-qubit]] | qubit | demonstrated |
 | [[cos2phi-qubit]] | qubit | proposed |
 | [[dual-rail-superconducting-qubit]] | qubit | demonstrated |
 | [[flux-qubit]] | qubit | demonstrated |
@@ -37,5 +37,7 @@ Curated map of Zoo entries in the **Superconducting** family.
 
 ## Composition
 
+- coupling: 1
 - encoding: 2
+- infrastructure: 1
 - qubit: 17

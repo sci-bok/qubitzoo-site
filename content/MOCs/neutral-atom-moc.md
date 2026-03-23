@@ -3,11 +3,9 @@ title: Neutral Atom MOC
 type: moc
 technology_family: Neutral Atom
 note_count: 4
-last_updated: '2026-03-20'
+last_updated: '2026-03-23'
 generated_by: pipeline-moc-v1
 ---
-
-# Neutral Atom MOC
 
 Curated map of Zoo entries in the **Neutral Atom** family.
 

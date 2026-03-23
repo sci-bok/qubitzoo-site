@@ -25,7 +25,7 @@ figure_reviewed: true
 
 ![[nv-center-qubit-figure.png]]
 
-> **Figure note:** The zero-field splitting label in the figure reads ~1.25 GHz; the correct value is **2.87 GHz** (see Hamiltonian section).
+> **Figure note:** Energy level diagram showing ground state ³A₂ with zero-field splitting D = 2.87 GHz, excited state ³E, singlet states ¹A₁/¹E for ISC, and optical transitions.
 
 ## Description
 

@@ -1,6 +1,6 @@
 ---
 title: Universal non-adiabatic control of small-gap superconducting qubits
-authors: [B. Kannan, D. L. Campbell, F. Vasconcelos, R. Winik, D. K. Kim, M. Kjaergaard, P. Krantz, A. Melville, B. M. Niedzielski, J. L. Yoder, T. P. Orlando, S. Gustavsson, W. D. Oliver]
+authors: [D. L. Campbell, Y.-P. Shim, B. Kannan, R. Winik, D. K. Kim, A. Melville, B. M. Niedzielski, J. L. Yoder, C. Tahan, S. Gustavsson, W. D. Oliver]
 year: 2020
 journal: Physical Review X
 doi: 10.1103/PhysRevX.10.041051

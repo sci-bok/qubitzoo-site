@@ -3,7 +3,7 @@ title: Molecular MOC
 type: moc
 technology_family: Molecular
 note_count: 1
-last_updated: '2026-03-20'
+last_updated: '2026-03-23'
 generated_by: pipeline-v1
 ---
 
