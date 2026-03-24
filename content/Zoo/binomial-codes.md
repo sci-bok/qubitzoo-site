@@ -105,3 +105,4 @@ For the simplest single-loss-correcting code, the parity operator $(-1)^{\hat{n}
 - [[gkp-codes]] — related bosonic code using grid states in phase space
 - [[circuit-qed]] — hardware platform for cavity-transmon implementation
 - [[bosonic-qubit]] — parent category for bosonic encodings
+- [[transmon]] — ancilla qubit used for binomial code state preparation and error syndrome extraction

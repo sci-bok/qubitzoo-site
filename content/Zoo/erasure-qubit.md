@@ -107,3 +107,4 @@ Quantum error correction overhead is dominated by the rate and type of physical 
 - [[alkaline-earth-neutral-atom-clock-qubit]] — provides the metastable state encoding for atom-based erasure
 - [[surface-code-logical-qubit]] — primary QEC code benefiting from erasure conversion
 - [[kerr-cat-qubit]] — complementary approach using noise bias rather than erasure conversion
+- [[transmon]] — baseline superconducting qubit that erasure schemes aim to improve upon

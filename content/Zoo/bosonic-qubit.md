@@ -105,3 +105,4 @@ where $\chi$ is the dispersive shift. This coupling enables photon-number-resolv
 - [[gkp-codes]] — grid state encoding in phase space
 - [[kerr-cat-qubit]] — driven-dissipative cat code variant
 - [[circuit-qed]] — hardware platform
+- [[transmon]] — ancilla qubit used for bosonic state preparation, control, and readout

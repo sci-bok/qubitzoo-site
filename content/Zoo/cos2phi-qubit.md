@@ -90,3 +90,4 @@ Protection mechanism: $\langle 0|\hat{n}|1\rangle \sim e^{-S}$ and $\langle 0|\h
 - [[fluxonium]] — Uses superinductance but has $2\pi$-periodic potential
 - [[heavy-fluxonium-qubit]] — Heavy variant approaching protected regime
 - [[blochnium]] — Single-junction superinductance qubit
+- [[transmon]] — conventional transmon that cos(2φ) qubit improves upon via disjoint support
