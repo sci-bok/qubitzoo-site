@@ -101,7 +101,7 @@ Trapped ions offer natural identical qubits (every $^{171}\text{Yb}^+$ ion is id
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
 | $T_1$ | >10,000 s (hyperfine) | Hyperfine ground states have no decay | [Bruzewicz et al. 2019](https://doi.org/10.1063/1.5088164) |
-| $T_2$ (echo) | >600 s | $^{171}\text{Yb}^+$ with sympathetic cooling | [Wang et al. 2017](https://doi.org/10.1038/nphoton.2017.152) |
+| $T_2$ (echo) | >600 s | $^{171}\text{Yb}^+$ with sympathetic cooling | [Wang et al. 2017](https://doi.org/10.1038/s41566-017-0007-1) |
 | 1Q gate fidelity | 99.999985% | $^{43}\text{Ca}^+$ microwave RB; error $1.5 \times 10^{-7}$ | [Smith et al. 2024](https://arxiv.org/abs/2412.04421) |
 | 2Q gate fidelity | 99.9% | MS gate, $^{43}\text{Ca}^+$ | [Ballance et al. 2016](https://doi.org/10.1103/PhysRevLett.117.060504) |
 | Readout fidelity | 99.99% | Electron shelving / fluorescence | [Myerson et al. 2008](https://doi.org/10.1103/PhysRevLett.100.200502) |
@@ -127,8 +127,8 @@ Trapped ions offer natural identical qubits (every $^{171}\text{Yb}^+$ ion is id
 - J. I. Cirac and P. Zoller, "Quantum Computations with Cold Trapped Ions," [Phys. Rev. Lett. 74, 4091 (1995)](https://doi.org/10.1103/PhysRevLett.74.4091)
 
 ### Gate proposals
-- A. Sørensen and K. Mølmer, "Quantum Computation with Ions in Thermal Motion," [Phys. Rev. Lett. 82, 1971 (1999)](https://doi.org/10.1103/PhysRevLett.82.1971) — original Mølmer-Sørensen gate
-- D. Kielpinski, C. Monroe, and D. J. Wineland, "Architecture for a large-scale ion-trap quantum computer," [Nature 417, 709 (2002)](https://doi.org/10.1038/nature00784) — QCCD architecture proposal
+- A. Sørensen and K. Mølmer, "Quantum Computation with Ions in Thermal Motion," [Phys. Rev. Lett. 82, 1971 (1999)](https://doi.org/10.1103/PhysRevLett.82.1971) | [arXiv:quant-ph/9810060](https://arxiv.org/abs/quant-ph/9810060) — original Mølmer-Sørensen gate
+- D. Kielpinski, C. Monroe, and D. J. Wineland, "Architecture for a large-scale ion-trap quantum computer," [Nature 417, 709 (2002)](https://doi.org/10.1038/nature00784) | [arXiv:quant-ph/0110143](https://arxiv.org/abs/quant-ph/0110143) — QCCD architecture proposal
 
 ### Experimental demonstrations
 - C. Monroe et al., "Demonstration of a Fundamental Quantum Logic Gate," [Phys. Rev. Lett. 75, 4714 (1995)](https://doi.org/10.1103/PhysRevLett.75.4714) — first quantum logic gate
