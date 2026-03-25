@@ -17,7 +17,7 @@ In case you didn't qnow* (*the q is silent*), qubits are needed for [quantum com
 |--------|---------|-------------|
 | [[superconducting-moc\|🔵 Superconducting]] | 16 | Transmon, fluxonium, flux qubit, and more |
 | [[semiconducting-moc\|🟢 Semiconducting]] | 10 | Spin qubits, quantum dots, hole-spin |
-| [[ion-trap-moc\|🟡 Ion Trap]] | 4 | Trapped ions, shuttling architectures |
+| [[trapped-ion-moc\|🟡 Trapped Ion]] | 5 | Trapped ions, shuttling architectures |
 | [[neutral-atom-moc\|🟠 Neutral Atom]] | 3 | Rydberg atoms, optical tweezers |
 | [[photonic-moc\|🔴 Photonic]] | 3 | Linear optical, dual-rail, cluster-state |
 | [[topological-moc\|🟣 Topological]] | 4 | Majorana, surface codes, color codes |

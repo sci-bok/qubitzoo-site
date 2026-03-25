@@ -133,11 +133,11 @@ Trapped ions offer natural identical qubits (every $^{171}\text{Yb}^+$ ion is id
 ### Experimental demonstrations
 - C. Monroe et al., "Demonstration of a Fundamental Quantum Logic Gate," [Phys. Rev. Lett. 75, 4714 (1995)](https://doi.org/10.1103/PhysRevLett.75.4714) — first quantum logic gate
 - A. H. Myerson et al., "High-Fidelity Readout of Trapped-Ion Qubits," [Phys. Rev. Lett. 100, 200502 (2008)](https://doi.org/10.1103/PhysRevLett.100.200502)
-- T. P. Harty et al., "High-Fidelity Preparation, Gates, Memory, and Readout of a Trapped-Ion Quantum Bit," [Phys. Rev. Lett. 113, 220501 (2014)](https://doi.org/10.1103/PhysRevLett.113.220501)
-- C. J. Ballance et al., "High-Fidelity Quantum Logic Gates Using Trapped-Ion Hyperfine Qubits," [Phys. Rev. Lett. 117, 060504 (2016)](https://doi.org/10.1103/PhysRevLett.117.060504)
-- J. P. Gaebler et al., "High-Fidelity Universal Gate Set for $^{9}\text{Be}^+$ Ion Qubits," [Phys. Rev. Lett. 117, 060505 (2016)](https://doi.org/10.1103/PhysRevLett.117.060505) — 2Q error $5.2 \times 10^{-4}$
-- P. Wang et al., "Single ion qubit with estimated coherence time exceeding one hour," [Nature Commun. 12, 233 (2021)](https://doi.org/10.1038/s41467-020-20330-w) — see also [Nature Photon. 11, 646 (2017)](https://doi.org/10.1038/nphoton.2017.152) for $T_2 > 10$ min
-- M. C. Smith et al., "Single-qubit gate errors below $10^{-7}$ in a trapped ion," [arXiv:2412.04421 (2024)](https://arxiv.org/abs/2412.04421) — 1Q fidelity 99.999985%
+- T. P. Harty et al., "High-Fidelity Preparation, Gates, Memory, and Readout of a Trapped-Ion Quantum Bit," [Phys. Rev. Lett. 113, 220501 (2014)](https://doi.org/10.1103/PhysRevLett.113.220501) | [arXiv:1403.1524](https://arxiv.org/abs/1403.1524)
+- C. J. Ballance et al., "High-Fidelity Quantum Logic Gates Using Trapped-Ion Hyperfine Qubits," [Phys. Rev. Lett. 117, 060504 (2016)](https://doi.org/10.1103/PhysRevLett.117.060504) | [arXiv:1512.04600](https://arxiv.org/abs/1512.04600)
+- J. P. Gaebler et al., "High-Fidelity Universal Gate Set for $^{9}\text{Be}^+$ Ion Qubits," [Phys. Rev. Lett. 117, 060505 (2016)](https://doi.org/10.1103/PhysRevLett.117.060505) | [arXiv:1604.00032](https://arxiv.org/abs/1604.00032) — 2Q error $5.2 \times 10^{-4}$
+- Y. Wang et al., "Single-qubit quantum memory exceeding ten-minute coherence time," [Nature Photon. 11, 646 (2017)](https://doi.org/10.1038/s41566-017-0007-1) | [arXiv:1701.04195](https://arxiv.org/abs/1701.04195) — see also P. Wang et al., [Nature Commun. 12, 233 (2021)](https://doi.org/10.1038/s41467-020-20330-w) for $T_2 > 1$ hour
+- M. C. Smith et al., "Single-qubit gates with errors at the $10^{-7}$ level," [Phys. Rev. Lett. 134, 230601 (2025)](https://doi.org/10.1103/PhysRevLett.134.230601) | [arXiv:2412.04421](https://arxiv.org/abs/2412.04421) — 1Q fidelity 99.999985%
 
 ### Reviews
 - C. D. Bruzewicz et al., "Trapped-ion quantum computing: Progress and challenges," [Appl. Phys. Rev. 6, 021314 (2019)](https://doi.org/10.1063/1.5088164)
@@ -152,6 +152,8 @@ Trapped ions offer natural identical qubits (every $^{171}\text{Yb}^+$ ion is id
 - [[gaebler-2016-ms-gate]]
 - [[sorensen-1999-ms-gate]]
 - [[kielpinski-2002-shuttling]]
+- [[wang-2017-single-qubit-quantum-memory]]
+- [[smith-2024-single-qubit-gate-errors]]
 
 ## Related Entries
 
