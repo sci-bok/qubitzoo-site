@@ -3,7 +3,7 @@ title: Trapped-Ion Qubit
 entry_type: qubit
 technology_family: Trapped Ion
 status: demonstrated
-figure_reviewed: true
+figure_reviewed: false
 first_proposed_year: 1995
 first_demonstrated_year: 1995
 keywords:
@@ -16,10 +16,10 @@ keywords:
 - sympathetic cooling
 - shuttling
 influence_score: 0.92
-last_updated: '2026-03-21'
+last_updated: '2026-03-25'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-manual-2026-03-21
+verified_by: scibok-audit-2026-03-25
 ---
 
 ## Figure
@@ -38,7 +38,7 @@ Two principal qubit encodings are used:
 
 Single-qubit gates are performed via resonant microwave or Raman laser pulses. Two-qubit entangling gates (Cirac-Zoller, Mølmer-Sørensen, or light-shift gates) couple the internal states to the shared motional mode of the ion chain, mediating effective spin-spin interactions.
 
-Trapped ions currently hold records for the highest single-qubit, two-qubit, and readout fidelities of any physical qubit platform.
+As of 2025, trapped ions hold records for the highest single-qubit gate fidelity (99.999985%, Oxford) and readout fidelity (99.99%) of any physical qubit platform, and remain among the highest for two-qubit gates — though superconducting qubits are now competitive (IQM CZ 99.95%). The primary tradeoffs are significantly slower gate speeds (~100× vs. superconducting) and the complexity of laser-based control systems.
 
 ## Hamiltonian
 
@@ -70,24 +70,39 @@ Trapped ions offer natural identical qubits (every $^{171}\text{Yb}^+$ ion is id
 - Became the dominant entangling gate for trapped-ion QC.
 
 **Coherence records — hyperfine clock qubits:**
-- $T_2 > 10\,\text{min}$ demonstrated with dynamical decoupling in $^{171}\text{Yb}^+$.
+- $T_2 > 10\,\text{min}$ demonstrated with sympathetic cooling in $^{171}\text{Yb}^+$ / $^{138}\text{Ba}^+$ (Wang et al. 2017).
+- $T_2 > 10\,\text{hours}$ demonstrated in a decoherence-free subspace using a Yb-Ba-Yb ion chain (2024).
 
 **High-fidelity gates — Ballance et al. (2016), Gaebler et al. (2016):**
 - Two-qubit gate fidelities $> 99.9\%$ demonstrated via Mølmer-Sørensen gates.
+- Ballance et al.: 99.9(1)% in $^{43}\text{Ca}^+$ hyperfine qubits.
+- Gaebler et al.: 99.948% (error $5.2 \times 10^{-4}$) in $^{9}\text{Be}^+$.
 
 **Readout via electron shelving:**
 - $> 99.99\%$ readout fidelity demonstrated (Myerson et al. 2008).
 
-**QCCD architecture:**
-- Quantum charge-coupled device architecture demonstrated for scalable ion transport between zones.
+**QCCD architecture — Kielpinski, Monroe, Wineland (2002):**
+- Proposed the quantum charge-coupled device architecture for scalable ion transport between processing zones.
+- Now the basis of Quantinuum's commercial systems.
+
+**Oxford 1Q gate record — Smith et al. (2024/2025):**
+- 1Q Clifford gate error of $1.5(4) \times 10^{-7}$ (fidelity 99.999985%) via microwave-driven $^{43}\text{Ca}^+$ hyperfine clock qubits.
+- Nearly an order of magnitude improvement over Harty et al. 2014.
+- Fastest gates (4.4 μs) achieved error of $2.9(5) \times 10^{-7}$.
+
+**Quantinuum Helios (2025):**
+- 98-qubit QCCD trapped-ion processor using $^{137}\text{Ba}^+$ hyperfine qubits.
+- 1Q gate fidelity 99.9975%, 2Q gate fidelity 99.921%.
+- Novel four-way "X" junction architecture with rotatable ion storage ring.
+- Full all-to-all connectivity among 98 qubits.
 
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
 | $T_1$ | >10,000 s (hyperfine) | Hyperfine ground states have no decay | [Bruzewicz et al. 2019](https://doi.org/10.1063/1.5088164) |
-| $T_2$ (echo) | >600 s | $^{171}\text{Yb}^+$ with DD sequences | — |
-| 1Q gate fidelity | 99.9999% | $^{43}\text{Ca}^+$ RB | [Harty et al. 2014](https://doi.org/10.1103/PhysRevLett.113.220501) |
+| $T_2$ (echo) | >600 s | $^{171}\text{Yb}^+$ with sympathetic cooling | [Wang et al. 2017](https://doi.org/10.1038/nphoton.2017.152) |
+| 1Q gate fidelity | 99.999985% | $^{43}\text{Ca}^+$ microwave RB; error $1.5 \times 10^{-7}$ | [Smith et al. 2024](https://arxiv.org/abs/2412.04421) |
 | 2Q gate fidelity | 99.9% | MS gate, $^{43}\text{Ca}^+$ | [Ballance et al. 2016](https://doi.org/10.1103/PhysRevLett.117.060504) |
 | Readout fidelity | 99.99% | Electron shelving / fluorescence | [Myerson et al. 2008](https://doi.org/10.1103/PhysRevLett.100.200502) |
 | Gate time (1Q) | 1–10 μs | Microwave or Raman | — |
@@ -96,15 +111,33 @@ Trapped ions offer natural identical qubits (every $^{171}\text{Yb}^+$ ion is id
 | Ions per chain | 10–50 | Practical limit before mode crowding | — |
 | Operating temperature | ~4 K (trap), ions at mK | Doppler + resolved sideband cooling | — |
 
+## Scaling Considerations
+
+- **Gate speed**: trapped-ion gates are ~100× slower than superconducting gates (μs vs. ns), limiting circuit depth per unit time and setting a speed-fidelity tradeoff for practical algorithms.
+- **Mode crowding**: as ion chains grow beyond ~50 ions, motional mode frequencies become closely spaced, making individual mode addressing increasingly difficult and degrading gate fidelity.
+- **Anomalous heating**: electric field noise at trap electrode surfaces heats the ions' motional modes, degrading gate fidelity. Scales roughly as $d^{-4}$ with ion-electrode distance and remains an active area of materials research.
+- **Laser complexity**: high-fidelity Raman-based gates require precisely controlled, phase-stable laser systems. Microwave-driven gates (as in the Oxford 1Q record) offer simpler control but currently limited to 1Q operations.
+- **Ion loss and dark ions**: occasional loss of ions from the trap or background-gas collisions can produce "dark ions" that disrupt chain ordering and gate calibration.
+- **QCCD overhead**: shuttling ions between zones introduces transport time, heating during transport, and junction-crossing errors — though Quantinuum's Helios demonstrates this architecture at 98 qubits.
+- **Photonic interconnects**: linking separate traps via photonic channels enables modular scaling but requires high-efficiency ion-photon interfaces with entanglement rates currently ~100 Hz.
+
 ## References
 
 ### Original proposal
 - J. I. Cirac and P. Zoller, "Quantum Computations with Cold Trapped Ions," [Phys. Rev. Lett. 74, 4091 (1995)](https://doi.org/10.1103/PhysRevLett.74.4091)
 
+### Gate proposals
+- A. Sørensen and K. Mølmer, "Quantum Computation with Ions in Thermal Motion," [Phys. Rev. Lett. 82, 1971 (1999)](https://doi.org/10.1103/PhysRevLett.82.1971) — original Mølmer-Sørensen gate
+- D. Kielpinski, C. Monroe, and D. J. Wineland, "Architecture for a large-scale ion-trap quantum computer," [Nature 417, 709 (2002)](https://doi.org/10.1038/nature00784) — QCCD architecture proposal
+
 ### Experimental demonstrations
-- C. J. Ballance et al., "High-Fidelity Quantum Logic Gates Using Trapped-Ion Hyperfine Qubits," [Phys. Rev. Lett. 117, 060504 (2016)](https://doi.org/10.1103/PhysRevLett.117.060504)
-- T. P. Harty et al., "High-Fidelity Preparation, Gates, Memory, and Readout of a Trapped-Ion Quantum Bit," [Phys. Rev. Lett. 113, 220501 (2014)](https://doi.org/10.1103/PhysRevLett.113.220501)
+- C. Monroe et al., "Demonstration of a Fundamental Quantum Logic Gate," [Phys. Rev. Lett. 75, 4714 (1995)](https://doi.org/10.1103/PhysRevLett.75.4714) — first quantum logic gate
 - A. H. Myerson et al., "High-Fidelity Readout of Trapped-Ion Qubits," [Phys. Rev. Lett. 100, 200502 (2008)](https://doi.org/10.1103/PhysRevLett.100.200502)
+- T. P. Harty et al., "High-Fidelity Preparation, Gates, Memory, and Readout of a Trapped-Ion Quantum Bit," [Phys. Rev. Lett. 113, 220501 (2014)](https://doi.org/10.1103/PhysRevLett.113.220501)
+- C. J. Ballance et al., "High-Fidelity Quantum Logic Gates Using Trapped-Ion Hyperfine Qubits," [Phys. Rev. Lett. 117, 060504 (2016)](https://doi.org/10.1103/PhysRevLett.117.060504)
+- J. P. Gaebler et al., "High-Fidelity Universal Gate Set for $^{9}\text{Be}^+$ Ion Qubits," [Phys. Rev. Lett. 117, 060505 (2016)](https://doi.org/10.1103/PhysRevLett.117.060505) — 2Q error $5.2 \times 10^{-4}$
+- P. Wang et al., "Single ion qubit with estimated coherence time exceeding one hour," [Nature Commun. 12, 233 (2021)](https://doi.org/10.1038/s41467-020-20330-w) — see also [Nature Photon. 11, 646 (2017)](https://doi.org/10.1038/nphoton.2017.152) for $T_2 > 10$ min
+- M. C. Smith et al., "Single-qubit gate errors below $10^{-7}$ in a trapped ion," [arXiv:2412.04421 (2024)](https://arxiv.org/abs/2412.04421) — 1Q fidelity 99.999985%
 
 ### Reviews
 - C. D. Bruzewicz et al., "Trapped-ion quantum computing: Progress and challenges," [Appl. Phys. Rev. 6, 021314 (2019)](https://doi.org/10.1063/1.5088164)
@@ -112,6 +145,13 @@ Trapped ions offer natural identical qubits (every $^{171}\text{Yb}^+$ ion is id
 ## Linked Papers
 
 - [[cirac-zoller-1995-trapped-ion-gate]]
+- [[ballance-2016-ion-gate-fidelity]]
+- [[harty-2014-high-fidelity-preparation]]
+- [[myerson-2008-high-fidelity-readout]]
+- [[bruzewicz-2019-trapped-ion-computing]]
+- [[gaebler-2016-ms-gate]]
+- [[sorensen-1999-ms-gate]]
+- [[kielpinski-2002-shuttling]]
 
 ## Related Entries
 
@@ -119,3 +159,4 @@ Trapped ions offer natural identical qubits (every $^{171}\text{Yb}^+$ ion is id
 - [[molmer-sorenson-gate]] — dominant two-qubit gate for trapped ions
 - [[shuttling-ion-trap-qubit]] — QCCD scalable architecture variant
 - [[rydberg-neutral-atom-qubit]] — competing platform with similar atomic physics
+- [[ytterbium-hyperfine-qubit]] — dominant commercial hyperfine species (Quantinuum, IonQ)
