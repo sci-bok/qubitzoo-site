@@ -10,6 +10,7 @@ export const sharedPageComponents: SharedLayout = {
     links: {
       GitHub: "https://github.com/sci-bok/qubitzoo-site",
       "Original Qubit Zoo": "https://qubitzoo.org",
+      About: "/about",
     },
   }),
 }

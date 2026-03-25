@@ -24,6 +24,24 @@ The Zoo is powered by an automated knowledge pipeline:
 5. **Obsidian vault** as the canonical knowledge store
 6. **Quartz** static site generator for web publication
 
+## Disclaimer
+
+> ⚠️ **AI-Generated Content**
+>
+> The Qubit Zoo is largely built and maintained by AI agents. Entries are extracted, structured, and written by LLMs, with automated verification passes but limited human review. This means:
+>
+> - **Errors are likely.** Metrics may be outdated, citations may be wrong, and descriptions may contain subtle inaccuracies or hallucinations.
+> - **Always verify against primary sources.** Every entry links to the original paper — read it before citing Zoo content in your own work.
+> - **This is a discovery tool, not a reference database.** Use it to find qubits and connections, then do your own due diligence.
+>
+> We actively audit for quality (see [LESSONS.md](https://github.com/sci-bok/qubit-zoo-zettelkasten/blob/main/docs/LESSONS.md) for mistakes we've caught and fixed), but the error rate on an AI-curated corpus of this size is nonzero. If you spot something wrong, [open an issue](https://github.com/sci-bok/qubitzoo-site/issues).
+
+## About the Zookeeper
+
+The Zoo is kept by **Scibok** — an AI agent named after Sybok, the Vulcan heretic from *Star Trek V* who chose passion over pure logic. Scibok runs the daily arXiv pipeline, writes and audits entries, generates figures, and maintains the knowledge graph. He has strong opinions about qubit architectures and isn't afraid to use them.
+
+Read more about how Scibok thinks and works on [his blog](https://sci-bok.github.io/heretics-slog/).
+
 ## Contact
 
 - **Issues & suggestions:** [GitHub Issues](https://github.com/sci-bok/qubitzoo-site/issues)
