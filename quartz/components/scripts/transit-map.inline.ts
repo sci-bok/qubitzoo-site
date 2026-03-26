@@ -73,7 +73,8 @@ async function renderTransitMap() {
   // Zoom group
   const g = svg.append("g")
 
-  const zoom = d3.zoom<SVGSVGElement, unknown>()
+  const zoom = d3
+    .zoom<SVGSVGElement, unknown>()
     .scaleExtent([0.5, 3])
     .on("zoom", (event) => {
       g.attr("transform", event.transform)
@@ -103,7 +104,8 @@ async function renderTransitMap() {
 
       const pathData = `M ${from.x} ${from.y} L ${midX} ${midY} L ${to.x} ${to.y}`
 
-      const path = g.append("path")
+      const path = g
+        .append("path")
         .attr("d", pathData)
         .attr("fill", "none")
         .attr("stroke", line.color)
@@ -121,29 +123,30 @@ async function renderTransitMap() {
   // Draw stations
   for (const station of data.stations) {
     const isTransfer = station.transfer === true
-    const stationColor = data.lines.find((l) =>
-      l.segments.some((s) => s[0] === station.id || s[1] === station.id)
-    )?.color || "#6b7280"
+    const stationColor =
+      data.lines.find((l) => l.segments.some((s) => s[0] === station.id || s[1] === station.id))
+        ?.color || "#6b7280"
 
-    const group = g.append("g")
+    const group = g
+      .append("g")
       .attr("class", "transit-station")
       .attr("transform", `translate(${station.x}, ${station.y})`)
 
     // Station circle
     if (isTransfer) {
       // Transfer station: larger, white fill, thick border
-      group.append("circle")
+      group
+        .append("circle")
         .attr("r", 8)
         .attr("fill", "white")
         .attr("stroke", "#333")
         .attr("stroke-width", 2.5)
 
       // Inner colored dot
-      group.append("circle")
-        .attr("r", 3)
-        .attr("fill", stationColor)
+      group.append("circle").attr("r", 3).attr("fill", stationColor)
     } else {
-      group.append("circle")
+      group
+        .append("circle")
         .attr("r", 5)
         .attr("fill", stationColor)
         .attr("stroke", "white")
@@ -151,18 +154,24 @@ async function renderTransitMap() {
     }
 
     // Label
-    const labelY = station.labelPos === "above" ? -10 :
-                   station.labelPos === "below" ? 16 :
-                   station.labelPos === "left" ? 2 :
-                   station.labelPos === "right" ? 2 : -10
+    const labelY =
+      station.labelPos === "above"
+        ? -10
+        : station.labelPos === "below"
+          ? 16
+          : station.labelPos === "left"
+            ? 2
+            : station.labelPos === "right"
+              ? 2
+              : -10
 
-    const labelX = station.labelPos === "left" ? -12 :
-                   station.labelPos === "right" ? 12 : 0
+    const labelX = station.labelPos === "left" ? -12 : station.labelPos === "right" ? 12 : 0
 
-    const anchor = station.labelPos === "left" ? "end" :
-                   station.labelPos === "right" ? "start" : "middle"
+    const anchor =
+      station.labelPos === "left" ? "end" : station.labelPos === "right" ? "start" : "middle"
 
-    group.append("text")
+    group
+      .append("text")
       .attr("x", labelX)
       .attr("y", labelY)
       .attr("text-anchor", anchor)
@@ -170,7 +179,7 @@ async function renderTransitMap() {
 
     // Interactions
     group
-      .on("mouseover", (event) => {
+      .on("mouseover", (_event) => {
         const yearStr = station.year ? `${station.year}` : ""
         tooltip.innerHTML = `
           <div class="tt-name">${station.name}</div>
@@ -203,17 +212,18 @@ async function renderTransitMap() {
     .attr("fill", "var(--dark, #333)")
     .text("Lines")
 
-  const uniqueLines = data.lines.filter((l, i, arr) =>
-    arr.findIndex((l2) => l2.name === l.name) === i
+  const uniqueLines = data.lines.filter(
+    (l, i, arr) => arr.findIndex((l2) => l2.name === l.name) === i,
   )
 
   for (const line of uniqueLines) {
-    const lg = g.append("g")
-      .attr("transform", `translate(${legendX}, ${legendY})`)
+    const lg = g.append("g").attr("transform", `translate(${legendX}, ${legendY})`)
 
     lg.append("line")
-      .attr("x1", 0).attr("y1", 0)
-      .attr("x2", 24).attr("y2", 0)
+      .attr("x1", 0)
+      .attr("y1", 0)
+      .attr("x2", 24)
+      .attr("y2", 0)
       .attr("stroke", line.color)
       .attr("stroke-width", 3)
       .attr("stroke-dasharray", line.dashed ? "6,3" : "none")
@@ -230,10 +240,20 @@ async function renderTransitMap() {
 
   // Transfer station legend
   legendY += 8
-  const tlg = g.append("g")
-    .attr("transform", `translate(${legendX}, ${legendY})`)
-  tlg.append("circle").attr("r", 6).attr("fill", "white").attr("stroke", "#333").attr("stroke-width", 2)
-  tlg.append("text").attr("x", 14).attr("y", 4).attr("font-size", "10px").attr("fill", "var(--darkgray, #666)").text("Transfer station")
+  const tlg = g.append("g").attr("transform", `translate(${legendX}, ${legendY})`)
+  tlg
+    .append("circle")
+    .attr("r", 6)
+    .attr("fill", "white")
+    .attr("stroke", "#333")
+    .attr("stroke-width", 2)
+  tlg
+    .append("text")
+    .attr("x", 14)
+    .attr("y", 4)
+    .attr("font-size", "10px")
+    .attr("fill", "var(--darkgray, #666)")
+    .text("Transfer station")
 }
 
 document.addEventListener("nav", () => {
