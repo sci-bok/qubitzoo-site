@@ -26,7 +26,6 @@ import ConditionalRender from "./ConditionalRender"
 import QubitSunburst from "./QubitSunburst"
 import FidelityTracker from "./FidelityTracker"
 import QubitGenealogy from "./QubitGenealogy"
-import QubitTransitMap from "./QubitTransitMap"
 
 export {
   ArticleTitle,
@@ -57,5 +56,4 @@ export {
   QubitSunburst,
   FidelityTracker,
   QubitGenealogy,
-  QubitTransitMap,
 }

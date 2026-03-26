@@ -32,10 +32,6 @@ export const defaultContentPageLayout: PageLayout = {
     //   condition: (page) => page.fileData.slug === "racing",
     // }),
     Component.ConditionalRender({
-      component: Component.QubitTransitMap(),
-      condition: (page) => page.fileData.slug === "transit-map",
-    }),
-    Component.ConditionalRender({
       component: Component.QubitGenealogy(),
       condition: (page) => page.fileData.slug === "genealogy",
     }),
