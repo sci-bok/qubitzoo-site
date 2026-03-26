@@ -1,0 +1,225 @@
+{
+  "lines": [
+    {
+      "id": "superconducting",
+      "name": "Superconducting",
+      "color": "#3b82f6",
+      "dashed": false,
+      "segments": [
+        ["cooper-pair-box-charge-qubit", "phase-qubit"],
+        ["phase-qubit", "flux-qubit"],
+        ["flux-qubit", "transmon"],
+        ["transmon", "xmon"],
+        ["xmon", "gmon"],
+        ["gmon", "mergemon"],
+        ["mergemon", "dual-rail-superconducting-qubit"],
+        ["flux-qubit", "fluxonium"],
+        ["fluxonium", "heavy-fluxonium-qubit"],
+        ["heavy-fluxonium-qubit", "blochnium"],
+        ["fluxonium", "0-pi-qubit"],
+        ["0-pi-qubit", "cos2phi-qubit"]
+      ]
+    },
+    {
+      "id": "bosonic",
+      "name": "Bosonic Codes",
+      "color": "#3b82f6",
+      "dashed": false,
+      "segments": [
+        ["circuit-qed", "cat-codes"],
+        ["cat-codes", "kerr-cat-qubit"],
+        ["cat-codes", "binomial-codes"],
+        ["binomial-codes", "gkp-codes"],
+        ["gkp-codes", "bosonic-qubit"]
+      ]
+    },
+    {
+      "id": "semiconducting",
+      "name": "Semiconducting",
+      "color": "#22c55e",
+      "dashed": false,
+      "segments": [
+        ["loss-divincenzo-qubit", "singlet-triplet-qubit"],
+        ["singlet-triplet-qubit", "exchange-only-qubit"],
+        ["exchange-only-qubit", "rx-qubit"],
+        ["rx-qubit", "aeon-qubit"],
+        ["loss-divincenzo-qubit", "kane-qubit"],
+        ["kane-qubit", "silicon-spin-qubit"],
+        ["loss-divincenzo-qubit", "semiconductor-charge-qubit"],
+        ["semiconductor-charge-qubit", "hybrid-qubit"],
+        ["loss-divincenzo-qubit", "hole-spin-qubit"],
+        ["hole-spin-qubit", "spin-qubit"]
+      ]
+    },
+    {
+      "id": "photonic",
+      "name": "Photonic",
+      "color": "#ef4444",
+      "dashed": false,
+      "segments": [
+        ["dual-rail-photonic-qubit", "linear-optical-photonic-qubit"],
+        ["linear-optical-photonic-qubit", "time-bin-photonic-qubit"],
+        ["time-bin-photonic-qubit", "photonic-cluster-state-mbqc-qubit"],
+        ["photonic-cluster-state-mbqc-qubit", "fusion-based-photonic-qubit"]
+      ]
+    },
+    {
+      "id": "trapped-ion",
+      "name": "Trapped Ion",
+      "color": "#a855f7",
+      "dashed": false,
+      "segments": [
+        ["cirac-zoller-gate", "trapped-ion-qubit"],
+        ["trapped-ion-qubit", "molmer-sorenson-gate"],
+        ["molmer-sorenson-gate", "shuttling-ion-trap-qubit"],
+        ["shuttling-ion-trap-qubit", "ytterbium-hyperfine-qubit"]
+      ]
+    },
+    {
+      "id": "neutral-atom",
+      "name": "Neutral Atom",
+      "color": "#14b8a6",
+      "dashed": false,
+      "segments": [
+        ["neutral-atom-qubit", "rydberg-neutral-atom-qubit"],
+        ["rydberg-neutral-atom-qubit", "nuclear-spin-neutral-atom-qubit"],
+        ["nuclear-spin-neutral-atom-qubit", "alkaline-earth-neutral-atom-clock-qubit"]
+      ]
+    },
+    {
+      "id": "topological",
+      "name": "Topological",
+      "color": "#eab308",
+      "dashed": false,
+      "segments": [
+        ["majorana-topological-qubit", "tetron-qubit"],
+        ["tetron-qubit", "planar-josephson-junction-qubit"]
+      ]
+    },
+    {
+      "id": "super-semi",
+      "name": "Super-Semi",
+      "color": "#ec4899",
+      "dashed": false,
+      "segments": [
+        ["gatemon", "andreev-spin-qubit"],
+        ["andreev-spin-qubit", "gatemonium"],
+        ["gatemonium", "all-semiconductor-superconducting-qubit"]
+      ]
+    },
+    {
+      "id": "infrastructure",
+      "name": "Infrastructure",
+      "color": "#6b7280",
+      "dashed": true,
+      "segments": [
+        ["classical-control", "cryogenic-amplification"],
+        ["cryogenic-amplification", "qubit-readout"],
+        ["qubit-readout", "circuit-qed"],
+        ["circuit-qed", "tunable-coupler"],
+        ["tunable-coupler", "quantum-transduction"]
+      ]
+    },
+    {
+      "id": "color-center",
+      "name": "Color Center",
+      "color": "#92400e",
+      "dashed": false,
+      "segments": [
+        ["nv-center-qubit", "siv-color-center-qubit"],
+        ["siv-color-center-qubit", "t-center-qubit"],
+        ["nv-center-qubit", "molecular-qubit"]
+      ]
+    },
+    {
+      "id": "qec",
+      "name": "QEC Codes",
+      "color": "#f59e0b",
+      "dashed": true,
+      "segments": [
+        ["surface-code-logical-qubit", "color-code-logical-qubit"],
+        ["color-code-logical-qubit", "bacon-shor-code"],
+        ["bacon-shor-code", "floquet-codes"],
+        ["floquet-codes", "qldpc-codes"],
+        ["qldpc-codes", "erasure-qubit"]
+      ]
+    }
+  ],
+  "stations": [
+    {"id": "cooper-pair-box-charge-qubit", "name": "Cooper Pair Box", "year": 1999, "family": "Superconducting", "status": "demonstrated", "x": 60, "y": 200, "labelPos": "below"},
+    {"id": "phase-qubit", "name": "Phase Qubit", "year": 2002, "family": "Superconducting", "status": "demonstrated", "x": 150, "y": 200, "labelPos": "above"},
+    {"id": "flux-qubit", "name": "Flux Qubit", "year": 1999, "family": "Superconducting", "status": "demonstrated", "x": 240, "y": 200, "labelPos": "below"},
+    {"id": "transmon", "name": "Transmon", "year": 2007, "family": "Superconducting", "status": "demonstrated", "x": 360, "y": 200, "labelPos": "above", "transfer": true},
+    {"id": "xmon", "name": "Xmon", "year": 2013, "family": "Superconducting", "status": "demonstrated", "x": 460, "y": 200, "labelPos": "below"},
+    {"id": "gmon", "name": "Gmon", "year": 2014, "family": "Superconducting", "status": "demonstrated", "x": 550, "y": 200, "labelPos": "above"},
+    {"id": "mergemon", "name": "Mergemon", "year": 2020, "family": "Superconducting", "status": "demonstrated", "x": 640, "y": 200, "labelPos": "below"},
+    {"id": "dual-rail-superconducting-qubit", "name": "Dual-Rail SC", "year": 2016, "family": "Superconducting", "status": "demonstrated", "x": 740, "y": 200, "labelPos": "above"},
+    {"id": "fluxonium", "name": "Fluxonium", "year": 2009, "family": "Superconducting", "status": "demonstrated", "x": 290, "y": 290, "labelPos": "left"},
+    {"id": "heavy-fluxonium-qubit", "name": "Heavy Fluxonium", "year": 2018, "family": "Superconducting", "status": "demonstrated", "x": 350, "y": 340, "labelPos": "below"},
+    {"id": "blochnium", "name": "Blochnium", "year": 2020, "family": "Superconducting", "status": "demonstrated", "x": 430, "y": 340, "labelPos": "below"},
+    {"id": "0-pi-qubit", "name": "0-π Qubit", "year": 2013, "family": "Superconducting", "status": "demonstrated", "x": 220, "y": 340, "labelPos": "below"},
+    {"id": "cos2phi-qubit", "name": "cos(2φ)", "year": 2019, "family": "Superconducting", "status": "proposed", "x": 150, "y": 390, "labelPos": "below"},
+    {"id": "circuit-qed", "name": "Circuit QED", "year": 2004, "family": "Superconducting", "status": "demonstrated", "x": 560, "y": 110, "labelPos": "above", "transfer": true},
+    {"id": "cat-codes", "name": "Cat Codes", "year": 2014, "family": "Superconducting", "status": "demonstrated", "x": 660, "y": 110, "labelPos": "above"},
+    {"id": "kerr-cat-qubit", "name": "Kerr-Cat", "year": 2020, "family": "Superconducting", "status": "demonstrated", "x": 750, "y": 110, "labelPos": "above"},
+    {"id": "binomial-codes", "name": "Binomial Codes", "year": 2016, "family": "Superconducting", "status": "demonstrated", "x": 840, "y": 110, "labelPos": "above"},
+    {"id": "gkp-codes", "name": "GKP Codes", "year": 2001, "family": "Superconducting", "status": "demonstrated", "x": 930, "y": 110, "labelPos": "above"},
+    {"id": "bosonic-qubit", "name": "Bosonic Qubit", "year": null, "family": "Superconducting", "status": "demonstrated", "x": 1020, "y": 110, "labelPos": "above"},
+
+    {"id": "loss-divincenzo-qubit", "name": "Loss-DiVincenzo", "year": 1998, "family": "Semiconducting", "status": "demonstrated", "x": 60, "y": 460, "labelPos": "above"},
+    {"id": "singlet-triplet-qubit", "name": "Singlet-Triplet", "year": 2002, "family": "Semiconducting", "status": "demonstrated", "x": 180, "y": 460, "labelPos": "below"},
+    {"id": "exchange-only-qubit", "name": "Exchange-Only", "year": 2000, "family": "Semiconducting", "status": "demonstrated", "x": 310, "y": 460, "labelPos": "above"},
+    {"id": "rx-qubit", "name": "RX Qubit", "year": 2013, "family": "Semiconducting", "status": "demonstrated", "x": 420, "y": 460, "labelPos": "below"},
+    {"id": "aeon-qubit", "name": "AEON", "year": 2016, "family": "Semiconducting", "status": "demonstrated", "x": 520, "y": 460, "labelPos": "above"},
+    {"id": "kane-qubit", "name": "Kane Qubit", "year": 1998, "family": "Semiconducting", "status": "demonstrated", "x": 110, "y": 530, "labelPos": "below"},
+    {"id": "silicon-spin-qubit", "name": "Silicon Spin", "year": 2008, "family": "Semiconducting", "status": "demonstrated", "x": 210, "y": 530, "labelPos": "below"},
+    {"id": "semiconductor-charge-qubit", "name": "Charge Qubit", "year": 2003, "family": "Semiconducting", "status": "demonstrated", "x": 110, "y": 400, "labelPos": "left"},
+    {"id": "hybrid-qubit", "name": "Hybrid Qubit", "year": 2014, "family": "Semiconducting", "status": "demonstrated", "x": 210, "y": 400, "labelPos": "right"},
+    {"id": "hole-spin-qubit", "name": "Hole Spin", "year": 2018, "family": "Semiconducting", "status": "demonstrated", "x": 60, "y": 530, "labelPos": "left"},
+    {"id": "spin-qubit", "name": "Spin Qubit", "year": 1998, "family": "Semiconducting", "status": "demonstrated", "x": 60, "y": 590, "labelPos": "below"},
+
+    {"id": "dual-rail-photonic-qubit", "name": "Dual-Rail Photonic", "year": 2001, "family": "Photonic", "status": "demonstrated", "x": 620, "y": 460, "labelPos": "above"},
+    {"id": "linear-optical-photonic-qubit", "name": "Linear-Optical", "year": 2001, "family": "Photonic", "status": "demonstrated", "x": 730, "y": 460, "labelPos": "below"},
+    {"id": "time-bin-photonic-qubit", "name": "Time-Bin", "year": 1999, "family": "Photonic", "status": "demonstrated", "x": 830, "y": 460, "labelPos": "above"},
+    {"id": "photonic-cluster-state-mbqc-qubit", "name": "Cluster-State", "year": 2003, "family": "Photonic", "status": "demonstrated", "x": 930, "y": 460, "labelPos": "below"},
+    {"id": "fusion-based-photonic-qubit", "name": "Fusion-Based", "year": 2021, "family": "Photonic", "status": "proposed", "x": 1040, "y": 460, "labelPos": "above"},
+
+    {"id": "cirac-zoller-gate", "name": "Cirac-Zoller", "year": 1995, "family": "Trapped Ion", "status": "demonstrated", "x": 820, "y": 200, "labelPos": "above"},
+    {"id": "trapped-ion-qubit", "name": "Trapped Ion", "year": 1995, "family": "Trapped Ion", "status": "demonstrated", "x": 900, "y": 200, "labelPos": "below"},
+    {"id": "molmer-sorenson-gate", "name": "Mølmer-Sørensen", "year": 1999, "family": "Trapped Ion", "status": "demonstrated", "x": 1000, "y": 200, "labelPos": "above"},
+    {"id": "shuttling-ion-trap-qubit", "name": "QCCD/Shuttling", "year": 2002, "family": "Trapped Ion", "status": "demonstrated", "x": 1100, "y": 200, "labelPos": "below"},
+    {"id": "ytterbium-hyperfine-qubit", "name": "Yb-171", "year": 2007, "family": "Trapped Ion", "status": "demonstrated", "x": 1140, "y": 150, "labelPos": "above"},
+
+    {"id": "neutral-atom-qubit", "name": "Neutral Atom", "year": 2001, "family": "Neutral Atom", "status": "demonstrated", "x": 620, "y": 340, "labelPos": "above"},
+    {"id": "rydberg-neutral-atom-qubit", "name": "Rydberg", "year": 2000, "family": "Neutral Atom", "status": "demonstrated", "x": 720, "y": 340, "labelPos": "below"},
+    {"id": "nuclear-spin-neutral-atom-qubit", "name": "Nuclear-Spin", "year": 2011, "family": "Neutral Atom", "status": "demonstrated", "x": 820, "y": 340, "labelPos": "above"},
+    {"id": "alkaline-earth-neutral-atom-clock-qubit", "name": "Clock Qubit", "year": 2008, "family": "Neutral Atom", "status": "demonstrated", "x": 930, "y": 340, "labelPos": "below"},
+
+    {"id": "majorana-topological-qubit", "name": "Majorana", "year": 2001, "family": "Topological", "status": "demonstrated", "x": 620, "y": 590, "labelPos": "above"},
+    {"id": "tetron-qubit", "name": "Tetron", "year": 2017, "family": "Topological", "status": "proposed", "x": 720, "y": 590, "labelPos": "below"},
+    {"id": "planar-josephson-junction-qubit", "name": "Planar JJ", "year": 2017, "family": "Topological", "status": "proposed", "x": 820, "y": 590, "labelPos": "above"},
+
+    {"id": "gatemon", "name": "Gatemon", "year": 2015, "family": "Super-Semi", "status": "demonstrated", "x": 360, "y": 260, "labelPos": "right", "transfer": true},
+    {"id": "andreev-spin-qubit", "name": "Andreev Spin", "year": 2021, "family": "Super-Semi", "status": "demonstrated", "x": 430, "y": 260, "labelPos": "above"},
+    {"id": "gatemonium", "name": "Gatemonium", "year": 2024, "family": "Super-Semi", "status": "demonstrated", "x": 510, "y": 260, "labelPos": "below"},
+    {"id": "all-semiconductor-superconducting-qubit", "name": "All-Semi SC", "year": 2014, "family": "Super-Semi", "status": "proposed", "x": 600, "y": 260, "labelPos": "above"},
+
+    {"id": "classical-control", "name": "Classical Control", "year": null, "family": "Infrastructure", "status": "demonstrated", "x": 380, "y": 50, "labelPos": "above"},
+    {"id": "cryogenic-amplification", "name": "Cryo Amp", "year": null, "family": "Infrastructure", "status": "demonstrated", "x": 460, "y": 50, "labelPos": "above"},
+    {"id": "qubit-readout", "name": "Readout", "year": null, "family": "Infrastructure", "status": "demonstrated", "x": 540, "y": 50, "labelPos": "above"},
+    {"id": "tunable-coupler", "name": "Tunable Coupler", "year": 2018, "family": "Superconducting", "status": "demonstrated", "x": 640, "y": 50, "labelPos": "above"},
+    {"id": "quantum-transduction", "name": "Transduction", "year": null, "family": "Infrastructure", "status": "demonstrated", "x": 730, "y": 50, "labelPos": "above"},
+
+    {"id": "nv-center-qubit", "name": "NV Center", "year": 2004, "family": "Color Center", "status": "demonstrated", "x": 930, "y": 530, "labelPos": "above"},
+    {"id": "siv-color-center-qubit", "name": "SiV/SnV", "year": 2017, "family": "Spin-Photon", "status": "demonstrated", "x": 1030, "y": 530, "labelPos": "below"},
+    {"id": "t-center-qubit", "name": "T-Center", "year": 2020, "family": "Spin-Photon", "status": "demonstrated", "x": 1100, "y": 530, "labelPos": "above"},
+    {"id": "molecular-qubit", "name": "Molecular", "year": 2015, "family": "Molecular", "status": "demonstrated", "x": 930, "y": 590, "labelPos": "below"},
+
+    {"id": "surface-code-logical-qubit", "name": "Surface Code", "year": 1997, "family": "Cross-Platform", "status": "demonstrated", "x": 820, "y": 680, "labelPos": "above"},
+    {"id": "color-code-logical-qubit", "name": "Color Code", "year": 2006, "family": "Cross-Platform", "status": "demonstrated", "x": 900, "y": 680, "labelPos": "below"},
+    {"id": "bacon-shor-code", "name": "Bacon-Shor", "year": 2006, "family": "Codes", "status": "demonstrated", "x": 980, "y": 680, "labelPos": "above"},
+    {"id": "floquet-codes", "name": "Floquet", "year": 2021, "family": "Codes", "status": "proposed", "x": 1050, "y": 680, "labelPos": "below"},
+    {"id": "qldpc-codes", "name": "qLDPC", "year": 2021, "family": "Codes", "status": "proposed", "x": 1120, "y": 680, "labelPos": "above"},
+    {"id": "erasure-qubit", "name": "Erasure Qubit", "year": 2022, "family": "Cross-Platform", "status": "demonstrated", "x": 1140, "y": 630, "labelPos": "right", "transfer": true}
+  ]
+}

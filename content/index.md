@@ -32,6 +32,7 @@ In case you didn't qnow* (*the q is silent*), qubits are needed for [quantum com
 
 ## Interactive Tools
 
+- **[[transit-map|🚇 Qubit Transit Map]]** — Navigate the Zoo like a metro system.
 - **[[genealogy|🧬 Qubit Genealogy]]** — Interactive family tree of qubit evolution.
 - **[[racing|🏁 The Qubit Race]]** — Cross-modality gate fidelity chart. *(Coming soon)*
 

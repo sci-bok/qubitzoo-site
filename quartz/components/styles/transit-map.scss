@@ -1,0 +1,80 @@
+@use "../../styles/variables.scss" as *;
+
+#transit-map-container {
+  position: relative;
+  width: 100%;
+  margin: 1rem 0;
+  min-height: 400px;
+  overflow: hidden;
+  border: 1px solid var(--lightgray);
+  border-radius: 8px;
+  background: var(--light);
+}
+
+#transit-map-tooltip {
+  position: absolute;
+  pointer-events: none;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 12px;
+  color: var(--darkgray);
+  opacity: 0;
+  transition: opacity 0.15s;
+  white-space: nowrap;
+  z-index: 10;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+  line-height: 1.4;
+}
+
+#transit-map-tooltip .tt-name {
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--dark);
+}
+
+#transit-map-tooltip .tt-meta {
+  font-size: 11px;
+  color: var(--gray);
+}
+
+#transit-map-container svg {
+  cursor: grab;
+}
+
+#transit-map-container svg:active {
+  cursor: grabbing;
+}
+
+.transit-station {
+  cursor: pointer;
+}
+
+.transit-station:hover circle {
+  stroke-width: 3px;
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.3));
+}
+
+.transit-station text {
+  font-family: var(--bodyFont);
+  font-size: 9px;
+  fill: var(--darkgray);
+  pointer-events: none;
+  user-select: none;
+}
+
+.transit-legend {
+  font-family: var(--bodyFont);
+}
+
+.transit-legend text {
+  font-size: 10px;
+  fill: var(--darkgray);
+}
+
+.transit-title {
+  font-family: var(--headerFont);
+  font-weight: 700;
+  fill: var(--dark);
+}
