@@ -80,7 +80,7 @@ GKP codes protect against the dominant error channel in bosonic systems — smal
 | $T_1$ (logical) | ~1.8 ms | Cavity photon lifetime limited; logical qubit outlives best physical component | [Sivak et al. 2023](https://doi.org/10.1038/s41586-023-05782-6) |
 | Logical lifetime / physical $T_1$ | 2.3× | Beyond break-even QEC | [Sivak et al. 2023](https://doi.org/10.1038/s41586-023-05782-6) |
 | 1Q gate fidelity (logical) | 99.7% | SBS displacement gates | [Campagne-Ibarcq et al. 2020](https://doi.org/10.1038/s41586-020-2603-3) |
-| 2Q gate fidelity (logical) | ~96–98% (projected) | eSWAP-based; not yet independently benchmarked | — |
+| 2Q gate fidelity (logical) | ~96–98% (projected) | eSWAP-based; not yet independently benchmarked | [Rojkov et al. 2024](https://doi.org/10.1103/PhysRevLett.133.100601) |
 | Squeezing level (best) | 9–12 dB | Approximate GKP state quality | — |
 | Stabilizer measurement time | ~1 μs | In superconducting cavities | — |
 | Phase space grid spacing | $2\sqrt{\pi}$ | In position quadrature | — |

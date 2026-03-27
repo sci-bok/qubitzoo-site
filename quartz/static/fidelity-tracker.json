@@ -1,10 +1,42 @@
 {
   "schema": "qubitzoo.fidelity_tracker.v1",
-  "generated_at": "2026-03-23T12:36:02.758028+00:00",
+  "generated_at": "2026-03-27T14:03:54.407046+00:00",
   "families": [
     {
       "name": "Superconducting",
       "entries": [
+        {
+          "slug": "transmon",
+          "title": "Transmon",
+          "year": 2007,
+          "status": "demonstrated",
+          "influence": 0.95,
+          "metrics": {
+            "1Q_fidelity": {
+              "value": 99.99,
+              "raw": "99.9\u201399.99%",
+              "ref": "[Z. Li et al. 2023](https://doi.org/10.1038/s41534-023-00781-x)"
+            },
+            "2Q_fidelity": {
+              "value": 99.95,
+              "raw": "99.0\u201399.95%",
+              "ref": "[IQM 2025](https://meetiqm.com/blog/quantum-fidelity-milestone/)"
+            },
+            "readout": {
+              "value": 99.9,
+              "raw": "97\u201399.9%",
+              "ref": "[Arute et al. 2019](https://doi.org/10.1038/s41586-019-1666-5)"
+            },
+            "T1": {
+              "value_us": 1680.0,
+              "raw": "100 \u03bcs \u2013 1.68 ms"
+            },
+            "T2": {
+              "value_us": 1060.0000000000002,
+              "raw": "100 \u03bcs \u2013 1.06 ms"
+            }
+          }
+        },
         {
           "slug": "fluxonium",
           "title": "Fluxonium",
@@ -52,38 +84,6 @@
           }
         },
         {
-          "slug": "transmon",
-          "title": "Transmon",
-          "year": 2007,
-          "status": "demonstrated",
-          "influence": 0.95,
-          "metrics": {
-            "1Q_fidelity": {
-              "value": 99.99,
-              "raw": "99.9\u201399.99%",
-              "ref": "[Li et al. 2023](https://doi.org/10.1038/s41534-023-00781-x)"
-            },
-            "2Q_fidelity": {
-              "value": 99.9,
-              "raw": "99.0\u201399.9%",
-              "ref": "[Google Willow 2024](https://doi.org/10.1038/s41586-024-08449-y)"
-            },
-            "readout": {
-              "value": 99.9,
-              "raw": "97\u201399.9%",
-              "ref": "[Arute et al. 2019](https://doi.org/10.1038/s41586-019-1666-5)"
-            },
-            "T1": {
-              "value_us": 500.0,
-              "raw": "100\u2013500 \u03bcs"
-            },
-            "T2": {
-              "value_us": 500.0,
-              "raw": "100\u2013500 \u03bcs"
-            }
-          }
-        },
-        {
           "slug": "xmon",
           "title": "Xmon",
           "year": 2013,
@@ -121,7 +121,7 @@
             "2Q_fidelity": {
               "value": 99.2,
               "raw": "99.2%",
-              "ref": "\u2014"
+              "ref": "[Ficheux et al. 2021](https://doi.org/10.1103/PhysRevX.11.021026)"
             },
             "T1": {
               "value_us": 1500.0,
@@ -190,7 +190,7 @@
             "2Q_fidelity": {
               "value": 98.0,
               "raw": "~96\u201398% (projected)",
-              "ref": "\u2014"
+              "ref": "[Rojkov et al. 2024](https://doi.org/10.1103/PhysRevLett.133.100601)"
             },
             "T1": {
               "value_us": 1800.0000000000002,
@@ -425,9 +425,9 @@
           "influence": 0.92,
           "metrics": {
             "1Q_fidelity": {
-              "value": 99.9999,
-              "raw": "99.9999%",
-              "ref": "[Harty et al. 2014](https://doi.org/10.1103/PhysRevLett.113.220501)"
+              "value": 99.999985,
+              "raw": "99.999985%",
+              "ref": "[Smith et al. 2024](https://arxiv.org/abs/2412.04421)"
             },
             "2Q_fidelity": {
               "value": 99.9,
@@ -502,12 +502,12 @@
             "1Q_fidelity": {
               "value": 99.0,
               "raw": "99%+ (d=3)",
-              "ref": "\u2014"
+              "ref": "[Ryan-Anderson et al. 2024](https://doi.org/10.1126/science.adp6016)"
             },
             "2Q_fidelity": {
               "value": 99.0,
               "raw": "~97\u201399% (d=3, small scale)",
-              "ref": "\u2014"
+              "ref": "[Postler et al. 2022](https://doi.org/10.1038/s41586-022-04721-1)"
             }
           }
         },

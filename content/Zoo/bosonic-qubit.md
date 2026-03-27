@@ -79,10 +79,10 @@ where $\chi$ is the dispersive shift. This coupling enables photon-number-resolv
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| Cavity $T_1$ | 1–10 ms | 3D aluminum or tantalum cavities | — |
+| Cavity $T_1$ | 1–10 ms | 3D aluminum or tantalum cavities | [Reagor et al. 2016](https://doi.org/10.1103/PhysRevB.94.014506) |
 | QEC gain | >1 (break-even) | Cat and binomial codes | [Ofek et al. 2016](https://doi.org/10.1038/nature18949) |
-| Logical gate fidelity | >99% | For encoded single-qubit operations | — |
-| Ancilla $T_1$ | 50–300 μs | Transmon ancilla | — |
+| Logical gate fidelity | >99% | For encoded single-qubit operations | [Campagne-Ibarcq et al. 2020](https://doi.org/10.1038/s41586-020-2603-3) |
+| Ancilla $T_1$ | 50–300 μs | Transmon ancilla | [Place et al. 2021](https://doi.org/10.1038/s41467-021-22030-5) |
 | Operating temperature | 10–20 mK | Dilution refrigerator | — |
 
 ## References

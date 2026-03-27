@@ -1,6 +1,6 @@
 {
   "schema": "qubitzoo.genealogy.v1",
-  "generated_at": "2026-03-23T12:36:02.789055+00:00",
+  "generated_at": "2026-03-27T14:03:54.438327+00:00",
   "nodes": [
     {
       "id": "0-pi-qubit",
@@ -435,6 +435,15 @@
       "influence": 0.88
     },
     {
+      "id": "quantum-gate",
+      "title": "Quantum Gate",
+      "family": "Cross-Platform",
+      "year": null,
+      "status": "demonstrated",
+      "color": "#6b7280",
+      "influence": 0.85
+    },
+    {
       "id": "quantum-transduction",
       "title": "Quantum Transduction",
       "family": "Cross-Platform",
@@ -728,6 +737,10 @@
       "target": "binomial-codes"
     },
     {
+      "source": "transmon",
+      "target": "binomial-codes"
+    },
+    {
       "source": "fluxonium",
       "target": "blochnium"
     },
@@ -754,6 +767,10 @@
     {
       "source": "bosonic-qubit",
       "target": "circuit-qed"
+    },
+    {
+      "source": "bosonic-qubit",
+      "target": "transmon"
     },
     {
       "source": "cat-codes",
@@ -860,6 +877,10 @@
       "target": "blochnium"
     },
     {
+      "source": "transmon",
+      "target": "cos2phi-qubit"
+    },
+    {
       "source": "qubit-readout",
       "target": "cryogenic-amplification"
     },
@@ -924,6 +945,10 @@
       "target": "erasure-qubit"
     },
     {
+      "source": "transmon",
+      "target": "erasure-qubit"
+    },
+    {
       "source": "exchange-only-qubit",
       "target": "singlet-triplet-qubit"
     },
@@ -962,6 +987,10 @@
     {
       "source": "transmon",
       "target": "fluxonium"
+    },
+    {
+      "source": "fluxonium",
+      "target": "heavy-fluxonium-qubit"
     },
     {
       "source": "time-bin-photonic-qubit",
@@ -1018,10 +1047,6 @@
     {
       "source": "circuit-qed",
       "target": "gmon"
-    },
-    {
-      "source": "fluxonium",
-      "target": "heavy-fluxonium-qubit"
     },
     {
       "source": "transmon",
@@ -1204,6 +1229,70 @@
       "target": "qldpc-codes"
     },
     {
+      "source": "transmon",
+      "target": "quantum-gate"
+    },
+    {
+      "source": "fluxonium",
+      "target": "quantum-gate"
+    },
+    {
+      "source": "trapped-ion-qubit",
+      "target": "quantum-gate"
+    },
+    {
+      "source": "spin-qubit",
+      "target": "quantum-gate"
+    },
+    {
+      "source": "silicon-spin-qubit",
+      "target": "quantum-gate"
+    },
+    {
+      "source": "neutral-atom-qubit",
+      "target": "quantum-gate"
+    },
+    {
+      "source": "rydberg-neutral-atom-qubit",
+      "target": "quantum-gate"
+    },
+    {
+      "source": "qubit-readout",
+      "target": "quantum-gate"
+    },
+    {
+      "source": "circuit-qed",
+      "target": "quantum-gate"
+    },
+    {
+      "source": "tunable-coupler",
+      "target": "quantum-gate"
+    },
+    {
+      "source": "cirac-zoller-gate",
+      "target": "quantum-gate"
+    },
+    {
+      "source": "molmer-sorenson-gate",
+      "target": "quantum-gate"
+    },
+    {
+      "source": "dual-rail-photonic-qubit",
+      "target": "quantum-gate"
+    },
+    {
+      "source": "linear-optical-photonic-qubit",
+      "target": "quantum-gate"
+    },
+    {
+      "source": "exchange-only-qubit",
+      "target": "quantum-gate"
+    },
+    {
+      "source": "surface-code-logical-qubit",
+      "target": "quantum-gate"
+    },
+    {
       "source": "circuit-qed",
       "target": "quantum-transduction"
     },
@@ -1344,6 +1433,10 @@
       "target": "xmon"
     },
     {
+      "source": "trapped-ion-qubit",
+      "target": "ytterbium-hyperfine-qubit"
+    },
+    {
       "source": "transmon",
       "target": "tunable-coupler"
     },
@@ -1358,10 +1451,6 @@
     {
       "source": "circuit-qed",
       "target": "xmon"
-    },
-    {
-      "source": "trapped-ion-qubit",
-      "target": "ytterbium-hyperfine-qubit"
     },
     {
       "source": "cirac-zoller-gate",

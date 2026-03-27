@@ -3,7 +3,7 @@ title: Topological MOC
 type: moc
 technology_family: Topological
 note_count: 3
-last_updated: '2026-03-23'
+last_updated: '2026-03-27'
 generated_by: pipeline-moc-v1
 ---
 

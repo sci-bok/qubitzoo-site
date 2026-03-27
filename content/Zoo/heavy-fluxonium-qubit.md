@@ -58,7 +58,7 @@ Heavy fluxonium targets a "hardware-protected" operating regime where coherence 
 |--------|-------|-------|--------------------|
 | $T_1$ | 0.5–1.5 ms | Sweet-spot operation | [Nguyen et al. 2019](https://doi.org/10.1103/PhysRevX.9.041041) |
 | 1Q gate fidelity | 99.9%+ | Microwave control | [Somoroff et al. 2023](https://doi.org/10.1103/PhysRevLett.130.267001) |
-| 2Q gate fidelity (CZ) | 99.2% | Conventional fluxonium regime; heavy-regime 2Q gates are active research frontier | — |
+| 2Q gate fidelity (CZ) | 99.2% | Conventional fluxonium regime; heavy-regime 2Q gates are active research frontier | [Ficheux et al. 2021](https://doi.org/10.1103/PhysRevX.11.021026) |
 | Anharmonicity | GHz-scale | Much larger than transmon | — |
 | Operating temperature | 10–20 mK | Dilution refrigerator | — |
 

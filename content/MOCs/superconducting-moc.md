@@ -3,7 +3,7 @@ title: Superconducting MOC
 type: moc
 technology_family: Superconducting
 note_count: 21
-last_updated: '2026-03-23'
+last_updated: '2026-03-27'
 generated_by: pipeline-moc-v1
 ---
 

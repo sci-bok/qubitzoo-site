@@ -57,8 +57,8 @@ Color codes are a leading alternative to the surface code when gate-transversali
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
 | Logical lifetime | ~10 QEC rounds (d=3) | Demonstrated logical qubit persistence through repeated error correction | [Ryan-Anderson et al. 2021](https://doi.org/10.1103/PhysRevX.11.041058) |
-| 1Q gate fidelity (transversal H/S) | 99%+ (d=3) | Native Clifford advantage — transversal gates without magic state distillation | — |
-| 2Q gate fidelity (logical CNOT) | ~97–99% (d=3, small scale) | Via code deformation; limited by physical gate fidelities | — |
+| 1Q gate fidelity (transversal H/S) | 99%+ (d=3) | Native Clifford advantage — transversal gates without magic state distillation | [Ryan-Anderson et al. 2024](https://doi.org/10.1126/science.adp6016) |
+| 2Q gate fidelity (logical CNOT) | ~97–99% (d=3, small scale) | Via code deformation; limited by physical gate fidelities | [Postler et al. 2022](https://doi.org/10.1038/s41586-022-04721-1) |
 | Threshold | ~0.1–1% | Decoder/noise model dependent | — |
 | Transversal Clifford support | Yes | Major architectural advantage | — |
 | Qubit overhead | Comparable order to surface code | Constants depend on layout | — |

@@ -79,7 +79,7 @@ The Cirac-Zoller gate uses red sideband pulses for state mapping and a $2\pi$ pu
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| Qubit coherence $T_1$ | >1000 s | Hyperfine qubits (e.g., $^{171}$Yb$^+$) | — |
+| Qubit coherence $T_1$ | >1000 s | Hyperfine qubits (e.g., $^{171}$Yb$^+$) | [Wang et al. 2021](https://doi.org/10.1038/s41467-020-20330-w) |
 | Qubit coherence $T_2$ | 1–600 s | With dynamical decoupling | [Wang et al. 2021](https://doi.org/10.1038/s41567-021-01237-9) |
 | Gate fidelity (1Q) | 99.9999% | Record: $^{43}$Ca$^+$ | [Harty et al. 2014](https://doi.org/10.1103/PhysRevLett.113.220501) |
 | Gate fidelity (2Q) | 99.5–99.9% | Mølmer-Sørensen or CZ variant | [Ballance et al. 2016](https://doi.org/10.1103/PhysRevLett.117.060504) |

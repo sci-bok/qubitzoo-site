@@ -110,7 +110,7 @@ The always-on variant (AEON) demonstrated by **Broz et al. (2025)**:
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| Qubit coherence $T_1$ | >1 s | Spin relaxation in Si/SiGe | — |
+| Qubit coherence $T_1$ | >1 s | Spin relaxation in Si/SiGe | [Simmons et al. 2011](https://doi.org/10.1103/PhysRevLett.106.156804) |
 | Qubit coherence $T_2^*$ | 2–20 μs | GaAs (nuclear-limited) to Si/SiGe | [Medford et al. 2013](https://doi.org/10.1038/nnano.2013.174) |
 | Qubit coherence $T_2^\text{echo}$ | 10–100 μs | Hahn echo, material-dependent | [Eng et al. 2015](https://doi.org/10.1126/sciadv.1500214) |
 | Gate fidelity (1Q) | **99.86%** | AEON variant, blind RB (experimental) | [Broz et al. 2025](https://arxiv.org/abs/2508.01033) |

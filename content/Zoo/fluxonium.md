@@ -15,10 +15,10 @@ keywords:
 - heavy fluxonium
 - disjoint support
 influence_score: 0.90
-last_updated: '2026-03-21'
+last_updated: '2026-03-26'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-manual-2026-03-21
+verified_by: scibok-editorial-audit-2026-03-26
 ---
 
 ## Figure
@@ -56,6 +56,11 @@ The transmon's achilles heel is its weak anharmonicity ($\sim -200\,\text{MHz}$)
 - Josephson junction arrays provide $L > 100\,\text{nH}$ with self-resonance above qubit operating frequencies.
 - Flux-sweet-spot operation at $\Phi_\text{ext} = \Phi_0/2$ eliminates first-order flux noise sensitivity.
 
+**High-coherence fluxonium — Nguyen et al. (2019):**
+- First demonstration of high-coherence fluxonium at the half-flux sweet spot.
+- Achieved $T_1 \sim 300\,\mu\text{s}$ and $T_2^{\text{echo}} > 100\,\mu\text{s}$ — an order-of-magnitude improvement over earlier fluxonium devices.
+- Established the flux sweet spot as the preferred operating point for coherence-optimized fluxonium.
+
 **Millisecond coherence — Somoroff et al. (2023):**
 - Heavy fluxonium regime achieved $T_1 > 1\,\text{ms}$ through disjoint-support protection.
 
@@ -80,15 +85,19 @@ The transmon's achilles heel is its weak anharmonicity ($\sim -200\,\text{MHz}$)
 ## References
 
 ### Original proposal
-- V. E. Manucharyan et al., "Fluxonium: Single Cooper-Pair Circuit Free of Charge Offsets," [Science 326, 113 (2009)](https://doi.org/10.1126/science.1175552)
+- V. E. Manucharyan et al., "Fluxonium: Single Cooper-Pair Circuit Free of Charge Offsets," [Science 326, 113 (2009)](https://doi.org/10.1126/science.1175552) · [arXiv:0906.0831](https://arxiv.org/abs/0906.0831)
 
 ### Experimental demonstrations
-- A. Somoroff et al., "Millisecond Coherence in a Superconducting Qubit," [Phys. Rev. Lett. 130, 267001 (2023)](https://doi.org/10.1103/PhysRevLett.130.267001)
-- L. Ding et al., "High-Fidelity, Frequency-Flexible Two-Qubit Fluxonium Gates with a Transmon Coupler," [Phys. Rev. X 13, 031035 (2023)](https://doi.org/10.1103/PhysRevX.13.031035)
+- L. B. Nguyen et al., "High-Coherence Fluxonium Qubit," [Phys. Rev. X 9, 041041 (2019)](https://doi.org/10.1103/PhysRevX.9.041041) · [arXiv:1810.11006](https://arxiv.org/abs/1810.11006)
+- A. Somoroff et al., "Millisecond Coherence in a Superconducting Qubit," [Phys. Rev. Lett. 130, 267001 (2023)](https://doi.org/10.1103/PhysRevLett.130.267001) · [arXiv:2103.08578](https://arxiv.org/abs/2103.08578)
+- L. Ding et al., "High-Fidelity, Frequency-Flexible Two-Qubit Fluxonium Gates with a Transmon Coupler," [Phys. Rev. X 13, 031035 (2023)](https://doi.org/10.1103/PhysRevX.13.031035) · [arXiv:2304.06087](https://arxiv.org/abs/2304.06087)
 
 ## Linked Papers
 
 - [[manucharyan-2009-fluxonium]]
+- [[nguyen-2019-high-coherence-fluxonium]]
+- [[somoroff-2023-millisecond-coherence-superconducting]]
+- [[ding-2023-high-fidelity-frequency]]
 
 ## Related Entries
 
@@ -97,3 +106,6 @@ The transmon's achilles heel is its weak anharmonicity ($\sim -200\,\text{MHz}$)
 - [[cooper-pair-box-charge-qubit]] — original charge qubit that fluxonium generalizes
 - [[circuit-qed]] — readout and coupling architecture used with fluxonium
 - [[blochnium]] — quasicharge regime of the fluxonium circuit
+- [[heavy-fluxonium-qubit]] — heavy regime variant with disjoint-support coherence protection
+- [[cos2phi-qubit]] — protected qubit derived from fluxonium-family circuits
+- [[0-pi-qubit]] — protected qubit in the same superconducting circuit family
