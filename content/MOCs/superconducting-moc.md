@@ -14,7 +14,7 @@ Curated map of Zoo entries in the **Superconducting** family.
 | Entry | Type | Status |
 |---|---|---|
 | [[tunable-coupler]] | coupling | demonstrated |
-| [[binomial-code]] | encoding | demonstrated |
+| [[binomial-codes]] | encoding | demonstrated |
 | [[binomial-codes]] | encoding | demonstrated |
 | [[circuit-qed]] | infrastructure | demonstrated |
 | [[0-pi-qubit]] | qubit | demonstrated |

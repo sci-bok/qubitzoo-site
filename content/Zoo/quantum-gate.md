@@ -3,6 +3,7 @@ title: Quantum Gate
 entry_type: concept
 technology_family: Cross-Platform
 status: demonstrated
+figure_reviewed: false
 keywords:
 - quantum gate
 - unitary operation
