@@ -3,7 +3,7 @@ title: Fluxonium
 entry_type: qubit
 technology_family: Superconducting
 status: demonstrated
-figure_reviewed: true
+figure_reviewed: false
 first_proposed_year: 2009
 first_demonstrated_year: 2009
 keywords:
@@ -15,10 +15,10 @@ keywords:
 - heavy fluxonium
 - disjoint support
 influence_score: 0.90
-last_updated: '2026-03-26'
+last_updated: '2026-04-01'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-editorial-audit-2026-03-26
+verified_by: scibok-deep-audit-2026-04-01
 ---
 
 ## Figure
@@ -66,7 +66,16 @@ The transmon's achilles heel is its weak anharmonicity ($\sim -200\,\text{MHz}$)
 
 **High-fidelity gates — Ding et al. (2023):**
 - Two-qubit fluxonium gates demonstrated with a transmon coupler.
-- Single-qubit gate fidelities $> 99.99\%$ and two-qubit gate fidelities $> 99.7\%$.
+- Two-qubit CZ gate fidelities $> 99.7\%$ via parametric coupling.
+
+**Record single-qubit fidelity — Rower et al. (2024):**
+- Achieved 99.998% single-qubit gate fidelity on a fluxonium qubit using circularly polarized microwave drives and commensurate pulse techniques.
+- Suppressed counter-rotating errors that limit low-frequency qubit gate speeds.
+- Highest single-qubit gate fidelity reported for any superconducting qubit.
+
+**Wafer-scale fabrication — Wang et al. (2025):**
+- Demonstrated $T_1 > 1\,\text{ms}$ fluxonium on 2-inch wafers using an overlap Josephson junction fabrication process.
+- Nearly 100% JJ yield with $<5\%$ variation across wafers — a key step toward CMOS-compatible scalable fabrication.
 
 ## Key Metrics
 
@@ -77,8 +86,8 @@ The transmon's achilles heel is its weak anharmonicity ($\sim -200\,\text{MHz}$)
 | Anharmonicity | 3–8 GHz | $\omega_{12} - \omega_{01}$; much larger than transmon | [Manucharyan et al. 2009](https://doi.org/10.1126/science.1175552) |
 | Qubit frequency $\omega_{01}/2\pi$ | 100 MHz – 1 GHz | Much lower than transmon | — |
 | $E_J/E_C$ | 3–8 | Heavy fluxonium regime | — |
-| 1Q gate fidelity | 99.97–99.998% | Microwave or charge-parity-protected gates | [Ding et al. 2023](https://doi.org/10.1103/PhysRevX.13.031035) |
-| 2Q gate fidelity | 99.2–99.92% | Capacitive or inductive coupling; CZ gate | [Ding et al. 2023](https://doi.org/10.1103/PhysRevX.13.031035) |
+| 1Q gate fidelity | 99.998% | Circularly polarized + commensurate pulses | [Rower et al. 2024](https://doi.org/10.1103/PRXQuantum.5.040342) |
+| 2Q gate fidelity | 99.92% | CZ gate via parametric coupling | [Ding et al. 2023](https://doi.org/10.1103/PhysRevX.13.031035) |
 | Gate time (1Q) | 20–100 ns | Frequency-dependent | — |
 | Operating temperature | 10–20 mK | Dilution refrigerator | — |
 
@@ -91,6 +100,8 @@ The transmon's achilles heel is its weak anharmonicity ($\sim -200\,\text{MHz}$)
 - L. B. Nguyen et al., "High-Coherence Fluxonium Qubit," [Phys. Rev. X 9, 041041 (2019)](https://doi.org/10.1103/PhysRevX.9.041041) · [arXiv:1810.11006](https://arxiv.org/abs/1810.11006)
 - A. Somoroff et al., "Millisecond Coherence in a Superconducting Qubit," [Phys. Rev. Lett. 130, 267001 (2023)](https://doi.org/10.1103/PhysRevLett.130.267001) · [arXiv:2103.08578](https://arxiv.org/abs/2103.08578)
 - L. Ding et al., "High-Fidelity, Frequency-Flexible Two-Qubit Fluxonium Gates with a Transmon Coupler," [Phys. Rev. X 13, 031035 (2023)](https://doi.org/10.1103/PhysRevX.13.031035) · [arXiv:2304.06087](https://arxiv.org/abs/2304.06087)
+- D. A. Rower et al., "Suppressing Counter-Rotating Errors for Fast Single-Qubit Gates with Fluxonium," [PRX Quantum 5, 040342 (2024)](https://doi.org/10.1103/PRXQuantum.5.040342) · [arXiv:2406.08295](https://arxiv.org/abs/2406.08295)
+- F. Wang et al., "High-Coherence Fluxonium Qubit with Wafer-Scale Overlap Josephson Junctions," [Phys. Rev. Applied 23, 044064 (2025)](https://doi.org/10.1103/PhysRevApplied.23.044064)
 
 ## Linked Papers
 
@@ -98,6 +109,8 @@ The transmon's achilles heel is its weak anharmonicity ($\sim -200\,\text{MHz}$)
 - [[nguyen-2019-high-coherence-fluxonium]]
 - [[somoroff-2023-millisecond-coherence-superconducting]]
 - [[ding-2023-high-fidelity-frequency]]
+- [[rower-2024-suppressing-counter-rotating]]
+- [[wang-2025-high-coherence-fluxonium-wafer]]
 
 ## Related Entries
 
