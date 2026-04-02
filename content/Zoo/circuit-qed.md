@@ -3,7 +3,7 @@ title: Circuit Quantum Electrodynamics (Circuit QED)
 entry_type: infrastructure
 technology_family: Superconducting
 status: demonstrated
-figure_reviewed: true
+figure_reviewed: false
 first_proposed_year: 2004
 first_demonstrated_year: 2004
 keywords:
@@ -17,10 +17,10 @@ keywords:
 - qnd measurement
 - quantum bus
 influence_score: 0.85
-last_updated: '2026-03-21'
+last_updated: '2026-04-02'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-manual-2026-03-21
+verified_by: scibok-deep-audit-2026-04-02
 ---
 
 ## Figure
@@ -98,6 +98,8 @@ Previous proposals for coupling superconducting qubits used discrete LC circuits
 ## Linked Papers
 
 - [[blais-2004-circuit-qed]]
+- [[wallraff-2004-circuit-qed]]
+- [[blais-2021-circuit-qed-review]]
 
 ## Related Entries
 
@@ -105,3 +107,6 @@ Previous proposals for coupling superconducting qubits used discrete LC circuits
 - [[cooper-pair-box-charge-qubit]] — original qubit in the Blais et al. proposal
 - [[fluxonium]] — also operates within circuit QED, requires auxiliary readout
 - [[qubit-readout]] — dispersive readout is the primary application of circuit QED
+- [[cryogenic-amplification]] — quantum-limited amplifiers in the readout chain
+- [[cat-codes]] — bosonic codes enabled by 3D circuit QED cavities
+- [[tunable-coupler]] — parametric coupling schemes within circuit QED

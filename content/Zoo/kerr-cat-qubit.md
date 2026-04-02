@@ -17,10 +17,10 @@ keywords:
 - Amazon AWS
 - Yale
 influence_score: 0.84
-last_updated: '2026-03-21'
+last_updated: '2026-04-02'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-manual-2026-03-21
+verified_by: scibok-deep-audit-2026-04-02
 ---
 
 ## Figure
@@ -75,12 +75,15 @@ Standard bosonic codes (GKP, binomial) require complex syndrome extraction. The 
 
 **Autoparametric stabilization — Réglade et al. (2024):**
 - Eliminated the need for an external two-photon pump via autoparametric design.
+- Achieved bit-flip times exceeding **10 seconds** — a 10,000× improvement over the 2020 result.
+- Demonstrated quantum control of the cat qubit with maintained noise bias.
 
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
 |---|---|---|---|
-| Bit-flip time | >1 ms | Exponentially suppressed with $\bar{n}$ | [Lescanne et al. 2020](https://doi.org/10.1038/s41567-020-0824-x) |
+| Bit-flip time | >10 s | Autoparametric stabilization | [Réglade et al. 2024](https://doi.org/10.1038/s41586-024-07294-7) |
+| Bit-flip time (early) | >1 ms | First demonstration with SNAIL | [Lescanne et al. 2020](https://doi.org/10.1038/s41567-020-0824-x) |
 | Phase-flip time | 1–10 μs | Grows linearly with $\bar{n}$; dominant error | [Grimm et al. 2020](https://doi.org/10.1038/s41586-020-2587-z) |
 | Noise bias ratio | $10^3$–$10^4$ | $\Gamma_{\text{phase}}/\Gamma_{\text{bit-flip}}$ | [Lescanne et al. 2020](https://doi.org/10.1038/s41567-020-0824-x) |
 | Cat size $\bar{n}$ | 2–8 photons | Larger $\bar{n}$ increases bias but also phase-flip rate | [Grimm et al. 2020](https://doi.org/10.1038/s41586-020-2587-z) |
@@ -98,16 +101,21 @@ Standard bosonic codes (GKP, binomial) require complex syndrome extraction. The 
 - R. Lescanne et al., "Exponential suppression of bit-flips in a qubit encoded in an oscillator," [Nat. Phys. 16, 509 (2020)](https://doi.org/10.1038/s41567-020-0824-x) — [arXiv:1907.11729](https://arxiv.org/abs/1907.11729)
 
 ### Bias-preserving gates
-- S. Puri et al., "Bias-preserving gates with stabilized cat qubits," [Sci. Adv. 6, eaay5901 (2020)](https://doi.org/10.1126/sciadv.aay5901)
+- S. Puri et al., "Bias-preserving gates with stabilized cat qubits," [Sci. Adv. 6, eaay5901 (2020)](https://doi.org/10.1126/sciadv.aay5901) · [arXiv:1905.00450](https://arxiv.org/abs/1905.00450)
+
+### Autoparametric stabilization
+- U. Réglade et al., "Quantum control of a cat qubit with bit-flip times exceeding ten seconds," [Nature 629, 778 (2024)](https://doi.org/10.1038/s41586-024-07294-7) · [arXiv:2307.06617](https://arxiv.org/abs/2307.06617)
 
 ### Related theory
-- J. Guillaud and M. Mirrahimi, "Repetition Cat Qubits for Fault-Tolerant Quantum Computation," [Phys. Rev. X 9, 041053 (2019)](https://doi.org/10.1103/PhysRevX.9.041053)
+- J. Guillaud and M. Mirrahimi, "Repetition Cat Qubits for Fault-Tolerant Quantum Computation," [Phys. Rev. X 9, 041053 (2019)](https://doi.org/10.1103/PhysRevX.9.041053) · [arXiv:1904.09474](https://arxiv.org/abs/1904.09474)
 
 ## Linked Papers
 
 - [[grimm-2020-kerr-cat]]
 - [[puri-2020-bias-preserving-gates]]
 - [[lescanne-2020-bit-flip-suppression]]
+- [[reglade-2024-autoparametric-cat]]
+- [[guillaud-2019-repetition-cat-qubits]]
 
 ## Related Entries
 
