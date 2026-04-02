@@ -74,6 +74,10 @@ Previous proposals for coupling superconducting qubits used discrete LC circuits
 **3D circuit QED:**
 - Extension to 3D microwave cavities achieved resonator lifetimes $>1\,\text{ms}$, enabling long-lived bosonic codes.
 
+**High-fidelity dispersive readout (2025):**
+- Tunable broadband Purcell filters achieved 99.9% single-qubit readout fidelity in 50 ns and multiplexed 3-qubit readout at 99.5% average fidelity in 100 ns.
+- Intrinsic Purcell filtering via multiconductor transmission lines enabled 4-qubit simultaneous readout with 99.77% average assignment fidelity in 56 ns integration time.
+
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
@@ -93,13 +97,16 @@ Previous proposals for coupling superconducting qubits used discrete LC circuits
 - A. Blais et al., "Cavity quantum electrodynamics for superconducting electrical circuits: An architecture for quantum computation," [Phys. Rev. A 69, 062320 (2004)](https://doi.org/10.1103/PhysRevA.69.062320) — [arXiv:cond-mat/0402216](https://arxiv.org/abs/cond-mat/0402216)
 
 ### First experimental demonstration
-- A. Wallraff et al., "Strong coupling of a single photon to a superconducting qubit using circuit quantum electrodynamics," [Nature 431, 162 (2004)](https://doi.org/10.1038/nature02851)
+- A. Wallraff et al., "Strong coupling of a single photon to a superconducting qubit using circuit quantum electrodynamics," [Nature 431, 162 (2004)](https://doi.org/10.1038/nature02851) — [arXiv:cond-mat/0407325](https://arxiv.org/abs/cond-mat/0407325)
+
+### Comprehensive review
+- A. Blais, A. L. Grimsmo, S. M. Girvin, and A. Wallraff, "Circuit quantum electrodynamics," [Rev. Mod. Phys. 93, 025005 (2021)](https://doi.org/10.1103/RevModPhys.93.025005) — [arXiv:2005.12667](https://arxiv.org/abs/2005.12667)
 
 ## Linked Papers
 
 - [[blais-2004-circuit-qed]]
-- [[wallraff-2004-circuit-qed]]
-- [[blais-2021-circuit-qed-review]]
+- [[wallraff-2004-strong-coupling-single]]
+- [[blais-2021-circuit-electrodynamics]]
 
 ## Related Entries
 
@@ -108,5 +115,8 @@ Previous proposals for coupling superconducting qubits used discrete LC circuits
 - [[fluxonium]] — also operates within circuit QED, requires auxiliary readout
 - [[qubit-readout]] — dispersive readout is the primary application of circuit QED
 - [[cryogenic-amplification]] — quantum-limited amplifiers in the readout chain
-- [[cat-codes]] — bosonic codes enabled by 3D circuit QED cavities
+- [[bosonic-qubit]] — bosonic codes operate within the circuit QED framework (3D cavities)
+- [[cat-codes]] — cat code bosonic qubits in circuit QED
+- [[gkp-codes]] — GKP error correction implemented in circuit QED cavities
 - [[tunable-coupler]] — parametric coupling schemes within circuit QED
+- [[xmon]] — planar transmon variant for scalable circuit QED

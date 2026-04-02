@@ -18,4 +18,5 @@ This paper presents work on circuit quantum electrodynamics.
 - **Journal:** [Reviews of Modern Physics](https://doi.org/10.1103/revmodphys.93.025005)
 
 ## Zoo Links
+- [[circuit-qed]]
 - [[qubit-readout]]
