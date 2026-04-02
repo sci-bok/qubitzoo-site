@@ -13,10 +13,10 @@ keywords:
   - harmonic oscillator
   - quantum error correction
 influence_score: 0.80
-last_updated: '2026-03-21'
+last_updated: '2026-04-02'
 generated_by: scibok-curation
 extracted_by: claude-code
-verified_by: scibok-manual-2026-03-21
+verified_by: scibok-deep-audit-2026-04-02
 ---
 
 > **Note:** This is a **category entry** covering the bosonic qubit paradigm. Individual bosonic encodings have their own detailed entries: [[cat-codes]], [[binomial-codes]], [[gkp-codes]].
@@ -88,11 +88,11 @@ where $\chi$ is the dispersive shift. This coupling enables photon-number-resolv
 ## References
 
 ### Reviews
-- A. Joshi, K. Noh, and Y. Y. Gao, "Quantum information processing with bosonic qubits in circuit QED," [Quantum Sci. Technol. **6**, 033001 (2021)](https://doi.org/10.1088/2058-9565/abe989)
+- A. Joshi, K. Noh, and Y. Y. Gao, "Quantum information processing with bosonic qubits in circuit QED," [Quantum Sci. Technol. **6**, 033001 (2021)](https://doi.org/10.1088/2058-9565/abe989) · [arXiv:2008.13471](https://arxiv.org/abs/2008.13471)
 
 ### Key experimental milestones
 - N. Ofek et al., "Extending the lifetime of a quantum bit with error correction in superconducting circuits," [Nature **536**, 441 (2016)](https://doi.org/10.1038/nature18949)
-- P. Campagne-Ibarcq et al., "Quantum error correction of a qubit encoded in grid states of an oscillator," [Nature **584**, 368 (2020)](https://doi.org/10.1038/s41586-020-2603-3)
+- P. Campagne-Ibarcq et al., "Quantum error correction of a qubit encoded in grid states of an oscillator," [Nature **584**, 368 (2020)](https://doi.org/10.1038/s41586-020-2603-3) · [arXiv:1907.12487](https://arxiv.org/abs/1907.12487)
 
 ## Linked Papers
 
