@@ -14,9 +14,9 @@ keywords:
 - electric dipole spin resonance
 - EDSR
 influence_score: 0.74
-last_updated: '2026-03-21'
+last_updated: '2026-04-02'
 generated_by: scibok-curation
-verified_by: scibok-manual-2026-03-21
+verified_by: scibok-deep-audit-2026-04-02
 ---
 
 ## Figure
@@ -75,7 +75,7 @@ $$H_{2q} = J(t)\,\mathbf{S}_1\cdot\mathbf{S}_2$$
 ## References
 
 ### Key experimental demonstration
-- N. W. Hendrickx et al., "A four-qubit germanium quantum processor," [Nature 591, 580 (2021)](https://doi.org/10.1038/s41586-021-03332-6)
+- N. W. Hendrickx et al., "A four-qubit germanium quantum processor," [Nature 591, 580 (2021)](https://doi.org/10.1038/s41586-021-03332-6) · [arXiv:2009.04268](https://arxiv.org/abs/2009.04268)
 
 ### Review
 - G. Scappucci et al., "The germanium quantum information route," [Nature Rev. Mater. 6, 926 (2021)](https://doi.org/10.1038/s41578-020-00262-z)

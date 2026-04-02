@@ -13,9 +13,9 @@ keywords:
 - bichromatic drive
 - XX gate
 influence_score: 0.79
-last_updated: '2026-03-21'
+last_updated: '2026-04-02'
 generated_by: scibok-curation
-verified_by: scibok-manual-2026-03-21
+verified_by: scibok-deep-audit-2026-04-02
 ---
 
 ## Figure
@@ -81,8 +81,8 @@ $$U_{\text{MS}} = \exp\!\left(-i\frac{\pi}{4}\sigma_\phi^{(1)}\sigma_\phi^{(2)}\
 ## References
 
 ### Original proposals
-- K. Mølmer and A. Sørensen, "Multiparticle Entanglement of Hot Trapped Ions," [Phys. Rev. Lett. 82, 1835 (1999)](https://doi.org/10.1103/PhysRevLett.82.1835)
-- A. Sørensen and K. Mølmer, "Quantum Computation with Ions in Thermal Motion," [Phys. Rev. Lett. 82, 1971 (1999)](https://doi.org/10.1103/PhysRevLett.82.1971)
+- K. Mølmer and A. Sørensen, "Multiparticle Entanglement of Hot Trapped Ions," [Phys. Rev. Lett. 82, 1835 (1999)](https://doi.org/10.1103/PhysRevLett.82.1835) · [arXiv:quant-ph/9810060](https://arxiv.org/abs/quant-ph/9810060)
+- A. Sørensen and K. Mølmer, "Quantum Computation with Ions in Thermal Motion," [Phys. Rev. Lett. 82, 1971 (1999)](https://doi.org/10.1103/PhysRevLett.82.1971) · [arXiv:quant-ph/9810039](https://arxiv.org/abs/quant-ph/9810039)
 
 ### Experimental demonstrations
 - C. A. Sackett et al., "Experimental entanglement of four particles," [Nature 404, 256 (2000)](https://doi.org/10.1038/35005011)

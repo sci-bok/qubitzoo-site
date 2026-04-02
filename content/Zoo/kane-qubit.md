@@ -14,11 +14,11 @@ keywords:
 - electron spin
 - exchange coupling
 influence_score: 0.76
-last_updated: '2026-03-21'
+last_updated: '2026-04-02'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-manual-2026-03-21
-figure_reviewed: true
+verified_by: scibok-deep-audit-2026-04-02
+figure_reviewed: false
 ---
 
 ## Figure
@@ -85,7 +85,7 @@ Nuclear spins in silicon offer the longest coherence times of any solid-state qu
 ## References
 
 ### Original proposal
-- B. E. Kane, "A silicon-based nuclear spin quantum computer," [Nature 393, 133 (1998)](https://doi.org/10.1038/30156)
+- B. E. Kane, "A silicon-based nuclear spin quantum computer," [Nature 393, 133 (1998)](https://doi.org/10.1038/30156) · [arXiv:quant-ph/9810062](https://arxiv.org/abs/quant-ph/9810062)
 
 ### Experimental demonstrations
 - J. T. Muhonen et al., "Storing quantum information for 30 seconds in a nanoelectronic device," [Nat. Nanotechnol. 9, 986 (2014)](https://doi.org/10.1038/nnano.2014.211)

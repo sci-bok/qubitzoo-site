@@ -12,10 +12,10 @@ keywords:
 - dual-rail encoding
 - KLM
 influence_score: 0.71
-last_updated: '2026-03-21'
+last_updated: '2026-04-02'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-manual-2026-03-21
+verified_by: scibok-deep-audit-2026-04-02
 ---
 
 ## Figure
