@@ -3,7 +3,7 @@ title: Color Center MOC
 type: moc
 technology_family: Color Center
 note_count: 1
-last_updated: '2026-03-27'
+last_updated: '2026-04-03'
 generated_by: pipeline-v1
 ---
 

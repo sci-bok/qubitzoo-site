@@ -3,7 +3,7 @@ title: Spin Qubit (Loss-DiVincenzo)
 entry_type: qubit
 technology_family: Semiconducting
 status: demonstrated
-figure_reviewed: false
+figure_reviewed: true
 first_proposed_year: 1998
 first_demonstrated_year: 2004
 keywords:
@@ -16,10 +16,10 @@ keywords:
 - germanium
 - single electron
 influence_score: 0.88
-last_updated: '2026-04-02'
+last_updated: '2026-03-21'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-deep-audit-2026-04-02
+verified_by: scibok-manual-2026-03-21
 ---
 
 ## Figure
@@ -83,13 +83,8 @@ Semiconductor spin qubits promise integration with existing CMOS fabrication inf
 **Error correction milestone (2024):**
 - Above-threshold quantum error correction demonstrated in spin qubits
 
-**CMOS-foundry threshold — Steinacker, Stuyck et al. / Diraq & imec (2025):**
-- First 300mm foundry-fabricated silicon spin qubits exceeding fault-tolerance threshold
-- SPAM >99.9%, 1Q and 2Q fidelities >99%, $T_1$ up to 9.5 s
-
-**11-qubit atom processor — Edlbauer, Wang et al. / SQC (2025):**
-- 9 nuclear + 2 electron spin qubits in precision-placed phosphorus donors
-- 1Q fidelity up to 99.99% (nuclear), 2Q CROT 99.64%
+**CMOS compatibility:**
+- CMOS-compatible fabrication demonstrated at Intel, imec, and CEA-Leti
 
 ## Key Metrics
 
@@ -115,10 +110,16 @@ Semiconductor spin qubits promise integration with existing CMOS fabrication inf
 - Cryogenic CMOS control electronics co-integrated on-chip is an active research frontier
 - Hot-qubit operation above 1 K would dramatically reduce cooling requirements
 
+## Extracted Figures
+
+![[spin-qubit-paper-fig-1.png]]
+
+![[spin-qubit-paper-fig-2.png]]
+
 ## References
 
 ### Original proposal
-- D. Loss and D. P. DiVincenzo, "Quantum computation with quantum dots," [Phys. Rev. A 57, 120 (1998)](https://doi.org/10.1103/PhysRevA.57.120) · [arXiv:cond-mat/9701055](https://arxiv.org/abs/cond-mat/9701055)
+- D. Loss and D. P. DiVincenzo, "Quantum computation with quantum dots," [Phys. Rev. A 57, 120 (1998)](https://doi.org/10.1103/PhysRevA.57.120)
 
 ### Single-qubit gates
 - J. Yoneda et al., "A quantum-dot spin qubit with coherence limited by charge noise and fidelity higher than 99.9%," [Nat. Nanotechnol. 13, 102 (2018)](https://doi.org/10.1038/s41565-017-0014-x)
@@ -137,10 +138,6 @@ Semiconductor spin qubits promise integration with existing CMOS fabrication inf
 ## Linked Papers
 
 - [[loss-divincenzo-1998-quantum-dots]]
-- [[noiri-2022-silicon-1q-fidelity]]
-- [[philips-2022-six-qubit-silicon]]
-- [[steinacker-2025-300mm-foundry-silicon]]
-- [[edlbauer-2025-11-qubit-atom-processor]]
 
 ## Related Entries
 
@@ -150,6 +147,3 @@ Semiconductor spin qubits promise integration with existing CMOS fabrication inf
 - [[aeon-qubit]] — always-on exchange-only sweet-spot variant
 - [[semiconductor-charge-qubit]] — charge-degree-of-freedom encoding
 - [[kane-qubit]] — donor-based spin qubit in silicon
-- [[silicon-spin-qubit]] — detailed entry on silicon-specific implementations
-- [[hole-spin-qubit]] — hole-spin variant with intrinsic spin-orbit coupling
-- [[hybrid-qubit]] — spin-charge hybrid encoding

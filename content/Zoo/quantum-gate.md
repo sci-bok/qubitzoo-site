@@ -3,7 +3,6 @@ title: Quantum Gate
 entry_type: concept
 technology_family: Cross-Platform
 status: demonstrated
-figure_reviewed: false
 keywords:
 - quantum gate
 - unitary operation
@@ -19,10 +18,10 @@ keywords:
 - exchange coupling
 - randomized benchmarking
 influence_score: 0.85
-last_updated: '2026-04-02'
+last_updated: '2026-03-25'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-deep-audit-2026-04-02
+verified_by: scibok
 ---
 
 ## Description
@@ -78,8 +77,8 @@ Gate times are $\sim 0.1{-}10\,\mu\text{s}$ depending on driving mechanism and R
 
 | Metric | Platform | SOTA Value | Gate Time | Reference |
 |--------|----------|------------|-----------|-----------|
-| 1Q fidelity | Trapped ion | 99.999985% | 4–35 μs | [Smith et al. 2025](https://doi.org/10.1103/h4wk-v31j), $^{43}\text{Ca}^+$ microwave |
-| 1Q fidelity | Superconducting | 99.998% | ~25 ns | [Rower et al. 2024](https://doi.org/10.1103/PRXQuantum.5.040342), fluxonium, MIT |
+| 1Q fidelity | Trapped ion | 99.999985% | 4–35 μs | [Oxford 2025](https://doi.org/10.1103/h4wk-v31j), $^{43}\text{Ca}^+$ microwave |
+| 1Q fidelity | Superconducting | 99.998% | ~25 ns | [Ding et al. 2025](https://doi.org/10.1038/s41467-025-56746-4), fluxonium, MIT |
 | 1Q fidelity | Superconducting (transmon) | 99.9926% | ~25 ns | [Z. Li et al. 2023](https://doi.org/10.1038/s41534-023-00781-x) |
 | 1Q fidelity | Spin qubit | >99.9% | ~1 μs | [Mądzik et al. 2022](https://doi.org/10.1038/s41586-021-04292-7), UNSW Si donor |
 | 1Q fidelity | Neutral atom | >99.9% | ~1 μs | Raman/microwave on $^{87}\text{Rb}$ |
@@ -120,7 +119,7 @@ Gate infidelity $1 - F$ arises from several distinct physical mechanisms:
 | 2016 | First $>99.9\%$ two-qubit MS gate (trapped ions) | Ballance et al., PRL 117, 060504 |
 | 2023 | $99.5\%$ two-qubit CZ on 60 neutral atoms simultaneously | Evered et al., Nature 622, 268 |
 | 2024 | Google Willow: below-threshold surface code error correction | Google QAI, Nature 638, 920 |
-| 2025 | Oxford: 1Q error rate $1.5 \times 10^{-7}$ (trapped ion, $^{43}\text{Ca}^+$ microwave) | [Smith et al., PRL (2025)](https://doi.org/10.1103/h4wk-v31j) |
+| 2025 | Oxford: 1Q error rate $1.5 \times 10^{-7}$ (trapped ion, microwave) | Sheridan et al., PRL (2025) |
 | 2025 | IonQ: 99.99% 2Q fidelity (trapped ion, EQC) | Moses et al., arXiv:2510.17286 |
 | 2025 | IQM: 99.95% 2Q CZ fidelity (superconducting, PALEA) | Landra et al., arXiv:2508.16437 |
 

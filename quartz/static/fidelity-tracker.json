@@ -1,6 +1,6 @@
 {
   "schema": "qubitzoo.fidelity_tracker.v1",
-  "generated_at": "2026-03-27T14:03:54.407046+00:00",
+  "generated_at": "2026-04-03T14:08:49.878876+00:00",
   "families": [
     {
       "name": "Superconducting",
@@ -321,19 +321,14 @@
           "influence": 0.9,
           "metrics": {
             "1Q_fidelity": {
-              "value": 99.95,
-              "raw": "99.95%",
-              "ref": "[Noiri et al. 2022](https://doi.org/10.1038/s41586-021-04182-y)"
+              "value": 99.99,
+              "raw": "99.99%",
+              "ref": "[Edlbauer, Wang et al. / SQC 2025](https://arxiv.org/abs/2506.03567)"
             },
             "2Q_fidelity": {
-              "value": 99.65,
-              "raw": "99.65%",
-              "ref": "[Noiri et al. 2022](https://doi.org/10.1038/s41586-021-04182-y)"
-            },
-            "readout": {
-              "value": 99.7,
-              "raw": "99.7%",
-              "ref": "[Noiri et al. 2022](https://doi.org/10.1038/s41586-021-04182-y)"
+              "value": 99.64,
+              "raw": "99.64%",
+              "ref": "[Edlbauer, Wang et al. / SQC 2025](https://arxiv.org/abs/2506.03567)"
             }
           }
         },

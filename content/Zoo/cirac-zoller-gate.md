@@ -3,7 +3,7 @@ title: Cirac-Zoller Gate
 entry_type: gate
 technology_family: Trapped Ion
 status: demonstrated
-figure_reviewed: false
+figure_reviewed: true
 first_proposed_year: 1995
 first_demonstrated_year: 1995
 keywords:
@@ -14,10 +14,10 @@ keywords:
   - controlled-phase
   - quantum computing
 influence_score: 0.90
-last_updated: '2026-04-01'
+last_updated: '2026-03-21'
 generated_by: scibok-curation
 extracted_by: airtable-seed
-verified_by: scibok-deep-audit-2026-04-01
+verified_by: scibok-manual-2026-03-21
 ---
 
 ## Figure
@@ -72,9 +72,8 @@ The Cirac-Zoller gate uses red sideband pulses for state mapping and a $2\pi$ pu
 - Gate fidelity limited by motional heating and laser intensity fluctuations.
 
 **Modern trapped-ion gates (Mølmer-Sørensen variants):**
-- Two-qubit gate fidelities now exceed 99.9% using geometric phase gates that evolved from the Cirac-Zoller concept (Ballance et al. 2016).
-- Single-qubit gate fidelities reach 99.999985% — error rate $1.5 \times 10^{-7}$ — the lowest for any physical qubit (Smith et al. 2024, Oxford, $^{43}$Ca$^+$).
-- Prior single-qubit record: 99.9999% (Harty et al. 2014, also $^{43}$Ca$^+$).
+- Two-qubit gate fidelities now exceed 99.9% using geometric phase gates that evolved from the Cirac-Zoller concept.
+- Single-qubit gate fidelities reach 99.9999% (Harty et al. 2014).
 
 ## Key Metrics
 
@@ -82,9 +81,8 @@ The Cirac-Zoller gate uses red sideband pulses for state mapping and a $2\pi$ pu
 |--------|-------|-------|--------------------|
 | Qubit coherence $T_1$ | >1000 s | Hyperfine qubits (e.g., $^{171}$Yb$^+$) | [Wang et al. 2021](https://doi.org/10.1038/s41467-020-20330-w) |
 | Qubit coherence $T_2$ | 1–600 s | With dynamical decoupling | [Wang et al. 2021](https://doi.org/10.1038/s41567-021-01237-9) |
-| Gate fidelity (1Q) | 99.999985% | Record: $^{43}$Ca$^+$ microwave gates | [Smith et al. 2024](https://arxiv.org/abs/2412.04421) |
-| Gate fidelity (1Q, prior) | 99.9999% | $^{43}$Ca$^+$ hyperfine | [Harty et al. 2014](https://doi.org/10.1103/PhysRevLett.113.220501) |
-| Gate fidelity (2Q) | 99.9% | $^{43}$Ca$^+$ Mølmer-Sørensen | [Ballance et al. 2016](https://doi.org/10.1103/PhysRevLett.117.060504) |
+| Gate fidelity (1Q) | 99.9999% | Record: $^{43}$Ca$^+$ | [Harty et al. 2014](https://doi.org/10.1103/PhysRevLett.113.220501) |
+| Gate fidelity (2Q) | 99.5–99.9% | Mølmer-Sørensen or CZ variant | [Ballance et al. 2016](https://doi.org/10.1103/PhysRevLett.117.060504) |
 | Gate time (1Q) | 1–10 μs | Microwave or Raman | — |
 | Gate time (2Q) | 10–200 μs | Laser-mediated | — |
 | Readout fidelity | 99.9%+ | Fluorescence detection | [Myerson et al. 2008](https://doi.org/10.1103/PhysRevLett.100.200502) |
@@ -107,11 +105,6 @@ The Cirac-Zoller gate uses red sideband pulses for state mapping and a $2\pi$ pu
 ## Linked Papers
 
 - [[cirac-zoller-1995-trapped-ion-gate]]
-- [[monroe-1995-demonstration-fundamental-logic]]
-- [[schmidt-kaler-2003-cirac-zoller-cnot]]
-- [[harty-2014-high-fidelity-preparation]]
-- [[ballance-2016-ion-gate-fidelity]]
-- [[smith-2024-single-qubit-gate-errors]]
 
 ## Related Entries
 
@@ -119,4 +112,3 @@ The Cirac-Zoller gate uses red sideband pulses for state mapping and a $2\pi$ pu
 - [[trapped-ion-qubit]] — the qubit platform
 - [[loss-divincenzo-qubit]] — semiconductor analogue of bus-mediated two-qubit gates
 - [[shuttling-ion-trap-qubit]] — scaling architecture for trapped-ion quantum computing
-- [[ytterbium-hyperfine-qubit]] — modern trapped-ion qubit commonly used with Cirac-Zoller-derived gates

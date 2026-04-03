@@ -4,7 +4,6 @@ authors: [Lars Pause, Lukas Sturm, Marcel Mittenbühler, Stephan Amann, Tilman P
 year: 2024
 journal: "Optica"
 doi: 10.1364/optica.513551
-arxiv: "2310.09191"
 type: reference
 generated_by: scibok-audit-backfill
 last_updated: '2026-03-25'

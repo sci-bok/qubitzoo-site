@@ -18,10 +18,10 @@ keywords:
 - Google Willow
 - IBM Heron
 influence_score: 0.82
-last_updated: '2026-04-02'
+last_updated: '2026-03-21'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-deep-audit-2026-04-02
+verified_by: scibok-manual-2026-03-21
 ---
 
 ## Figure
@@ -99,12 +99,12 @@ Fixed-frequency transmon qubits coupled by fixed capacitors suffer from always-o
 ## References
 
 ### Original proposal and demonstration
-- F. Yan et al., "Tunable Coupling Scheme for Implementing High-Fidelity Two-Qubit Gates," [Phys. Rev. Applied 10, 054062 (2018)](https://doi.org/10.1103/PhysRevApplied.10.054062) · [arXiv:1803.09813](https://arxiv.org/abs/1803.09813)
+- F. Yan et al., "Tunable Coupling Scheme for Implementing High-Fidelity Two-Qubit Gates," [Phys. Rev. Applied 10, 054062 (2018)](https://doi.org/10.1103/PhysRevApplied.10.054062)
 
 ### High-fidelity implementations
-- Y. Sung et al., "Realization of High-Fidelity CZ and ZZ-Free iSWAP Gates with a Tunable Coupler," [Phys. Rev. X 11, 021058 (2021)](https://doi.org/10.1103/PhysRevX.11.021058) · [arXiv:2011.01261](https://arxiv.org/abs/2011.01261)
-- F. Arute et al., "Quantum supremacy using a programmable superconducting processor," [Nature 574, 505 (2019)](https://doi.org/10.1038/s41586-019-1666-5) · [arXiv:1910.11333](https://arxiv.org/abs/1910.11333)
-- Google Quantum AI, "Quantum error correction below the surface code threshold," [Nature 638, 920 (2025)](https://doi.org/10.1038/s41586-024-08449-y) · [arXiv:2408.13687](https://arxiv.org/abs/2408.13687)
+- Y. Sung et al., "Realization of High-Fidelity CZ and ZZ-Free iSWAP Gates with a Tunable Coupler," [Phys. Rev. X 11, 021058 (2021)](https://doi.org/10.1103/PhysRevX.11.021058)
+- F. Arute et al., "Quantum supremacy using a programmable superconducting processor," [Nature 574, 505 (2019)](https://doi.org/10.1038/s41586-019-1666-5)
+- Google Quantum AI, "Quantum error correction below the surface code threshold," [Nature 638, 920 (2025)](https://doi.org/10.1038/s41586-024-08449-y)
 
 ## Linked Papers
 

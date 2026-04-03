@@ -13,10 +13,10 @@ keywords:
 - displacement error
 - squeezed state
 influence_score: 0.84
-last_updated: '2026-04-02'
+last_updated: '2026-03-21'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-deep-audit-2026-04-02
+verified_by: scibok-manual-2026-03-21
 figure_reviewed: true
 ---
 
@@ -72,12 +72,6 @@ GKP codes protect against the dominant error channel in bosonic systems — smal
 - Logical qubit lifetime 2.3× the best physical component $T_1$
 - First demonstration of beyond-break-even quantum error correction
 - Used real-time feedback with optimized control via reinforcement learning
-
-**Beyond-break-even qudit QEC — Sivak, Ding et al. / Yale (2025):**
-- Extended GKP error correction to higher-dimensional encodings (qutrits, ququarts)
-- Error correction gains of 1.82× (qutrit) and 1.87× (ququart) beyond break-even
-- Used reinforcement learning to optimize 45+ experimental parameters
-- First demonstration of error-corrected qudits surpassing break-even in any platform
 
 ## Key Metrics
 

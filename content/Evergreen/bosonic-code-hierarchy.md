@@ -7,7 +7,7 @@ tags:
   - bosonic-codes
   - cat-code
   - GKP-code
-  - binomial-codes
+  - binomial-code
   - quantum-error-correction
   - cavity-QED
   - oscillator

@@ -12,9 +12,9 @@ keywords:
 - segmented trap
 - modular scaling
 influence_score: 0.75
-last_updated: '2026-04-02'
+last_updated: '2026-03-21'
 generated_by: scibok-curation
-verified_by: scibok-deep-audit-2026-04-02
+verified_by: scibok-manual-2026-03-21
 figure_reviewed: true
 ---
 

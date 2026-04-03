@@ -14,10 +14,10 @@ keywords:
 - semiconductor nanowire
 - spin-orbit coupling
 influence_score: 0.70
-last_updated: '2026-04-02'
+last_updated: '2026-03-21'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-deep-audit-2026-04-02
+verified_by: scibok-manual-2026-03-21
 ---
 
 ## Figure
@@ -93,3 +93,4 @@ where $\tau$ is the channel transparency, $\varphi$ the superconducting phase di
 - [[majorana-topological-qubit]] — related InAs/Al platform, topological protection
 - [[transmon]] — shares dispersive readout mechanism
 - [[spin-qubit]] — broader spin qubit family
+- [[ferbo-qubit]] — uses even-parity Andreev sector in a fluxonium-like circuit for dual noise protection

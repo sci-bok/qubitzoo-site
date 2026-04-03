@@ -3,7 +3,7 @@ title: SiV / SnV Color Center Qubit
 entry_type: qubit
 technology_family: Spin-Photon
 status: demonstrated
-figure_reviewed: false
+figure_reviewed: true
 first_proposed_year: 2017
 first_demonstrated_year: 2017
 keywords:
@@ -15,10 +15,10 @@ keywords:
 - spin-photon interface
 - group-IV vacancy
 influence_score: 0.82
-last_updated: '2026-04-02'
+last_updated: '2026-03-21'
 generated_by: scibok-curation
 extracted_by: manual
-verified_by: scibok-deep-audit-2026-04-02
+verified_by: scibok-manual-2026-03-21
 ---
 
 ## Figure

@@ -1,6 +1,6 @@
 {
   "schema": "qubitzoo.genealogy.v1",
-  "generated_at": "2026-03-27T14:03:54.438327+00:00",
+  "generated_at": "2026-04-03T14:08:49.909623+00:00",
   "nodes": [
     {
       "id": "0-pi-qubit",
@@ -199,6 +199,15 @@
       "status": "active",
       "color": "#22c55e",
       "influence": 0.0
+    },
+    {
+      "id": "ferbo-qubit",
+      "title": "FerBo Qubit",
+      "family": "Super-Semi",
+      "year": 2026,
+      "status": "active",
+      "color": "#06b6d4",
+      "influence": 0.55
     },
     {
       "id": "floquet-codes",
@@ -697,6 +706,10 @@
       "target": "andreev-spin-qubit"
     },
     {
+      "source": "andreev-spin-qubit",
+      "target": "ferbo-qubit"
+    },
+    {
       "source": "surface-code-logical-qubit",
       "target": "bacon-shor-code"
     },
@@ -961,6 +974,26 @@
       "target": "hybrid-qubit"
     },
     {
+      "source": "fluxonium",
+      "target": "ferbo-qubit"
+    },
+    {
+      "source": "heavy-fluxonium-qubit",
+      "target": "ferbo-qubit"
+    },
+    {
+      "source": "0-pi-qubit",
+      "target": "ferbo-qubit"
+    },
+    {
+      "source": "cos2phi-qubit",
+      "target": "ferbo-qubit"
+    },
+    {
+      "source": "gatemon",
+      "target": "ferbo-qubit"
+    },
+    {
       "source": "surface-code-logical-qubit",
       "target": "floquet-codes"
     },
@@ -1174,6 +1207,14 @@
     },
     {
       "source": "surface-code-logical-qubit",
+      "target": "neutral-atom-qubit"
+    },
+    {
+      "source": "neutral-atom-qubit",
+      "target": "erasure-qubit"
+    },
+    {
+      "source": "trapped-ion-qubit",
       "target": "neutral-atom-qubit"
     },
     {

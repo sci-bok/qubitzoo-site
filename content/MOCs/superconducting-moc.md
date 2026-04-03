@@ -3,7 +3,7 @@ title: Superconducting MOC
 type: moc
 technology_family: Superconducting
 note_count: 21
-last_updated: '2026-03-27'
+last_updated: '2026-04-03'
 generated_by: pipeline-moc-v1
 ---
 
@@ -14,7 +14,7 @@ Curated map of Zoo entries in the **Superconducting** family.
 | Entry | Type | Status |
 |---|---|---|
 | [[tunable-coupler]] | coupling | demonstrated |
-| [[binomial-codes]] | encoding | demonstrated |
+| [[binomial-code]] | encoding | demonstrated |
 | [[binomial-codes]] | encoding | demonstrated |
 | [[circuit-qed]] | infrastructure | demonstrated |
 | [[0-pi-qubit]] | qubit | demonstrated |

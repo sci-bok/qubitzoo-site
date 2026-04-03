@@ -3,7 +3,7 @@ title: Photonic MOC
 type: moc
 technology_family: Photonic
 note_count: 5
-last_updated: '2026-03-27'
+last_updated: '2026-04-03'
 generated_by: pipeline-moc-v1
 ---
 

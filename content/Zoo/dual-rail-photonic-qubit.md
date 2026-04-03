@@ -13,9 +13,9 @@ keywords:
 - beam splitter
 - phase shifter
 influence_score: 0.72
-last_updated: '2026-04-02'
+last_updated: '2026-03-21'
 generated_by: scibok-curation
-verified_by: scibok-deep-audit-2026-04-02
+verified_by: scibok-manual-2026-03-21
 ---
 
 ## Figure
@@ -86,7 +86,7 @@ which implements rotations about the $X$ axis of the logical Bloch sphere. Combi
 
 ### Foundational theory
 - M. Reck, A. Zeilinger, H. J. Bernstein, and P. Bertani, "Experimental realization of any discrete unitary operator," [Phys. Rev. Lett. 73, 58 (1994)](https://doi.org/10.1103/PhysRevLett.73.58)
-- P. Kok et al., "Linear optical quantum computing with photonic qubits," [Rev. Mod. Phys. 79, 135 (2007)](https://doi.org/10.1103/RevModPhys.79.135) · [arXiv:quant-ph/0512071](https://arxiv.org/abs/quant-ph/0512071)
+- P. Kok et al., "Linear optical quantum computing with photonic qubits," [Rev. Mod. Phys. 79, 135 (2007)](https://doi.org/10.1103/RevModPhys.79.135)
 
 ## Linked Papers
 

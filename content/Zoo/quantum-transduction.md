@@ -3,7 +3,7 @@ title: Quantum Transduction
 entry_type: infrastructure
 technology_family: Cross-Platform
 status: demonstrated
-figure_reviewed: false
+figure_reviewed: true
 first_proposed_year: 2010
 first_demonstrated_year: 2020
 keywords:
@@ -16,10 +16,10 @@ keywords:
 - piezoelectric
 - optomechanical
 influence_score: 0.80
-last_updated: '2026-04-02'
+last_updated: '2026-03-21'
 generated_by: scibok-curation
 extracted_by: manual
-verified_by: scibok-deep-audit-2026-04-02
+verified_by: scibok-manual-2026-03-21
 ---
 
 ## Figure

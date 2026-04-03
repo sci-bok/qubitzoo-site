@@ -16,7 +16,7 @@ keywords:
 influence_score: 0.74
 last_updated: '2026-04-02'
 generated_by: scibok-curation
-verified_by: scibok-deep-audit-2026-04-02
+verified_by: scibok-manual-2026-03-21
 ---
 
 ## Figure
@@ -62,20 +62,32 @@ $$H_{2q} = J(t)\,\mathbf{S}_1\cdot\mathbf{S}_2$$
 - Hot-qubit operation demonstrated at elevated temperatures (up to ~1 K).
 - Sweet-spot engineering reducing charge-noise sensitivity while maintaining fast gate speeds.
 
+**18-qubit modular array — Dijkema et al. (2026):**
+- Demonstrated operation of an 18-qubit array in germanium based on an extendable 2×N modular architecture.
+- Achieved simultaneous initialization, control, and readout across the entire array using parallel operation of modular unit cells.
+- Average single-qubit gate fidelities of 99.8% and median of 99.9% across the array.
+- Characterized nearest-neighbor exchange couplings throughout the device and implemented controlled-Z gates.
+- Generated a three-qubit Greenberger–Horne–Zeilinger (GHZ) state.
+- Establishes a modular, extendable architecture for planar semiconductor quantum processors.
+
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
 | 1Q gate time | 1–50 ns | Fast EDSR control | — |
-| 1Q fidelity | 99–99.9% | Rapid progress in Ge devices | [Hendrickx et al. 2021](https://doi.org/10.1038/s41586-021-03332-6) |
+| 1Q fidelity | 99.8–99.9% | 18-qubit Ge array | [Dijkema et al. 2026](https://arxiv.org/abs/2604.01063) |
 | 2Q fidelity | 98–99.5% | Exchange-based | [Hendrickx et al. 2021](https://doi.org/10.1038/s41586-021-03332-6) |
 | $T_2^*$ | 1–20 μs | Device/material dependent | — |
 | Operating temperature | 20 mK – 1 K | Some hot-qubit demonstrations | — |
+| Largest array | 18 qubits | Modular 2×N architecture | [Dijkema et al. 2026](https://arxiv.org/abs/2604.01063) |
 
 ## References
 
 ### Key experimental demonstration
-- N. W. Hendrickx et al., "A four-qubit germanium quantum processor," [Nature 591, 580 (2021)](https://doi.org/10.1038/s41586-021-03332-6) · [arXiv:2009.04268](https://arxiv.org/abs/2009.04268)
+- N. W. Hendrickx et al., "A four-qubit germanium quantum processor," [Nature 591, 580 (2021)](https://doi.org/10.1038/s41586-021-03332-6)
+
+### Scaling milestone
+- J. J. Dijkema et al., "Simultaneous operation of an 18-qubit modular array in germanium," [arXiv:2604.01063 (2026)](https://arxiv.org/abs/2604.01063)
 
 ### Review
 - G. Scappucci et al., "The germanium quantum information route," [Nature Rev. Mater. 6, 926 (2021)](https://doi.org/10.1038/s41578-020-00262-z)
@@ -84,6 +96,7 @@ $$H_{2q} = J(t)\,\mathbf{S}_1\cdot\mathbf{S}_2$$
 
 - [[hendrickx-2021-ge-4qubit]]
 - [[scappucci-2021-ge-review]]
+- [[dijkema-2026-simultaneous-operation-of-an]]
 
 ## Related Entries
 

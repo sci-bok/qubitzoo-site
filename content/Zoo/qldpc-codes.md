@@ -2,8 +2,8 @@
 title: Quantum Low-Density Parity-Check (qLDPC) Codes
 entry_type: encoding
 technology_family: Codes
-status: demonstrated
-figure_reviewed: false
+status: proposed
+figure_reviewed: true
 first_proposed_year: 2021
 keywords:
 - qLDPC
@@ -14,11 +14,10 @@ keywords:
 - balanced product
 - asymptotically good codes
 influence_score: 0.88
-last_updated: '2026-04-02'
+last_updated: '2026-03-21'
 generated_by: scibok-curation
 extracted_by: manual
-verified_by: scibok-deep-audit-2026-04-02
-first_demonstrated_year: 2025
+verified_by: scibok-manual-2026-03-21
 ---
 
 ## Figure
@@ -58,16 +57,6 @@ For asymptotically good codes: $k = \Theta(n)$, $d = \Theta(n)$, giving constant
 - **Practical thresholds:** Simulated thresholds of ~1–5% are competitive with surface codes.
 - **Architecture synergy:** Non-local connectivity naturally matches platforms with reconfigurable connectivity (neutral atom shuttling, photonic interconnects, modular superconducting).
 
-## Experimental Status
-
-**First hardware demonstration — Ke Wang et al. (2025):**
-- Implemented qLDPC codes on the Kunlun superconducting processor with 32 long-range-coupled transmon qubits.
-- Demonstrated a distance-4 bivariate bicycle (BB) qLDPC code with encoding rate 1/8 (~4× lower overhead than equivalent surface code).
-- Implemented a distance-3 qLDPC code encoding 6 logical qubits on 18 data + 12 check qubits.
-- Logical error rate: 7.77 ± 0.12% per logical qubit per cycle.
-- Used high-fidelity CZ gates via overlapping long-range couplers for syndrome extraction.
-- First confirmation that diverse low-overhead qLDPC codes are feasible on superconducting hardware.
-
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
@@ -96,9 +85,6 @@ For asymptotically good codes: $k = \Theta(n)$, $d = \Theta(n)$, giving constant
 ### Related theory
 - M. B. Hastings, J. Haah, and R. O'Donnell, "Fiber bundle codes: breaking the $n^{1/2}\text{polylog}(n)$ barrier for quantum LDPC codes," [STOC 2021](https://doi.org/10.1145/3406325.3451005) — [arXiv:2009.03921](https://arxiv.org/abs/2009.03921)
 
-### Experimental demonstrations
-- K. Wang et al., "Demonstration of low-overhead quantum error correction codes," [arXiv:2505.09684 (2025)](https://arxiv.org/abs/2505.09684)
-
 ## Linked Papers
 
 - [[panteleev-2022-asymptotically-good]]
@@ -108,5 +94,3 @@ For asymptotically good codes: $k = \Theta(n)$, $d = \Theta(n)$, giving constant
 - [[surface-code-logical-qubit]] — Local 2D code with $O(d^2)$ overhead; qLDPC aims to beat this
 - [[color-code-logical-qubit]] — Another local 2D code with transversal gates
 - [[floquet-codes]] — Dynamical codes that may help implement qLDPC on local hardware
-- [[erasure-qubit]] — Erasure conversion simplifies qLDPC decoding
-- [[bacon-shor-code]] — Alternative subsystem code with different overhead tradeoffs
