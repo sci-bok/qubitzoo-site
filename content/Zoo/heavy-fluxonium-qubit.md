@@ -79,3 +79,4 @@ Heavy fluxonium targets a "hardware-protected" operating regime where coherence 
 - [[fluxonium]] — parent qubit type
 - [[0-pi-qubit]] — related protected superconducting design
 - [[transmon]] — conventional superconducting qubit for comparison
+- [[ferbo-qubit]] — dual-protected design using Andreev weak link instead of tunnel junction; achieves disjoint support in Andreev space

@@ -2,7 +2,7 @@
 title: FerBo Qubit
 entry_type: qubit
 technology_family: Super-Semi
-status: active
+status: proposed
 figure_reviewed: false
 first_proposed_year: 2026
 keywords:
@@ -16,9 +16,9 @@ keywords:
 - nanowire
 - hardware-level protection
 influence_score: 0.55
-last_updated: '2026-04-02'
+last_updated: '2026-04-03'
 generated_by: scibok-curation
-verified_by: scibok-manual-2026-04-02
+verified_by: scibok-deep-audit-2026-04-03
 ---
 
 ## Figure
@@ -57,6 +57,19 @@ where $\hat{\sigma}_i$ are Pauli matrices acting on the two-dimensional even-par
 - **Relaxation suppression by four orders of magnitude:** The disjoint Andreev support of the computational states suppresses charge-induced relaxation matrix elements $|\langle 0|\hat{n}|1\rangle|^2$ by ~$10^{-4}$ at the zero-flux operating point, a substantial improvement enabled by the fermion-boson hybridization.
 - **Zero-flux sweet spot:** Operating at $\varphi_{\text{ext}} = 0$ simplifies experimental operation (no precision flux biasing required) and provides additional selection-rule protection due to shared parity of the computational states under phase inversion.
 
+## Experimental Status
+
+The FerBo qubit is a **theoretical proposal only** as of April 2026. No experimental realization has been reported. The authors (CEA-Saclay Quantronics group and UAM Madrid) suggest implementation using InAs/Al semiconducting nanowire weak links — a platform already established for gatemon and Andreev spin qubit experiments — combined with a granular aluminum or Josephson junction array superinductance. The required parameter regime ($Z/R_Q \gg 1$, high-transmission weak link) is experimentally accessible with current fabrication techniques, but no device has been built.
+
+## Scaling Considerations
+
+- **Single-mode advantage:** Unlike the 0-$\pi$ and cos(2$\varphi$) qubits, FerBo uses only one bosonic mode, potentially simplifying fabrication and control.
+- **Nanowire variability:** Semiconducting weak link properties (transmission, resonant level position) are sensitive to nanowire disorder and gate tuning, which may limit device-to-device reproducibility.
+- **Gate operations:** The disjoint Andreev support that protects against relaxation also suppresses the matrix elements needed for single-qubit gates. The authors discuss driving transitions via the coupling asymmetry $\delta\Gamma$ or multi-photon processes, but gate protocols remain to be developed and benchmarked.
+- **Readout:** Dispersive readout in the protected regime requires careful engineering since the charge matrix elements are suppressed by design.
+- **Quasiparticle poisoning:** Even-parity operation assumes suppressed quasiparticle tunneling; stray quasiparticles could cause parity switches that take the qubit out of the protected subspace.
+- **Superinductance quality:** The high-impedance requirement ($Z \gg R_Q$) demands superinductances with low loss, which remains an active area of materials development.
+
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
@@ -70,7 +83,7 @@ where $\hat{\sigma}_i$ are Pauli matrices acting on the two-dimensional even-par
 ## References
 
 ### Original proposal
-- J. J. Cáceres, F. J. Matute-Cañadas et al., "FerBo: a noise resilient qubit hybridizing Andreev and fluxonium states," [arXiv:2604.01145 (2026)](https://arxiv.org/abs/2604.01145)
+- J. J. Cáceres†, F. J. Matute-Cañadas†, D. Sanz Marco, J. Ortuzar, E. Flurin, C. Urbina, H. Pothier, A. Levy Yeyati, and M. F. Goffman, "FerBo: a noise resilient qubit hybridizing Andreev and fluxonium states," [arXiv:2604.01145 (2026)](https://arxiv.org/abs/2604.01145) (†equal contribution)
 
 ## Linked Papers
 
