@@ -3,7 +3,7 @@ title: Flip-Flop Qubit
 entry_type: qubit
 technology_family: Silicon Spin
 status: proposed
-figure_reviewed: false
+figure_reviewed: true
 first_proposed_year: 2017
 first_demonstrated_year: null
 keywords:

@@ -3,7 +3,7 @@ title: Trapped-Electron Qubit
 entry_type: qubit
 technology_family: Trapped Particle
 status: proposed
-figure_reviewed: false
+figure_reviewed: true
 first_proposed_year: 2013
 first_demonstrated_year: null
 keywords:

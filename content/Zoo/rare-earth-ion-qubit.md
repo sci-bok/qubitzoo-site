@@ -3,7 +3,7 @@ title: Rare-Earth Ion Qubit
 entry_type: qubit
 technology_family: Solid-State Defect
 status: demonstrated
-figure_reviewed: false
+figure_reviewed: true
 first_proposed_year: 2002
 first_demonstrated_year: 2015
 keywords:
