@@ -74,7 +74,7 @@ Scaling superconducting quantum processors beyond a single chip faces fundamenta
 | Absorption efficiency | 98.1% | Single-photon absorption at receiver | [Kurpiers et al. 2018](https://doi.org/10.1038/s41586-018-0195-y) |
 | Entanglement fidelity | 78.9% | On-demand remote Bell state | [Kurpiers et al. 2018](https://doi.org/10.1038/s41586-018-0195-y) |
 | Transfer rate | 50 kHz | Limited by photon travel time and protocol duration | [Kurpiers et al. 2018](https://doi.org/10.1038/s41586-018-0195-y) |
-| Heralded fidelity | 87% | With error heralding (success prob. 0.87) | [Axline et al. 2018](https://doi.org/10.1038/s41567-018-0124-x) |
+| Heralded fidelity | 87% | With error heralding (success prob. 0.87) | [Axline et al. 2018](https://doi.org/10.1038/s41567-018-0115-y) |
 | Photon frequency | 5–8 GHz | Matches transmon qubit frequency | — |
 | Operating temperature | ~20 mK | Requires dilution refrigerator | — |
 | Channel length | ~1 m | Cryogenic coaxial cable; limited by photon loss | — |
@@ -93,7 +93,7 @@ Scaling superconducting quantum processors beyond a single chip faces fundamenta
 - P. Kurpiers et al., "Deterministic quantum state transfer and remote entanglement using microwave photons," [Nature 558, 264 (2018)](https://doi.org/10.1038/s41586-018-0195-y) | [arXiv:1712.08593](https://arxiv.org/abs/1712.08593)
 
 ### Cavity-to-cavity transfer
-- C. J. Axline et al., "On-demand quantum state transfer and entanglement between remote microwave cavity memories," [Nature Phys. 14, 705 (2018)](https://doi.org/10.1038/s41567-018-0124-x) | [arXiv:1712.05832](https://arxiv.org/abs/1712.05832)
+- C. J. Axline et al., "On-demand quantum state transfer and entanglement between remote microwave cavity memories," [Nature Phys. 14, 705 (2018)](https://doi.org/10.1038/s41567-018-0115-y) | [arXiv:1712.05832](https://arxiv.org/abs/1712.05832)
 
 ## Linked Papers
 
