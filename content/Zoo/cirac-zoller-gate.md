@@ -112,3 +112,5 @@ The Cirac-Zoller gate uses red sideband pulses for state mapping and a $2\pi$ pu
 - [[trapped-ion-qubit]] — the qubit platform
 - [[loss-divincenzo-qubit]] — semiconductor analogue of bus-mediated two-qubit gates
 - [[shuttling-ion-trap-qubit]] — scaling architecture for trapped-ion quantum computing
+- [[calcium-43-ion-qubit]] — Ca-43 hyperfine qubit; Oxford 1Q gate record holder
+- [[trapped-electron-qubit]] — proposed electron-spin analogue of trapped-ion gates

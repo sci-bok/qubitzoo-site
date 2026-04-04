@@ -111,3 +111,4 @@ NV centers operate at room temperature, can be optically initialized and read ou
 - [[t-center-qubit]] — another color center qubit platform (silicon)
 - [[siv-color-center-qubit]] — SiV color center, alternative diamond defect
 - [[loss-divincenzo-qubit]] — foundational spin qubit proposal
+- [[rare-earth-ion-qubit]] — rare-earth ions in crystals; hours-long coherence and telecom wavelength

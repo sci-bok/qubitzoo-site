@@ -109,3 +109,4 @@ Individual spin with $S = 1/2$ is the simplest realization of a qubit. The elect
 - [[semiconductor-charge-qubit]] — charge-based encoding (shorter coherence)
 - [[kane-qubit]] — donor spin in silicon, similar physics with different confinement
 - [[silicon-spin-qubit]] — broader family of silicon-based spin qubits
+- [[flip-flop-qubit]] — long-range dipole-coupled spin qubit overcoming exchange-distance limitation

@@ -162,3 +162,6 @@ Trapped ions offer natural identical qubits (every $^{171}\text{Yb}^+$ ion is id
 - [[shuttling-ion-trap-qubit]] — QCCD scalable architecture variant
 - [[rydberg-neutral-atom-qubit]] — competing platform with similar atomic physics
 - [[ytterbium-hyperfine-qubit]] — dominant commercial hyperfine species (Quantinuum, IonQ)
+- [[barium-137-ion-qubit]] — Ba-137 hyperfine qubit; Quantinuum Helios data qubit
+- [[calcium-43-ion-qubit]] — Ca-43 hyperfine qubit; holds all-time 1Q gate fidelity record
+- [[trapped-electron-qubit]] — proposed electron-spin analogue using Paul traps

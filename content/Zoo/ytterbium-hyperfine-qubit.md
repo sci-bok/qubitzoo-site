@@ -121,3 +121,5 @@ Trapped-ion qubits require long coherence times and high-fidelity operations to 
 - [[cirac-zoller-gate]] — foundational trapped-ion gate proposal
 - [[motional-mode-coupling-in-ion-traps]] — physics of the Coulomb-mediated bus
 - [[coherence-time-hierarchy]] — context for coherence comparison
+- [[barium-137-ion-qubit]] — Ba-137 hyperfine qubit; Yb-171 serves as sympathetic coolant in Helios
+- [[calcium-43-ion-qubit]] — Ca-43 hyperfine qubit; alternative hyperfine species with microwave-driven gates

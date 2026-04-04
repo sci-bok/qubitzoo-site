@@ -147,3 +147,5 @@ Semiconductor spin qubits promise integration with existing CMOS fabrication inf
 - [[aeon-qubit]] — always-on exchange-only sweet-spot variant
 - [[semiconductor-charge-qubit]] — charge-degree-of-freedom encoding
 - [[kane-qubit]] — donor-based spin qubit in silicon
+- [[flip-flop-qubit]] — combined electron-nuclear spin states with long-range electric dipole coupling
+- [[trapped-electron-qubit]] — proposed electron spin qubit in electromagnetic traps

@@ -143,3 +143,4 @@ where $\Delta_v$ is the valley splitting (typically 0.03–1 meV in Si/SiGe, 0.3
 - [[exchange-only-qubit]] — Three-electron variant with all-electrical control
 - [[hole-spin-qubit]] — Hole-spin variant with intrinsic spin-orbit coupling
 - [[kane-qubit]] — Donor-based silicon spin qubit
+- [[flip-flop-qubit]] — combined electron-nuclear spin encoding with long-range dipole coupling

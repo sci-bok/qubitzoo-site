@@ -83,3 +83,4 @@ QCCD shuttling addresses the core scaling problem of trapped-ion systems: long c
 
 - [[trapped-ion-qubit]] — parent qubit platform
 - [[cirac-zoller-gate]] — foundational trapped-ion gate scheme
+- [[barium-137-ion-qubit]] — Ba-137 hyperfine qubit used in Helios QCCD processor

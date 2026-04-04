@@ -97,3 +97,4 @@ $$U_{\text{MS}} = \exp\!\left(-i\frac{\pi}{4}\sigma_\phi^{(1)}\sigma_\phi^{(2)}\
 
 - [[trapped-ion-qubit]] — qubit platform where the MS gate is standard
 - [[cirac-zoller-gate]] — earlier trapped-ion entangling gate requiring ground-state cooling
+- [[barium-137-ion-qubit]] — Ba-137 hyperfine qubit using MS gates in Helios
