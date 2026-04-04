@@ -15,10 +15,12 @@ const FAMILY_MOC_SLUGS: Record<string, string> = {
   Superconducting: "MOCs/superconducting-moc",
   Semiconducting: "MOCs/semiconducting-moc",
   "Ion Trap": "MOCs/ion-trap-moc",
+  "Trapped Ion": "MOCs/trapped-ion-moc",
   "Neutral Atom": "MOCs/neutral-atom-moc",
   Photonic: "MOCs/photonic-moc",
   Topological: "MOCs/topological-moc",
   Hybrid: "MOCs/super-semi-moc",
+  "Super-Semi": "MOCs/super-semi-moc",
 }
 
 function getBaseUrl(): string {

@@ -82,7 +82,7 @@ Protection mechanism: $\langle 0|\hat{n}|1\rangle \sim e^{-S}$ and $\langle 0|\h
 
 ## Linked Papers
 
-- [[smith-2020-cos2phi]]
+- [[smith-2020-superconducting-circuit-protected]]
 
 ## Related Entries
 

@@ -131,7 +131,7 @@ where $\Delta_v$ is the valley splitting (typically 0.03–1 meV in Si/SiGe, 0.3
 - [[noiri-2022-silicon-1q-fidelity]]
 - [[veldhorst-2014-silicon-coherence]]
 - [[petit-2020-hot-silicon]]
-- [[philips-2022-six-qubit-silicon]]
+- [[philips-2022-universal-control-six]]
 - [[steinacker-2025-300mm-foundry-silicon]]
 - [[edlbauer-2025-11-qubit-atom-processor]]
 

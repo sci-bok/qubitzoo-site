@@ -10,12 +10,37 @@ const FAMILY_COLORS: Record<string, string> = {
   Superconducting: "#3b82f6",
   Semiconducting: "#22c55e",
   "Ion Trap": "#eab308",
+  "Trapped Ion": "#eab308",
   "Neutral Atom": "#f97316",
   Photonic: "#ef4444",
   Topological: "#a855f7",
+  "Super-Semi": "#ec4899",
   Hybrid: "#06b6d4",
+  "Cross-Platform": "#8b5cf6",
+  "Classical Hardware": "#6b7280",
+  Codes: "#f59e0b",
+  "Color Center": "#92400e",
+  "Spin-Photon": "#92400e",
+  "Solid-State Defect": "#92400e",
+  "Color Center / Spin-Photon": "#92400e",
+  Infrastructure: "#6b7280",
+  Molecular: "#78716c",
+  "Silicon Spin": "#22c55e",
+  "Trapped Particle": "#eab308",
 }
 const DEFAULT_COLOR = "#6b7280"
+
+// Normalize family names to reduce fragmentation
+const FAMILY_NORMALIZE: Record<string, string> = {
+  "Trapped Ion": "Trapped Ion",
+  "Ion Trap": "Trapped Ion",
+  "Color Center": "Color Center / Spin-Photon",
+  "Spin-Photon": "Color Center / Spin-Photon",
+  "Solid-State Defect": "Color Center / Spin-Photon",
+  "Silicon Spin": "Semiconducting",
+  "Trapped Particle": "Trapped Ion",
+  "Classical Hardware": "Infrastructure",
+}
 
 interface Entry {
   name: string
@@ -49,7 +74,8 @@ if (!fs.existsSync(zooDir)) {
     const raw = fs.readFileSync(path.join(zooDir, file), "utf-8")
     const { data: fm } = matter(raw)
 
-    const family = (fm.technology_family as string) || "Other"
+    const rawFamily = (fm.technology_family as string) || "Other"
+    const family = FAMILY_NORMALIZE[rawFamily] ?? rawFamily
     const slug = "Zoo/" + file.replace(/\.md$/, "")
 
     const entry: Entry = {

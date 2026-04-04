@@ -124,7 +124,7 @@ Gate infidelity $1 - F$ arises from several distinct physical mechanisms:
 | 2025 | IQM: 99.95% 2Q CZ fidelity (superconducting, PALEA) | Landra et al., arXiv:2508.16437 |
 
 ## Linked Papers
-- [[heeres-2015-cavity-state-manipulation-using]]
+- [[heeres-2017-implementing-universal-gate]]
 
 ## Related Entries
 - [[transmon]] — dominant superconducting qubit platform

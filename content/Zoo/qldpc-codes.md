@@ -30,7 +30,7 @@ Quantum low-density parity-check (qLDPC) codes are a family of quantum error-cor
 
 Classical LDPC codes revolutionized telecommunications (5G, Wi-Fi, DVB-S2). Their quantum analogues face additional constraints: stabilizer checks must commute, which makes constructing good qLDPC codes far harder. The breakthrough came in 2021–2022 with several families achieving constant-rate, growing-distance codes:
 
-- **Hypergraph product codes** (Tillich-Zémor 2014): $[[n,k,d]]$ with $k = \Theta(n)$ and $d = \Theta(\sqrt{n})$.
+- **Hypergraph product codes** (Tillich-Zémor 2014): $\lbrack\lbrack n,k,d \rbrack\rbrack$ with $k = \Theta(n)$ and $d = \Theta(\sqrt{n})$.
 - **Lifted product / balanced product codes** (Breuckmann-Eberhardt 2021): Improved constructions with better distance scaling.
 - **Asymptotically good codes** (Panteleev-Kalachev 2022): First codes with $k = \Theta(n)$ and $d = \Theta(n)$ — the qLDPC holy grail.
 - **Fiber bundle codes** (Hastings, Haah, O'Donnell 2021): $d = \widetilde{\Omega}(n^{3/5})$.
@@ -39,7 +39,7 @@ The key practical challenge is that qLDPC codes require **non-local connectivity
 
 ## Stabilizer Formalism
 
-A qLDPC code $[[n,k,d]]$ is defined by a pair of sparse parity-check matrices $H_X$ and $H_Z$ satisfying:
+A qLDPC code $\lbrack\lbrack n,k,d \rbrack\rbrack$ is defined by a pair of sparse parity-check matrices $H_X$ and $H_Z$ satisfying:
 
 $$H_X H_Z^T = 0 \pmod{2}$$
 
