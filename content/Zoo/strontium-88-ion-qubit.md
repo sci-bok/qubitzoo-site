@@ -20,7 +20,7 @@ influence_score: 0.78
 last_updated: '2026-04-04'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-manual-2026-04-04
+verified_by: scibok-deep-audit-2026-04-04
 ---
 
 ## Figure
@@ -33,7 +33,7 @@ The strontium-88 trapped-ion qubit encodes quantum information in the optical tr
 
 The absence of hyperfine structure is both the defining advantage and limitation of $^{88}\text{Sr}^+$. On the advantage side, the simple level structure eliminates complications from multiple ground-state sublevels, simplifying state preparation and readout. Doppler cooling uses the strong $5S_{1/2} \to 5P_{1/2}$ transition at 422 nm with repumping from $4D_{3/2}$ at 1092 nm and $4D_{5/2}$ at 1033 nm. Photoionization loading is efficient via a two-photon process: 461 nm excites neutral Sr atoms from $5s^2\,{}^1S_0$ to $5s5p\,{}^1P_1$, followed by 405 nm to reach the continuum. All primary wavelengths are in the visible or near-IR, avoiding the UV lasers required by $\text{Ca}^+$ (397 nm) and $\text{Yb}^+$ (369.5 nm).
 
-On the limitation side, without hyperfine clock states the qubit coherence is limited by the metastable state lifetime ($T_1 \approx 390$ ms) and magnetic field sensitivity (the Zeeman sublevels have first-order magnetic field dependence). This makes $^{88}\text{Sr}^+$ less suitable as a memory qubit compared to hyperfine species but well-suited as an interface qubit for photonic networking, where the 422 nm and 408 nm photons couple efficiently to optical fibers and integrated photonics.
+On the limitation side, without hyperfine clock states the qubit coherence is limited by the metastable state lifetime ($T_1 \approx 390$ ms) and magnetic field sensitivity (the Zeeman sublevels have first-order magnetic field dependence). This makes $^{88}\text{Sr}^+$ less suitable as a memory qubit compared to hyperfine species but well-suited as an interface qubit for photonic networking and integrated-photonics experiments, where its visible and near-UV transitions are accessible with mature laser and detector technology. Long-distance fiber networking would still generally require wavelength conversion.
 
 ## Hamiltonian
 

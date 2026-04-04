@@ -3,7 +3,7 @@ title: Cesium-133 Neutral Atom Qubit
 entry_type: qubit
 technology_family: Neutral Atom
 status: demonstrated
-figure_reviewed: false
+figure_reviewed: true
 first_proposed_year: 2000
 first_demonstrated_year: 2019
 keywords:
@@ -22,7 +22,7 @@ influence_score: 0.72
 last_updated: '2026-04-04'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-manual-2026-04-04
+verified_by: scibok-deep-audit-2026-04-04
 ---
 
 ## Figure

@@ -24,7 +24,7 @@ influence_score: 0.65
 last_updated: '2026-04-04'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-manual-2026-04-04
+verified_by: scibok-deep-audit-2026-04-04
 ---
 
 ## Figure
