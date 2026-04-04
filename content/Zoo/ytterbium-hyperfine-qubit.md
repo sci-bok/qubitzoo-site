@@ -123,3 +123,5 @@ Trapped-ion qubits require long coherence times and high-fidelity operations to 
 - [[coherence-time-hierarchy]] — context for coherence comparison
 - [[barium-137-ion-qubit]] — Ba-137 hyperfine qubit; Yb-171 serves as sympathetic coolant in Helios
 - [[calcium-43-ion-qubit]] — Ca-43 hyperfine qubit; alternative hyperfine species with microwave-driven gates
+- [[strontium-88-ion-qubit]] — Sr-88 optical qubit; no hyperfine structure, visible wavelengths
+- [[beryllium-9-ion-qubit]] — Be-9 hyperfine qubit; lightest ion, UV transitions

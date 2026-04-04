@@ -99,3 +99,4 @@ For clock-state encoding specifically, first-order magnetic sensitivity can be e
 - [[rydberg-neutral-atom-qubit]] — alkali Rydberg platform with complementary trade-offs
 - [[nuclear-spin-neutral-atom-qubit]] — closely related nuclear spin encoding approach
 - [[trapped-ion-qubit]] — alternative platform with similar clock-state philosophy
+- [[cesium-133-neutral-atom-qubit]] — alkali clock qubit with SI-second-defining transition

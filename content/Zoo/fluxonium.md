@@ -110,3 +110,5 @@ The transmon's achilles heel is its weak anharmonicity ($\sim -200\,\text{MHz}$)
 - [[cos2phi-qubit]] — protected qubit derived from fluxonium-family circuits
 - [[0-pi-qubit]] — protected qubit in the same superconducting circuit family
 - [[ferbo-qubit]] — light fluxonium with Andreev weak link; fermion-boson hybridization provides dual noise protection
+- [[bifluxon-qubit]] — fluxon-parity-protected qubit using superinductive shunt
+- [[quarton-coupler]] — quartic nonlinear coupler for ultrastrong dispersive interaction

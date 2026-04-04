@@ -97,3 +97,4 @@ The FerBo qubit is a **theoretical proposal only** as of April 2026. No experime
 - [[0-pi-qubit]] — dual-protected qubit using multiple bosonic modes; FerBo uses fermion-boson hybridization instead
 - [[cos2phi-qubit]] — another dual-protected superconducting circuit; requires more stringent parameters
 - [[gatemon]] — same nanowire weak link platform; different operating regime
+- [[bifluxon-qubit]] — related protected qubit design

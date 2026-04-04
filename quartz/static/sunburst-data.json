@@ -98,6 +98,14 @@
           "size": 1
         },
         {
+          "name": "Nuclear Magnetic Resonance (NMR) Qubit",
+          "slug": "Zoo/nuclear-magnetic-resonance-qubit",
+          "type": "qubit",
+          "status": "demonstrated",
+          "influence": 0.65,
+          "size": 1
+        },
+        {
           "name": "Quantum Gate",
           "slug": "Zoo/quantum-gate",
           "type": "concept",
@@ -169,6 +177,14 @@
           "type": "qubit",
           "status": "demonstrated",
           "influence": 0.69,
+          "size": 1
+        },
+        {
+          "name": "Cesium-133 Neutral Atom Qubit",
+          "slug": "Zoo/cesium-133-neutral-atom-qubit",
+          "type": "qubit",
+          "status": "demonstrated",
+          "influence": 0.72,
           "size": 1
         },
         {
@@ -412,6 +428,14 @@
           "size": 1
         },
         {
+          "name": "Bifluxon Qubit",
+          "slug": "Zoo/bifluxon-qubit",
+          "type": "qubit",
+          "status": "demonstrated",
+          "influence": 0.66,
+          "size": 1
+        },
+        {
           "name": "Binomial Code",
           "slug": "Zoo/binomial-code",
           "type": "encoding",
@@ -540,11 +564,27 @@
           "size": 1
         },
         {
+          "name": "Microwave Photonic Qubit",
+          "slug": "Zoo/microwave-photonic-qubit",
+          "type": "qubit",
+          "status": "demonstrated",
+          "influence": 0.68,
+          "size": 1
+        },
+        {
           "name": "Phase Qubit",
           "slug": "Zoo/phase-qubit",
           "type": "qubit",
           "status": "demonstrated",
           "influence": 0.65,
+          "size": 1
+        },
+        {
+          "name": "Quarton Coupler",
+          "slug": "Zoo/quarton-coupler",
+          "type": "technique",
+          "status": "proposed",
+          "influence": 0.62,
           "size": 1
         },
         {
@@ -616,6 +656,14 @@
           "size": 1
         },
         {
+          "name": "Beryllium-9 Trapped-Ion Qubit",
+          "slug": "Zoo/beryllium-9-ion-qubit",
+          "type": "qubit",
+          "status": "demonstrated",
+          "influence": 0.76,
+          "size": 1
+        },
+        {
           "name": "Calcium-43 Trapped-Ion Qubit",
           "slug": "Zoo/calcium-43-ion-qubit",
           "type": "qubit",
@@ -645,6 +693,14 @@
           "type": "infrastructure",
           "status": "demonstrated",
           "influence": 0.75,
+          "size": 1
+        },
+        {
+          "name": "Strontium-88 Trapped-Ion Qubit",
+          "slug": "Zoo/strontium-88-ion-qubit",
+          "type": "qubit",
+          "status": "demonstrated",
+          "influence": 0.78,
           "size": 1
         },
         {

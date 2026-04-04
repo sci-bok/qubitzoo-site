@@ -102,3 +102,4 @@ where $a_m$, $b$, $a_o$ are microwave, mechanical, and optical mode operators, a
 - [[dual-rail-photonic-qubit]] — Optical-frequency quantum information target
 - [[t-center-qubit]] — Silicon spin-photon interface with native telecom emission (alternative to transduction)
 - [[rare-earth-ion-qubit]] — Er³⁺ at telecom wavelength; native fiber compatibility without transduction
+- [[microwave-photonic-qubit]] — microwave flying qubit requiring transduction for long-distance links

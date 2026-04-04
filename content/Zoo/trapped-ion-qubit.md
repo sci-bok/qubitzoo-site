@@ -165,3 +165,5 @@ Trapped ions offer natural identical qubits (every $^{171}\text{Yb}^+$ ion is id
 - [[barium-137-ion-qubit]] — Ba-137 hyperfine qubit; Quantinuum Helios data qubit
 - [[calcium-43-ion-qubit]] — Ca-43 hyperfine qubit; holds all-time 1Q gate fidelity record
 - [[trapped-electron-qubit]] — proposed electron-spin analogue using Paul traps
+- [[strontium-88-ion-qubit]] — Sr-88 optical qubit; visible-wavelength transitions for integrated photonics
+- [[beryllium-9-ion-qubit]] — Be-9 hyperfine qubit; NIST workhorse, first CNOT gate (1995)

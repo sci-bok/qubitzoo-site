@@ -143,3 +143,4 @@ Gate infidelity $1 - F$ arises from several distinct physical mechanisms:
 - [[linear-optical-photonic-qubit]] — KLM-scheme photonic gates
 - [[exchange-only-qubit]] — all-exchange spin qubit gates
 - [[surface-code-logical-qubit]] — error correction enabled by high gate fidelities
+- [[nuclear-magnetic-resonance-qubit]] — NMR platform; first experimental quantum algorithm demonstrations

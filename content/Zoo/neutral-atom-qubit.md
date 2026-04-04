@@ -128,3 +128,4 @@ The blockade condition $C_6/R^6 \gg \hbar\Omega$ prevents simultaneous Rydberg e
 - [[surface-code-logical-qubit]] — Error correction demonstrated on neutral atom arrays
 - [[erasure-qubit]] — Erasure-error conversion demonstrated in neutral atom systems via shelving to detectable loss channels
 - [[trapped-ion-qubit]] — Closest competing atomic-physics platform; similar individual-atom control but electromagnetic trapping and Coulomb-mediated gates
+- [[cesium-133-neutral-atom-qubit]] — Cs-133 hyperfine qubit; second major alkali species for Rydberg arrays

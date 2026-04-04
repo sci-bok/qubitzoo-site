@@ -105,3 +105,4 @@ Previous proposals for coupling superconducting qubits used discrete LC circuits
 - [[cooper-pair-box-charge-qubit]] — original qubit in the Blais et al. proposal
 - [[fluxonium]] — also operates within circuit QED, requires auxiliary readout
 - [[qubit-readout]] — dispersive readout is the primary application of circuit QED
+- [[microwave-photonic-qubit]] — itinerant microwave photons for inter-module state transfer

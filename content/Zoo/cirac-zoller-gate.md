@@ -114,3 +114,4 @@ The Cirac-Zoller gate uses red sideband pulses for state mapping and a $2\pi$ pu
 - [[shuttling-ion-trap-qubit]] — scaling architecture for trapped-ion quantum computing
 - [[calcium-43-ion-qubit]] — Ca-43 hyperfine qubit; Oxford 1Q gate record holder
 - [[trapped-electron-qubit]] — proposed electron-spin analogue of trapped-ion gates
+- [[beryllium-9-ion-qubit]] — first experimental CNOT gate used Be-9 with Cirac-Zoller protocol
