@@ -3,7 +3,7 @@ title: Bosonic Qubit
 entry_type: qubit
 technology_family: Superconducting
 status: demonstrated
-figure_reviewed: false
+figure_reviewed: true
 first_proposed_year: 2001
 first_demonstrated_year: 2013
 keywords:
@@ -23,7 +23,7 @@ verified_by: scibok-deep-audit-2026-04-04
 
 ## Figure
 
-*(No dedicated figure — see individual encoding entries for specific schematics.)*
+![[bosonic-qubit-figure.png]]
 
 ## Description
 
