@@ -19,10 +19,10 @@ keywords:
 - Raman gates
 - first CNOT gate
 influence_score: 0.76
-last_updated: '2026-04-04'
+last_updated: '2026-04-09'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-deep-audit-2026-04-04
+verified_by: scibok-deep-audit-2026-04-09
 ---
 
 ## Figure
@@ -39,23 +39,23 @@ As the lightest ion species used for quantum computing ($m = 9$ u), $^9\text{Be}
 
 ## Hamiltonian
 
-The ground-state hyperfine Hamiltonian for $^9\text{Be}^+$ ($I = 3/2$, $J = 1/2$):
+The ground-state Hamiltonian for $^9\text{Be}^+$ combines hyperfine and Zeeman terms:
 
-$$H_{\text{hfs}} = A_{\text{hfs}} \, \mathbf{I} \cdot \mathbf{J}$$
+$$H = A_{\text{hfs}} \, \mathbf{I} \cdot \mathbf{J} + \mu_B g_J J_z B - \mu_N g_I I_z B$$
 
-where $A_{\text{hfs}}$ is the magnetic dipole hyperfine constant. The hyperfine splitting is:
+where $I = 3/2$, $J = 1/2$, $A_{\text{hfs}}$ is the magnetic-dipole hyperfine constant, and $B$ is the applied magnetic field. At zero field the $2S_{1/2}$ ground manifold splits into $F = 2$ and $F = 1$ hyperfine levels with
 
-$$\Delta E_{\text{hfs}} = h \times 1.2503\,\text{GHz}$$
+$$\Delta E_{\text{hfs}} = h \times 1.2503\,\text{GHz}.$$
 
-In an external magnetic field, the clock-state transition ($|F=2, m_F=0\rangle \leftrightarrow |F=1, m_F=0\rangle$) shifts only at second order:
+The qubit is normally encoded in the low-field clock transition $|F=2, m_F=0\rangle \leftrightarrow |F=1, m_F=0\rangle$, whose first-order Zeeman shift vanishes. Near that operating point,
 
-$$\omega_{01}(B) = \omega_{01}(0) + \beta B^2$$
+$$\omega_{01}(B) = \omega_{01}(0) + \beta B^2 + \mathcal{O}(B^4),$$
 
-providing excellent field insensitivity. Stimulated Raman gates use two beams detuned from the $2P$ excited states, with effective Hamiltonian:
+which is why $^9\text{Be}^+$ can support memory coherence beyond 1 s. Stimulated Raman gates use two 313 nm beams detuned from the $2P_{1/2}$ and/or $2P_{3/2}$ manifolds, giving the effective interaction
 
-$$H_{\text{Raman}} = \frac{\hbar \Omega_{\text{eff}}}{2} \sigma_+ e^{i(\Delta k \cdot x - \delta t)} + \text{h.c.}$$
+$$H_{\text{Raman}} = \frac{\hbar \Omega_{\text{eff}}}{2} \, \sigma_+ e^{i(\Delta k \cdot x - \delta t)} + \text{h.c.},$$
 
-where $\Omega_{\text{eff}}$ is the two-photon Rabi frequency, $\Delta k$ is the wavevector difference, and $\delta$ is the two-photon detuning.
+where $\Omega_{\text{eff}}$ is the two-photon Rabi frequency, $\Delta k$ is the Raman wave-vector difference, and $\delta$ is the two-photon detuning from the qubit transition or a selected motional sideband.
 
 ## Motivation
 
@@ -83,15 +83,14 @@ $^9\text{Be}^+$ was the workhorse ion of the NIST Ion Storage Group (Wineland, M
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| $T_1$ | >10,000 s | Hyperfine ground states; no radiative decay | — |
 | $T_2$ | >1 s | Clock-state encoding, magnetic-field insensitive | [Gaebler et al. 2016](https://doi.org/10.1103/PhysRevLett.117.060505) |
-| Hyperfine splitting | 1.2503 GHz | Clock transition, first-order field insensitive | — |
+| Hyperfine splitting | 1.2503 GHz | $|F=2,m_F=0\rangle \leftrightarrow |F=1,m_F=0\rangle$ clock transition | [Monroe et al. 1995](https://doi.org/10.1103/PhysRevLett.75.4714) |
 | 1Q gate fidelity | 99.9962% | Stimulated Raman, randomized benchmarking | [Gaebler et al. 2016](https://doi.org/10.1103/PhysRevLett.117.060505) |
 | 2Q gate fidelity | 99.92% | Mølmer-Sørensen gate | [Gaebler et al. 2016](https://doi.org/10.1103/PhysRevLett.117.060505) |
-| Qubit drive | 313 nm | Stimulated Raman transitions via $2P$ states | — |
-| Ion mass | 9 u | Lightest ion used for QC; highest trap frequency | — |
+| Qubit-drive wavelength | 313 nm | Stimulated Raman transitions via the $2P$ manifolds | [Gaebler et al. 2016](https://doi.org/10.1103/PhysRevLett.117.060505) |
+| Readout / cooling wavelength | 313 nm | Resonant fluorescence on the cycling transition | [Bruzewicz et al. 2019](https://doi.org/10.1063/1.5088164) |
+| Ion mass | 9 u | Lightest ion used for QC; high secular frequencies for a given trap potential | — |
 | Nuclear spin | $I = 3/2$ | 8 ground-state sublevels ($F=1$: 3, $F=2$: 5) | — |
-| Operating temperature | Room temp (trap) | Ions at ~mK | — |
 
 ## Scaling Considerations
 
@@ -123,3 +122,4 @@ $^9\text{Be}^+$ was the workhorse ion of the NIST Ion Storage Group (Wineland, M
 - [[trapped-ion-qubit]] — parent platform
 - [[cirac-zoller-gate]] — gate protocol demonstrated in the first Be+ CNOT
 - [[molmer-sorenson-gate]] — entangling gate used in high-fidelity demonstrations
+- [[ytterbium-hyperfine-qubit]] — heavier hyperfine-ion platform used for larger contemporary systems
