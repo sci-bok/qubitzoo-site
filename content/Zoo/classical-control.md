@@ -3,7 +3,7 @@ title: Classical Control Hardware
 entry_type: infrastructure
 technology_family: Cross-Platform
 status: demonstrated
-figure_reviewed: false
+figure_reviewed: true
 first_proposed_year: 2000
 first_demonstrated_year: 2000
 keywords:
@@ -18,10 +18,10 @@ keywords:
   - synchronization
   - room-temperature electronics
 influence_score: 0.65
-last_updated: '2026-03-21'
+last_updated: '2026-04-13'
 generated_by: scibok-curation
 extracted_by: manual
-verified_by: scibok-manual-2026-03-21
+verified_by: scibok-manual-2026-04-13
 ---
 
 ## Figure

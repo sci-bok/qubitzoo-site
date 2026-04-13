@@ -7,7 +7,7 @@ tags:
   - bosonic-codes
   - cat-code
   - GKP-code
-  - binomial-code
+  - binomial-codes
   - quantum-error-correction
   - cavity-QED
   - oscillator
@@ -27,7 +27,7 @@ Bosonic quantum error correction encodes a logical qubit in the infinite-dimensi
 
 - [[cat-codes]] — coherent-state superposition encoding with exponentially biased noise ($X$ suppressed)
 - [[gkp-codes]] — grid-state encoding correcting arbitrary displacement errors; approaches channel capacity
-- [[binomial-codes]] — Fock-state encoding with exact protection against $N$ photon loss events
+- [[binomial-codess]] — Fock-state encoding with exact protection against $N$ photon loss events
 - [[kerr-cat-qubit]] — autonomously stabilized cat code via two-photon drive and Kerr nonlinearity
 - [[bosonic-qubit]] — the general concept of encoding qubits in oscillator modes
 - [[circuit-qed]] — the hardware platform (3D cavities + transmon ancillae) for all bosonic codes

@@ -3,7 +3,7 @@ title: FerBo Qubit
 entry_type: qubit
 technology_family: Super-Semi
 status: proposed
-figure_reviewed: false
+figure_reviewed: true
 first_proposed_year: 2026
 keywords:
 - ferbo
@@ -16,7 +16,7 @@ keywords:
 - nanowire
 - hardware-level protection
 influence_score: 0.55
-last_updated: '2026-04-03'
+last_updated: '2026-04-13'
 generated_by: scibok-curation
 verified_by: scibok-deep-audit-2026-04-03
 ---
