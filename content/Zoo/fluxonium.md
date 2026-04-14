@@ -15,10 +15,10 @@ keywords:
 - heavy fluxonium
 - disjoint support
 influence_score: 0.90
-last_updated: '2026-03-26'
+last_updated: '2026-04-14'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-editorial-audit-2026-03-26
+verified_by: scibok-audit-2026-04-14
 ---
 
 ## Figure
@@ -32,6 +32,8 @@ The fluxonium qubit, introduced by Manucharyan et al. (2009), consists of a smal
 Unlike the transmon (which operates in the weakly anharmonic oscillator regime), the fluxonium can have enormous anharmonicity — the $|0\rangle \to |1\rangle$ transition can be as low as $100{-}1000\,\text{MHz}$ while higher transitions are at $5{-}8\,\text{GHz}$. This spectral isolation makes leakage errors fundamentally smaller. The tradeoff is that the low transition frequency makes direct dispersive readout more challenging, typically requiring auxiliary readout schemes or coupling to a transmon for measurement.
 
 In the "heavy fluxonium" regime ($E_C/h \sim 0.5{-}1\,\text{GHz}$, $E_J/E_C \sim 3{-}8$), the wavefunctions of $|0\rangle$ and $|1\rangle$ have disjoint support in phase space: $|0\rangle$ is localized in one well of the cosine potential and $|1\rangle$ in the other. This disjoint support makes the qubit insensitive to virtually all local noise operators, enabling $T_1$ times exceeding $1\,\text{ms}$.
+
+Recent variants broaden the design space. Integer fluxonium operates at zero external flux while retaining fluxonium-style protection at GHz qubit frequencies, easing readout and control relative to the lowest-frequency heavy-fluxonium devices. In parallel, wafer-scale fabrication work has shown that fluxonium coherence is no longer confined to one-off hero devices, which matters if the platform is to compete as a scalable multi-qubit architecture rather than only as a protected-memory demonstration.
 
 ## Hamiltonian
 
@@ -68,16 +70,24 @@ The transmon's achilles heel is its weak anharmonicity ($\sim -200\,\text{MHz}$)
 - Two-qubit fluxonium gates demonstrated with a transmon coupler.
 - Single-qubit gate fidelities $> 99.99\%$ and two-qubit gate fidelities $> 99.7\%$.
 
+**Integer fluxonium — Mencia et al. (2024):**
+- Demonstrated an integer-fluxonium variant with GHz-scale qubit frequency at zero external flux.
+- Reported $Q \approx 10^6$ and Ramsey coherence beyond 1 ms, showing that fluxonium-style protection need not be tied to the very low-frequency heavy-fluxonium limit.
+
+**Wafer-scale coherence — Wang et al. (2025):**
+- Reported high-coherence fluxonium qubits manufactured with a wafer-scale-uniformity process.
+- Demonstrated that $T_1 > 1$ ms can be achieved in a fabrication flow aimed at reproducibility rather than only single-device optimization.
+
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| $T_1$ | 100 μs – 1.5 ms | Heavy fluxonium at half-flux sweet spot | [Somoroff et al. 2023](https://doi.org/10.1103/PhysRevLett.130.267001) |
+| $T_1$ | 100 μs – 1.5 ms | Heavy-fluxonium and wafer-scale devices now both exceed 1 ms | [Wang et al. 2025](https://doi.org/10.1103/PhysRevApplied.23.044064) |
 | $T_2$ (echo) | 100–500 μs | Echo at sweet spot | [Somoroff et al. 2023](https://doi.org/10.1103/PhysRevLett.130.267001) |
 | Anharmonicity | 3–8 GHz | $\omega_{12} - \omega_{01}$; much larger than transmon | [Manucharyan et al. 2009](https://doi.org/10.1126/science.1175552) |
 | Qubit frequency $\omega_{01}/2\pi$ | 100 MHz – 1 GHz | Much lower than transmon | — |
 | $E_J/E_C$ | 3–8 | Heavy fluxonium regime | — |
-| 1Q gate fidelity | 99.97–99.998% | Microwave or charge-parity-protected gates | [Ding et al. 2023](https://doi.org/10.1103/PhysRevX.13.031035) |
+| 1Q gate fidelity | >99.99% | Microwave single-qubit control in coupled fluxonium circuits | [Ding et al. 2023](https://doi.org/10.1103/PhysRevX.13.031035) |
 | 2Q gate fidelity | 99.2–99.92% | Capacitive or inductive coupling; CZ gate | [Ding et al. 2023](https://doi.org/10.1103/PhysRevX.13.031035) |
 | Gate time (1Q) | 20–100 ns | Frequency-dependent | — |
 | Operating temperature | 10–20 mK | Dilution refrigerator | — |
@@ -91,6 +101,9 @@ The transmon's achilles heel is its weak anharmonicity ($\sim -200\,\text{MHz}$)
 - L. B. Nguyen et al., "High-Coherence Fluxonium Qubit," [Phys. Rev. X 9, 041041 (2019)](https://doi.org/10.1103/PhysRevX.9.041041) · [arXiv:1810.11006](https://arxiv.org/abs/1810.11006)
 - A. Somoroff et al., "Millisecond Coherence in a Superconducting Qubit," [Phys. Rev. Lett. 130, 267001 (2023)](https://doi.org/10.1103/PhysRevLett.130.267001) · [arXiv:2103.08578](https://arxiv.org/abs/2103.08578)
 - L. Ding et al., "High-Fidelity, Frequency-Flexible Two-Qubit Fluxonium Gates with a Transmon Coupler," [Phys. Rev. X 13, 031035 (2023)](https://doi.org/10.1103/PhysRevX.13.031035) · [arXiv:2304.06087](https://arxiv.org/abs/2304.06087)
+- R. A. Mencia et al., "Integer Fluxonium Qubit," [PRX Quantum 5, 040318 (2024)](https://doi.org/10.1103/PRXQuantum.5.040318)
+- F. Wang et al., "High-coherence fluxonium qubits manufactured with a wafer-scale-uniformity process," [Phys. Rev. Applied 23, 044064 (2025)](https://doi.org/10.1103/PhysRevApplied.23.044064)
+- G. Bothara et al., "High-fidelity QND readout and measurement back-action in a tantalum-based high-coherence fluxonium qubit," [Appl. Phys. Lett. 126, 024003 (2025)](https://doi.org/10.1063/5.0255892)
 
 ## Linked Papers
 
@@ -98,6 +111,9 @@ The transmon's achilles heel is its weak anharmonicity ($\sim -200\,\text{MHz}$)
 - [[nguyen-2019-high-coherence-fluxonium]]
 - [[somoroff-2023-millisecond-coherence-superconducting]]
 - [[ding-2023-high-fidelity-frequency]]
+- [[mencia-2024-integer-fluxonium-qubit]]
+- [[wang-2025-high-coherence-fluxonium-wafer-scale]]
+- [[bothara-2025-high-fidelity-qnd-readout]]
 
 ## Related Entries
 

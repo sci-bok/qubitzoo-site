@@ -16,10 +16,10 @@ keywords:
 - circuit qed
 - dispersive readout
 influence_score: 0.95
-last_updated: '2026-03-24'
+last_updated: '2026-04-14'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-audit-2026-03-24
+verified_by: scibok-audit-2026-04-14
 ---
 
 ## Figure
@@ -58,6 +58,8 @@ $$E_m \approx -E_J + \sqrt{8E_JE_C}\left(m + \frac{1}{2}\right) - \frac{E_C}{12}
 
 The Cooper pair box suffered from extreme sensitivity to $1/f$ charge noise, limiting $T_2$ to nanoseconds away from the charge degeneracy point. Active feedback to maintain $n_g = 1/2$ was impractical at scale. The transmon eliminates this problem by operating in a regime where the transition frequency is essentially flat as a function of $n_g$, enabling "set and forget" operation with coherence limited by other mechanisms (dielectric loss, quasiparticles, radiation).
 
+Just as importantly, the transmon preserves compatibility with lithographic microwave control, dispersive readout, and multi-qubit coupling inside circuit QED. That combination, rather than coherence alone, is why it became the workhorse superconducting qubit: the device is forgiving enough to fabricate in large numbers, simple enough to control with microwave pulses, and flexible enough to support both fixed-frequency and flux-tunable processor architectures.
+
 ## Experimental Status
 
 **Original proposal and demonstration — Koch et al. (2007):**
@@ -75,9 +77,9 @@ The Cooper pair box suffered from extreme sensitivity to $1/f$ charge noise, lim
 - **Google Willow (2024)**: 105-qubit processor, below-threshold surface code error correction, 2Q CZ fidelity 99.7–99.85%
 - **Tuokkola et al. (2025)**: Aalto University, first transmon to break the millisecond coherence barrier — $T_{2,\text{echo}} = 1.06\,\text{ms}$ (record), median $T_1 = 502\,\mu\text{s}$, quality factor $\sim 8 \times 10^6$; planar geometry fabricated in academic cleanrooms
 - **Bland et al. (2025)**: Princeton, tantalum-on-high-resistivity-silicon 2D transmon — $T_1$ up to $1.68\,\text{ms}$, time-averaged $Q$ up to $1.5 \times 10^7$; 1Q gate fidelity 99.994%; mean $T_1 = 0.45 \pm 0.18\,\text{ms}$ across 45 qubits on 9 chips
-- **IQM (2025)**: Record 2Q CZ fidelity of 99.95% (max) / 99.93% (40-hour averaged), 1Q fidelity >99.98%, simultaneous readout fidelity 99.94%; achieved via the PALEA leakage reduction protocol
+- **Company-reported gate optimization (2025)**: IQM reported CZ fidelities up to 99.95% and 40-hour averaged 99.93% using the PALEA leakage-reduction protocol, but these values were disclosed in a company technical post rather than a peer-reviewed paper and are therefore treated here as provisional rather than archival state of the art.
 
-State-of-the-art (as of late 2025): $T_1$ up to $1.68\,\text{ms}$ (planar, tantalum on silicon), $T_{2,\text{echo}}$ up to $1.06\,\text{ms}$; 1Q gate fidelity up to 99.9926% (Z. Li et al. 2023); 2Q CZ fidelity up to 99.95% (IQM 2025).
+State-of-the-art (peer-reviewed, as of late 2025): $T_1$ up to $1.68\,\text{ms}$ (planar, tantalum on silicon), $T_{2,\text{echo}}$ up to $1.06\,\text{ms}$, 1Q gate fidelity up to 99.9926% (Z. Li et al. 2023), and large-scale processor 2Q CZ fidelities up to about 99.85% in peer-reviewed surface-code hardware (Google Willow 2024).
 
 ## Key Metrics
 
@@ -88,7 +90,7 @@ State-of-the-art (as of late 2025): $T_1$ up to $1.68\,\text{ms}$ (planar, tanta
 | Anharmonicity $\alpha/2\pi$ | −200 to −350 MHz | $\approx -E_C/\hbar$ | [Koch et al. 2007](https://doi.org/10.1103/PhysRevA.76.042319) |
 | $E_J/E_C$ | 20–100 | Typical operating regime | [Koch et al. 2007](https://doi.org/10.1103/PhysRevA.76.042319) |
 | 1Q gate fidelity | 99.9–99.99% | RB; SOTA 99.9926% (error 7.42 × 10⁻⁵) | [Z. Li et al. 2023](https://doi.org/10.1038/s41534-023-00781-x) |
-| 2Q gate fidelity (CZ/CR) | 99.0–99.95% | Tunable coupler or cross-resonance; IQM SOTA 99.95% (max), 99.93% (40-hr avg) | [IQM 2025](https://meetiqm.com/blog/quantum-fidelity-milestone/) |
+| 2Q gate fidelity (CZ/CR) | 99.0–99.85% | Tunable coupler or cross-resonance; peer-reviewed large-scale CZ values reach ~99.85% | [Google Quantum AI 2024](https://doi.org/10.1038/s41586-024-08449-y) |
 | Readout fidelity | 97–99.9% | Dispersive, with Purcell filter + JPA | [Arute et al. 2019](https://doi.org/10.1038/s41586-019-1666-5) |
 | Gate time (1Q) | 20–50 ns | DRAG pulse | — |
 | Gate time (2Q) | 100–400 ns | Depends on gate scheme | — |
@@ -109,6 +111,7 @@ State-of-the-art (as of late 2025): $T_1$ up to $1.68\,\text{ms}$ (planar, tanta
 
 ### Original proposal
 - J. Koch et al., "Charge-insensitive qubit design derived from the Cooper pair box," [PRA 76, 042319 (2007)](https://doi.org/10.1103/PhysRevA.76.042319) — [arXiv:cond-mat/0703002](https://arxiv.org/abs/cond-mat/0703002)
+- A. Blais et al., "Cavity quantum electrodynamics for superconducting electrical circuits: An architecture for quantum computation," [PRA 69, 062320 (2004)](https://doi.org/10.1103/PhysRevA.69.062320) — [arXiv:cond-mat/0402216](https://arxiv.org/abs/cond-mat/0402216) — circuit QED architecture that made dispersive transmon readout and coupling practical
 
 ### Key experimental milestones
 - J. A. Schreier et al., "Suppressing charge noise decoherence in superconducting charge qubits," [PRB 77, 180502(R) (2008)](https://doi.org/10.1103/PhysRevB.77.180502) — first experimental transmon
@@ -126,6 +129,7 @@ State-of-the-art (as of late 2025): $T_1$ up to $1.68\,\text{ms}$ (planar, tanta
 
 ## Linked Papers
 - [[koch-2007-transmon]]
+- [[blais-2004-circuit-qed]]
 
 ## Related Entries
 - [[cooper-pair-box-charge-qubit]] — ancestor (charge-sensitive limit)

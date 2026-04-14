@@ -13,10 +13,10 @@ keywords:
   - harmonic oscillator
   - quantum error correction
 influence_score: 0.80
-last_updated: '2026-04-04'
+last_updated: '2026-04-14'
 generated_by: scibok-curation
 extracted_by: claude-code
-verified_by: scibok-deep-audit-2026-04-04
+verified_by: scibok-audit-2026-04-14
 ---
 
 > **Note:** This is a **category entry** covering the bosonic qubit paradigm. Individual bosonic encodings have their own detailed entries: [[cat-codes]], [[binomial-codes]], [[gkp-codes]].
@@ -66,6 +66,9 @@ where $\chi$ is the dispersive shift. This coupling enables photon-number-resolv
 **Cat codes — Ofek et al. (2016):**
 - First demonstration of beyond-break-even QEC using a cat-code-like encoding in a 3D superconducting cavity.
 
+**Long-lived cavity memory — Reagor et al. (2016):**
+- Demonstrated millisecond-scale coherence in 3D circuit-QED cavities, establishing the hardware regime that made bosonic encoding practical.
+
 **Binomial codes — Heeres et al. (2017):**
 - Universal gate set implemented on a binomial-code logical qubit in an oscillator.
 
@@ -92,7 +95,7 @@ where $\chi$ is the dispersive shift. This coupling enables photon-number-resolv
 | QEC gain | $G = 2.27 \pm 0.07$ | GKP code, real-time QEC | [Sivak et al. 2023](https://doi.org/10.1038/s41586-023-05782-6) |
 | QEC gain (qudit) | $1.87 \pm 0.03$ (ququart) | GKP qudit, beyond break-even | [Google/Yale 2025](https://doi.org/10.1038/s41586-025-08899-y) |
 | Logical gate fidelity | >99% | For encoded single-qubit operations | [Campagne-Ibarcq et al. 2020](https://doi.org/10.1038/s41586-020-2603-3) |
-| Ancilla $T_1$ | 50–300 μs | Transmon ancilla | [Place et al. 2021](https://doi.org/10.1038/s41467-021-22030-5) |
+| Ancilla $T_1$ | 50–300 μs | Typical transmon ancilla used to control and read out the bosonic mode | [Joshi et al. 2021](https://doi.org/10.1088/2058-9565/abe989) |
 | Operating temperature | 10–20 mK | Dilution refrigerator | — |
 
 ## Scaling Considerations
@@ -110,17 +113,20 @@ where $\chi$ is the dispersive shift. This coupling enables photon-number-resolv
 - A. Joshi, K. Noh, and Y. Y. Gao, "Quantum information processing with bosonic qubits in circuit QED," [Quantum Sci. Technol. **6**, 033001 (2021)](https://doi.org/10.1088/2058-9565/abe989), [arXiv:2008.13471](https://arxiv.org/abs/2008.13471)
 
 ### Key experimental milestones
+- M. Reagor et al., "Quantum memory with millisecond coherence in circuit QED," [Phys. Rev. B 94, 014506 (2016)](https://doi.org/10.1103/PhysRevB.94.014506)
 - N. Ofek et al., "Extending the lifetime of a quantum bit with error correction in superconducting circuits," [Nature **536**, 441 (2016)](https://doi.org/10.1038/nature18949), [arXiv:1602.04768](https://arxiv.org/abs/1602.04768)
 - P. Campagne-Ibarcq et al., "Quantum error correction of a qubit encoded in grid states of an oscillator," [Nature **584**, 368 (2020)](https://doi.org/10.1038/s41586-020-2603-3), [arXiv:1907.12487](https://arxiv.org/abs/1907.12487)
 - V. V. Sivak et al., "Real-time quantum error correction beyond break-even," [Nature **616**, 50 (2023)](https://doi.org/10.1038/s41586-023-05782-6), [arXiv:2211.09116](https://arxiv.org/abs/2211.09116)
-- Google Quantum AI & Yale, "Quantum error correction of qudits beyond break-even," [Nature **641**, 612 (2025)](https://doi.org/10.1038/s41586-025-08899-y)
+- B. L. Brock et al., "Quantum error correction of qudits beyond break-even," [Nature **641**, 612 (2025)](https://doi.org/10.1038/s41586-025-08899-y)
 
 ## Linked Papers
 
 - [[ofek-2016-extending-lifetime-bit]]
+- [[reagor-2016-quantum-memory-millisecond-coherence]]
 - [[campagneibarcq-2020-error-correction-qubit]]
 - [[joshi-2021-information-processing-bosonic]]
 - [[sivak-2023-real-time-error]]
+- [[brock-2025-quantum-error-correction-qudits-beyond-break-even]]
 - [[copetudo-2026-a-direct-controlled-phase-gate]]
 
 ## Related Entries

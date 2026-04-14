@@ -91,4 +91,5 @@ The surface code is currently the dominant QEC architecture for superconducting 
 - [[color-code-logical-qubit]] — alternative topological code with transversal Clifford gates
 - [[transmon]] — dominant physical qubit for superconducting surface code implementations
 - [[trapped-ion-qubit]] — alternative physical platform for surface code QEC
+- [[neutral-atom-qubit]] — reconfigurable atom arrays have already demonstrated logical-qubit operations and are emerging as a surface-code hardware platform
 - [[erasure-qubit]] — erasure conversion dramatically increases the effective code threshold

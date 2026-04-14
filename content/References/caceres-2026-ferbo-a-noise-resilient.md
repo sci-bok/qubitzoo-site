@@ -17,7 +17,7 @@ arxiv_id: '2604.01145'
 language: en
 date_ingested: '2026-04-02'
 verification_status: verified
-influence_score: 0.68
+influence_score: 0.55
 novelty_flag: incremental
 extracted_by: claude-code
 verified_by: codex
@@ -39,7 +39,6 @@ We propose a novel superconducting quantum circuit that should be robust against
 - Operates at zero external flux (φ_ext = 0), eliminating the need for precision flux biasing
 - First dual-protected qubit design using a single bosonic mode + fermionic Andreev degree of freedom (vs. multiple bosonic modes in 0-π, cos(2φ), bifluxon)
 - Proposed implementation: InAs/Al nanowire weak link + Josephson junction array superinductance
-
 
 ## Links
 - **arXiv:** [2604.01145](https://arxiv.org/abs/2604.01145)

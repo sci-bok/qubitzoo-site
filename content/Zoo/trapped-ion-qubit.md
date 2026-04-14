@@ -16,10 +16,10 @@ keywords:
 - sympathetic cooling
 - shuttling
 influence_score: 0.92
-last_updated: '2026-03-25'
+last_updated: '2026-04-14'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-audit-2026-03-25
+verified_by: scibok-audit-2026-04-14
 ---
 
 ## Figure
@@ -145,6 +145,7 @@ Trapped ions offer natural identical qubits (every $^{171}\text{Yb}^+$ ion is id
 ## Linked Papers
 
 - [[cirac-zoller-1995-trapped-ion-gate]]
+- [[monroe-1995-demonstration-fundamental-logic]]
 - [[ballance-2016-ion-gate-fidelity]]
 - [[harty-2014-high-fidelity-preparation]]
 - [[myerson-2008-high-fidelity-readout]]
@@ -153,7 +154,9 @@ Trapped ions offer natural identical qubits (every $^{171}\text{Yb}^+$ ion is id
 - [[sorensen-1999-ms-gate]]
 - [[kielpinski-2002-shuttling]]
 - [[wang-2017-single-qubit-quantum-memory]]
+- [[wang-2021-single-ion-qubit]]
 - [[smith-2024-single-qubit-gate-errors]]
+- [[smith-2025-single-qubit-gates-10-7]]
 
 ## Related Entries
 

@@ -16,9 +16,9 @@ keywords:
 - nanowire
 - hardware-level protection
 influence_score: 0.55
-last_updated: '2026-04-13'
+last_updated: '2026-04-14'
 generated_by: scibok-curation
-verified_by: scibok-deep-audit-2026-04-03
+verified_by: scibok-audit-2026-04-14
 ---
 
 ## Figure

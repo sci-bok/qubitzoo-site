@@ -16,10 +16,10 @@ keywords:
 - germanium
 - single electron
 influence_score: 0.88
-last_updated: '2026-03-21'
+last_updated: '2026-04-14'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-manual-2026-03-21
+verified_by: scibok-audit-2026-04-14
 ---
 
 ## Figure
@@ -33,6 +33,8 @@ The semiconductor spin qubit, proposed by Loss and DiVincenzo in 1998, encodes q
 Single-qubit gates are performed via electron spin resonance (ESR) — applying an oscillating magnetic field at the Larmor frequency — or, more commonly in modern implementations, via **electric-dipole spin resonance (EDSR)**, which uses an oscillating electric field combined with spin-orbit coupling or a micromagnet field gradient to drive spin rotations electrically. Electric driving is strongly preferred because it can be delivered through existing gate electrodes and is far easier to localize to individual qubits.
 
 Two-qubit gates exploit the **Heisenberg exchange interaction** $J(t)$ between neighboring dots, controlled by the tunnel barrier gate voltage. A $\sqrt{\text{SWAP}}$ gate — the exchange interaction applied for a calibrated duration — is a universal two-qubit entangling gate.
+
+This entry is the umbrella for the Loss-DiVincenzo single-spin paradigm across semiconductor materials. The more specific [[silicon-spin-qubit]] entry covers the silicon-only implementation details that dominate current industrial roadmaps.
 
 The major materials platforms are:
 - **Si/SiGe heterostructures**: lower spin-orbit coupling, longer $T_2$, isotopic purification ($^{28}\text{Si}$) removes nuclear spin noise.
@@ -110,12 +112,6 @@ Semiconductor spin qubits promise integration with existing CMOS fabrication inf
 - Cryogenic CMOS control electronics co-integrated on-chip is an active research frontier
 - Hot-qubit operation above 1 K would dramatically reduce cooling requirements
 
-## Extracted Figures
-
-![[spin-qubit-paper-fig-1.png]]
-
-![[spin-qubit-paper-fig-2.png]]
-
 ## References
 
 ### Original proposal
@@ -138,10 +134,12 @@ Semiconductor spin qubits promise integration with existing CMOS fabrication inf
 ## Linked Papers
 
 - [[loss-divincenzo-1998-quantum-dots]]
+- [[xue-2022-logic-spin-qubits]]
 
 ## Related Entries
 
 - [[loss-divincenzo-qubit]] — detailed entry on the original proposal
+- [[silicon-spin-qubit]] — silicon-specific implementation entry; use that page for foundry and isotopic-purification details
 - [[singlet-triplet-qubit]] — two-electron variant using singlet-triplet encoding
 - [[exchange-only-qubit]] — three-electron all-exchange variant
 - [[aeon-qubit]] — always-on exchange-only sweet-spot variant
