@@ -103,4 +103,3 @@ Photonic quantum computing offers room-temperature operation, high clock speeds,
 - [[time-bin-photonic-qubit]] — alternative photonic qubit compatible with FBQC
 - [[surface-code-logical-qubit]] — error correction code used in FBQC
 - [[color-code-logical-qubit]] — alternative topological code
-- [[continuous-variable-photonic-qubit]] — alternative photonic approach using squeezed states

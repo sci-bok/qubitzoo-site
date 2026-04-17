@@ -162,4 +162,3 @@ For two cavities coupled by a transmon ancilla, the beamsplitter interaction in 
 - [[gatemon]] — natural super-semi variant for CQB
 - [[singlet-triplet-qubit]] — semiconductor analog (formally identical Hamiltonian)
 - [[circuit-qed]] — architecture for cavity dual-rail
-- [[microwave-photonic-qubit]] — single-rail microwave photon encoding

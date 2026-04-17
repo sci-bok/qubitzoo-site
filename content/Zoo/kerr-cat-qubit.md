@@ -115,4 +115,3 @@ Standard bosonic codes (GKP, binomial) require complex syndrome extraction. The 
 - [[transmon]] — provides the Kerr nonlinearity in some implementations
 - [[gkp-codes]] — alternative bosonic code with different error correction strategy
 - [[erasure-qubit]] — complementary approach to reducing QEC overhead via error conversion
-- [[quarton-coupler]] — purely quartic coupler engineering strong nonlinear interactions

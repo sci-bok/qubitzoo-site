@@ -103,4 +103,3 @@ at $\omega_0 \approx 2\pi \times 226$ THz (1326 nm).
 - [[siv-color-center-qubit]] — Diamond SiV/SnV; excellent optical properties but not telecom-native
 - [[silicon-spin-qubit]] — Silicon spin qubit cousin (no photonic interface)
 - [[dual-rail-photonic-qubit]] — Photonic encoding that interfaces with T centers
-- [[rare-earth-ion-qubit]] — rare-earth ions (Er³⁺) as alternative telecom-wavelength solid-state qubit

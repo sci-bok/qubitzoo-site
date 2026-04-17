@@ -97,4 +97,3 @@ which modifies the anharmonicity and energy-level structure compared to a standa
 - [[transmon]] — parent qubit architecture; gatemon replaces the tunnel junction
 - [[gatemonium]] — related semiconductor-superconductor hybrid qubit
 - [[andreev-spin-qubit]] — same material platform, spin degree of freedom
-- [[ferbo-qubit]] — uses same nanowire weak link platform in high-impedance regime for dual noise protection

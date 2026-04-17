@@ -111,5 +111,4 @@ Qubit states are typically the spin-up and spin-down states of the lower orbital
 
 - [[t-center-qubit]] — Silicon-based spin-photon interface with native telecom emission
 - [[nv-center-qubit]] — Nitrogen-vacancy center; more mature but worse optical properties
-- [[rare-earth-ion-qubit]] — rare-earth ions in crystals; alternative solid-state spin-photon interface
 - [[dual-rail-photonic-qubit]] — Photonic encoding for quantum networking

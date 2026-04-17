@@ -14,10 +14,10 @@ keywords:
 - alkali
 - Rydberg blockade
 influence_score: 0.92
-last_updated: '2026-04-14'
+last_updated: '2026-04-01'
 generated_by: scibok-curation
 extracted_by: manual
-verified_by: scibok-audit-2026-04-14
+verified_by: scibok-audit-2026-04-01
 ---
 
 ## Figure
@@ -72,20 +72,12 @@ The blockade condition $C_6/R^6 \gg \hbar\Omega$ prevents simultaneous Rydberg e
 **1000+ atom arrays — Pause et al. (2024):**
 - 1225-atom ⁸⁷Rb tweezer array with >97% loading efficiency
 
-**Benchmarking-driven 1Q control — Rozanov et al. (2025):**
-- Direct randomized benchmarking and gate-set tomography on a 25-qubit neutral-atom processor
-- Average single-qubit gate fidelity of 99.963% under global control
-
-**Sustained deep-circuit operation — Lin et al. (2026):**
-- Raw two-qubit controlled-gate fidelity of 99.60(1)% improved to 99.81(1)% with non-destructive erasure detection
-- Mid-circuit Raman sideband cooling and qubit re-initialization maintained ~99.8% gate performance across repeated rounds
-
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| 1Q gate fidelity | 99.963% | 25-qubit neutral-atom processor, DRB benchmark | [Rozanov et al. 2025](https://arxiv.org/abs/2509.06881) |
-| 2Q gate fidelity (CZ) | 99.60% raw, 99.81% with erasure detection | Sustained across repeated rounds with mid-circuit operations | [Lin et al. 2026](https://arxiv.org/abs/2603.01612) |
+| 1Q gate fidelity | 99.97% | ¹³³Cs tweezers | [Bluvstein et al. 2024](https://doi.org/10.1038/s41586-023-06927-3) |
+| 2Q gate fidelity (CZ) | 99.5% | ¹³³Cs tweezers | [Bluvstein et al. 2024](https://doi.org/10.1038/s41586-023-06927-3) |
 | T₂ (Ramsey) | ~1 s | ⁸⁷Rb hyperfine | [Kleine Büning et al. 2011](https://doi.org/10.1103/PhysRevLett.106.240801) |
 | T₂ (spin echo) | ~10 s | ¹⁷¹Yb clock states | [Ma et al. 2022](https://doi.org/10.1103/PhysRevX.12.021028) |
 | Readout fidelity | 99.8% | ¹³³Cs fluorescence | [Bluvstein et al. 2024](https://doi.org/10.1038/s41586-023-06927-3) |
@@ -120,11 +112,6 @@ The blockade condition $C_6/R^6 \gg \hbar\Omega$ prevents simultaneous Rydberg e
 - S. Ma et al., "Universal Gate Operations on Nuclear Spin Qubits in an Optical Tweezer Array of ¹⁷¹Yb Atoms," [Phys. Rev. X 12, 021028 (2022)](https://doi.org/10.1103/PhysRevX.12.021028) — [arXiv:2203.04340](https://arxiv.org/abs/2203.04340)
 - D. Bluvstein et al., "Logical quantum processor based on reconfigurable atom arrays," [Nature 626, 58 (2024)](https://doi.org/10.1038/s41586-023-06927-3) — [arXiv:2312.03982](https://arxiv.org/abs/2312.03982)
 - L. Pause et al., "Supercharged two-dimensional tweezer array with more than 1000 atomic qubits," [Optica 11, 222 (2024)](https://doi.org/10.1364/OPTICA.513551) — [arXiv:2310.09191](https://arxiv.org/abs/2310.09191)
-- A. Rozanov et al., "Benchmarking Single-Qubit Gates on a Neutral Atom Quantum Processor," [arXiv:2509.06881 (2025)](https://arxiv.org/abs/2509.06881)
-- R. Lin et al., "Sustaining high-fidelity quantum logic in neutral-atom circuits via mid-circuit operations," [arXiv:2603.01612 (2026)](https://arxiv.org/abs/2603.01612)
-
-### Reviews
-- M. Saffman, T. G. Walker, and K. Mølmer, "Quantum information with Rydberg atoms," [Rev. Mod. Phys. 82, 2313 (2010)](https://doi.org/10.1103/RevModPhys.82.2313)
 
 ## Linked Papers
 
@@ -132,9 +119,6 @@ The blockade condition $C_6/R^6 \gg \hbar\Omega$ prevents simultaneous Rydberg e
 - [[bluvstein-2024-logical-processor-reconfigurable]]
 - [[ma-2022-nuclear-spin-atom]]
 - [[pause-2024-supercharged-dimensional-tweezer]]
-- [[saffman-2010-quantum-information-rydberg]]
-- [[rozanov-2025-benchmarking-single-qubit-gates-neutral-atom]]
-- [[lin-2026-sustaining-high-fidelity-neutral-atom-circuits]]
 
 ## Related Entries
 
@@ -144,4 +128,3 @@ The blockade condition $C_6/R^6 \gg \hbar\Omega$ prevents simultaneous Rydberg e
 - [[surface-code-logical-qubit]] — Error correction demonstrated on neutral atom arrays
 - [[erasure-qubit]] — Erasure-error conversion demonstrated in neutral atom systems via shelving to detectable loss channels
 - [[trapped-ion-qubit]] — Closest competing atomic-physics platform; similar individual-atom control but electromagnetic trapping and Coulomb-mediated gates
-- [[cesium-133-neutral-atom-qubit]] — Cs-133 hyperfine qubit; second major alkali species for Rydberg arrays

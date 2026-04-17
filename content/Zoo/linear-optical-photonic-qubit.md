@@ -98,4 +98,3 @@ Single-qubit operations in dual-rail encoding are realized with beam splitters a
 - [[fusion-based-photonic-qubit]] — evolved architecture that embraces probabilistic gates
 - [[gkp-codes]] — bosonic code approach to photonic error correction
 - [[cat-codes]] — alternative bosonic encoding
-- [[continuous-variable-photonic-qubit]] — CV photonic approach with deterministic Gaussian gates

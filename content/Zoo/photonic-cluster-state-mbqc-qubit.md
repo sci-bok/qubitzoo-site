@@ -109,4 +109,3 @@ Computation via measurements: measuring qubit $i$ in the basis $\{|+_\theta\rang
 - [[fusion-based-photonic-qubit]] — modern fusion-based photonic architecture
 - [[gkp-codes]] — bosonic code applicable to photonic modes
 - [[dual-rail-photonic-qubit]] — common photonic qubit encoding
-- [[continuous-variable-photonic-qubit]] — continuous-variable cluster-state MBQC using squeezed-light qumodes

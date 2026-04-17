@@ -3,7 +3,7 @@ title: Classical Control Hardware
 entry_type: infrastructure
 technology_family: Cross-Platform
 status: demonstrated
-figure_reviewed: true
+figure_reviewed: false
 first_proposed_year: 2000
 first_demonstrated_year: 2000
 keywords:
@@ -18,10 +18,10 @@ keywords:
   - synchronization
   - room-temperature electronics
 influence_score: 0.65
-last_updated: '2026-04-13'
+last_updated: '2026-03-21'
 generated_by: scibok-curation
 extracted_by: manual
-verified_by: scibok-manual-2026-04-13
+verified_by: scibok-manual-2026-03-21
 ---
 
 ## Figure
@@ -90,6 +90,7 @@ Qubit operations (gates, initialization, dynamical decoupling, mid-circuit measu
 
 - [[martin-2026-xcom-full-mesh-network]]
 - [[monarkha-2026-comparing-optical-microwave-conversion-and]]
+- [[liu-2026-a-plug-and-play-superconducting-quantum]]
 
 ## Related Entries
 

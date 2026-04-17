@@ -124,7 +124,7 @@ Gate infidelity $1 - F$ arises from several distinct physical mechanisms:
 | 2025 | IQM: 99.95% 2Q CZ fidelity (superconducting, PALEA) | Landra et al., arXiv:2508.16437 |
 
 ## Linked Papers
-- [[heeres-2017-implementing-universal-gate]]
+- [[heeres-2015-cavity-state-manipulation-using]]
 
 ## Related Entries
 - [[transmon]] — dominant superconducting qubit platform
@@ -143,4 +143,3 @@ Gate infidelity $1 - F$ arises from several distinct physical mechanisms:
 - [[linear-optical-photonic-qubit]] — KLM-scheme photonic gates
 - [[exchange-only-qubit]] — all-exchange spin qubit gates
 - [[surface-code-logical-qubit]] — error correction enabled by high gate fidelities
-- [[nuclear-magnetic-resonance-qubit]] — NMR platform; first experimental quantum algorithm demonstrations

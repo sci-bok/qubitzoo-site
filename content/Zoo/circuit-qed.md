@@ -17,10 +17,10 @@ keywords:
 - qnd measurement
 - quantum bus
 influence_score: 0.85
-last_updated: '2026-04-14'
+last_updated: '2026-03-21'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-audit-2026-04-14
+verified_by: scibok-manual-2026-03-21
 ---
 
 ## Figure
@@ -93,22 +93,15 @@ Previous proposals for coupling superconducting qubits used discrete LC circuits
 - A. Blais et al., "Cavity quantum electrodynamics for superconducting electrical circuits: An architecture for quantum computation," [Phys. Rev. A 69, 062320 (2004)](https://doi.org/10.1103/PhysRevA.69.062320) — [arXiv:cond-mat/0402216](https://arxiv.org/abs/cond-mat/0402216)
 
 ### First experimental demonstration
-- A. Wallraff et al., "Strong coupling of a single photon to a superconducting qubit using circuit quantum electrodynamics," [Nature 431, 162 (2004)](https://doi.org/10.1038/nature02851) — [arXiv:cond-mat/0407325](https://arxiv.org/abs/cond-mat/0407325)
-
-### Reviews
-- A. Blais, A. L. Grimsmo, S. M. Girvin, and A. Wallraff, "Circuit quantum electrodynamics," [Rev. Mod. Phys. 93, 025005 (2021)](https://doi.org/10.1103/RevModPhys.93.025005)
+- A. Wallraff et al., "Strong coupling of a single photon to a superconducting qubit using circuit quantum electrodynamics," [Nature 431, 162 (2004)](https://doi.org/10.1038/nature02851)
 
 ## Linked Papers
 
 - [[blais-2004-circuit-qed]]
-- [[wallraff-2004-strong-coupling-single]]
-- [[blais-2021-circuit-electrodynamics]]
 
 ## Related Entries
 
 - [[transmon]] — most common qubit used in circuit QED architectures
 - [[cooper-pair-box-charge-qubit]] — original qubit in the Blais et al. proposal
 - [[fluxonium]] — also operates within circuit QED, requires auxiliary readout
-- [[bosonic-qubit]] — cavity-based bosonic encodings are the long-lived oscillator limit of circuit QED
 - [[qubit-readout]] — dispersive readout is the primary application of circuit QED
-- [[microwave-photonic-qubit]] — itinerant microwave photons for inter-module state transfer

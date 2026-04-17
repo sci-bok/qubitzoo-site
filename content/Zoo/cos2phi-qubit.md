@@ -82,7 +82,7 @@ Protection mechanism: $\langle 0|\hat{n}|1\rangle \sim e^{-S}$ and $\langle 0|\h
 
 ## Linked Papers
 
-- [[smith-2020-superconducting-circuit-protected]]
+- [[smith-2020-cos2phi]]
 
 ## Related Entries
 
@@ -91,5 +91,3 @@ Protection mechanism: $\langle 0|\hat{n}|1\rangle \sim e^{-S}$ and $\langle 0|\h
 - [[heavy-fluxonium-qubit]] — Heavy variant approaching protected regime
 - [[blochnium]] — Single-junction superinductance qubit
 - [[transmon]] — conventional transmon that cos(2φ) qubit improves upon via disjoint support
-- [[ferbo-qubit]] — alternative dual-protected design using fermion-boson hybridization instead of multiple bosonic modes
-- [[bifluxon-qubit]] — alternative protected qubit using fluxon parity encoding

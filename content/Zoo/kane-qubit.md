@@ -99,4 +99,3 @@ Nuclear spins in silicon offer the longest coherence times of any solid-state qu
 
 - [[loss-divincenzo-qubit]] — foundational semiconductor spin qubit proposal
 - [[spin-qubit]] — broader spin qubit family
-- [[flip-flop-qubit]] — combined electron-nuclear spin encoding with long-range electric dipole coupling

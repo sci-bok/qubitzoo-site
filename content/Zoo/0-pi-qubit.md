@@ -75,5 +75,3 @@ with design target $E_L \ll E_J$ and anisotropic capacitances producing disjoint
 - [[fluxonium]] — parent circuit family
 - [[heavy-fluxonium-qubit]] — related protected regime in the fluxonium family
 - [[transmon]] — conventional superconducting qubit for comparison
-- [[ferbo-qubit]] — alternative dual-protected design using single bosonic mode + fermionic Andreev degree of freedom
-- [[bifluxon-qubit]] �� alternative protected qubit using Aharonov-Casher interference

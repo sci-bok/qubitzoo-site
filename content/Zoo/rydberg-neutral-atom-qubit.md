@@ -94,4 +94,3 @@ Rydberg neutral-atom qubits combine three key advantages: (1) native all-to-all 
 - [[trapped-ion-qubit]] — competing digital quantum computing platform
 - [[alkaline-earth-neutral-atom-clock-qubit]] — related neutral-atom qubit using alkaline-earth species
 - [[nuclear-spin-neutral-atom-qubit]] — related neutral-atom qubit using nuclear spin encoding
-- [[cesium-133-neutral-atom-qubit]] — cesium Rydberg qubits with larger polarizability than rubidium

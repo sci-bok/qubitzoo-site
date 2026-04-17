@@ -108,4 +108,3 @@ Standard bosonic codes (like GKP) require complex active error correction. The c
 - [[circuit-qed]] — underlying hardware platform
 - [[transmon]] — ancilla qubit used in cat qubit control
 - [[binomial-codes]] — another bosonic code family
-- [[bosonic-qubit]] — parent category entry for bosonic encodings

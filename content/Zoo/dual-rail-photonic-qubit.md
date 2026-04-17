@@ -98,4 +98,3 @@ which implements rotations about the $X$ axis of the logical Bloch sphere. Combi
 - [[linear-optical-photonic-qubit]] — broader class of linear-optical qubit schemes
 - [[photonic-cluster-state-mbqc-qubit]] — measurement-based architecture using photonic cluster states
 - [[fusion-based-photonic-qubit]] — fusion-gate approach to photonic QC
-- [[continuous-variable-photonic-qubit]] — CV photonic alternative using squeezed states and homodyne detection

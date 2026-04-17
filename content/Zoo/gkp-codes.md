@@ -108,5 +108,3 @@ GKP codes protect against the dominant error channel in bosonic systems — smal
 - [[cat-codes]] — alternative bosonic code using coherent state superpositions
 - [[circuit-qed]] — underlying hardware platform for superconducting GKP
 - [[binomial-codes]] — another bosonic code family
-- [[bosonic-qubit]] — parent category entry for bosonic encodings
-- [[continuous-variable-photonic-qubit]] — CV photonic platform where GKP provides non-Gaussian resource for universality

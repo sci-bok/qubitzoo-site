@@ -16,10 +16,10 @@ keywords:
 - sympathetic cooling
 - shuttling
 influence_score: 0.92
-last_updated: '2026-04-14'
+last_updated: '2026-03-25'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-audit-2026-04-14
+verified_by: scibok-audit-2026-03-25
 ---
 
 ## Figure
@@ -145,7 +145,6 @@ Trapped ions offer natural identical qubits (every $^{171}\text{Yb}^+$ ion is id
 ## Linked Papers
 
 - [[cirac-zoller-1995-trapped-ion-gate]]
-- [[monroe-1995-demonstration-fundamental-logic]]
 - [[ballance-2016-ion-gate-fidelity]]
 - [[harty-2014-high-fidelity-preparation]]
 - [[myerson-2008-high-fidelity-readout]]
@@ -154,9 +153,7 @@ Trapped ions offer natural identical qubits (every $^{171}\text{Yb}^+$ ion is id
 - [[sorensen-1999-ms-gate]]
 - [[kielpinski-2002-shuttling]]
 - [[wang-2017-single-qubit-quantum-memory]]
-- [[wang-2021-single-ion-qubit]]
 - [[smith-2024-single-qubit-gate-errors]]
-- [[smith-2025-single-qubit-gates-10-7]]
 
 ## Related Entries
 
@@ -165,8 +162,3 @@ Trapped ions offer natural identical qubits (every $^{171}\text{Yb}^+$ ion is id
 - [[shuttling-ion-trap-qubit]] — QCCD scalable architecture variant
 - [[rydberg-neutral-atom-qubit]] — competing platform with similar atomic physics
 - [[ytterbium-hyperfine-qubit]] — dominant commercial hyperfine species (Quantinuum, IonQ)
-- [[barium-137-ion-qubit]] — Ba-137 hyperfine qubit; Quantinuum Helios data qubit
-- [[calcium-43-ion-qubit]] — Ca-43 hyperfine qubit; holds all-time 1Q gate fidelity record
-- [[trapped-electron-qubit]] — proposed electron-spin analogue using Paul traps
-- [[strontium-88-ion-qubit]] — Sr-88 optical qubit; visible-wavelength transitions for integrated photonics
-- [[beryllium-9-ion-qubit]] — Be-9 hyperfine qubit; NIST workhorse, first CNOT gate (1995)

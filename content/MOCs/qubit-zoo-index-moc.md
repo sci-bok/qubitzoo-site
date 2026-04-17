@@ -3,7 +3,7 @@ title: Qubit Zoo Index MOC
 type: moc
 technology_family: index
 note_count: 61
-last_updated: '2026-04-03'
+last_updated: '2026-04-17'
 generated_by: pipeline-moc-v1
 ---
 
