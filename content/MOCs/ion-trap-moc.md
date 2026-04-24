@@ -3,7 +3,7 @@ title: Ion Trap MOC
 type: moc
 technology_family: Ion Trap
 note_count: 2
-last_updated: '2026-04-17'
+last_updated: '2026-04-24'
 generated_by: pipeline-v1
 ---
 

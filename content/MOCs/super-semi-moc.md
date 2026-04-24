@@ -3,7 +3,7 @@ title: Super-Semi MOC
 type: moc
 technology_family: Super-Semi
 note_count: 5
-last_updated: '2026-04-17'
+last_updated: '2026-04-24'
 generated_by: pipeline-moc-v1
 ---
 

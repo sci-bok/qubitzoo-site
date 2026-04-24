@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1250" viewBox="0 0 1800 1250">
+  <rect width="1800" height="1250" fill="white"/>
+  <style>
+    .title { font: 700 40px Helvetica, Arial, sans-serif; fill: #111; }
+    .panel { font: 700 30px Helvetica, Arial, sans-serif; fill: #111; }
+    .label { font: 500 24px Helvetica, Arial, sans-serif; fill: #111; }
+    .small { font: 500 20px Helvetica, Arial, sans-serif; fill: #111; }
+    .tiny { font: 500 18px Helvetica, Arial, sans-serif; fill: #111; }
+    .accent { fill: #4A7C9B; stroke: #4A7C9B; }
+    .accentText { font: 600 24px Helvetica, Arial, sans-serif; fill: #4A7C9B; }
+    .stroke { stroke: #111; stroke-width: 4; fill: none; }
+    .thin { stroke: #111; stroke-width: 2.5; fill: none; }
+    .box { stroke: #111; stroke-width: 4; fill: white; rx: 18; ry: 18; }
+    .soft { fill: #EEF4F7; stroke: #4A7C9B; stroke-width: 4; rx: 18; ry: 18; }
+    .gray { fill: #D0D0D0; stroke: #111; stroke-width: 3; }
+  </style>
+
+  <text x="900" y="70" text-anchor="middle" class="title">Binomial Code</text>
+
+  <!-- Panel A -->
+  <text x="80" y="120" class="panel">(a)</text>
+  <text x="400" y="120" text-anchor="middle" class="panel">Physical System</text>
+  <ellipse cx="245" cy="290" rx="110" ry="46" class="gray"/>
+  <rect x="135" y="290" width="220" height="140" class="gray"/>
+  <ellipse cx="245" cy="430" rx="110" ry="46" class="gray"/>
+  <text x="245" y="500" text-anchor="middle" class="label">microwave cavity</text>
+  <rect x="470" y="255" width="180" height="150" class="box"/>
+  <rect x="522" y="307" width="76" height="46" class="soft"/>
+  <line x1="560" y1="255" x2="560" y2="210" class="stroke"/>
+  <line x1="520" y1="210" x2="600" y2="210" class="stroke"/>
+  <text x="560" y="500" text-anchor="middle" class="label">transmon ancilla</text>
+  <line x1="355" y1="340" x2="470" y2="330" class="stroke"/>
+  <text x="412" y="305" text-anchor="middle" class="accentText">dispersive shift χ</text>
+  <text x="400" y="570" text-anchor="middle" class="small">Circuit QED, long-lived cavity plus ancilla-assisted control</text>
+
+  <!-- Panel B -->
+  <text x="900" y="120" class="panel">(b)</text>
+  <text x="1220" y="120" text-anchor="middle" class="panel">0-2-4 Logical Basis</text>
+  <rect x="900" y="190" width="640" height="360" class="soft"/>
+  <text x="1220" y="280" text-anchor="middle" class="label">|0_L&gt; = (|0&gt; + |4&gt;) / √2</text>
+  <text x="1220" y="360" text-anchor="middle" class="label">|1_L&gt; = |2&gt;</text>
+  <text x="1220" y="440" text-anchor="middle" class="small">finite-support, exactly orthogonal</text>
+  <text x="1220" y="485" text-anchor="middle" class="small">single-mode Fock-state encoding</text>
+
+  <!-- Panel C -->
+  <text x="80" y="660" class="panel">(c)</text>
+  <text x="400" y="660" text-anchor="middle" class="panel">Error Syndrome</text>
+  <rect x="90" y="730" width="300" height="250" class="soft"/>
+  <text x="240" y="785" text-anchor="middle" class="label">Even-parity code space</text>
+  <text x="240" y="845" text-anchor="middle" class="label">|0&gt;, |2&gt;, |4&gt;</text>
+  <text x="240" y="905" text-anchor="middle" class="small">measure parity Π = (-1)^n</text>
+
+  <rect x="410" y="805" width="170" height="90" class="box"/>
+  <line x1="410" y1="850" x2="580" y2="850" class="stroke" marker-end="url(#arrow)"/>
+
+  <rect x="610" y="730" width="300" height="250" class="soft"/>
+  <text x="760" y="785" text-anchor="middle" class="label">Odd-parity loss space</text>
+  <text x="760" y="845" text-anchor="middle" class="label">|1&gt;, |3&gt;</text>
+  <text x="760" y="905" text-anchor="middle" class="small">single loss changes parity</text>
+  <text x="495" y="790" text-anchor="middle" class="accentText">a</text>
+
+  <text x="500" y="1025" text-anchor="middle" class="label">a|0_L&gt; ∝ |3&gt;,   a|1_L&gt; ∝ |1&gt;</text>
+
+  <!-- Panel D -->
+  <text x="900" y="660" class="panel">(d)</text>
+  <text x="1220" y="660" text-anchor="middle" class="panel">Experimental Milestones</text>
+  <line x1="930" y1="860" x2="1480" y2="860" class="stroke"/>
+  <circle cx="1000" cy="860" r="12" class="accent"/>
+  <circle cx="1210" cy="860" r="12" class="accent"/>
+  <circle cx="1420" cy="860" r="12" class="accent"/>
+  <text x="1000" y="805" text-anchor="middle" class="label">2016</text>
+  <text x="1000" y="925" text-anchor="middle" class="small">Michael et al.</text>
+  <text x="1000" y="955" text-anchor="middle" class="small">proposal</text>
+  <text x="1210" y="805" text-anchor="middle" class="label">2019</text>
+  <text x="1210" y="925" text-anchor="middle" class="small">Hu et al.</text>
+  <text x="1210" y="955" text-anchor="middle" class="small">direct binomial</text>
+  <text x="1210" y="985" text-anchor="middle" class="small">logical qubit</text>
+  <text x="1420" y="805" text-anchor="middle" class="label">2023</text>
+  <text x="1420" y="925" text-anchor="middle" class="small">Ni et al.</text>
+  <text x="1420" y="955" text-anchor="middle" class="small">binomial QEC</text>
+  <text x="1420" y="985" text-anchor="middle" class="small">~16% beyond break-even</text>
+
+  <text x="1220" y="1080" text-anchor="middle" class="small">Recent 2024-2026 work emphasizes logical control more than a newer lifetime record.</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M 0 0 L 12 6 L 0 12 z" fill="#111"/>
+    </marker>
+  </defs>
+</svg>

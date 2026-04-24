@@ -3,7 +3,7 @@ title: Classical Hardware MOC
 type: moc
 technology_family: Classical Hardware
 note_count: 2
-last_updated: '2026-04-17'
+last_updated: '2026-04-24'
 generated_by: pipeline-v1
 ---
 

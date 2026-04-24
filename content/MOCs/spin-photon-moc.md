@@ -3,7 +3,7 @@ title: Spin-Photon MOC
 type: moc
 technology_family: Spin-Photon
 note_count: 2
-last_updated: '2026-04-17'
+last_updated: '2026-04-24'
 generated_by: pipeline-v1
 ---
 
