@@ -1,9 +1,9 @@
 ---
 title: "High speed, high fidelity detection of an atomic hyperfine qubit"
-authors: [R. Noek]
+authors: [Rachel Noek, Geert Vrijsen, Daniel Gaultney, Emily Mount, Taehyun Kim, Peter Maunz, Jungsang Kim]
 year: 2013
-journal: "Optics Express"
-doi: 10.1364/OE.21.021449
+journal: "Optics Letters"
+doi: 10.1364/OL.38.004735
 type: reference
 generated_by: scibok-audit-backfill
 last_updated: '2026-03-25'
@@ -15,7 +15,7 @@ Demonstrates high-speed, high-fidelity detection of an atomic hyperfine qubit us
 - Used electron shelving detection technique for high-speed readout
 
 ## Links
-- **Journal:** [Optics Express](https://doi.org/10.1364/OE.21.021449)
+- **Journal:** [Optics Letters](https://doi.org/10.1364/OL.38.004735)
 
 ## Zoo Links
 - [[ytterbium-hyperfine-qubit]]
