@@ -16,10 +16,10 @@ keywords:
 - circuit qed
 - dispersive readout
 influence_score: 0.95
-last_updated: '2026-03-24'
+last_updated: '2026-04-28'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-audit-2026-03-24
+verified_by: scibok-audit-2026-04-28
 ---
 
 ## Figure
@@ -72,12 +72,12 @@ The Cooper pair box suffered from extreme sensitivity to $1/f$ charge noise, lim
 - **Barends et al. (2014)**: Google Xmon variant, gate fidelities >99.4% (1Q) and >99.0% (2Q)
 - **Arute et al. (2019)**: Google Sycamore, 53-qubit quantum computational advantage demonstration
 - **Place et al. (2021)**: Tantalum-based transmon, $T_1 > 300\,\mu\text{s}$ in planar geometry
-- **Google Willow (2024)**: 105-qubit processor, below-threshold surface code error correction, 2Q CZ fidelity 99.7–99.85%
+- **Google Willow (reported 2024; Nature 2025)**: 105-qubit processor, below-threshold surface code error correction, peer-reviewed 2Q CZ fidelity 99.7–99.85%
 - **Tuokkola et al. (2025)**: Aalto University, first transmon to break the millisecond coherence barrier — $T_{2,\text{echo}} = 1.06\,\text{ms}$ (record), median $T_1 = 502\,\mu\text{s}$, quality factor $\sim 8 \times 10^6$; planar geometry fabricated in academic cleanrooms
 - **Bland et al. (2025)**: Princeton, tantalum-on-high-resistivity-silicon 2D transmon — $T_1$ up to $1.68\,\text{ms}$, time-averaged $Q$ up to $1.5 \times 10^7$; 1Q gate fidelity 99.994%; mean $T_1 = 0.45 \pm 0.18\,\text{ms}$ across 45 qubits on 9 chips
-- **IQM (2025)**: Record 2Q CZ fidelity of 99.95% (max) / 99.93% (40-hour averaged), 1Q fidelity >99.98%, simultaneous readout fidelity 99.94%; achieved via the PALEA leakage reduction protocol
+- **IQM (2025, company blog)**: Reported 2Q CZ fidelity of 99.95% (max) / 99.93% (40-hour averaged), 1Q fidelity >99.98%, and simultaneous readout fidelity 99.94% via the PALEA leakage reduction protocol; useful as an industry benchmark, but not yet an archival peer-reviewed transmon record
 
-State-of-the-art (as of late 2025): $T_1$ up to $1.68\,\text{ms}$ (planar, tantalum on silicon), $T_{2,\text{echo}}$ up to $1.06\,\text{ms}$; 1Q gate fidelity up to 99.9926% (Z. Li et al. 2023); 2Q CZ fidelity up to 99.95% (IQM 2025).
+State-of-the-art (as of April 2026): $T_1$ up to $1.68\,\text{ms}$ (planar, tantalum on silicon), $T_{2,\text{echo}}$ up to $1.06\,\text{ms}$, and 1Q gate fidelity up to 99.9926% (Z. Li et al. 2023). Peer-reviewed 2Q transmon benchmarks remain in the high-99.7% to low-99.8% range (Willow 2024 / Nature 2025), while the higher IQM 2025 number should still be treated as provisional until archival publication.
 
 ## Key Metrics
 
@@ -88,7 +88,7 @@ State-of-the-art (as of late 2025): $T_1$ up to $1.68\,\text{ms}$ (planar, tanta
 | Anharmonicity $\alpha/2\pi$ | −200 to −350 MHz | $\approx -E_C/\hbar$ | [Koch et al. 2007](https://doi.org/10.1103/PhysRevA.76.042319) |
 | $E_J/E_C$ | 20–100 | Typical operating regime | [Koch et al. 2007](https://doi.org/10.1103/PhysRevA.76.042319) |
 | 1Q gate fidelity | 99.9–99.99% | RB; SOTA 99.9926% (error 7.42 × 10⁻⁵) | [Z. Li et al. 2023](https://doi.org/10.1038/s41534-023-00781-x) |
-| 2Q gate fidelity (CZ/CR) | 99.0–99.95% | Tunable coupler or cross-resonance; IQM SOTA 99.95% (max), 99.93% (40-hr avg) | [IQM 2025](https://meetiqm.com/blog/quantum-fidelity-milestone/) |
+| 2Q gate fidelity (CZ/CR) | 99.0–99.95% | Peer-reviewed transmon benchmarks are 99.7–99.85% on Willow; IQM reported 99.95% (max), 99.93% (40-hr avg) in a non-peer-reviewed 2025 company blog | [Google Quantum AI and Collaborators 2025](https://doi.org/10.1038/s41586-024-08449-y); [IQM 2025 blog](https://meetiqm.com/blog/quantum-fidelity-milestone/) |
 | Readout fidelity | 97–99.9% | Dispersive, with Purcell filter + JPA | [Arute et al. 2019](https://doi.org/10.1038/s41586-019-1666-5) |
 | Gate time (1Q) | 20–50 ns | DRAG pulse | — |
 | Gate time (2Q) | 100–400 ns | Depends on gate scheme | — |
@@ -116,7 +116,7 @@ State-of-the-art (as of late 2025): $T_1$ up to $1.68\,\text{ms}$ (planar, tanta
 - R. Barends et al., "Superconducting quantum circuits at the surface code threshold for fault tolerance," [Nature 508, 500 (2014)](https://doi.org/10.1038/nature13171) — Xmon, surface code threshold
 - F. Arute et al., "Quantum supremacy using a programmable superconducting processor," [Nature 574, 505 (2019)](https://doi.org/10.1038/s41586-019-1666-5) — Sycamore, 53 qubits
 - A. P. M. Place et al., "New material platform for superconducting transmon qubits with coherence times exceeding 0.3 milliseconds," [Nature Commun. 12, 1779 (2021)](https://doi.org/10.1038/s41467-021-22030-5) — tantalum transmon
-- Google Quantum AI, "Quantum error correction below the surface code threshold," [Nature 638, 920 (2024)](https://doi.org/10.1038/s41586-024-08449-y) — Willow, 105 qubits
+- Google Quantum AI and Collaborators, "Quantum error correction below the surface code threshold," [Nature 638, 920 (2025)](https://doi.org/10.1038/s41586-024-08449-y) — [arXiv:2408.13687](https://arxiv.org/abs/2408.13687) — Willow, 105 qubits
 - M. Tuokkola et al., "Methods to achieve near-millisecond energy relaxation and dephasing times for a superconducting transmon qubit," [Nature Commun. 16, 5421 (2025)](https://doi.org/10.1038/s41467-025-61126-0) — [arXiv:2407.18778](https://arxiv.org/abs/2407.18778) — first ms-scale T₂ in transmon
 - M. P. Bland et al., "Millisecond lifetimes and coherence times in 2D transmon qubits," [Nature 647, 343 (2025)](https://doi.org/10.1038/s41586-025-09687-4) — [arXiv:2503.14798](https://arxiv.org/abs/2503.14798) — Ta-on-Si, T₁ up to 1.68 ms
 
@@ -126,10 +126,22 @@ State-of-the-art (as of late 2025): $T_1$ up to $1.68\,\text{ms}$ (planar, tanta
 
 ## Linked Papers
 - [[koch-2007-transmon]]
+- [[schreier-2008-suppressing-charge-noise]]
+- [[paik-2011-observation-high-coherence]]
+- [[barends-2014-superconducting-circuits-surface]]
+- [[arute-2019-supremacy-programmable-superconducting]]
+- [[place-2021-material-platform-superconducting]]
+- [[li-2023-error-per-single]]
+- [[acharya-2025-error-correction-below]]
+- [[tuokkola-2025-methods-achieve-near]]
+- [[bland-2025-millisecond-lifetimes-coherence]]
+- [[motzoi-2009-simple-pulses-elimination]]
 
 ## Related Entries
 - [[cooper-pair-box-charge-qubit]] — ancestor (charge-sensitive limit)
 - [[circuit-qed]] — readout and coupling architecture
+- [[qubit-readout]] — dispersive measurement stack and amplifier context
+- [[tunable-coupler]] — modern transmon interaction engineering
 - [[fluxonium]] — alternative SC qubit with higher anharmonicity
 - [[xmon]] — planar transmon variant (Google)
 - [[gmon]] — tunable-coupler transmon variant (Google)
