@@ -3,7 +3,7 @@ title: Trapped Ion MOC
 type: moc
 technology_family: Trapped Ion
 note_count: 3
-last_updated: '2026-04-24'
+last_updated: '2026-05-01'
 generated_by: pipeline-moc-v1
 ---
 

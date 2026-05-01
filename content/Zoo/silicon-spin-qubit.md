@@ -15,10 +15,10 @@ keywords:
 - isotopic purification
 - valley splitting
 influence_score: 0.90
-last_updated: '2026-04-25'
+last_updated: '2026-03-28'
 generated_by: scibok-curation
 extracted_by: manual
-verified_by: scibok-deep-audit-2026-04-25
+verified_by: scibok-audit-2026-03-28
 ---
 
 ## Figure
@@ -70,10 +70,6 @@ where $\Delta_v$ is the valley splitting (typically 0.03–1 meV in Si/SiGe, 0.3
 **Above-threshold two-qubit gates — Noiri et al. (2022):**
 - Single-qubit gate fidelity 99.8%, two-qubit gate fidelity 99.5% in ²⁸Si/SiGe
 - Exchange-based CZ gate via barrier control
-
-**Companion surface-code-threshold logic result — Xue et al. (2022):**
-- Same Nature 601 issue as Noiri, with gate-set tomography showing all single- and two-qubit gates above 99.5%
-- Executed a variational quantum eigensolver on a silicon spin processor, reinforcing that above-threshold control was reproducible across independent silicon platforms
 
 **Hot silicon qubits — Petit et al. (2020):**
 - Universal quantum logic at 1.1 K operating temperature
@@ -127,8 +123,7 @@ where $\Delta_v$ is the valley splitting (typically 0.03–1 meV in Si/SiGe, 0.3
 - A. Noiri et al., "Fast universal quantum gate above the fault-tolerance threshold in silicon," [Nature 601, 338 (2022)](https://doi.org/10.1038/s41586-021-04182-y) — [arXiv:2108.02626](https://arxiv.org/abs/2108.02626)
 - L. Petit et al., "Universal quantum logic in hot silicon qubits," [Nature 580, 355 (2020)](https://doi.org/10.1038/s41586-020-2170-7) — [arXiv:1910.05289](https://arxiv.org/abs/1910.05289)
 - S. G. J. Philips et al., "Universal control of a six-qubit quantum processor in silicon," [Nature 609, 919 (2022)](https://doi.org/10.1038/s41586-022-05117-x) — [arXiv:2202.09252](https://arxiv.org/abs/2202.09252)
-- P. Steinacker, N. D. Stuyck et al., "Industry-compatible silicon spin-qubit unit cells exceeding 99% fidelity," [Nature 646, 81 (2025)](https://doi.org/10.1038/s41586-025-09531-9) — [arXiv:2410.15590](https://arxiv.org/abs/2410.15590)
-- X. Xue et al., "Quantum logic with spin qubits crossing the surface code threshold," [Nature 601, 343 (2022)](https://doi.org/10.1038/s41586-021-04273-w)
+- P. Steinacker, N. D. Stuyck et al., "A 300 mm foundry silicon spin qubit unit cell exceeding 99% fidelity in all operations," [Nature 646, 81 (2025)](https://doi.org/10.1038/s41586-025-09531-9) — [arXiv:2410.15590](https://arxiv.org/abs/2410.15590)
 - H. Edlbauer, J. Wang et al., "An 11-qubit atom processor in silicon," [Nature 648, 569 (2025)](https://doi.org/10.1038/s41586-025-09827-w) — [arXiv:2506.03567](https://arxiv.org/abs/2506.03567)
 
 ## Linked Papers
@@ -138,7 +133,6 @@ where $\Delta_v$ is the valley splitting (typically 0.03–1 meV in Si/SiGe, 0.3
 - [[petit-2020-hot-silicon]]
 - [[philips-2022-six-qubit-silicon]]
 - [[steinacker-2025-300mm-foundry-silicon]]
-- [[xue-2022-logic-spin-qubits]]
 - [[edlbauer-2025-11-qubit-atom-processor]]
 
 ## Related Entries

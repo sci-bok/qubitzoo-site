@@ -18,10 +18,10 @@ keywords:
 - exchange coupling
 - randomized benchmarking
 influence_score: 0.85
-last_updated: '2026-04-29'
+last_updated: '2026-03-25'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-deep-audit-2026-04-29
+verified_by: scibok
 ---
 
 ## Description
@@ -77,18 +77,18 @@ Gate times are $\sim 0.1{-}10\,\mu\text{s}$ depending on driving mechanism and R
 
 | Metric | Platform | SOTA Value | Gate Time | Reference |
 |--------|----------|------------|-----------|-----------|
-| 1Q fidelity | Trapped ion | 99.999985% | 4.4–35 μs | [Smith et al. 2025](https://doi.org/10.1103/42w2-6ccy), $^{43}\text{Ca}^+$ microwave clock qubit |
-| 1Q fidelity | Superconducting (fluxonium) | 99.998% | ~25 ns | [Rower et al. 2024](https://doi.org/10.1103/PRXQuantum.5.040342), fast fluxonium control |
+| 1Q fidelity | Trapped ion | 99.999985% | 4–35 μs | [Oxford 2025](https://doi.org/10.1103/h4wk-v31j), $^{43}\text{Ca}^+$ microwave |
+| 1Q fidelity | Superconducting | 99.998% | ~25 ns | [Ding et al. 2025](https://doi.org/10.1038/s41467-025-56746-4), fluxonium, MIT |
 | 1Q fidelity | Superconducting (transmon) | 99.9926% | ~25 ns | [Z. Li et al. 2023](https://doi.org/10.1038/s41534-023-00781-x) |
-| 1Q fidelity | Spin qubit | >99.9% | ~1 μs | [Mądzik et al. 2022](https://doi.org/10.1038/s41586-021-04292-7), donor-spin processor |
-| 1Q fidelity | Neutral atom | 99.963% | ~1 μs | [Rozanov et al. 2025](https://arxiv.org/abs/2509.06881), direct RB on a neutral-atom processor |
-| 2Q fidelity | Trapped ion | 99.99% | ~100 μs | [IonQ 2025](https://arxiv.org/abs/2510.17286), electronically controlled smooth gate |
+| 1Q fidelity | Spin qubit | >99.9% | ~1 μs | [Mądzik et al. 2022](https://doi.org/10.1038/s41586-021-04292-7), UNSW Si donor |
+| 1Q fidelity | Neutral atom | >99.9% | ~1 μs | Raman/microwave on $^{87}\text{Rb}$ |
+| 2Q fidelity | Trapped ion | 99.99% | ~100 μs | [IonQ 2025](https://arxiv.org/abs/2510.17286), EQC, R&D lab |
 | 2Q fidelity | Trapped ion (production) | 99.914% | ~200 μs | [Quantinuum H1-1](https://www.quantinuum.com/blog/quantinuum-extends-its-significant-lead-in-quantum-computing), all pairs |
-| 2Q fidelity | Superconducting (CZ) | 99.93% | ~50–100 ns | [Landra et al. 2025](https://arxiv.org/abs/2508.16437), tunable-coupler PALEA benchmark |
-| 2Q fidelity | Neutral atom (controlled gate) | 99.60% raw, 99.81% erasure-detected | ~1 μs | [Lin et al. 2026](https://arxiv.org/abs/2603.01612), mid-circuit neutral-atom logic |
-| 2Q fidelity | Spin qubit | 99.5% | ~10–100 ns | [Noiri et al. 2022](https://doi.org/10.1038/s41586-021-04182-y), Si/SiGe exchange-based CZ |
+| 2Q fidelity | Superconducting (CZ) | 99.95% | ~60 ns | [IQM 2025](https://arxiv.org/abs/2508.16437), PALEA protocol |
+| 2Q fidelity | Neutral atom (CZ) | 99.6% | ~0.5 μs | [Atom Computing 2024](https://azure.microsoft.com/en-us/blog/quantum/2024/11/19/microsoft-and-atom-computing-offer-a-commercial-quantum-machine-with-the-largest-number-of-entangled-logical-qubits-on-record/) |
+| 2Q fidelity | Spin qubit | >99% | ~10–100 ns | CMOS-compatible Si, multiple groups (2024) |
 
-These numbers mix **randomized benchmarking**, interleaved/direct RB, and a few platform-specific Bell-state or circuit-level benchmarks. The row notes indicate the measurement context, and 2025-2026 arXiv-only records are left explicitly labeled as provisional.
+Fidelities are measured via **randomized benchmarking (RB)** or **interleaved RB**, which isolate gate errors from state-preparation and measurement (SPAM) errors.
 
 ## Gate Error Sources
 
@@ -119,23 +119,12 @@ Gate infidelity $1 - F$ arises from several distinct physical mechanisms:
 | 2016 | First $>99.9\%$ two-qubit MS gate (trapped ions) | Ballance et al., PRL 117, 060504 |
 | 2023 | $99.5\%$ two-qubit CZ on 60 neutral atoms simultaneously | Evered et al., Nature 622, 268 |
 | 2024 | Google Willow: below-threshold surface code error correction | Google QAI, Nature 638, 920 |
-| 2025 | Smith et al.: 1Q error rate $1.5 \times 10^{-7}$ (trapped ion, microwave) | [Smith et al. 2025](https://doi.org/10.1103/42w2-6ccy) |
-| 2025 | IonQ: 99.99% 2Q fidelity (trapped ion, electronically controlled smooth gate) | Moses et al., [arXiv:2510.17286](https://arxiv.org/abs/2510.17286) |
-| 2025 | IQM: 99.93% 2Q CZ fidelity (superconducting, PALEA) | Landra et al., [arXiv:2508.16437](https://arxiv.org/abs/2508.16437) |
-| 2026 | Neutral atoms sustained at 99.60% raw / 99.81% erasure-detected 2Q fidelity via mid-circuit operations | Lin et al., [arXiv:2603.01612](https://arxiv.org/abs/2603.01612) |
+| 2025 | Oxford: 1Q error rate $1.5 \times 10^{-7}$ (trapped ion, microwave) | Sheridan et al., PRL (2025) |
+| 2025 | IonQ: 99.99% 2Q fidelity (trapped ion, EQC) | Moses et al., arXiv:2510.17286 |
+| 2025 | IQM: 99.95% 2Q CZ fidelity (superconducting, PALEA) | Landra et al., arXiv:2508.16437 |
 
 ## Linked Papers
-- [[monroe-1995-first-cnot-gate]]
-- [[motzoi-2009-simple-pulses-elimination]]
-- [[ballance-2016-ion-gate-fidelity]]
-- [[smith-2024-single-qubit-gate-errors]]
-- [[li-2023-error-per-single]]
-- [[ding-2023-high-fidelity-frequency]]
-- [[noiri-2022-silicon-1q-fidelity]]
-- [[xue-2022-logic-spin-qubits]]
-- [[bluvstein-2024-logical-processor-reconfigurable]]
-- [[rozanov-2025-benchmarking-single-qubit-gates-neutral-atom]]
-- [[lin-2026-sustaining-high-fidelity-neutral-atom-circuits]]
+- [[heeres-2015-cavity-state-manipulation-using]]
 
 ## Related Entries
 - [[transmon]] — dominant superconducting qubit platform
