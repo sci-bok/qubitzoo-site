@@ -6,9 +6,8 @@ authors:
 - K. Miyanishi
 - M. F. Gely
 - D. M. Lucas
-year: 2024
+year: 2025
 journal: Physical Review Letters
-doi: 10.1103/PhysRevLett.134.230601
 arxiv_id: '2412.04421'
 type: reference
 generated_by: scibok-curation
@@ -26,7 +25,7 @@ Demonstrates single-qubit Clifford gate errors of 1.5(4) × 10⁻⁷ (fidelity 9
 - Nearly an order of magnitude improvement over Harty et al. 2014
 
 ## Links
-- **Journal:** [Physical Review Letters](https://doi.org/10.1103/PhysRevLett.134.230601)
+- **Journal:** Phys. Rev. Lett. 134, 230601 (2025) (DOI link was non-resolving during the 2026-05-02 audit)
 - **arXiv:** [2412.04421](https://arxiv.org/abs/2412.04421)
 
 ## Zoo Links

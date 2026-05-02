@@ -16,10 +16,10 @@ keywords:
 - sympathetic cooling
 - shuttling
 influence_score: 0.92
-last_updated: '2026-03-25'
+last_updated: '2026-05-02'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-audit-2026-03-25
+verified_by: scibok-audit-2026-05-02
 ---
 
 ## Figure
@@ -38,11 +38,11 @@ Two principal qubit encodings are used:
 
 Single-qubit gates are performed via resonant microwave or Raman laser pulses. Two-qubit entangling gates (Cirac-Zoller, Mølmer-Sørensen, or light-shift gates) couple the internal states to the shared motional mode of the ion chain, mediating effective spin-spin interactions.
 
-As of 2025, trapped ions hold records for the highest single-qubit gate fidelity (99.999985%, Oxford) and readout fidelity (99.99%) of any physical qubit platform, and remain among the highest for two-qubit gates — though superconducting qubits are now competitive (IQM CZ 99.95%). The primary tradeoffs are significantly slower gate speeds (~100× vs. superconducting) and the complexity of laser-based control systems.
+As of 2026, trapped ions still hold the peer-reviewed record for single-qubit gate fidelity (99.999985%, Oxford) and remain one of the cleanest high-fidelity platforms for readout, memory, and all-to-all connectivity within a chain. The best peer-reviewed two-qubit benchmark cited here is 99.948% in $^{9}\text{Be}^+$, while newer 2025-2026 milestones emphasize scaling, encoded computation, and long-memory operation. The primary tradeoffs are significantly slower gate speeds than superconducting qubits (typically $\mu$s rather than ns) and the complexity of laser or microwave control hardware.
 
 ## Hamiltonian
 
-The Jaynes-Cummings-type interaction for a single ion coupled to a motional mode:
+A representative driven trapped-ion Hamiltonian for a single ion coupled to one motional mode is:
 
 $$H = \frac{\hbar\omega_0}{2}\sigma_z + \hbar\nu\, a^\dagger a + \hbar\Omega\left(\sigma_+ e^{i\eta(a+a^\dagger)} + \text{h.c.}\right)$$
 
@@ -71,7 +71,8 @@ Trapped ions offer natural identical qubits (every $^{171}\text{Yb}^+$ ion is id
 
 **Coherence records — hyperfine clock qubits:**
 - $T_2 > 10\,\text{min}$ demonstrated with sympathetic cooling in $^{171}\text{Yb}^+$ / $^{138}\text{Ba}^+$ (Wang et al. 2017).
-- $T_2 > 10\,\text{hours}$ demonstrated in a decoherence-free subspace using a Yb-Ba-Yb ion chain (2024).
+- $T_2 > 1\,\text{hour}$ demonstrated in a single-ion trapped-ion memory (P. Wang et al. 2021).
+- $T_2 > 10\,\text{hours}$ demonstrated in a decoherence-free trapped-ion clock qubit using a Yb-Ba-Yb chain (Pi et al. 2026).
 
 **High-fidelity gates — Ballance et al. (2016), Gaebler et al. (2016):**
 - Two-qubit gate fidelities $> 99.9\%$ demonstrated via Mølmer-Sørensen gates.
@@ -85,7 +86,7 @@ Trapped ions offer natural identical qubits (every $^{171}\text{Yb}^+$ ion is id
 - Proposed the quantum charge-coupled device architecture for scalable ion transport between processing zones.
 - Now the basis of Quantinuum's commercial systems.
 
-**Oxford 1Q gate record — Smith et al. (2024/2025):**
+**Oxford 1Q gate record — Smith et al. (2025):**
 - 1Q Clifford gate error of $1.5(4) \times 10^{-7}$ (fidelity 99.999985%) via microwave-driven $^{43}\text{Ca}^+$ hyperfine clock qubits.
 - Nearly an order of magnitude improvement over Harty et al. 2014.
 - Fastest gates (4.4 μs) achieved error of $2.9(5) \times 10^{-7}$.
@@ -96,15 +97,20 @@ Trapped ions offer natural identical qubits (every $^{171}\text{Yb}^+$ ion is id
 - Novel four-way "X" junction architecture with rotatable ion storage ring.
 - Full all-to-all connectivity among 98 qubits.
 
+**Encoded computation at scale — Dasu et al. (2026):**
+- Demonstrated beyond-break-even encoded operations on the 98-qubit Quantinuum Helios trapped-ion processor.
+- Benchmarked iceberg-code experiments with 48 to 94 logical qubits, leveraging trapped ions' long-range connectivity.
+
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
 | $T_1$ | >10,000 s (hyperfine) | Hyperfine ground states have no decay | [Bruzewicz et al. 2019](https://doi.org/10.1063/1.5088164) |
 | $T_2$ (echo) | >600 s | $^{171}\text{Yb}^+$ with sympathetic cooling | [Wang et al. 2017](https://doi.org/10.1038/s41566-017-0007-1) |
-| 1Q gate fidelity | 99.999985% | $^{43}\text{Ca}^+$ microwave RB; error $1.5 \times 10^{-7}$ | [Smith et al. 2024](https://arxiv.org/abs/2412.04421) |
-| 2Q gate fidelity | 99.9% | MS gate, $^{43}\text{Ca}^+$ | [Ballance et al. 2016](https://doi.org/10.1103/PhysRevLett.117.060504) |
+| 1Q gate fidelity | 99.999985% | $^{43}\text{Ca}^+$ microwave RB; error $1.5 \times 10^{-7}$ | [Smith et al. 2025](https://arxiv.org/abs/2412.04421) |
+| 2Q gate fidelity | 99.948% | MS gate, $^{9}\text{Be}^+$; error $5.2 \times 10^{-4}$ | [Gaebler et al. 2016](https://doi.org/10.1103/PhysRevLett.117.060505) |
 | Readout fidelity | 99.99% | Electron shelving / fluorescence | [Myerson et al. 2008](https://doi.org/10.1103/PhysRevLett.100.200502) |
+| Encoded logical qubits | 48-94 | Helios iceberg-code benchmarks beyond break-even | [Dasu et al. 2026](https://arxiv.org/abs/2602.22211) |
 | Gate time (1Q) | 1–10 μs | Microwave or Raman | — |
 | Gate time (2Q) | 10–200 μs | MS gate; speed-fidelity tradeoff | — |
 | Connectivity | All-to-all (in chain) | Via shared phonon modes | — |
@@ -127,8 +133,8 @@ Trapped ions offer natural identical qubits (every $^{171}\text{Yb}^+$ ion is id
 - J. I. Cirac and P. Zoller, "Quantum Computations with Cold Trapped Ions," [Phys. Rev. Lett. 74, 4091 (1995)](https://doi.org/10.1103/PhysRevLett.74.4091)
 
 ### Gate proposals
-- A. Sørensen and K. Mølmer, "Quantum Computation with Ions in Thermal Motion," [Phys. Rev. Lett. 82, 1971 (1999)](https://doi.org/10.1103/PhysRevLett.82.1971) | [arXiv:quant-ph/9810060](https://arxiv.org/abs/quant-ph/9810060) — original Mølmer-Sørensen gate
-- D. Kielpinski, C. Monroe, and D. J. Wineland, "Architecture for a large-scale ion-trap quantum computer," [Nature 417, 709 (2002)](https://doi.org/10.1038/nature00784) | [arXiv:quant-ph/0110143](https://arxiv.org/abs/quant-ph/0110143) — QCCD architecture proposal
+- A. Sørensen and K. Mølmer, "Quantum Computation with Ions in Thermal Motion," [Phys. Rev. Lett. 82, 1971 (1999)](https://doi.org/10.1103/PhysRevLett.82.1971) | [arXiv:quant-ph/9810039](https://arxiv.org/abs/quant-ph/9810039) — original Mølmer-Sørensen gate
+- D. Kielpinski, C. Monroe, and D. J. Wineland, "Architecture for a large-scale ion-trap quantum computer," [Nature 417, 709 (2002)](https://doi.org/10.1038/nature00784) — QCCD architecture proposal
 
 ### Experimental demonstrations
 - C. Monroe et al., "Demonstration of a Fundamental Quantum Logic Gate," [Phys. Rev. Lett. 75, 4714 (1995)](https://doi.org/10.1103/PhysRevLett.75.4714) — first quantum logic gate
@@ -137,7 +143,10 @@ Trapped ions offer natural identical qubits (every $^{171}\text{Yb}^+$ ion is id
 - C. J. Ballance et al., "High-Fidelity Quantum Logic Gates Using Trapped-Ion Hyperfine Qubits," [Phys. Rev. Lett. 117, 060504 (2016)](https://doi.org/10.1103/PhysRevLett.117.060504) | [arXiv:1512.04600](https://arxiv.org/abs/1512.04600)
 - J. P. Gaebler et al., "High-Fidelity Universal Gate Set for $^{9}\text{Be}^+$ Ion Qubits," [Phys. Rev. Lett. 117, 060505 (2016)](https://doi.org/10.1103/PhysRevLett.117.060505) | [arXiv:1604.00032](https://arxiv.org/abs/1604.00032) — 2Q error $5.2 \times 10^{-4}$
 - Y. Wang et al., "Single-qubit quantum memory exceeding ten-minute coherence time," [Nature Photon. 11, 646 (2017)](https://doi.org/10.1038/s41566-017-0007-1) | [arXiv:1701.04195](https://arxiv.org/abs/1701.04195) — see also P. Wang et al., [Nature Commun. 12, 233 (2021)](https://doi.org/10.1038/s41467-020-20330-w) for $T_2 > 1$ hour
-- M. C. Smith et al., "Single-qubit gates with errors at the $10^{-7}$ level," [Phys. Rev. Lett. 134, 230601 (2025)](https://doi.org/10.1103/PhysRevLett.134.230601) | [arXiv:2412.04421](https://arxiv.org/abs/2412.04421) — 1Q fidelity 99.999985%
+- M. C. Smith et al., "Single-qubit gates with errors at the $10^{-7}$ level," Phys. Rev. Lett. 134, 230601 (2025) | [arXiv:2412.04421](https://arxiv.org/abs/2412.04421) — 1Q fidelity 99.999985%; DOI link was non-resolving during this audit
+- A. Ransford et al., "A 98-qubit trapped-ion quantum computer," [arXiv:2511.05465 (2025)](https://arxiv.org/abs/2511.05465)
+- S. Dasu et al., "Computing with many encoded logical qubits beyond break-even," [arXiv:2602.22211 (2026)](https://arxiv.org/abs/2602.22211)
+- J. Pi et al., "Beyond-Ten-Hour Coherence in a Decoherence-Free Trapped-Ion Clock Qubit," [arXiv:2603.19631 (2026)](https://arxiv.org/abs/2603.19631)
 
 ### Reviews
 - C. D. Bruzewicz et al., "Trapped-ion quantum computing: Progress and challenges," [Appl. Phys. Rev. 6, 021314 (2019)](https://doi.org/10.1063/1.5088164)
