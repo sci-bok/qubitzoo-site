@@ -16,9 +16,9 @@ keywords:
 - nanowire
 - hardware-level protection
 influence_score: 0.55
-last_updated: '2026-04-02'
+last_updated: '2026-05-04'
 generated_by: scibok-curation
-verified_by: scibok-manual-2026-04-02
+verified_by: scibok-deep-audit-2026-05-04
 ---
 
 ## Figure
@@ -27,9 +27,9 @@ verified_by: scibok-manual-2026-04-02
 
 ## Description
 
-The **FerBo qubit** is a superconducting quantum circuit proposed by Cáceres, Matute-Cañadas et al. (2026) at CEA-Saclay (Quantronics group) and UAM Madrid. Its name derives from **fermion-boson hybridization** — the central mechanism by which it achieves simultaneous protection against both relaxation and dephasing. The circuit consists of a parallel arrangement of a large inductance $L$, a small capacitor $C$, and a highly transmissive Josephson **weak link** (such as a semiconducting nanowire). Structurally, it resembles a **light fluxonium** ($E_L \ll E_J, E_C$), but with the conventional tunnel junction replaced by a weak link hosting **Andreev bound states**, introducing a fermionic degree of freedom that hybridizes with the bosonic LC mode.
+The **FerBo qubit** is a superconducting quantum circuit proposed by **Cáceres, Sanz Marco et al. (2026)** at CEA-Saclay (Quantronics group) and UAM Madrid. Its name derives from **fermion-boson hybridization**, the central mechanism by which it aims to suppress both relaxation and dephasing. The circuit consists of a parallel arrangement of a large inductance $L$, a small capacitor $C$, and a highly transmissive Josephson **weak link** (for example a semiconducting nanowire). Structurally, it resembles a **light fluxonium** ($E_L \ll E_J, E_C$), but with the conventional tunnel junction replaced by a weak link hosting **Andreev bound states**, introducing a fermionic degree of freedom that hybridizes with the bosonic LC mode.
 
-The key physical insight is that the qubit's computational states acquire **disjoint support** in the internal Andreev degree of freedom: the ground state $|0\rangle$ resides predominantly in the $|-\rangle$ Andreev manifold while the excited state $|1\rangle$ resides in the $|+\rangle$ manifold. This separation in Andreev space strongly suppresses matrix elements of bosonic operators — the charge relaxation susceptibility $|\langle 0|\hat{n}|1\rangle|^2$ drops by approximately four orders of magnitude at the operating point $\varphi_{\text{ext}} = 0$. Simultaneously, as in light fluxonium, the wavefunctions delocalize across multiple wells in phase space, exponentially suppressing flux dispersion with increasing impedance $Z$. These two protection mechanisms — one fermionic, one bosonic — operate simultaneously and independently.
+The key physical insight is that, **deep in the protected regime**, the qubit's computational states acquire **disjoint support** in the internal Andreev degree of freedom: the ground state $|0\rangle$ resides predominantly in the $|-\rangle$ Andreev manifold while the excited state $|1\rangle$ resides predominantly in the $|+\rangle$ manifold. This separation in Andreev space strongly suppresses matrix elements of bosonic operators, with the charge relaxation susceptibility $|\langle 0|\hat{n}|1\rangle|^2$ dropping by approximately four orders of magnitude at the operating point $\varphi_{\text{ext}} = 0$. Simultaneously, as in light fluxonium, the wavefunctions delocalize across multiple wells in phase space, exponentially suppressing flux dispersion with increasing impedance $Z$. These two protection mechanisms, one fermionic and one bosonic, operate together in the proposal's target parameter window.
 
 The **protected regime** is reached when $Z/R_Q \gg 1$ (high impedance) and $\epsilon_r/E_C \ll 1$ (high transmission through the weak link), with a sharp boundary at $Z/R_Q \approx 2E_C/(\pi\epsilon_r)$. The qubit operates at a **zero external flux sweet spot** ($\varphi_{\text{ext}} = 0$), where both computational states share the same parity under phase inversion, providing additional selection-rule protection against relaxation. This is notably different from heavy fluxonium, which operates near $\varphi_{\text{ext}} = \pi$.
 
@@ -43,7 +43,7 @@ $$\hat{H} = 4E_C\hat{n}^2 + \frac{1}{2}E_L\hat{\varphi}^2 + H_{\rm WL}(\hat{\var
 
 The first term is the charging energy with $E_C = e^2/(2C)$, where $\hat{n}$ is the number of Cooper pairs on the island. The second term is the inductive energy from the superinductance, with $E_L = (\Phi_0/2\pi)^2/L$. The third term encodes the Andreev physics of the weak link.
 
-In the **atomic limit** (weak link treated as a quantum dot with Andreev bound states), the weak link Hamiltonian acting on the even-parity Andreev subspace is:
+In the **atomic limit** (the weak link treated as a quantum dot with Andreev bound states, valid when $\Gamma_{L,R} \ll \Delta$), the weak link Hamiltonian acting on the even-parity Andreev subspace is:
 
 $$H_{\rm WL}(\hat{\varphi}) = \Gamma\cos(\hat{\varphi}/2)\,\hat{\sigma}_x - \delta\Gamma\sin(\hat{\varphi}/2)\,\hat{\sigma}_y + \epsilon_r\,\hat{\sigma}_z$$
 
@@ -70,7 +70,7 @@ where $\hat{\sigma}_i$ are Pauli matrices acting on the two-dimensional even-par
 ## References
 
 ### Original proposal
-- J. J. Cáceres, F. J. Matute-Cañadas et al., "FerBo: a noise resilient qubit hybridizing Andreev and fluxonium states," [arXiv:2604.01145 (2026)](https://arxiv.org/abs/2604.01145)
+- J. J. Cáceres, D. Sanz Marco et al., "FerBo: a noise resilient qubit hybridizing Andreev and fluxonium states," [arXiv:2604.01145 (2026)](https://arxiv.org/abs/2604.01145)
 
 ## Linked Papers
 
