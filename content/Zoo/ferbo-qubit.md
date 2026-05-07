@@ -3,7 +3,7 @@ title: FerBo Qubit
 entry_type: qubit
 technology_family: Super-Semi
 status: active
-figure_reviewed: false
+figure_reviewed: true
 first_proposed_year: 2026
 keywords:
 - ferbo
@@ -16,9 +16,9 @@ keywords:
 - nanowire
 - hardware-level protection
 influence_score: 0.55
-last_updated: '2026-05-04'
+last_updated: '2026-05-07'
 generated_by: scibok-curation
-verified_by: scibok-deep-audit-2026-05-04
+verified_by: scibok-deep-audit-2026-05-07
 ---
 
 ## Figure
@@ -57,7 +57,13 @@ where $\hat{\sigma}_i$ are Pauli matrices acting on the two-dimensional even-par
 - **Relaxation suppression by four orders of magnitude:** The disjoint Andreev support of the computational states suppresses charge-induced relaxation matrix elements $|\langle 0|\hat{n}|1\rangle|^2$ by ~$10^{-4}$ at the zero-flux operating point, a substantial improvement enabled by the fermion-boson hybridization.
 - **Zero-flux sweet spot:** Operating at $\varphi_{\text{ext}} = 0$ simplifies experimental operation (no precision flux biasing required) and provides additional selection-rule protection due to shared parity of the computational states under phase inversion.
 
+## Experimental Status
+
+FerBo remains a **2026 proposal-stage qubit**. During this audit, no later FerBo-specific follow-up paper, journal-published version, experimental realization, or hardware benchmark was located beyond the original April 2026 arXiv preprint.
+
 ## Key Metrics
+
+All values below are proposal-level theoretical quantities reported in the 2026 preprint rather than experimentally demonstrated hardware benchmarks.
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
@@ -83,4 +89,5 @@ where $\hat{\sigma}_i$ are Pauli matrices acting on the two-dimensional even-par
 - [[heavy-fluxonium-qubit]] — uses disjoint support in phase space; FerBo achieves disjoint support in Andreev space instead
 - [[0-pi-qubit]] — dual-protected qubit using multiple bosonic modes; FerBo uses fermion-boson hybridization instead
 - [[cos2phi-qubit]] — another dual-protected superconducting circuit; requires more stringent parameters
+- [[bifluxon]] — another dual-protected superconducting design using a different circuit architecture
 - [[gatemon]] — same nanowire weak link platform; different operating regime
