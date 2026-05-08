@@ -42,6 +42,7 @@ describe("renderMarkdown", () => {
     window_hours: 24,
     site: { repo_root: "/x", commits: [] },
     vault: { repo_root: "/y", available: true, commits: [] },
+    pipeline_repo: { repo_root: "/z", available: true, commits: [] },
     pipeline: null,
   }
 
@@ -51,6 +52,7 @@ describe("renderMarkdown", () => {
     assert.match(md, /Auto-generated at 2026-05-08T12:00:00.000Z/)
     assert.match(md, /## Public-facing site changes/)
     assert.match(md, /## Source\/content changes affecting the next publish/)
+    assert.match(md, /## Backstage maintenance and automation changes/)
     assert.match(md, /## Pipeline status/)
   })
 
@@ -69,6 +71,17 @@ describe("renderMarkdown", () => {
     assert.match(md, /\*\*abcdef12\*\* · 2026-05-07 10:00:00 — zoo: refresh fluxonium/)
     assert.match(md, /<details><summary>files \(2\)<\/summary>/)
     assert.match(md, /- `Zoo\/fluxonium\.md`/)
+  })
+
+  test("renders pipeline repo commits in the maintenance section", () => {
+    const data: ChangelogJson = {
+      ...baseData,
+      pipeline_repo: { repo_root: "/z", available: true, commits: [sampleCommits[0]] },
+    }
+    const md = renderMarkdown(data)
+    assert.match(md, /## Backstage maintenance and automation changes/)
+    assert.match(md, /pipeline\/automation repo/)
+    assert.match(md, /\*\*abcdef12\*\* · 2026-05-07 10:00:00 — zoo: refresh fluxonium/)
   })
 
   test("summarises pipeline status with failing steps", () => {

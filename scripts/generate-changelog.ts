@@ -51,6 +51,7 @@ interface ChangelogJson {
   window_hours: number
   site: { repo_root: string; commits: Commit[] }
   vault: { repo_root: string; available: boolean; commits: Commit[] }
+  pipeline_repo: { repo_root: string; available: boolean; commits: Commit[] }
   pipeline: PipelineSummary | null
 }
 
@@ -181,6 +182,22 @@ function renderMarkdown(data: ChangelogJson): string {
   }
   lines.push("")
 
+  lines.push("## Backstage maintenance and automation changes")
+  lines.push("")
+  if (!data.pipeline_repo.available) {
+    lines.push("_The pipeline repo (qubit-zoo-zettelkasten) is not available in this build environment._")
+  } else if (data.pipeline_repo.commits.length === 0) {
+    lines.push("_No pipeline or automation commits in the last 24 hours._")
+  } else {
+    lines.push(
+      "Commits in the pipeline/automation repo (qubit-zoo-zettelkasten). " +
+        "These capture backend fixes, audits, and build/report changes that may not be visible on the public site yet.",
+    )
+    lines.push("")
+    for (const c of data.pipeline_repo.commits) lines.push(renderCommit(c) + "\n")
+  }
+  lines.push("")
+
   lines.push("## Pipeline status")
   lines.push("")
   if (!data.pipeline) {
@@ -231,6 +248,8 @@ function main(): void {
   const siteCommits = gitLog(SITE_ROOT, WINDOW_HOURS)
   const vaultCommitsRaw = vaultAvailable ? gitLog(VAULT_ROOT, WINDOW_HOURS) : []
   const vaultCommits = filterCommitsByPath(vaultCommitsRaw, VAULT_CONTENT_FOLDERS)
+  const pipelineRepoAvailable = isGitRepo(PIPELINE_ROOT)
+  const pipelineRepoCommits = pipelineRepoAvailable ? gitLog(PIPELINE_ROOT, WINDOW_HOURS) : []
   const pipeline = readPipelineSummary()
 
   const data: ChangelogJson = {
@@ -239,7 +258,12 @@ function main(): void {
     window_hours: WINDOW_HOURS,
     site: { repo_root: SITE_ROOT, commits: siteCommits },
     vault: { repo_root: VAULT_ROOT, available: vaultAvailable, commits: vaultCommits },
+    pipeline_repo: { repo_root: PIPELINE_ROOT, available: pipelineRepoAvailable, commits: pipelineRepoCommits },
     pipeline,
+  }
+
+  if (!pipelineRepoAvailable) {
+    console.warn(`changelog: pipeline repo not found at ${PIPELINE_ROOT}; will skip maintenance section.`)
   }
 
   fs.mkdirSync(META_DIR, { recursive: true })
@@ -248,7 +272,7 @@ function main(): void {
 
   console.log(
     `changelog: wrote ${path.relative(SITE_ROOT, MD_OUT)} ` +
-      `(site=${siteCommits.length}, vault=${vaultCommits.length}, ` +
+      `(site=${siteCommits.length}, vault=${vaultCommits.length}, pipelineRepo=${pipelineRepoCommits.length}, ` +
       `pipeline=${pipeline?.status ?? "n/a"})`,
   )
 }

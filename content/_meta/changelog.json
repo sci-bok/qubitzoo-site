@@ -1,10 +1,19 @@
 {
   "schema": "qubitzoo.changelog.v1",
-  "generated_at_utc": "2026-05-08T12:16:56.633Z",
+  "generated_at_utc": "2026-05-08T12:21:09.067Z",
   "window_hours": 24,
   "site": {
     "repo_root": "/Users/scibok/.openclaw/workspace/repos/qubitzoo-site",
     "commits": [
+      {
+        "sha": "f03a4b76",
+        "iso": "2026-05-08T08:17:32-04:00",
+        "subject": "docs: refresh changelog after audit fixes",
+        "files": [
+          "content/_meta/changelog.json",
+          "content/changelog.md"
+        ]
+      },
       {
         "sha": "838daf30",
         "iso": "2026-05-08T08:00:00-04:00",
@@ -79,6 +88,88 @@
           "Zoo/ferbo-qubit.md",
           "Zoo/gatemonium.md",
           "Zoo/heavy-fluxonium-qubit.md"
+        ]
+      }
+    ]
+  },
+  "pipeline_repo": {
+    "repo_root": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten",
+    "available": true,
+    "commits": [
+      {
+        "sha": "b35fc96a",
+        "iso": "2026-05-08T08:19:58-04:00",
+        "subject": "fix: allow ns-scale semiconducting T1 metrics",
+        "files": [
+          "scripts/audit-zoo-metrics.py",
+          "tests/test_zoo_metrics_audit.py"
+        ]
+      },
+      {
+        "sha": "a9a57408",
+        "iso": "2026-05-08T08:16:24-04:00",
+        "subject": "fix: reduce zoo metrics audit schema noise",
+        "files": [
+          "data/zoo-metrics.json",
+          "scripts/audit-zoo-metrics.py",
+          "scripts/extract-zoo-metrics.py",
+          "tests/test_zoo_metrics_audit.py"
+        ]
+      },
+      {
+        "sha": "2ab0a74b",
+        "iso": "2026-05-08T06:15:31-04:00",
+        "subject": "zoo: pipeline queue-run processed=10 failed=0 (2026-05-08 10:15 UTC)",
+        "files": [
+          "data/canon_coverage.json",
+          "data/classics_backlog.json",
+          "data/classics_resolver_report.json",
+          "data/exports/paper_feed/2026-05-08/paper_feed.v1.jsonl",
+          "data/exports/paper_feed/latest.json",
+          "data/influence_history.jsonl",
+          "data/processed_papers.jsonl",
+          "data/quarantine_queue.json",
+          "data/reports/.last-morning-summary-date",
+          "data/reports/2026-05-07/calibration-json.err.log",
+          "data/reports/2026-05-07/calibration.err.log",
+          "data/reports/2026-05-07/calibration.json",
+          "data/reports/2026-05-07/calibration.txt",
+          "data/reports/2026-05-07/influence-scoring.log",
+          "data/reports/2026-05-07/moc-build.log",
+          "data/reports/2026-05-07/moc-generate.log",
+          "data/reports/2026-05-07/ops-report-json.err.log",
+          "data/reports/2026-05-07/ops-report.err.log",
+          "data/reports/2026-05-07/ops-report.json",
+          "data/reports/2026-05-07/ops-report.txt",
+          "data/reports/2026-05-07/queue-summary.json",
+          "data/reports/2026-05-07/queue.log",
+          "data/reports/2026-05-07/run-summary.json",
+          "data/reports/2026-05-07/run-summary.txt",
+          "data/reports/2026-05-07/zettel-review.log",
+          "data/reports/2026-05-07/zoo-links.log",
+          "data/reports/2026-05-07/zoo-note-conventions.log",
+          "data/reports/2026-05-07/zoo-source-references.log",
+          "data/reports/2026-05-08/canon-coverage.log",
+          "data/reports/2026-05-08/canon-coverage.md",
+          "data/reports/2026-05-08/classics-build.log",
+          "data/reports/2026-05-08/classics-resolve.log",
+          "data/reports/2026-05-08/discovery.log",
+          "data/reports/2026-05-08/preflight.log",
+          "data/reports/2026-05-08/prioritize-classics.log",
+          "data/reports/2026-05-08/queue.log",
+          "data/reports/latest-run-summary.json",
+          "data/reports/latest-run-summary.txt",
+          "data/reports/run-history.jsonl",
+          "data/zoo_source_references.json"
+        ]
+      },
+      {
+        "sha": "3018abb3",
+        "iso": "2026-05-07T10:11:17-04:00",
+        "subject": "audit: refresh ferbo-qubit",
+        "files": [
+          "data/audit-tracker.json",
+          "vault/References/caceres-2026-ferbo-a-noise-resilient.md"
         ]
       }
     ]
