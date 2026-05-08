@@ -38,6 +38,7 @@ find "$CONTENT_DIR" -mindepth 1 -maxdepth 1 \
   ! -name 'about.md' \
   ! -name 'racing.md' \
   ! -name 'genealogy.md' \
+  ! -name 'changelog.md' \
   ! -name '_meta' \
   -exec rm -rf {} +
 
@@ -50,5 +51,16 @@ for folder in Zoo References Evergreen MOCs Figures; do
 done
 
 # Welcome.md excluded — replaced by index.md landing page
+
+# Refresh the auto-generated changelog so it reflects the just-synced state.
+# The script is CI-safe and exits cleanly if sibling repos are missing.
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+if command -v npx >/dev/null 2>&1; then
+  echo "Regenerating changelog..."
+  (cd "$SCRIPT_DIR/.." && npx tsx scripts/generate-changelog.ts) || \
+    echo "  (changelog regeneration skipped)"
+else
+  echo "  (npx not available; skipping changelog regeneration)"
+fi
 
 echo "Sync complete."
