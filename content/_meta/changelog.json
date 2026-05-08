@@ -1,10 +1,24 @@
 {
   "schema": "qubitzoo.changelog.v1",
-  "generated_at_utc": "2026-05-08T11:57:32.968Z",
+  "generated_at_utc": "2026-05-08T12:16:56.633Z",
   "window_hours": 24,
   "site": {
     "repo_root": "/Users/scibok/.openclaw/workspace/repos/qubitzoo-site",
     "commits": [
+      {
+        "sha": "838daf30",
+        "iso": "2026-05-08T08:00:00-04:00",
+        "subject": "feat: add rolling site changelog",
+        "files": [
+          "content/_meta/changelog.json",
+          "content/changelog.md",
+          "package.json",
+          "quartz.layout.ts",
+          "scripts/generate-changelog.test.ts",
+          "scripts/generate-changelog.ts",
+          "scripts/sync-vault.sh"
+        ]
+      },
       {
         "sha": "630e5cf2",
         "iso": "2026-05-07T10:09:57-04:00",
@@ -19,6 +33,14 @@
     "repo_root": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten",
     "available": true,
     "commits": [
+      {
+        "sha": "d0a6311c",
+        "iso": "2026-05-08T08:16:29-04:00",
+        "subject": "audit: classify color-code logical qubit as encoding",
+        "files": [
+          "Zoo/color-code-logical-qubit.md"
+        ]
+      },
       {
         "sha": "15f8318f",
         "iso": "2026-05-08T06:15:33-04:00",
@@ -64,9 +86,9 @@
   "pipeline": {
     "status": "degraded",
     "mode": "full",
-    "timestamp_utc": "2026-05-08T10:00:01Z",
-    "timestamp_local": "2026-05-08 06:00:01 EDT",
-    "papers_added": 9,
+    "timestamp_utc": "2026-05-07T10:00:01Z",
+    "timestamp_local": "2026-05-07 06:00:01 EDT",
+    "papers_added": 3,
     "failing_steps": [
       "zoo_note_conventions"
     ]

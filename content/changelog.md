@@ -3,11 +3,25 @@ title: Changelog
 description: Recent changes to the Qubit Zoo site and source content (rolling 24h window).
 ---
 
-_Auto-generated at 2026-05-08T11:57:32.968Z (UTC). Covers the last 24 hours. If a window passes with no activity, sections will be empty._
+_Auto-generated at 2026-05-08T12:16:56.633Z (UTC). Covers the last 24 hours. If a window passes with no activity, sections will be empty._
 
 ## Public-facing site changes
 
 Commits to this site repo (qubitzoo-site) — these have already shipped or will ship on the next deploy.
+
+**838daf30** · 2026-05-08 08:00:00 — feat: add rolling site changelog
+
+<details><summary>files (7)</summary>
+
+- `content/_meta/changelog.json`
+- `content/changelog.md`
+- `package.json`
+- `quartz.layout.ts`
+- `scripts/generate-changelog.test.ts`
+- `scripts/generate-changelog.ts`
+- `scripts/sync-vault.sh`
+
+</details>
 
 **630e5cf2** · 2026-05-07 10:09:57 — audit: refresh ferbo-qubit
 
@@ -21,6 +35,14 @@ Commits to this site repo (qubitzoo-site) — these have already shipped or will
 ## Source/content changes affecting the next publish
 
 Commits in the source vault touching `Zoo/`, `References/`, `Evergreen/`, `MOCs/`, `Figures/`. These are queued to appear on the site at the next sync + deploy.
+
+**d0a6311c** · 2026-05-08 08:16:29 — audit: classify color-code logical qubit as encoding
+
+<details><summary>files (1)</summary>
+
+- `Zoo/color-code-logical-qubit.md`
+
+</details>
 
 **15f8318f** · 2026-05-08 06:15:33 — zoo: pipeline queue-run processed=10 failed=0 (2026-05-08 10:15 UTC)
 
@@ -66,6 +88,6 @@ Commits in the source vault touching `Zoo/`, `References/`, `Evergreen/`, `MOCs/
 ## Pipeline status
 
 - **Status:** `degraded` (mode: `full`)
-- **Last run:** 2026-05-08 06:00:01 EDT
-- **Papers added in last run:** 9
+- **Last run:** 2026-05-07 06:00:01 EDT
+- **Papers added in last run:** 3
 - **Failing steps:** `zoo_note_conventions`
