@@ -3,11 +3,9 @@ title: Spin-Photon MOC
 type: moc
 technology_family: Spin-Photon
 note_count: 2
-last_updated: '2026-05-01'
-generated_by: pipeline-v1
+last_updated: '2026-05-08'
+generated_by: pipeline-moc-v1
 ---
-
-# Spin-Photon MOC
 
 Curated map of Zoo entries in the **Spin-Photon** family.
 

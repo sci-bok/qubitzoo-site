@@ -98,6 +98,12 @@ where $\omega_r$ is the resonator frequency, $\omega_q$ the qubit frequency, and
 
 - [[walter-2017-rapid-readout]]
 
+## Evergreen context
+
+- [[dispersive-readout-mechanism]] — the standard superconducting readout pathway
+- [[resonator-as-quantum-bus]] — why readout resonators double as coupling infrastructure
+- [[purcell-protection-via-detuning]] — the readout-speed versus spontaneous-emission tradeoff
+
 ## Related Entries
 
 - [[cryogenic-amplification]] — Quantum-limited amplifiers that enable high-fidelity readout

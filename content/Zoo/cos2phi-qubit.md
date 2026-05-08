@@ -84,6 +84,12 @@ Protection mechanism: $\langle 0|\hat{n}|1\rangle \sim e^{-S}$ and $\langle 0|\h
 
 - [[smith-2020-cos2phi]]
 
+## Evergreen context
+
+- [[cos2phi]] — the second-harmonic circuit element that gives the qubit its π-periodic protected potential
+- [[charge-noise-sweet-spot]] — the qubit is best understood as an engineered multi-axis sweet spot against both charge and flux fluctuations
+- [[josephson-junction-as-nonlinear-element]] — standard Josephson physics is being interference-cancelled here to expose the protected $\cos(2\phi)$ term
+
 ## Related Entries
 
 - [[0-pi-qubit]] — Related protected qubit with $\cos(\phi)$ potential at $\pi$-sweet spot

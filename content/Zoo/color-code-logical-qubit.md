@@ -1,6 +1,6 @@
 ---
 title: Color-Code Logical Qubit
-entry_type: qubit
+entry_type: encoding
 technology_family: Cross-Platform
 status: demonstrated
 first_proposed_year: 2006

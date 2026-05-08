@@ -13,6 +13,8 @@ tags:
 
 The fundamental two-qubit interaction in semiconductor spin qubits. When the tunnel barrier between two single-electron quantum dots is lowered, virtual tunneling produces a Heisenberg exchange coupling:
 
+This note is intentionally the **Hamiltonian-first abstraction**. For the microscopic origin, tuning knobs, and device tradeoffs, see [[exchange-interaction-in-quantum-dots]].
+
 $$H_s(t) = J(t)\,\vec{S}_1 \cdot \vec{S}_2$$
 
 where the exchange constant $J(t) = 4t_0^2(t)/u$ depends on the tunneling matrix element $t_0$ and the on-site charging energy $u$.

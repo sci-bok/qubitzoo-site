@@ -18,5 +18,4 @@ This paper presents work on high-coherence fluxonium qubit.
 - **Journal:** [Physical Review X](https://doi.org/10.1103/physrevx.9.041041)
 
 ## Zoo Links
-- [[fluxonium]]
 - [[heavy-fluxonium-qubit]]

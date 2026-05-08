@@ -3,11 +3,22 @@ title: Changelog
 description: Recent changes to the Qubit Zoo site and source content (rolling 24h window).
 ---
 
-_Auto-generated at 2026-05-08T12:21:09.067Z (UTC). Covers the last 24 hours. If a window passes with no activity, sections will be empty._
+_Auto-generated at 2026-05-08T14:01:50.661Z (UTC). Covers the last 24 hours. If a window passes with no activity, sections will be empty._
 
 ## Public-facing site changes
 
 Commits to this site repo (qubitzoo-site) — these have already shipped or will ship on the next deploy.
+
+**f5694c23** · 2026-05-08 08:21:16 — feat: include backstage pipeline fixes in changelog
+
+<details><summary>files (4)</summary>
+
+- `content/_meta/changelog.json`
+- `content/changelog.md`
+- `scripts/generate-changelog.test.ts`
+- `scripts/generate-changelog.ts`
+
+</details>
 
 **f03a4b76** · 2026-05-08 08:17:32 — docs: refresh changelog after audit fixes
 

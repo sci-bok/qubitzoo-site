@@ -89,6 +89,11 @@ Rydberg neutral-atom qubits combine three key advantages: (1) native all-to-all 
 - [[henriet-2020-quantum-computing-with-neutral]]
 - [[wu-2020-a-concise-review-of]]
 
+## Evergreen context
+
+- [[rydberg-blockade-mechanism]] — the interaction mechanism behind fast neutral-atom entangling gates
+- [[coherence-time-hierarchy]] — useful for comparing hyperfine memory versus Rydberg-state gate timescales
+
 ## Related Entries
 
 - [[trapped-ion-qubit]] — competing digital quantum computing platform

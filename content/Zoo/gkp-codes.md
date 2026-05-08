@@ -103,6 +103,12 @@ GKP codes protect against the dominant error channel in bosonic systems — smal
 
 - [[gottesman-2001-gkp]]
 
+## Evergreen context
+
+- [[bosonic-code-hierarchy]] — the broader map of bosonic encodings
+- [[threshold-theorem]] — why finite-energy GKP states matter for fault-tolerant thresholds
+- [[erasure-error-vs-pauli-error]] — clarifies what kinds of oscillator errors GKP is designed to convert and correct
+
 ## Related Entries
 
 - [[cat-codes]] — alternative bosonic code using coherent state superpositions

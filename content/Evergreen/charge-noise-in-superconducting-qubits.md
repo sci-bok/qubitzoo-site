@@ -13,6 +13,8 @@ tags:
 
 The dominant decoherence mechanism in charge-sensitive superconducting qubits. Random fluctuations in background charge (from two-level systems in oxide layers, charge traps at interfaces) modulate the offset charge $n_g$ and dephase the qubit.
 
+This note is about the **noise source itself** and how it enters the Hamiltonian. For the broader cross-platform design pattern of operating at protected extrema, see [[charge-noise-sweet-spot]].
+
 ## The Problem
 
 The Cooper pair box Hamiltonian $H = 4E_C(n - n_g)^2 - E_J\cos\hat{\varphi}$ has energy levels that depend on $n_g$. At generic operating points, charge noise $\delta n_g$ causes dephasing at rate:

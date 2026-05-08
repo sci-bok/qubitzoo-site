@@ -74,6 +74,12 @@ Heavy fluxonium targets a "hardware-protected" operating regime where coherence 
 
 - [[lin-2018-heavy-fluxonium]]
 
+## Evergreen context
+
+- [[charge-noise-sweet-spot]] — heavy fluxonium gets its best coherence only at carefully chosen protected operating points
+- [[coherence-time-hierarchy]] — the millisecond-scale $T_1$ and $T_2$ claims are only meaningful in the sweet-spot versus off-sweet-spot context
+- [[noise-bias-and-asymmetric-error-channels]] — disjoint-support wavefunctions suppress relaxation more strongly than the remaining dephasing channels
+
 ## Related Entries
 
 - [[fluxonium]] — parent qubit type

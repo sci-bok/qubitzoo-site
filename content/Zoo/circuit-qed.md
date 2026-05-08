@@ -99,6 +99,14 @@ Previous proposals for coupling superconducting qubits used discrete LC circuits
 
 - [[blais-2004-circuit-qed]]
 
+## Evergreen context
+
+- [[jaynes-cummings-in-circuits]] — the atom-cavity Hamiltonian in its superconducting form
+- [[dispersive-readout-mechanism]] — why off-resonant coupling yields QND measurement
+- [[resonator-as-quantum-bus]] — how the cavity mediates long-range qubit-qubit coupling
+- [[vacuum-rms-field-scaling]] — why CPW resonators achieve unusually large zero-point fields
+- [[purcell-protection-via-detuning]] — how detuning and filters suppress spontaneous emission
+
 ## Related Entries
 
 - [[transmon]] — most common qubit used in circuit QED architectures

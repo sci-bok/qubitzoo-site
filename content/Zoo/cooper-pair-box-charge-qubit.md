@@ -94,6 +94,12 @@ The Cooper-pair box was the original "artificial atom" formed in a superconducti
 
 - [[nakamura-1999-cpb-coherent-oscillation]]
 
+## Evergreen context
+
+- [[charge-noise-in-superconducting-qubits]] — the original failure mode that limited the CPB
+- [[charge-noise-sweet-spot]] — why the charge degeneracy point mattered, and why it was not enough
+- [[josephson-junction-as-nonlinear-element]] — the nonlinear element underlying the CPB Hamiltonian
+
 ## Related Entries
 
 - [[transmon]] — descendant operating in $E_J \gg E_C$ for charge noise immunity

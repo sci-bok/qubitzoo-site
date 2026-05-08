@@ -98,6 +98,12 @@ where $\chi$ is the dispersive shift. This coupling enables photon-number-resolv
 
 - [[copetudo-2026-a-direct-controlled-phase-gate]]
 
+## Evergreen context
+
+- [[bosonic-code-hierarchy]] — the most direct evergreen map of the main bosonic code families
+- [[noise-bias-and-asymmetric-error-channels]] — important for cat-style bosonic protection
+- [[erasure-error-vs-pauli-error]] — important when comparing bosonic loss channels to standard qubit noise models
+
 ## Related Entries
 
 - [[cat-codes]] — coherent state superposition encoding

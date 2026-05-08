@@ -3,11 +3,9 @@ title: Color Center MOC
 type: moc
 technology_family: Color Center
 note_count: 1
-last_updated: '2026-05-01'
-generated_by: pipeline-v1
+last_updated: '2026-05-08'
+generated_by: pipeline-moc-v1
 ---
-
-# Color Center MOC
 
 Curated map of Zoo entries in the **Color Center** family.
 

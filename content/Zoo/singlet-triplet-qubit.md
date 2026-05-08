@@ -110,6 +110,12 @@ where $\alpha$ depends on the inter-dot capacitance and the charge-dipole differ
 ## Linked Papers
 - [[petta-2005-singlet-triplet]]
 
+## Evergreen context
+
+- [[exchange-interaction-in-quantum-dots]] — the physical origin of electrically tuned `J(\epsilon)` control
+- [[decoherence-free-subspace]] — why the `m_S = 0` manifold partially protects against uniform field noise
+- [[charge-noise-sweet-spot]] — where symmetric detuning helps, and where the tradeoffs remain
+
 ## Related Entries
 - [[loss-divincenzo-qubit]]
 - [[exchange-only-qubit]]

@@ -77,6 +77,12 @@ In the blochnium regime ($E_L \ll E_J, E_C$), the inductive term is a weak parab
 
 - [[pechenezhskiy-2020-blochnium]]
 
+## Evergreen context
+
+- [[josephson-junction-as-nonlinear-element]] — blochnium uses the same nonlinear element as fluxonium, but in the extreme inductive quasicharge regime
+- [[charge-noise-sweet-spot]] — its appeal is the dual protected-operating-point logic: charge insensitivity by design, flux insensitivity at the sweet spot
+- [[coherence-time-hierarchy]] — helps interpret the early-device gap between modest $T_1$ and still shorter echo-limited $T_2$
+
 ## Related Entries
 
 - [[fluxonium]] — parent architecture; blochnium is the extreme inductive limit

@@ -35,8 +35,8 @@ Bosonic quantum error correction encodes a logical qubit in the infinite-dimensi
 
 ## References
 
-- [Cochrane, Milburn & Munro (1999)](https://doi.org/10.1103/PhysRevA.59.2631) — cat code proposal for photon loss correction
-- [Gottesman, Kitaev & Preskill (2001)](https://doi.org/10.1103/PhysRevA.64.012310) — GKP code: encoding a qubit in an oscillator
-- [Michael et al. (2016)](https://doi.org/10.1103/PhysRevX.6.031006) — binomial codes for bosonic quantum error correction
-- [Ofek et al. (2016)](https://doi.org/10.1038/nature18949) — first QEC gain in a bosonic (cat) code in a 3D cavity
-- [Sivak et al. (2023)](https://doi.org/10.1038/s41586-023-05782-6) — real-time QEC with GKP codes exceeding break-even
+- [[cochrane-1999-macroscopically-distinct-superposition]] — cat code proposal for photon loss correction
+- [[gottesman-2001-gkp]] — GKP code: encoding a qubit in an oscillator
+- [[michael-2016-binomial-codes]] — binomial codes for bosonic quantum error correction
+- [[ofek-2016-extending-lifetime-bit]] — first QEC gain in a bosonic cat code in a 3D cavity
+- [[sivak-2023-real-time-error]] — real-time QEC with GKP codes exceeding break-even

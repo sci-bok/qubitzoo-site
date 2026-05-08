@@ -148,6 +148,12 @@ Two-qubit entangling gates and resonator coupling have **not yet been experiment
 ## Linked Papers
 - [[shim-2016-aeon]]
 
+## Evergreen context
+
+- [[exchange-interaction-in-quantum-dots]] — the tunable coupling resource AEON keeps always on
+- [[decoherence-free-subspace]] — the encoded three-spin protection that AEON inherits
+- [[charge-noise-sweet-spot]] — the double-sweet-spot idea that makes AEON special
+
 ## Related Entries
 - [[rx-qubit]]
 - [[loss-divincenzo-qubit]]

@@ -1,10 +1,21 @@
 {
   "schema": "qubitzoo.changelog.v1",
-  "generated_at_utc": "2026-05-08T12:21:09.067Z",
+  "generated_at_utc": "2026-05-08T14:01:50.661Z",
   "window_hours": 24,
   "site": {
     "repo_root": "/Users/scibok/.openclaw/workspace/repos/qubitzoo-site",
     "commits": [
+      {
+        "sha": "f5694c23",
+        "iso": "2026-05-08T08:21:16-04:00",
+        "subject": "feat: include backstage pipeline fixes in changelog",
+        "files": [
+          "content/_meta/changelog.json",
+          "content/changelog.md",
+          "scripts/generate-changelog.test.ts",
+          "scripts/generate-changelog.ts"
+        ]
+      },
       {
         "sha": "f03a4b76",
         "iso": "2026-05-08T08:17:32-04:00",

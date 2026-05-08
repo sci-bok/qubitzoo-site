@@ -101,6 +101,12 @@ Standard bosonic codes (like GKP) require complex active error correction. The c
 
 - [[mirrahimi-2014-cat-codes]]
 
+## Evergreen context
+
+- [[bosonic-code-hierarchy]] — where cat codes sit relative to GKP and binomial encodings
+- [[noise-bias-and-asymmetric-error-channels]] — the central idea behind exponentially biased cat noise
+- [[erasure-error-vs-pauli-error]] — useful contrast when comparing bosonic and heralded architectures
+
 ## Related Entries
 
 - [[gkp-codes]] — alternative bosonic code with grid-state encoding

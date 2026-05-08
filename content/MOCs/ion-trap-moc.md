@@ -3,11 +3,9 @@ title: Ion Trap MOC
 type: moc
 technology_family: Ion Trap
 note_count: 2
-last_updated: '2026-05-01'
-generated_by: pipeline-v1
+last_updated: '2026-05-08'
+generated_by: pipeline-moc-v1
 ---
-
-# Ion Trap MOC
 
 Curated map of Zoo entries in the **Ion Trap** family.
 

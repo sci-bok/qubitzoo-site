@@ -99,6 +99,11 @@ For the simplest single-loss-correcting code, the parity operator $(-1)^{\hat{n}
 
 - [[michael-2016-binomial-codes]]
 
+## Evergreen context
+
+- [[bosonic-code-hierarchy]] — the comparison class for cat and GKP encodings
+- [[erasure-error-vs-pauli-error]] — useful when distinguishing loss-dominated oscillator channels from Pauli abstractions
+
 ## Related Entries
 
 - [[cat-codes]] — related bosonic code using coherent state superpositions

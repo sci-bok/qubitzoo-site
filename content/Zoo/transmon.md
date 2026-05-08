@@ -127,6 +127,13 @@ State-of-the-art (as of late 2025): $T_1$ up to $1.68\,\text{ms}$ (planar, tanta
 ## Linked Papers
 - [[koch-2007-transmon]]
 
+## Evergreen context
+
+- [[charge-noise-in-superconducting-qubits]] — why the transmon exists at all
+- [[charge-noise-sweet-spot]] — the design pattern behind large-`E_J/E_C` operation
+- [[josephson-junction-as-nonlinear-element]] — the circuit element that provides the weak anharmonicity
+- [[coherence-time-hierarchy]] — how to interpret the `T_1`, `T_2`, and echo numbers in the metrics table
+
 ## Related Entries
 - [[cooper-pair-box-charge-qubit]] — ancestor (charge-sensitive limit)
 - [[circuit-qed]] — readout and coupling architecture

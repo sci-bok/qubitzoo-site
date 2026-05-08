@@ -95,6 +95,12 @@ The nonsinusoidal current-phase relation of the semiconductor junction introduce
 
 - [[strickland-2024-gatemonium]]
 
+## Evergreen context
+
+- [[josephson-junction-as-nonlinear-element]] — gatemonium swaps the fixed tunnel junction for a gate-tunable semiconductor weak link
+- [[charge-noise-sweet-spot]] — the same device can be tuned across fluxonium regimes with different charge-versus-flux protection tradeoffs
+- [[cos2phi]] — voltage-tunable weak links are one route toward the higher-harmonic protected-circuit physics highlighted by the $\cos(2\varphi)$ note
+
 ## Related Entries
 
 - [[gatemon]] — parent device (gate-tunable transmon, no superinductance)
