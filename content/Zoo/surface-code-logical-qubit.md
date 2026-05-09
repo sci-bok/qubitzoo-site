@@ -5,7 +5,7 @@ technology_family: Cross-Platform
 status: demonstrated
 figure_reviewed: true
 first_proposed_year: 1997
-first_demonstrated_year: 2023
+first_demonstrated_year: 2022
 keywords:
 - surface code
 - logical qubit
@@ -13,10 +13,10 @@ keywords:
 - stabilizer code
 - threshold theorem
 influence_score: 0.83
-last_updated: '2026-03-21'
+last_updated: '2026-05-09'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-manual-2026-03-21
+verified_by: scibok-manual-2026-05-09
 ---
 
 ## Figure
@@ -35,11 +35,11 @@ The code space is defined by star and plaquette stabilizers:
 
 $$A_s = \prod_{i\in s} X_i, \qquad B_p = \prod_{i\in p} Z_i$$
 
-with code Hamiltonian form:
+with idealized code Hamiltonian form:
 
 $$H = -\sum_s A_s - \sum_p B_p$$
 
-The code space $\mathcal{C}$ is the simultaneous $+1$ eigenspace of all stabilizers. Logical operators correspond to non-contractible strings across the patch: $X_L$ connects the two smooth boundaries and $Z_L$ connects the two rough boundaries. The code distance $d$ is the minimum weight of any logical operator.
+The code space $\mathcal{C}$ is the simultaneous $+1$ eigenspace of all stabilizers. Logical operators correspond to non-contractible strings across the patch: $X_L$ connects the two smooth boundaries and $Z_L$ connects the two rough boundaries. The code distance $d$ is the minimum weight of any logical operator. In hardware implementations, however, surface-code logical qubits are realized by repeated syndrome extraction and classical decoding rather than passive protection under this Hamiltonian.
 
 ## Motivation
 
@@ -47,28 +47,30 @@ The surface code is currently the dominant QEC architecture for superconducting 
 
 ## Experimental Status
 
-**Below-threshold operation — Google Quantum AI (2024):**
+**Below-threshold logical memory — Google Quantum AI and Collaborators (2025):**
 - Demonstrated logical error suppression when scaling from distance-3 to distance-5 to distance-7 on the Willow processor.
-- Achieved a $\Lambda = 2.14 \pm 0.02$ error suppression factor per code distance step.
-- Distance-7 code with 101 qubits achieved $0.143\% \pm 0.003\%$ error per cycle.
-- Logical memory exceeded best physical qubit lifetime by factor $2.4 \pm 0.3$ (beyond break-even).
+- Achieved a $\Lambda = 2.14 \pm 0.02$ error suppression factor per code-distance step.
+- Distance-7 code with 101 qubits achieved $0.143\% \pm 0.003\%$ logical error per cycle.
+- Logical memory exceeded the best physical qubit lifetime by a factor $2.4 \pm 0.3$, establishing beyond-break-even memory in a surface-code architecture.
 
-**Lattice surgery — Erhard et al. (2021):**
-- Demonstrated entangling operations between logical qubits using lattice surgery protocols on trapped ions.
+**Encoded logical operations — Marques et al. (2022):**
+- Realized repeated error-detection cycles on a distance-2 superconducting surface-code logical qubit.
+- Demonstrated logical state preparation, measurement in the cardinal Bloch bases, and a universal set of encoded single-qubit gates.
+- Showed that the fault-tolerant variants outperformed matched non-fault-tolerant implementations for the tested logical operations.
 
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| Logical lifetime | ~2× improvement per code distance step | Exponential suppression of logical errors demonstrated d=3→5→7 | [Google Quantum AI 2024](https://doi.org/10.1038/s41586-024-08449-y) |
-| 1Q gate fidelity (logical Pauli) | 99.6–99.8% | d=5, Google Willow processor | [Google Quantum AI 2024](https://doi.org/10.1038/s41586-024-08449-y) |
-| 2Q gate fidelity (logical CNOT) | ~99% (estimated) | Lattice surgery protocol; full demonstration pending | [Erhard et al. 2021](https://doi.org/10.1038/s41586-021-03928-y) |
-| Threshold | ~1% | Circuit-level threshold | — |
-| Physical qubits per logical | $O(d^2)$ | Code distance $d$ | — |
-| Stabilizer cycle time | 0.5–5 μs | Platform dependent | — |
-| Current status | Logical error suppression demonstrated | Below-threshold operation at d=7 | [Google Quantum AI 2024](https://doi.org/10.1038/s41586-024-08449-y) |
+| Error-suppression factor $\Lambda$ | $2.14 \pm 0.02$ | Improvement per code-distance step for $d=3 \to 5 \to 7$ on Willow | [Google Quantum AI and Collaborators 2025](https://doi.org/10.1038/s41586-024-08449-y) |
+| Logical error per cycle | $0.143\% \pm 0.003\%$ | Distance-7, 101-qubit surface-code memory experiment | [Google Quantum AI and Collaborators 2025](https://doi.org/10.1038/s41586-024-08449-y) |
+| Logical memory gain over best physical qubit | $2.4 \pm 0.3\times$ | Beyond-break-even logical memory benchmark | [Google Quantum AI and Collaborators 2025](https://doi.org/10.1038/s41586-024-08449-y) |
+| Encoded operation set | Initialization, measurement, universal 1Q logical gates | Demonstrated on a distance-2 error-detecting superconducting surface code | [Marques et al. 2022](https://doi.org/10.1038/s41567-021-01423-9) |
+| Threshold | ~1% | Canonical circuit-level threshold estimate for the surface code | [Fowler et al. 2012](https://doi.org/10.1103/PhysRevA.86.032324) |
+| Physical qubits per logical | $O(d^2)$ data plus syndrome ancillas | Standard planar/square-patch overhead scales quadratically with code distance | [Fowler et al. 2012](https://doi.org/10.1103/PhysRevA.86.032324) |
+| Current status | Below-threshold logical memory demonstrated | Best peer-reviewed surface-code benchmark here is the Willow $d=7$ memory experiment | [Google Quantum AI and Collaborators 2025](https://doi.org/10.1038/s41586-024-08449-y) |
 
-> **Note:** For QEC code entries, "T₁" refers to logical qubit lifetime (error-suppressed), and gate fidelities are logical-level operations on encoded information.
+> **Note:** For QEC code entries, lifetime and operation metrics are logical-level properties of encoded information, not single-device $T_1/T_2$ numbers.
 
 ## References
 
@@ -79,12 +81,15 @@ The surface code is currently the dominant QEC architecture for superconducting 
 - A. G. Fowler et al., "Surface codes: Towards practical large-scale quantum computation," [Phys. Rev. A 86, 032324 (2012)](https://doi.org/10.1103/PhysRevA.86.032324) — [arXiv:1208.0928](https://arxiv.org/abs/1208.0928)
 
 ### Experimental demonstrations
+- J. F. Marques et al., "Logical-qubit operations in an error-detecting surface code," [Nature Physics 18, 80 (2022)](https://doi.org/10.1038/s41567-021-01423-9) — [arXiv:2102.13071](https://arxiv.org/abs/2102.13071)
 - Google Quantum AI and Collaborators, "Quantum error correction below the surface code threshold," [Nature 638, 920 (2025)](https://doi.org/10.1038/s41586-024-08449-y) — [arXiv:2408.13687](https://arxiv.org/abs/2408.13687)
-- A. Erhard et al., "Entangling logical qubits with lattice surgery," [Nature 589, 220 (2021)](https://doi.org/10.1038/s41586-021-03928-y)
 
 ## Linked Papers
 
+- [[kitaev-2003-fault-tolerant-computation]]
 - [[fowler-2012-surface-code-roadmap]]
+- [[marques-2022-logical-qubit-operations-error-detecting-surface-code]]
+- [[acharya-2025-error-correction-below]]
 
 ## Related Entries
 
@@ -92,3 +97,4 @@ The surface code is currently the dominant QEC architecture for superconducting 
 - [[transmon]] — dominant physical qubit for superconducting surface code implementations
 - [[trapped-ion-qubit]] — alternative physical platform for surface code QEC
 - [[erasure-qubit]] — erasure conversion dramatically increases the effective code threshold
+- [[bacon-shor-code]] — contrasting subsystem-code route to logical protection with different locality and overhead tradeoffs
