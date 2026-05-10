@@ -3,11 +3,20 @@ title: Changelog
 description: Recent changes to the Qubit Zoo site and source content (rolling 24h window).
 ---
 
-_Auto-generated at 2026-05-10T11:38:14.731Z (UTC). Covers the last 24 hours. If a window passes with no activity, sections will be empty._
+_Auto-generated at 2026-05-10T11:49:12.150Z (UTC). Covers the last 24 hours. If a window passes with no activity, sections will be empty._
 
 ## Public-facing site changes
 
 Commits to this site repo (qubitzoo-site) — these have already shipped or will ship on the next deploy.
+
+**3a073502** · 2026-05-10 07:38:20 — docs: refresh changelog with family-aware audit fix
+
+<details><summary>files (2)</summary>
+
+- `content/_meta/changelog.json`
+- `content/changelog.md`
+
+</details>
 
 **36615014** · 2026-05-09 10:27:58 — zoo: audit surface-code logical qubit
 
@@ -70,6 +79,15 @@ Commits in the source vault touching `Zoo/`, `References/`, `Evergreen/`, `MOCs/
 ## Backstage maintenance and automation changes
 
 Commits in the pipeline/automation repo (qubit-zoo-zettelkasten). These capture backend fixes, audits, and build/report changes that may not be visible on the public site yet.
+
+**e2301e4f** · 2026-05-10 07:49:07 — fix: reduce audit noise for photonic and encoding metrics
+
+<details><summary>files (2)</summary>
+
+- `scripts/audit-zoo-metrics.py`
+- `tests/test_zoo_metrics_audit.py`
+
+</details>
 
 **6068b8b8** · 2026-05-10 07:38:08 — fix: make zoo metrics completeness family-aware
 
