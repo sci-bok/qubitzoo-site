@@ -13,10 +13,10 @@ keywords:
 - stabilizer code
 - threshold theorem
 influence_score: 0.83
-last_updated: '2026-05-09'
+last_updated: '2026-05-10'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-manual-2026-05-09
+verified_by: scibok-manual-2026-05-10
 ---
 
 ## Figure
