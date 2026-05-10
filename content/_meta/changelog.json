@@ -1,50 +1,19 @@
 {
   "schema": "qubitzoo.changelog.v1",
-  "generated_at_utc": "2026-05-08T14:01:50.661Z",
+  "generated_at_utc": "2026-05-10T11:38:14.731Z",
   "window_hours": 24,
   "site": {
     "repo_root": "/Users/scibok/.openclaw/workspace/repos/qubitzoo-site",
     "commits": [
       {
-        "sha": "f5694c23",
-        "iso": "2026-05-08T08:21:16-04:00",
-        "subject": "feat: include backstage pipeline fixes in changelog",
+        "sha": "36615014",
+        "iso": "2026-05-09T10:27:58-04:00",
+        "subject": "zoo: audit surface-code logical qubit",
         "files": [
-          "content/_meta/changelog.json",
-          "content/changelog.md",
-          "scripts/generate-changelog.test.ts",
-          "scripts/generate-changelog.ts"
-        ]
-      },
-      {
-        "sha": "f03a4b76",
-        "iso": "2026-05-08T08:17:32-04:00",
-        "subject": "docs: refresh changelog after audit fixes",
-        "files": [
-          "content/_meta/changelog.json",
-          "content/changelog.md"
-        ]
-      },
-      {
-        "sha": "838daf30",
-        "iso": "2026-05-08T08:00:00-04:00",
-        "subject": "feat: add rolling site changelog",
-        "files": [
-          "content/_meta/changelog.json",
-          "content/changelog.md",
-          "package.json",
-          "quartz.layout.ts",
-          "scripts/generate-changelog.test.ts",
-          "scripts/generate-changelog.ts",
-          "scripts/sync-vault.sh"
-        ]
-      },
-      {
-        "sha": "630e5cf2",
-        "iso": "2026-05-07T10:09:57-04:00",
-        "subject": "audit: refresh ferbo-qubit",
-        "files": [
-          "content/Zoo/ferbo-qubit.md"
+          "content/Figures/surface-code-logical-qubit-figure.png",
+          "content/References/egan-2021-fault-tolerant-control.md",
+          "content/References/marques-2022-logical-qubit-operations-error-detecting-surface-code.md",
+          "content/Zoo/surface-code-logical-qubit.md"
         ]
       }
     ]
@@ -54,19 +23,10 @@
     "available": true,
     "commits": [
       {
-        "sha": "d0a6311c",
-        "iso": "2026-05-08T08:16:29-04:00",
-        "subject": "audit: classify color-code logical qubit as encoding",
+        "sha": "75566e14",
+        "iso": "2026-05-10T06:13:02-04:00",
+        "subject": "zoo: pipeline queue-run processed=0 failed=0 (2026-05-10 10:13 UTC)",
         "files": [
-          "Zoo/color-code-logical-qubit.md"
-        ]
-      },
-      {
-        "sha": "15f8318f",
-        "iso": "2026-05-08T06:15:33-04:00",
-        "subject": "zoo: pipeline queue-run processed=10 failed=0 (2026-05-08 10:15 UTC)",
-        "files": [
-          "Figures/ferbo-qubit-figure.png",
           "MOCs/classical-hardware-moc.md",
           "MOCs/codes-moc.md",
           "MOCs/color-center-moc.md",
@@ -81,24 +41,26 @@
           "MOCs/super-semi-moc.md",
           "MOCs/superconducting-moc.md",
           "MOCs/topological-moc.md",
-          "MOCs/trapped-ion-moc.md",
-          "References/moncy-2026-surface-code-thresholds-and-qubit.md",
-          "References/poonia-2026-dzyaloshinskii-moriya-interaction-as-a.md",
-          "References/villanova-2026-network-mediated-capacitive-coupling-drives.md",
-          "References/zhurbina-2026-coherence-limitations-of-a.md"
+          "MOCs/trapped-ion-moc.md"
         ]
       },
       {
-        "sha": "805065e9",
-        "iso": "2026-05-07T10:50:07-04:00",
-        "subject": "zettel: add protected-superconducting evergreen context",
+        "sha": "07a1a853",
+        "iso": "2026-05-09T10:51:29-04:00",
+        "subject": "synthesis: add neutral-atom evergreen context",
         "files": [
-          "Zoo/0-pi-qubit.md",
-          "Zoo/blochnium.md",
-          "Zoo/cos2phi-qubit.md",
-          "Zoo/ferbo-qubit.md",
-          "Zoo/gatemonium.md",
-          "Zoo/heavy-fluxonium-qubit.md"
+          "Zoo/alkaline-earth-neutral-atom-clock-qubit.md",
+          "Zoo/erasure-qubit.md",
+          "Zoo/neutral-atom-qubit.md",
+          "Zoo/nuclear-spin-neutral-atom-qubit.md"
+        ]
+      },
+      {
+        "sha": "e06bf555",
+        "iso": "2026-05-09T10:27:58-04:00",
+        "subject": "zoo: sync surface-code logical qubit figure",
+        "files": [
+          "Figures/surface-code-logical-qubit-figure.png"
         ]
       }
     ]
@@ -108,66 +70,54 @@
     "available": true,
     "commits": [
       {
-        "sha": "b35fc96a",
-        "iso": "2026-05-08T08:19:58-04:00",
-        "subject": "fix: allow ns-scale semiconducting T1 metrics",
+        "sha": "6068b8b8",
+        "iso": "2026-05-10T07:38:08-04:00",
+        "subject": "fix: make zoo metrics completeness family-aware",
         "files": [
           "scripts/audit-zoo-metrics.py",
           "tests/test_zoo_metrics_audit.py"
         ]
       },
       {
-        "sha": "a9a57408",
-        "iso": "2026-05-08T08:16:24-04:00",
-        "subject": "fix: reduce zoo metrics audit schema noise",
-        "files": [
-          "data/zoo-metrics.json",
-          "scripts/audit-zoo-metrics.py",
-          "scripts/extract-zoo-metrics.py",
-          "tests/test_zoo_metrics_audit.py"
-        ]
-      },
-      {
-        "sha": "2ab0a74b",
-        "iso": "2026-05-08T06:15:31-04:00",
-        "subject": "zoo: pipeline queue-run processed=10 failed=0 (2026-05-08 10:15 UTC)",
+        "sha": "118406f2",
+        "iso": "2026-05-10T06:13:01-04:00",
+        "subject": "zoo: pipeline queue-run processed=0 failed=0 (2026-05-10 10:13 UTC)",
         "files": [
           "data/canon_coverage.json",
           "data/classics_backlog.json",
           "data/classics_resolver_report.json",
-          "data/exports/paper_feed/2026-05-08/paper_feed.v1.jsonl",
+          "data/exports/paper_feed/2026-05-10/paper_feed.v1.jsonl",
           "data/exports/paper_feed/latest.json",
           "data/influence_history.jsonl",
-          "data/processed_papers.jsonl",
           "data/quarantine_queue.json",
           "data/reports/.last-morning-summary-date",
-          "data/reports/2026-05-07/calibration-json.err.log",
-          "data/reports/2026-05-07/calibration.err.log",
-          "data/reports/2026-05-07/calibration.json",
-          "data/reports/2026-05-07/calibration.txt",
-          "data/reports/2026-05-07/influence-scoring.log",
-          "data/reports/2026-05-07/moc-build.log",
-          "data/reports/2026-05-07/moc-generate.log",
-          "data/reports/2026-05-07/ops-report-json.err.log",
-          "data/reports/2026-05-07/ops-report.err.log",
-          "data/reports/2026-05-07/ops-report.json",
-          "data/reports/2026-05-07/ops-report.txt",
-          "data/reports/2026-05-07/queue-summary.json",
-          "data/reports/2026-05-07/queue.log",
-          "data/reports/2026-05-07/run-summary.json",
-          "data/reports/2026-05-07/run-summary.txt",
-          "data/reports/2026-05-07/zettel-review.log",
-          "data/reports/2026-05-07/zoo-links.log",
-          "data/reports/2026-05-07/zoo-note-conventions.log",
-          "data/reports/2026-05-07/zoo-source-references.log",
-          "data/reports/2026-05-08/canon-coverage.log",
-          "data/reports/2026-05-08/canon-coverage.md",
-          "data/reports/2026-05-08/classics-build.log",
-          "data/reports/2026-05-08/classics-resolve.log",
-          "data/reports/2026-05-08/discovery.log",
-          "data/reports/2026-05-08/preflight.log",
-          "data/reports/2026-05-08/prioritize-classics.log",
-          "data/reports/2026-05-08/queue.log",
+          "data/reports/2026-05-09/calibration-json.err.log",
+          "data/reports/2026-05-09/calibration.err.log",
+          "data/reports/2026-05-09/calibration.json",
+          "data/reports/2026-05-09/calibration.txt",
+          "data/reports/2026-05-09/influence-scoring.log",
+          "data/reports/2026-05-09/moc-build.log",
+          "data/reports/2026-05-09/moc-generate.log",
+          "data/reports/2026-05-09/ops-report-json.err.log",
+          "data/reports/2026-05-09/ops-report.err.log",
+          "data/reports/2026-05-09/ops-report.json",
+          "data/reports/2026-05-09/ops-report.txt",
+          "data/reports/2026-05-09/queue-summary.json",
+          "data/reports/2026-05-09/queue.log",
+          "data/reports/2026-05-09/run-summary.json",
+          "data/reports/2026-05-09/run-summary.txt",
+          "data/reports/2026-05-09/zettel-review.log",
+          "data/reports/2026-05-09/zoo-links.log",
+          "data/reports/2026-05-09/zoo-note-conventions.log",
+          "data/reports/2026-05-09/zoo-source-references.log",
+          "data/reports/2026-05-10/canon-coverage.log",
+          "data/reports/2026-05-10/canon-coverage.md",
+          "data/reports/2026-05-10/classics-build.log",
+          "data/reports/2026-05-10/classics-resolve.log",
+          "data/reports/2026-05-10/discovery.log",
+          "data/reports/2026-05-10/preflight.log",
+          "data/reports/2026-05-10/prioritize-classics.log",
+          "data/reports/2026-05-10/queue.log",
           "data/reports/latest-run-summary.json",
           "data/reports/latest-run-summary.txt",
           "data/reports/run-history.jsonl",
@@ -175,12 +125,13 @@
         ]
       },
       {
-        "sha": "3018abb3",
-        "iso": "2026-05-07T10:11:17-04:00",
-        "subject": "audit: refresh ferbo-qubit",
+        "sha": "8fc22ff7",
+        "iso": "2026-05-09T10:27:58-04:00",
+        "subject": "zoo: record surface-code logical qubit audit",
         "files": [
           "data/audit-tracker.json",
-          "vault/References/caceres-2026-ferbo-a-noise-resilient.md"
+          "vault/References/egan-2021-fault-tolerant-control.md",
+          "vault/References/marques-2022-logical-qubit-operations-error-detecting-surface-code.md"
         ]
       }
     ]
@@ -188,9 +139,9 @@
   "pipeline": {
     "status": "degraded",
     "mode": "full",
-    "timestamp_utc": "2026-05-07T10:00:01Z",
-    "timestamp_local": "2026-05-07 06:00:01 EDT",
-    "papers_added": 3,
+    "timestamp_utc": "2026-05-10T10:00:04Z",
+    "timestamp_local": "2026-05-10 06:00:04 EDT",
+    "papers_added": 0,
     "failing_steps": [
       "zoo_note_conventions"
     ]
