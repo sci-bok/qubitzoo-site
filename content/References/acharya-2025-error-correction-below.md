@@ -4,18 +4,21 @@ authors: [Rajeev Acharya, Dmitry A. Abanin, Laleh Aghababaie-Beni, Igor Aleiner,
 year: 2025
 journal: "Nature"
 doi: 10.1038/s41586-024-08449-y
+arxiv_id: '2408.13687'
 type: reference
 generated_by: scibok-audit-backfill
-last_updated: '2026-03-25'
+last_updated: '2026-05-12'
 ---
 
-This paper presents work on quantum error correction below the surface code threshold.
+This paper presents Willow-class below-threshold surface-code operation on a tunable-coupler transmon processor.
 
 ## Key Results
-- Presents quantum error correction below the surface code threshold
+- Below-threshold surface-code quantum error correction on a large tunable-coupler superconducting processor
+- System-level evidence that tunable-coupler transmon hardware supports logical-memory improvement, not just isolated pair benchmarks
 
 ## Links
 - **Journal:** [Nature](https://doi.org/10.1038/s41586-024-08449-y)
+- **arXiv:** [2408.13687](https://arxiv.org/abs/2408.13687)
 
 ## Zoo Links
 - [[gmon]]
