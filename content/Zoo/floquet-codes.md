@@ -82,6 +82,12 @@ The effective code after one complete cycle is equivalent to a topological code 
 
 - [[hastings-2021-floquet]]
 
+## Evergreen context
+
+- [[threshold-theorem]] — Floquet codes are best understood as a different path to fault-tolerant scaling, trading static stabilizer structure for simpler repeated measurements.
+- [[quantum-hardware]] — the main appeal is hardware-facing: two-body checks fit platforms that struggle with deeper ancilla-assisted stabilizer extraction.
+- [[erasure-error-vs-pauli-error]] — useful when comparing decoder assumptions, because Floquet-code advantages shift noticeably with the underlying flagged-loss versus Pauli-dominated noise model.
+
 ## Related Entries
 
 - [[surface-code-logical-qubit]] — Static topological code; Floquet codes can emulate its effective stabilizers

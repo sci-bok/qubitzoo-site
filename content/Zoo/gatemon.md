@@ -14,7 +14,7 @@ keywords:
 - inas
 - super-semi
 influence_score: 0.68
-last_updated: '2026-03-21'
+last_updated: '2026-05-12'
 generated_by: scibok-curation
 extracted_by: scibok
 verified_by: scibok-manual-2026-03-21
@@ -91,6 +91,12 @@ which modifies the anharmonicity and energy-level structure compared to a standa
 
 - [[larsen-2015-gatemon]]
 - [[casparis-2018-ge-gatemon]]
+
+## Evergreen context
+
+- [[josephson-junction-as-nonlinear-element]] — the gatemon keeps transmon physics but replaces the oxide tunnel barrier with a semiconductor weak link whose $E_J$ is tuned electrostatically.
+- [[charge-noise-sweet-spot]] — its protection story is still the transmon one: large $E_J/E_C$ flattens charge sensitivity, while the gate adds a control knob without reverting to charge-qubit fragility.
+- [[quantum-hardware]] — this is the cleanest bridge between mainstream superconducting control stacks and semiconductor-process ambitions.
 
 ## Related Entries
 

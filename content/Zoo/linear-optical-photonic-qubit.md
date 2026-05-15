@@ -92,6 +92,12 @@ Single-qubit operations in dual-rail encoding are realized with beam splitters a
 - [[knill-2001-klm]]
 - [[kok-2005-review-article-linear-optical]]
 
+## Evergreen context
+
+- [[erasure-error-vs-pauli-error]] — source, circuit, and detector loss are central because missing photons are often flagged absence events rather than arbitrary unknown rotations.
+- [[threshold-theorem]] — KLM is historically important because it showed that probabilistic entangling operations plus teleportation and feed-forward can still support scalable quantum computing in principle.
+- [[quantum-hardware]] — helpful umbrella for the linear-optics tradeoff: minimal transport decoherence and natural networking, paid for with non-deterministic entangling operations.
+
 ## Related Entries
 
 - [[dual-rail-photonic-qubit]] — specific encoding used in linear-optical QC

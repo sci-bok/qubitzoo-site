@@ -135,6 +135,12 @@ where $\Delta_v$ is the valley splitting (typically 0.03–1 meV in Si/SiGe, 0.3
 - [[steinacker-2025-300mm-foundry-silicon]]
 - [[edlbauer-2025-11-qubit-atom-processor]]
 
+## Evergreen context
+
+- [[divincenzo-criteria]] — silicon is one of the cleanest examples of a platform competing on every criterion at once: long coherence, high-fidelity gates, scalable fabrication, and qubit-specific readout
+- [[spin-orbit-coupling-for-qubit-control]] — clarifies why silicon usually needs micromagnets or synthetic SOC, unlike hole-spin devices
+- [[exchange-interaction-in-quantum-dots]] — barrier-tuned exchange remains the standard entangling mechanism in gate-defined silicon dot arrays
+
 ## Related Entries
 
 - [[spin-qubit]] — General spin qubit concept

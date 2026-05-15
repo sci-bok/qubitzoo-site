@@ -16,7 +16,7 @@ keywords:
 - monolithic
 - Josephson junction
 influence_score: 0.55
-last_updated: '2026-03-21'
+last_updated: '2026-05-12'
 generated_by: scibok-curation
 extracted_by: manual
 verified_by: scibok-manual-2026-03-21
@@ -86,6 +86,12 @@ with $E_J = \frac{\hbar I_c}{2e}$ determined by the doped-undoped-doped junction
 ## Linked Papers
 
 - [[shim-2014-bottom-up-sc]]
+
+## Evergreen context
+
+- [[josephson-junction-as-nonlinear-element]] — the proposal keeps standard Josephson-circuit physics, but tries to realize the nonlinear element entirely inside a doped single crystal instead of across deposited metal interfaces.
+- [[quantum-hardware]] — its real significance is architectural: one semiconductor host for superconducting circuits, donor devices, and shared fabrication flows.
+- [[divincenzo-criteria]] — this note is a useful reminder that elegant materials integration is not enough by itself; the missing evidence is still competitive initialization, control, readout, and coherence.
 
 ## Related Entries
 

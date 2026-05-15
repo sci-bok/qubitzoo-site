@@ -90,6 +90,12 @@ Earlier transmon designs used coaxial or lumped-element capacitors that did not 
 
 - [[barends-2013-xmon]]
 
+## Evergreen context
+
+- [[charge-noise-sweet-spot]] — the Xmon inherits the transmon strategy of buying coherence by flattening charge sensitivity, then spends the saved robustness on a scalable planar layout.
+- [[josephson-junction-as-nonlinear-element]] — the cross capacitor changes packaging, not the underlying source of anharmonicity: the Josephson cosine still does the qubit-making work.
+- [[threshold-theorem]] — Xmon mattered historically because it was one of the first planar superconducting stacks to pair coherence and gate fidelities in the range needed for surface-code scaling.
+
 ## Related Entries
 
 - [[transmon]] — parent qubit type

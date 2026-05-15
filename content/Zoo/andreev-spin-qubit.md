@@ -14,7 +14,7 @@ keywords:
 - semiconductor nanowire
 - spin-orbit coupling
 influence_score: 0.70
-last_updated: '2026-03-21'
+last_updated: '2026-05-12'
 generated_by: scibok-curation
 extracted_by: scibok
 verified_by: scibok-manual-2026-03-21
@@ -85,6 +85,13 @@ where $\tau$ is the channel transparency, $\varphi$ the superconducting phase di
 ## Linked Papers
 
 - [[hays-2021-andreev-spin-qubit]]
+
+## Evergreen context
+
+- [[spin-orbit-coupling-for-qubit-control]] — Rashba SOC in the weak link is exactly what turns Andreev states into electrically addressable spin qubits.
+- [[josephson-junction-as-nonlinear-element]] — this is still a Josephson weak link, but one whose nonlinear element carries spinful Andreev structure instead of a simple tunnel-junction cosine.
+- [[quantum-hardware]] — a good cross-family bridge case: one device behaving simultaneously like a spin qubit, a Josephson circuit, and a circuit-QED component.
+- [[divincenzo-criteria]] — parity stability and single-shot readout are the real scaling bottlenecks here, not just raw coherence numbers.
 
 ## Related Entries
 

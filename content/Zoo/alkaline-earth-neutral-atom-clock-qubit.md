@@ -94,6 +94,12 @@ For clock-state encoding specifically, first-order magnetic sensitivity can be e
 - [[daley-2011-state-dependent-lattices-for-quantum-computing-with-alkaline-earth-metal-atoms]]
 - [[madjarov-2020-high-fidelity-entanglement-and-detection-of-alkaline-earth-rydberg-atoms]]
 
+## Evergreen context
+
+- [[coherence-time-hierarchy]] — the clock-state pitch is fundamentally a gate-time versus storage-time advantage story
+- [[rydberg-blockade-mechanism]] — these platforms still cash out their entangling power by temporarily promoting clock-state atoms into interacting Rydberg manifolds
+- [[erasure-error-vs-pauli-error]] — alkaline-earth neutral atoms are one of the clearest routes to deliberate erasure-dominant QEC rather than plain Pauli-noise suppression
+
 ## Related Entries
 
 - [[rydberg-neutral-atom-qubit]] — alkali Rydberg platform with complementary trade-offs

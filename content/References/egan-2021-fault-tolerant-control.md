@@ -19,3 +19,4 @@ This paper presents work on fault-tolerant control of an error-corrected qubit.
 
 ## Zoo Links
 - [[bacon-shor-code]]
+- [[surface-code-logical-qubit]]

@@ -98,6 +98,12 @@ $$H_{2q} = J(t)\,\mathbf{S}_1\cdot\mathbf{S}_2$$
 - [[scappucci-2021-ge-review]]
 - [[dijkema-2026-simultaneous-operation-of-an]]
 
+## Evergreen context
+
+- [[spin-orbit-coupling-for-qubit-control]] — the canonical semiconductor example where strong heavy-hole SOC turns gate voltages directly into spin rotations
+- [[exchange-interaction-in-quantum-dots]] — despite all-electrical single-qubit control, two-qubit logic is still built from tunable interdot exchange
+- [[charge-noise-sweet-spot]] — frames the core speed-versus-dephasing tradeoff and why Ge devices keep pushing sweet-spot engineering
+
 ## Related Entries
 
 - [[spin-qubit]] — broader spin qubit family; holes offer faster electrical control than electrons

@@ -92,6 +92,12 @@ which implements rotations about the $X$ axis of the logical Bloch sphere. Combi
 
 - [[knill-2001-klm]]
 
+## Evergreen context
+
+- [[erasure-error-vs-pauli-error]] — photon loss is especially important here because it usually leaves the dual-rail codespace as a flagged vacuum event rather than an undetected rotation.
+- [[noise-bias-and-asymmetric-error-channels]] — photonic fault-tolerance schemes work best when the hardware stays in a strongly loss-dominated regime and the decoder is built around that asymmetry.
+- [[threshold-theorem]] — KLM, cluster-state, and fusion approaches are all different ways of pushing probabilistic optics and loss below a scalable fault-tolerance threshold.
+
 ## Related Entries
 
 - [[dual-rail-superconducting-qubit]] — superconducting analog of the dual-rail encoding

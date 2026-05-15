@@ -84,6 +84,12 @@ Nuclear-spin encodings are a coherence-first strategy for neutral-atom computing
 
 - [[ma-2022-nuclear-spin-atom]]
 
+## Evergreen context
+
+- [[coherence-time-hierarchy]] — nuclear-spin storage only makes sense when the idle-coherence advantage stays far ahead of the gate-time cost
+- [[rydberg-blockade-mechanism]] — even in memory-first encodings, fast entanglement still comes from temporary access to strongly interacting excited manifolds
+- [[divincenzo-criteria]] — a useful lens for judging whether the memory/control separation actually translates into scalable initialization, gates, and readout
+
 ## Related Entries
 
 - [[alkaline-earth-neutral-atom-clock-qubit]] — closely related clock-state encoding

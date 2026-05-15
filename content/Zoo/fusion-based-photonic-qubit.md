@@ -97,6 +97,12 @@ Photonic quantum computing offers room-temperature operation, high clock speeds,
 - [[bartolucci-2023-fbqc]]
 - [[bombin-2021-interleaving]]
 
+## Evergreen context
+
+- [[threshold-theorem]] — FBQC is fundamentally a threshold-engineering answer to the 50% linear-optics fusion limit, not just a new photonic layout.
+- [[erasure-error-vs-pauli-error]] — photon loss and failed fusions matter because they arrive as structured, often flagged failure modes that the decoder and resource lattice are explicitly built to absorb.
+- [[noise-bias-and-asymmetric-error-channels]] — the architecture only works if those dominant failure channels stay sufficiently biased and interpretable, rather than washing out into generic depolarizing noise.
+
 ## Related Entries
 
 - [[dual-rail-photonic-qubit]] — underlying photonic encoding

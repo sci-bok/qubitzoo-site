@@ -15,7 +15,7 @@ keywords:
   - superinductance
   - semiconductor Josephson junction
 influence_score: 0.60
-last_updated: '2026-03-21'
+last_updated: '2026-05-12'
 generated_by: scibok-curation
 extracted_by: airtable-seed
 verified_by: scibok-manual-2026-03-21
@@ -97,9 +97,9 @@ The nonsinusoidal current-phase relation of the semiconductor junction introduce
 
 ## Evergreen context
 
-- [[josephson-junction-as-nonlinear-element]] — gatemonium swaps the fixed tunnel junction for a gate-tunable semiconductor weak link
-- [[charge-noise-sweet-spot]] — the same device can be tuned across fluxonium regimes with different charge-versus-flux protection tradeoffs
-- [[cos2phi]] — voltage-tunable weak links are one route toward the higher-harmonic protected-circuit physics highlighted by the $\cos(2\varphi)$ note
+- [[josephson-junction-as-nonlinear-element]] — gatemonium swaps the fixed tunnel junction for a gate-tunable semiconductor weak link.
+- [[charge-noise-sweet-spot]] — the same device can be tuned across fluxonium regimes with different charge-versus-flux protection tradeoffs.
+- [[quantum-hardware]] — it is a useful bridge note for how a super-semi platform can inherit the superconducting control stack while opening a new materials-design axis.
 
 ## Related Entries
 

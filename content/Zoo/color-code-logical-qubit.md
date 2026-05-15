@@ -78,6 +78,12 @@ Color codes are a leading alternative to the surface code when gate-transversali
 
 - [[bombin-2006-color-codes]]
 
+## Evergreen context
+
+- [[threshold-theorem]] — color codes are an alternative route to the same below-threshold scaling goal, but with a different overhead mix than the surface code.
+- [[quantum-hardware]] — helpful umbrella when comparing whether a platform would rather pay for simpler decoding and layout regularity or for the transversal Clifford structure color codes offer.
+- [[erasure-error-vs-pauli-error]] — useful when asking how much color-code performance depends on the assumed noise model instead of the abstract code family alone.
+
 ## Related Entries
 
 - [[surface-code-logical-qubit]] — primary alternative topological QEC code

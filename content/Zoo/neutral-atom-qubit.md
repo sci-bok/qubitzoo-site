@@ -120,6 +120,12 @@ The blockade condition $C_6/R^6 \gg \hbar\Omega$ prevents simultaneous Rydberg e
 - [[ma-2022-nuclear-spin-atom]]
 - [[pause-2024-supercharged-dimensional-tweezer]]
 
+## Evergreen context
+
+- [[rydberg-blockade-mechanism]] — the interaction primitive that sets neutral-atom gate range, parallelism, and a large fraction of the error budget
+- [[erasure-error-vs-pauli-error]] — explains why atom loss plus mid-circuit detection is strategically important rather than just a nuisance
+- [[quantum-hardware]] — the right umbrella note when comparing neutral atoms against superconducting, ion-trap, and photonic system stacks
+
 ## Related Entries
 
 - [[rydberg-neutral-atom-qubit]] — Rydberg-specific encoding variant

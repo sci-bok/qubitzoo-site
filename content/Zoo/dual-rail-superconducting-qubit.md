@@ -155,6 +155,12 @@ For two cavities coupled by a transmon ancilla, the beamsplitter interaction in 
 - [[teoh-2023-dual-rail-cavity]]
 - [[levine-2024-dual-rail-erasure]]
 
+## Evergreen context
+
+- [[erasure-error-vs-pauli-error]] — the whole point of the encoding is to turn dominant $T_1$/photon-loss events into flagged departures from the logical subspace instead of hidden Pauli faults.
+- [[noise-bias-and-asymmetric-error-channels]] — the cavity and CQB variants matter because they reshape the error budget into a decoder-friendlier hierarchy, not just because they lower raw error.
+- [[threshold-theorem]] — this is why the erasure conversion story is important: flagged loss can relax the physical-fidelity burden for scalable fault tolerance.
+
 ## Related Entries
 - [[dual-rail-photonic-qubit]] — photonic ancestor encoding
 - [[erasure-qubit]] — general erasure qubit concept

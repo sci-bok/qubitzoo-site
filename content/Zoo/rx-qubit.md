@@ -85,6 +85,12 @@ which at $J_{12} = J_{23} = J$ gives $\hbar\omega_q \propto J$.
 
 - [[medford-2013-rx-qubit]]
 
+## Evergreen context
+
+- [[exchange-interaction-in-quantum-dots]] — the RX splitting and control matrix elements both come from the always-on exchange landscape of a triple dot.
+- [[charge-noise-sweet-spot]] — the symmetric operating point is the whole architectural point of RX: keep exchange control while flattening detuning sensitivity.
+- [[decoherence-free-subspace]] — RX inherits the exchange-only strategy of encoding and manipulating information inside a three-spin subspace that suppresses uniform magnetic-field noise.
+
 ## Related Entries
 
 - [[exchange-only-qubit]] — parent encoding; RX is the resonantly driven variant

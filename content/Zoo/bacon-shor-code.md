@@ -98,6 +98,12 @@ $$\bar{X} = \prod_{i \in \text{any row}} X_i, \quad \bar{Z} = \prod_{i \in \text
 
 - [[bacon-2006-bacon-shor]]
 
+## Evergreen context
+
+- [[threshold-theorem]] — the big-picture reason Bacon-Shor matters despite its lower depolarizing threshold: it is a hardware tradeoff about what syndrome extraction you can do reliably.
+- [[noise-bias-and-asymmetric-error-channels]] — Bacon-Shor becomes much more compelling when the physical noise is strongly asymmetric and the rectangular code can lean into that bias.
+- [[decoherence-free-subspace]] — useful contrast for the word “subsystem”: Bacon-Shor is an active subsystem code, not passive symmetry protection.
+
 ## Related Entries
 
 - [[surface-code-logical-qubit]] — Higher threshold but requires weight-4 measurements

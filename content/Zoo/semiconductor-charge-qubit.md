@@ -93,6 +93,12 @@ The energy eigenvalues are $E_\pm = \pm\frac{1}{2}\sqrt{\epsilon^2 + 4t_c^2}$, p
 
 - [[petersson-2010-semiconductor-charge]]
 
+## Evergreen context
+
+- [[charge-noise-sweet-spot]] — this entry is the simplest reminder of why sweet spots matter at all: raw charge control is fast, but living on a slope in detuning space destroys coherence.
+- [[divincenzo-criteria]] — semiconductor charge qubits satisfy initialization and control elegantly, but they fail the coherence margin badly enough to motivate the whole spin-qubit branch.
+- [[quantum-hardware]] — useful umbrella for placing the charge qubit historically as the first semiconductor proof-of-principle rather than the scaling endpoint.
+
 ## Related Entries
 
 - [[loss-divincenzo-qubit]] — spin encoding in the same platform, much longer $T_2$
