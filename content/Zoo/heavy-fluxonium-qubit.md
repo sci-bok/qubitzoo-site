@@ -12,9 +12,9 @@ keywords:
 - protected qubit
 - superconducting
 influence_score: 0.80
-last_updated: '2026-05-15'
+last_updated: '2026-05-16'
 generated_by: scibok-curation
-verified_by: scibok-deep-audit-2026-05-15
+verified_by: scibok-deep-audit-2026-05-16
 figure_reviewed: true
 ---
 
@@ -79,7 +79,7 @@ No peer-reviewed 2024-2026 heavy-fluxonium-specific coherence or gate benchmark 
 ### Experimental demonstrations
 - Y.-H. Lin et al., "Demonstration of Protection of a Superconducting Qubit from Energy Decay," [Phys. Rev. Lett. 120, 150503 (2018)](https://doi.org/10.1103/PhysRevLett.120.150503) — [arXiv:1705.07873](https://arxiv.org/abs/1705.07873)
 - L. B. Nguyen et al., "High-Coherence Fluxonium Qubit," [Phys. Rev. X 9, 041041 (2019)](https://doi.org/10.1103/PhysRevX.9.041041) — [arXiv:1810.11006](https://arxiv.org/abs/1810.11006)
-- Q. Ficheux et al., "Fast Logic with Slow Qubits: Microwave-Activated Controlled-Z Gate on Low-Frequency Fluxoniums," [Phys. Rev. X 11, 021026 (2021)](https://doi.org/10.1103/PhysRevX.11.021026)
+- Q. Ficheux et al., "Fast Logic with Slow Qubits: Microwave-Activated Controlled-Z Gate on Low-Frequency Fluxoniums," [Phys. Rev. X 11, 021026 (2021)](https://doi.org/10.1103/PhysRevX.11.021026) — [arXiv:2011.02634](https://arxiv.org/abs/2011.02634)
 - A. Somoroff et al., "Millisecond Coherence in a Superconducting Qubit," [Phys. Rev. Lett. 130, 267001 (2023)](https://doi.org/10.1103/PhysRevLett.130.267001) — [arXiv:2103.08578](https://arxiv.org/abs/2103.08578)
 
 ## Linked Papers
@@ -87,6 +87,7 @@ No peer-reviewed 2024-2026 heavy-fluxonium-specific coherence or gate benchmark 
 - [[lin-2018-heavy-fluxonium]]
 - [[nguyen-2019-high-coherence-fluxonium]]
 - [[somoroff-2023-millisecond-coherence-superconducting]]
+- [[ficheux-2021-fast-logic-slow-qubits]]
 
 ## Evergreen context
 
