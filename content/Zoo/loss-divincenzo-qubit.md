@@ -3,7 +3,7 @@ title: Single-Spin Quantum Dot (Loss-DiVincenzo) Qubit
 entry_type: qubit
 technology_family: Semiconducting
 status: demonstrated
-figure_reviewed: false
+figure_reviewed: true
 first_proposed_year: 1998
 first_demonstrated_year: 2004
 keywords:
@@ -15,10 +15,10 @@ keywords:
 - edsr
 - si/sige
 influence_score: 0.80
-last_updated: '2026-05-17'
+last_updated: '2026-05-18'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-audit-2026-05-17
+verified_by: scibok-audit-2026-05-18
 ---
 
 ## Figure
