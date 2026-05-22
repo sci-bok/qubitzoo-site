@@ -106,6 +106,11 @@ The Cirac-Zoller gate uses red sideband pulses for state mapping and a $2\pi$ pu
 
 - [[cirac-zoller-1995-trapped-ion-gate]]
 
+## Evergreen context
+
+- [[motional-mode-coupling-in-ion-traps]] — the sideband-resolved phonon bus that makes the original three-pulse gate sequence possible
+- [[divincenzo-criteria]] — why this proposal mattered as an early full-stack answer to initialization, control, coupling, and readout in one platform
+
 ## Related Entries
 
 - [[molmer-sorenson-gate]] — geometric phase gate that evolved from the Cirac-Zoller concept

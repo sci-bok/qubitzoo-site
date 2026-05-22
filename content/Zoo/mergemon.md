@@ -95,6 +95,12 @@ but with $E_C$ set by the junction self-capacitance $C_J$ rather than an externa
 - [[zhao-2020-mergemon]]
 - [[madon-2021-mergemon]]
 
+## Evergreen context
+
+- [[josephson-junction-as-nonlinear-element]] — the merged-element idea makes the junction itself supply both anharmonicity and most of the capacitance
+- [[charge-noise-sweet-spot]] — mergemon stays in the transmon logic of suppressing charge sensitivity by working at large effective capacitance
+- [[charge-noise-in-superconducting-qubits]] — the background decoherence story that motivates moving field participation away from lossy exposed interfaces
+
 ## Related Entries
 
 - [[transmon]] — Parent architecture; mergemon eliminates its shunt capacitor

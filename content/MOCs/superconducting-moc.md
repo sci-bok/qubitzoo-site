@@ -3,7 +3,7 @@ title: Superconducting MOC
 type: moc
 technology_family: Superconducting
 note_count: 21
-last_updated: '2026-05-15'
+last_updated: '2026-05-22'
 generated_by: pipeline-moc-v1
 ---
 
@@ -66,6 +66,20 @@ Curated map of Zoo entries in the **Superconducting** family.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Conceptual anchors
 
 - [[charge-noise-in-superconducting-qubits]] and [[charge-noise-sweet-spot]] explain the CPB → transmon → protected-superconducting arc.
@@ -76,6 +90,20 @@ Curated map of Zoo entries in the **Superconducting** family.
 ## Editorial note
 
 This family mixes bare qubits, bosonic encodings, and enabling infrastructure. Keep the generated table exhaustive, but use the evergreen layer to prevent the family page from becoming a flat list.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

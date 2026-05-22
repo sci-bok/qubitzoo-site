@@ -93,6 +93,11 @@ $$U_{\text{MS}} = \exp\!\left(-i\frac{\pi}{4}\sigma_\phi^{(1)}\sigma_\phi^{(2)}\
 
 - [[sorensen-1999-ms-gate]]
 
+## Evergreen context
+
+- [[motional-mode-coupling-in-ion-traps]] — the bichromatic red/blue-sideband picture behind the virtual-phonon XX interaction
+- [[threshold-theorem]] — why the jump from proof-of-principle gates to 99.9% entangling fidelity matters for fault-tolerant viability
+
 ## Related Entries
 
 - [[trapped-ion-qubit]] — qubit platform where the MS gate is standard

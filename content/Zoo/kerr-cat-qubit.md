@@ -109,6 +109,12 @@ Standard bosonic codes (GKP, binomial) require complex syndrome extraction. The 
 - [[puri-2020-bias-preserving-gates]]
 - [[lescanne-2020-bit-flip-suppression]]
 
+## Evergreen context
+
+- [[bosonic-code-hierarchy]] — where the Kerr-cat sits among cat, GKP, and binomial bosonic encodings
+- [[noise-bias-and-asymmetric-error-channels]] — why exponentially suppressed bit flips change the error-correction story
+- [[erasure-error-vs-pauli-error]] — useful contrast with architectures that reduce overhead by flagged loss rather than Pauli bias
+
 ## Related Entries
 
 - [[cat-codes]] — general cat code framework underlying the Kerr-cat encoding

@@ -79,6 +79,11 @@ QCCD shuttling addresses the core scaling problem of trapped-ion systems: long c
 
 - [[kielpinski-2002-shuttling]]
 
+## Evergreen context
+
+- [[motional-mode-coupling-in-ion-traps]] — explains why QCCD keeps interaction chains short and transport-induced heating low
+- [[divincenzo-criteria]] — frames shuttling as an architectural answer to the scalability criterion, not a new qubit modality
+
 ## Related Entries
 
 - [[trapped-ion-qubit]] — parent qubit platform

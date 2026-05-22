@@ -86,6 +86,12 @@ Molecular qubits offer a distinct advantage over lithographic platforms: synthet
 
 - [[yu-2023-molecular-qubit]]
 
+## Evergreen context
+
+- [[coherence-time-hierarchy]] — molecular platforms are best compared through how chemistry reshapes $T_2^*$ and $T_2$, especially by suppressing nuclear-spin and vibrational noise rather than by changing the logical encoding itself.
+- [[spin-orbit-coupling-for-qubit-control]] — ligand-field engineering lets molecular qubits tune the same core tradeoff seen in hole-spin platforms: stronger spin-orbit structure can enable richer control, but it also opens extra dephasing channels.
+- [[divincenzo-criteria]] — synthetic tunability helps with well-defined qubits and coherence engineering, but scalable two-qubit coupling and high-fidelity single-molecule readout are still the criteria that keep the platform exploratory.
+
 ## Related Entries
 
 - [[nv-center-qubit]] — solid-state spin qubit with similar coherence strategies

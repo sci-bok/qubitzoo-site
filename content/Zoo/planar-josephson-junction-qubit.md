@@ -54,6 +54,13 @@ at phase difference $\varphi = \pi$, with the topological gap $\propto \alpha$.
 - **In-situ diagnostics:** Critical current minimum at the topological transition provides a built-in probe of the topological phase.
 - **Network scalability:** Multiple junctions can be patterned on a single 2DEG chip for braiding operations.
 
+## Evergreen context
+
+- [[quantum-hardware]] frames the planar junction route as a hybrid of semiconductor fabrication and superconducting proximity physics, aiming for a more lithography-friendly topological stack.
+- [[spin-orbit-coupling-for-qubit-control]] is central here, because Rashba coupling in the 2DEG is one of the ingredients that opens the topological gap when combined with phase bias and Zeeman splitting.
+- [[divincenzo-criteria]] highlights the gap between observing topological-transition signatures and demonstrating a practical qubit with robust initialization, readout, and entangling control.
+- [[josephson-junction-as-nonlinear-element]] provides adjacent circuit intuition: in this platform the junction is not mainly valued for anharmonicity, but for the superconducting phase bias that helps tune the topological channel.
+
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |

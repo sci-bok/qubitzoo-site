@@ -97,6 +97,11 @@ at $\omega_0 \approx 2\pi \times 226$ THz (1326 nm).
 - [[bergeron-2020-t-center]]
 - [[photonic-2024-distributed-qc]]
 
+## Evergreen context
+
+- [[divincenzo-criteria]] — the T center is one of the clearest silicon examples of satisfying the communication criteria directly, because the qubit is stationary spin hardware with native telecom-wavelength photon emission instead of an added transduction layer.
+- [[coherence-time-hierarchy]] — its value comes from a layered memory hierarchy: an optically active electron spin for interfacing, plus slower but far longer-lived nuclear-spin storage in the same defect.
+
 ## Related Entries
 
 - [[nv-center-qubit]] — Diamond color center; more mature but requires frequency conversion

@@ -107,6 +107,11 @@ Qubit states are typically the spin-up and spin-down states of the lower orbital
 - [[debroux-2021-snv-coherence]]
 - [[knaut-2024-siv-entanglement]]
 
+## Evergreen context
+
+- [[divincenzo-criteria]] — SiV and SnV are standout examples of the communication criteria, because inversion-symmetric optical transitions make spin-to-photon conversion far cleaner than in NV centers, but only if the cryogenic coherence constraint is handled.
+- [[coherence-time-hierarchy]] — the platform's main systems tradeoff is the split between excellent optical coherence and phonon-limited spin coherence, especially for SiV versus the larger-orbit SnV variant.
+
 ## Related Entries
 
 - [[t-center-qubit]] — Silicon-based spin-photon interface with native telecom emission

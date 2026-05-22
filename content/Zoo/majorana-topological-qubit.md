@@ -59,6 +59,13 @@ which motivates long wires and hard-gap devices for robust parity protection.
 - Topological braiding operations would implement certain gates fault-tolerantly by geometry
 - Scalable architectures (tetron, hexon) proposed for integration with surface code error correction
 
+## Evergreen context
+
+- [[quantum-hardware]] places Majorana devices inside the broader hardware map, but with the unusual claim that materials design can suppress errors before conventional code overhead is paid.
+- [[spin-orbit-coupling-for-qubit-control]] is part of the nanowire recipe: Rashba spin-orbit coupling, Zeeman splitting, and induced pairing together create the topological regime that supports end Majorana modes.
+- [[divincenzo-criteria]] is still the right scorecard here, because zero-bias spectroscopy and parity signatures are not yet the same as scalable initialization, protected gates, and high-fidelity readout.
+- [[threshold-theorem]] is the downstream test for whether nonlocal parity encoding actually buys a fault-tolerance advantage rather than just a distinctive spectroscopy signal.
+
 ## Experimental Status
 
 **Exponential protection — Albrecht et al. (2016):**

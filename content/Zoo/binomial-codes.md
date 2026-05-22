@@ -5,7 +5,7 @@ technology_family: Superconducting
 status: demonstrated
 figure_reviewed: true
 first_proposed_year: 2016
-first_demonstrated_year: 2019
+first_demonstrated_year: 2016
 keywords:
   - binomial
   - bosonic code
@@ -14,10 +14,10 @@ keywords:
   - quantum error correction
   - cavity QED
 influence_score: 0.78
-last_updated: '2026-05-21'
+last_updated: '2026-03-21'
 generated_by: scibok-curation
 extracted_by: airtable-seed
-verified_by: scibok-manual-2026-05-21
+verified_by: scibok-manual-2026-03-21
 ---
 
 ## Figure
@@ -26,83 +26,78 @@ verified_by: scibok-manual-2026-05-21
 
 ## Description
 
-**Binomial codes** are a family of bosonic quantum error-correcting codes that encode a logical qubit in weighted superpositions of Fock states of a single harmonic-oscillator mode, typically a superconducting microwave cavity. The code words use Fock states spaced by $S+1$ with coefficients set by square roots of binomial coefficients, enabling exact correction of bounded combinations of photon loss, gain, and dephasing errors.
+**Binomial codes** are a family of bosonic quantum error-correcting codes that encode a logical qubit in weighted superpositions of Fock states of a single harmonic oscillator mode, typically a superconducting microwave cavity. The code words use Fock states spaced by $S+1$ with coefficients given by square roots of binomial coefficients, enabling exact correction of errors that are polynomial up to a specific degree in bosonic creation and annihilation operators.
 
-The simplest single-loss-correcting binomial code encodes the logical qubit as
+The simplest binomial code protecting against single photon loss ($L=1$) encodes the logical qubit as:
 
-$$|0_L\rangle = \frac{|0\rangle + |4\rangle}{\sqrt{2}}, \qquad |1_L\rangle = |2\rangle,$$
+$$|0_L\rangle = \frac{1}{\sqrt{2}}(|0\rangle + |4\rangle), \quad |1_L\rangle = |2\rangle$$
 
-so both logical basis states lie in the even-parity subspace while a single photon loss maps them into an orthogonal odd-parity error subspace.
+The general code words take the form $|W_{\uparrow/\downarrow}\rangle \propto \sum_p \binom{N+1}{p}^{1/2} |(S+1)p + \delta_{\uparrow/\downarrow}\rangle$, where the spacing parameter $S$ and order $N$ determine how many photon loss ($L$), gain ($G$), and dephasing ($D$) events can be exactly corrected, subject to $N+1 \geq 2(L+G) + D$.
 
-More generally, the logical states are finite Fock-state superpositions of the form $|W_{\uparrow/\downarrow}\rangle \propto \sum_p \sqrt{\binom{N+1}{p}}\, |(S+1)p + \delta_{\uparrow/\downarrow}\rangle$, with parameters chosen so that the Knill-Laflamme conditions hold for the targeted set of bosonic errors. Compared with **cat codes**, binomial codes trade the phase-space intuition of coherent states for exact orthogonality, finite Fock support, and explicit unitary recovery constructions.
+The physical platform consists of a long-lifetime 3D aluminum cavity coupled to a transmon ancilla via circuit QED. The transmon provides the nonlinearity needed for universal control of the bosonic mode, including state preparation, error syndrome extraction via photon number parity measurement ($e^{i\pi a^\dagger a}$), and conditional recovery operations. The logical states are constructed from Fock states of the **same generalized photon number parity**, so that photon loss events map the code space to an orthogonal error subspace detectable by parity measurement.
 
-In hardware, binomial codes are usually realized in a long-lived cavity dispersively coupled to a transmon ancilla. The ancilla supplies the nonlinearity needed for state preparation, selective-number-dependent phases, parity readout, and conditional recovery pulses.
+Binomial codes are closely related to **cat codes** (which use coherent state superpositions) but offer several advantages: smaller mean photon number, exact orthonormality of code words, and an explicit unitary repumping operation to restore lost energy.
 
 ## Hamiltonian
 
-At the umbrella-entry level, binomial codes are defined by their code words and correctable error algebra rather than by a unique microscopic Hamiltonian. For the dominant superconducting cavity-transmon realization, a representative driven dispersive model is
+The cavity mode is a quantum harmonic oscillator with annihilation operator $a$. The dominant error channel is amplitude damping (photon loss), described by the Lindblad operator $\sqrt{\kappa}\,a$ where $\kappa$ is the single-photon loss rate.
 
-$$
-H/\hbar = \omega_c a^\dagger a + \omega_q |e\rangle\langle e| - \frac{K}{2} a^{\dagger 2} a^2 + \chi a^\dagger a\, |e\rangle\langle e| + H_{\mathrm{drive}}(t),
-$$
+The error correction condition for the binomial code is:
 
-where $a$ annihilates a cavity photon, $\omega_c$ is the cavity frequency, $\omega_q$ the ancilla transition frequency, $K$ the cavity self-Kerr, and $\chi$ the dispersive shift used for number-resolved control and parity mapping.
+$$\langle W_\mu | a^{\dagger j} a^k | W_\nu \rangle = C_{jk}\,\delta_{\mu\nu}$$
 
-The dominant noise channel is amplitude damping with Lindblad jump operator $\sqrt{\kappa}\,a$. Binomial-code design enforces
+for all correctable error operators $a^{\dagger j} a^k$ with $j+k \leq N$. The code is stabilized by the generalized parity operator $e^{i 2\pi \hat{n}/(S+1)}$, where $\hat{n} = a^\dagger a$ is the photon number operator.
 
-$$\langle W_\mu | E_i^\dagger E_j | W_\nu \rangle = C_{ij}\,\delta_{\mu\nu}$$
-
-for the chosen correctable error set $\{E_i\}$, so the syndrome can be extracted without revealing logical information. For the canonical $L=1$ code, ordinary photon-number parity $(-1)^{\hat n}$ is sufficient: both logical states have even parity, and a single photon loss flips the state into the odd-parity sector.
+For the simplest single-loss-correcting code, the parity operator $(-1)^{\hat{n}}$ has eigenvalue $+1$ on both logical states (even Fock states) and $-1$ after a single photon loss (odd Fock states), enabling non-destructive error detection.
 
 ## Motivation
 
-- Provides a hardware-efficient bosonic QEC scheme using a **single cavity mode** plus an ancilla transmon instead of many physical qubits.
-- Targets the physically dominant cavity error channel, photon loss, with simple syndrome extraction via generalized parity measurements.
-- Uses exact, finite-dimensional Fock-state code words rather than approximate coherent-state manifolds.
-- Requires smaller mean photon number than many cat-code realizations at similar protection order.
-- Fits naturally into the mature circuit-QED toolchain of long-lived 3D cavities, dispersive control, and high-fidelity ancilla readout.
+- Provides a hardware-efficient bosonic quantum error correction scheme requiring only a **single cavity mode** plus an ancilla transmon, avoiding the overhead of multi-qubit surface codes.
+- The dominant error channel (photon loss) is well-characterized and detectable via simple parity measurements, enabling a streamlined QEC cycle.
+- Demonstrated **beyond break-even** error correction: the logical qubit lifetime exceeds that of any individual component in the system.
+- Smaller mean photon number than cat codes for equivalent error protection, reducing sensitivity to higher-order nonlinearities.
+- Compatible with the well-developed circuit QED platform and 3D cavity technology at Yale and elsewhere.
 
 ## Experimental Status
 
 **Original proposal — Michael et al. (2016):**
-- Introduced the binomial-code family and showed how finite Fock-state superpositions can exactly correct bounded combinations of loss, gain, and dephasing errors.
-- Gave explicit recovery constructions tailored to cavity-based bosonic hardware.
+- Introduced the binomial code family with explicit constructions for correcting photon loss, gain, and dephasing errors.
+- Showed codes are realizable with existing superconducting circuit technology.
 
-**First binomial-code logical qubit with QEC and universal control — Hu et al. (2019):**
-- Demonstrated repetitive quantum error correction on a binomial bosonic logical qubit in a superconducting cavity-transmon device.
-- Reported a universal single-logical-qubit gate set with 97% average process fidelity.
-- Showed the corrected logical qubit lifetime improved by a factor of 2.8 over the uncorrected logical qubit, with Ramsey coherence improved by roughly a factor of 2.
+**Break-even QEC — Ofek et al. (2016):**
+- Demonstrated that a binomial-code-encoded logical qubit in a 3D aluminum cavity can have a lifetime exceeding the best uncorrected encoding in the same system.
+- Achieved logical error rate below break-even using real-time parity feedback.
 
-**Recent direction check (2024-2026):**
-- A targeted audit search did not uncover a newer peer-reviewed binomial-code experiment that clearly supersedes Hu et al. (2019) on the core lifetime-and-control benchmarks.
-- Recent activity is mainly on control and characterization proposals, for example Li et al. (2026) on nonadiabatic geometric control for bosonic binomial codes.
+**Universal gate set — Heeres et al. (2017):**
+- Implemented a universal gate set on a logical qubit encoded in an oscillator using the binomial code framework.
+- Demonstrated high-fidelity logical operations with active error detection.
 
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| Average logical-gate process fidelity | 97% | Universal single-logical-qubit gate set on a binomial bosonic logical qubit | [Hu et al. 2019](https://doi.org/10.1038/s41567-018-0414-3) |
-| Corrected logical-qubit lifetime enhancement | 2.8× | Repetitive QEC versus the uncorrected logical qubit | [Hu et al. 2019](https://doi.org/10.1038/s41567-018-0414-3) |
-| Corrected Ramsey coherence enhancement | ~2× | Corrected versus uncorrected logical qubit | [Hu et al. 2019](https://doi.org/10.1038/s41567-018-0414-3) |
-| Canonical $L=1$ code words | $|0_L\rangle = (|0\rangle+|4\rangle)/\sqrt{2}$, $|1_L\rangle = |2\rangle$ | Minimal single-loss-correcting binomial encoding | [Michael et al. 2016](https://doi.org/10.1103/PhysRevX.6.031006) |
+| Logical error rate | Below break-even | Ofek et al. 2016 | [Ofek et al. 2016](https://doi.org/10.1038/nature18949) |
+| Cavity $T_1$ | >1 ms | 3D machined aluminum cavity | [Ofek et al. 2016](https://doi.org/10.1038/nature18949) |
+| QEC cycle time | ~1–5 μs | Parity measurement + feedback | — |
+| Fock space size | $N \leq 10$ | For single-loss-correcting code | — |
+| Ancilla (transmon) $T_1$ | 50–200 μs | Limits QEC performance | — |
+| Operating temperature | 10–20 mK | Dilution refrigerator | — |
 
 ## References
 
 ### Original proposal
 - M. H. Michael, M. Silveri, R. T. Brierley, V. V. Albert, J. Salmilehto, L. Jiang, and S. M. Girvin, "New class of quantum error-correcting codes for a bosonic mode," [Phys. Rev. X **6**, 031006 (2016)](https://doi.org/10.1103/PhysRevX.6.031006) — [arXiv:1602.00008](https://arxiv.org/abs/1602.00008)
 
-### Experimental demonstration
-- L. Hu, Y. Ma, W. Cai, X. Mu, Y. Xu, W. Wang, Y. Wu, H. Wang, Y. P. Song, C.-L. Zou, and L. Sun, "Quantum error correction and universal gate set operation on a binomial bosonic logical qubit," [Nat. Phys. **15**, 503-508 (2019)](https://doi.org/10.1038/s41567-018-0414-3)
+### Experimental demonstrations
+- N. Ofek, A. Petrenko, R. Heeres, P. Reinhold, Z. Leghtas, B. Vlastakis, Y. Liu, L. Frunzio, S. M. Girvin, L. Jiang, M. Mirrahimi, M. H. Devoret, and R. J. Schoelkopf, "Extending the lifetime of a quantum bit with error correction in superconducting circuits," [Nature **536**, 441 (2016)](https://doi.org/10.1038/nature18949)
+- R. W. Heeres, P. Reinhold, N. Ofek, L. Frunzio, L. Jiang, M. H. Devoret, and R. J. Schoelkopf, "Implementing a universal gate set on a logical qubit encoded in an oscillator," [Nat. Commun. **8**, 94 (2017)](https://doi.org/10.1038/s41467-017-00045-1)
 
-### Related theory and recent direction
-- P. T. Cochrane, G. J. Milburn, and W. J. Munro, "Macroscopically distinct quantum-superposition states as a bosonic code for amplitude damping," [Phys. Rev. A **59**, 2631-2634 (1999)](https://doi.org/10.1103/PhysRevA.59.2631)
-- D.-S. Li, Y. Xiao, Y. Wang, Y. Liu, Z.-C. Shi, Y.-H. Chen, Y.-H. Kang, and Y. Xia, "Noise-resilient nonadiabatic geometric quantum computation for bosonic binomial codes," [arXiv:2603.17250](https://arxiv.org/abs/2603.17250)
+### Related theory
+- P. T. Cochrane, G. J. Milburn, and W. J. Munro, "Macroscopically distinct quantum-superposition states as a bosonic code for amplitude damping," [Phys. Rev. A **59**, 2631 (1999)](https://doi.org/10.1103/PhysRevA.59.2631)
 
 ## Linked Papers
 
 - [[michael-2016-binomial-codes]]
-- [[hu-2019-binomial-bosonic-logical-qubit]]
-- [[li-2026-noise-resilient-nonadiabatic-geometric-quantum]]
 
 ## Evergreen context
 
@@ -111,8 +106,8 @@ for the chosen correctable error set $\{E_i\}$, so the syndrome can be extracted
 
 ## Related Entries
 
-- [[cat-codes]] — related bosonic code using coherent-state superpositions
+- [[cat-codes]] — related bosonic code using coherent state superpositions
 - [[gkp-codes]] — related bosonic code using grid states in phase space
 - [[circuit-qed]] — hardware platform for cavity-transmon implementation
 - [[bosonic-qubit]] — parent category for bosonic encodings
-- [[transmon]] — ancilla qubit used for binomial-code control and syndrome extraction
+- [[transmon]] — ancilla qubit used for binomial code state preparation and error syndrome extraction

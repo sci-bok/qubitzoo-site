@@ -95,6 +95,12 @@ Nuclear spins in silicon offer the longest coherence times of any solid-state qu
 
 - [[kane-1998-silicon-nuclear-spin]]
 
+## Evergreen context
+
+- [[divincenzo-criteria]] — donor spins are especially strong on qubit definition, initialization, and coherence, but they make the scalability challenge show up in fabrication precision and dense control wiring.
+- [[coherence-time-hierarchy]] — the architecture only makes sense if you separate the ultralong nuclear-memory timescale from the much faster donor-electron control and readout channel.
+- [[exchange-interaction-in-quantum-dots]] — the Kane J-gate is the donor-spin analogue of electrically tuned exchange, even though the confinement comes from dopants rather than lithographic dots.
+
 ## Related Entries
 
 - [[loss-divincenzo-qubit]] — foundational semiconductor spin qubit proposal

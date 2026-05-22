@@ -106,6 +106,11 @@ NV centers operate at room temperature, can be optically initialized and read ou
 
 - [[jelezko-2004-nv-center]]
 
+## Evergreen context
+
+- [[divincenzo-criteria]] — NV centers are the cleanest defect-spin example of combining optical initialization/readout with the communication criteria for stationary-to-flying qubit conversion.
+- [[coherence-time-hierarchy]] — the platform's main advantage is layered memory: millisecond electron-spin control paired with much longer-lived nearby nuclear-spin storage.
+
 ## Related Entries
 
 - [[t-center-qubit]] — another color center qubit platform (silicon)

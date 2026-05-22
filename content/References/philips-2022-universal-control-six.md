@@ -4,24 +4,20 @@ authors: [Stephan G. J. Philips, Mateusz T. Mądzik, Sergey V. Amitonov, Sander 
 year: 2022
 journal: "Nature"
 doi: 10.1038/s41586-022-05117-x
-arxiv_id: '2202.09252'
 type: reference
 generated_by: scibok-audit-backfill
-last_updated: '2026-05-17'
+last_updated: '2026-03-25'
 ---
 
-This paper demonstrates universal control, initialization, and measurement on a six-qubit silicon quantum-dot processor, marking an important step from isolated high-fidelity few-qubit demonstrations toward small programmable spin-qubit arrays.
+AbstractFuture quantum computers capable of solving relevant problems will require a large number of qubits that can be operated reliably1.
 
 ## Key Results
-- Universal control on a six-qubit silicon quantum-dot processor
-- Simultaneous initialization, control, and measurement across the array
-- Important scaling milestone for gate-defined spin qubits in silicon
+- However, the requirements of having a large qubit count and operating with high fidelity are typically conflicting.
+- Spins in semiconductor quantum dots show long-term promise2,3but demonstrations so far use between one and four qubits and typically optimize the fidelity of either single- or two-qubit operations, or initialization and readout4–11.
+- Here, we increase the number of qubits and simultaneously achieve respectable fidelities for universal operation, state preparation and measurement.
 
 ## Links
 - **Journal:** [Nature](https://doi.org/10.1038/s41586-022-05117-x)
-- **arXiv:** [2202.09252](https://arxiv.org/abs/2202.09252)
 
 ## Zoo Links
-- [[loss-divincenzo-qubit]]
-- [[silicon-spin-qubit]]
 - [[spin-qubit]]

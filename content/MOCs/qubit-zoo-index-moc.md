@@ -3,7 +3,7 @@ title: Qubit Zoo Index MOC
 type: moc
 technology_family: index
 note_count: 61
-last_updated: '2026-05-15'
+last_updated: '2026-05-22'
 generated_by: pipeline-moc-v1
 ---
 
@@ -49,6 +49,20 @@ Top-level navigation for the Qubit Zoo by technology family.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## How to use this map
 
 - Start with a family MOC when you want modality-local comparisons.
@@ -60,6 +74,20 @@ Top-level navigation for the Qubit Zoo by technology family.
 - Increase Zoo → Evergreen coverage so the catalog points outward into reusable concepts.
 - Normalize evergreen citations toward `[[Reference]]` notes when those notes already exist.
 - Keep family MOCs lightweight above the marker, but preserve real synthesis below it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

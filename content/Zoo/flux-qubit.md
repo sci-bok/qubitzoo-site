@@ -91,6 +91,11 @@ The flux qubit was one of the three original superconducting qubit types (alongs
 
 - [[mooij-1999-flux-qubit]]
 
+## Evergreen context
+
+- [[josephson-junction-as-nonlinear-element]] — the cosine nonlinearity and frustrated loop physics that generate the persistent-current double well
+- [[coherence-time-hierarchy]] — how to interpret sweet-spot Ramsey, echo, and relaxation numbers in a flux-noise-sensitive qubit
+
 ## Related Entries
 
 - [[transmon]] — complementary superconducting qubit with weak anharmonicity

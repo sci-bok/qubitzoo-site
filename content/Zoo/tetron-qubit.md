@@ -54,6 +54,13 @@ where $\gamma_i$ are Majorana operators ($\gamma_i^\dagger = \gamma_i$, $\{\gamm
 - **QEC overhead reduction:** Microsoft claims ~10× fewer physical qubits needed for fault-tolerant computation vs. transmon + surface code.
 - **Scalable architecture:** H-shaped design is lithographically defined and compatible with semiconductor fabrication; 4×2 arrays are near-term targets.
 
+## Evergreen context
+
+- [[quantum-hardware]] situates the tetron as an architecture-layer proposal, not a new materials platform by itself: it packages Majorana physics into a qubit-and-array design.
+- [[divincenzo-criteria]] clarifies the real bottlenecks, namely parity initialization, repeated high-fidelity measurement, and controlled two-qubit operations under quasiparticle-poisoning constraints.
+- [[threshold-theorem]] is the right lens for Microsoft's overhead claims, because a 10× savings matters only if the protected physical error model really moves the architecture deeper below fault-tolerance threshold.
+- [[spin-orbit-coupling-for-qubit-control]] remains upstream of the whole design, since the InAs/Al heterostructures rely on strong spin-orbit-coupled semiconductor physics to enter the topological regime in the first place.
+
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |

@@ -22,6 +22,5 @@ Demonstrates single-qubit gate fidelity of 99.8% and two-qubit gate fidelity of 
 - **arXiv:** [2108.02626](https://arxiv.org/abs/2108.02626)
 
 ## Zoo Links
-- [[loss-divincenzo-qubit]]
 - [[silicon-spin-qubit]]
 - [[spin-qubit]]
