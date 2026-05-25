@@ -12,10 +12,10 @@ keywords:
 - transversal gates
 - stabilizer code
 influence_score: 0.77
-last_updated: '2026-05-24'
+last_updated: '2026-05-25'
 generated_by: scibok-curation
-verified_by: scibok-manual-2026-05-24
-figure_reviewed: false
+verified_by: scibok-manual-2026-05-25
+figure_reviewed: true
 ---
 
 ## Figure
@@ -24,7 +24,7 @@ figure_reviewed: false
 
 ## Description
 
-Color-code logical qubits are encoded in topological stabilizer codes defined on trivalent, face-3-colorable lattices (often called 2D color codes). Physical qubits live on vertices, and each face supports both an X-type and Z-type stabilizer. Relative to surface codes, color codes can reduce some Clifford-layer overhead because single-logical-qubit Clifford gates (notably H and S) are naturally transversal for standard 2D constructions.
+Color-code logical qubits are encoded in topological stabilizer codes defined on trivalent, face-3-colorable lattices (often called 2D color codes). Physical qubits live on vertices, and each face supports both an X-type and a Z-type stabilizer. Most experimental demonstrations so far use the smallest triangular [[7,1,3]] instance, which is locally Clifford equivalent to the Steane code. Relative to surface codes, color codes can reduce some Clifford-layer overhead because standard 2D constructions support transversal single-logical-qubit Clifford gates together with blockwise transversal CNOT between aligned code blocks.
 
 ## Hamiltonian
 
@@ -40,7 +40,7 @@ The code space is the \(+1\) eigenspace of all face stabilizers. An idealized co
 H_{\mathrm{code}} = -\sum_f \left(S_f^X + S_f^Z\right)
 \]
 
-Logical operators are nontrivial string/string-net operators determined by the lattice boundaries and coloring; in hardware implementations, protection is realized by repeated stabilizer measurement and decoding rather than by directly engineering \(H_{\mathrm{code}}\).
+Logical operators are nontrivial string/string-net operators determined by the lattice boundaries and coloring; in the experimentally common triangular [[7,1,3]] realization, equivalent logical representatives can be chosen in the Steane-code picture as \(X_L = X^{\otimes 7}\) and \(Z_L = Z^{\otimes 7}\). In hardware implementations, protection is realized by repeated stabilizer measurement and decoding rather than by directly engineering \(H_{\mathrm{code}}\).
 
 ## Motivation
 
@@ -63,7 +63,7 @@ Color codes are a leading topological-code alternative when transversal Clifford
 - Reported logical process fidelities for transversal and lattice-surgery variants
 - [arXiv:2404.16728](https://arxiv.org/abs/2404.16728)
 
-**Error-corrected molecular-energy computation with color-code logical qubits — Yamamoto et al. (2025/2026):**
+**Error-corrected molecular-energy computation with color-code logical qubits — Yamamoto et al. (2025 preprint; 2026 journal):**
 - End-to-end QPE for H\(_2\) using [[7,1,3]] color-code logical qubits plus real-time Steane-QEC gadgets
 - Energy estimate reached \(E-E_{\mathrm{FCI}}=0.001(13)\) hartree
 - [arXiv:2505.09133](https://arxiv.org/abs/2505.09133)
