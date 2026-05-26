@@ -13,9 +13,9 @@ keywords:
 - disjoint support
 - noise bias
 influence_score: 0.76
-last_updated: '2026-03-21'
+last_updated: '2026-05-26'
 generated_by: scibok-curation
-verified_by: scibok-manual-2026-03-21
+verified_by: scibok-manual-2026-05-26
 figure_reviewed: true
 ---
 
@@ -31,11 +31,11 @@ The circuit combines large inductive and capacitive elements with Josephson junc
 
 ## Hamiltonian
 
-A reduced 0-π model can be written in collective coordinates $\phi,\theta$ as:
+In the ideal disorder-free limit, a reduced 0-π model can be written in collective coordinates $\phi,\theta$ as:
 
 $$H = 4E_{C\phi}n_\phi^2 + 4E_{C\theta}n_\theta^2 - 2E_J\cos\theta\cos\left(\phi - \frac{\varphi_{ext}}{2}\right) + E_L\phi^2$$
 
-with design target $E_L \ll E_J$ and anisotropic capacitances producing disjoint-support wavefunctions in $\phi$.
+where $\varphi_{ext}$ is the reduced external flux. Protection requires $E_L \ll E_J$ together with anisotropic charging energies that keep the logical wavefunctions nearly disjoint. In real devices, disorder-induced couplings spoil exact disjoint support and remain the main obstacle to the asymptotic protected regime.
 
 ## Motivation
 
@@ -44,19 +44,20 @@ with design target $E_L \ll E_J$ and anisotropic capacitances producing disjoint
 ## Experimental Status
 
 **First experimental realization — Gyenis et al. (2021):**
-- Demonstrated a protected superconducting circuit derived from the 0-π qubit design
-- Used an array of gate-tunable Josephson interferometers
-- Observed signatures of the protected regime, though full exponential protection not yet achieved
-- Dominant challenge remains disorder and parameter spread, which break the ideal protection symmetry
+- Demonstrated a superconducting circuit derived from the 0-π qubit design in a circuit-QED architecture
+- Used an array of gate-tunable Josephson interferometers to engineer the protected manifold
+- Measured relaxation times up to $T_1 = 1.6\,\mathrm{ms}$ together with dephasing times around $25\,\mu\mathrm{s}$ in the protected-state manifold
+- Observed a disorder-limited partially protected regime, not the fully symmetry-ideal exponential-protection limit envisioned in the original proposal
+- No clearly superseding peer-reviewed 2024-2026 experimental 0-π hardware milestone was found in this audit
 
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| Protection mechanism | Exponential wavefunction separation | In ideal parameter regime | [Brooks et al. 2013](https://doi.org/10.1103/PhysRevA.87.052306) |
-| Dominant challenge | Disorder / parameter spread | Breaks ideal protection symmetry | — |
-| Experimental status | Early prototypes / partial regimes | Not yet transmon-level maturity | [Gyenis et al. 2021](https://doi.org/10.1103/PRXQuantum.2.010339) |
-| Operating temperature | 10–20 mK | Dilution refrigerator | — |
+| Protection target | Exponentially small logical-state overlap | Ideal hardware-level suppression of both relaxation and dephasing channels | [Brooks et al. 2013](https://doi.org/10.1103/PhysRevA.87.052306) |
+| Measured relaxation time | $T_1 = 1.6\,\mathrm{ms}$ | Reported for the protected-state manifold in the first circuit-QED realization | [Gyenis et al. 2021](https://doi.org/10.1103/PRXQuantum.2.010339) |
+| Measured dephasing time | $25\,\mu\mathrm{s}$ | Same experiment, showing useful protection but still substantial residual dephasing | [Gyenis et al. 2021](https://doi.org/10.1103/PRXQuantum.2.010339) |
+| Dominant challenge | Disorder / parameter spread | Breaks the ideal symmetry and couples the soft protected mode to unwanted degrees of freedom | [Gyenis et al. 2021](https://doi.org/10.1103/PRXQuantum.2.010339) |
 
 ## References
 
@@ -69,6 +70,7 @@ with design target $E_L \ll E_J$ and anisotropic capacitances producing disjoint
 ## Linked Papers
 
 - [[brooks-2013-0-pi-qubit]]
+- [[gyenis-2021-experimental-realization-protected]]
 
 ## Evergreen context
 
@@ -78,6 +80,7 @@ with design target $E_L \ll E_J$ and anisotropic capacitances producing disjoint
 
 ## Related Entries
 
-- [[fluxonium]] — parent circuit family
+- [[cos2phi-qubit]] — another superconducting protected-qubit design built around doubled periodicity and 0/π structure
+- [[fluxonium]] — neighboring superinductor-based superconducting circuit family
 - [[heavy-fluxonium-qubit]] — related protected regime in the fluxonium family
 - [[transmon]] — conventional superconducting qubit for comparison
