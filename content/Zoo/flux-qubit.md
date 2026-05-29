@@ -95,6 +95,7 @@ The flux qubit was one of the three original superconducting qubit types (alongs
 
 - [[josephson-junction-as-nonlinear-element]] — the cosine nonlinearity and frustrated loop physics that generate the persistent-current double well
 - [[coherence-time-hierarchy]] — how to interpret sweet-spot Ramsey, echo, and relaxation numbers in a flux-noise-sensitive qubit
+- [[dispersive-readout-mechanism]] — the resonator-based readout path that supplanted the original strong-perturbation SQUID-style measurement schemes
 
 ## Related Entries
 

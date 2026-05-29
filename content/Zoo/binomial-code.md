@@ -53,6 +53,11 @@ For the full treatment, see [[binomial-codes]].
 - [[michael-2016-binomial-codes]]
 - [[li-2026-noise-resilient-nonadiabatic-geometric-quantum]]
 
+## Evergreen context
+
+- [[bosonic-code-hierarchy]] — places the stub in the broader bosonic-code landscape and explains why binomial, cat, and GKP encodings solve different error-model tradeoffs
+- [[threshold-theorem]] — the right frame for separating a single-mode lifetime win from full fault-tolerant overhead reduction
+
 ## Related Entries
 
 - [[binomial-codes]] — canonical entry (full treatment)

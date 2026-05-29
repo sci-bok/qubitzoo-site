@@ -1,18 +1,18 @@
 {
   "schema": "qubitzoo.changelog.v1",
-  "generated_at_utc": "2026-05-22T14:07:37.159Z",
+  "generated_at_utc": "2026-05-29T14:04:57.320Z",
   "window_hours": 24,
   "site": {
     "repo_root": "/Users/scibok/.openclaw/workspace/repos/qubitzoo-site",
     "commits": [
       {
-        "sha": "e1fba3c9",
-        "iso": "2026-05-21T10:55:56-04:00",
-        "subject": "Audit binomial codes entry",
+        "sha": "e7c73ddf",
+        "iso": "2026-05-28T10:28:35-04:00",
+        "subject": "Audit kane qubit entry",
         "files": [
-          "content/Figures/binomial-codes-figure.png",
-          "content/References/hu-2019-binomial-bosonic-logical-qubit.md",
-          "content/Zoo/binomial-codes.md"
+          "content/Figures/kane-qubit-figure.png",
+          "content/References/edlbauer-2025-11-qubit-atom-processor-silicon.md",
+          "content/Zoo/kane-qubit.md"
         ]
       }
     ]
@@ -22,17 +22,15 @@
     "available": true,
     "commits": [
       {
-        "sha": "0c02ae84",
-        "iso": "2026-05-22T06:08:45-04:00",
-        "subject": "zoo: pipeline queue-run processed=0 failed=0 (2026-05-22 10:08 UTC)",
+        "sha": "9e976976",
+        "iso": "2026-05-29T06:10:39-04:00",
+        "subject": "zoo: pipeline queue-run processed=0 failed=0 (2026-05-29 10:10 UTC)",
         "files": [
           "MOCs/classical-hardware-moc.md",
           "MOCs/codes-moc.md",
           "MOCs/color-center-moc.md",
           "MOCs/cross-platform-moc.md",
-          "MOCs/ion-trap-moc.md",
           "MOCs/molecular-moc.md",
-          "MOCs/neutral-atom-moc.md",
           "MOCs/photonic-moc.md",
           "MOCs/qubit-zoo-index-moc.md",
           "MOCs/semiconducting-moc.md",
@@ -44,13 +42,12 @@
         ]
       },
       {
-        "sha": "4f63a974",
-        "iso": "2026-05-21T10:48:41-04:00",
-        "subject": "Add evergreen context to topological Zoo cluster",
+        "sha": "56105bde",
+        "iso": "2026-05-28T10:51:21-04:00",
+        "subject": "Add curated synthesis to atomic family MOCs",
         "files": [
-          "Zoo/majorana-topological-qubit.md",
-          "Zoo/planar-josephson-junction-qubit.md",
-          "Zoo/tetron-qubit.md"
+          "MOCs/ion-trap-moc.md",
+          "MOCs/neutral-atom-moc.md"
         ]
       }
     ]
@@ -60,61 +57,58 @@
     "available": true,
     "commits": [
       {
-        "sha": "547f4518",
-        "iso": "2026-05-22T06:08:30-04:00",
-        "subject": "zoo: pipeline queue-run processed=0 failed=0 (2026-05-22 10:08 UTC)",
+        "sha": "2723d83f",
+        "iso": "2026-05-29T06:10:36-04:00",
+        "subject": "zoo: pipeline queue-run processed=0 failed=0 (2026-05-29 10:10 UTC)",
         "files": [
           "data/canon_coverage.json",
           "data/classics_backlog.json",
           "data/classics_resolver_report.json",
-          "data/exports/paper_feed/2026-05-22/paper_feed.v1.jsonl",
+          "data/exports/paper_feed/2026-05-29/paper_feed.v1.jsonl",
           "data/exports/paper_feed/latest.json",
           "data/influence_history.jsonl",
           "data/quarantine_queue.json",
           "data/reports/.last-morning-summary-date",
-          "data/reports/2026-05-21/calibration-json.err.log",
-          "data/reports/2026-05-21/calibration.err.log",
-          "data/reports/2026-05-21/calibration.json",
-          "data/reports/2026-05-21/calibration.txt",
-          "data/reports/2026-05-21/influence-scoring.log",
-          "data/reports/2026-05-21/moc-build.log",
-          "data/reports/2026-05-21/moc-generate.log",
-          "data/reports/2026-05-21/ops-report-json.err.log",
-          "data/reports/2026-05-21/ops-report.err.log",
-          "data/reports/2026-05-21/ops-report.json",
-          "data/reports/2026-05-21/ops-report.txt",
-          "data/reports/2026-05-21/queue-summary.json",
-          "data/reports/2026-05-21/queue.log",
-          "data/reports/2026-05-21/run-summary.json",
-          "data/reports/2026-05-21/run-summary.txt",
-          "data/reports/2026-05-21/zettel-review.log",
-          "data/reports/2026-05-21/zoo-links.log",
-          "data/reports/2026-05-21/zoo-note-conventions.log",
-          "data/reports/2026-05-21/zoo-source-references.log",
-          "data/reports/2026-05-22/canon-coverage.log",
-          "data/reports/2026-05-22/canon-coverage.md",
-          "data/reports/2026-05-22/classics-build.log",
-          "data/reports/2026-05-22/classics-resolve.log",
-          "data/reports/2026-05-22/discovery.log",
-          "data/reports/2026-05-22/preflight.log",
-          "data/reports/2026-05-22/prioritize-classics.log",
-          "data/reports/2026-05-22/queue.log",
+          "data/reports/2026-05-28/calibration-json.err.log",
+          "data/reports/2026-05-28/calibration.err.log",
+          "data/reports/2026-05-28/calibration.json",
+          "data/reports/2026-05-28/calibration.txt",
+          "data/reports/2026-05-28/influence-scoring.log",
+          "data/reports/2026-05-28/moc-build.log",
+          "data/reports/2026-05-28/moc-generate.log",
+          "data/reports/2026-05-28/ops-report-json.err.log",
+          "data/reports/2026-05-28/ops-report.err.log",
+          "data/reports/2026-05-28/ops-report.json",
+          "data/reports/2026-05-28/ops-report.txt",
+          "data/reports/2026-05-28/queue-summary.json",
+          "data/reports/2026-05-28/queue.log",
+          "data/reports/2026-05-28/run-summary.json",
+          "data/reports/2026-05-28/run-summary.txt",
+          "data/reports/2026-05-28/zettel-review.log",
+          "data/reports/2026-05-28/zoo-links.log",
+          "data/reports/2026-05-28/zoo-note-conventions.log",
+          "data/reports/2026-05-28/zoo-source-references.log",
+          "data/reports/2026-05-29/canon-coverage.log",
+          "data/reports/2026-05-29/canon-coverage.md",
+          "data/reports/2026-05-29/classics-build.log",
+          "data/reports/2026-05-29/classics-resolve.log",
+          "data/reports/2026-05-29/discovery.log",
+          "data/reports/2026-05-29/preflight.log",
+          "data/reports/2026-05-29/prioritize-classics.log",
+          "data/reports/2026-05-29/queue.log",
           "data/reports/latest-run-summary.json",
           "data/reports/latest-run-summary.txt",
           "data/reports/run-history.jsonl",
-          "data/zoo_source_references.json",
-          "vault/Figures/binomial-codes-figure.jpg"
+          "data/zoo_source_references.json"
         ]
       },
       {
-        "sha": "9a40fa25",
-        "iso": "2026-05-21T11:05:16-04:00",
-        "subject": "Record binomial-codes deep audit",
+        "sha": "952b1648",
+        "iso": "2026-05-28T10:28:42-04:00",
+        "subject": "Update Kane audit tracker",
         "files": [
           "data/audit-tracker.json",
-          "vault/Figures/binomial-codes-figure.png",
-          "vault/Figures/binomial-codes-figure.svg",
-          "vault/References/hu-2019-binomial-bosonic-logical-qubit.md"
+          "vault/Figures/kane-qubit-figure.png"
         ]
       }
     ]
@@ -122,8 +116,8 @@
   "pipeline": {
     "status": "degraded",
     "mode": "full",
-    "timestamp_utc": "2026-05-22T10:00:04Z",
-    "timestamp_local": "2026-05-22 06:00:04 EDT",
+    "timestamp_utc": "2026-05-29T10:00:05Z",
+    "timestamp_local": "2026-05-29 06:00:05 EDT",
     "papers_added": 0,
     "failing_steps": [
       "zoo_note_conventions"

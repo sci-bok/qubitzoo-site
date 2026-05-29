@@ -56,6 +56,13 @@ where $K$ is the Kerr nonlinearity from the Josephson junction and $\epsilon_p$ 
 - **Signal-to-noise:** Quantum-limited noise floor ($\frac{1}{2}\hbar\omega$) maximizes the information extracted per measurement, enabling single-shot readout in <500 ns.
 - **Mid-circuit measurement:** Fast, high-fidelity readout is essential for real-time error correction and feed-forward operations.
 
+## Evergreen context
+
+- [[dispersive-readout-mechanism]] explains why the first amplifier matters so much: the qubit state only produces a small cavity-frequency or phase shift, so the earliest added noise in the chain sets the usable measurement contrast.
+- [[josephson-junction-as-nonlinear-element]] is the device-level reason JPAs and JTWPAs exist at all, because Josephson nonlinearity provides gain without the dissipative noise penalty of ordinary microwave amplifiers.
+- [[divincenzo-criteria]] identifies qubit-specific measurement as a core hardware requirement, and quantum-limited cryogenic amplification is one of the enabling steps that made superconducting readout satisfy it at high fidelity.
+- [[threshold-theorem]] is the downstream systems test, because repeated syndrome extraction only helps if measurement infidelity from the readout chain stays below the logical error budget.
+
 ## Experimental Status
 
 **JTWPA demonstration — Macklin et al. (2015):**

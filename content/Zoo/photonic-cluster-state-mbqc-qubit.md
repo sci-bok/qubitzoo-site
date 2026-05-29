@@ -103,6 +103,11 @@ Computation via measurements: measuring qubit $i$ in the basis $\{|+_\theta\rang
 - [[nielsen-2004-optical-quantum-computation-using-cluster]]
 - [[browne-2005-resource-efficient-linear-optical]]
 
+## Evergreen context
+
+- [[threshold-theorem]] — the main architectural question is how offline cluster-state preparation plus adaptive measurement still reaches a fault-tolerant regime despite probabilistic entangling operations
+- [[erasure-error-vs-pauli-error]] — photon loss is often a flagged absence event, so loss-tolerant MBQC should be read through erasure structure rather than a purely Pauli-noise picture
+
 ## Related Entries
 
 - [[linear-optical-photonic-qubit]] — gate-based photonic QC (KLM approach)

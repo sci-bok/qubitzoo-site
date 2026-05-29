@@ -4,7 +4,7 @@ authors: [H. Bombín, M. A. Martin-Delgado]
 year: 2006
 journal: Physical Review Letters
 doi: 10.1103/PhysRevLett.97.180501
-arxiv_id: 'quant-ph/0605138'
+arxiv_id: 'quant-ph/0604085'
 type: reference
 generated_by: scibok-curation
 last_updated: '2026-03-15'
@@ -19,7 +19,7 @@ Introduces color codes: a family of topological quantum error-correcting codes d
 
 ## Links
 - **Journal:** [Physical Review Letters](https://doi.org/10.1103/PhysRevLett.97.180501)
-- **arXiv:** [quant-ph/0605138](https://arxiv.org/abs/quant-ph/0605138)
+- **arXiv:** [quant-ph/0604085](https://arxiv.org/abs/quant-ph/0604085)
 
 ## Zoo Links
 - [[color-code-logical-qubit]]

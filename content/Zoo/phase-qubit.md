@@ -97,6 +97,12 @@ The phase qubit provided early demonstrations of quantum coherence and entanglem
 
 - [[martinis-2002-phase-qubit]]
 
+## Evergreen context
+
+- [[josephson-junction-as-nonlinear-element]] — the tilted cosine potential and plasma-mode anharmonicity that the current-biased junction turns into a qubit
+- [[coherence-time-hierarchy]] — how to interpret the short $T_1$ and $T_2$ numbers that ultimately made the phase qubit a transitional architecture
+- [[dispersive-readout-mechanism]] — the non-destructive resonator readout paradigm that replaced tunneling-based measurement in mainstream superconducting processors
+
 ## Related Entries
 
 - [[transmon]] — successor architecture with superior coherence

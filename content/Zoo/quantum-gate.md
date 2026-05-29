@@ -73,6 +73,13 @@ Gate times are $\sim 0.1{-}10\,\mu\text{s}$ depending on driving mechanism and R
 
 **Two-qubit gates** are fundamentally challenging because photons do not naturally interact. The **KLM scheme** (Knill, Laflamme, Milburn 2001) achieves probabilistic entangling gates using ancilla photons, beam splitters, and post-selection on photon detection. Success probability is $\sim 1/16$ for a bare CZ, improved to near-deterministic rates with teleportation-based boosting. Measurement-based (fusion) approaches sidestep this by consuming entangled resource states.
 
+## Evergreen context
+
+- [[divincenzo-criteria]] turn gates from a circuit-model abstraction into a hardware requirement: a platform is not computationally useful until it can realize a native single-qubit-plus-entangling gate set.
+- [[threshold-theorem]] makes gate quality quantitative, because the real question is not whether a gate exists but whether its error rate sits far enough below threshold to support deep fault-tolerant circuits.
+- [[resonator-as-quantum-bus]] shows one archetypal route to entangling gates in circuit QED, where virtual photons mediate interactions between qubits that are not directly adjacent.
+- [[sqrt-swap-as-universal-gate]] captures the complementary spin-qubit route, where an exchange pulse plus local rotations already furnishes a universal entangling primitive.
+
 ## Key Metrics
 
 | Metric | Platform | SOTA Value | Gate Time | Reference |

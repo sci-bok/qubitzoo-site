@@ -48,6 +48,12 @@ Qubit operations (gates, initialization, dynamical decoupling, mid-circuit measu
 - **Real-time processing** for error correction and mid-circuit measurement feedback demands sub-microsecond decision latency from the classical stack.
 - **Cryogenic integration** (cryo-CMOS, SFQ logic) could reduce wiring by moving some control electronics to 4K or lower stages, but introduces power dissipation and noise constraints.
 
+## Evergreen context
+
+- [[quantum-hardware]] treats control electronics as part of the machine, not just lab scaffolding, because usable qubits only matter if compiled programs can reach them as calibrated, deterministic waveforms.
+- [[divincenzo-criteria]] makes the dependency explicit: universal gates, reliable state preparation, and qubit-specific measurement all fail in practice if the classical stack cannot synthesize, synchronize, and condition the required signals.
+- [[threshold-theorem]] turns classical latency into a fault-tolerance constraint, since mid-circuit measurement and decoder feedback are only useful if the control system can react before accumulated errors erase the syndrome value.
+
 ## Scaling Considerations
 
 ### Cross-platform signal requirements
