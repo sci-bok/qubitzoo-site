@@ -2,22 +2,21 @@
 title: "Distributed Quantum Computing in Silicon"
 authors: [Photonic Inc.]
 year: 2024
-journal: Photonic Inc. Technical Report
+journal: Preprint
 doi: null
 arxiv_id: '2406.01704'
 type: reference
 generated_by: scibok-curation
-last_updated: '2026-03-15'
+last_updated: '2026-06-02'
 ---
 
-Demonstrates remote entanglement between T-center electron spins in separate cryostats connected by standard telecom fiber, and a teleported CNOT gate between silicon spin qubits. Establishes the distributed quantum computing architecture using T centers as native spin-photon nodes with telecom-wavelength photonic interconnects.
+This preprint reports a proof-of-concept distributed-quantum-computing experiment using silicon T centres in separate cryostats connected by telecom fibre. It is the key source for the current entry's remote-entanglement and teleported-gate claims.
 
 ## Key Results
-- Remote entanglement of T-center spins across separate cryostats via telecom fiber
-- Teleported CNOT gate between silicon spin qubits
-- Any-to-any qubit connectivity via photon-mediated entanglement
-- Architecture targets QLDPC error correction codes
-- Operating at ~1 K, compatible with standard dilution refrigerators
+- Remote Bell-pair generation between T-centre electron spins in separate cryostats
+- Measured Bell-pair fidelity of 0.60(0.08) at 40 ns time-bin width
+- Preliminary post-selected teleported CNOT sequence with a truth table over a selected basis set
+- Outlook projections for much higher future entanglement rates and fidelities are explicitly projections, not demonstrated performance
 
 ## Links
 - **arXiv:** [2406.01704](https://arxiv.org/abs/2406.01704)
