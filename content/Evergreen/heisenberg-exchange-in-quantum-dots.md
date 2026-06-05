@@ -13,7 +13,7 @@ tags:
 
 The fundamental two-qubit interaction in semiconductor spin qubits. When the tunnel barrier between two single-electron quantum dots is lowered, virtual tunneling produces a Heisenberg exchange coupling:
 
-This note is intentionally the **Hamiltonian-first abstraction**. For the microscopic origin, tuning knobs, and device tradeoffs, see [[exchange-interaction-in-quantum-dots]].
+This note is intentionally the **Hamiltonian-first abstraction**. Use it when the question is what unitary an exchange pulse implements, how encoded spin states rotate, or why $\sqrt{\text{SWAP}}$ appears so often. For the microscopic origin of $J$, the barrier-vs-detuning tuning knobs, and device-level noise tradeoffs, see [[exchange-interaction-in-quantum-dots]].
 
 $$H_s(t) = J(t)\,\vec{S}_1 \cdot \vec{S}_2$$
 
@@ -22,6 +22,7 @@ where the exchange constant $J(t) = 4t_0^2(t)/u$ depends on the tunneling matrix
 ## Key Properties
 
 - **Purely electrical control**: Modulated by gate voltages on the tunnel barrier, not by magnetic fields or microwave drives.
+- **Encoded-spin backbone**: The same $J_{ij}\,\mathbf S_i\!\cdot\!\mathbf S_j$ form underlies [[loss-divincenzo-qubit]], [[singlet-triplet-qubit]], [[exchange-only-qubit]], [[rx-qubit]], and [[aeon-qubit]]; what changes across platforms is the encoding and operating point, not the core exchange algebra.
 - **Always-on problem**: In practice, residual exchange $J$ is never perfectly zero — motivates [[aeon-qubit]] and dynamical decoupling schemes.
 - **Validity conditions**: Requires single-band approximation ($u > t_0$), adiabatic pulsing ($\tau_s > \hbar/\Delta E$), and $\Delta E \gg kT$.
 - **Swap and $\sqrt{\text{SWAP}}$**: Pulsing $J$ for $\int J\,dt = \pi$ gives SWAP; half that gives [[sqrt-swap-as-universal-gate]].

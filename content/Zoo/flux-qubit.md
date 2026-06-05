@@ -14,10 +14,10 @@ keywords:
 - rf squid
 - three junction
 influence_score: 0.75
-last_updated: '2026-05-30'
+last_updated: '2026-03-21'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-manual-2026-05-30
+verified_by: scibok-manual-2026-03-21
 ---
 
 ## Figure
@@ -36,19 +36,15 @@ Flux qubits operate in the regime $E_J/E_C \sim 20{-}80$, intermediate between t
 
 Near the degeneracy point, the effective two-level Hamiltonian is:
 
-$$H_\mathrm{eff} = -\frac{1}{2}(\epsilon\,\sigma_z + \Delta\,\sigma_x)$$
+$$H = -\frac{1}{2}(\epsilon\,\sigma_z + \Delta\,\sigma_x)$$
 
 where $\epsilon = 2I_p(\Phi_\text{ext} - \Phi_0/2)$ is the energy bias (proportional to flux detuning), $I_p$ is the persistent current, and $\Delta$ is the tunnel splitting.
 
-A fuller circuit description for the standard three-junction design keeps two independent superconducting phases and their conjugate Cooper-pair numbers:
+The full circuit Hamiltonian for the three-junction loop:
 
-$$H = 4\,\mathbf{n}^{\mathsf T} E_C\, \mathbf{n} + U(\varphi_1, \varphi_2)$$
+$$U(\varphi_1, \varphi_2) = -E_{J1}\cos\varphi_1 - E_{J2}\cos\varphi_2 - \alpha E_J\cos(2\pi f + \varphi_1 - \varphi_2)$$
 
-with Josephson potential
-
-$$U(\varphi_1, \varphi_2) = -E_J\cos\varphi_1 - E_J\cos\varphi_2 - \alpha E_J\cos(2\pi f + \varphi_1 - \varphi_2),$$
-
-where $f = \Phi_\text{ext}/\Phi_0$ is the frustration parameter and $\alpha < 1$ is the junction asymmetry ratio. Near $f \approx 1/2$ and for $\alpha \approx 0.7{-}0.8$, this potential develops the double-well structure whose localized states correspond to opposite circulating currents.
+where $f = \Phi_\text{ext}/\Phi_0$ is the frustration parameter and $\alpha < 1$ is the junction asymmetry ratio.
 
 ## Motivation
 
@@ -56,47 +52,44 @@ The flux qubit was one of the three original superconducting qubit types (alongs
 
 ## Experimental Status
 
-**Foundational flux-qubit architecture (1999-2000):**
-- Orlando et al. (1999) and Mooij et al. (1999) established the canonical three-junction persistent-current design near half-flux bias.
-- Early 2000 experiments then confirmed spectroscopy and macroscopic-state superposition in persistent-current circuits, fixing the flux qubit as one of the original superconducting qubit modalities.
+**First spectroscopic observation — Friedman et al. (2000), van der Wal et al. (2000):**
+- Observed quantum superposition of macroscopic persistent-current states.
+- Three-junction design creates a controllable double-well potential via flux frustration.
 
-**C-shunt coherence revival — Yan et al. (2016):**
-- Capacitive shunting pushed sweet-spot relaxation times beyond 40 μs in a planar flux-qubit design.
-- This revived the gate-model flux-qubit line by reducing dielectric loss and improving device reproducibility.
+**C-shunt variant — Yan et al. (2016):**
+- Capacitive shunting improved $T_1$ to >40 μs by reducing dielectric loss.
+- Enhanced reproducibility compared to traditional flux qubits.
 
-**Annealing-oriented tunable CSFQ — Trappen et al. (2025):**
-- A modern tunable capacitively shunted flux-qubit study mapped coherence across annealing-relevant biases and identified intrinsic low-frequency flux noise plus bias-line thermal noise as the dominant decoherence channels.
-- In that device, Ramsey pure-dephasing at the symmetry point was only about 100-200 ns, with spin echo improving dephasing by roughly a factor of five, underscoring the different control-noise tradeoffs of annealing-oriented operation.
+**Coupling and readout:**
+- Strong coupling to electromagnetic resonators demonstrated for dispersive readout and qubit-qubit coupling.
 
-**Platform role today:**
-- Flux qubits remain historically central and still matter for quantum annealing architectures, but the record-setting gate-model superconducting coherence frontier has largely shifted to descendants such as fluxonium and to transmon-family processors.
+**Quantum annealing:**
+- Widely used in quantum annealing processors (D-Wave systems use flux-qubit-based architecture).
 
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| Persistent current $I_p$ | ~300 nA | Canonical three-junction persistent-current basis scale in the original Science proposal | [Mooij et al. 1999](https://doi.org/10.1126/science.285.5430.1036) |
-| Junction asymmetry $\alpha$ | ~0.75 (typ. 0.7-0.8) | Smaller third junction sets the barrier height and tunnel splitting in the standard design | [Orlando et al. 1999](https://doi.org/10.1103/PhysRevB.60.15398) |
-| $T_1$ (sweet-spot C-shunt flux qubit) | >40 μs | Planar capacitive-shunt redesign at the flux-insensitive point | [Yan et al. 2016](https://doi.org/10.1038/ncomms12964) |
-| Tunable gap $\Delta/2\pi$ | ~1-6.2 GHz | Annealing-oriented tunable CSFQ coherence study across flux bias | [Trappen et al. 2025](https://doi.org/10.1038/s42005-025-02360-2) |
-| Ramsey pure-dephasing $T_\phi$ | ~100-200 ns | 2025 tunable CSFQ study at the symmetry point, with spin echo improving dephasing by about 5× | [Trappen et al. 2025](https://doi.org/10.1038/s42005-025-02360-2) |
+| $T_1$ | 1–55 μs | C-shunt: ~40–55 μs; traditional: ~1–5 μs | [Yan et al. 2016](https://doi.org/10.1038/ncomms12964) |
+| $T_2$ (echo) | 5–80 μs | At degeneracy point; C-shunt improved | — |
+| Anharmonicity | 3–10 GHz | Much larger than transmon | — |
+| Persistent current $I_p$ | 200–500 nA | Circulating supercurrent | [Orlando et al. 1999](https://doi.org/10.1103/PhysRevB.60.15398) |
+| Qubit frequency | 1–10 GHz | Tunable via external flux | — |
+| 1Q gate fidelity | 99–99.9% | Microwave + flux pulses | [Yan et al. 2016](https://doi.org/10.1038/ncomms12964) |
+| 2Q gate fidelity | 95–99% | CZ/iSWAP; flux qubits also used in quantum annealing where gate fidelity is not the standard metric | [Yan et al. 2016](https://doi.org/10.1038/ncomms12964) |
+| Operating temperature | 10–20 mK | Dilution refrigerator | — |
 
 ## References
 
-### Foundational papers
+### Original proposal
 - T. P. Orlando et al., "Superconducting persistent-current qubit," [Phys. Rev. B 60, 15398 (1999)](https://doi.org/10.1103/PhysRevB.60.15398) — [arXiv:cond-mat/9908283](https://arxiv.org/abs/cond-mat/9908283)
-- J. E. Mooij et al., "Josephson Persistent-Current Qubit," [Science 285, 1036 (1999)](https://doi.org/10.1126/science.285.5430.1036)
 
-### Modern coherence and noise benchmarks
+### Experimental demonstrations
 - F. Yan et al., "The flux qubit revisited to enhance coherence and reproducibility," [Nat. Commun. 7, 12964 (2016)](https://doi.org/10.1038/ncomms12964)
-- R. Trappen et al., "Decoherence of a tunable capacitively shunted flux qubit," [Commun. Phys. 8, 453 (2025)](https://doi.org/10.1038/s42005-025-02360-2)
 
 ## Linked Papers
 
-- [[orlando-1999-superconducting-persistent-current]]
 - [[mooij-1999-flux-qubit]]
-- [[yan-2016-flux-qubit-revisited]]
-- [[trappen-2025-decoherence-tunable-capacitively]]
 
 ## Evergreen context
 

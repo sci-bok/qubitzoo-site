@@ -3,7 +3,7 @@ title: T-Center Qubit (Silicon Spin-Photon)
 entry_type: qubit
 technology_family: Spin-Photon
 status: demonstrated
-figure_reviewed: true
+figure_reviewed: false
 first_proposed_year: 2020
 first_demonstrated_year: 2020
 keywords:
@@ -15,10 +15,10 @@ keywords:
 - quantum network
 - distributed quantum computing
 influence_score: 0.75
-last_updated: '2026-06-03'
+last_updated: '2026-06-02'
 generated_by: scibok-curation
 extracted_by: manual
-verified_by: scibok-manual-2026-06-03
+verified_by: scibok-manual-2026-06-02
 ---
 
 ## Figure
@@ -27,11 +27,11 @@ verified_by: scibok-manual-2026-06-03
 
 ## Description
 
-The silicon T centre is a telecom-band spin-photon interface associated with a carbon-related defect complex in silicon, often modeled as a C-C-H complex. Its optical zero-phonon line sits near 1326 nm in the telecom band, so it can interface directly with standard fibre components without the frequency conversion usually needed for visible-wavelength solid-state emitters.
+The silicon T centre is a telecom-band spin-photon interface built from a carbon-pair plus hydrogen defect complex in silicon, commonly modeled as a C-C-H complex. Its optical zero-phonon line sits near 1326 nm in the telecom O-band, so it can interface directly with standard fibre components without the frequency conversion usually needed for visible-wavelength solid-state emitters.
 
-A single T centre hosts an optically addressable spin and can couple to nearby nuclear-spin memories. Depending on isotopic configuration, the local register can include the electron spin, the hydrogen nuclear spin, and up to two nearby ¹³C nuclear spins. That combination makes the platform interesting not just as a photon source, but as a small local memory-and-processing node inside a silicon photonics stack.
+A single T centre combines an optically addressable electron spin with nearby nuclear-spin memories. Depending on isotopic configuration, the register can include the electron spin, the hydrogen nuclear spin, and up to two nearby ¹³C nuclear spins. That combination makes the platform interesting not just as a photon source, but as a small local memory-and-processing node inside a silicon photonics stack.
 
-Experimentally, the platform has moved in distinct steps. Bergeron et al. (2020) established the integrated telecom photon-spin interface in silicon. Higginbottom et al. (2022) reported optical observation of single spins in silicon T centres. DeAbreu et al. (2023) demonstrated waveguide-integrated T centres, and Johnston et al. (2024) pushed the photonic interface further by cavity-coupling single T centres to enhance zero-phonon-line emission. A 2024 Photonic Inc. preprint then reported remote entanglement between T centres in separate cryostats and a preliminary, post-selected teleported CNOT sequence over a selected basis set. In 2025, electrically triggered spin-photon devices in silicon showed that T-centre nanophotonics can also be driven electrically, not only optically.
+Experimentally, the platform has moved in distinct steps. Bergeron et al. (2020) established the integrated telecom photon-spin interface in silicon. Higginbottom et al. (2022) reported optical observation of single spins in silicon T centres. DeAbreu et al. (2023) demonstrated waveguide-integrated T centres. A 2024 Photonic Inc. preprint then reported remote entanglement between T centres in separate cryostats and a preliminary, post-selected teleported CNOT sequence over a selected basis set. In 2025, electrically triggered spin-photon devices in silicon showed that T-centre nanophotonics can also be driven electrically, not only optically.
 
 ## Hamiltonian
 
@@ -70,11 +70,6 @@ with $\omega_0/2\pi \approx 226$ THz (1326 nm). In real devices, orientation-dep
 - Waveguide-integrated silicon T centres demonstrated
 - Strengthened the case for scalable on-chip routing and collection
 
-**Cavity-enhanced single-photon interface — Johnston et al. (2024):**
-- Single T centres coupled to low-loss silicon photonic crystal cavities
-- Measured a Purcell-enhanced fluorescence decay-rate increase of **F = 6.89**
-- Achieved an average zero-phonon-line photon outcoupling rate of **73.3 kHz** under saturation, roughly two orders of magnitude above the previously reported single-T-centre waveguide rate
-
 **Distributed quantum computing proof-of-concept — Photonic Inc. (2024 preprint):**
 - Remote Bell-pair generation between T centres in separate cryostats connected by telecom fibre
 - Measured Bell-pair fidelity reached **0.60(0.08)** at a 40 ns time-bin width
@@ -91,7 +86,6 @@ with $\omega_0/2\pi \approx 226$ THz (1326 nm). In real devices, orientation-dep
 | Emission wavelength | 1326 nm | Telecom O-band zero-phonon line | [Bergeron et al. 2020](https://doi.org/10.1103/PRXQuantum.1.020301) |
 | Electron spin T₂ | ~2 ms | Reported in isotopically enriched ²⁸Si | [Bergeron et al. 2020](https://doi.org/10.1103/PRXQuantum.1.020301) |
 | Nuclear-spin memory | >1 s | Long-lived local memory register | [Bergeron et al. 2020](https://doi.org/10.1103/PRXQuantum.1.020301) |
-| Cavity Purcell enhancement | 6.89 | Single T centre in a silicon photonic crystal cavity | [Johnston et al. 2024](https://doi.org/10.1038/s41467-024-46643-8) |
 | Remote Bell-pair fidelity | 0.60(0.08) | 40 ns time-bin width, preliminary 2024 preprint | [Photonic Inc. 2024](https://arxiv.org/abs/2406.01704) |
 | Teleported gate sequence | Demonstrated | Post-selected preliminary tCNOT truth table over a selected basis set | [Photonic Inc. 2024](https://arxiv.org/abs/2406.01704) |
 | Electrical triggering | Demonstrated | Electrically driven T-centre spin-photon devices in silicon | [Dobinson et al. 2025](https://doi.org/10.1038/s41566-025-01752-8) |
@@ -100,7 +94,6 @@ with $\omega_0/2\pi \approx 226$ THz (1326 nm). In real devices, orientation-dep
 
 - **Silicon photonics compatibility:** Waveguide and cavity integration are real experimental milestones, not just a platform promise.
 - **Telecom networking advantage:** Native O-band emission removes a major systems burden that many other solid-state spin-photon platforms carry.
-- **Source-engineering progress:** Johnston et al. (2024) showed that Purcell-enhanced cavity coupling can materially improve T-centre photon collection and emission rate, which matters directly for network-node usefulness.
 - **Distributed-computing relevance:** The platform has already crossed from isolated emitter physics into remote-entanglement experiments, albeit still at proof-of-concept scale.
 - **Architectural caveat:** Claims about qLDPC-friendly non-local connectivity are best viewed as architectural motivation, not yet as an experimentally validated fault-tolerant stack.
 - **Device roadmap:** Electrical triggering is an important maturity step because it points toward more integrated cryogenic photonic hardware.
@@ -113,16 +106,14 @@ with $\omega_0/2\pi \approx 226$ THz (1326 nm). In real devices, orientation-dep
 - A. DeAbreu et al., "Waveguide-integrated silicon T centres," [Optics Express 31, 15045-15057 (2023)](https://doi.org/10.1364/OE.482008)
 
 ### Distributed and device-integration milestones
-- A. Johnston et al., "Cavity-coupled telecom atomic source in silicon," [Nature Communications 15, 2350 (2024)](https://doi.org/10.1038/s41467-024-46643-8)
 - Photonic Inc., "Distributed Quantum Computing in Silicon" (2024 preprint) — remote Bell-pair generation and a preliminary post-selected teleported-gate sequence, [arXiv:2406.01704](https://arxiv.org/abs/2406.01704)
-- M. Dobinson et al., "Electrically triggered spin-photon devices in silicon," [Nature Photonics 19, 1132-1137 (2025)](https://doi.org/10.1038/s41566-025-01752-8)
+- M. Dobinson et al., "Electrically triggered spin-photon devices in silicon," [Nature Photonics (2025)](https://doi.org/10.1038/s41566-025-01752-8)
 
 ## Linked Papers
 
 - [[bergeron-2020-silicon-integrated-telecommunications]]
 - [[higginbottom-2022-optical-observation-of-single-spins-in-silicon]]
 - [[deabreu-2023-waveguide-integrated-silicon-t-centres]]
-- [[johnston-2024-cavity-coupled-telecom-atomic-source-in-silicon]]
 - [[photonic-2024-distributed-qc]]
 - [[dobinson-2025-electrically-triggered-spin-photon-devices-in-silicon]]
 

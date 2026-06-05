@@ -151,6 +151,7 @@ Two-qubit entangling gates and resonator coupling have **not yet been experiment
 ## Evergreen context
 
 - [[exchange-interaction-in-quantum-dots]] — the tunable coupling resource AEON keeps always on
+- [[heisenberg-exchange-in-quantum-dots]] — the pairwise-exchange Hamiltonian that AEON reshapes into an always-on encoded qubit
 - [[decoherence-free-subspace]] — the encoded three-spin protection that AEON inherits
 - [[charge-noise-sweet-spot]] — the double-sweet-spot idea that makes AEON special
 

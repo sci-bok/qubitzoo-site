@@ -39,5 +39,5 @@ The tradeoff is fundamental: sweet spots restrict where the qubit can be operate
 
 - [[vion-2002-manipulating-state-electrical]] — quantronium: first operation at charge sweet spot
 - [[koch-2007-transmon]] — transmon design and exponential charge noise suppression
-- [Martins et al. (2016)](https://doi.org/10.1103/PhysRevLett.116.116801) — symmetric operating point in singlet-triplet qubits
-- [Shim & Tahan (2016)](https://doi.org/10.1103/PhysRevB.93.121410) — charge-noise-insensitive gate operations for semiconductor spin qubits
+- [[martins-2016-symmetric-exchange-gates]] — symmetric operating point in singlet-triplet qubits
+- [[shim-2016-aeon]] — charge-noise-insensitive gate operations for semiconductor spin qubits

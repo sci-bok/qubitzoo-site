@@ -14,9 +14,9 @@ keywords:
 - electric dipole spin resonance
 - EDSR
 influence_score: 0.74
-last_updated: '2026-06-04'
+last_updated: '2026-04-02'
 generated_by: scibok-curation
-verified_by: scibok-manual-2026-06-04
+verified_by: scibok-manual-2026-03-21
 ---
 
 ## Figure
@@ -25,82 +25,68 @@ verified_by: scibok-manual-2026-06-04
 
 ## Description
 
-**Hole spin qubits** encode quantum information in the lowest Kramers doublet of a valence-band hole confined in a semiconductor quantum dot, most prominently in strained Ge/SiGe heterostructures. Unlike electron spin qubits that often rely on micromagnets or oscillating magnetic fields for strong electric control, hole devices inherit **strong spin-orbit coupling** from the valence band and therefore support fast **all-electrical** manipulation via electric-dipole spin resonance (EDSR).
+**Hole spin qubits** encode quantum information in the spin of valence-band holes confined in semiconductor quantum dots, most commonly in Ge/SiGe heterostructures. Unlike electron spin qubits that require micromagnets or oscillating magnetic fields for spin manipulation, hole spins benefit from **strong spin-orbit coupling** that enables all-electrical control via **electric dipole spin resonance (EDSR)**.
 
-The microscopic origin is the $j=3/2$ valence-band manifold. In compressively strained Ge/SiGe quantum wells, confinement and strain split the heavy-hole and light-hole subbands, while electric fields and device asymmetry admix them. The qubit is therefore not a bare electron-like spin-1/2, but an **effective pseudospin** formed from a hole Kramers pair with a strongly anisotropic $g$-tensor. That same heavy-hole/light-hole mixing enables fast Rabi driving, but also makes the qubit sensitive to charge noise and device variability.
+The underlying physics originates from the $j = 3/2$ character of valence-band holes. In a Ge/SiGe quantum well under biaxial compressive strain, the heavy-hole ($m_j = \pm 3/2$) and light-hole ($m_j = \pm 1/2$) subbands split, with the ground state being predominantly heavy-hole. Mixing between heavy-hole and light-hole states (mediated by confinement asymmetry, electric fields, and strain) generates the spin-orbit coupling that enables electrical spin control. This mixing also makes the hole g-factor **highly anisotropic** — the g-tensor depends strongly on the magnetic field direction relative to the confinement plane.
 
-Two-qubit operations usually rely on **tunable exchange coupling** between neighboring quantum dots, which keeps hole-spin processors compatible with the broader gate-defined semiconductor-quantum-dot control stack. The recent arc of the field has been clear: from single-hole EDSR, to entangling hole-hole gates, to multiqubit 2D processors, and now to modular arrays approaching the tens-of-qubits regime.
+Two-qubit coupling uses **exchange interaction** between holes in neighboring dots, compatible with existing semiconductor gate-defined quantum dot control architectures. Recent progress in Ge/SiGe platforms has been rapid, with multi-qubit devices demonstrated.
+
+The tradeoff is that the same spin-orbit coupling enabling fast control also couples the spin to electrical noise, requiring careful sweet-spot design and materials engineering to balance speed against coherence.
 
 ## Hamiltonian
 
-The natural starting point is the valence-band $j=3/2$ manifold, but the operating qubit is the lowest Kramers doublet and is usually modeled as an effective pseudospin-1/2:
+Effective single-qubit model:
 
-$$H_{1q}^{\mathrm{eff}} = \frac{\mu_B}{2}\,\mathbf{B}\cdot \mathbf{g}\cdot\boldsymbol{\sigma} + \frac{1}{2}\,\boldsymbol{\Omega}_{\mathrm{EDSR}}\big(V_{\mathrm{ac}}(t),\mathbf{B}\big)\cdot\boldsymbol{\sigma}$$
+$$H = \frac{1}{2}g\mu_B\mathbf{B}\cdot\boldsymbol{\sigma} + \mathbf{E}(t)\cdot\mathbf{d}_{SO}(\boldsymbol{\sigma})$$
 
-Here $\mathbf{g}$ is the anisotropic hole $g$-tensor and the electrically driven term $\boldsymbol{\Omega}_{\mathrm{EDSR}}$ arises from spin-orbit-mediated heavy-hole/light-hole mixing. For neighboring dots, the simplest two-qubit interaction is exchange,
+where the first term is the Zeeman interaction (with an anisotropic g-tensor in general) and the second term is the spin-orbit-mediated electric driving, with $\mathbf{d}_{SO}$ the spin-orbit-induced electric dipole operator. Two-qubit coupling is typically exchange:
 
-$$H_{2q}^{\mathrm{eff}} \approx J(t)\,\mathbf{S}_1\!\cdot\!\mathbf{S}_2,$$
-
-although strong spin-orbit coupling can generate anisotropic corrections away from the simplest tuned regime.
+$$H_{2q} = J(t)\,\mathbf{S}_1\cdot\mathbf{S}_2$$
 
 ## Motivation
 
-- **All-electrical control:** strong valence-band spin-orbit coupling turns gate voltages directly into qubit rotations, often avoiding the micromagnets used in electron-spin platforms.
-- **Fast gates in a compact footprint:** hole qubits can achieve large Rabi frequencies while staying inside dense gate-defined quantum-dot layouts.
-- **CMOS-adjacent materials stack:** Ge/SiGe is compatible with advanced semiconductor processing and is a natural host for planar multiqubit arrays.
-- **Low-spin-isotope materials advantage:** isotopic engineering can strongly suppress hyperfine noise, leaving charge noise and device variability as the dominant engineering constraints.
+- Spin-orbit coupling turns electric fields into effective spin-control channels, **eliminating micromagnets** and oscillating magnetic field infrastructure needed for electron-spin ESR.
+- Supports dense integration and fast gate operations in CMOS-compatible semiconductor processes.
+- Ge/SiGe is isotopically purifiable ($^{72}$Ge, $^{74}$Ge are spin-0), enabling low nuclear spin noise environments.
+- The Ge/SiGe platform has shown the fastest progress toward multi-qubit semiconductor processors.
 
 ## Experimental Status
 
-**First single-qubit demonstration, Watzinger et al. (2018):**
-- Demonstrated a germanium hole-spin qubit in a hut-wire double quantum dot.
-- Used Pauli-blockade-assisted EDSR for two-axis control of a spin-3/2-derived qubit.
-- Reached Rabi frequencies up to 140 MHz with measured $T_2^* \approx 130$ ns.
+**Four-qubit Ge processor — Hendrickx et al. (2021):**
+- Demonstrated a four-qubit germanium quantum processor in a 2×2 quantum dot array.
+- Achieved universal quantum logic with all-electrical control via EDSR.
+- Single-qubit gate fidelities of 99–99.9% and two-qubit exchange gate fidelities of 98–99.5%.
 
-**First two-qubit hole logic, Hendrickx et al. (2020):**
-- Demonstrated fast exchange-based two-qubit logic with holes in germanium.
-- Established that hole-spin processors could support entangling gates without giving up all-electrical control.
+**Ongoing rapid progress (2021–present):**
+- Multiple groups (Veldhorst, Katsaros, Scappucci) scaling Ge/SiGe hole-spin devices to larger arrays.
+- Hot-qubit operation demonstrated at elevated temperatures (up to ~1 K).
+- Sweet-spot engineering reducing charge-noise sensitivity while maintaining fast gate speeds.
 
-**Four-qubit Ge processor, Hendrickx et al. (2021):**
-- Demonstrated a 2×2 germanium quantum-dot processor with universal quantum logic.
-- Executed one-, two-, three-, and four-qubit operations, including GHZ-state preparation.
-- Reported single-qubit fidelities around 99.3% in the processor setting.
-
-**Uniform 10-spin 2D control, John et al. (2025):**
-- Demonstrated a two-dimensional 10-spin germanium array with single-qubit fidelities above 99%.
-- Showed that tuning to three-hole operation can improve control locality and reduce nearest-neighbor crosstalk.
-
-**18-qubit modular array, Dijkema et al. (2026):**
-- Demonstrated simultaneous initialization, control, and readout across an extendable 18-qubit germanium array.
-- Reported average single-qubit gate fidelity of 99.8% and median fidelity of 99.9% across the array.
-- Characterized nearest-neighbor exchange couplings and implemented controlled-Z gates that generated a three-qubit GHZ state.
+**18-qubit modular array — Dijkema et al. (2026):**
+- Demonstrated operation of an 18-qubit array in germanium based on an extendable 2×N modular architecture.
+- Achieved simultaneous initialization, control, and readout across the entire array using parallel operation of modular unit cells.
+- Average single-qubit gate fidelities of 99.8% and median of 99.9% across the array.
+- Characterized nearest-neighbor exchange couplings throughout the device and implemented controlled-Z gates.
+- Generated a three-qubit Greenberger–Horne–Zeilinger (GHZ) state.
+- Establishes a modular, extendable architecture for planar semiconductor quantum processors.
 
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| 1Q Rabi frequency | Up to 140 MHz | Fast EDSR in the first Ge hole-spin demonstration | [Watzinger et al. 2018](https://doi.org/10.1038/s41467-018-06418-4) |
-| $T_2^*$ | 130 ns | First natural-Ge hut-wire device, without later array-level optimization | [Watzinger et al. 2018](https://doi.org/10.1038/s41467-018-06418-4) |
-| 2Q gate fidelity | 98% | Fast exchange-based hole-hole gate in germanium | [Hendrickx et al. 2020](https://doi.org/10.1038/s41586-019-1919-3) |
-| 1Q fidelity | 99.8% average, 99.9% median | 18-qubit modular Ge array | [Dijkema et al. 2026](https://arxiv.org/abs/2604.01063) |
-| 1Q array fidelity | >99% | 10-spin 2D array with robust localized control | [John et al. 2025](https://doi.org/10.1038/s41467-025-65577-3) |
-| Largest demonstrated processor | 18 qubits | Extendable 2×N modular architecture | [Dijkema et al. 2026](https://arxiv.org/abs/2604.01063) |
+| 1Q gate time | 1–50 ns | Fast EDSR control | — |
+| 1Q fidelity | 99.8–99.9% | 18-qubit Ge array | [Dijkema et al. 2026](https://arxiv.org/abs/2604.01063) |
+| 2Q fidelity | 98–99.5% | Exchange-based | [Hendrickx et al. 2021](https://doi.org/10.1038/s41586-021-03332-6) |
+| $T_2^*$ | 1–20 μs | Device/material dependent | — |
+| Operating temperature | 20 mK – 1 K | Some hot-qubit demonstrations | — |
+| Largest array | 18 qubits | Modular 2×N architecture | [Dijkema et al. 2026](https://arxiv.org/abs/2604.01063) |
 
 ## References
 
-### First single-qubit demonstration
-- H. Watzinger et al., "A germanium hole spin qubit," [Nature Communications 9 (2018)](https://doi.org/10.1038/s41467-018-06418-4)
-
-### First two-qubit hole logic
-- N. W. Hendrickx et al., "Fast two-qubit logic with holes in germanium," [Nature 577, 487 (2020)](https://doi.org/10.1038/s41586-019-1919-3)
-
-### Four-qubit processor milestone
+### Key experimental demonstration
 - N. W. Hendrickx et al., "A four-qubit germanium quantum processor," [Nature 591, 580 (2021)](https://doi.org/10.1038/s41586-021-03332-6)
 
-### 10-spin control milestone
-- V. John et al., "Robust and localised control of a 10-spin qubit array in germanium," [Nature Communications 16 (2025)](https://doi.org/10.1038/s41467-025-65577-3)
-
-### Current scaling milestone
+### Scaling milestone
 - J. J. Dijkema et al., "Simultaneous operation of an 18-qubit modular array in germanium," [arXiv:2604.01063 (2026)](https://arxiv.org/abs/2604.01063)
 
 ### Review
@@ -108,22 +94,19 @@ although strong spin-orbit coupling can generate anisotropic corrections away fr
 
 ## Linked Papers
 
-- [[watzinger-2018-germanium-hole-spin-qubit]]
-- [[hendrickx-2020-fast-two-qubit-logic-holes]]
 - [[hendrickx-2021-ge-4qubit]]
-- [[john-2025-robust-localised-control-10spin]]
-- [[dijkema-2026-simultaneous-operation-of-an]]
 - [[scappucci-2021-ge-review]]
+- [[dijkema-2026-simultaneous-operation-of-an]]
 
 ## Evergreen context
 
-- [[spin-orbit-coupling-for-qubit-control]] — hole-spin qubits are the clean semiconductor case where valence-band spin-orbit coupling directly turns gate voltages into spin rotations
-- [[exchange-interaction-in-quantum-dots]] — even with all-electrical single-qubit control, most multiqubit hole-spin processors still build entangling gates from tunable exchange
-- [[charge-noise-sweet-spot]] — frames the main hole-spin tradeoff: the same electric tunability that buys speed also amplifies susceptibility to charge fluctuations and device variability
+- [[spin-orbit-coupling-for-qubit-control]] — the canonical semiconductor example where strong heavy-hole SOC turns gate voltages directly into spin rotations
+- [[exchange-interaction-in-quantum-dots]] — the device-level view of how neighboring Ge dots generate the tunable coupling used for two-qubit gates
+- [[heisenberg-exchange-in-quantum-dots]] — the stripped-down $J\,\mathbf{S}_1\!\cdot\!\mathbf{S}_2$ control picture once the SOC-specific single-qubit physics is factored out
+- [[charge-noise-sweet-spot]] — frames the core speed-versus-dephasing tradeoff and why Ge devices keep pushing sweet-spot engineering
 
 ## Related Entries
 
-- [[spin-qubit]] — broader gate-defined spin-qubit family
-- [[silicon-spin-qubit]] — closest electron-spin cousin, with weaker intrinsic spin-orbit coupling
-- [[singlet-triplet-qubit]] — related exchange-controlled semiconductor spin encoding
-- [[andreev-spin-qubit]] — another Ge-friendly route that exploits strong spin-orbit physics in a hybrid superconducting setting
+- [[spin-qubit]] — broader spin qubit family; holes offer faster electrical control than electrons
+- [[singlet-triplet-qubit]] — electron-spin two-dot encoding; related control physics
+- [[kane-qubit]] — donor-based spin qubit in silicon

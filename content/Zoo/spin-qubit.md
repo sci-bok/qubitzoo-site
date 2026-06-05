@@ -143,7 +143,8 @@ Semiconductor spin qubits promise integration with existing CMOS fabrication inf
 
 - [[divincenzo-criteria]] — this is the platform-level checklist that makes spin qubits legible across coherence, control, readout, and scalability at once
 - [[spin-orbit-coupling-for-qubit-control]] — explains why modern devices favor electrically driven EDSR over local oscillating magnetic fields
-- [[exchange-interaction-in-quantum-dots]] — the native nearest-neighbor coupling resource behind the $\sqrt{\text{SWAP}}$ gate family
+- [[exchange-interaction-in-quantum-dots]] — the device-and-materials view of how neighboring dots generate the native nearest-neighbor coupling resource
+- [[heisenberg-exchange-in-quantum-dots]] — the control-level abstraction that explains why exchange pulses naturally produce SWAP and $\sqrt{\text{SWAP}}$ gates
 
 ## Related Entries
 

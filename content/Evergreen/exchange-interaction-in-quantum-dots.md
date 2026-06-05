@@ -15,7 +15,7 @@ tags:
 
 The Heisenberg exchange interaction $J$ between electron spins in adjacent quantum dots is the workhorse two-qubit coupling for semiconductor spin qubits. It arises microscopically from the interplay of quantum tunneling and Coulomb repulsion: when two electrons occupy neighboring dots separated by a tunable tunnel barrier, virtual hopping events — where one electron briefly visits the other's dot — lower the energy of the spin-singlet state relative to the spin-triplet. In the simplest Hubbard model, the exchange splitting is $J = 4t^2/U$, where $t$ is the interdot tunnel coupling and $U$ is the on-site Coulomb energy. This perturbative result holds when $t \ll U$, the regime where the dots are singly occupied and the Heisenberg Hamiltonian $H = J\,\vec{S}_1 \cdot \vec{S}_2$ faithfully describes the low-energy physics.
 
-This note is the **device and mechanism view** of exchange. For the stripped-down Hamiltonian abstraction used in pulse-sequence reasoning, see [[heisenberg-exchange-in-quantum-dots]].
+This note is the **device and mechanism view** of exchange. It answers how $J$ is generated, why barrier control and detuning control behave differently, and where charge sensitivity enters. For the stripped-down Hamiltonian abstraction used in pulse-sequence reasoning, encoded-spin control, and gate construction, see [[heisenberg-exchange-in-quantum-dots]].
 
 The power of the exchange interaction lies in its purely electrical tunability. Two complementary knobs exist: **barrier control** adjusts the height of the potential barrier between dots, modulating $t$ directly while keeping the charge distribution symmetric; **detuning control** tilts the double-well potential, shifting one dot's energy relative to the other, which changes $J$ through the effective $U$ in the denominator. Barrier control is generally preferred in modern devices because it preserves the charge symmetry point, reducing sensitivity to charge noise. In practice, $J$ can be tuned over many orders of magnitude — from effectively zero (dots fully isolated, $J/h < 1\,\text{kHz}$) to tens of GHz (strong tunnel coupling) — by adjusting a single gate voltage on a timescale of nanoseconds.
 
@@ -39,5 +39,5 @@ The exchange interaction also appears in extended forms: superexchange couples n
 
 - [[loss-divincenzo-1998-quantum-dots]] — original proposal for exchange-based quantum computation in quantum dots
 - [[petta-2005-singlet-triplet]] — first coherent manipulation of singlet-triplet states via exchange in GaAs double dots
-- [Reed et al. (2016)](https://doi.org/10.1103/PhysRevLett.116.110402) — reduced sensitivity to charge noise using symmetric barrier control
-- [Martins et al. (2016)](https://doi.org/10.1103/PhysRevLett.116.116801) — noise-insensitive exchange operation via symmetric operating point
+- [[reed-2016-reduced-sensitivity-charge-noise]] — reduced sensitivity to charge noise using symmetric barrier control
+- [[martins-2016-symmetric-exchange-gates]] — noise-insensitive exchange operation via symmetric operating point

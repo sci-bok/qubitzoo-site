@@ -1,18 +1,21 @@
 {
   "schema": "qubitzoo.changelog.v1",
-  "generated_at_utc": "2026-05-29T14:04:57.320Z",
+  "generated_at_utc": "2026-06-05T14:04:01.555Z",
   "window_hours": 24,
   "site": {
     "repo_root": "/Users/scibok/.openclaw/workspace/repos/qubitzoo-site",
     "commits": [
       {
-        "sha": "e7c73ddf",
-        "iso": "2026-05-28T10:28:35-04:00",
-        "subject": "Audit kane qubit entry",
+        "sha": "f315b4a2",
+        "iso": "2026-06-04T10:17:47-04:00",
+        "subject": "Audit hole spin qubit entry",
         "files": [
-          "content/Figures/kane-qubit-figure.png",
-          "content/References/edlbauer-2025-11-qubit-atom-processor-silicon.md",
-          "content/Zoo/kane-qubit.md"
+          "content/Figures/hole-spin-qubit-figure.png",
+          "content/References/dijkema-2026-simultaneous-operation-of-an.md",
+          "content/References/hendrickx-2020-fast-two-qubit-logic-holes.md",
+          "content/References/john-2025-robust-localised-control-10spin.md",
+          "content/References/watzinger-2018-germanium-hole-spin-qubit.md",
+          "content/Zoo/hole-spin-qubit.md"
         ]
       }
     ]
@@ -22,15 +25,17 @@
     "available": true,
     "commits": [
       {
-        "sha": "9e976976",
-        "iso": "2026-05-29T06:10:39-04:00",
-        "subject": "zoo: pipeline queue-run processed=0 failed=0 (2026-05-29 10:10 UTC)",
+        "sha": "682a9120",
+        "iso": "2026-06-05T06:08:32-04:00",
+        "subject": "zoo: pipeline queue-run processed=0 failed=0 (2026-06-05 10:08 UTC)",
         "files": [
           "MOCs/classical-hardware-moc.md",
           "MOCs/codes-moc.md",
           "MOCs/color-center-moc.md",
           "MOCs/cross-platform-moc.md",
+          "MOCs/ion-trap-moc.md",
           "MOCs/molecular-moc.md",
+          "MOCs/neutral-atom-moc.md",
           "MOCs/photonic-moc.md",
           "MOCs/qubit-zoo-index-moc.md",
           "MOCs/semiconducting-moc.md",
@@ -42,12 +47,14 @@
         ]
       },
       {
-        "sha": "56105bde",
-        "iso": "2026-05-28T10:51:21-04:00",
-        "subject": "Add curated synthesis to atomic family MOCs",
+        "sha": "6310229e",
+        "iso": "2026-06-04T10:51:12-04:00",
+        "subject": "Normalize spin sweet-spot evergreen references",
         "files": [
-          "MOCs/ion-trap-moc.md",
-          "MOCs/neutral-atom-moc.md"
+          "Evergreen/charge-noise-sweet-spot.md",
+          "Evergreen/exchange-interaction-in-quantum-dots.md",
+          "References/martins-2016-symmetric-exchange-gates.md",
+          "References/reed-2016-reduced-sensitivity-charge-noise.md"
         ]
       }
     ]
@@ -57,45 +64,45 @@
     "available": true,
     "commits": [
       {
-        "sha": "2723d83f",
-        "iso": "2026-05-29T06:10:36-04:00",
-        "subject": "zoo: pipeline queue-run processed=0 failed=0 (2026-05-29 10:10 UTC)",
+        "sha": "29b62def",
+        "iso": "2026-06-05T06:08:30-04:00",
+        "subject": "zoo: pipeline queue-run processed=0 failed=0 (2026-06-05 10:08 UTC)",
         "files": [
           "data/canon_coverage.json",
           "data/classics_backlog.json",
           "data/classics_resolver_report.json",
-          "data/exports/paper_feed/2026-05-29/paper_feed.v1.jsonl",
+          "data/exports/paper_feed/2026-06-05/paper_feed.v1.jsonl",
           "data/exports/paper_feed/latest.json",
           "data/influence_history.jsonl",
           "data/quarantine_queue.json",
           "data/reports/.last-morning-summary-date",
-          "data/reports/2026-05-28/calibration-json.err.log",
-          "data/reports/2026-05-28/calibration.err.log",
-          "data/reports/2026-05-28/calibration.json",
-          "data/reports/2026-05-28/calibration.txt",
-          "data/reports/2026-05-28/influence-scoring.log",
-          "data/reports/2026-05-28/moc-build.log",
-          "data/reports/2026-05-28/moc-generate.log",
-          "data/reports/2026-05-28/ops-report-json.err.log",
-          "data/reports/2026-05-28/ops-report.err.log",
-          "data/reports/2026-05-28/ops-report.json",
-          "data/reports/2026-05-28/ops-report.txt",
-          "data/reports/2026-05-28/queue-summary.json",
-          "data/reports/2026-05-28/queue.log",
-          "data/reports/2026-05-28/run-summary.json",
-          "data/reports/2026-05-28/run-summary.txt",
-          "data/reports/2026-05-28/zettel-review.log",
-          "data/reports/2026-05-28/zoo-links.log",
-          "data/reports/2026-05-28/zoo-note-conventions.log",
-          "data/reports/2026-05-28/zoo-source-references.log",
-          "data/reports/2026-05-29/canon-coverage.log",
-          "data/reports/2026-05-29/canon-coverage.md",
-          "data/reports/2026-05-29/classics-build.log",
-          "data/reports/2026-05-29/classics-resolve.log",
-          "data/reports/2026-05-29/discovery.log",
-          "data/reports/2026-05-29/preflight.log",
-          "data/reports/2026-05-29/prioritize-classics.log",
-          "data/reports/2026-05-29/queue.log",
+          "data/reports/2026-06-04/calibration-json.err.log",
+          "data/reports/2026-06-04/calibration.err.log",
+          "data/reports/2026-06-04/calibration.json",
+          "data/reports/2026-06-04/calibration.txt",
+          "data/reports/2026-06-04/influence-scoring.log",
+          "data/reports/2026-06-04/moc-build.log",
+          "data/reports/2026-06-04/moc-generate.log",
+          "data/reports/2026-06-04/ops-report-json.err.log",
+          "data/reports/2026-06-04/ops-report.err.log",
+          "data/reports/2026-06-04/ops-report.json",
+          "data/reports/2026-06-04/ops-report.txt",
+          "data/reports/2026-06-04/queue-summary.json",
+          "data/reports/2026-06-04/queue.log",
+          "data/reports/2026-06-04/run-summary.json",
+          "data/reports/2026-06-04/run-summary.txt",
+          "data/reports/2026-06-04/zettel-review.log",
+          "data/reports/2026-06-04/zoo-links.log",
+          "data/reports/2026-06-04/zoo-note-conventions.log",
+          "data/reports/2026-06-04/zoo-source-references.log",
+          "data/reports/2026-06-05/canon-coverage.log",
+          "data/reports/2026-06-05/canon-coverage.md",
+          "data/reports/2026-06-05/classics-build.log",
+          "data/reports/2026-06-05/classics-resolve.log",
+          "data/reports/2026-06-05/discovery.log",
+          "data/reports/2026-06-05/preflight.log",
+          "data/reports/2026-06-05/prioritize-classics.log",
+          "data/reports/2026-06-05/queue.log",
           "data/reports/latest-run-summary.json",
           "data/reports/latest-run-summary.txt",
           "data/reports/run-history.jsonl",
@@ -103,12 +110,16 @@
         ]
       },
       {
-        "sha": "952b1648",
-        "iso": "2026-05-28T10:28:42-04:00",
-        "subject": "Update Kane audit tracker",
+        "sha": "66f94de0",
+        "iso": "2026-06-04T10:18:04-04:00",
+        "subject": "Update hole spin audit tracker and references",
         "files": [
           "data/audit-tracker.json",
-          "vault/Figures/kane-qubit-figure.png"
+          "vault/Figures/hole-spin-qubit-figure.png",
+          "vault/References/dijkema-2026-simultaneous-operation-of-an.md",
+          "vault/References/hendrickx-2020-fast-two-qubit-logic-holes.md",
+          "vault/References/john-2025-robust-localised-control-10spin.md",
+          "vault/References/watzinger-2018-germanium-hole-spin-qubit.md"
         ]
       }
     ]
@@ -116,8 +127,8 @@
   "pipeline": {
     "status": "degraded",
     "mode": "full",
-    "timestamp_utc": "2026-05-29T10:00:05Z",
-    "timestamp_local": "2026-05-29 06:00:05 EDT",
+    "timestamp_utc": "2026-06-05T10:00:03Z",
+    "timestamp_local": "2026-06-05 06:00:03 EDT",
     "papers_added": 0,
     "failing_steps": [
       "zoo_note_conventions"

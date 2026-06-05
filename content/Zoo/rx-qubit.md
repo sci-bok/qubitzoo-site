@@ -88,6 +88,7 @@ which at $J_{12} = J_{23} = J$ gives $\hbar\omega_q \propto J$.
 ## Evergreen context
 
 - [[exchange-interaction-in-quantum-dots]] — the RX splitting and control matrix elements both come from the always-on exchange landscape of a triple dot.
+- [[heisenberg-exchange-in-quantum-dots]] — the Hamiltonian view makes clear that RX is still exchange-only physics, just operated in a resonantly driven regime.
 - [[charge-noise-sweet-spot]] — the symmetric operating point is the whole architectural point of RX: keep exchange control while flattening detuning sensitivity.
 - [[decoherence-free-subspace]] — RX inherits the exchange-only strategy of encoding and manipulating information inside a three-spin subspace that suppresses uniform magnetic-field noise.
 

@@ -1,6 +1,6 @@
 {
   "schema": "qubitzoo.genealogy.v1",
-  "generated_at": "2026-05-29T14:04:57.441736+00:00",
+  "generated_at": "2026-06-05T14:04:01.676750+00:00",
   "nodes": [
     {
       "id": "0-pi-qubit",
@@ -1456,6 +1456,10 @@
     {
       "source": "silicon-spin-qubit",
       "target": "t-center-qubit"
+    },
+    {
+      "source": "t-center-qubit",
+      "target": "qldpc-codes"
     },
     {
       "source": "dual-rail-photonic-qubit",

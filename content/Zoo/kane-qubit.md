@@ -4,7 +4,7 @@ entry_type: qubit
 technology_family: Semiconducting
 status: demonstrated
 first_proposed_year: 1998
-first_demonstrated_year: 2013
+first_demonstrated_year: 2012
 keywords:
 - kane qubit
 - phosphorus
@@ -14,10 +14,10 @@ keywords:
 - electron spin
 - exchange coupling
 influence_score: 0.76
-last_updated: '2026-05-29'
+last_updated: '2026-03-21'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-manual-2026-05-29
+verified_by: scibok-manual-2026-03-21
 figure_reviewed: true
 ---
 
@@ -27,69 +27,60 @@ figure_reviewed: true
 
 ## Description
 
-The Kane qubit, proposed by Bruce Kane in 1998, encodes quantum information in the nuclear spin of individual $^{31}\mathrm{P}$ donor atoms embedded in isotopically enriched $^{28}\mathrm{Si}$. The donor electron is not the long-lived memory qubit itself, but it is essential: it enables hyperfine-tuned addressability, mediates exchange-coupled two-qubit gates, and provides the route to spin-to-charge readout through a nearby charge sensor.
+The Kane qubit, proposed by Bruce Kane in 1998, encodes quantum information in the nuclear spin of individual $^{31}\text{P}$ donor atoms embedded in isotopically pure $^{28}\text{Si}$. The nuclear spin ($I = 1/2$) of phosphorus has extraordinarily long coherence times — $T_2 > 30\,\text{s}$ has been demonstrated — because the nuclear spin couples very weakly to the environment.
 
-The architecture uses three main control elements:
-1. **A-gates** tune the contact hyperfine coupling $A$ between each donor electron and nucleus by distorting the electron wavefunction at the nucleus.
-2. **J-gates** or equivalent electrostatic barrier gates tune the exchange interaction $J$ between electrons on neighboring donor sites.
-3. **Global RF/microwave fields** drive ESR and NMR transitions, with qubit selectivity obtained primarily from local A-gate detuning rather than fully local drive lines.
+The architecture uses three types of gate electrodes above each donor:
+1. **A-gates**: control the hyperfine coupling $A$ between the donor electron and nuclear spin, enabling selective NMR addressing of individual nuclei.
+2. **J-gates**: control the exchange interaction $J$ between electrons on neighboring donors, mediating two-qubit gates.
+3. **Global RF/microwave fields**: drive ESR/NMR transitions.
 
-Single-qubit gates are performed on the nuclear spin via NMR, typically after shifting its resonance with the A-gate. Two-qubit operations are mediated by the donor electrons through exchange-enabled electron-nuclear logic or effective nuclear-nuclear couplings derived from the same underlying interaction. Readout is usually performed by mapping the nuclear state onto the electron spin and then using spin-dependent tunnelling or related spin-to-charge conversion schemes.
+Single-qubit gates are performed by NMR pulses on individual nuclei (made distinguishable by A-gate detuning of the hyperfine coupling). Two-qubit gates use the electron-mediated exchange interaction, controlled by the J-gate voltage.
 
-The platform is compelling because donor nuclear spins in isotopically enriched silicon combine extraordinarily long coherence with atomic-scale fabrication. But it is also unforgiving: exchange depends sensitively on donor placement, so the Kane architecture only works when fabrication, electrostatics, and calibration are all exceptionally precise.
+The silicon host is chosen for its nuclear-spin-free isotope ($^{28}\text{Si}$), eliminating magnetic noise from the lattice. Single-atom placement with scanning tunneling microscope (STM) lithography has been demonstrated by the Simmons group (UNSW), achieving atomic-precision donor placement.
 
 ## Hamiltonian
 
-For two donor sites, a representative Kane-style Hamiltonian is
+Two-donor system:
 
-$$H = \sum_{i=1,2}\left[g_e\mu_B B\,S_{iz} - g_n\mu_N B\,I_{iz} + A_i(V_{A_i})\,\mathbf{S}_i\!\cdot\!\mathbf{I}_i\right] + J(V_J)\,\mathbf{S}_1\!\cdot\!\mathbf{S}_2 + H_{\mathrm{ac}}(t)$$
+$$H = \sum_{i=1,2}\left[\frac{g_e\mu_B B}{2}\sigma_z^{(e_i)} - \frac{g_n\mu_n B}{2}\sigma_z^{(n_i)} + A_i\,\mathbf{S}_{e_i}\cdot\mathbf{I}_{n_i}\right] + J\,\mathbf{S}_{e_1}\cdot\mathbf{S}_{e_2}$$
 
-where $\mathbf{S}_i$ and $\mathbf{I}_i$ are the electron and nuclear spin operators of donor $i$, $A_i(V_{A_i})$ is the A-gate-tunable hyperfine coupling, $J(V_J)$ is the exchange interaction controlled by the inter-donor electrostatics, and $H_{\mathrm{ac}}(t)$ represents the global ESR/NMR drive fields.
+where $A_i$ is the gate-tunable contact hyperfine coupling for donor $i$, $J$ is the exchange coupling between donor electrons, $g_e$ ($g_n$) is the electron (nuclear) $g$-factor, and $B$ is the applied magnetic field.
 
-In the experimentally relevant high-field regime, $g_e\mu_B B \gg A_i$, so the electron and nuclear product-state basis is a good starting point. Kane-style entangling gates then use the donor electron as the fast actuator, either through exchange-assisted electron-nuclear logic or through effective interactions generated perturbatively from the same Hamiltonian. The key physical point is that the nuclear qubit inherits long coherence, while the electron channel supplies control, coupling, and readout.
+At $B \sim 2\,\text{T}$, the electron Zeeman splitting ($\sim 56\,\text{GHz}$) far exceeds the hyperfine coupling ($A \sim 117\,\text{MHz}$ in bulk), so the electron spin adiabatically follows the nuclear spin state, mediating an effective nuclear-nuclear interaction.
 
 ## Motivation
 
-Nuclear spins in silicon offer some of the longest coherence times in solid-state quantum hardware, and silicon is the most industrially mature materials platform in computing. Kane's proposal was the cleanest early vision of a semiconductor quantum computer built from atomically engineered qubits rather than lithographically defined mesoscopic islands.
+Nuclear spins in silicon offer the longest coherence times of any solid-state qubit, and silicon fabrication is the most mature semiconductor technology on Earth. Kane's proposal connects quantum computing to the existing trillion-dollar silicon fab infrastructure, with qubit densities potentially approaching CMOS transistor scales.
 
 ## Experimental Status
 
-**Single-donor control milestone — Pla et al. (2012, 2013):**
-- 2012 established coherent control of a single $^{31}\mathrm{P}$ donor electron spin in silicon, the direct single-atom precursor to Kane-style donor processors.
-- 2013 demonstrated high-fidelity readout and control of the donor nuclear-spin qubit itself, which is the canonical Kane encoding.
+**Record solid-state coherence — Muhonen et al. (2014):**
+- Demonstrated nuclear $T_2 > 35\,\text{s}$ for $^{31}\text{P}$ in $^{28}\text{Si}$, the world record for a solid-state qubit
+- Nuclear $T_1 > 30$ hours at 1.5 K
+- Single-qubit gate fidelity of 99.95% via NMR control
 
-**Record nuclear coherence — Muhonen et al. (2014):**
-- Demonstrated nuclear $T_2 > 35\,\mathrm{s}$ and nuclear $T_1 > 30$ hours for $^{31}\mathrm{P}$ in enriched $^{28}\mathrm{Si}$.
-- Established the donor nuclear spin as a genuine long-lived quantum memory, not just a proposal-level advantage.
+**Three-qubit donor processor — Mądzik et al. (2022):**
+- Precision tomography of a three-qubit donor quantum processor in silicon
+- Two-qubit gate fidelity of 99.4% via exchange-mediated coupling
+- Full process tomography with gate set tomography characterization
 
-**Multi-qubit donor processor — Mądzik et al. (2022):**
-- Demonstrated precision tomography of a three-qubit donor processor in silicon.
-- Reported exchange-mediated multi-qubit control with two-qubit fidelity at the 99%-level.
-
-**Two-register atom processor — Edlbauer, Wang et al. / SQC (2025):**
-- Demonstrated an 11-qubit processor built from two phosphorus donor spin registers linked by electron exchange.
-- Reported single- and multi-qubit fidelities spanning roughly 99.5% to 99.99%, Bell-state fidelities up to 99.5%, and GHZ-state generation across eight nuclear spins.
-- This is the clearest 2025 scaling milestone for the Kane architecture proper, not just for generic silicon spin qubits.
+**Atomic-precision fabrication (Simmons group, UNSW):**
+- STM lithography placement of individual $^{31}\text{P}$ donors with atomic precision
+- Donor spacing of 10–20 nm demonstrated
+- Foundation for scalable Kane architecture manufacturing
 
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| Nuclear $T_1$ | >30 hours | $^{31}$P in enriched $^{28}$Si at 1.5 K | [Muhonen et al. 2014](https://doi.org/10.1038/nnano.2014.211) |
-| Nuclear $T_2$ (echo) | >35 s | Long-lived donor nuclear memory | [Muhonen et al. 2014](https://doi.org/10.1038/nnano.2014.211) |
-| 1Q gate fidelity (nuclear) | up to 99.99% | Precision-placed phosphorus donor processor | [Edlbauer, Wang et al. 2025](https://doi.org/10.1038/s41586-025-09827-w) |
-| 2Q gate fidelity (CROT) | 99.64% | Electron-mediated donor logic | [Edlbauer, Wang et al. 2025](https://doi.org/10.1038/s41586-025-09827-w) |
-| Bell-state fidelity | up to 99.5% | Local and non-local donor-register pairs | [Edlbauer, Wang et al. 2025](https://doi.org/10.1038/s41586-025-09827-w) |
-| Demonstrated processor size | 11 qubits | 9 nuclear + 2 electron spin qubits | [Edlbauer, Wang et al. 2025](https://doi.org/10.1038/s41586-025-09827-w) |
-| Hyperfine coupling $A$ | ~117 MHz | Bulk $^{31}$P donor value, A-gate tunable in device | [Kane 1998](https://doi.org/10.1038/30156) |
-
-## Scaling Considerations
-
-- **Placement precision is existential:** exchange in donor devices depends strongly on donor separation and valley physics, so atomic-scale positioning errors directly hit gate calibration and yield.
-- **Readout and control remain electron-mediated:** the nuclear qubit is the memory, but fast logic and measurement still route through the donor electron and charge-sensor stack.
-- **Fabrication is improving:** Holmes et al. (2024) showed improved deterministic donor-placement workflows using molecule-ion implantation, directly addressing one of Kane's oldest practical bottlenecks.
-- **Longer-range coupling is an active direction:** Munia et al. (2024) showed that donor-chain superexchange can in principle relax strict nearest-neighbor spacing constraints.
-- **Best current scaling evidence:** the 2025 SQC 11-qubit atom processor is the strongest direct experimental sign that multi-register donor architectures can move beyond isolated few-qubit demonstrations.
+| Nuclear $T_1$ | >30 hours | $^{31}$P in $^{28}$Si at 1.5 K | [Muhonen et al. 2014](https://doi.org/10.1038/nnano.2014.211) |
+| Nuclear $T_2$ (echo) | >35 s | World record for solid-state qubit | [Muhonen et al. 2014](https://doi.org/10.1038/nnano.2014.211) |
+| Electron $T_2$ | 0.5–1 s | In $^{28}$Si | — |
+| 1Q gate fidelity | 99.95% | Nuclear spin, NMR control | [Muhonen et al. 2014](https://doi.org/10.1038/nnano.2014.211) |
+| 2Q gate fidelity | 99.4% | Exchange-mediated | [Mądzik et al. 2022](https://doi.org/10.1038/s41586-021-04292-7) |
+| Donor spacing | 10–20 nm | STM lithography placement | — |
+| Hyperfine coupling $A$ | ~117 MHz | Bulk value; gate-tunable | — |
+| Operating temperature | 100 mK – 1 K | Electron spin relaxation limited | — |
 
 ## References
 
@@ -97,22 +88,12 @@ Nuclear spins in silicon offer some of the longest coherence times in solid-stat
 - B. E. Kane, "A silicon-based nuclear spin quantum computer," [Nature 393, 133 (1998)](https://doi.org/10.1038/30156)
 
 ### Experimental demonstrations
-- J. J. Pla et al., "A single-atom electron spin qubit in silicon," [Nature 489, 541 (2012)](https://doi.org/10.1038/nature11449)
-- J. J. Pla et al., "High-fidelity readout and control of a nuclear spin qubit in silicon," [Nature 496, 334 (2013)](https://doi.org/10.1038/nature12011)
 - J. T. Muhonen et al., "Storing quantum information for 30 seconds in a nanoelectronic device," [Nat. Nanotechnol. 9, 986 (2014)](https://doi.org/10.1038/nnano.2014.211)
 - M. T. Mądzik et al., "Precision tomography of a three-qubit donor quantum processor in silicon," [Nature 601, 348 (2022)](https://doi.org/10.1038/s41586-021-04292-7)
-- H. Edlbauer, J. Wang et al., "An 11-qubit atom processor in silicon," [Nature 648, 569 (2025)](https://doi.org/10.1038/s41586-025-09827-w) — [arXiv:2506.03567](https://arxiv.org/abs/2506.03567)
-
-### Architecture and scaling directions
-- D. Holmes et al., "Improved Placement Precision of Donor Spin Qubits in Silicon using Molecule Ion Implantation," [Adv. Quantum Technol. 7 (2024)](https://doi.org/10.1002/qute.202300316)
-- M. M. Munia et al., "Superexchange coupling of donor qubits in silicon," [Phys. Rev. Applied 21, 014038 (2024)](https://doi.org/10.1103/PhysRevApplied.21.014038)
 
 ## Linked Papers
 
 - [[kane-1998-silicon-nuclear-spin]]
-- [[muhonen-2014-storing-information-seconds]]
-- [[mdzik-2022-precision-tomography-three]]
-- [[edlbauer-2025-11-qubit-atom-processor-silicon]]
 
 ## Evergreen context
 
@@ -122,7 +103,5 @@ Nuclear spins in silicon offer some of the longest coherence times in solid-stat
 
 ## Related Entries
 
-- [[silicon-spin-qubit]] — broader silicon umbrella entry spanning donor and gate-defined variants
-- [[loss-divincenzo-qubit]] — foundational semiconductor spin-qubit proposal with different confinement physics
-- [[spin-qubit]] — broader spin-qubit family
-- [[qubit-readout]] — donor nuclear qubits rely on electron-mediated spin-to-charge readout infrastructure
+- [[loss-divincenzo-qubit]] — foundational semiconductor spin qubit proposal
+- [[spin-qubit]] — broader spin qubit family

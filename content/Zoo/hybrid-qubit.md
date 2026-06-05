@@ -83,7 +83,8 @@ where $g_E$ captures the electric dipole coupling enabled by spin-charge hybridi
 ## Evergreen context
 
 - [[charge-noise-sweet-spot]] — the hybrid qubit is the clean semiconductor example of why speed from charge admixture only becomes usable when the operating point is flattened against detuning noise.
-- [[exchange-interaction-in-quantum-dots]] — even in this spin-charge-mixed encoding, tunnel-coupled exchange sets the spin-like structure that the electric drive exploits.
+- [[exchange-interaction-in-quantum-dots]] — the device-level account of how tunnel coupling and detuning create the exchange resource in a triple-dot structure.
+- [[heisenberg-exchange-in-quantum-dots]] — useful once the charge sector is integrated out and the surviving control question becomes what exchange pulse algebra the logical subspace inherits.
 - [[divincenzo-criteria]] — hybrid qubits are best read as an explicit tradeoff play on the coherence-versus-control criterion rather than a pure-max-coherence design.
 
 ## Related Entries

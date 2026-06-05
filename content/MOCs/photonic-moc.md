@@ -3,7 +3,7 @@ title: Photonic MOC
 type: moc
 technology_family: Photonic
 note_count: 5
-last_updated: '2026-05-29'
+last_updated: '2026-06-05'
 generated_by: pipeline-moc-v1
 ---
 
@@ -24,6 +24,20 @@ Curated map of Zoo entries in the **Photonic** family.
 - qubit: 5
 
 <!-- CURATED -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -58,6 +72,20 @@ This family currently splits into **three distinct photonic computation stories*
 ## Editorial note
 
 The highest-value follow-up in this family is to tighten the MBQC / fusion / KLM relationship further, especially where cluster-state and fusion entries meet the evergreen layer on thresholds, erasures, and resource-state logic.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
