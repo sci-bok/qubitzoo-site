@@ -13,7 +13,7 @@ keywords:
 - superconducting qubit
 - planar
 influence_score: 0.72
-last_updated: '2026-06-06'
+last_updated: '2026-06-07'
 generated_by: scibok-curation
 extracted_by: scibok
 verified_by: scibok-manual-2026-03-21
@@ -28,7 +28,7 @@ figure_reviewed: false
 
 The Xmon is a planar transmon variant developed by the Martinis group (later Google Quantum AI) featuring a cross-shaped capacitor geometry. Introduced by Barends et al. (2013), the "+" shape provides dedicated ports for readout, microwave drive, flux bias, and nearest-neighbor coupling, making it easy to tile into a scalable 2D grid layout.
 
-The Xmon shares the same physics as the transmon ($E_J/E_C \gg 1$, charge-insensitive regime) but its geometry is optimized for multi-qubit integration. The large cross-shaped shunt capacitor suppresses radiative loss and provides clean wiring access, while a split-junction SQUID typically makes the qubit frequency flux-tunable for fast CZ-style control. In later Google processors, this Xmon-like qubit island was paired with separate tunable couplers rather than relying on bare fixed capacitive coupling alone.
+The Xmon shares the same physics as the transmon ($E_J/E_C \gg 1$, charge-insensitive regime) but its geometry is optimized for multi-qubit integration. The large cross-shaped shunt capacitor suppresses radiative loss and provides clean wiring access, and the original Barends et al. implementation was a planar tunable transmon using a split-junction SQUID. The arms of the cross act as capacitive access pads for readout, XY drive, flux control, and nearest-neighbor coupling. In later Google processors, this Xmon-lineage qubit island was often paired with separate tunable couplers rather than relying on bare fixed capacitive coupling alone.
 
 The Xmon was the core qubit geometry behind Google's five-qubit surface-code-threshold device, the 53-qubit Sycamore processor, and the later 105-qubit Willow processor.
 
@@ -74,13 +74,10 @@ Earlier transmon designs used coaxial or lumped-element capacitors that did not 
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| $T_1$ | 20–100 μs | Planar geometry | [Barends et al. 2013](https://doi.org/10.1103/PhysRevLett.111.080502) |
-| 1Q gate fidelity | 99.84–99.92% | Five-qubit Xmon: 99.92%; Sycamore avg: 99.84% | [Barends et al. 2014](https://doi.org/10.1038/nature13171), [Arute et al. 2019](https://doi.org/10.1038/s41586-019-1666-5) |
-| 2Q gate fidelity | 99.4–99.85% | Five-qubit Xmon: 99.4%; later Xmon-lineage + tunable-coupler stack in Willow: 99.7–99.85% median CZ | [Barends et al. 2014](https://doi.org/10.1038/nature13171), [Arute et al. 2019](https://doi.org/10.1038/s41586-019-1666-5), [Google Quantum AI and Collaborators 2025](https://doi.org/10.1038/s41586-024-08449-y) |
-| Anharmonicity | −200 to −250 MHz | Same as transmon | — |
-| Transition frequency | 4–7 GHz | Tunable via flux | — |
-| Dedicated wiring arms | 4 | Commonly allocated across readout, XY drive, flux bias, and coupling | — |
-| Operating temperature | 10–20 mK | Dilution refrigerator | — |
+| $T_1$ | 20–44 μs | Initial planar tunable Xmon devices in Barends et al. 2013 | [Barends et al. 2013](https://doi.org/10.1103/PhysRevLett.111.080502) |
+| 1Q gate fidelity | 99.84–99.92% | Five-qubit Xmon: 99.92%; Sycamore average: 99.84% | [Barends et al. 2014](https://doi.org/10.1038/nature13171), [Arute et al. 2019](https://doi.org/10.1038/s41586-019-1666-5) |
+| 2Q gate fidelity | 99.4–99.85% | Five-qubit Xmon: 99.4%; Willow-era Xmon-lineage stack with separate tunable couplers: 99.7–99.85% median CZ | [Barends et al. 2014](https://doi.org/10.1038/nature13171), [Arute et al. 2019](https://doi.org/10.1038/s41586-019-1666-5), [Google Quantum AI and Collaborators 2025](https://doi.org/10.1038/s41586-024-08449-y) |
+| Demonstrated processor scale | 5, 53, 105 qubits | Surface-code-threshold chip, Sycamore, and Willow | [Barends et al. 2014](https://doi.org/10.1038/nature13171), [Arute et al. 2019](https://doi.org/10.1038/s41586-019-1666-5), [Google Quantum AI and Collaborators 2025](https://doi.org/10.1038/s41586-024-08449-y) |
 
 ## References
 
