@@ -13,11 +13,11 @@ keywords:
 - superconducting qubit
 - planar
 influence_score: 0.72
-last_updated: '2026-06-07'
+last_updated: '2026-06-09'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-manual-2026-03-21
-figure_reviewed: false
+verified_by: scibok-manual-2026-06-09
+figure_reviewed: true
 ---
 
 ## Figure
