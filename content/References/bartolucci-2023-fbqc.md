@@ -37,5 +37,6 @@ Introduces fusion-based quantum computation (FBQC), a modular architecture for f
 - **arXiv:** [2101.09310](https://arxiv.org/abs/2101.09310)
 
 ## Zoo Links
+- [[photonic-qubit]]
 - [[fusion-based-photonic-qubit]]
 - [[linear-optical-photonic-qubit]]

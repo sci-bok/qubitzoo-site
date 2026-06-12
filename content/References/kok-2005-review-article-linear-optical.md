@@ -34,3 +34,9 @@ Definitive review of linear optical quantum computing (LOQC). Covers the KLM sch
 - **Journal:** [Reviews of Modern Physics](https://doi.org/10.1103/RevModPhys.79.135)
 - **arXiv:** [quant-ph/0512071](https://arxiv.org/abs/quant-ph/0512071)
 
+## Zoo Links
+- [[photonic-qubit]]
+- [[linear-optical-photonic-qubit]]
+- [[dual-rail-photonic-qubit]]
+- [[photonic-cluster-state-mbqc-qubit]]
+

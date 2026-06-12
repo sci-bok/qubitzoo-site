@@ -4,6 +4,7 @@ authors: [E. Knill, R. Laflamme, G. J. Milburn]
 year: 2001
 journal: Nature
 doi: 10.1038/35051009
+arxiv_id: quant-ph/0006088
 type: reference
 generated_by: scibok-curation
 last_updated: '2026-03-15'
@@ -18,8 +19,10 @@ The KLM scheme: proves that efficient quantum computation is possible using only
 
 ## Links
 - **Journal:** [Nature](https://doi.org/10.1038/35051009)
+- **arXiv:** [quant-ph/0006088](https://arxiv.org/abs/quant-ph/0006088)
 
 ## Zoo Links
+- [[photonic-qubit]]
 - [[linear-optical-photonic-qubit]]
 - [[dual-rail-photonic-qubit]]
 - [[fusion-based-photonic-qubit]]
