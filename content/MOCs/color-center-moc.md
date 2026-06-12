@@ -3,7 +3,7 @@ title: Color Center MOC
 type: moc
 technology_family: Color Center
 note_count: 1
-last_updated: '2026-06-05'
+last_updated: '2026-06-12'
 generated_by: pipeline-moc-v1
 ---
 
@@ -39,15 +39,30 @@ Curated map of Zoo entries in the **Color Center** family.
 
 
 
+
+
+
+
+
+
+
 ## Conceptual anchors
 
-- [[divincenzo-criteria]] explains why NV centers remain the benchmark defect-spin platform: they combine optical initialization/readout with a credible stationary-to-flying qubit story, even though their local two-qubit scaling is weaker than leading processor-first platforms.
-- [[coherence-time-hierarchy]] is the right comparison lens here, because NV centers pair room-temperature electron-spin control with much longer-lived nearby nuclear-spin memory.
+- [[divincenzo-criteria]] is still the right scorecard here, but the non-obvious point is that NV centers address criteria 6 and 7 without giving up room-temperature operation.
+- [[coherence-time-hierarchy]] matters because NV is best understood as a layered register: fast electron-spin control on top of much longer-lived nearby nuclear-spin memory.
 
-## Family structure
+## Placement rule
 
-- `nv-center-qubit` should remain the anchor note for the classic color-center story: robust room-temperature control, mature sensing, and early quantum-network demonstrations.
-- The colder, networking-first defect platforms with stronger optical interfaces belong in [[spin-photon-moc]], not in the legacy color-center bucket.
+- Keep `nv-center-qubit` as the anchor when the question is, "what is the most mature room-temperature defect-spin qubit with a real networking story?"
+- If the comparison shifts toward photon indistinguishability, cleaner optical lines, or telecom-native interconnects, hand off to [[spin-photon-moc]] rather than overloading this family.
+- This MOC should therefore stay the historical and systems anchor for defect centers, while [[spin-photon-moc]] covers the colder networking-optimized descendants.
+
+
+
+
+
+
+
 
 
 

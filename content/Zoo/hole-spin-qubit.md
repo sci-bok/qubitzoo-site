@@ -102,7 +102,6 @@ $$H_{2q} = J(t)\,\mathbf{S}_1\cdot\mathbf{S}_2$$
 
 - [[spin-orbit-coupling-for-qubit-control]] — the canonical semiconductor example where strong heavy-hole SOC turns gate voltages directly into spin rotations
 - [[exchange-interaction-in-quantum-dots]] — the device-level view of how neighboring Ge dots generate the tunable coupling used for two-qubit gates
-- [[heisenberg-exchange-in-quantum-dots]] — the stripped-down $J\,\mathbf{S}_1\!\cdot\!\mathbf{S}_2$ control picture once the SOC-specific single-qubit physics is factored out
 - [[charge-noise-sweet-spot]] — frames the core speed-versus-dephasing tradeoff and why Ge devices keep pushing sweet-spot engineering
 
 ## Related Entries

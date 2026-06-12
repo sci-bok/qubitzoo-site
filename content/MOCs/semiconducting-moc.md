@@ -3,7 +3,7 @@ title: Semiconducting MOC
 type: moc
 technology_family: Semiconducting
 note_count: 11
-last_updated: '2026-06-05'
+last_updated: '2026-06-12'
 generated_by: pipeline-moc-v1
 ---
 
@@ -95,6 +95,20 @@ Curated map of Zoo entries in the **Semiconducting** family.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Conceptual anchors
 
 - [[exchange-interaction-in-quantum-dots]] is the core coupling primitive for `loss-divincenzo-qubit`, `singlet-triplet-qubit`, `exchange-only-qubit`, `aeon-qubit`, and `rx-qubit`.
@@ -116,6 +130,20 @@ Curated map of Zoo entries in the **Semiconducting** family.
 - `kane-qubit` is the donor-spin branch: same semiconductor ambition, but with atomically placed dopants instead of lithographic dots as the qubit-defining resource.
 - `spin-qubit` and `silicon-spin-qubit` should stay as broad modality overviews, not absorb the encoded-spin subfamily.
 - For the semiconductor descendants that cross into Josephson-circuit territory, see [[super-semi-moc]].
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

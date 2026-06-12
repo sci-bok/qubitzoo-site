@@ -17,7 +17,7 @@ keywords:
 - Quantinuum
 - IonQ
 influence_score: 0.88
-last_updated: '2026-03-21'
+last_updated: '2026-06-09'
 generated_by: scibok-curation
 extracted_by: scibok
 verified_by: scibok-manual-2026-03-21
@@ -115,9 +115,14 @@ Trapped-ion qubits require long coherence times and high-fidelity operations to 
 - [[ballance-2016-ion-gate-fidelity]]
 - [[gaebler-2016-ms-gate]]
 
+## Evergreen context
+
+- [[coherence-time-hierarchy]] — clock-state Yb$^+$ is the cleanest example of a qubit whose practical value comes from enormous $T_2/\tau_{\mathrm{gate}}$ separation, not raw gate speed
+- [[motional-mode-coupling-in-ion-traps]] — Yb hyperfine qubits still rely on the shared phonon bus for entangling operations, whether Raman or microwave assisted
+- [[divincenzo-criteria]] — helps explain why Yb$^+$ became the commercial workhorse: initialization, measurement, long coherence, and a mature entangling-gate stack all land in one species
+
 ## Related Entries
 
 - [[trapped-ion-qubit]] — parent platform
 - [[cirac-zoller-gate]] — foundational trapped-ion gate proposal
-- [[motional-mode-coupling-in-ion-traps]] — physics of the Coulomb-mediated bus
-- [[coherence-time-hierarchy]] — context for coherence comparison
+- [[molmer-sorenson-gate]] — dominant modern entangling gate for the Yb hyperfine stack

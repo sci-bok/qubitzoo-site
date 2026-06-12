@@ -3,7 +3,7 @@ title: Codes MOC
 type: moc
 technology_family: Codes
 note_count: 3
-last_updated: '2026-06-05'
+last_updated: '2026-06-12'
 generated_by: pipeline-moc-v1
 ---
 
@@ -87,6 +87,20 @@ Curated map of Zoo entries in the **Codes** family.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Conceptual anchors
 
 - [[threshold-theorem]] is the top-level reason these entries matter architecturally.
@@ -101,6 +115,20 @@ Curated map of Zoo entries in the **Codes** family.
 ## Editorial note
 
 This MOC is still narrow. It currently captures only families with stable Zoo-level identity. Keep generic code-theory papers in `References/` unless they materially change the hardware-facing story.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

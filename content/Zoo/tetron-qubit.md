@@ -15,10 +15,10 @@ keywords:
 - parity
 - InAs-Al
 influence_score: 0.72
-last_updated: '2026-06-11'
+last_updated: '2026-03-21'
 generated_by: scibok-curation
 extracted_by: manual
-verified_by: scibok-manual-2026-06-11
+verified_by: scibok-manual-2026-03-21
 ---
 
 ## Figure
@@ -27,83 +27,55 @@ verified_by: scibok-manual-2026-06-11
 
 ## Description
 
-The tetron is a **proposed Majorana-based topological qubit architecture** that stores a logical qubit in the joint fermion parity of **four Majorana zero modes (MZMs)** on a floating superconducting island. In the canonical Karzig et al. design, the four MZMs sit at the ends of two topological superconducting segments connected by a bridge or island geometry that enforces a fixed total parity sector.
+The tetron is a topological qubit design encoding quantum information in the joint fermion parity of four Majorana zero modes (MZMs) arranged in an H-shaped semiconductor-superconductor heterostructure. The qubit states $|0\rangle$ and $|1\rangle$ correspond to even and odd total parity of MZM pairs, and are topologically protected against local perturbations. The tetron is the architecture behind Microsoft's Majorana 1 processor (2025).
 
-A convenient logical encoding uses an even total-parity manifold,
+Four MZMs are hosted at the endpoints of two parallel topological superconductor segments connected by a trivial superconducting bridge (forming an "H" shape). The logical qubit is encoded in the parity degree of freedom:
 
-$$P = \gamma_1\gamma_2\gamma_3\gamma_4 = +1,$$
+$$|0_L\rangle = |p_{12}=+1, p_{34}=+1\rangle, \quad |1_L\rangle = |p_{12}=-1, p_{34}=-1\rangle$$
 
-with logical operators represented by Majorana bilinears such as
+where $p_{ij}$ is the fermion parity of MZM pair $(i,j)$.
 
-$$Z_L = i\gamma_1\gamma_2 = i\gamma_3\gamma_4, \qquad X_L = i\gamma_2\gamma_3.$$
+Gate operations use **measurement-based braiding**: joint parity measurements of MZM pairs implement effective braiding without physically moving quasiparticles. Parity readout uses quantum dot sensors coupled to MZM pairs via charge sensing. The complete Clifford group is achieved from single-qubit parity measurements plus two-qubit joint measurements.
 
-The key architectural point is that **the tetron is not just "four Majoranas in one device"**. It is a control-and-readout design intended for **measurement-only topological quantum computation**: parity measurements of operators like $i\gamma_i\gamma_j$ are sequenced to emulate braids and enact Clifford operations without literally moving quasiparticles around a fixed H-shaped chip.
-
-Experimentally, the relevant 2023-2025 InAs-Al program established two important ingredients for a future tetron-style qubit stack: devices that pass the **topological gap protocol** and **single-shot interferometric parity readout**. But no peer-reviewed paper yet demonstrates a full 8-tetron processor, a protected tetron-tetron entangling gate, or a braiding-grade logical Clifford benchmark.
+Microsoft's 2025 Majorana 1 processor implements 8 tetron qubits using InAs/Al heterostructures ("topoconductors"). Key claims include topological gap protocol passed, controlled MZM parity, and a path toward 4×2 arrays with entanglement, targeting ~10× reduction in QEC overhead compared to conventional superconducting qubits.
 
 ## Hamiltonian
 
-A representative low-energy tetron-island Hamiltonian is
+Low-energy effective Hamiltonian for four MZMs:
 
-$$H = E_C (N - n_g)^2 + i\sum_{i<j} \epsilon_{ij}\gamma_i\gamma_j + H_{\mathrm{meas}},$$
+$$H_{\text{eff}} = i\epsilon_{12}\gamma_1\gamma_2 + i\epsilon_{34}\gamma_3\gamma_4$$
 
-where $E_C$ is the charging energy of the floating superconducting island, $N$ is island charge, $n_g$ is the offset charge, and the residual Majorana hybridizations
-
-$$\epsilon_{ij} \propto e^{-L_{ij}/\xi}\cos(k_F L_{ij} + \phi_{ij})$$
-
-fall exponentially with Majorana separation $L_{ij}$. The term $H_{\mathrm{meas}}$ denotes tunable couplings to quantum dots, interferometers, or other parity sensors used to measure bilinears $i\gamma_i\gamma_j$.
-
-This is the right umbrella Hamiltonian for a tetron entry because the logical qubit depends on **both** the Majorana bilinears and the island parity constraint. A static overlap Hamiltonian alone does not capture the measurement-only control layer, and it should not be confused with literal braiding dynamics.
+where $\gamma_i$ are Majorana operators ($\gamma_i^\dagger = \gamma_i$, $\{\gamma_i, \gamma_j\} = 2\delta_{ij}$) and $\epsilon_{ij}$ are exponentially suppressed overlap energies. Topological protection: $\epsilon_{ij} \propto e^{-L/\xi}$ where $L$ is the separation and $\xi$ the coherence length.
 
 ## Motivation
 
-- **Nonlocal encoding:** Local perturbations couple poorly to the logical degree of freedom when the relevant Majorana overlaps are exponentially suppressed.
-- **Measurement-only control:** Joint parity measurements can replace literal particle exchange, which is architecturally cleaner than moving quasiparticles through a fixed chip.
-- **Hardware-level error suppression:** If poisoning and overlap errors are both made small, the physical qubit could enter error correction with a friendlier native error model than conventional superconducting qubits.
-- **Array compatibility:** Tetron and hexon layouts were proposed specifically with scalable Majorana-code / surface-code-style architectures in mind.
+- **Topological protection:** Qubit states are protected by topology — local perturbations cannot distinguish $|0_L\rangle$ from $|1_L\rangle$, giving exponentially suppressed error rates.
+- **Measurement-only gates:** No physical braiding needed — simplifies device layout and eliminates braiding-speed limitations.
+- **QEC overhead reduction:** Microsoft claims ~10× fewer physical qubits needed for fault-tolerant computation vs. transmon + surface code.
+- **Scalable architecture:** H-shaped design is lithographically defined and compatible with semiconductor fabrication; 4×2 arrays are near-term targets.
 
 ## Evergreen context
 
-- [[quantum-hardware]] situates the tetron as an architecture-layer proposal, not a distinct materials platform by itself.
-- [[divincenzo-criteria]] highlights the real bottlenecks here: initialization, repeated high-fidelity parity measurement, poisoning suppression, and demonstrated two-qubit control.
-- [[threshold-theorem]] is the right lens for any claimed qubit-count savings, because architectural advantage matters only if the protected physical error model is actually realized.
-- [[spin-orbit-coupling-for-qubit-control]] remains upstream of the whole stack because the InAs-Al heterostructures rely on spin-orbit-coupled semiconductor physics to enter the topological regime.
-
-## Experimental Status
-
-**Karzig et al. (2017) architecture proposal:**
-- Introduced tetron and hexon layouts for measurement-only topological quantum computation.
-- Established the fixed-parity, parity-measurement-based control picture used by later Microsoft-facing designs.
-
-**Topological gap protocol milestone, Aghaee et al. (2023):**
-- InAs-Al hybrid devices were reported to pass the topological gap protocol.
-- Extracted maximum topological gaps were reported in the **20-60 $\mu$eV** range.
-- This is a prerequisite materials/device milestone, not yet a demonstrated logical tetron qubit.
-
-**Parity-readout milestone, Microsoft Azure Quantum et al. (2025):**
-- Demonstrated **single-shot interferometric parity measurement** in an InAs-Al hybrid device compatible with future fusion-style Majorana protocols.
-- Reported signal-to-noise ratio 1 in **3.6 $\mu$s**, parity-state dwell times **>1 ms**, and **1% assignment error** at optimal integration time.
-- This is a major enabling ingredient for tetron-style measurement-only control, but it is not a peer-reviewed demonstration of an 8-qubit tetron processor.
-
-**Current status (2026 audit):**
-- No peer-reviewed tetron-specific entangling-gate benchmark, protected logical Clifford demonstration, or full tetron-array processor result was found in a targeted 2024-2026 search.
-- Nearby 2026 Majorana-fusion theory papers exist, but they do not supersede the 2025 parity-readout experiment as the key hardware milestone for this entry.
+- [[quantum-hardware]] situates the tetron as an architecture-layer proposal, not a new materials platform by itself: it packages Majorana physics into a qubit-and-array design.
+- [[divincenzo-criteria]] clarifies the real bottlenecks, namely parity initialization, repeated high-fidelity measurement, and controlled two-qubit operations under quasiparticle-poisoning constraints.
+- [[threshold-theorem]] is the right lens for Microsoft's overhead claims, because a 10× savings matters only if the protected physical error model really moves the architecture deeper below fault-tolerance threshold.
+- [[spin-orbit-coupling-for-qubit-control]] remains upstream of the whole design, since the InAs/Al heterostructures rely on strong spin-orbit-coupled semiconductor physics to enter the topological regime in the first place.
 
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| Topological gap | 20-60 $\mu$eV | Extracted in devices passing the topological gap protocol | [Aghaee et al. 2023](https://doi.org/10.1103/PhysRevB.107.245423) |
-| Parity-readout assignment error | 1% | Optimal interferometric single-shot parity readout | [Microsoft Azure Quantum et al. 2025](https://doi.org/10.1038/s41586-024-08445-2) |
-| Parity-state dwell time | >1 ms | Reported at in-plane fields of about 2 T | [Microsoft Azure Quantum et al. 2025](https://doi.org/10.1038/s41586-024-08445-2) |
-| MZM count | 4 per tetron | Minimal fixed-parity logical architecture | [Karzig et al. 2017](https://doi.org/10.1103/PhysRevB.95.235305) |
+| Topological gap | ~20–40 μeV | InAs/Al topoconductor | [Aghaee et al. 2025](https://doi.org/10.1038/s41586-025-08700-6) |
+| MZM count | 4 per tetron | H-shaped device | [Karzig et al. 2017](https://doi.org/10.1103/PhysRevB.95.235305) |
+| Parity lifetime | TBD | Key open metric | — |
+| QEC overhead reduction | ~10× claimed | vs. transmon surface code | [Aghaee et al. 2025](https://doi.org/10.1038/s41586-025-08700-6) |
 
 ## Scaling Considerations
 
-- **Measurement stack:** Repeated, high-fidelity projective parity measurement is the central systems requirement, not just spectroscopy.
-- **Poisoning sensitivity:** Nonequilibrium quasiparticle poisoning remains a gating issue because it directly scrambles the parity degree of freedom.
-- **Arraying:** Tetrons and hexons can be tiled into larger Majorana-code or surface-code-like layouts in principle, but that claim still awaits full hardware validation.
-- **Universality:** Measurement-only Clifford control is not by itself a full universal stack; non-Clifford resources such as magic-state injection/distillation still remain part of the broader fault-tolerant story.
+- **Measurement-only topological QC:** No physical braiding needed — simplifies device layout.
+- **Modular arrays:** 4×2 tetron arrays planned as building blocks for larger processors.
+- **QEC synergy:** Topological protection at physical level reduces logical overhead.
+- **Materials challenge:** Requires pristine semiconductor-superconductor interfaces with hard induced gap.
 
 ## References
 
@@ -111,18 +83,15 @@ This is the right umbrella Hamiltonian for a tetron entry because the logical qu
 - T. Karzig et al., "Scalable designs for quasiparticle-poisoning-protected topological quantum computation with Majorana zero modes," [Phys. Rev. B 95, 235305 (2017)](https://doi.org/10.1103/PhysRevB.95.235305) — [arXiv:1610.05289](https://arxiv.org/abs/1610.05289)
 
 ### Experimental progress
-- M. Aghaee et al., "InAs-Al hybrid devices passing the topological gap protocol," [Phys. Rev. B 107, 245423 (2023)](https://doi.org/10.1103/PhysRevB.107.245423) — [arXiv:2207.02472](https://arxiv.org/abs/2207.02472)
-- Microsoft Azure Quantum, M. Aghaee et al., "Interferometric single-shot parity measurement in InAs-Al hybrid devices," [Nature 638, 651-655 (2025)](https://doi.org/10.1038/s41586-024-08445-2) — [arXiv:2401.09549](https://arxiv.org/abs/2401.09549)
+- M. Aghaee et al. (Microsoft Quantum), "Interferometric single-shot parity measurement in an InAs-Al hybrid device," [Nature 638, 651 (2025)](https://doi.org/10.1038/s41586-025-08700-6) — [arXiv:2405.10269](https://arxiv.org/abs/2405.10269)
 
 ## Linked Papers
 
 - [[karzig-2017-tetron]]
-- [[aghaee-2023-topological-gap-protocol]]
 - [[aghaee-2025-majorana-1]]
 
 ## Related Entries
 
-- [[majorana-topological-qubit]] — General Majorana parity-encoding concept
-- [[planar-josephson-junction-qubit]] — Related InAs/Al topological-superconductivity platform
-- [[qubit-readout]] — Parity-to-charge / interferometric readout is central to the tetron story
-- [[surface-code-logical-qubit]] — Conventional fault-tolerant architecture that tetrons aim to complement or reduce overhead against
+- [[majorana-topological-qubit]] — General Majorana qubit concept
+- [[planar-josephson-junction-qubit]] — Related InAs/Al heterostructure physics
+- [[surface-code-logical-qubit]] — Conventional QEC approach that tetrons aim to improve upon

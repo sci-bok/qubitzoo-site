@@ -2,8 +2,8 @@
 title: Photonic MOC
 type: moc
 technology_family: Photonic
-note_count: 5
-last_updated: '2026-06-05'
+note_count: 6
+last_updated: '2026-06-12'
 generated_by: pipeline-moc-v1
 ---
 
@@ -17,11 +17,12 @@ Curated map of Zoo entries in the **Photonic** family.
 | [[fusion-based-photonic-qubit]] | qubit | proposed |
 | [[linear-optical-photonic-qubit]] | qubit | demonstrated |
 | [[photonic-cluster-state-mbqc-qubit]] | qubit | demonstrated |
+| [[photonic-qubit]] | qubit | demonstrated |
 | [[time-bin-photonic-qubit]] | qubit | demonstrated |
 
 ## Composition
 
-- qubit: 5
+- qubit: 6
 
 <!-- CURATED -->
 
@@ -51,27 +52,55 @@ Curated map of Zoo entries in the **Photonic** family.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Curated synthesis
 
-This family currently splits into **three distinct photonic computation stories**, and keeping them separate prevents the photonics layer from collapsing into a flat “all photons are the same” bucket.
+The highest-value organizing move in this family is to **separate photonic encodings from photonic computation models**. Otherwise the graph quietly conflates “what degree of freedom stores the qubit?” with “how do we actually get entangling power and fault tolerance?”
 
-1. **Encodings optimized for transport and networking**
-   - [[dual-rail-photonic-qubit]] is the canonical chip-scale / LOQC encoding.
-   - [[time-bin-photonic-qubit]] is the fiber-native encoding when long-distance stability matters more than on-chip convenience.
-   - Both are best read through [[erasure-error-vs-pauli-error]], because photon loss is often a flagged absence event rather than an unknown Pauli rotation.
+1. **Encodings optimized for different physical routes**
+   - [[dual-rail-photonic-qubit]] is the canonical chip-scale / LOQC encoding when spatial modes and integrated interferometers are the native hardware language.
+   - [[time-bin-photonic-qubit]] is the fiber-native encoding when long-distance stability and network transport matter more than on-chip rail geometry.
+   - These should be read together through [[erasure-error-vs-pauli-error]] and [[noise-bias-and-asymmetric-error-channels]]: both are loss-dominated photonic qubits, but they package phase stability constraints very differently.
 
-2. **Gate-based linear optics**
+2. **Gate-based linear optics is an architecture, not an encoding**
    - [[linear-optical-photonic-qubit]] is the KLM lineage: minimal interactions, heavy ancilla and feed-forward overhead.
-   - Its importance is conceptual as much as practical: it established that photonic quantum computing clears the [[threshold-theorem]] barrier in principle, even with probabilistic entangling operations.
+   - It usually rides on encodings like [[dual-rail-photonic-qubit]], but the conceptual payload is architectural: probabilistic optics plus teleportation still clear the [[threshold-theorem]] barrier in principle.
 
-3. **Resource-state / measurement-first architectures**
+3. **Resource-state / measurement-first photonics is the modern scaling branch**
    - [[photonic-cluster-state-mbqc-qubit]] shifts the burden from online gates to offline cluster-state preparation plus adaptive measurement.
    - [[fusion-based-photonic-qubit]] goes one step further and treats failed entangling attempts as an architectural primitive rather than an exception.
-   - These entries are the right place to compare photonic fault-tolerance strategies built around loss tolerance, percolation, and asymmetric error structure.
+   - Both belong in the same fault-tolerance conversation because they live or die on whether loss and fusion failures stay structured enough for erasure-aware decoding and percolation-style thresholds.
 
 ## Editorial note
 
-The highest-value follow-up in this family is to tighten the MBQC / fusion / KLM relationship further, especially where cluster-state and fusion entries meet the evergreen layer on thresholds, erasures, and resource-state logic.
+The next highest-value follow-up is a dedicated evergreen note on the photonic split between **encoding choice** (dual-rail vs time-bin) and **scaling strategy** (KLM vs MBQC vs fusion), but the current pass is enough to stop time-bin from reading like an isolated leaf.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

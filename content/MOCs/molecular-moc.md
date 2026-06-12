@@ -3,7 +3,7 @@ title: Molecular MOC
 type: moc
 technology_family: Molecular
 note_count: 1
-last_updated: '2026-06-05'
+last_updated: '2026-06-12'
 generated_by: pipeline-moc-v1
 ---
 
@@ -28,6 +28,13 @@ Curated map of Zoo entries in the **Molecular** family.
 
 
 
+
+
+
+
+
+
+
 ## Conceptual anchors
 
 - [[coherence-time-hierarchy]] is the right comparison frame here, because molecular platforms compete less on raw gate speed and more on how chemical design reshapes dephasing channels and extends usable spin coherence.
@@ -43,6 +50,13 @@ Curated map of Zoo entries in the **Molecular** family.
 ## Editorial note
 
 Treat this MOC as a deliberate placeholder for a promising but still sparse family. Favor clear comparison logic over premature subdivision.
+
+
+
+
+
+
+
 
 
 

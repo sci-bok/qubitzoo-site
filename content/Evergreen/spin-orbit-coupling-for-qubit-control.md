@@ -33,7 +33,7 @@ The fundamental tradeoff is inescapable: the same spin-orbit coupling that enabl
 
 ## References
 
-- [Golovach, Borhani & Loss (2006)](https://doi.org/10.1103/PhysRevB.74.165319) — theory of EDSR via spin-orbit coupling in quantum dots
-- [Nowack et al. (2007)](https://doi.org/10.1126/science.1148092) — first experimental demonstration of EDSR in a GaAs quantum dot
-- [Hendrickx et al. (2020)](https://doi.org/10.1038/s41586-019-1919-3) — fast two-qubit logic with Ge/SiGe hole spins
+- [[golovach-2006-electric-dipole-induced-spin-resonance]] — theory of EDSR via spin-orbit coupling in quantum dots
+- [[nowack-2007-coherent-control-electric-fields]] — first experimental demonstration of EDSR in a GaAs quantum dot
+- [[hendrickx-2020-fast-two-qubit-logic-holes-germanium]] — fast two-qubit logic with Ge/SiGe hole spins
 - [[scappucci-2021-ge-review]] — review: germanium quantum information route

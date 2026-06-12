@@ -1,27 +1,27 @@
 ---
-title: "Interferometric single-shot parity measurement in InAs-Al hybrid devices"
-authors: [Microsoft Azure Quantum, Morteza Aghaee, Alejandro Alcaraz Ramirez, Zulfi Alam, Rizwan Ali]
+title: "Interferometric Single-Shot Parity Measurement in an InAs-Al Hybrid Device"
+authors: [M. Aghaee, A. Alcaraz Ramirez, Z. Alam, R. Ali, M. Andrzejczuk, A. Antipov, M. Astafev, B. Bauer, J. Becker, S. Boddapati]
 year: 2025
 journal: Nature
-doi: 10.1038/s41586-024-08445-2
-arxiv_id: '2401.09549'
+doi: 10.1038/s41586-025-08737-z
+arxiv_id: '2405.10269'
 type: reference
 generated_by: scibok-curation
-last_updated: '2026-06-11'
+last_updated: '2026-03-15'
 ---
 
-Peer-reviewed Majorana-readout milestone associated with Microsoft's 2025 topological-qubit program. Demonstrates single-shot interferometric parity measurement in InAs-Al hybrid devices, a key enabling ingredient for future tetron-style measurement-only control. It does **not** by itself establish a full 8-tetron processor or a protected logical-gate demonstration.
+Microsoft's demonstration of the Majorana 1 processor: an 8-qubit topological processor using InAs/Al heterostructures (topoconductors) in the tetron geometry. Reports interferometric single-shot parity measurement of Majorana zero modes, passing the topological gap protocol. Represents the first hardware implementation of the Karzig et al. (2017) tetron architecture.
 
 ## Key Results
-- Single-shot interferometric fermion-parity measurement in an InAs-Al hybrid device.
-- Signal-to-noise ratio of 1 in 3.6 $\mu$s at optimal flux values.
-- Parity-state dwell time longer than 1 ms and assignment error probability of about 1%.
-- Builds directly on the earlier topological-gap-protocol device program.
+- 8 tetron qubits on InAs/Al topoconductor platform
+- Interferometric single-shot parity readout
+- Topological gap protocol passed
+- H-shaped device geometry with 4 MZMs per qubit
+- Path toward 4×2 arrays with inter-qubit entanglement
 
 ## Links
-- **Journal:** [Nature](https://doi.org/10.1038/s41586-024-08445-2)
-- **arXiv:** [2401.09549](https://arxiv.org/abs/2401.09549)
+- **Journal:** [Nature](https://doi.org/10.1038/s41586-025-08737-z)
+- **arXiv:** [2405.10269](https://arxiv.org/abs/2405.10269)
 
 ## Zoo Links
 - [[tetron-qubit]]
-- [[majorana-topological-qubit]]

@@ -3,7 +3,7 @@ title: Ion Trap MOC
 type: moc
 technology_family: Ion Trap
 note_count: 2
-last_updated: '2026-06-05'
+last_updated: '2026-06-12'
 generated_by: pipeline-moc-v1
 ---
 
@@ -31,6 +31,13 @@ Curated map of Zoo entries in the **Ion Trap** family.
 
 
 
+
+
+
+
+
+
+
 ## Conceptual anchors
 
 - [[motional-mode-coupling-in-ion-traps]] is the mechanism note that binds this family together: `molmer-sorenson-gate` is the virtual-phonon entangler, and `ytterbium-hyperfine-qubit` is one of the cleanest qubit encodings that rides on that bus.
@@ -45,6 +52,13 @@ Curated map of Zoo entries in the **Ion Trap** family.
 ## Editorial note
 
 Treat this family as the "practical Yb + MS stack" slice of trapped-ion hardware. It should stay tighter and more operational than the broader trapped-ion family page.
+
+
+
+
+
+
+
 
 
 

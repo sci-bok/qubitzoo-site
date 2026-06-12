@@ -13,7 +13,7 @@ keywords:
 - bichromatic drive
 - XX gate
 influence_score: 0.79
-last_updated: '2026-03-21'
+last_updated: '2026-06-09'
 generated_by: scibok-curation
 verified_by: scibok-manual-2026-03-21
 ---
@@ -97,6 +97,7 @@ $$U_{\text{MS}} = \exp\!\left(-i\frac{\pi}{4}\sigma_\phi^{(1)}\sigma_\phi^{(2)}\
 
 - [[motional-mode-coupling-in-ion-traps]] — the bichromatic red/blue-sideband picture behind the virtual-phonon XX interaction
 - [[threshold-theorem]] — why the jump from proof-of-principle gates to 99.9% entangling fidelity matters for fault-tolerant viability
+- [[divincenzo-criteria]] — the MS gate is the practical answer to the universal two-qubit-control criterion in modern ion-trap stacks
 
 ## Related Entries
 

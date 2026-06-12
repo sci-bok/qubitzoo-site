@@ -103,8 +103,7 @@ Individual spin with $S = 1/2$ is the simplest realization of a qubit. The elect
 
 ## Evergreen context
 
-- [[exchange-interaction-in-quantum-dots]] — the original two-spin control primitive in the proposal
-- [[heisenberg-exchange-in-quantum-dots]] — the minimal Hamiltonian that generates the entangling dynamics
+- [[exchange-interaction-in-quantum-dots]] — the original two-spin control primitive in the proposal, including how tunnel-gate tuning actually creates $J$
 - [[sqrt-swap-as-universal-gate]] — the native entangling gate of the Loss-DiVincenzo architecture
 
 ## Related Entries

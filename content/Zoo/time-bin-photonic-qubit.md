@@ -16,7 +16,7 @@ keywords:
 - interferometric
 - quantum network
 influence_score: 0.70
-last_updated: '2026-03-21'
+last_updated: '2026-06-08'
 generated_by: scibok-curation
 extracted_by: scibok
 verified_by: scibok-manual-2026-03-21
@@ -98,8 +98,14 @@ Polarization qubits suffer rapid decoherence in optical fibers due to birefringe
 - [[brendel-1999-time-bin-entanglement]]
 - [[marcikic-2004-teleportation-fiber]]
 
+## Evergreen context
+
+- [[coherence-time-hierarchy]] — unlike stationary matter qubits, the limiting comparison here is less about intrinsic $T_1/T_2$ storage and more about how interferometer phase stability, detector timing, and fiber attenuation set the usable coherence window.
+- [[erasure-error-vs-pauli-error]] — photon loss on long fiber links is usually a flagged absence event, so time-bin systems naturally live in an erasure-aware regime rather than a purely hidden-Pauli one.
+- [[noise-bias-and-asymmetric-error-channels]] — time-bin encoding deliberately trades polarization drift for a cleaner loss-plus-phase-stability error model, which is exactly the kind of asymmetric noise structure photonic decoders can exploit.
+
 ## Related Entries
 
-- [[dual-rail-photonic-qubit]] — alternative photonic encoding using spatial modes
-- [[fusion-based-photonic-qubit]] — photonic architecture compatible with time-bin encoding
-- [[coherence-time-hierarchy]] — context for comparing decoherence mechanisms
+- [[dual-rail-photonic-qubit]] — alternative photonic encoding using spatial modes rather than temporal modes
+- [[photonic-cluster-state-mbqc-qubit]] — measurement-based photonic architecture that can consume time-bin encoded photons as cluster-state qubits
+- [[fusion-based-photonic-qubit]] — photonic architecture compatible with time-bin encoding when multiplexing and loss management matter more than on-chip rail geometry

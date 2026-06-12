@@ -33,7 +33,7 @@ The erasure-vs-Pauli hierarchy is now a deliberate design principle for next-gen
 
 ## References
 
-- [Grassl, Beth & Pellizzari (1997)](https://doi.org/10.1103/PhysRevA.56.33) — quantum erasure channel theory and bounds
+- [[grassl-1997-codes-quantum-erasure-channel]] — quantum erasure channel theory and bounds
 - [[wu-2022-erasure-neutral-atoms]] — erasure conversion in $^{171}$Yb neutral atom qubits
 - [[teoh-2023-dual-rail-cavity]] — dual-rail erasure qubit proposal in superconducting circuits
 - [[levine-2024-dual-rail-erasure]] — experimental demonstration of erasure-dominant superconducting dual-rail qubit

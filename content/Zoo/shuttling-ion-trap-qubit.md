@@ -12,7 +12,7 @@ keywords:
 - segmented trap
 - modular scaling
 influence_score: 0.75
-last_updated: '2026-03-21'
+last_updated: '2026-06-09'
 generated_by: scibok-curation
 verified_by: scibok-manual-2026-03-21
 figure_reviewed: true
@@ -83,6 +83,7 @@ QCCD shuttling addresses the core scaling problem of trapped-ion systems: long c
 
 - [[motional-mode-coupling-in-ion-traps]] — explains why QCCD keeps interaction chains short and transport-induced heating low
 - [[divincenzo-criteria]] — frames shuttling as an architectural answer to the scalability criterion, not a new qubit modality
+- [[coherence-time-hierarchy]] — explains why QCCD separates quiet memory zones from hotter interaction zones, preserving large coherence-to-gate-time margins while routing ions
 
 ## Related Entries
 

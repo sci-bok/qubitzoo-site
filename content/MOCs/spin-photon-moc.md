@@ -3,7 +3,7 @@ title: Spin-Photon MOC
 type: moc
 technology_family: Spin-Photon
 note_count: 2
-last_updated: '2026-06-05'
+last_updated: '2026-06-12'
 generated_by: pipeline-moc-v1
 ---
 
@@ -40,16 +40,30 @@ Curated map of Zoo entries in the **Spin-Photon** family.
 
 
 
+
+
+
+
+
+
+
 ## Conceptual anchors
 
-- [[divincenzo-criteria]] criteria 6 and 7 are the main organizing lens for this family: these entries are built around stationary-to-flying qubit conversion and faithful transmission between modules, not just local gate performance.
-- [[coherence-time-hierarchy]] captures the central tradeoff inside the family, because better optical interfaces come with different temperature and memory-coherence costs across SiV/SnV and T-center platforms.
+- [[divincenzo-criteria]] criteria 6 and 7 organize this family more cleanly than gate-centric comparisons, because every note here is really about turning a local spin memory into a networkable module.
+- [[coherence-time-hierarchy]] captures the main engineering cost of those cleaner optical interfaces: spectral quality, cryogenic burden, and memory lifetime move together rather than independently.
 
 ## Family structure
 
-- `siv-color-center-qubit` is the diamond branch optimized for spectrally stable photons and remote entanglement, even at harsher cryogenic temperatures.
-- `t-center-qubit` is the silicon-native telecom branch, pushing modular networking and foundry compatibility rather than best-in-class local gate maturity.
-- [[color-center-moc]] should stay the room-temperature defect-spin anchor, while this MOC covers the more explicitly networking-first descendants.
+- `siv-color-center-qubit` is the diamond branch: inversion symmetry buys cleaner photons and stronger remote-entanglement prospects, but the phonon and temperature story becomes the bottleneck.
+- `t-center-qubit` is the silicon and telecom branch: less mature locally than NV, but better aligned with fibre links and silicon-photonics fabrication.
+- Read this MOC alongside [[color-center-moc]]: that note owns the room-temperature NV anchor, while this one owns defect platforms chosen primarily for networking performance.
+
+
+
+
+
+
+
 
 
 

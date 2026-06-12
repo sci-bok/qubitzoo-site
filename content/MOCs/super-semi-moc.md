@@ -3,7 +3,7 @@ title: Super-Semi MOC
 type: moc
 technology_family: Super-Semi
 note_count: 5
-last_updated: '2026-06-05'
+last_updated: '2026-06-12'
 generated_by: pipeline-moc-v1
 ---
 
@@ -45,6 +45,20 @@ Curated map of Zoo entries in the **Super-Semi** family.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Conceptual anchors
 
 - [[josephson-junction-as-nonlinear-element]] is the shared superconducting backbone, even when the weak link is semiconductor-defined rather than oxide-barrier-defined.
@@ -64,9 +78,27 @@ Curated map of Zoo entries in the **Super-Semi** family.
 - `all-semiconductor-superconducting-qubit` is best read as a materials-and-fabrication endpoint for this family, not yet the central coherence benchmark.
 - For the non-hybrid dot and donor branch of the same broader materials ecosystem, see [[semiconducting-moc]].
 
+## Boundary with the topological family
+
+This family shares hardware vocabulary with [[topological-moc]] such as InAs/Al heterostructures, Josephson weak links, and strong spin-orbit coupling, but it makes a different promise. `gatemon`, `andreev-spin-qubit`, and `ferbo-qubit` stay here because their value comes from tunability, Andreev structure, or circuit-level protection inside an otherwise conventional control stack. Once the central claim becomes nonlocal parity encoding or a phase-biased topological channel that is supposed to suppress errors before code overhead, route the reader to [[topological-moc]] instead.
+
 ## Editorial note
 
 This family is about hybridization, not mere material substitution. Keep links focused on what the semiconductor changes in the circuit physics, control surface, or protection story.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

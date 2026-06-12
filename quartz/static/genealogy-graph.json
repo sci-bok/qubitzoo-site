@@ -1,6 +1,6 @@
 {
   "schema": "qubitzoo.genealogy.v1",
-  "generated_at": "2026-06-05T14:04:01.676750+00:00",
+  "generated_at": "2026-06-12T14:03:56.418288+00:00",
   "nodes": [
     {
       "id": "0-pi-qubit",
@@ -424,6 +424,15 @@
       "status": "demonstrated",
       "color": "#ef4444",
       "influence": 0.7
+    },
+    {
+      "id": "photonic-qubit",
+      "title": "Photonic Qubit",
+      "family": "Photonic",
+      "year": 2026,
+      "status": "demonstrated",
+      "color": "#ef4444",
+      "influence": 0.68
     },
     {
       "id": "planar-josephson-junction-qubit",
@@ -1474,6 +1483,10 @@
       "target": "time-bin-photonic-qubit"
     },
     {
+      "source": "time-bin-photonic-qubit",
+      "target": "photonic-cluster-state-mbqc-qubit"
+    },
+    {
       "source": "transmon",
       "target": "xmon"
     },
@@ -1499,6 +1512,10 @@
     },
     {
       "source": "cirac-zoller-gate",
+      "target": "ytterbium-hyperfine-qubit"
+    },
+    {
+      "source": "molmer-sorenson-gate",
       "target": "ytterbium-hyperfine-qubit"
     }
   ]

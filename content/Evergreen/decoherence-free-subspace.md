@@ -30,7 +30,7 @@ It is important to distinguish a decoherence-free **subspace** from a decoherenc
 
 ## References
 
-- [Zanardi & Rasetti (1997)](https://doi.org/10.1103/PhysRevLett.79.3306) — first proposal of noiseless quantum codes (decoherence-free subspaces)
-- [Lidar, Chuang & Whaley (1998)](https://doi.org/10.1103/PhysRevLett.81.2594) — DFS for collective decoherence
+- [[zanardi-1997-noiseless-quantum-codes]] — first proposal of noiseless quantum codes (decoherence-free subspaces)
+- [[lidar-1998-decoherence-free-subspaces-quantum-computation]] — DFS for collective decoherence
 - [[divincenzo-2000-exchange-only]] — universal quantum computation with exchange interactions in a DFS
-- [Knill, Laflamme & Viola (2000)](https://doi.org/10.1103/PhysRevLett.84.2525) — theory of decoherence-free subsystems (noiseless subsystems)
+- [[knill-2000-theory-quantum-error-correction-general-noise]] — broader general-noise framework connecting DFS ideas to passive protection and subsystem-style constructions

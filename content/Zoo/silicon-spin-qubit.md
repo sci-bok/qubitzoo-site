@@ -140,7 +140,7 @@ where $\Delta_v$ is the valley splitting (typically 0.03–1 meV in Si/SiGe, 0.3
 - [[divincenzo-criteria]] — silicon is one of the cleanest examples of a platform competing on every criterion at once: long coherence, high-fidelity gates, scalable fabrication, and qubit-specific readout
 - [[spin-orbit-coupling-for-qubit-control]] — clarifies why silicon usually needs micromagnets or synthetic SOC, unlike hole-spin devices
 - [[exchange-interaction-in-quantum-dots]] — barrier-tuned exchange remains the standard entangling mechanism in gate-defined silicon dot arrays
-- [[heisenberg-exchange-in-quantum-dots]] — the minimal $J\,\mathbf S_1\!\cdot\!\mathbf S_2$ model behind silicon spin-qubit CZ and $\sqrt{\text{SWAP}}$ gates
+- [[sqrt-swap-as-universal-gate]] — the cleanest gate-level lens for the short exchange pulses used in neighboring-dot silicon entangling gates
 
 ## Related Entries
 

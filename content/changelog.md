@@ -3,22 +3,21 @@ title: Changelog
 description: Recent changes to the Qubit Zoo site and source content (rolling 24h window).
 ---
 
-_Auto-generated at 2026-06-05T14:04:01.555Z (UTC). Covers the last 24 hours. If a window passes with no activity, sections will be empty._
+_Auto-generated at 2026-06-12T14:03:56.298Z (UTC). Covers the last 24 hours. If a window passes with no activity, sections will be empty._
 
 ## Public-facing site changes
 
 Commits to this site repo (qubitzoo-site) — these have already shipped or will ship on the next deploy.
 
-**f315b4a2** · 2026-06-04 10:17:47 — Audit hole spin qubit entry
+**0c9f9a54** · 2026-06-11 10:24:30 — Audit tetron qubit entry
 
-<details><summary>files (6)</summary>
+<details><summary>files (5)</summary>
 
-- `content/Figures/hole-spin-qubit-figure.png`
-- `content/References/dijkema-2026-simultaneous-operation-of-an.md`
-- `content/References/hendrickx-2020-fast-two-qubit-logic-holes.md`
-- `content/References/john-2025-robust-localised-control-10spin.md`
-- `content/References/watzinger-2018-germanium-hole-spin-qubit.md`
-- `content/Zoo/hole-spin-qubit.md`
+- `content/Figures/tetron-qubit-figure.png`
+- `content/References/aghaee-2023-topological-gap-protocol.md`
+- `content/References/aghaee-2025-interferometric-parity.md`
+- `content/References/aghaee-2025-majorana-1.md`
+- `content/Zoo/tetron-qubit.md`
 
 </details>
 
@@ -27,10 +26,11 @@ Commits to this site repo (qubitzoo-site) — these have already shipped or will
 
 Commits in the source vault touching `Zoo/`, `References/`, `Evergreen/`, `MOCs/`, `Figures/`. These are queued to appear on the site at the next sync + deploy.
 
-**682a9120** · 2026-06-05 06:08:32 — zoo: pipeline queue-run processed=0 failed=0 (2026-06-05 10:08 UTC)
+**b1b34c03** · 2026-06-12 06:03:10 — zoo: pipeline queue-run processed=10 failed=0 (2026-06-12 10:03 UTC)
 
-<details><summary>files (15)</summary>
+<details><summary>files (17)</summary>
 
+- `Figures/tetron-qubit-figure.png`
 - `MOCs/classical-hardware-moc.md`
 - `MOCs/codes-moc.md`
 - `MOCs/color-center-moc.md`
@@ -39,24 +39,24 @@ Commits in the source vault touching `Zoo/`, `References/`, `Evergreen/`, `MOCs/
 - `MOCs/molecular-moc.md`
 - `MOCs/neutral-atom-moc.md`
 - `MOCs/photonic-moc.md`
-- `MOCs/qubit-zoo-index-moc.md`
 - `MOCs/semiconducting-moc.md`
 - `MOCs/spin-photon-moc.md`
-- `MOCs/super-semi-moc.md`
 - `MOCs/superconducting-moc.md`
-- `MOCs/topological-moc.md`
 - `MOCs/trapped-ion-moc.md`
+- `References/baumann-2026-where-a-quantum-reservoir.md`
+- `References/dipojono-2026-representation-induced-symmetry-trapping-in.md`
+- `References/georgiadis-2026-simple-analytical-flux-tuned-iswap.md`
+- `References/machino-2026-qube-qubex-an-integrated-hardware-software.md`
 
 </details>
 
-**6310229e** · 2026-06-04 10:51:12 — Normalize spin sweet-spot evergreen references
+**413f67d9** · 2026-06-11 10:48:11 — Clarify topological vs super-semi MOC boundary
 
-<details><summary>files (4)</summary>
+<details><summary>files (3)</summary>
 
-- `Evergreen/charge-noise-sweet-spot.md`
-- `Evergreen/exchange-interaction-in-quantum-dots.md`
-- `References/martins-2016-symmetric-exchange-gates.md`
-- `References/reed-2016-reduced-sensitivity-charge-noise.md`
+- `MOCs/qubit-zoo-index-moc.md`
+- `MOCs/super-semi-moc.md`
+- `MOCs/topological-moc.md`
 
 </details>
 
@@ -65,45 +65,47 @@ Commits in the source vault touching `Zoo/`, `References/`, `Evergreen/`, `MOCs/
 
 Commits in the pipeline/automation repo (qubit-zoo-zettelkasten). These capture backend fixes, audits, and build/report changes that may not be visible on the public site yet.
 
-**29b62def** · 2026-06-05 06:08:30 — zoo: pipeline queue-run processed=0 failed=0 (2026-06-05 10:08 UTC)
+**867fcb64** · 2026-06-12 06:03:07 — zoo: pipeline queue-run processed=10 failed=0 (2026-06-12 10:03 UTC)
 
-<details><summary>files (39)</summary>
+<details><summary>files (41)</summary>
 
 - `data/canon_coverage.json`
 - `data/classics_backlog.json`
 - `data/classics_resolver_report.json`
-- `data/exports/paper_feed/2026-06-05/paper_feed.v1.jsonl`
+- `data/discovery_queue.json`
+- `data/exports/paper_feed/2026-06-12/paper_feed.v1.jsonl`
 - `data/exports/paper_feed/latest.json`
 - `data/influence_history.jsonl`
+- `data/processed_papers.jsonl`
 - `data/quarantine_queue.json`
 - `data/reports/.last-morning-summary-date`
-- `data/reports/2026-06-04/calibration-json.err.log`
-- `data/reports/2026-06-04/calibration.err.log`
-- `data/reports/2026-06-04/calibration.json`
-- `data/reports/2026-06-04/calibration.txt`
-- `data/reports/2026-06-04/influence-scoring.log`
-- `data/reports/2026-06-04/moc-build.log`
-- `data/reports/2026-06-04/moc-generate.log`
-- `data/reports/2026-06-04/ops-report-json.err.log`
-- `data/reports/2026-06-04/ops-report.err.log`
-- `data/reports/2026-06-04/ops-report.json`
-- `data/reports/2026-06-04/ops-report.txt`
-- `data/reports/2026-06-04/queue-summary.json`
-- `data/reports/2026-06-04/queue.log`
-- `data/reports/2026-06-04/run-summary.json`
-- `data/reports/2026-06-04/run-summary.txt`
-- `data/reports/2026-06-04/zettel-review.log`
-- `data/reports/2026-06-04/zoo-links.log`
-- `data/reports/2026-06-04/zoo-note-conventions.log`
-- `data/reports/2026-06-04/zoo-source-references.log`
-- `data/reports/2026-06-05/canon-coverage.log`
-- `data/reports/2026-06-05/canon-coverage.md`
-- `data/reports/2026-06-05/classics-build.log`
-- `data/reports/2026-06-05/classics-resolve.log`
-- `data/reports/2026-06-05/discovery.log`
-- `data/reports/2026-06-05/preflight.log`
-- `data/reports/2026-06-05/prioritize-classics.log`
-- `data/reports/2026-06-05/queue.log`
+- `data/reports/2026-06-11/calibration-json.err.log`
+- `data/reports/2026-06-11/calibration.err.log`
+- `data/reports/2026-06-11/calibration.json`
+- `data/reports/2026-06-11/calibration.txt`
+- `data/reports/2026-06-11/influence-scoring.log`
+- `data/reports/2026-06-11/moc-build.log`
+- `data/reports/2026-06-11/moc-generate.log`
+- `data/reports/2026-06-11/ops-report-json.err.log`
+- `data/reports/2026-06-11/ops-report.err.log`
+- `data/reports/2026-06-11/ops-report.json`
+- `data/reports/2026-06-11/ops-report.txt`
+- `data/reports/2026-06-11/queue-summary.json`
+- `data/reports/2026-06-11/queue.log`
+- `data/reports/2026-06-11/run-summary.json`
+- `data/reports/2026-06-11/run-summary.txt`
+- `data/reports/2026-06-11/zettel-review.log`
+- `data/reports/2026-06-11/zoo-links.log`
+- `data/reports/2026-06-11/zoo-note-conventions.log`
+- `data/reports/2026-06-11/zoo-source-references.log`
+- `data/reports/2026-06-12/canon-coverage.log`
+- `data/reports/2026-06-12/canon-coverage.md`
+- `data/reports/2026-06-12/classics-build.log`
+- `data/reports/2026-06-12/classics-resolve.log`
+- `data/reports/2026-06-12/discovery.log`
+- `data/reports/2026-06-12/preflight.log`
+- `data/reports/2026-06-12/prioritize-classics.log`
+- `data/reports/2026-06-12/queue.log`
 - `data/reports/latest-run-summary.json`
 - `data/reports/latest-run-summary.txt`
 - `data/reports/run-history.jsonl`
@@ -111,16 +113,14 @@ Commits in the pipeline/automation repo (qubit-zoo-zettelkasten). These capture 
 
 </details>
 
-**66f94de0** · 2026-06-04 10:18:04 — Update hole spin audit tracker and references
+**5c1c05c4** · 2026-06-11 10:24:59 — Update tetron audit tracker and refs
 
-<details><summary>files (6)</summary>
+<details><summary>files (4)</summary>
 
 - `data/audit-tracker.json`
-- `vault/Figures/hole-spin-qubit-figure.png`
-- `vault/References/dijkema-2026-simultaneous-operation-of-an.md`
-- `vault/References/hendrickx-2020-fast-two-qubit-logic-holes.md`
-- `vault/References/john-2025-robust-localised-control-10spin.md`
-- `vault/References/watzinger-2018-germanium-hole-spin-qubit.md`
+- `vault/References/aghaee-2023-topological-gap-protocol.md`
+- `vault/References/aghaee-2025-interferometric-parity.md`
+- `vault/References/aghaee-2025-majorana-1.md`
 
 </details>
 
@@ -128,6 +128,6 @@ Commits in the pipeline/automation repo (qubit-zoo-zettelkasten). These capture 
 ## Pipeline status
 
 - **Status:** `degraded` (mode: `full`)
-- **Last run:** 2026-06-05 06:00:03 EDT
-- **Papers added in last run:** 0
+- **Last run:** 2026-06-12 06:00:05 EDT
+- **Papers added in last run:** 4
 - **Failing steps:** `zoo_note_conventions`

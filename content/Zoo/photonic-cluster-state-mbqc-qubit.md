@@ -15,7 +15,7 @@ keywords:
   - fusion gate
   - linear optics
 influence_score: 0.70
-last_updated: '2026-03-21'
+last_updated: '2026-06-08'
 generated_by: scibok-curation
 extracted_by: manual
 verified_by: scibok-manual-2026-03-21
@@ -107,6 +107,7 @@ Computation via measurements: measuring qubit $i$ in the basis $\{|+_\theta\rang
 
 - [[threshold-theorem]] — the main architectural question is how offline cluster-state preparation plus adaptive measurement still reaches a fault-tolerant regime despite probabilistic entangling operations
 - [[erasure-error-vs-pauli-error]] — photon loss is often a flagged absence event, so loss-tolerant MBQC should be read through erasure structure rather than a purely Pauli-noise picture
+- [[noise-bias-and-asymmetric-error-channels]] — cluster-state photonics only scales cleanly when loss and fusion failure remain structured, biased channels instead of washing out into generic depolarizing noise
 
 ## Related Entries
 

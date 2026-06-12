@@ -31,6 +31,6 @@ These criteria provide a universal scorecard for comparing qubit implementations
 
 ## References
 
-- D. P. DiVincenzo, "The Physical Implementation of Quantum Computation," Fortschritte der Physik 48, 771 (2000). [arXiv:quant-ph/0002077](https://arxiv.org/abs/quant-ph/0002077)
+- [[divincenzo-2000-physical-implementation]]
 - [[loss-divincenzo-1998-quantum-dots]] — applies criteria to quantum dots
 - [[cirac-zoller-gate]] — applies criteria to trapped ions

@@ -14,7 +14,7 @@ keywords:
   - controlled-phase
   - quantum computing
 influence_score: 0.90
-last_updated: '2026-03-21'
+last_updated: '2026-06-09'
 generated_by: scibok-curation
 extracted_by: airtable-seed
 verified_by: scibok-manual-2026-03-21
@@ -110,6 +110,7 @@ The Cirac-Zoller gate uses red sideband pulses for state mapping and a $2\pi$ pu
 
 - [[motional-mode-coupling-in-ion-traps]] — the sideband-resolved phonon bus that makes the original three-pulse gate sequence possible
 - [[divincenzo-criteria]] — why this proposal mattered as an early full-stack answer to initialization, control, coupling, and readout in one platform
+- [[threshold-theorem]] — clarifies why the original gate concept later turned into a fidelity race: sideband-mediated entangling errors only become fault-tolerant once they sit below code thresholds
 
 ## Related Entries
 

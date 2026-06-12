@@ -16,7 +16,7 @@ keywords:
 - sympathetic cooling
 - shuttling
 influence_score: 0.92
-last_updated: '2026-03-25'
+last_updated: '2026-06-09'
 generated_by: scibok-curation
 extracted_by: scibok
 verified_by: scibok-audit-2026-03-25
@@ -159,6 +159,8 @@ Trapped ions offer natural identical qubits (every $^{171}\text{Yb}^+$ ion is id
 
 - [[motional-mode-coupling-in-ion-traps]] — the shared phonon bus behind Cirac-Zoller and Mølmer-Sørensen style gates
 - [[coherence-time-hierarchy]] — how to interpret ion `T_2^*`, echo, and long-memory claims
+- [[divincenzo-criteria]] — captures why trapped ions remain a canonical platform: long coherence, high-fidelity control, entangling gates, and qubit-specific readout all show up strongly here
+- [[decoherence-free-subspace]] — frames the recent multi-ion 10-hour memory results as passive symmetry protection, not just better decoupling pulses
 
 ## Related Entries
 
