@@ -32,3 +32,8 @@ Trapped neutral atoms have become a prominent platform for quantum science, wher
 ## Links
 - **Journal:** [Nature Physics](https://doi.org/10.1038/s41567-020-0903-z)
 - **arXiv:** [2001.04455](https://arxiv.org/abs/2001.04455)
+
+## Zoo Links
+- [[neutral-atom-qubit]]
+- [[rydberg-neutral-atom-qubit]]
+- [[alkaline-earth-neutral-atom-clock-qubit]]

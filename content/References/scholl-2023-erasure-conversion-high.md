@@ -4,6 +4,7 @@ authors: [Pascal Scholl, Adam L. Shaw, Richard Bing-Shiun Tsai, Ran Finkelstein,
 year: 2023
 journal: "Nature"
 doi: 10.1038/s41586-023-06516-4
+arxiv_id: '2305.03406'
 type: reference
 generated_by: scibok-audit-backfill
 last_updated: '2026-03-25'
@@ -18,6 +19,9 @@ AbstractMinimizing and understanding errors is critical for quantum science, bot
 
 ## Links
 - **Journal:** [Nature](https://doi.org/10.1038/s41586-023-06516-4)
+- **arXiv:** [2305.03406](https://arxiv.org/abs/2305.03406)
 
 ## Zoo Links
 - [[erasure-qubit]]
+- [[neutral-atom-qubit]]
+- [[rydberg-neutral-atom-qubit]]
