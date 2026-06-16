@@ -12,10 +12,10 @@ keywords:
 - entangling gates
 - hyperfine qubit
 influence_score: 0.72
-last_updated: '2026-06-15'
+last_updated: '2026-06-16'
 generated_by: scibok-curation
-verified_by: scibok-audit-2026-06-15
-figure_reviewed: false
+verified_by: scibok-audit-2026-06-16
+figure_reviewed: true
 ---
 
 ## Figure
