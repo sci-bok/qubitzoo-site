@@ -134,6 +134,7 @@ State-of-the-art (as of late 2025): $T_1$ up to $1.68\,\text{ms}$ (planar, tanta
 - [[josephson-junction-as-nonlinear-element]] — the circuit element that provides the weak anharmonicity
 - [[coherence-time-hierarchy]] — how to interpret the `T_1`, `T_2`, and echo numbers in the metrics table
 - [[dispersive-readout-mechanism]] — the cQED readout architecture that let the transmon replace destructive tunneling-style superconducting measurements
+- [[purcell-protection-via-detuning]] — why transmons are usually parked far enough from their readout resonators, and then paired with Purcell filters, to keep fast measurement from quietly shortening $T_1$
 
 ## Related Entries
 - [[cooper-pair-box-charge-qubit]] — ancestor (charge-sensitive limit)

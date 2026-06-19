@@ -144,6 +144,7 @@ Semiconductor spin qubits promise integration with existing CMOS fabrication inf
 - [[divincenzo-criteria]] — this is the platform-level checklist that makes spin qubits legible across coherence, control, readout, and scalability at once
 - [[spin-orbit-coupling-for-qubit-control]] — explains why modern devices favor electrically driven EDSR over local oscillating magnetic fields
 - [[exchange-interaction-in-quantum-dots]] — the device-and-materials view of how neighboring dots generate the native nearest-neighbor coupling resource
+- [[heisenberg-exchange-in-quantum-dots]] — the Hamiltonian-first lens for why barrier pulses turn that resource into partial-SWAP or exchange-phase gates rather than arbitrary two-qubit control
 - [[sqrt-swap-as-universal-gate]] — the gate-level consequence of pulsing that exchange interaction for the right area
 
 ## Related Entries

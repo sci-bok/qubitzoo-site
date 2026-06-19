@@ -3,7 +3,7 @@ title: Photonic MOC
 type: moc
 technology_family: Photonic
 note_count: 6
-last_updated: '2026-06-12'
+last_updated: '2026-06-19'
 generated_by: pipeline-moc-v1
 ---
 
@@ -66,6 +66,20 @@ Curated map of Zoo entries in the **Photonic** family.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Curated synthesis
 
 The highest-value organizing move in this family is to **separate photonic encodings from photonic computation models**. Otherwise the graph quietly conflates “what degree of freedom stores the qubit?” with “how do we actually get entangling power and fault tolerance?”
@@ -84,9 +98,30 @@ The highest-value organizing move in this family is to **separate photonic encod
    - [[fusion-based-photonic-qubit]] goes one step further and treats failed entangling attempts as an architectural primitive rather than an exception.
    - Both belong in the same fault-tolerance conversation because they live or die on whether loss and fusion failures stay structured enough for erasure-aware decoding and percolation-style thresholds.
 
+## Where the umbrella note belongs
+
+- `photonic-qubit` should be the **family entry point**, not a peer competitor to the more specific notes. Use it when the question is simply why photons are attractive at all: low transport decoherence, room-temperature optics, and natural network compatibility.
+- Hand off from `photonic-qubit` to [[dual-rail-photonic-qubit]] or [[time-bin-photonic-qubit]] when the real comparison is the **encoding degree of freedom**.
+- Hand off from `photonic-qubit` to [[linear-optical-photonic-qubit]], [[photonic-cluster-state-mbqc-qubit]], or [[fusion-based-photonic-qubit]] when the real comparison is the **scaling architecture**.
+- Once the question stops being optical-hardware-specific and becomes, "what does flagged loss buy the decoder?", cross over to [[cross-platform-moc]] through `erasure-qubit` instead of repeating decoder logic inside this family.
+
 ## Editorial note
 
-The next highest-value follow-up is a dedicated evergreen note on the photonic split between **encoding choice** (dual-rail vs time-bin) and **scaling strategy** (KLM vs MBQC vs fusion), but the current pass is enough to stop time-bin from reading like an isolated leaf.
+The next highest-value follow-up is a dedicated evergreen note on the photonic split between **encoding choice** (dual-rail vs time-bin) and **scaling strategy** (KLM vs MBQC vs fusion), but the current pass is enough to stop `photonic-qubit` from floating as an undifferentiated umbrella note.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

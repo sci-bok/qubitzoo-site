@@ -3,7 +3,7 @@ title: Topological MOC
 type: moc
 technology_family: Topological
 note_count: 3
-last_updated: '2026-06-12'
+last_updated: '2026-06-19'
 generated_by: pipeline-moc-v1
 ---
 
@@ -79,6 +79,20 @@ Curated map of Zoo entries in the **Topological** family.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Three-layer map
 
 - [[majorana-topological-qubit]] is the physics-layer note: nonlocal fermion-parity encoding, Majorana zero modes, and the requirement that splitting fall exponentially with separation.
@@ -96,6 +110,20 @@ The materials overlap with [[super-semi-moc]] on purpose, especially around InAs
 ## Reading order
 
 If you want the shortest conceptual path through this family, start with [[majorana-topological-qubit]] for the protection mechanism, then [[planar-josephson-junction-qubit]] for the scalable materials platform, and finish with [[tetron-qubit]] for the control architecture that tries to turn those ingredients into a computable qubit.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

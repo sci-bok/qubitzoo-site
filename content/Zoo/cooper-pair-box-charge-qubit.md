@@ -100,6 +100,7 @@ The Cooper-pair box was the original "artificial atom" formed in a superconducti
 - [[charge-noise-sweet-spot]] — why the charge degeneracy point mattered, and why it was not enough
 - [[josephson-junction-as-nonlinear-element]] — the nonlinear element underlying the CPB Hamiltonian
 - [[coherence-time-hierarchy]] — how to read the jump from nanosecond-scale charge-noise-limited operation to the later sweet-spot and transmon generations
+- [[jaynes-cummings-in-circuits]] — the CPB was the original artificial atom in the first circuit-QED mapping, before the transmon became the dominant superconducting implementation
 
 ## Related Entries
 

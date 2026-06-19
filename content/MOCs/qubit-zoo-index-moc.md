@@ -3,7 +3,7 @@ title: Qubit Zoo Index MOC
 type: moc
 technology_family: index
 note_count: 62
-last_updated: '2026-06-12'
+last_updated: '2026-06-19'
 generated_by: pipeline-moc-v1
 ---
 
@@ -105,6 +105,20 @@ Top-level navigation for the Qubit Zoo by technology family.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## How to use this map
 
 - Start with a family MOC when you want modality-local comparisons.
@@ -123,11 +137,31 @@ Top-level navigation for the Qubit Zoo by technology family.
 - Switch to [[topological-moc]] when the decisive claim is nonlocal parity encoding or a topological superconducting channel, as in [[majorana-topological-qubit]], [[planar-josephson-junction-qubit]], and [[tetron-qubit]].
 - Keep [[josephson-junction-as-nonlinear-element]] and [[spin-orbit-coupling-for-qubit-control]] as the shared mechanism notes, then use [[threshold-theorem]] to judge whether the topological branch actually earns its overhead-reduction promise.
 
+## High-value cross-family slice: hardware-assisted fault tolerance
+
+- Start in [[superconducting-moc]] when the win is being claimed at the device layer: bosonic encodings, protected circuits, cat-bias engineering, or erasure-converting superconducting encodings all live there first.
+- Move to [[cross-platform-moc]] when the real comparison becomes logical-overhead strategy, decoder assumptions, or systems architecture via [[erasure-qubit]], [[surface-code-logical-qubit]], [[color-code-logical-qubit]], and [[classical-control]].
+- Use [[bosonic-code-hierarchy]], [[noise-bias-and-asymmetric-error-channels]], [[erasure-error-vs-pauli-error]], and [[threshold-theorem]] as the four-note bridge from hardware mechanism to architectural consequence.
+
 ## Current graph priorities
 
-- Increase Zoo → Evergreen coverage so the catalog points outward into reusable concepts.
-- Normalize evergreen citations toward `[[Reference]]` notes when those notes already exist.
+- Preserve full Zoo → Evergreen coverage as new entries land, rather than treating coverage itself as an open cleanup target.
+- Prefer curated cross-family routes when the reviewer is already clean: navigation quality now matters more than raw metric movement.
 - Keep family MOCs lightweight above the marker, but preserve real synthesis below it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

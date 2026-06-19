@@ -3,7 +3,7 @@ title: Cross-Platform MOC
 type: moc
 technology_family: Cross-Platform
 note_count: 6
-last_updated: '2026-06-12'
+last_updated: '2026-06-19'
 generated_by: pipeline-moc-v1
 ---
 
@@ -62,6 +62,20 @@ Curated map of Zoo entries in the **Cross-Platform** family.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Conceptual anchors
 
 - [[threshold-theorem]] is the main bridge from `surface-code-logical-qubit` and `color-code-logical-qubit` back to hardware performance targets.
@@ -83,9 +97,30 @@ Curated map of Zoo entries in the **Cross-Platform** family.
 - `classical-control` and `quantum-transduction` are scaling interfaces: one connects algorithms to physical waveforms, the other connects local processors to networked photonic links.
 - `quantum-gate` should stay as the operation-level abstraction that ties these layers together, not become a dumping ground for platform-specific pulse details.
 
+## Routing rule: when to enter this family
+
+- Enter here when the main comparison is decoder assumptions, logical-overhead scaling, or systems integration rather than device physics.
+- Stay in a source hardware family when the central claim is hardware-shaped noise, then cross over here only after the error model is clear. In practice that means reading `kerr-cat-qubit`, `0-pi-qubit`, or `dual-rail-superconducting-qubit` through [[noise-bias-and-asymmetric-error-channels]] or [[erasure-error-vs-pauli-error]] before collapsing them into `surface-code-logical-qubit`, `color-code-logical-qubit`, or `erasure-qubit`.
+- Photonic notes should usually enter this family through `erasure-qubit`: stay in [[photonic-moc]] while the question is encoding choice (`dual-rail-photonic-qubit`, `time-bin-photonic-qubit`) or resource construction (`linear-optical-photonic-qubit`, `photonic-cluster-state-mbqc-qubit`, `fusion-based-photonic-qubit`), then cross here only once flagged loss or fusion failure becomes a decoder-overhead question.
+- Use `classical-control` and `quantum-transduction` as the two stack edges: one asks whether local feedback can keep up with the code cycle, the other asks whether the logical architecture survives once the machine becomes modular.
+
 ## Editorial note
 
 This family exists for architectural glue. Keep platform-local implementation details in the source hardware families, and use this page to clarify which concepts travel across platforms.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

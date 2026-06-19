@@ -2,7 +2,7 @@
 title: "Distributed Quantum Computing in Silicon"
 authors: [Photonic Inc.]
 year: 2024
-journal: Photonic Inc. Technical Report
+journal: Preprint
 doi: null
 arxiv_id: '2406.01704'
 type: reference
@@ -10,7 +10,7 @@ generated_by: scibok-curation
 last_updated: '2026-06-02'
 ---
 
-This preprint reports a proof-of-concept distributed-quantum-computing experiment using silicon T centres in separate cryostats connected by telecom fibre. It is a useful recent systems-level direction marker for photonic interconnects and spin-photon networking rather than a canonical family-wide photonic-qubit benchmark.
+This preprint reports a proof-of-concept distributed-quantum-computing experiment using silicon T centres in separate cryostats connected by telecom fibre. It is the key source for the current entry's remote-entanglement and teleported-gate claims.
 
 ## Key Results
 - Remote Bell-pair generation between T-centre electron spins in separate cryostats
@@ -22,5 +22,4 @@ This preprint reports a proof-of-concept distributed-quantum-computing experimen
 - **arXiv:** [2406.01704](https://arxiv.org/abs/2406.01704)
 
 ## Zoo Links
-- [[photonic-qubit]]
 - [[t-center-qubit]]

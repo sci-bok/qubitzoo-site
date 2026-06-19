@@ -1,60 +1,46 @@
 {
   "schema": "qubitzoo.changelog.v1",
-  "generated_at_utc": "2026-06-12T14:03:56.298Z",
+  "generated_at_utc": "2026-06-19T14:04:56.182Z",
   "window_hours": 24,
   "site": {
     "repo_root": "/Users/scibok/.openclaw/workspace/repos/qubitzoo-site",
-    "commits": [
-      {
-        "sha": "0c9f9a54",
-        "iso": "2026-06-11T10:24:30-04:00",
-        "subject": "Audit tetron qubit entry",
-        "files": [
-          "content/Figures/tetron-qubit-figure.png",
-          "content/References/aghaee-2023-topological-gap-protocol.md",
-          "content/References/aghaee-2025-interferometric-parity.md",
-          "content/References/aghaee-2025-majorana-1.md",
-          "content/Zoo/tetron-qubit.md"
-        ]
-      }
-    ]
+    "commits": []
   },
   "vault": {
     "repo_root": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten",
     "available": true,
     "commits": [
       {
-        "sha": "b1b34c03",
-        "iso": "2026-06-12T06:03:10-04:00",
-        "subject": "zoo: pipeline queue-run processed=10 failed=0 (2026-06-12 10:03 UTC)",
+        "sha": "774cc486",
+        "iso": "2026-06-19T06:02:54-04:00",
+        "subject": "zoo: pipeline queue-run processed=10 failed=0 (2026-06-19 10:02 UTC)",
         "files": [
-          "Figures/tetron-qubit-figure.png",
           "MOCs/classical-hardware-moc.md",
-          "MOCs/codes-moc.md",
           "MOCs/color-center-moc.md",
           "MOCs/cross-platform-moc.md",
           "MOCs/ion-trap-moc.md",
           "MOCs/molecular-moc.md",
           "MOCs/neutral-atom-moc.md",
           "MOCs/photonic-moc.md",
+          "MOCs/qubit-zoo-index-moc.md",
           "MOCs/semiconducting-moc.md",
           "MOCs/spin-photon-moc.md",
+          "MOCs/super-semi-moc.md",
           "MOCs/superconducting-moc.md",
+          "MOCs/topological-moc.md",
           "MOCs/trapped-ion-moc.md",
-          "References/baumann-2026-where-a-quantum-reservoir.md",
-          "References/dipojono-2026-representation-induced-symmetry-trapping-in.md",
-          "References/georgiadis-2026-simple-analytical-flux-tuned-iswap.md",
-          "References/machino-2026-qube-qubex-an-integrated-hardware-software.md"
+          "References/fors-2026-fidelity-bounds-for-adiabatic.md",
+          "References/gentil-2026-general-circuit-mapping-algorithm.md",
+          "References/nixon-2026-vine-codes-low-overhead-quantum.md",
+          "References/taranko-2026-transient-triplet-blockade-in.md"
         ]
       },
       {
-        "sha": "413f67d9",
-        "iso": "2026-06-11T10:48:11-04:00",
-        "subject": "Clarify topological vs super-semi MOC boundary",
+        "sha": "49f9af10",
+        "iso": "2026-06-18T10:51:27-04:00",
+        "subject": "Clarify codes MOC routing",
         "files": [
-          "MOCs/qubit-zoo-index-moc.md",
-          "MOCs/super-semi-moc.md",
-          "MOCs/topological-moc.md"
+          "MOCs/codes-moc.md"
         ]
       }
     ]
@@ -64,62 +50,51 @@
     "available": true,
     "commits": [
       {
-        "sha": "867fcb64",
-        "iso": "2026-06-12T06:03:07-04:00",
-        "subject": "zoo: pipeline queue-run processed=10 failed=0 (2026-06-12 10:03 UTC)",
+        "sha": "39410147",
+        "iso": "2026-06-19T06:02:53-04:00",
+        "subject": "zoo: pipeline queue-run processed=10 failed=0 (2026-06-19 10:02 UTC)",
         "files": [
           "data/canon_coverage.json",
           "data/classics_backlog.json",
           "data/classics_resolver_report.json",
           "data/discovery_queue.json",
-          "data/exports/paper_feed/2026-06-12/paper_feed.v1.jsonl",
+          "data/exports/paper_feed/2026-06-19/paper_feed.v1.jsonl",
           "data/exports/paper_feed/latest.json",
           "data/influence_history.jsonl",
           "data/processed_papers.jsonl",
           "data/quarantine_queue.json",
           "data/reports/.last-morning-summary-date",
-          "data/reports/2026-06-11/calibration-json.err.log",
-          "data/reports/2026-06-11/calibration.err.log",
-          "data/reports/2026-06-11/calibration.json",
-          "data/reports/2026-06-11/calibration.txt",
-          "data/reports/2026-06-11/influence-scoring.log",
-          "data/reports/2026-06-11/moc-build.log",
-          "data/reports/2026-06-11/moc-generate.log",
-          "data/reports/2026-06-11/ops-report-json.err.log",
-          "data/reports/2026-06-11/ops-report.err.log",
-          "data/reports/2026-06-11/ops-report.json",
-          "data/reports/2026-06-11/ops-report.txt",
-          "data/reports/2026-06-11/queue-summary.json",
-          "data/reports/2026-06-11/queue.log",
-          "data/reports/2026-06-11/run-summary.json",
-          "data/reports/2026-06-11/run-summary.txt",
-          "data/reports/2026-06-11/zettel-review.log",
-          "data/reports/2026-06-11/zoo-links.log",
-          "data/reports/2026-06-11/zoo-note-conventions.log",
-          "data/reports/2026-06-11/zoo-source-references.log",
-          "data/reports/2026-06-12/canon-coverage.log",
-          "data/reports/2026-06-12/canon-coverage.md",
-          "data/reports/2026-06-12/classics-build.log",
-          "data/reports/2026-06-12/classics-resolve.log",
-          "data/reports/2026-06-12/discovery.log",
-          "data/reports/2026-06-12/preflight.log",
-          "data/reports/2026-06-12/prioritize-classics.log",
-          "data/reports/2026-06-12/queue.log",
+          "data/reports/2026-06-18/calibration-json.err.log",
+          "data/reports/2026-06-18/calibration.err.log",
+          "data/reports/2026-06-18/calibration.json",
+          "data/reports/2026-06-18/calibration.txt",
+          "data/reports/2026-06-18/influence-scoring.log",
+          "data/reports/2026-06-18/moc-build.log",
+          "data/reports/2026-06-18/moc-generate.log",
+          "data/reports/2026-06-18/ops-report-json.err.log",
+          "data/reports/2026-06-18/ops-report.err.log",
+          "data/reports/2026-06-18/ops-report.json",
+          "data/reports/2026-06-18/ops-report.txt",
+          "data/reports/2026-06-18/queue-summary.json",
+          "data/reports/2026-06-18/queue.log",
+          "data/reports/2026-06-18/run-summary.json",
+          "data/reports/2026-06-18/run-summary.txt",
+          "data/reports/2026-06-18/zettel-review.log",
+          "data/reports/2026-06-18/zoo-links.log",
+          "data/reports/2026-06-18/zoo-note-conventions.log",
+          "data/reports/2026-06-18/zoo-source-references.log",
+          "data/reports/2026-06-19/canon-coverage.log",
+          "data/reports/2026-06-19/canon-coverage.md",
+          "data/reports/2026-06-19/classics-build.log",
+          "data/reports/2026-06-19/classics-resolve.log",
+          "data/reports/2026-06-19/discovery.log",
+          "data/reports/2026-06-19/preflight.log",
+          "data/reports/2026-06-19/prioritize-classics.log",
+          "data/reports/2026-06-19/queue.log",
           "data/reports/latest-run-summary.json",
           "data/reports/latest-run-summary.txt",
           "data/reports/run-history.jsonl",
           "data/zoo_source_references.json"
-        ]
-      },
-      {
-        "sha": "5c1c05c4",
-        "iso": "2026-06-11T10:24:59-04:00",
-        "subject": "Update tetron audit tracker and refs",
-        "files": [
-          "data/audit-tracker.json",
-          "vault/References/aghaee-2023-topological-gap-protocol.md",
-          "vault/References/aghaee-2025-interferometric-parity.md",
-          "vault/References/aghaee-2025-majorana-1.md"
         ]
       }
     ]
@@ -127,8 +102,8 @@
   "pipeline": {
     "status": "degraded",
     "mode": "full",
-    "timestamp_utc": "2026-06-12T10:00:05Z",
-    "timestamp_local": "2026-06-12 06:00:05 EDT",
+    "timestamp_utc": "2026-06-19T10:00:04Z",
+    "timestamp_local": "2026-06-19 06:00:04 EDT",
     "papers_added": 4,
     "failing_steps": [
       "zoo_note_conventions"
