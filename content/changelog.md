@@ -3,11 +3,23 @@ title: Changelog
 description: Recent changes to the Qubit Zoo site and source content (rolling 24h window).
 ---
 
-_Auto-generated at 2026-06-19T16:16:56.034Z (UTC). Covers the last 24 hours. If a window passes with no activity, sections will be empty._
+_Auto-generated at 2026-06-19T16:27:13.636Z (UTC). Covers the last 24 hours. If a window passes with no activity, sections will be empty._
 
 ## Public-facing site changes
 
 Commits to this site repo (qubitzoo-site) — these have already shipped or will ship on the next deploy.
+
+**b44427e0** · 2026-06-19 12:17:01 — site: sync vault content (2026-06-19 06:00:04 EDT)
+
+<details><summary>files (5)</summary>
+
+- `content/_meta/changelog.json`
+- `content/_meta/content-sync.json`
+- `content/changelog.md`
+- `quartz/static/fidelity-tracker.json`
+- `quartz/static/genealogy-graph.json`
+
+</details>
 
 **923a0890** · 2026-06-19 10:05:01 — site: sync vault content (2026-06-19 06:00:04 EDT)
 

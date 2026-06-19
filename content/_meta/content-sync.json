@@ -1,6 +1,6 @@
 {
   "schema": "qubitzoo.content_sync.v1",
-  "synced_at_utc": "2026-06-19T16:16:56.183839+00:00",
+  "synced_at_utc": "2026-06-19T16:27:13.780020+00:00",
   "source": {
     "vault_repo": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/../qubit-zettelkasten",
     "vault_head": "774cc4866fd565a831009e1bd09895df6312dbf7",
