@@ -1,10 +1,22 @@
 {
   "schema": "qubitzoo.changelog.v1",
-  "generated_at_utc": "2026-06-19T16:27:13.636Z",
+  "generated_at_utc": "2026-06-19T17:43:02.549Z",
   "window_hours": 24,
   "site": {
     "repo_root": "/Users/scibok/.openclaw/workspace/repos/qubitzoo-site",
     "commits": [
+      {
+        "sha": "e1d99a0d",
+        "iso": "2026-06-19T12:27:18-04:00",
+        "subject": "site: sync vault content (2026-06-19 06:00:04 EDT)",
+        "files": [
+          "content/_meta/changelog.json",
+          "content/_meta/content-sync.json",
+          "content/changelog.md",
+          "quartz/static/fidelity-tracker.json",
+          "quartz/static/genealogy-graph.json"
+        ]
+      },
       {
         "sha": "b44427e0",
         "iso": "2026-06-19T12:17:01-04:00",
@@ -108,6 +120,15 @@
     "repo_root": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten",
     "available": true,
     "commits": [
+      {
+        "sha": "efc64d3a",
+        "iso": "2026-06-19T13:19:07-04:00",
+        "subject": "Clarify superconducting MOC routing",
+        "files": [
+          "MOCs/super-semi-moc.md",
+          "MOCs/superconducting-moc.md"
+        ]
+      },
       {
         "sha": "774cc486",
         "iso": "2026-06-19T06:02:54-04:00",

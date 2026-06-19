@@ -92,6 +92,10 @@ Curated map of Zoo entries in the **Super-Semi** family.
 - `all-semiconductor-superconducting-qubit` is best read as a materials-and-fabrication endpoint for this family, not yet the central coherence benchmark.
 - For the non-hybrid dot and donor branch of the same broader materials ecosystem, see [[semiconducting-moc]].
 
+## Boundary with the superconducting family
+
+This family shares a lot of vocabulary with [[superconducting-moc]], especially around Josephson elements, circuit-QED readout, and sweet-spot language, but the routing rule is simple: stay here only when the **semiconductor weak link is doing conceptual work**. `gatemon` and `gatemonium` belong here because gate-tunable junction physics is the point, and `andreev-spin-qubit` / `ferbo-qubit` belong here because Andreev-level and parity structure enter the qubit itself. If the main story is instead protected-circuit geometry, bosonic encoding, or ordinary superconducting coherence scaling, route back to [[superconducting-moc]] even when the fabrication stack overlaps.
+
 ## Boundary with the topological family
 
 This family shares hardware vocabulary with [[topological-moc]] such as InAs/Al heterostructures, Josephson weak links, and strong spin-orbit coupling, but it makes a different promise. `gatemon`, `andreev-spin-qubit`, and `ferbo-qubit` stay here because their value comes from tunability, Andreev structure, or circuit-level protection inside an otherwise conventional control stack. Once the central claim becomes nonlocal parity encoding or a phase-biased topological channel that is supposed to suppress errors before code overhead, route the reader to [[topological-moc]] instead.

@@ -3,11 +3,23 @@ title: Changelog
 description: Recent changes to the Qubit Zoo site and source content (rolling 24h window).
 ---
 
-_Auto-generated at 2026-06-19T16:27:13.636Z (UTC). Covers the last 24 hours. If a window passes with no activity, sections will be empty._
+_Auto-generated at 2026-06-19T17:43:02.549Z (UTC). Covers the last 24 hours. If a window passes with no activity, sections will be empty._
 
 ## Public-facing site changes
 
 Commits to this site repo (qubitzoo-site) — these have already shipped or will ship on the next deploy.
+
+**e1d99a0d** · 2026-06-19 12:27:18 — site: sync vault content (2026-06-19 06:00:04 EDT)
+
+<details><summary>files (5)</summary>
+
+- `content/_meta/changelog.json`
+- `content/_meta/content-sync.json`
+- `content/changelog.md`
+- `quartz/static/fidelity-tracker.json`
+- `quartz/static/genealogy-graph.json`
+
+</details>
 
 **b44427e0** · 2026-06-19 12:17:01 — site: sync vault content (2026-06-19 06:00:04 EDT)
 
@@ -110,6 +122,15 @@ Commits to this site repo (qubitzoo-site) — these have already shipped or will
 ## Source/content changes affecting the next publish
 
 Commits in the source vault touching `Zoo/`, `References/`, `Evergreen/`, `MOCs/`, `Figures/`. These are queued to appear on the site at the next sync + deploy.
+
+**efc64d3a** · 2026-06-19 13:19:07 — Clarify superconducting MOC routing
+
+<details><summary>files (2)</summary>
+
+- `MOCs/super-semi-moc.md`
+- `MOCs/superconducting-moc.md`
+
+</details>
 
 **774cc486** · 2026-06-19 06:02:54 — zoo: pipeline queue-run processed=10 failed=0 (2026-06-19 10:02 UTC)
 

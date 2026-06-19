@@ -1,9 +1,9 @@
 {
   "schema": "qubitzoo.content_sync.v1",
-  "synced_at_utc": "2026-06-19T16:27:13.780020+00:00",
+  "synced_at_utc": "2026-06-19T17:43:02.697245+00:00",
   "source": {
     "vault_repo": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/../qubit-zettelkasten",
-    "vault_head": "774cc4866fd565a831009e1bd09895df6312dbf7",
+    "vault_head": "efc64d3ae5f7c40a57abcd56547a1c326841447f",
     "pipeline_summary": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/reports/latest-run-summary.json",
     "pipeline_run_timestamp_utc": "2026-06-19T10:00:04Z",
     "pipeline_run_timestamp_local": "2026-06-19 06:00:04 EDT",
