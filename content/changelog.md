@@ -3,13 +3,50 @@ title: Changelog
 description: Recent changes to the Qubit Zoo site and source content (rolling 24h window).
 ---
 
-_Auto-generated at 2026-07-03T13:12:15.508Z (UTC). Covers the last 24 hours. If a window passes with no activity, sections will be empty._
+_Auto-generated at 2026-07-03T14:05:03.348Z (UTC). Covers the last 24 hours. If a window passes with no activity, sections will be empty._
 
 ## Public-facing site changes
 
 Commits to this site repo (qubitzoo-site) — these have already shipped or will ship on the next deploy.
 
-_No site commits in the last 24 hours._
+**300f5294** · 2026-07-03 09:12:21 — site: sync vault content (2026-07-03 06:00:00 EDT)
+
+<details><summary>files (31)</summary>
+
+- `content/MOCs/classical-hardware-moc.md`
+- `content/MOCs/codes-moc.md`
+- `content/MOCs/color-center-moc.md`
+- `content/MOCs/cross-platform-moc.md`
+- `content/MOCs/ion-trap-moc.md`
+- `content/MOCs/molecular-moc.md`
+- `content/MOCs/neutral-atom-moc.md`
+- `content/MOCs/photonic-moc.md`
+- `content/MOCs/qubit-zoo-index-moc.md`
+- `content/MOCs/semiconducting-moc.md`
+- `content/MOCs/spin-photon-moc.md`
+- `content/MOCs/super-semi-moc.md`
+- `content/MOCs/superconducting-moc.md`
+- `content/MOCs/topological-moc.md`
+- `content/MOCs/trapped-ion-moc.md`
+- `content/References/chen-2026-coherent-dark-state-formation.md`
+- `content/References/jeong-2026-monolithic-axial-ingaas-quantum.md`
+- `content/References/krasnok-2026-protecting-qubits-from-purcell.md`
+- `content/References/maheshwari-2026-quantum-convolutional-neural-networks.md`
+- `content/References/morris-2026-a-transition-metal-qubit-in.md`
+- `content/References/ofek-2016-extending-lifetime-bit.md`
+- `content/References/oliveira-2026-a-single-electron-double-quantum.md`
+- `content/References/stefanski-2026-rotating-zeeman-field-as.md`
+- `content/References/walelign-2026-phase-locking-nuclear-spins.md`
+- `content/References/yaker-2026-neural-network-inverse-design-of.md`
+- `content/References/zhou-2026-bunny-codes-broadening-superconducting.md`
+- `content/_meta/changelog.json`
+- `content/_meta/content-sync.json`
+- `content/changelog.md`
+- `quartz/static/fidelity-tracker.json`
+- `quartz/static/genealogy-graph.json`
+
+</details>
+
 
 ## Source/content changes affecting the next publish
 
