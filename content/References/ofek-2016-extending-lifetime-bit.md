@@ -18,6 +18,5 @@ This paper presents work on extending the lifetime of a quantum bit with error c
 - **Journal:** [Nature](https://doi.org/10.1038/nature18949)
 
 ## Zoo Links
-- [[binomial-code]]
 - [[binomial-codes]]
 - [[bosonic-qubit]]

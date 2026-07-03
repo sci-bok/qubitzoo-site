@@ -3,7 +3,7 @@ title: Super-Semi MOC
 type: moc
 technology_family: Super-Semi
 note_count: 5
-last_updated: '2026-06-19'
+last_updated: '2026-07-03'
 generated_by: pipeline-moc-v1
 ---
 
@@ -24,6 +24,16 @@ Curated map of Zoo entries in the **Super-Semi** family.
 - qubit: 5
 
 <!-- CURATED -->
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -103,6 +113,16 @@ This family shares hardware vocabulary with [[topological-moc]] such as InAs/Al 
 ## Editorial note
 
 This family is about hybridization, not mere material substitution. Keep links focused on what the semiconductor changes in the circuit physics, control surface, or protection story.
+
+
+
+
+
+
+
+
+
+
 
 
 

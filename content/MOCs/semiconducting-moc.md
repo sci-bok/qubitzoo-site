@@ -3,7 +3,7 @@ title: Semiconducting MOC
 type: moc
 technology_family: Semiconducting
 note_count: 11
-last_updated: '2026-06-19'
+last_updated: '2026-07-03'
 generated_by: pipeline-moc-v1
 ---
 
@@ -30,6 +30,16 @@ Curated map of Zoo entries in the **Semiconducting** family.
 - qubit: 11
 
 <!-- CURATED -->
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -158,6 +168,16 @@ The highest-value organizing move in this family is to **separate the single-spi
 - Enter `singlet-triplet-qubit`, `exchange-only-qubit`, `rx-qubit`, and `aeon-qubit` as a sequence when the real comparison is how much encoding and sweet-spot structure is being introduced to civilize exchange control.
 - Enter `semiconductor-charge-qubit`, `hybrid-qubit`, or `hole-spin-qubit` when the main tradeoff is faster electrical control versus renewed charge sensitivity.
 - For semiconductor descendants that cross fully into Josephson-circuit territory, continue in [[super-semi-moc]].
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -3,7 +3,7 @@ title: Cross-Platform MOC
 type: moc
 technology_family: Cross-Platform
 note_count: 6
-last_updated: '2026-06-19'
+last_updated: '2026-07-03'
 generated_by: pipeline-moc-v1
 ---
 
@@ -27,6 +27,16 @@ Curated map of Zoo entries in the **Cross-Platform** family.
 - infrastructure: 2
 
 <!-- CURATED -->
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -107,6 +117,16 @@ Curated map of Zoo entries in the **Cross-Platform** family.
 ## Editorial note
 
 This family exists for architectural glue. Keep platform-local implementation details in the source hardware families, and use this page to clarify which concepts travel across platforms.
+
+
+
+
+
+
+
+
+
+
 
 
 
