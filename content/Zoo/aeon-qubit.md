@@ -15,10 +15,10 @@ keywords:
 - exchange-only
 - sweet-spot
 - triple-quantum-dot
-last_updated: '2026-07-06'
+last_updated: '2026-07-07'
 generated_by: seed-ingest-v1
 extracted_by: airtable-seed
-verified_by: scibok-audit-2026-07-06
+verified_by: scibok-audit-2026-07-07
 ---
 
 ## Figure
@@ -33,7 +33,7 @@ Its central advantage over earlier exchange-only encodings is that the qubit spl
 
 This makes AEON a useful midpoint between two neighboring three-spin encodings. Compared with the original 3-spin decoherence-free-subsystem / exchange-only qubit, AEON keeps exchange on and dramatically simplifies gate compilation. Compared with the resonant-exchange (RX) qubit, AEON aims for a fuller sweet spot but gives up the large transverse cavity dipole that RX uses for microwave and cavity control.
 
-The first experimental AEON demonstration came later, in a **2025 preprint by Broz, Hoke, Acuna, and Petta**, using a **triangular Si/SiGe triple-dot device** with simultaneous exchange pulses. That experiment established high-fidelity single-qubit control in an always-on exchange-only regime, but it did **not** yet demonstrate AEON two-qubit entangling gates or direct cavity coupling.
+The triangular hardware platform relevant to AEON matured in stages. **Acuna et al. (2024)** first demonstrated coherent control of a **triangular exchange-only qubit** with blind-RB fidelity 99.84%, but that result was **not yet AEON proper**. The first explicit AEON demonstration then appeared as a **2025 preprint by Broz, Hoke, Acuna, and Petta** and was published in **Nature Communications (2026)**. Using a **triangular Si/SiGe triple-dot device** with simultaneous exchange pulses, that work established high-fidelity single-qubit AEON control, but it still did **not** demonstrate AEON two-qubit entangling gates or direct cavity coupling.
 
 ## Hamiltonian
 
@@ -58,6 +58,8 @@ The AEON operating point is the **double sweet spot**, defined by
 $$\frac{\partial \omega_q}{\partial \varepsilon} = 0, \qquad \frac{\partial \omega_q}{\partial \varepsilon_M} = 0.$$
 
 In the Shim and Tahan analysis, this sweet spot is set by the device Coulomb-energy landscape and is independent of the tunnel couplings themselves. That independence is what makes barrier-gate control possible without sacrificing first-order protection against detuning noise.
+
+The later triangular-device experiments should be interpreted carefully. Their microscopic coupling graph can access additional pairwise-exchange configurations beyond the strict linear $t_{13}=0$ model above, so what carries over experimentally is the **AEON operating mode and simultaneous-exchange control principle**, not a literal one-to-one reproduction of the original linear coupling topology.
 
 ## Single-Qubit Gates
 
@@ -104,11 +106,17 @@ The second route is motivated by the experimental RX spin-photon strong-coupling
 - Shim and Tahan introduced the AEON concept for a linear triple quantum dot.
 - Core claims were the double detuning sweet spot, barrier-controlled single-qubit gates, and a route to single-pulse two-qubit entangling gates.
 
-**First experimental demonstration (2025 preprint):**
+**Triangular-platform precursor (2024):**
+- Acuna et al. demonstrated coherent control of a **triangular exchange-only qubit** in Si/SiGe.
+- Measured blind-RB single-qubit fidelity **99.84%**.
+- Important context for the later hardware platform, but **not yet an AEON demonstration**.
+
+**First AEON experimental demonstration (2025 preprint, 2026 journal publication):**
 - Broz et al. demonstrated an always-on exchange-only qubit in a **triangular Si/SiGe triple-dot device**.
 - Implemented the full **single-qubit Clifford gate set** using simultaneous exchange pulses.
 - Measured average blind-RB Clifford fidelity **$F_{C1} = 99.86\%$**.
-- The experiment established high-fidelity AEON-style single-qubit control, but **did not** yet demonstrate AEON two-qubit gates, cavity coupling, or an archival peer-reviewed 2Q benchmark.
+- The result is now archival in **Nature Communications 17, 4794 (2026)**, establishing a **peer-reviewed** AEON single-qubit benchmark.
+- AEON **two-qubit gates** and **direct cavity-coupling demonstrations** still remain outstanding as of July 2026.
 
 ## Comparison with Related Encodings
 
@@ -119,7 +127,7 @@ The second route is motivated by the experimental RX spin-photon strong-coupling
 | 1Q control | Compiled exchange sequences | Microwave / driven exchange | **Simultaneous DC exchange pulses** |
 | 2Q entangling gate | Long pulse compilations | Single-pulse proposals available | **Single-pulse proposal in AEON regime** |
 | Cavity coupling | Weak / indirect | Strong transverse dipole available | **No transverse dipole at ideal sweet spot** |
-| Best current experiment | Mature broader exchange-only literature | Spin-photon coupling demonstrated | **Single-qubit AEON preprint demo only** |
+| Best current experiment | Mature broader exchange-only literature | Spin-photon coupling demonstrated | **Peer-reviewed single-qubit AEON demo in triangular Si/SiGe** |
 
 ## References
 
@@ -137,12 +145,14 @@ The second route is motivated by the experimental RX spin-photon strong-coupling
 - R. Ruskov and C. Tahan, "Longitudinal (curvature) couplings of an $N$-level qudit to a superconducting resonator at the adiabatic limit and beyond," [PRB 109, 245303 (2024)](https://doi.org/10.1103/PhysRevB.109.245303) — [arXiv:2312.03118](https://arxiv.org/abs/2312.03118)
 - A. J. Landig, J. V. Koski, P. Scarlino et al., "Coherent spin-photon coupling using a resonant exchange qubit," [Nature 560, 179 (2018)](https://doi.org/10.1038/s41586-018-0365-y) — RX, not AEON, but the relevant experimental spin-cavity bridge
 
-### Experimental demonstration
-- J. D. Broz, J. C. Hoke, E. Acuna, and J. R. Petta, "Demonstration of an always-on exchange-only spin qubit," [arXiv:2508.01033 (2025)](https://arxiv.org/abs/2508.01033) — triangular Si/SiGe implementation, full single-qubit Clifford set, $F_{C1}=99.86\%$
+### Experimental context and demonstration
+- E. Acuna, J. D. Broz, K. Shyamsundar et al., "Coherent control of a triangular exchange-only spin qubit," [Phys. Rev. Applied 22, 044057 (2024)](https://doi.org/10.1103/PhysRevApplied.22.044057) — [arXiv:2406.03705](https://arxiv.org/abs/2406.03705) — triangular exchange-only precursor platform, not yet AEON proper
+- J. D. Broz, J. C. Hoke, E. Acuna, and J. R. Petta, "Demonstration of an always-on exchange-only spin qubit," [Nature Communications 17, 4794 (2026)](https://doi.org/10.1038/s41467-026-70943-w) — [arXiv:2508.01033](https://arxiv.org/abs/2508.01033) — peer-reviewed AEON demonstration in triangular Si/SiGe, full single-qubit Clifford set, $F_{C1}=99.86\%$
 
 ## Linked Papers
 - [[shim-2016-aeon]]
-- [[broz-2025-always-on-exchange-only-spin-qubit]]
+- [[acuna-2024-coherent-control-triangular-exchange-only-spin-qubit]]
+- [[broz-2026-demonstration-always-on-exchange-only-spin-qubit]]
 - [[doherty-2013-qubit-gates-resonant]]
 - [[ruskov-2021-modulated-longitudinal-gates]]
 - [[landig-2018-coherent-spin-photon]]
@@ -159,12 +169,13 @@ The second route is motivated by the experimental RX spin-photon strong-coupling
 - [[rx-qubit]]
 - [[loss-divincenzo-qubit]]
 - [[spin-qubit]]
+- [[silicon-spin-qubit]]
 
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| Single-qubit Clifford fidelity | **99.86%** | Blind RB in triangular Si/SiGe AEON demonstration | [Broz et al. 2025](https://arxiv.org/abs/2508.01033) |
+| Single-qubit Clifford fidelity | **99.86%** | Blind RB in the peer-reviewed triangular Si/SiGe AEON demonstration | [Broz et al. 2026](https://doi.org/10.1038/s41467-026-70943-w) |
 | Single-qubit control modality | Simultaneous DC exchange pulses | No microwave drive required in the AEON control picture | [Shim & Tahan 2016](https://doi.org/10.1103/PhysRevB.93.121410) |
 | Charge-noise protection | $\partial\omega_q/\partial\varepsilon = \partial\omega_q/\partial\varepsilon_M = 0$ | First-order insensitivity in the two logical detuning coordinates | [Shim & Tahan 2016](https://doi.org/10.1103/PhysRevB.93.121410) |
 | 2Q entangling gate | Single-pulse CPHASE/CZ proposed | Theory only, not yet demonstrated in AEON hardware | [Shim & Tahan 2016](https://doi.org/10.1103/PhysRevB.93.121410) |
