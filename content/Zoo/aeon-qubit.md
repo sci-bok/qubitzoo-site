@@ -3,7 +3,7 @@ title: Always-on Exchange Only (AEON)
 entry_type: qubit
 technology_family: Semiconducting
 status: active
-figure_reviewed: false
+figure_reviewed: true
 seed_id: '11'
 seed_source: qubitzoo-airtable
 first_proposed_year: 2016
@@ -15,10 +15,10 @@ keywords:
 - exchange-only
 - sweet-spot
 - triple-quantum-dot
-last_updated: '2026-07-07'
+last_updated: '2026-07-08'
 generated_by: seed-ingest-v1
 extracted_by: airtable-seed
-verified_by: scibok-audit-2026-07-07
+verified_by: scibok-audit-2026-07-08
 ---
 
 ## Figure
