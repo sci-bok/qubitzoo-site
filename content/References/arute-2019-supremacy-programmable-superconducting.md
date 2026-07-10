@@ -16,6 +16,7 @@ This paper presents work on quantum supremacy using a programmable superconducti
 
 ## Links
 - **Journal:** [Nature](https://doi.org/10.1038/s41586-019-1666-5)
+- **arXiv:** [1910.11333](https://arxiv.org/abs/1910.11333)
 
 ## Zoo Links
 - [[gmon]]

@@ -11,12 +11,13 @@ keywords:
 - tunable coupler
 - google
 - superconducting qubit
-- frequency-tunable
+- xmon
+- tunable inductive coupling
 influence_score: 0.70
-last_updated: '2026-03-21'
+last_updated: '2026-07-10'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-manual-2026-03-21
+verified_by: scibok-audit-2026-07-10
 ---
 
 ## Figure
@@ -25,80 +26,83 @@ verified_by: scibok-manual-2026-03-21
 
 ## Description
 
-The Gmon is a superconducting qubit architecture developed at Google that adds a **tunable coupler** between neighboring Xmon-style qubits. Introduced by Y. Chen et al. (2014), the "g" in Gmon refers to the tunable coupling strength $g$ between qubits.
+The Gmon is Google's 2014 extension of the Xmon: a high-coherence Xmon-style transmon paired with a **flux-tunable inductive coupling element** between neighboring qubits. Introduced by Chen et al. (2014), the name emphasizes the tunable interaction strength $g$ rather than a fundamentally new qubit Hamiltonian.
 
-The tunable coupler is itself a frequency-tunable transmon-like element placed between two computational qubits. By adjusting its frequency via a flux line, the effective qubit-qubit coupling can be tuned from a finite positive value through zero to a finite negative value. This enables:
+Historically, Gmon is best treated as the original Google **qubit-plus-tunable-coupling architecture**, not as the umbrella entry for every later superconducting tunable coupler. The original device uses a grounded Josephson-element coupler that tunes the effective mutual inductive interaction between two Xmons through positive, near-zero, and negative values. That enables three things at once:
 
-1. **Fast two-qubit gates**: bringing qubits into resonance with strong coupling for $i$SWAP-like gates in ~10–20 ns.
-2. **Idle isolation**: parking the coupler to cancel residual $ZZ$ coupling, suppressing always-on errors.
-3. **CZ gates**: diabatic flux pulses that accumulate a conditional phase.
+1. **Fast exchange-type two-qubit interactions** when the coupling is turned on.
+2. **Idle isolation** by tuning the interaction near zero instead of leaving a large always-on coupling.
+3. **A clean scaling path** from coherent single qubits to processor-scale Google chips such as Sycamore and Willow.
 
-The Gmon/tunable-coupler architecture was used in Google's Sycamore (2019) and Willow (2024) processors and has become the dominant paradigm for frequency-tunable superconducting qubit arrays.
+Later superconducting processors often describe similar hardware with a more general explicit "tunable coupler" mode. That broader story belongs primarily in [[tunable-coupler]]; Gmon is the historically specific Google lineage that helped establish it.
 
 ## Hamiltonian
 
-The three-body system (qubit 1 — coupler — qubit 2):
+Because the original Gmon is most naturally viewed as **two Xmon/transmon qubits with a flux-controlled interaction**, a useful reduced model is
 
-$$H = \sum_{i=1,2,c} \omega_i a_i^\dagger a_i + \frac{\alpha_i}{2} a_i^\dagger a_i^\dagger a_i a_i + \sum_{i<j} g_{ij}(a_i^\dagger a_j + a_i a_j^\dagger)$$
+$$H \approx \sum_{i=1,2}\left(\omega_i a_i^\dagger a_i + \frac{\alpha_i}{2}a_i^{\dagger 2}a_i^2\right) + g(\Phi_c)\,(a_1^\dagger a_2 + a_1 a_2^\dagger) + \zeta(\Phi_c)\,a_1^\dagger a_1 a_2^\dagger a_2,$$
 
-The effective qubit-qubit coupling after adiabatically eliminating the coupler:
+where $\Phi_c$ is the coupler flux bias, $g(\Phi_c)$ is the tunable exchange interaction, and $\zeta(\Phi_c)$ is the residual cross-Kerr/$ZZ$ term. The key physics is that the coupler changes the **effective mutual inductance**, allowing $g(\Phi_c)$ to pass through zero at the idle point while preserving Xmon-like single-qubit coherence.
 
-$$g_\text{eff} = g_{12} - \frac{g_{1c}\,g_{2c}}{\Delta_c}$$
-
-where $\Delta_c = \omega_c - (\omega_1 + \omega_2)/2$ is the coupler detuning. Setting $g_{12} = g_{1c}g_{2c}/\Delta_c$ achieves zero effective coupling (idle point).
+A more generic three-mode Hamiltonian with an explicit coupler oscillator is often appropriate for later [[tunable-coupler]] devices, but treating that as the defining Gmon picture overstates how qubit-like the original grounded coupler is.
 
 ## Motivation
 
-Fixed-coupling architectures suffer from always-on $ZZ$ interaction, causing idle errors and frequency-crowding constraints. The tunable coupler solves both: it allows fast gates when coupling is "on" and near-perfect isolation when "off," dramatically improving circuit fidelity for multi-qubit algorithms.
+Fixed capacitive coupling in early Xmon-style arrays created spectral crowding and unwanted idle interaction. Gmon moved the aggressive tunability into a dedicated coupling element instead of paying the full coherence penalty on the computational qubits themselves. That architectural split, coherence-friendly data qubits plus a sacrificial flux-sensitive coupler, became one of the central design ideas in modern superconducting processors.
 
 ## Experimental Status
 
-**First demonstration — Y. Chen et al. (2014):**
-- Demonstrated tunable coupling between two Xmon-style qubits via a flux-tunable coupler element.
-- Achieved two-qubit gate fidelities suitable for quantum error correction exploration.
-- Showed ON/OFF switching of effective coupling by tuning the coupler frequency.
+**Original Gmon demonstration — Chen et al. (2014):**
+- Introduced the Google Gmon architecture: two Xmon-like qubits linked by a grounded tunable inductive coupler.
+- Demonstrated coupling tunable from essentially off to about 30 MHz, with switching on ~10 ns timescales.
+- Reported an excitation-swap interaction time of about 12 ns while retaining high-coherence Xmon behavior.
 
 **Sycamore processor — Arute et al. (2019):**
-- 53-qubit processor using Gmon-style tunable couplers for 86 qubit pairs.
-- Median CZ fidelity 99.4% via randomized benchmarking.
-- Demonstrated quantum computational advantage.
+- Scaled the Google tunable-coupling lineage to a 53-qubit processor with 86 couplers.
+- Achieved processor-level average CZ fidelity of about 99.4%.
+- Established the architecture as viable for classically hard random-circuit sampling.
 
-**Willow processor — Google Quantum AI (2025):**
-- Improved to 99.7–99.85% median CZ fidelity.
-- Enabled below-threshold surface code operation with 105 qubits.
+**Willow / below-threshold surface-code era — Google Quantum AI and Collaborators (2025):**
+- Pushed processor-level median CZ fidelity into the roughly 99.7–99.85% range.
+- Enabled below-threshold surface-code operation on a 105-qubit superconducting processor.
+- A targeted 2024-2026 search did not surface a newer peer-reviewed **Gmon-specific** benchmark that supersedes Willow; more recent coupler innovations are better treated under [[tunable-coupler]].
 
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| 2Q gate fidelity | 99.5–99.9% | CZ or $i$SWAP | [Y. Chen et al. 2014](https://doi.org/10.1103/PhysRevLett.113.220502) |
-| 2Q gate time | 10–30 ns | Fast parametric gates | — |
-| Residual $ZZ$ (off) | <10 kHz | At idle point | — |
-| 1Q gate fidelity | 99.9%+ | Same as Xmon | [Y. Chen et al. 2014](https://doi.org/10.1103/PhysRevLett.113.220502) |
-| Operating temperature | 10–20 mK | Dilution refrigerator | — |
+| Tunable coupling range | 0 to ~30 MHz | Original Gmon two-Xmon demo | [Chen et al. 2014](https://doi.org/10.1103/PhysRevLett.113.220502) |
+| Coupling switch timescale | ~10 ns | Flux control of inductive coupler | [Chen et al. 2014](https://doi.org/10.1103/PhysRevLett.113.220502) |
+| Excitation-swap interaction time | ~12 ns | Original fast interaction benchmark | [Chen et al. 2014](https://doi.org/10.1103/PhysRevLett.113.220502) |
+| Processor-scale CZ fidelity (Sycamore) | ~99.4% | Average CZ fidelity across the 53-qubit processor | [Arute et al. 2019](https://doi.org/10.1038/s41586-019-1666-5) |
+| Processor-scale CZ fidelity (Willow) | 99.7–99.85% | Median/fleet-level Willow-era performance cited in below-threshold work | [Google Quantum AI and Collaborators 2025](https://doi.org/10.1038/s41586-024-08449-y) |
+| Operating temperature | 10–20 mK | Dilution refrigerator environment | — |
 
 ## References
 
 ### Original proposal and demonstration
-- Y. Chen et al., "Qubit Architecture with High Coherence and Fast Tunable Coupling," [Phys. Rev. Lett. 113, 220502 (2014)](https://doi.org/10.1103/PhysRevLett.113.220502)
+- Y. Chen et al., "Qubit Architecture with High Coherence and Fast Tunable Coupling," [Phys. Rev. Lett. 113, 220502 (2014)](https://doi.org/10.1103/PhysRevLett.113.220502) — [arXiv:1402.7367](https://arxiv.org/abs/1402.7367)
 
 ### Key experimental milestones
-- F. Arute et al., "Quantum supremacy using a programmable superconducting processor," [Nature 574, 505 (2019)](https://doi.org/10.1038/s41586-019-1666-5)
-- Google Quantum AI, "Quantum error correction below the surface code threshold," [Nature 638, 920 (2025)](https://doi.org/10.1038/s41586-024-08449-y)
+- F. Arute et al., "Quantum supremacy using a programmable superconducting processor," [Nature 574, 505 (2019)](https://doi.org/10.1038/s41586-019-1666-5) — [arXiv:1910.11333](https://arxiv.org/abs/1910.11333)
+- Google Quantum AI and Collaborators, "Quantum error correction below the surface code threshold," [Nature 638, 920 (2025)](https://doi.org/10.1038/s41586-024-08449-y) — [arXiv:2408.13687](https://arxiv.org/abs/2408.13687)
 
 ## Linked Papers
 
 - [[chen-2014-gmon]]
+- [[arute-2019-supremacy-programmable-superconducting]]
+- [[acharya-2025-error-correction-below]]
 
 ## Evergreen context
 
-- [[charge-noise-sweet-spot]] — the architectural trick is to keep the computational qubits transmon-like and coherence-friendly while moving most of the aggressive tunability into a separate coupling element.
-- [[josephson-junction-as-nonlinear-element]] — both the qubits and the coupler rely on Josephson nonlinearity, but the Gmon repurposes it from single-qubit anharmonicity into programmable interaction engineering.
-- [[threshold-theorem]] — Gmon is important because suppressing idle $ZZ$ while preserving fast two-qubit gates is exactly the kind of error-budget shaping needed before large surface-code patches become viable.
+- [[charge-noise-sweet-spot]] — the architectural trick is to keep the computational qubits transmon-like and coherence-friendly while localizing most of the flux sensitivity in the coupling element.
+- [[josephson-junction-as-nonlinear-element]] — the Gmon coupler uses Josephson nonlinearity to make the effective inductive interaction programmable rather than fixed.
+- [[threshold-theorem]] — Gmon mattered because suppressing idle interaction while preserving fast entangling gates is exactly the kind of error-budget engineering needed before surface-code scaling works in practice.
 
 ## Related Entries
 
-- [[xmon]] — predecessor qubit architecture without tunable coupling
+- [[xmon]] — the underlying Google transmon geometry that Gmon extends
 - [[transmon]] — parent qubit family
-- [[tunable-coupler]] — the coupling element technology in detail
-- [[circuit-qed]] — measurement and readout framework
+- [[tunable-coupler]] — the broader superconducting coupler umbrella entry
+- [[surface-code-logical-qubit]] — why Willow-era Gmon descendants matter architecturally
+- [[circuit-qed]] — shared superconducting control and readout stack
