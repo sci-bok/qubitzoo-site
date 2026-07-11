@@ -6,16 +6,17 @@ journal: Nature
 doi: 10.1038/s41586-020-2687-9
 arxiv_id: '1907.02937'
 type: reference
-generated_by: scibok-curation
-last_updated: '2026-03-15'
+generated_by: scibok-manual-audit
+last_updated: '2026-07-11'
 ---
-Introduces and demonstrates the blochnium (quasicharge qubit): a single Josephson junction shunted by a large superinductance, operated in the regime where the charge dispersion is exponentially flat. The qubit behaves as a "dual" of the transmon — protected against flux noise rather than charge noise.
+Introduces and experimentally demonstrates blochnium, a quasicharge superconducting qubit formed by shunting a single small Josephson junction with a suspended Josephson-chain superinductance. The key signature is that the $|0\rangle \rightarrow |1\rangle$ transition becomes only weakly flux dispersive while higher transitions recover strong flux sensitivity, matching the quasicharge dual mapping to the transmon.
 
 ## Key Results
-- Single junction + superinductance (granular aluminum, ~1 μH)
-- Exponentially suppressed flux dispersion (dual of transmon's charge insensitivity)
-- Coherence limited by dielectric loss, not flux noise
-- T₁ ~ 2 μs, T₂ ~ 1 μs (first demonstration)
+- Demonstrates blochnium using a suspended Josephson-chain superinductance and a single small junction.
+- Fits the spectrum with $E_J/h = 4.70\,\mathrm{GHz}$, $E_C/h = 7.07\,\mathrm{GHz}$, and $E_L/h = 66.5\,\mathrm{MHz}$.
+- Reports about $100\,\mathrm{MHz}$ of flux modulation for the $|0\rangle \rightarrow |1\rangle$ transition and a persistent current of about $7\,\mathrm{pA}$.
+- Reports initial coherence of $T_1 \approx 10\,\mu\mathrm{s}$ and spin-echo coherence $T_2 \approx 20\,\mu\mathrm{s}$.
+- Realizes a hyperinductance of about $2.5\,\mu\mathrm{H}$ with characteristic impedance above $200\,\mathrm{k}\Omega$ around $13\,\mathrm{GHz}$.
 
 ## Links
 - **Journal:** [Nature](https://doi.org/10.1038/s41586-020-2687-9)
@@ -24,3 +25,4 @@ Introduces and demonstrates the blochnium (quasicharge qubit): a single Josephso
 ## Zoo Links
 - [[blochnium]]
 - [[fluxonium]]
+- [[transmon]]
