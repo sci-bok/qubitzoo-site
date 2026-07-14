@@ -14,10 +14,10 @@ keywords:
 - dual of transmon
 - fluxonium limit
 influence_score: 0.70
-last_updated: '2026-07-13'
+last_updated: '2026-07-14'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-manual-2026-07-13
+verified_by: scibok-manual-2026-07-14
 ---
 
 ## Figure
