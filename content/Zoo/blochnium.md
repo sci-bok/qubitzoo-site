@@ -3,7 +3,7 @@ title: Blochnium
 entry_type: qubit
 technology_family: Superconducting
 status: demonstrated
-figure_reviewed: false
+figure_reviewed: true
 first_proposed_year: 2020
 first_demonstrated_year: 2020
 keywords:
@@ -14,10 +14,10 @@ keywords:
 - dual of transmon
 - fluxonium limit
 influence_score: 0.70
-last_updated: '2026-07-14'
+last_updated: '2026-07-15'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-manual-2026-07-14
+verified_by: scibok-manual-2026-07-15
 ---
 
 ## Figure
