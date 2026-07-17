@@ -3,23 +3,22 @@ title: Time-Bin Photonic Qubit
 entry_type: qubit
 technology_family: Photonic
 status: demonstrated
-figure_reviewed: true
+figure_reviewed: false
 first_proposed_year: 1999
 first_demonstrated_year: 1999
 keywords:
 - time-bin
 - photonic qubit
 - optical fiber
-- quantum key distribution
 - QKD
 - single photon
 - interferometric
 - quantum network
 influence_score: 0.70
-last_updated: '2026-06-08'
+last_updated: '2026-07-17'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-manual-2026-03-21
+verified_by: scibok-manual-2026-07-17
 ---
 
 ## Figure
@@ -28,75 +27,89 @@ verified_by: scibok-manual-2026-03-21
 
 ## Description
 
-The time-bin qubit encodes quantum information in the temporal degree of freedom of a single photon: $|0\rangle \equiv |\text{early}\rangle$ and $|1\rangle \equiv |\text{late}\rangle$, corresponding to two well-separated time slots (typically $\Delta t \sim 1{-}5\,\text{ns}$) within a single optical pulse window. Superposition states $\alpha|\text{early}\rangle + \beta|\text{late}\rangle$ are prepared by passing a single photon through an unbalanced Mach-Zehnder interferometer, where the path-length difference defines the time-bin separation.
+A time-bin photonic qubit encodes quantum information in two well-separated temporal wave-packet modes of a single photon, $|0\rangle \equiv |\mathrm{early}\rangle$ and $|1\rangle \equiv |\mathrm{late}\rangle$. A general qubit state is therefore
 
-Time-bin encoding is the natural choice for fiber-based quantum communication because it is inherently robust against polarization-mode dispersion and birefringence fluctuations in optical fibers — the dominant decoherence mechanisms that plague polarization-encoded photonic qubits over long distances. The two time bins experience identical polarization transformations in the fiber (assuming slow polarization drift compared to $\Delta t$), making the encoding self-compensating.
+$$|\psi\rangle = \alpha|\mathrm{early}\rangle + \beta e^{i\phi}|\mathrm{late}\rangle,$$
 
-Measurement in the computational basis requires only time-resolved single-photon detection, while measurement in the superposition basis uses a second unbalanced interferometer matched to the preparation interferometer. This encoding was introduced by Brendel et al. (1999) and has become the standard for long-distance quantum key distribution and quantum teleportation experiments over deployed fiber networks.
+with the relative phase set by the preparation interferometer and optical path stability. In practice, the early and late bins are created with a matched unbalanced interferometer whose delay defines the bin separation.
+
+Time-bin encoding is a natural choice for fiber quantum networking because both logical basis states propagate in the same spatial and polarization mode of the fiber, making the qubit far less sensitive to birefringence drift and polarization-mode mismatch than polarization encoding. It is not perfectly immune to noise, however: interferometer phase drift, chromatic dispersion, detector timing jitter, and photon loss still limit long-distance performance.
+
+Computational-basis measurement requires only time-resolved single-photon detection. Superposition-basis measurement uses a second unbalanced interferometer with the same delay, where the early photon taking the long arm interferes with the late photon taking the short arm in the central arrival time slot. This encoding was introduced experimentally by Brendel et al. (1999) and remains a standard workhorse for fiber QKD, teleportation, and heterogeneous quantum-network interfaces.
 
 ## Hamiltonian
 
-The time-bin qubit is described by the single-photon state in a two-mode temporal basis:
+There is no single hardware-specific Hamiltonian for the encoding itself. A representative description treats the qubit as a single-photon state across two orthogonal temporal modes,
 
-$$|\psi\rangle = \alpha \hat{a}_E^\dagger|0\rangle + \beta \hat{a}_L^\dagger|0\rangle$$
+$$|\psi\rangle = \left(\alpha \hat{a}_E^\dagger + \beta e^{i\phi} \hat{a}_L^\dagger\right)|\mathrm{vac}\rangle,$$
 
-where $\hat{a}_E^\dagger$ and $\hat{a}_L^\dagger$ create a photon in the early and late time bins, respectively.
+where $\hat{a}_E^\dagger$ and $\hat{a}_L^\dagger$ create photons in the early and late wave packets.
 
-The unbalanced Mach-Zehnder interferometer implements the beam-splitter transformation:
+Free propagation over the bin separation $\Delta t$ adds the relative optical phase $e^{-i\omega \Delta t}$. The preparation and analysis interferometers implement basis rotations between the time-bin basis and phase-sensitive superposition bases. For an analysis interferometer phase $\phi_A$, postselection on the central arrival time slot measures in the basis
 
-$$U_{\text{MZI}} = \begin{pmatrix} \cos\theta & e^{i\phi}\sin\theta \\ -e^{-i\phi}\sin\theta & \cos\theta \end{pmatrix}$$
+$$|\pm_{\phi_A}\rangle = \frac{1}{\sqrt{2}}\left(|E\rangle \pm e^{i\phi_A}|L\rangle\right).$$
 
-where $\theta$ is set by the beam-splitter ratio and $\phi$ is the relative phase between the two arms. A balanced beam splitter ($\theta = \pi/4$) with phase $\phi$ prepares:
-
-$$|\psi\rangle = \frac{1}{\sqrt{2}}(|\text{early}\rangle + e^{i\phi}|\text{late}\rangle)$$
+So the essential physics is better captured by temporal-mode creation operators plus interferometric basis change than by a standalone static two-level Hamiltonian.
 
 ## Motivation
 
-Polarization qubits suffer rapid decoherence in optical fibers due to birefringence, polarization-mode dispersion, and mechanical stress — effects that fluctuate unpredictably over km-scale links. Time-bin encoding eliminates these issues because both temporal modes traverse the same fiber path and experience identical polarization evolution. This makes time-bin qubits the preferred encoding for deployed fiber-based quantum networks, QKD systems, and long-distance quantum teleportation, where stability over hours to days is required without active polarization compensation.
+Polarization qubits suffer from birefringence drift, polarization-mode dispersion, and mechanical stress in deployed fiber. Time-bin encoding avoids the need to preserve a fixed polarization reference because both logical states travel through the same spatial channel at different times. That makes time-bin qubits especially attractive for long-haul fiber links, field-deployed QKD, and hybrid quantum-network experiments where stability over hours matters more than compact on-chip gate geometry.
 
 ## Experimental Status
 
-**First demonstration — Brendel et al. (1999):**
-- Introduced time-bin encoding and demonstrated pulsed energy-time entangled twin-photon source
-- Franson interferometry using time-bin entangled photon pairs demonstrated violation of Bell inequalities
+**First demonstration, Brendel et al. (1999):**
+- Introduced pulsed time-bin entanglement with unbalanced interferometers matched to early/late temporal modes
+- Established the basic preparation-and-analysis architecture still used in fiber time-bin experiments
 
-**Fiber teleportation — Marcikic et al. (2004):**
-- Distribution of time-bin entangled qubits over 50 km of optical fiber at telecom wavelengths
-- Established viability of time-bin encoding for long-distance quantum communication
+**Long-fiber entanglement distribution, Marcikic et al. (2004):**
+- Distributed time-bin entangled qubits over 50 km of optical fiber at telecom wavelengths
+- Demonstrated high-visibility two-photon interference after long fiber transmission
 
-**Long-distance distribution — Takesue et al. (2015):**
-- Quantum teleportation over 100 km of fiber using highly efficient superconducting nanowire single-photon detectors
-- Time-bin encoding at 1550 nm telecom wavelength
+**100 km fiber teleportation, Takesue et al. (2015):**
+- Demonstrated quantum teleportation over 100 km of fiber using superconducting nanowire single-photon detectors
+- Confirmed time-bin encoding as a practical long-distance telecom-fiber qubit platform
 
-**Commercial deployment:**
-- Time-bin encoding adopted in commercial QKD systems (ID Quantique, Toshiba) operating over 100+ km fiber links
-- Compatible with integrated photonic circuits: on-chip time-bin sources and interferometers demonstrated in silicon photonics
+**Integrated telecom source, Thiel et al. (2024):**
+- Demonstrated telecom-wavelength time-bin entanglement from a hybrid photonic integrated circuit
+- Reached Bell-state fidelity and concurrence near 96%, showing credible integrated-hardware readiness
+
+**Heterogeneous network interface, Iuliano et al. (2024):**
+- Teleported a memory-compatible 795 nm time-bin photonic qubit onto a solid-state NV-center network node with real-time feedforward
+- Showed that time-bin qubits can act as practical interface carriers between unlike quantum-network hardware
+
+**Commercial and systems deployment:**
+- Time-bin encoding remains standard in long-distance fiber QKD and network-testbed architectures
+- It is compatible with integrated photonics, quantum frequency conversion, and memory-compatible networking stacks
 
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| Time-bin separation | 1–5 ns | Set by interferometer path difference | [Brendel et al. 1999](https://doi.org/10.1103/PhysRevLett.82.2594) |
-| Fiber transmission distance | >100 km | At telecom wavelengths (1550 nm) | [Takesue et al. 2015](https://doi.org/10.1364/OPTICA.2.000832) |
-| State preparation fidelity | >99% | Interferometric visibility | [Marcikic et al. 2004](https://doi.org/10.1103/PhysRevLett.93.180502) |
-| Bell-state visibility | >95% | Franson interferometry | [Brendel et al. 1999](https://doi.org/10.1103/PhysRevLett.82.2594) |
-| Photon loss rate | ~0.2 dB/km | Standard telecom fiber at 1550 nm | — |
-| Detector timing jitter | <100 ps | Superconducting nanowire SPDs | — |
-| Operating temperature | 300 K (fiber) / 1 K (detectors) | SNSPDs require cryogenics | — |
+| Long-fiber entanglement distribution | 50 km | Time-bin entangled qubits distributed through telecom fiber | [Marcikic et al. 2004](https://doi.org/10.1103/PhysRevLett.93.180502) |
+| Two-photon interference visibility | >93% | After 50 km fiber distribution | [Marcikic et al. 2004](https://doi.org/10.1103/PhysRevLett.93.180502) |
+| Quantum teleportation distance | 100 km | Telecom-fiber teleportation with SNSPDs | [Takesue et al. 2015](https://doi.org/10.1364/OPTICA.2.000832) |
+| Integrated Bell-state fidelity | $96^{+2}_{-5}\%$ | Hybrid photonic integrated circuit at telecom wavelengths | [Thiel et al. 2024](https://doi.org/10.1038/s41598-024-60758-4) |
+| Integrated concurrence | $96^{+3}_{-8}\%$ | Same integrated time-bin entangled source | [Thiel et al. 2024](https://doi.org/10.1038/s41598-024-60758-4) |
+| Heterogeneous teleportation target | 795 nm time-bin qubit $\rightarrow$ NV-center spin node | Real-time feedforward; fidelity reported above the classical bound | [Iuliano et al. 2024](https://doi.org/10.1038/s41534-024-00910-0) |
 
 ## References
 
-### Original proposal
-- J. Brendel et al., "Pulsed Energy-Time Entangled Twin-Photon Source for Quantum Communication," [Phys. Rev. Lett. 82, 2594 (1999)](https://doi.org/10.1103/PhysRevLett.82.2594)
+### Foundational and long-distance milestones
+- J. Brendel et al., "Pulsed Energy-Time Entangled Twin-Photon Source for Quantum Communication," [Phys. Rev. Lett. 82, 2594 (1999)](https://doi.org/10.1103/PhysRevLett.82.2594), [arXiv:quant-ph/9809034](https://arxiv.org/abs/quant-ph/9809034)
+- I. Marcikic et al., "Distribution of Time-Bin Entangled Qubits over 50 km of Optical Fiber," [Phys. Rev. Lett. 93, 180502 (2004)](https://doi.org/10.1103/PhysRevLett.93.180502), [arXiv:quant-ph/0404124](https://arxiv.org/abs/quant-ph/0404124)
+- H. Takesue et al., "Quantum teleportation over 100 km of fiber using highly efficient superconducting nanowire single-photon detectors," [Optica 2, 832 (2015)](https://doi.org/10.1364/OPTICA.2.000832), [arXiv:1510.00476](https://arxiv.org/abs/1510.00476)
 
-### Experimental demonstrations
-- I. Marcikic et al., "Distribution of Time-Bin Entangled Qubits over 50 km of Optical Fiber," [Phys. Rev. Lett. 93, 180502 (2004)](https://doi.org/10.1103/PhysRevLett.93.180502)
-- H. Takesue et al., "Quantum teleportation over 100 km of fiber using highly efficient superconducting nanowire single-photon detectors," [Optica 2, 832 (2015)](https://doi.org/10.1364/OPTICA.2.000832)
+### Recent updates
+- H. Thiel et al., "Time-bin entanglement at telecom wavelengths from a hybrid photonic integrated circuit," [Sci. Rep. 14, 9990 (2024)](https://doi.org/10.1038/s41598-024-60758-4), [arXiv:2309.00926](https://arxiv.org/abs/2309.00926)
+- M. Iuliano et al., "Qubit teleportation between a memory-compatible photonic time-bin qubit and a solid-state quantum network node," [npj Quantum Information 10, 107 (2024)](https://doi.org/10.1038/s41534-024-00910-0), [arXiv:2403.18581](https://arxiv.org/abs/2403.18581)
 
 ## Linked Papers
 
 - [[brendel-1999-time-bin-entanglement]]
 - [[marcikic-2004-teleportation-fiber]]
+- [[takesue-2015-teleportation-100-fiber]]
+- [[thiel-2024-time-bin-integrated-telecom]]
+- [[iuliano-2024-time-bin-teleportation-node]]
 
 ## Evergreen context
 
@@ -111,3 +124,4 @@ Polarization qubits suffer rapid decoherence in optical fibers due to birefringe
 - [[dual-rail-photonic-qubit]] — alternative photonic encoding using spatial modes rather than temporal modes
 - [[photonic-cluster-state-mbqc-qubit]] — measurement-based photonic architecture that can consume time-bin encoded photons as cluster-state qubits
 - [[fusion-based-photonic-qubit]] — photonic architecture compatible with time-bin encoding when multiplexing and loss management matter more than on-chip rail geometry
+- [[quantum-transduction]] — frequency-conversion and heterogeneous-network context for interfacing time-bin photons with non-telecom quantum nodes

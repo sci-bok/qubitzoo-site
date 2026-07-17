@@ -24,6 +24,7 @@ Introduces the time-bin encoding scheme for photonic qubits, where quantum infor
 
 ## Links
 - **Journal:** [Physical Review Letters](https://doi.org/10.1103/PhysRevLett.82.2594)
+- **arXiv:** [quant-ph/9809034](https://arxiv.org/abs/quant-ph/9809034)
 
 ## Zoo Links
 - [[time-bin-photonic-qubit]]
