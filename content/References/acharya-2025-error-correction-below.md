@@ -16,7 +16,6 @@ This paper presents work on quantum error correction below the surface code thre
 
 ## Links
 - **Journal:** [Nature](https://doi.org/10.1038/s41586-024-08449-y)
-- **arXiv:** [2408.13687](https://arxiv.org/abs/2408.13687)
 
 ## Zoo Links
 - [[gmon]]

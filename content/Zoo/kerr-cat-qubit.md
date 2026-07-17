@@ -112,6 +112,7 @@ Standard bosonic codes (GKP, binomial) require complex syndrome extraction. The 
 ## Evergreen context
 
 - [[bosonic-code-hierarchy]] — where the Kerr-cat sits among cat, GKP, and binomial bosonic encodings
+- [[josephson-junction-as-nonlinear-element]] — the SNAIL / junction nonlinearity is the hardware ingredient that turns the abstract cat manifold into a concrete superconducting oscillator
 - [[noise-bias-and-asymmetric-error-channels]] — why exponentially suppressed bit flips change the error-correction story
 - [[erasure-error-vs-pauli-error]] — useful contrast with architectures that reduce overhead by flagged loss rather than Pauli bias
 

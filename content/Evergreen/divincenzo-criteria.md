@@ -27,7 +27,24 @@ Five requirements for a physical system to implement quantum computation, articu
 
 ## Significance
 
-These criteria provide a universal scorecard for comparing qubit implementations. No platform perfectly satisfies all criteria — the field advances by pushing the boundaries on each.
+These criteria provide a universal scorecard for comparing qubit implementations. No platform perfectly satisfies all criteria, and many of the most interesting Zoo entries are really different ways of trading one criterion against another.
+
+## Boundary with [[quantum-hardware]]
+
+Use [[quantum-hardware]] to answer **what kind of machine layer or modality** you are looking at. Use this note to answer **whether that machine can actually function as a scalable computer or network node**.
+
+| If the question is... | Start here? | Why |
+|---|---|---|
+| What family of qubit or infrastructure is this? | No, go to [[quantum-hardware]] | That is a taxonomy / routing question. |
+| Why does a networking-oriented platform care so much about photon quality or conversion loss? | Yes | Criteria 6 and 7 are the right lens. |
+| Why does a control-stack note belong in the Zoo even though it is not itself a qubit? | Yes | Initialization, gates, measurement, and feedback only count if the surrounding hardware can deliver them. |
+| Which requirement is this platform currently failing or paying most dearly for? | Yes | That tradeoff view is the real value of this note. |
+
+## How to use the criteria in the Zoo
+
+- Criteria 1–5 are the default lens for local quantum processors.
+- Criteria 6–7 become decisive for [[nv-center-qubit]], [[siv-color-center-qubit]], [[t-center-qubit]], [[quantum-transduction]], and modular photonic or network-facing architectures.
+- The criteria are most useful after the modality is already clear. First route through the relevant family or infrastructure note, then come here to judge whether the design is merely interesting physics or a credible computing stack.
 
 ## References
 

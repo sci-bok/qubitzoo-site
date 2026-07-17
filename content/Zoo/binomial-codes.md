@@ -102,6 +102,7 @@ For the simplest single-loss-correcting code, the parity operator $(-1)^{\hat{n}
 ## Evergreen context
 
 - [[bosonic-code-hierarchy]] — the comparison class for cat and GKP encodings
+- [[dispersive-readout-mechanism]] — parity-based syndrome extraction in cavity-transmon realizations is the concrete readout layer that makes the code practical
 - [[erasure-error-vs-pauli-error]] — useful when distinguishing loss-dominated oscillator channels from Pauli abstractions
 
 ## Related Entries

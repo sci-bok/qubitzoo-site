@@ -3,7 +3,7 @@ title: Super-Semi MOC
 type: moc
 technology_family: Super-Semi
 note_count: 5
-last_updated: '2026-07-03'
+last_updated: '2026-07-17'
 generated_by: pipeline-moc-v1
 ---
 
@@ -83,24 +83,65 @@ Curated map of Zoo entries in the **Super-Semi** family.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Conceptual anchors
 
 - [[josephson-junction-as-nonlinear-element]] is the shared superconducting backbone, even when the weak link is semiconductor-defined rather than oxide-barrier-defined.
 - [[spin-orbit-coupling-for-qubit-control]] is the key separator between purely gate-tunable Josephson devices and spin-active Andreev hybrids.
 - [[charge-noise-sweet-spot]] is the right lens for comparing how much electrical tunability each architecture gains without paying too much dephasing cost.
+- [[noise-bias-and-asymmetric-error-channels]] is the extra routing note for the protection-first branch, where the claim is not just "higher coherence" but a deliberately skewed error channel.
 
-## Hybrid control spectrum
+## Curated synthesis
 
-- `gatemon` and `gatemonium` use the semiconductor mainly to reshape the Josephson element: the qubit is still read most naturally as a superconducting circuit whose nonlinearity has become gate tunable.
-- `andreev-spin-qubit` and `ferbo-qubit` move the semiconductor into the qubit degree of freedom itself, so parity stability, spin-orbit structure, and Andreev-level engineering matter as much as ordinary circuit-QED coherence numbers.
-- `all-semiconductor-superconducting-qubit` is the fabrication-endpoint branch, asking whether the whole superconducting stack can inherit semiconductor-style integration advantages rather than just a gate-tunable weak link.
+The cleanest way to read this family is to ask **where the semiconductor is doing the conceptual work**. The same InAs/Al or group-IV vocabulary can mean three very different things.
 
-## Family structure
+1. **Semiconductor as a tunable Josephson knob**
+   - [[gatemon]] is the minimal case: transmon logic survives, but the weak link makes $E_J$ electrically tunable.
+   - [[gatemonium]] is the protected-circuit extension of the same move: the weak link still tunes the Josephson element, but now inside a fluxonium-style inductive circuit where gate control moves the device between different protection regimes.
+   - Read this branch primarily through [[josephson-junction-as-nonlinear-element]] and [[charge-noise-sweet-spot]], not through spin language.
 
-- `gatemon` and `gatemonium` are superconducting-circuit descendants that replace conventional tunnel junction elements with gate-tunable semiconductor weak links.
-- `andreev-spin-qubit` and `ferbo-qubit` lean harder on Andreev-bound-state physics, using the semiconductor not just as a tunable junction but as part of the qubit degree of freedom itself.
-- `all-semiconductor-superconducting-qubit` is best read as a materials-and-fabrication endpoint for this family, not yet the central coherence benchmark.
-- For the non-hybrid dot and donor branch of the same broader materials ecosystem, see [[semiconducting-moc]].
+2. **Semiconductor as part of the qubit subspace itself**
+   - [[andreev-spin-qubit]] uses spin-split Andreev levels as the qubit degree of freedom, so spin-orbit physics and parity stability are the central story rather than side constraints.
+   - [[ferbo-qubit]] pushes further into the protection-first regime: the Andreev sector is part of the mechanism that suppresses relaxation before error correction, which is why it belongs adjacent to [[noise-bias-and-asymmetric-error-channels]] as well as to superconducting protected-circuit notes.
+   - This branch should feel closer to "engineered weak-link quantum states" than to ordinary tunable transmons.
+
+3. **Semiconductor as the full materials stack**
+   - [[all-semiconductor-superconducting-qubit]] is the fabrication-endpoint branch. Its main claim is not a new control Hamiltonian but the possibility of moving the entire superconducting circuit, junctions included, inside one doped crystal.
+   - Compare it to [[gatemon]] or [[transmon]] on interface elimination and process integration, and to [[kane-qubit]] on atomic-precision fabrication lineage.
+
+## Routing rule inside the family
+
+- Start with [[gatemon]] or [[gatemonium]] when the interesting question is what electrostatic control does to an otherwise familiar superconducting circuit.
+- Start with [[andreev-spin-qubit]] or [[ferbo-qubit]] when the weak link's internal spin, parity, or Andreev structure is the qubit resource or the protection mechanism.
+- Start with [[all-semiconductor-superconducting-qubit]] when the value proposition is monolithic fabrication or interface elimination rather than a mature coherence result.
+- For the non-hybrid dot and donor branch of the same broader materials ecosystem, continue in [[semiconducting-moc]].
 
 ## Boundary with the superconducting family
 
@@ -113,6 +154,34 @@ This family shares hardware vocabulary with [[topological-moc]] such as InAs/Al 
 ## Editorial note
 
 This family is about hybridization, not mere material substitution. Keep links focused on what the semiconductor changes in the circuit physics, control surface, or protection story.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

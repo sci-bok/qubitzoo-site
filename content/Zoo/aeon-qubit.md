@@ -8,17 +8,16 @@ seed_id: '11'
 seed_source: qubitzoo-airtable
 first_proposed_year: 2016
 first_demonstrated_year: 2025
-influence_score: 0.5
 keywords:
 - spin
 - silicon
 - exchange-only
 - sweet-spot
 - triple-quantum-dot
-last_updated: '2026-07-08'
+last_updated: '2026-03-18'
 generated_by: seed-ingest-v1
 extracted_by: airtable-seed
-verified_by: scibok-audit-2026-07-08
+verified_by: scibok-manual-2026-03-18
 ---
 
 ## Figure
@@ -27,158 +26,150 @@ verified_by: scibok-audit-2026-07-08
 
 ## Description
 
-The always-on exchange-only (AEON) qubit is a three-spin encoded qubit designed to keep the nearest-neighbor exchange couplings on continuously while operating at a **double sweet spot** against charge noise. In the original Shim and Tahan proposal, the device is a **linear triple quantum dot** in the $(1,1,1)$ charge sector with only nearest-neighbor tunneling, so the effective qubit lives in the three-electron $S=1/2$ manifold rather than in a single product-spin basis.
+The Always-on Exchange-Only (AEON) qubit is a three-spin encoded qubit in a **linear triple quantum dot** (TQD) array where the nearest-neighbor exchange couplings $J_L$ (dots 1–2) and $J_R$ (dots 2–3) are kept permanently on. There is **no direct tunnel coupling** between the outer dots ($t_{13} = 0$). The qubit is encoded in the $S_\text{tot} = 1/2$ subspace of three singly-occupied quantum dots in the (1,1,1) charge configuration.
 
-Its central advantage over earlier exchange-only encodings is that the qubit splitting is first-order insensitive to both independent detuning coordinates, usually written $(\varepsilon, \varepsilon_M)$, while still allowing gate control through **barrier-controlled exchange pulses**. In other words, the operating point is protected against leading detuning noise, but the qubit can still be rotated by changing $J_L$ and $J_R$ with DC gate voltages.
+The defining feature of the AEON qubit is its **double sweet spot**: the qubit frequency $E_{01}$ is first-order insensitive to charge noise in *both* independent detuning parameters $\varepsilon$ (dot 1 vs. dot 3) and $\varepsilon_M$ (dot 2 vs. average of dots 1 and 3) simultaneously. Crucially, the sweet spot position depends only on the Coulomb energies — not on the tunnel couplings $t_l$ and $t_r$ — so gates can be performed by tuning barrier gates while remaining at the sweet spot throughout.
 
-This makes AEON a useful midpoint between two neighboring three-spin encodings. Compared with the original 3-spin decoherence-free-subsystem / exchange-only qubit, AEON keeps exchange on and dramatically simplifies gate compilation. Compared with the resonant-exchange (RX) qubit, AEON aims for a fuller sweet spot but gives up the large transverse cavity dipole that RX uses for microwave and cavity control.
+All single-qubit operations use **baseband (DC) exchange pulses** — no microwave drive is required. Two-qubit entangling gates between adjacent AEON qubits can be implemented with a **single exchange pulse**, a dramatic simplification over the 18+ sequential pairwise pulses needed for the original 3-DFS exchange-only encoding.
 
-The triangular hardware platform relevant to AEON matured in stages. **Acuna et al. (2024)** first demonstrated coherent control of a **triangular exchange-only qubit** with blind-RB fidelity 99.84%, but that result was **not yet AEON proper**. The first explicit AEON demonstration then appeared as a **2025 preprint by Broz, Hoke, Acuna, and Petta** and was published in **Nature Communications (2026)**. Using a **triangular Si/SiGe triple-dot device** with simultaneous exchange pulses, that work established high-fidelity single-qubit AEON control, but it still did **not** demonstrate AEON two-qubit entangling gates or direct cavity coupling.
+At the sweet spot, the AEON qubit has **no transition dipole moment** ($g_\perp = 0$), meaning it does not couple transversely to a superconducting resonator. Long-range coupling requires **longitudinal (curvature) coupling** to a cavity, or adiabatic conversion to the RX qubit regime where transverse coupling is available.
+
+The qubit can be smoothly interconverted with other three-spin encodings: the **RX qubit** (for initialization, readout, and resonator coupling) and the **3-DFS exchange-only qubit** (for a true off-state/memory with all exchange couplings turned off).
+
 
 ## Hamiltonian
 
-For the original linear AEON proposal, the low-energy effective model is the nearest-neighbor Heisenberg exchange Hamiltonian
+The AEON qubit is described by a Hubbard model for a linear TQD with only nearest-neighbor tunneling ($t_{13} = 0$). In the qubit subspace ($S_\text{tot} = 1/2$, $S_\text{tot}^z = 1/2$), the effective Hamiltonian reduces to:
 
-$$H_\mathrm{eff} = J_L\,\mathbf S_1\!\cdot\!\mathbf S_2 + J_R\,\mathbf S_2\!\cdot\!\mathbf S_3,$$
+$$H_\text{eff} = J_L\,\mathbf{S}_1\!\cdot\!\mathbf{S}_2 + J_R\,\mathbf{S}_2\!\cdot\!\mathbf{S}_3$$
 
-with no direct outer-dot exchange term $J_{13}$ in the ideal linear geometry. Projecting into the encoded $S=1/2$ qubit subspace gives the standard two-level form
+where $J_L = 2t_l^2(\tilde{U}_1 + \tilde{U}_2')/f_l(\varepsilon, \varepsilon_M)$ and $J_R = 2t_r^2(\tilde{U}_2 + \tilde{U}_3)/f_r(\varepsilon, \varepsilon_M)$, with $\tilde{U}_i$ the Coulomb energy changes for double occupancy of dot $i$. **No $J_{13}$ term** appears.
 
-$$H_q = -\frac{J}{2}\sigma_z - \frac{\sqrt{3}\,j}{2}\sigma_x,$$
+In the two-state qubit basis $\{|0_Q\rangle, |1_Q\rangle\}$:
 
-where
+$$H_\text{eff} = -\frac{J}{2}\sigma_z - \frac{\sqrt{3}\,j}{2}\sigma_x$$
 
-$$J = \frac{J_L + J_R}{2}, \qquad j = \frac{J_L - J_R}{2},$$
+where $J = (J_L + J_R)/2$ and $j = (J_L - J_R)/2$. The qubit energy gap is $E_{01} = \sqrt{J^2 + 3j^2} = \sqrt{J_L^2 + J_R^2 - J_L J_R}$.
 
-so that the qubit splitting is
+### Double sweet spot
 
-$$\hbar\omega_q = E_{01} = \sqrt{J^2 + 3j^2} = \sqrt{J_L^2 + J_R^2 - J_LJ_R}.$$
+The sweet spot conditions $\partial E_{01}/\partial\varepsilon = 0$ and $\partial E_{01}/\partial\varepsilon_M = 0$ yield:
 
-The AEON operating point is the **double sweet spot**, defined by
+$$\varepsilon_\text{ss} = \tfrac{1}{4}(-\tilde{U}_1 + \tilde{U}_2' - \tilde{U}_2 + \tilde{U}_3), \qquad \varepsilon_{M,\text{ss}} = \tfrac{1}{4}(\tilde{U}_1 - \tilde{U}_2' - \tilde{U}_2 + \tilde{U}_3)$$
 
-$$\frac{\partial \omega_q}{\partial \varepsilon} = 0, \qquad \frac{\partial \omega_q}{\partial \varepsilon_M} = 0.$$
+These depend only on Coulomb energies, **not** on $t_l$ or $t_r$ — enabling full gate control while remaining at the sweet spot.
 
-In the Shim and Tahan analysis, this sweet spot is set by the device Coulomb-energy landscape and is independent of the tunnel couplings themselves. That independence is what makes barrier-gate control possible without sacrificing first-order protection against detuning noise.
-
-The later triangular-device experiments should be interpreted carefully. Their microscopic coupling graph can access additional pairwise-exchange configurations beyond the strict linear $t_{13}=0$ model above, so what carries over experimentally is the **AEON operating mode and simultaneous-exchange control principle**, not a literal one-to-one reproduction of the original linear coupling topology.
 
 ## Single-Qubit Gates
 
-AEON single-qubit control is purely **baseband exchange control**. No resonant microwave drive is required in the original proposal.
+All single-qubit rotations are performed via **baseband (DC) voltage pulses** on the tunnel barrier gates, modulating $J_L$ and $J_R$ simultaneously while remaining at the double sweet spot:
 
-- **Symmetric exchange** ($J_L = J_R$) gives $j=0$, producing a logical $Z$ rotation.
-- **Asymmetric exchange** ($J_L \neq J_R$) tilts the rotation axis into the $xz$ plane.
-- Combining those two cases gives universal single-qubit control while remaining at the charge-noise sweet operating point.
+- **$Z$ rotation**: Symmetric exchange ($J_L = J_R$, i.e., $j = 0$) → precession around $\hat{z}$
+- **General rotations**: Asymmetric exchange ($J_L \neq J_R$) → rotation around an axis in the $xz$-plane. Combined with $Z$, this gives universal single-qubit control
+- **Pauli $X$**: Can be decomposed as $X = R_{\hat{n}}(\pi) \cdot Z \cdot R_{\hat{n}}(\pi)$ with $\hat{n} = -(\hat{x} + \hat{z})/\sqrt{2}$, achieved with $t_l = (\sqrt{6} + \sqrt{2})t_r/2$
 
-This is the key architectural claim of AEON: single-qubit gates can be driven by simultaneous DC exchange pulses instead of long compiled sequences of pairwise on/off pulses.
+No microwave pulses are needed — this is purely baseband, all-electrical control.
+
 
 ## Two-Qubit Gates
 
-For neighboring AEON qubits, a weak inter-qubit exchange $J_c$ between boundary dots produces the same effective structure analyzed for always-on encoded three-spin qubits more broadly:
+Two AEON qubits in a linear array (dots 1–2–3–4–5–6) are coupled via the inter-qubit exchange $J_c$ between neighboring dots (e.g., dots 3 and 4). With intra-qubit couplings always on, the effective inter-qubit Hamiltonian in the weak coupling regime ($J_c \ll J^{(A)}, J^{(B)}$) is:
 
-$$H_c = \frac{\delta J_z}{2}(\sigma_z^A + \sigma_z^B) + J_{zz}\,\sigma_z^A\sigma_z^B + J_\perp(\sigma_x^A\sigma_x^B + \sigma_y^A\sigma_y^B).$$
+$$H_c = \delta J_z (\sigma_z^A + \sigma_z^B)/2 + J_{zz}\,\sigma_z^A\sigma_z^B + J_\perp(\sigma_x^A\sigma_x^B + \sigma_y^A\sigma_y^B)$$
 
-In the linear weak-coupling regime discussed by Shim and Tahan, one finds for comparable qubits
+with all coefficients proportional to $J_c$. For the linear geometry, $\delta J_z / J_c = J_{zz}/J_c = 1/36$ and $J_\perp / J_c = -1/24$ when $J^{(A)} \approx J^{(B)}$.
 
-$$\delta J_z/J_c = J_{zz}/J_c = 1/36, \qquad J_\perp/J_c = -1/24,$$
+A **CPHASE/CZ gate** can be implemented with a single exchange pulse — requiring $\int J_{zz}(t)\,dt = \pi/4$. Estimated gate times range from ~20 ns (butterfly geometry with spin swaps) to a few hundred ns (linear geometry with conservative $J_c \sim 10$ MHz). This is a dramatic improvement over the 18+ sequential pairwise pulses required for the original 3-DFS encoding.
 
-and a **single-pulse CPHASE/CZ gate** is possible when the qubits are biased so the unwanted transverse term is suppressed and
+The inter-qubit sweet spot condition ($\partial J_c / \partial \varepsilon_3 = \partial J_c / \partial \varepsilon_4 = 0$) can also be satisfied by tuning average dot energies, keeping both qubits and the coupler charge-noise-insensitive.
 
-$$\int J_{zz}(t)\,dt = \pi/4.$$
-
-This is an important theoretical advantage of AEON, but it remains **proposed rather than experimentally demonstrated** as of July 2026.
 
 ## Resonator Coupling
 
-At the ideal AEON double sweet spot, the qubit has **no transverse electric dipole** to first order, so a direct RX-style spin-photon coupling is absent:
+At the double sweet spot, the AEON qubit has **zero transition dipole moment** ($g_\perp = 0$) — it does not couple transversely to a superconducting resonator. This is both a feature (suppressed decoherence from charge noise) and a constraint (no direct cavity QED).
 
-$$g_\perp = 0.$$
+Two strategies for long-range coupling:
 
-That suppresses one important charge-noise channel, but it also means AEON does not naturally couple transversely to a superconducting resonator. Two workarounds have been proposed:
+1. **Longitudinal (curvature) coupling** — The second derivative of the qubit frequency with respect to detuning gives a non-zero longitudinal coupling $g_\parallel$ to the cavity photon number. This enables dispersive readout and modulated longitudinal gates without leaving the sweet spot. *(Theoretical — Ruskov & Tahan 2019, 2021)*
 
-1. **Curvature / longitudinal coupling**: use the second derivative of the qubit energy with respect to detuning to couple encoded spin qubits to a cavity dispersively.
-2. **Adiabatic conversion to the RX regime**: move the same three-spin device into a resonant-exchange-like operating regime for readout or cavity-mediated coupling, then return to AEON for idle/gate operation.
+2. **Conversion to RX regime** — Adiabatically sweeping $\varepsilon_M$ converts the AEON qubit to an RX qubit, which has a large transverse dipole for cavity coupling. Readout and long-range entanglement proceed in the RX regime, then the qubit is swept back to the AEON sweet spot for computation. *(The RX-cavity strong coupling regime has been demonstrated — Landig et al., Nature 2018)*
 
-The second route is motivated by the experimental RX spin-photon strong-coupling result of Landig et al. (2018), but it is not itself an AEON demonstration.
 
 ## Experimental Status
 
-**Original proposal (2016):**
-- Shim and Tahan introduced the AEON concept for a linear triple quantum dot.
-- Core claims were the double detuning sweet spot, barrier-controlled single-qubit gates, and a route to single-pulse two-qubit entangling gates.
+The AEON qubit was first experimentally demonstrated by **Broz, Hoke, Acuna, and Petta (2025)** in a Si/SiGe quantum dot device:
 
-**Triangular-platform precursor (2024):**
-- Acuna et al. demonstrated coherent control of a **triangular exchange-only qubit** in Si/SiGe.
-- Measured blind-RB single-qubit fidelity **99.84%**.
-- Important context for the later hardware platform, but **not yet an AEON demonstration**.
+- **Platform**: Triangular QD array (note: the original proposal uses a linear TQD; the triangular geometry also supports AEON-like operation with simultaneous always-on exchange)
+- **Gate set**: Full single-qubit Clifford set with simultaneous exchange pulses
+- **Fidelity**: Average Clifford gate fidelity $F_{C1} = 99.86\%$ via blind randomized benchmarking
+- **Key advance**: First demonstration of simultaneous (non-commuting) exchange pulses for an exchange-only qubit, versus conventional sequential pairwise pulsing
 
-**First AEON experimental demonstration (2025 preprint, 2026 journal publication):**
-- Broz et al. demonstrated an always-on exchange-only qubit in a **triangular Si/SiGe triple-dot device**.
-- Implemented the full **single-qubit Clifford gate set** using simultaneous exchange pulses.
-- Measured average blind-RB Clifford fidelity **$F_{C1} = 99.86\%$**.
-- The result is now archival in **Nature Communications 17, 4794 (2026)**, establishing a **peer-reviewed** AEON single-qubit benchmark.
-- AEON **two-qubit gates** and **direct cavity-coupling demonstrations** still remain outstanding as of July 2026.
+Two-qubit entangling gates and resonator coupling have **not yet been experimentally demonstrated** in the AEON regime.
+
 
 ## Comparison with Related Encodings
 
-| Property | 3-spin exchange-only / 3-DFS | RX qubit | AEON |
-|----------|------------------------------|----------|------|
-| Exchange during idle | Typically compiled on/off pulses | Always on | Always on |
-| Sweet spot protection | Limited | Partial | **Double sweet spot in detuning space** |
-| 1Q control | Compiled exchange sequences | Microwave / driven exchange | **Simultaneous DC exchange pulses** |
-| 2Q entangling gate | Long pulse compilations | Single-pulse proposals available | **Single-pulse proposal in AEON regime** |
-| Cavity coupling | Weak / indirect | Strong transverse dipole available | **No transverse dipole at ideal sweet spot** |
-| Best current experiment | Mature broader exchange-only literature | Spin-photon coupling demonstrated | **Peer-reviewed single-qubit AEON demo in triangular Si/SiGe** |
+| Property | 3-DFS Exchange-Only | RX Qubit | AEON |
+|----------|-------------------|----------|------|
+| QD energy levels | General | $\varepsilon_2 \gg \varepsilon_1 \approx \varepsilon_3$ | $\varepsilon_1 \approx \varepsilon_2 \approx \varepsilon_3$ |
+| Sweet spot | None (DFS only) | Partial (1 of 2 detunings) | **Full** (both detunings) |
+| Single-qubit gates | 4 sequential exchange pulses | Microwave drive | 3 simultaneous baseband pulses |
+| Two-qubit gates | 18+ sequential pulses | Dipole-dipole or single exchange pulse | **Single exchange pulse** |
+| Resonator coupling | N/A | Transverse ($g_\perp$ large) | Longitudinal only ($g_\perp = 0$) |
+| Idle/memory | All exchange off | Always-on, $f_Q \sim$ 0.5–2 GHz | Exchange off (converts to 3-DFS) or always-on |
+
+*(Table adapted from Shim & Tahan 2016, Table I)*
+
 
 ## References
 
 ### Original proposal
 - Y.-P. Shim and C. Tahan, "Charge-noise-insensitive gate operations for always-on, exchange-only qubits," [PRB 93, 121410(R) (2016)](https://doi.org/10.1103/PhysRevB.93.121410) — [arXiv:1602.00320](https://arxiv.org/abs/1602.00320)
 
-### Two-qubit gates and encoded-spin context
-- A. C. Doherty and M. P. Wardrop, "Two-qubit gates for resonant exchange qubits," [PRL 111, 050503 (2013)](https://doi.org/10.1103/PhysRevLett.111.050503) — effective always-on encoded-qubit coupling structure used in the AEON discussion
-- D. P. DiVincenzo, D. Bacon, J. Kempe, G. Burkard, and K. B. Whaley, "Universal quantum computation with the exchange interaction," [Nature 408, 339 (2000)](https://doi.org/10.1038/35042541)
-- B. H. Fong and S. M. Wandzura, "Universal quantum computation and leakage reduction in the 3-Qubit decoherence free subsystem," [QIC 11, 1003 (2011)](https://doi.org/10.26421/QIC11.11-12-9)
+### Two-qubit gates
+- A. C. Doherty and M. P. Wardrop, "Two-qubit gates for resonant exchange qubits," [PRL 111, 050503 (2013)](https://doi.org/10.1103/PhysRevLett.111.050503) — showed that always-on exchange enables CZ gate in a single inter-qubit exchange pulse
 
-### Resonator / cavity coupling
+### Longitudinal resonator coupling (theoretical)
 - R. Ruskov and C. Tahan, "Quantum-limited measurement of spin qubits via curvature couplings to a cavity," [PRB 99, 245306 (2019)](https://doi.org/10.1103/PhysRevB.99.245306) — [arXiv:1704.05876](https://arxiv.org/abs/1704.05876)
 - R. Ruskov and C. Tahan, "Modulated longitudinal gates on encoded spin qubits via curvature couplings to a superconducting cavity," [PRB 103, 035301 (2021)](https://doi.org/10.1103/PhysRevB.103.035301) — [arXiv:2010.01233](https://arxiv.org/abs/2010.01233)
-- R. Ruskov and C. Tahan, "Longitudinal (curvature) couplings of an $N$-level qudit to a superconducting resonator at the adiabatic limit and beyond," [PRB 109, 245303 (2024)](https://doi.org/10.1103/PhysRevB.109.245303) — [arXiv:2312.03118](https://arxiv.org/abs/2312.03118)
-- A. J. Landig, J. V. Koski, P. Scarlino et al., "Coherent spin-photon coupling using a resonant exchange qubit," [Nature 560, 179 (2018)](https://doi.org/10.1038/s41586-018-0365-y) — RX, not AEON, but the relevant experimental spin-cavity bridge
+- R. Ruskov and C. Tahan, "Longitudinal (curvature) couplings of an N-level qudit to a superconducting resonator at the adiabatic limit and beyond," [PRB 109, 245303 (2024)](https://doi.org/10.1103/PhysRevB.109.245303) — [arXiv:2312.03118](https://arxiv.org/abs/2312.03118)
 
-### Experimental context and demonstration
-- E. Acuna, J. D. Broz, K. Shyamsundar et al., "Coherent control of a triangular exchange-only spin qubit," [Phys. Rev. Applied 22, 044057 (2024)](https://doi.org/10.1103/PhysRevApplied.22.044057) — [arXiv:2406.03705](https://arxiv.org/abs/2406.03705) — triangular exchange-only precursor platform, not yet AEON proper
-- J. D. Broz, J. C. Hoke, E. Acuna, and J. R. Petta, "Demonstration of an always-on exchange-only spin qubit," [Nature Communications 17, 4794 (2026)](https://doi.org/10.1038/s41467-026-70943-w) — [arXiv:2508.01033](https://arxiv.org/abs/2508.01033) — peer-reviewed AEON demonstration in triangular Si/SiGe, full single-qubit Clifford set, $F_{C1}=99.86\%$
+### RX qubit–resonator strong coupling (related experimental)
+- A. J. Landig, J. V. Koski, P. Scarlino et al., "Coherent spin–photon coupling using a resonant exchange qubit," [Nature 560, 179 (2018)](https://doi.org/10.1038/s41586-018-0365-y) — demonstrated strong coupling of RX qubit to SC cavity (~31 MHz); AEON could convert to this regime
+
+### Experimental demonstration
+- J. D. Broz, J. C. Hoke, E. Acuna, and J. R. Petta, "Demonstration of an always-on exchange-only spin qubit," [arXiv:2508.01033 (2025)](https://arxiv.org/abs/2508.01033) — $F_{C1} = 99.86\%$ average Clifford fidelity, Si/SiGe triangular QD array, single-qubit gates only
+
+### Background: exchange-only qubits
+- D. P. DiVincenzo, D. Bacon, J. Kempe, G. Burkard, and K. B. Whaley, "Universal quantum computation with the exchange interaction," [Nature 408, 339 (2000)](https://doi.org/10.1038/35042541) — original exchange-only qubit proposal
+- B. H. Fong and S. M. Wandzura, "Universal quantum computation and leakage reduction in the 3-qubit decoherence free subsystem code," [QIC 11, 1003 (2011)](https://doi.org/10.26421/QIC11.11-12-8) — optimized pulse sequences
+
 
 ## Linked Papers
 - [[shim-2016-aeon]]
-- [[acuna-2024-coherent-control-triangular-exchange-only-spin-qubit]]
-- [[broz-2026-demonstration-always-on-exchange-only-spin-qubit]]
-- [[doherty-2013-qubit-gates-resonant]]
-- [[ruskov-2021-modulated-longitudinal-gates]]
-- [[landig-2018-coherent-spin-photon]]
 
 ## Evergreen context
 
-- [[exchange-interaction-in-quantum-dots]] — the tunable resource AEON keeps on continuously
-- [[heisenberg-exchange-in-quantum-dots]] — the pairwise-exchange model underlying the encoded qubit
-- [[decoherence-free-subspace]] — the three-spin encoded-subspace origin of AEON
-- [[charge-noise-sweet-spot]] — the protection principle behind the double sweet spot
+- [[exchange-interaction-in-quantum-dots]] — the tunable coupling resource AEON keeps always on
+- [[heisenberg-exchange-in-quantum-dots]] — the pairwise-exchange Hamiltonian that AEON reshapes into an always-on encoded qubit
+- [[decoherence-free-subspace]] — the encoded three-spin protection that AEON inherits
+- [[charge-noise-sweet-spot]] — the double-sweet-spot idea that makes AEON special
 
 ## Related Entries
-- [[exchange-only-qubit]]
 - [[rx-qubit]]
 - [[loss-divincenzo-qubit]]
-- [[spin-qubit]]
-- [[silicon-spin-qubit]]
+- [[exchange-only-qubit]]
 
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| Single-qubit Clifford fidelity | **99.86%** | Blind RB in the peer-reviewed triangular Si/SiGe AEON demonstration | [Broz et al. 2026](https://doi.org/10.1038/s41467-026-70943-w) |
-| Single-qubit control modality | Simultaneous DC exchange pulses | No microwave drive required in the AEON control picture | [Shim & Tahan 2016](https://doi.org/10.1103/PhysRevB.93.121410) |
-| Charge-noise protection | $\partial\omega_q/\partial\varepsilon = \partial\omega_q/\partial\varepsilon_M = 0$ | First-order insensitivity in the two logical detuning coordinates | [Shim & Tahan 2016](https://doi.org/10.1103/PhysRevB.93.121410) |
-| 2Q entangling gate | Single-pulse CPHASE/CZ proposed | Theory only, not yet demonstrated in AEON hardware | [Shim & Tahan 2016](https://doi.org/10.1103/PhysRevB.93.121410) |
-| 2Q gate time | Few hundred ns (linear weak-coupling example) | Proposal with $J_c \sim 10$ MHz; geometry-dependent | [Shim & Tahan 2016](https://doi.org/10.1103/PhysRevB.93.121410) |
-| Resonator coupling at DSS | $g_\perp = 0$ | No direct transverse cavity dipole at the ideal AEON sweet spot | [Ruskov & Tahan 2019](https://doi.org/10.1103/PhysRevB.99.245306) |
-| Operating charge sector | $(1,1,1)$ | Encoded three-electron manifold | [Shim & Tahan 2016](https://doi.org/10.1103/PhysRevB.93.121410) |
+| Qubit coherence $T_1$ | >1 s | Spin relaxation in Si | [Shulman et al. 2012](https://doi.org/10.1126/science.1217692) |
+| Qubit coherence $T_2$ | 10–100 μs | Enhanced by double sweet-spot operation | [Shim & Tahan 2016](https://doi.org/10.1103/PhysRevB.93.121410) |
+| Gate fidelity (1Q) | **99.86%** | Average Clifford fidelity, blind RB (experimental) | [Broz et al. 2025](https://arxiv.org/abs/2508.01033) |
+| Gate fidelity (1Q, theory) | 99–99.5% | Baseband exchange at sweet spot (theoretical) | [Shim & Tahan 2016](https://doi.org/10.1103/PhysRevB.93.121410) |
+| Gate fidelity (2Q) | 95–99% | Single exchange pulse CZ (theoretical estimate) | [Doherty & Wardrop 2013](https://doi.org/10.1103/PhysRevLett.111.050503) |
+| Gate time (1Q) | 1–50 ns | DC barrier gate pulses | [Shim & Tahan 2016](https://doi.org/10.1103/PhysRevB.93.121410) |
+| Gate time (2Q) | ~20–200 ns | Single exchange pulse (geometry-dependent) | [Shim & Tahan 2016](https://doi.org/10.1103/PhysRevB.93.121410) |
+| Operating temperature | 20–100 mK | Si/SiGe or GaAs | — |
+| Qubit footprint | ~150–300 nm pitch | 3 dots per logical qubit | — |

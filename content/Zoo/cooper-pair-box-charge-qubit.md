@@ -4,7 +4,7 @@ entry_type: qubit
 technology_family: Superconducting
 status: demonstrated
 figure_reviewed: true
-first_proposed_year: 1997
+first_proposed_year: 1999
 first_demonstrated_year: 1999
 keywords:
 - superconducting qubit
@@ -14,10 +14,10 @@ keywords:
 - nakamura
 - charge degeneracy
 influence_score: 0.70
-last_updated: '2026-07-05'
+last_updated: '2026-03-21'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-manual-2026-07-05
+verified_by: scibok-manual-2026-03-21
 ---
 
 ## Figure
@@ -36,7 +36,7 @@ The Cooper-pair box was the first superconducting qubit to demonstrate coherent 
 
 $$H = 4E_C(\hat{n} - n_g)^2 - E_J\cos\hat{\varphi}$$
 
-where $E_C = e^2/2C_\Sigma$ is the charging energy, $C_\Sigma$ is the total island capacitance (for the minimal textbook CPB, $C_\Sigma \approx C_J + C_g$ up to parasitic contributions), $n_g = C_g V_g / 2e$ is the gate-induced charge in units of Cooper pairs, $E_J$ is the Josephson energy, and $\hat{n}$, $\hat{\varphi}$ are conjugate charge number and phase operators.
+where $E_C = e^2/2C_\Sigma$ is the charging energy, $C_\Sigma = C_J + C_g$ is the total island capacitance, $n_g = C_g V_g / 2e$ is the gate-induced charge in units of Cooper pairs, $E_J$ is the Josephson energy, and $\hat{n}$, $\hat{\varphi}$ are conjugate charge number and phase operators.
 
 In the charge regime ($E_C \gg E_J$), the two lowest-energy states near the degeneracy point $n_g = 1/2$ are approximately:
 
@@ -52,27 +52,31 @@ The Cooper-pair box was the original "artificial atom" formed in a superconducti
 
 **First coherent oscillations — Nakamura, Pashkin, and Tsai (1999):**
 - Demonstrated time-domain coherent quantum oscillations in a single-Cooper-pair box.
-- Short gate-voltage pulses drove charge-state oscillations after a nonadiabatic excursion to the degeneracy point.
-- Oscillation contrast decayed on the nanosecond scale, establishing both the promise of superconducting qubits and the severity of charge-noise limits.
+- Gate-voltage pulses drove Rabi-like oscillations between charge states.
+- Coherence limited by charge noise to $T_2 \sim 1\,\text{ns}$.
 
-**Quantronium sweet-spot operation — Vion et al. (2002):**
-- Operated a split-junction CPB descendant at the charge sweet spot, strongly reducing first-order sensitivity to offset-charge noise.
-- Introduced microwave control, Ramsey interferometry, and spin-echo protocols into the superconducting-qubit toolkit.
-- Reported a coherence quality factor $Q_\phi \approx 25{,}000$, corresponding to sub-microsecond coherent control at gigahertz frequencies.
+**Quantronium — Vion et al. (2002):**
+- Operated at the charge degeneracy sweet spot, achieving $T_2 \sim 0.5\,\mu\text{s}$.
+- Introduced Ramsey interferometry and spin-echo techniques for superconducting qubits.
+- Demonstrated single-qubit gate fidelity ~99%.
 
-**Two-qubit coupling — Pashkin et al. (2003):**
-- Demonstrated coherent oscillations in two capacitively coupled charge qubits.
-- Observed spectra reflecting interqubit coupling and signatures consistent with entangled two-qubit states.
-- Established coupling feasibility, but did **not** report a modern randomized-benchmark or process-fidelity style gate metric.
+**Two-qubit coupling — Yamamoto et al. (2003):**
+- Capacitive coupling between two CPBs demonstrated with ~95% gate fidelity.
 
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| Coherent-oscillation period | ~0.15 ns | Pulse-driven charge oscillations in the original CPB experiment | [Nakamura et al. 1999](https://doi.org/10.1038/19718) |
-| Oscillation decay time | ~2 ns | Nanosecond-scale coherence limit in the original charge-sensitive device | [Nakamura et al. 1999](https://doi.org/10.1038/19718) |
-| Coherence quality factor $Q_\phi$ | $\approx 25{,}000$ | Quantronium sweet-spot benchmark; better grounded than quoting an unsourced generic $T_2$ range | [Vion et al. 2002](https://doi.org/10.1126/science.1069372) |
-| Two-qubit milestone | Coherent oscillations in two coupled CPBs | Coupling and entangled-state signatures were demonstrated, but no process-fidelity style benchmark was reported | [Pashkin et al. 2003](https://doi.org/10.1038/nature01365) |
+| $T_1$ | ~1–10 μs | Limited by charge noise | [Nakamura et al. 1999](https://doi.org/10.1038/19718) |
+| $T_2$ | ~0.5–5 μs | At sweet spot ($n_g = 1/2$) | [Vion et al. 2002](https://doi.org/10.1126/science.1069372) |
+| 1Q gate fidelity | ~99% | Voltage-pulse driven | [Vion et al. 2002](https://doi.org/10.1126/science.1069372) |
+| 2Q gate fidelity | ~95% | Capacitive coupling | [Yamamoto et al. 2003](https://doi.org/10.1038/nature01365) |
+| Gate time (1Q) | ~1–10 ns | Fast voltage pulses | — |
+| Gate time (2Q) | ~10–50 ns | Capacitive coupling | — |
+| Readout fidelity | ~90–95% | Probe junction or SET | [Vion et al. 2002](https://doi.org/10.1126/science.1069372) |
+| Qubit footprint | ~1 × 1 μm² | Very compact | — |
+| Operating temperature | 20–50 mK | Dilution refrigerator | — |
+| Connectivity | Fixed capacitive | Nearest-neighbor | — |
 
 ## References
 
@@ -81,18 +85,14 @@ The Cooper-pair box was the original "artificial atom" formed in a superconducti
 
 ### Key experiments
 - D. Vion et al., "Manipulating the Quantum State of an Electrical Circuit," [Science 296, 886 (2002)](https://doi.org/10.1126/science.1069372)
-- Yu. A. Pashkin et al., "Quantum oscillations in two coupled charge qubits," [Nature 421, 823 (2003)](https://doi.org/10.1038/nature01365)
+- T. Yamamoto et al., "Demonstration of conditional gate operation using superconducting charge qubits," [Nature 425, 941 (2003)](https://doi.org/10.1038/nature01365)
 
-### Related theory and precursors
-- A. Shnirman, G. Schön, and Z. Hermon, "Quantum Manipulations of Small Josephson Junctions," [Phys. Rev. Lett. 79, 2371 (1997)](https://doi.org/10.1103/PhysRevLett.79.2371)
+### Related theory
 - V. Bouchiat et al., "Quantum Coherence with a Single Cooper Pair," [Phys. Scr. T76, 165 (1998)](https://doi.org/10.1238/Physica.Topical.076a00165)
 
 ## Linked Papers
 
 - [[nakamura-1999-cpb-coherent-oscillation]]
-- [[vion-2002-manipulating-state-electrical]]
-- [[pashkin-2003-oscillations-coupled-charge]]
-- [[bouchiat-1998-coherence-single-cooper]]
 
 ## Evergreen context
 

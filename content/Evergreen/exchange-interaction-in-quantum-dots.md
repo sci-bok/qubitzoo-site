@@ -17,11 +17,32 @@ The Heisenberg exchange interaction $J$ between electron spins in adjacent quant
 
 This note is the **device-and-materials view** of exchange. Use it when the question is how gate voltages create $J$, why barrier control and detuning control behave differently, or where charge sensitivity enters. Once the charge sector has been integrated out and the question becomes what unitary an exchange pulse implements inside a logical spin subspace, switch to [[heisenberg-exchange-in-quantum-dots]].
 
+## Routing heuristic
+
+- Stay in this note when the interesting variable is a **control knob**: tunnel coupling, detuning, barrier symmetry, residual off-state exchange, or materials-specific charge sensitivity.
+- Switch to [[heisenberg-exchange-in-quantum-dots]] when the interesting variable is a **pulse-area consequence**: partial-SWAP angle, logical axis in an encoded manifold, or how pairwise exchange projects into a reduced qubit subspace.
+- Read both if you need the full chain from gate voltage to logical unitary.
+
+## Three-layer abstraction ladder
+
+1. **Electrostatics and virtual hopping**: gates set tunnel coupling, detuning, and charge admixture. That is this note.
+2. **Effective spin Hamiltonian**: those device knobs collapse to a calibrated scalar coupling $J(t)$ multiplying $\vec S_1\!\cdot\!\vec S_2$. That is [[heisenberg-exchange-in-quantum-dots]].
+3. **Logical action**: pulse areas and encoded projections become $\sqrt{\mathrm{SWAP}}$-style entanglers, logical splittings, or always-on control axes in specific qubit families.
+
+## Quick split from the Hamiltonian note
+
+| If the question is... | Start here? | Why |
+|---|---|---|
+| How do gates or detuning knobs create and shape $J$? | Yes | This note keeps the Hubbard / device picture in view. |
+| Why does symmetric barrier control usually beat detuning control for noise? | Yes | The charge admixture and $\,\partial J/\partial \epsilon$ story lives here. |
+| What unitary does a calibrated exchange pulse implement? | No, go to [[heisenberg-exchange-in-quantum-dots]] | That is the pulse-area / logical-action note. |
+| Why do singlet-triplet, exchange-only, RX, and AEON inherit different logical axes from the same pairwise coupling? | No, go to [[heisenberg-exchange-in-quantum-dots]] | The projection into encoded subspaces is the real question there. |
+
 The power of the exchange interaction lies in its purely electrical tunability. Two complementary knobs exist: **barrier control** adjusts the height of the potential barrier between dots, modulating $t$ directly while keeping the charge distribution symmetric; **detuning control** tilts the double-well potential, shifting one dot's energy relative to the other, which changes $J$ through the effective $U$ in the denominator. Barrier control is generally preferred in modern devices because it preserves the charge symmetry point, reducing sensitivity to charge noise. In practice, $J$ can be tuned over many orders of magnitude — from effectively zero (dots fully isolated, $J/h < 1\,\text{kHz}$) to tens of GHz (strong tunnel coupling) — by adjusting a single gate voltage on a timescale of nanoseconds.
 
-The exchange interaction generates the $\sqrt{\text{SWAP}}$ and SWAP gates that underpin two-qubit operations across the spin qubit family. A pulse of duration $\tau$ with $\int_0^\tau J(t')\,dt' = \pi/2$ produces $\sqrt{\text{SWAP}}$, which combined with single-qubit rotations gives a universal gate set. For singlet-triplet qubits, exchange directly rotates between the logical $|0\rangle = |S\rangle$ and $|1\rangle = |T_0\rangle$ states. For exchange-only qubits, $J$ couplings between three dots provide both single-qubit and two-qubit control without any magnetic field gradients — the entire gate set is exchange-based. The AEON qubit uses an always-on exchange variant to operate at a sweet spot. In every case, the fidelity of exchange-based gates is limited by charge noise coupling through $\partial J/\partial \epsilon$ (detuning sensitivity) or $\partial J/\partial V_B$ (barrier sensitivity), electrical noise on the control lines, and residual exchange when the interaction should be off.
+At the device level, the important comparison is **how cleanly a platform can manufacture and modulate $J$**. Singlet-triplet, exchange-only, RX, and AEON all inherit the same underlying exchange primitive, but the family-level engineering question here is upstream of the logical encoding: how steeply does $J$ respond to detuning versus barrier gates, how much residual off-state exchange survives, and how much charge admixture is reintroduced when fast control is demanded? In every case, the main fidelity risks enter through $\partial J/\partial \epsilon$ (detuning sensitivity), $\partial J/\partial V_B$ (barrier sensitivity), electrical noise on the control lines, and incomplete suppression of the interaction when it is supposed to be idle.
 
-The exchange interaction also appears in extended forms: superexchange couples next-nearest-neighbor dots through a virtual intermediate occupation (relevant for linear arrays), and the Hubbard parameters can be engineered in Si/SiGe, GaAs/AlGaAs, and Si-MOS platforms with quantitatively different $t$ and $U$ scales. Understanding and controlling $J$ at the few-percent level is the central materials and device challenge for scaling spin qubit processors.
+The exchange interaction also appears in extended forms: superexchange couples next-nearest-neighbor dots through a virtual intermediate occupation, mediator-dot variants turn the same logic into longer-range effective coupling, and the Hubbard parameters can be engineered in Si/SiGe, GaAs/AlGaAs, donors, and Si-MOS stacks with quantitatively different $t$ and $U$ scales. Understanding and controlling $J$ at the few-percent level is the central materials and device challenge for scaling spin-qubit processors.
 
 ## Key relationships
 
@@ -29,11 +50,11 @@ The exchange interaction also appears in extended forms: superexchange couples n
 - [[singlet-triplet-qubit]] — uses $J$ to rotate between $|S\rangle$ and $|T_0\rangle$ within the two-electron subspace
 - [[exchange-only-qubit]] — all control via exchange; no magnetic field gradients needed
 - [[aeon-qubit]] — always-on exchange variant operating at a sweet spot for noise protection
-- [[rx-qubit]] — resonant exchange qubit driven at the $S$–$T_+$ anticrossing, exchange-mediated
+- [[rx-qubit]] — always-on three-spin exchange encoding where resonant drive addresses the exchange-defined qubit splitting
 - [[hybrid-qubit]] — combines charge-like and spin-like states; exchange sets the energy scales
 - [[silicon-spin-qubit]] — Si/SiGe and Si-MOS platforms where exchange is the primary 2-qubit mechanism
-- [[sqrt-swap-as-universal-gate]] — the gate operation generated by exchange pulses
-- [[heisenberg-exchange-in-quantum-dots]] — complementary note on the Hamiltonian formalism
+- [[sqrt-swap-as-universal-gate]] — the gate-level consequence once exchange pulses are treated abstractly
+- [[heisenberg-exchange-in-quantum-dots]] — companion note for the post-Hubbard, Hamiltonian-first view
 
 ## References
 

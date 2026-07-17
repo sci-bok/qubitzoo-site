@@ -3,7 +3,7 @@ title: Ion Trap MOC
 type: moc
 technology_family: Ion Trap
 note_count: 2
-last_updated: '2026-07-03'
+last_updated: '2026-07-17'
 generated_by: pipeline-moc-v1
 ---
 
@@ -22,6 +22,20 @@ Curated map of Zoo entries in the **Ion Trap** family.
 - qubit: 1
 
 <!-- CURATED -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -77,6 +91,20 @@ This page should read as the **practical trapped-ion stack that most commercial 
 ## Editorial note
 
 Treat this family as the "practical Yb + MS stack" slice of trapped-ion hardware. It should stay tighter and more operational than the broader trapped-ion family page.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

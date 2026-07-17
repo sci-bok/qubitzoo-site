@@ -3,7 +3,7 @@ title: Spin-Photon MOC
 type: moc
 technology_family: Spin-Photon
 note_count: 2
-last_updated: '2026-07-03'
+last_updated: '2026-07-17'
 generated_by: pipeline-moc-v1
 ---
 
@@ -59,16 +59,61 @@ Curated map of Zoo entries in the **Spin-Photon** family.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Conceptual anchors
 
 - [[divincenzo-criteria]] criteria 6 and 7 organize this family more cleanly than gate-centric comparisons, because every note here is really about turning a local spin memory into a networkable module.
 - [[coherence-time-hierarchy]] captures the main engineering cost of those cleaner optical interfaces: spectral quality, cryogenic burden, and memory lifetime move together rather than independently.
+- [[quantum-transduction]] is a useful boundary note: platforms here are most interesting when they reduce or avoid transduction pain by emitting photons that are already spectrally useful for networking.
 
-## Family structure
+## Curated synthesis
 
-- `siv-color-center-qubit` is the diamond branch: inversion symmetry buys cleaner photons and stronger remote-entanglement prospects, but the phonon and temperature story becomes the bottleneck.
-- `t-center-qubit` is the silicon and telecom branch: less mature locally than NV, but better aligned with fibre links and silicon-photonics fabrication.
-- Read this MOC alongside [[color-center-moc]]: that note owns the room-temperature NV anchor, while this one owns defect platforms chosen primarily for networking performance.
+This family is best read as the **network-emitter-optimized descendant branch** of the broader defect-spin story.
+
+1. **`siv-color-center-qubit` is the optical-quality-first branch**
+   - Group-IV vacancy centers buy much cleaner photons than NV by using inversion symmetry to suppress electric-field sensitivity.
+   - The price is cryogenic severity: SiV offers excellent optical coherence but drags in a harsher phonon-temperature constraint, while SnV eases that constraint at the cost of a less mature platform.
+
+2. **`t-center-qubit` is the telecom-and-integration-first branch**
+   - The central claim is not just “another defect spin,” but “a spin-photon node already living in silicon and already emitting in the telecom O-band.”
+   - Route here when silicon-photonics compatibility, fibre-network realism, or modular distributed-computing fit matters more than diamond-emitter maturity.
+
+3. **The family-level comparison is about which systems burden you want to pay**
+   - SiV/SnV pay heavily in temperature to buy cleaner optical lines and nanophotonic performance.
+   - T centers pay in platform maturity and benchmark depth, but may save substantial systems complexity by starting inside silicon and near telecom wavelengths.
+
+## Routing rule
+
+- Read this MOC when the primary question is how to build a better **spin-to-photon interface**, not how to get the most mature defect-spin qubit overall.
+- Hand back to [[color-center-moc]] when room-temperature operation, ODMR-style control, or local defect-spin memory maturity becomes the main criterion.
+- Use [[quantum-transduction]] as the downstream systems check: if a platform already emits where the network wants to live, that is a real architectural advantage, not just a spectroscopy detail.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

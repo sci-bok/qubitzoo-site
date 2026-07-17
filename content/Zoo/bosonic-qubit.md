@@ -101,6 +101,7 @@ where $\chi$ is the dispersive shift. This coupling enables photon-number-resolv
 ## Evergreen context
 
 - [[bosonic-code-hierarchy]] — the most direct evergreen map of the main bosonic code families
+- [[dispersive-readout-mechanism]] — the operational primitive behind cavity-transmon parity checks, photon-number-resolved ancilla measurements, and real-time bosonic syndrome extraction
 - [[noise-bias-and-asymmetric-error-channels]] — important for cat-style bosonic protection
 - [[erasure-error-vs-pauli-error]] — important when comparing bosonic loss channels to standard qubit noise models
 

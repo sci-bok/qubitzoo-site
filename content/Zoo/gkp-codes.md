@@ -106,6 +106,7 @@ GKP codes protect against the dominant error channel in bosonic systems — smal
 ## Evergreen context
 
 - [[bosonic-code-hierarchy]] — the broader map of bosonic encodings
+- [[dispersive-readout-mechanism]] — superconducting GKP experiments still cash out as repeated ancilla-assisted stabilizer readout inside a cavity-transmon stack
 - [[threshold-theorem]] — why finite-energy GKP states matter for fault-tolerant thresholds
 - [[erasure-error-vs-pauli-error]] — clarifies what kinds of oscillator errors GKP is designed to convert and correct
 

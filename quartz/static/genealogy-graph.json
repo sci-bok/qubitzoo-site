@@ -1,6 +1,6 @@
 {
   "schema": "qubitzoo.genealogy.v1",
-  "generated_at": "2026-07-03T14:05:03.468273+00:00",
+  "generated_at": "2026-07-17T14:04:34.448155+00:00",
   "nodes": [
     {
       "id": "0-pi-qubit",
@@ -916,6 +916,10 @@
     },
     {
       "source": "dual-rail-photonic-qubit",
+      "target": "photonic-qubit"
+    },
+    {
+      "source": "dual-rail-photonic-qubit",
       "target": "dual-rail-superconducting-qubit"
     },
     {
@@ -1035,6 +1039,10 @@
       "target": "heavy-fluxonium-qubit"
     },
     {
+      "source": "fusion-based-photonic-qubit",
+      "target": "photonic-qubit"
+    },
+    {
       "source": "time-bin-photonic-qubit",
       "target": "fusion-based-photonic-qubit"
     },
@@ -1129,6 +1137,10 @@
     {
       "source": "gkp-codes",
       "target": "kerr-cat-qubit"
+    },
+    {
+      "source": "linear-optical-photonic-qubit",
+      "target": "photonic-qubit"
     },
     {
       "source": "linear-optical-photonic-qubit",
@@ -1248,6 +1260,10 @@
     },
     {
       "source": "photonic-cluster-state-mbqc-qubit",
+      "target": "photonic-qubit"
+    },
+    {
+      "source": "photonic-cluster-state-mbqc-qubit",
       "target": "linear-optical-photonic-qubit"
     },
     {
@@ -1257,6 +1273,10 @@
     {
       "source": "photonic-cluster-state-mbqc-qubit",
       "target": "gkp-codes"
+    },
+    {
+      "source": "time-bin-photonic-qubit",
+      "target": "photonic-qubit"
     },
     {
       "source": "tetron-qubit",

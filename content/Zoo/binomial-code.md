@@ -56,6 +56,7 @@ For the full treatment, see [[binomial-codes]].
 ## Evergreen context
 
 - [[bosonic-code-hierarchy]] — places the stub in the broader bosonic-code landscape and explains why binomial, cat, and GKP encodings solve different error-model tradeoffs
+- [[dispersive-readout-mechanism]] — the canonical cavity-parity readout layer used by the superconducting implementations summarized in the full entry
 - [[threshold-theorem]] — the right frame for separating a single-mode lifetime win from full fault-tolerant overhead reduction
 
 ## Related Entries

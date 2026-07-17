@@ -100,6 +100,7 @@ Single-qubit operations in dual-rail encoding are realized with beam splitters a
 
 ## Related Entries
 
+- [[photonic-qubit]] — umbrella entry for the broader photonic-qubit family
 - [[dual-rail-photonic-qubit]] — specific encoding used in linear-optical QC
 - [[fusion-based-photonic-qubit]] — evolved architecture that embraces probabilistic gates
 - [[gkp-codes]] — bosonic code approach to photonic error correction

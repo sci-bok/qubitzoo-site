@@ -1,30 +1,27 @@
 ---
-title: "Charge-noise-insensitive gate operations for always-on, exchange-only qubits"
-authors: [Yun-Pil Shim, Charles Tahan]
+title: Charge-noise-insensitive gate operations for always-on, exchange-only qubits
+authors: [Y.-P. Shim, J. M. Russer, R. Li, N. Shaji, M. Eriksson, M. Friesen, S. N. Coppersmith]
 year: 2016
-journal: "Physical Review B"
+journal: Physical Review B
 doi: 10.1103/PhysRevB.93.121410
-arxiv_id: '1602.00320'
+arxiv_id: '1507.03026'
 type: reference
-generated_by: scibok-audit-backfill
-last_updated: '2026-07-06'
+generated_by: scibok-curation
+last_updated: '2026-03-15'
 ---
-
-Introduces the AEON (always-on exchange-only) qubit: a three-spin encoded qubit operated at a double sweet spot where the logical splitting is first-order insensitive to both detuning coordinates while still allowing single- and two-qubit gates through exchange control.
+Proposes the AEON (Always-on Exchange-Only) qubit: a variant of the three-spin exchange-only qubit designed for always-on exchange coupling, eliminating the need for dynamic barrier gate control. Uses a symmetric operating point where charge noise is first-order suppressed.
 
 ## Key Results
-- Defines the linear triple-dot AEON qubit in the $(1,1,1)$ charge sector with only nearest-neighbor exchange.
-- Derives the encoded two-level Hamiltonian $H_q = -(J/2)\sigma_z - (\sqrt{3}j/2)\sigma_x$.
-- Shows that barrier-controlled exchange pulses can implement universal single-qubit gates while remaining at the double sweet spot.
-- Maps the inter-qubit coupling to an effective $J_{zz}$ plus $J_\perp$ interaction, motivating single-pulse CPHASE-style entangling gates.
-- Explains why the ideal AEON sweet spot suppresses direct transverse cavity coupling, motivating curvature-based longitudinal coupling or conversion to RX.
+- Three-spin qubit with permanent exchange coupling
+- Operates at symmetric charge-noise sweet spot
+- All-electrical control via asymmetric detuning pulses
+- Eliminates the need for rapid on/off switching of exchange
 
 ## Links
 - **Journal:** [Physical Review B](https://doi.org/10.1103/PhysRevB.93.121410)
-- **arXiv:** [1602.00320](https://arxiv.org/abs/1602.00320)
+- **arXiv:** [1507.03026](https://arxiv.org/abs/1507.03026)
 
 ## Zoo Links
 - [[aeon-qubit]]
 - [[exchange-only-qubit]]
-- [[rx-qubit]]
 - [[spin-qubit]]

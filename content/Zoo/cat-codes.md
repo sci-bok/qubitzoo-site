@@ -104,6 +104,7 @@ Standard bosonic codes (like GKP) require complex active error correction. The c
 ## Evergreen context
 
 - [[bosonic-code-hierarchy]] — where cat codes sit relative to GKP and binomial encodings
+- [[josephson-junction-as-nonlinear-element]] — the physical source of the Kerr and parametric nonlinearities that superconducting cat implementations engineer into a stabilized manifold
 - [[noise-bias-and-asymmetric-error-channels]] — the central idea behind exponentially biased cat noise
 - [[erasure-error-vs-pauli-error]] — useful contrast when comparing bosonic and heralded architectures
 

@@ -105,6 +105,7 @@ Photonic quantum computing offers room-temperature operation, high clock speeds,
 
 ## Related Entries
 
+- [[photonic-qubit]] — umbrella entry for the broader photonic-qubit family
 - [[dual-rail-photonic-qubit]] — underlying photonic encoding
 - [[time-bin-photonic-qubit]] — alternative photonic qubit compatible with FBQC
 - [[surface-code-logical-qubit]] — error correction code used in FBQC

@@ -3,7 +3,7 @@ title: Superconducting MOC
 type: moc
 technology_family: Superconducting
 note_count: 21
-last_updated: '2026-07-03'
+last_updated: '2026-07-17'
 generated_by: pipeline-moc-v1
 ---
 
@@ -146,12 +146,51 @@ Curated map of Zoo entries in the **Superconducting** family.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Conceptual anchors
 
 - [[charge-noise-in-superconducting-qubits]] and [[charge-noise-sweet-spot]] explain the CPB → transmon → protected-superconducting arc.
 - [[josephson-junction-as-nonlinear-element]] is the common circuit primitive behind nearly every qubit in this family.
 - [[jaynes-cummings-in-circuits]], [[dispersive-readout-mechanism]], and [[resonator-as-quantum-bus]] are the shared circuit-QED infrastructure layer.
 - [[bosonic-code-hierarchy]] explains why `cat-codes`, `gkp-codes`, and `binomial-codes` are related but not interchangeable.
+
+## Four-branch reading map
+
+| Branch | What it is really optimizing | Best entry points | Evergreen lens |
+|---|---|---|---|
+| Baseline circuit-QED branch | Fast microwave control, scalable readout, and tunable two-qubit gates in a weakly anharmonic artificial atom stack | `transmon`, `xmon`, `gmon`, `tunable-coupler`, `circuit-qed` | [[josephson-junction-as-nonlinear-element]], [[dispersive-readout-mechanism]], [[resonator-as-quantum-bus]] |
+| Protected-circuit branch | Suppress sensitivity before decoding by reshaping the circuit landscape or exploiting duality | `fluxonium`, `heavy-fluxonium-qubit`, `blochnium`, `0-pi-qubit`, `cos2phi-qubit` | [[charge-noise-sweet-spot]], [[coherence-time-hierarchy]], [[noise-bias-and-asymmetric-error-channels]] |
+| Bosonic / oscillator branch | Push error correction partly into a long-lived cavity mode instead of a single anharmonic junction mode | `bosonic-qubit`, `cat-codes`, `kerr-cat-qubit`, `gkp-codes`, `binomial-codes` | [[bosonic-code-hierarchy]], [[noise-bias-and-asymmetric-error-channels]], [[erasure-error-vs-pauli-error]] |
+| Rail / erasure branch | Turn dominant relaxation or leakage events into flagged faults that the decoder can exploit | `dual-rail-superconducting-qubit` | [[erasure-error-vs-pauli-error]], [[threshold-theorem]] |
+
+A useful routing rule is that `circuit-qed` is **infrastructure, not a peer qubit**. Enter it when the live question is about readout, coupling, resonators, or cavity-mediated control. Enter `transmon`, `fluxonium`, `blochnium`, or the bosonic-code notes when the live question is what degree of freedom is actually carrying the logical information.
 
 ## Hardware-assisted fault-tolerance routes
 
@@ -174,6 +213,34 @@ Route superconducting descendants to [[super-semi-moc]] only when the semiconduc
 ## Editorial note
 
 This family mixes bare qubits, bosonic encodings, and enabling infrastructure. Keep the generated table exhaustive, but use the evergreen layer to prevent the family page from becoming a flat list.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
