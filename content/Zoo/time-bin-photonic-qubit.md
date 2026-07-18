@@ -3,7 +3,7 @@ title: Time-Bin Photonic Qubit
 entry_type: qubit
 technology_family: Photonic
 status: demonstrated
-figure_reviewed: false
+figure_reviewed: true
 first_proposed_year: 1999
 first_demonstrated_year: 1999
 keywords:
@@ -15,10 +15,10 @@ keywords:
 - interferometric
 - quantum network
 influence_score: 0.70
-last_updated: '2026-07-17'
+last_updated: '2026-07-18'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-manual-2026-07-17
+verified_by: scibok-manual-2026-07-18
 ---
 
 ## Figure
