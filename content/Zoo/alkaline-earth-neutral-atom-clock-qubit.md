@@ -15,10 +15,10 @@ keywords:
 - ytterbium
 - optical clock transition
 influence_score: 0.69
-last_updated: '2026-03-21'
+last_updated: '2026-07-19'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-manual-2026-03-21
+verified_by: scibok-manual-2026-07-19
 ---
 
 ## Figure
@@ -27,81 +27,93 @@ verified_by: scibok-manual-2026-03-21
 
 ## Description
 
-The alkaline-earth neutral-atom clock qubit encodes information in long-lived nuclear-spin or clock-compatible states of alkaline-earth(-like) atoms (e.g., Sr, Yb), with metastable electronic manifolds used for manipulation, addressing, or transport.
+The alkaline-earth neutral-atom clock qubit is a family of neutral-atom architectures that exploits the clock-compatible $J=0$ manifolds of alkaline-earth-like atoms such as $^{87}$Sr and $^{171}$Yb. The central idea is **not** usually to store the logical qubit directly in the bare electronic $^1S_0 \leftrightarrow {^3P_0}$ optical transition. Instead, in the clearest computing demonstrations, logical information is stored in long-lived nuclear-spin states within the $^1S_0$ ground manifold, while the ultra-narrow clock transition and metastable manifolds are used for shelving, transport, ancilla roles, or access to Rydberg interactions.
 
-Unlike alkali Rydberg platforms centered on hyperfine ground states, this architecture exploits the multielectron structure of alkaline-earth atoms. The key encoding uses the $^1S_0$ ground state and $^3P_0$ metastable excited state — the same $J=0 \to J=0$ **optical clock transition** used in the world's most precise atomic clocks. This transition has a naturally narrow linewidth (metastable lifetime $\tau > 10\,\text{s}$ for Sr, $> 20\,\text{s}$ for Yb) and is first-order insensitive to magnetic field fluctuations:
+This architecture therefore sits between pure nuclear-spin storage and literal optical-clock qubits. In $^{171}$Yb, for example, the data qubit can live in the two $m_I=\pm 1/2$ nuclear-spin states of $^1S_0$, while optical-clock and Rydberg-accessible states provide the control stack. Recent hybrid schemes go one step further by pairing nuclear-spin data qubits with separate optical-clock ancilla qubits in dual-isotope arrays.
 
-$$\frac{\partial \omega_0}{\partial B} \approx 0$$
-
-which is the central coherence advantage over many hyperfine encodings.
-
-Proposals use separate optical potentials (**state-dependent lattices**) for the $^1S_0$ and $^3P_0$ manifolds to decouple storage and control operations while preserving long coherence-compatible encoding states. Entanglement is achieved via Rydberg excitation from the $^3P_0$ state, providing access to strong interactions while maintaining the coherence benefits of clock-state storage. For Sr, the clock transition is at 698 nm; for Yb, at 578 nm.
+Because both $^1S_0$ and $^3P_0$ have $J=0$, electronic magnetic sensitivity is strongly suppressed. The residual field sensitivity is set by the chosen hyperfine or nuclear-spin pair and operating bias field, so the relevant protection is a **clock-like encoding condition**, not a generic multi-branch Zeeman manifold of the bare electronic states.
 
 ## Hamiltonian
 
-A minimal clock-qubit + Rydberg-control model in tweezer/lattice arrays:
+A representative effective model treats the logical qubit as two long-lived nuclear-spin states $|0\rangle, |1\rangle$ in the $^1S_0$ manifold, with an auxiliary Rydberg state $|r\rangle$ used for entangling gates:
 
-$$H = \sum_i \frac{\omega_0}{2}\sigma_z^{(i)} + \sum_i \left[\frac{\Omega_i(t)}{2}\sigma_x^{(i)} + \delta_i(t)\frac{1-\sigma_z^{(i)}}{2}\right] + \sum_{i<j} V_{ij} n_i n_j$$
+$$H = \sum_i \left[ \frac{\omega_q}{2}\sigma_z^{(i)} + \frac{\Omega_q^{(i)}(t)}{2}\sigma_x^{(i)} - \Delta_r^{(i)} n_r^{(i)} + \frac{\Omega_r^{(i)}(t)}{2}\left(|1_i\rangle\langle r_i| + |r_i\rangle\langle 1_i|\right) \right] + \sum_{i<j} V_{ij} n_r^{(i)} n_r^{(j)}$$
 
-where $\omega_0$ is the clock transition splitting (encoding $^1S_0 \leftrightarrow {^3P_0}$), $\Omega_i$ and $\delta_i$ are local control fields, and $V_{ij}$ is a Rydberg-mediated interaction term for entangling operations.
+where $\omega_q$ is the nuclear-spin qubit splitting, $\Omega_q$ is the single-qubit drive, $\Omega_r$ and $\Delta_r$ control the temporary excitation into a strongly interacting Rydberg manifold, and $V_{ij}$ is the Rydberg blockade interaction.
 
-For clock-state encoding specifically, first-order magnetic sensitivity can be engineered to vanish at operating points, providing the central coherence advantage.
+The narrow $^1S_0 \leftrightarrow {^3P_0}$ clock transition is then best viewed as part of the control and ancilla toolbox, not as the only possible logical basis. Hybrid architectures can also assign optical-clock qubits to dedicated ancilla atoms while retaining nuclear-spin data qubits.
 
 ## Motivation
 
-- Natural compatibility with **optical-clock-grade** internal states — leverages decades of atomic clock R&D
-- Access to architecture-level control primitives (state-dependent lattices, narrow-line transitions) not available in simpler alkali-only manifolds
-- Potential convergence path between neutral-atom quantum computing and quantum-metrology hardware stacks
-- Nuclear spin encoding in $J=0$ states provides intrinsic protection from electronic decoherence channels
+- Combines **clock-grade internal-state stability** with neutral-atom array scalability
+- Separates long-lived data storage from fast interaction channels, reducing control crosstalk
+- Naturally supports hybrid data/ancilla architectures for mid-circuit readout and QEC primitives
+- Offers a clean route to **erasure-biased** neutral-atom computing because metastable-state structure makes loss and leakage easier to identify
 
 ## Experimental Status
 
 **Original proposal — Daley et al. (2008):**
-- Proposed quantum computing with alkaline-earth-metal atoms using nuclear spin encoding
-- Identified the clock transition and state-dependent lattices as key resources
+- Proposed quantum computing with alkaline-earth atoms using nuclear-spin storage plus metastable-state transport and control
+- Established the basic clock-compatible neutral-atom architecture
 
-**Architecture development — Daley, Ye, and Zoller (2011):**
-- Developed detailed proposals for state-dependent lattices for quantum computing with alkaline-earth atoms
-- Showed how separate trapping potentials for $^1S_0$ and $^3P_0$ enable independent control of storage and gate operations
+**Detailed control architecture — Daley, Ye, and Zoller (2011):**
+- Developed state-dependent lattice schemes that separate storage and gate operations
+- Clarified how $^1S_0$ and $^3P_0$ can play distinct architectural roles
 
-**High-fidelity entanglement — Madjarov et al. (2020):**
-- Demonstrated high-fidelity entanglement and detection of alkaline-earth Rydberg atoms using $^{88}$Sr in optical tweezers
-- Experimental validation of the Rydberg entanglement pathway for alkaline-earth platforms
+**Alkaline-earth Rydberg entanglement — Madjarov et al. (2020):**
+- Demonstrated high-fidelity entanglement and detection in $^{88}$Sr Rydberg atoms
+- Validated the alkaline-earth-specific entangling path needed for clock-compatible architectures
+
+**Universal logic in tweezers — Ma et al. (2022):**
+- Demonstrated universal gate operations on $^{171}$Yb nuclear-spin qubits in an optical tweezer array
+- Reported single-qubit gate fidelity of 99.96% and spin-echo coherence beyond 10 s
+
+**Hybrid data/ancilla array — Nakamura et al. (2024):**
+- Demonstrated a dual-isotope Yb array with $^{171}$Yb nuclear-spin data qubits and $^{174}$Yb optical-clock ancilla qubits
+- Showed low-crosstalk ancilla readout compatible with mid-circuit-QEC-style operation
 
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| Clock transition coherence | Very long ($\tau > 10$ s for Sr) | Metastable $^3P_0$ lifetime | [Daley et al. 2008](https://doi.org/10.1103/PhysRevLett.101.170504) |
-| Gate/control strategy | State-dependent lattices + Rydberg entanglement | Separates storage and interaction | [Daley et al. 2011](https://doi.org/10.1140/epjd/e2011-20095-2) |
-| Entanglement fidelity | High (demonstrated in Sr Rydberg) | Two-atom entanglement demonstrated | [Madjarov et al. 2020](https://doi.org/10.1038/s41567-020-0903-z) |
-| Magnetic sensitivity | First-order insensitive | $J=0 \to J=0$ clock transition | — |
+| 1Q gate fidelity | 99.96% | $^{171}$Yb nuclear-spin qubit in optical tweezers | [Ma et al. 2022](https://doi.org/10.1103/PhysRevX.12.021028) |
+| Coherence time | $T_2 > 10\,\text{s}$ | Spin-echo coherence for $^{171}$Yb nuclear-spin clock qubit | [Ma et al. 2022](https://doi.org/10.1103/PhysRevX.12.021028) |
+| Ancilla discrimination fidelity | 0.9992 | $^{174}$Yb optical-clock ancilla readout in hybrid array | [Nakamura et al. 2024](https://doi.org/10.1103/PhysRevX.14.041062) |
+| Ancilla survival probability | 0.988 | Post-readout atom survival in hybrid array | [Nakamura et al. 2024](https://doi.org/10.1103/PhysRevX.14.041062) |
+| Erasure-conversion efficiency | $>97\%$ (proposed) | Converts loss / Rydberg-decay events into detectable erasures | [Wu et al. 2022](https://doi.org/10.1038/s41467-022-32094-6) |
 
 ## References
 
-### Original proposal
-- A. J. Daley et al., "Quantum Computing with Alkaline-Earth-Metal Atoms," [Phys. Rev. Lett. 101, 170504 (2008)](https://doi.org/10.1103/PhysRevLett.101.170504)
+### Foundational architecture
+- A. J. Daley, M. M. Boyd, J. Ye, and P. Zoller, "Quantum Computing with Alkaline-Earth-Metal Atoms," [Phys. Rev. Lett. 101, 170504 (2008)](https://doi.org/10.1103/PhysRevLett.101.170504), [arXiv:0808.1940](https://arxiv.org/abs/0808.1940)
+- A. J. Daley, J. Ye, and P. Zoller, "State-dependent lattices for quantum computing with alkaline-earth-metal atoms," [Eur. Phys. J. D 65, 207 (2011)](https://doi.org/10.1140/epjd/e2011-20095-2), [arXiv:1102.1463](https://arxiv.org/abs/1102.1463)
 
-### Architecture development
-- A. J. Daley, J. Ye, and P. Zoller, "State-dependent lattices for quantum computing with alkaline-earth-metal atoms," [Eur. Phys. J. D 65, 207 (2011)](https://doi.org/10.1140/epjd/e2011-20095-2)
+### Experimental milestones
+- I. S. Madjarov et al., "High-fidelity entanglement and detection of alkaline-earth Rydberg atoms," [Nat. Phys. 16, 857 (2020)](https://doi.org/10.1038/s41567-020-0903-z), [arXiv:2001.04455](https://arxiv.org/abs/2001.04455)
+- S. Ma, A. P. Burgers, G. Liu, J. Wilson, B. Zhang, and J. D. Thompson, "Universal Gate Operations on Nuclear Spin Qubits in an Optical Tweezer Array of $^{171}$Yb Atoms," [Phys. Rev. X 12, 021028 (2022)](https://doi.org/10.1103/PhysRevX.12.021028), [arXiv:2112.13487](https://arxiv.org/abs/2112.13487)
+- Y. Nakamura, T. Kusano, R. Yokoyama, K. Saito, K. Higashi, N. Ozawa, T. Takano, Y. Takasu, and Y. Takahashi, "Hybrid Atom Tweezer Array of Nuclear Spin and Optical Clock Qubits," [Phys. Rev. X 14, 041062 (2024)](https://doi.org/10.1103/PhysRevX.14.041062)
 
-### Experimental demonstrations
-- I. S. Madjarov et al., "High-fidelity entanglement and detection of alkaline-earth Rydberg atoms," [Nat. Phys. 16, 857 (2020)](https://doi.org/10.1038/s41567-020-0903-z)
+### Error-correction direction
+- Y. Wu, S. Kolkowitz, S. Puri, and J. D. Thompson, "Erasure conversion for fault-tolerant quantum computing in alkaline earth Rydberg atom arrays," [Nat. Commun. 13, 4656 (2022)](https://doi.org/10.1038/s41467-022-32094-6), [arXiv:2201.03540](https://arxiv.org/abs/2201.03540)
 
 ## Linked Papers
 
 - [[daley-2008-quantum-computing-with-alkaline-earth-atoms]]
 - [[daley-2011-state-dependent-lattices-for-quantum-computing-with-alkaline-earth-metal-atoms]]
 - [[madjarov-2020-high-fidelity-entanglement-and-detection-of-alkaline-earth-rydberg-atoms]]
+- [[ma-2022-nuclear-spin-atom]]
+- [[nakamura-2024-hybrid-atom-tweezer-array]]
+- [[wu-2022-erasure-neutral-atoms]]
 
 ## Evergreen context
 
-- [[coherence-time-hierarchy]] — the clock-state pitch is fundamentally a gate-time versus storage-time advantage story
-- [[rydberg-blockade-mechanism]] — these platforms still cash out their entangling power by temporarily promoting clock-state atoms into interacting Rydberg manifolds
-- [[erasure-error-vs-pauli-error]] — alkaline-earth neutral atoms are one of the clearest routes to deliberate erasure-dominant QEC rather than plain Pauli-noise suppression
+- [[coherence-time-hierarchy]] — the whole point is to keep the storage manifold much quieter than the interaction manifold
+- [[rydberg-blockade-mechanism]] — fast entangling power still comes from temporary access to strongly interacting excited states
+- [[erasure-error-vs-pauli-error]] — alkaline-earth platforms are unusually well placed to convert loss and leakage into decoder-friendly erasure information
 
 ## Related Entries
 
-- [[rydberg-neutral-atom-qubit]] — alkali Rydberg platform with complementary trade-offs
-- [[nuclear-spin-neutral-atom-qubit]] — closely related nuclear spin encoding approach
-- [[trapped-ion-qubit]] — alternative platform with similar clock-state philosophy
+- [[nuclear-spin-neutral-atom-qubit]] — the most direct subset focused on ground-manifold nuclear-spin storage
+- [[rydberg-neutral-atom-qubit]] — broader neutral-atom entangling-gate ecosystem
+- [[erasure-qubit]] — error-model perspective strongly aligned with alkaline-earth proposals
+- [[qubit-readout]] — hybrid ancilla-readout schemes are a major recent differentiator
