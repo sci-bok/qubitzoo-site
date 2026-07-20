@@ -4,22 +4,20 @@ authors: [J. Medford, J. Beil, J. M. Taylor, E. I. Rashba, H. Lu, A. C. Gossard,
 year: 2013
 journal: Physical Review Letters
 doi: 10.1103/PhysRevLett.111.050501
-arxiv_id: '1302.1933'
 type: reference
 generated_by: scibok-curation
-last_updated: '2026-03-15'
+last_updated: '2026-07-20'
 ---
-Introduces the resonant exchange (RX) qubit: a three-electron triple quantum dot qubit operated at the symmetric point where exchange couplings are equal. Achieves all-electrical control with first-order insensitivity to charge noise while maintaining fast gate times.
+Introduces and experimentally demonstrates the resonant-exchange (RX) qubit in a GaAs triple quantum dot, showing resonant electrical control at a sweet spot where average exchange sets the splitting and exchange asymmetry provides the drive.
 
 ## Key Results
-- Three-electron qubit in triple quantum dot at symmetric operating point
-- First-order insensitivity to charge noise (sweet spot)
-- Gate times: ~1 ns (fast, all-electrical)
-- T₂* ~ 1 μs at sweet spot (100× improvement over exchange-only at generic point)
+- First experimental RX qubit demonstration in a triple quantum dot
+- Two-axis resonant control near the symmetric sweet spot
+- $\pi/2$ gate time of 2.5 ns
+- Multipulse-echo coherence time of 19 $\mu$s
 
 ## Links
 - **Journal:** [Physical Review Letters](https://doi.org/10.1103/PhysRevLett.111.050501)
-- **arXiv:** [1302.1933](https://arxiv.org/abs/1302.1933)
 
 ## Zoo Links
 - [[rx-qubit]]
