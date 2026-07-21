@@ -13,9 +13,9 @@ keywords:
 - exchange-only
 - triple quantum dot
 influence_score: 0.69
-last_updated: '2026-07-20'
+last_updated: '2026-07-21'
 generated_by: scibok-curation
-verified_by: scibok-manual-2026-07-20
+verified_by: scibok-manual-2026-07-21
 ---
 
 ## Figure
@@ -112,6 +112,7 @@ This is the right public-facing RX picture: static longitudinal splitting from a
 - [[medford-2013-self-consistent-measurement]]
 - [[doherty-2013-qubit-gates-resonant]]
 - [[landig-2018-coherent-spin-photon]]
+- [[jiang-2025-sige-rx-resonator]]
 
 ## Evergreen context
 
