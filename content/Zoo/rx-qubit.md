@@ -13,9 +13,9 @@ keywords:
 - exchange-only
 - triple quantum dot
 influence_score: 0.69
-last_updated: '2026-07-21'
+last_updated: '2026-07-22'
 generated_by: scibok-curation
-verified_by: scibok-manual-2026-07-21
+verified_by: scibok-manual-2026-07-22
 ---
 
 ## Figure
