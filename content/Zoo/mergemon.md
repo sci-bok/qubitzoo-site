@@ -84,7 +84,7 @@ but with $E_C$ set by the junction self-capacitance $C_J$ rather than an externa
 ## References
 
 ### Original concept
-- Y.-P. Shim and C. Tahan, "Bottom-up superconducting and Josephson junction devices inside a group-IV semiconductor," [Nat. Commun. 5, 4225 (2014)](https://doi.org/10.1038/ncomms5225) — [arXiv:1407.4786](https://arxiv.org/abs/1407.4786)
+- Y.-P. Shim and C. Tahan, "Bottom-up superconducting and Josephson junction devices inside a group-IV semiconductor," [Nat. Commun. 5, 4225 (2014)](https://doi.org/10.1038/ncomms5225) — [arXiv:1309.0015](https://arxiv.org/abs/1309.0015)
 
 ### Experimental demonstrations
 - R. Zhao et al., "Merged-Element Transmon," [Phys. Rev. Applied 14, 064006 (2020)](https://doi.org/10.1103/PhysRevApplied.14.064006) — [arXiv:2003.02686](https://arxiv.org/abs/2003.02686)
