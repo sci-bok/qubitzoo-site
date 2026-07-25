@@ -14,10 +14,10 @@ keywords:
 - fermion parity
 - topological protection
 influence_score: 0.69
-last_updated: '2026-03-21'
+last_updated: '2026-07-25'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-manual-2026-03-21
+verified_by: scibok-manual-2026-07-25
 ---
 
 ## Figure
@@ -26,7 +26,13 @@ verified_by: scibok-manual-2026-03-21
 
 ## Description
 
-The Majorana topological qubit encodes quantum information in fermion parity degrees of freedom built from spatially separated **Majorana zero modes** (MZMs) in hybrid semiconductor-superconductor nanostructures. The qubit states $|0_L\rangle$ (even parity) and $|1_L\rangle$ (odd parity) are defined by the occupation of a nonlocal fermion mode $f = \frac{1}{2}(\gamma_1 + i\gamma_2)$ constructed from two Majorana operators $\gamma_1, \gamma_2$ localized at opposite ends of a proximitized semiconductor nanowire.
+The Majorana topological qubit seeks to encode quantum information in fermion-parity degrees of freedom built from spatially separated **Majorana zero modes** (MZMs) in hybrid semiconductor-superconductor nanostructures. The elementary building block is a nonlocal fermion mode
+
+$$f = \frac{1}{2}(\gamma_1 + i\gamma_2)$$
+
+constructed from two Majorana operators $\gamma_1, \gamma_2$ localized at opposite ends of a proximitized wire or island.
+
+That two-MZM mode is an important **parity degree of freedom**, but by itself it is **not yet a full logical qubit** in a fixed-parity superconducting system. A minimal logical Majorana qubit requires **at least four MZMs**, so logical states can be defined within a fixed total parity sector, for example in tetron-style encodings.
 
 In finite nanowires, overlapping end Majorana modes split away from zero energy. A central scaling requirement is **exponential suppression** of this splitting with wire length:
 
@@ -34,7 +40,7 @@ $$\delta E \propto e^{-L/\xi}$$
 
 where $L$ is the Majorana separation and $\xi$ is the Majorana localization length. Coulomb-blockade transport in Majorana islands is a primary diagnostic channel for parity states and near-zero modes, with transitions between 2$e$ and 1$e$ periodicity serving as experimental signatures.
 
-The topological protection arises from the nonlocal encoding: information stored in the relative parity of spatially separated modes is immune to local perturbations, offering a candidate path to hardware-level error suppression before full quantum error correction overhead. A minimal operational qubit requires four MZMs (two pairs) to define a logical qubit within a fixed total parity sector.
+The hoped-for topological protection arises from nonlocal encoding: information stored in the relative parity of spatially separated modes is exponentially insensitive to local hybridization and some local noise channels. Experimentally, however, near-zero modes, parity signatures, and even parity readout are still not the same thing as a fully validated topological logical qubit. A minimal operational qubit requires four MZMs (two pairs) to define a logical qubit within a fixed total parity sector.
 
 ## Hamiltonian
 
@@ -51,6 +57,8 @@ In the topological regime, Majorana zero modes localize at wire ends with overla
 $$\delta E \sim e^{-L/\xi}\cos(k_F L + \phi)$$
 
 which motivates long wires and hard-gap devices for robust parity protection.
+
+At low energy, bilinears $i\gamma_a\gamma_b$ act as parity operators. In a four-Majorana encoding, one works inside a fixed total-parity sector, for example $(i\gamma_1\gamma_2)(i\gamma_3\gamma_4)=+1$, and defines logical states through relative pair parities. A single two-end wire instead provides only one nonlocal parity mode.
 
 ## Motivation
 
@@ -73,18 +81,25 @@ which motivates long wires and hard-gap devices for robust parity protection.
 - Key milestone toward establishing topological protection in solid-state systems
 - [Nature 531, 206 (2016)](https://doi.org/10.1038/nature17162)
 
-**Parity signatures:**
-- Coulomb-blockade parity signatures observed: 2$e$/1$e$ regime transitions consistent with subgap-state / Majorana phenomenology
-- Theoretical framework for Coulomb-blockaded Majorana devices developed (Shen et al., Lai et al.)
+**Parity signatures and interpretation work:**
+- Coulomb-blockade parity signatures, including 2$e$/1$e$ transitions and odd-parity ground states, have been observed in hybrid InSb/Al and InAs/Al islands
+- These signatures are consistent with isolated near-zero subgap states, but are not by themselves unique proof of a topological qubit
+- [Nature Communications 9, 4801 (2018)](https://doi.org/10.1038/s41467-018-07279-7)
 
-**Microsoft topological qubit program (2025):**
-- Extensive spectroscopy and interferometric measurements on InAs/Al devices
-- Topological gap protocol developed for identifying topological regime
-- Full braiding-grade protected gates and logical qubit operations remain open experimental challenges
+**Protocol-based topological-regime evidence (2024):**
+- Gate-defined InAs/Al devices were reported to pass the topological gap protocol, a multi-stage local/nonlocal transport test designed to suppress false positives from trivial near-zero modes
+- This is stronger than isolated zero-bias-peak lore, but still not a logical-qubit demonstration
+- [arXiv:2207.02472](https://arxiv.org/abs/2207.02472)
+
+**Single-shot parity readout (2025):**
+- Interferometric single-shot parity measurement was demonstrated in InAs/Al hybrid devices, with reported 1% assignment error probability at the optimal operating point
+- The paper explicitly notes that the observed low-energy state can admit both topologically trivial and non-trivial interpretations, so this is a parity-readout milestone rather than conclusive proof of topological quantum computation
+- [Nature 638, 651 (2025)](https://doi.org/10.1038/s41586-024-08445-2)
 
 **Current status:**
-- Robust topological protection must still be established under full control/readout stacks
-- Still pre-fault-tolerant experimentally; demonstrated topological logical gate fidelity not yet established
+- Majorana ingredients are now substantially better controlled than in the first-wave spectroscopy era
+- Robust four-MZM logical-qubit operation, fusion/braiding-grade control, and demonstrated topological logical gate fidelity remain open experimental milestones
+- The field remains promising, but still pre-fault-tolerant experimentally
 
 ## Key Metrics
 
@@ -92,6 +107,7 @@ which motivates long wires and hard-gap devices for robust parity protection.
 |--------|-------|-------|--------------------|
 | Zero-mode splitting trend | Exponential suppression with $L$ | Key milestone toward topological protection | [Albrecht et al. 2016](https://doi.org/10.1038/nature17162) |
 | Coulomb-blockade parity signatures | 2$e$/1$e$ regime transitions observed | Consistent with Majorana phenomenology | — |
+| Single-shot parity measurement error | 1% assignment error probability | InAs/Al interferometric parity readout, not yet a full logical-qubit demonstration | [Microsoft Azure Quantum 2025](https://doi.org/10.1038/s41586-024-08445-2) |
 | Topological logical gate fidelity | Not yet established | Full braiding-grade protected gates remain open | — |
 | Topological phase condition | $V_Z > \sqrt{\mu^2 + \Delta^2}$ | Idealized Rashba wire model | — |
 
@@ -105,17 +121,24 @@ which motivates long wires and hard-gap devices for robust parity protection.
 
 ### Related theory
 - J. Shen et al., "Parity transitions in the superconducting ground state of hybrid InSb–Al Coulomb islands," [Nat. Commun. 9, 4801 (2018)](https://doi.org/10.1038/s41467-018-07279-7)
+- Y.-H. Lai, S. Das Sarma, and J. D. Sau, "Theory of Coulomb blockaded transport in realistic Majorana nanowires," [Phys. Rev. B 104, 085141 (2021)](https://doi.org/10.1103/PhysRevB.104.085141)
+
+### Recent experimental status
+- Microsoft Quantum, "InAs-Al Hybrid Devices Passing the Topological Gap Protocol," [arXiv:2207.02472](https://arxiv.org/abs/2207.02472)
+- Microsoft Azure Quantum, "Interferometric single-shot parity measurement in InAs–Al hybrid devices," [Nature 638, 651 (2025)](https://doi.org/10.1038/s41586-024-08445-2)
 
 ## Linked Papers
 
 - [[albrecht-2016-exponential-protection-of-zero]]
 - [[lai-2021-theory-of-coulomb-blockaded]]
 - [[shen-2018-parity-transitions-in-the]]
-- [[aghaee-2021-majorana-spectroscopy]]
+- [[microsoft-2024-inas-al-hybrid-devices-passing-the-topological-gap-protocol]]
+- [[aghaee-2025-interferometric-parity]]
 
 ## Related Entries
 
 - [[tetron-qubit]] — proposed scalable Majorana qubit architecture
 - [[planar-josephson-junction-qubit]] — alternative topological superconductor platform
+- [[qubit-readout]] — parity-sensitive readout is now a central experimental milestone for this platform
 - [[surface-code-logical-qubit]] — error correction code compatible with topological qubits
 - [[color-code-logical-qubit]] — alternative topological error correction code
