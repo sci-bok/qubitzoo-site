@@ -3,7 +3,7 @@ title: Codes MOC
 type: moc
 technology_family: Codes
 note_count: 3
-last_updated: '2026-07-17'
+last_updated: '2026-08-01'
 generated_by: pipeline-moc-v1
 ---
 
@@ -22,6 +22,36 @@ Curated map of Zoo entries in the **Codes** family.
 - encoding: 3
 
 <!-- CURATED -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -185,6 +215,36 @@ Taken together, this family is best seen as the place where the Zoo asks **which
 ## Editorial note
 
 This MOC is still narrow. It currently captures only families with stable Zoo-level identity. Keep generic code-theory papers in `References/` unless they materially change the hardware-facing story.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

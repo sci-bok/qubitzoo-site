@@ -3,7 +3,7 @@ title: Super-Semi MOC
 type: moc
 technology_family: Super-Semi
 note_count: 5
-last_updated: '2026-07-17'
+last_updated: '2026-08-01'
 generated_by: pipeline-moc-v1
 ---
 
@@ -24,6 +24,36 @@ Curated map of Zoo entries in the **Super-Semi** family.
 - qubit: 5
 
 <!-- CURATED -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -136,6 +166,16 @@ The cleanest way to read this family is to ask **where the semiconductor is doin
    - [[all-semiconductor-superconducting-qubit]] is the fabrication-endpoint branch. Its main claim is not a new control Hamiltonian but the possibility of moving the entire superconducting circuit, junctions included, inside one doped crystal.
    - Compare it to [[gatemon]] or [[transmon]] on interface elimination and process integration, and to [[kane-qubit]] on atomic-precision fabrication lineage.
 
+## Semiconductor-superconductor routing table
+
+| Entry | Keep it in [[super-semi-moc]] when the main claim is... | Hand off when the real question becomes... |
+|---|---|---|
+| [[gatemon]] | electrostatic tuning of an otherwise transmon-like Josephson element | ordinary circuit-QED scaling or baseline superconducting benchmarking in [[superconducting-moc]] |
+| [[gatemonium]] | a gate-tunable weak link reshaping which fluxonium regime the same circuit can access | protected-circuit comparison against `fluxonium`, `heavy-fluxonium-qubit`, or `0-pi-qubit` inside [[superconducting-moc]] |
+| [[andreev-spin-qubit]] | odd-parity Andreev states and spin-dependent supercurrent are the qubit resource | nonlocal parity encoding or a topological phase claim in [[topological-moc]] |
+| [[ferbo-qubit]] | even-parity Andreev structure is being used as a relaxation-bias / protection mechanism inside a fluxonium-like circuit | the comparison becomes purely protected-circuit taxonomy in [[superconducting-moc]] or topological parity protection in [[topological-moc]] |
+| [[all-semiconductor-superconducting-qubit]] | monolithic crystal growth and interface elimination are the conceptual novelty | donor-style atomic fabrication lineage in [[semiconducting-moc]] or ordinary superconducting-circuit performance in [[superconducting-moc]] |
+
 ## Routing rule inside the family
 
 - Start with [[gatemon]] or [[gatemonium]] when the interesting question is what electrostatic control does to an otherwise familiar superconducting circuit.
@@ -154,6 +194,36 @@ This family shares hardware vocabulary with [[topological-moc]] such as InAs/Al 
 ## Editorial note
 
 This family is about hybridization, not mere material substitution. Keep links focused on what the semiconductor changes in the circuit physics, control surface, or protection story.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

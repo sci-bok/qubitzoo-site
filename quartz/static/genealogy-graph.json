@@ -1,6 +1,6 @@
 {
   "schema": "qubitzoo.genealogy.v1",
-  "generated_at": "2026-07-17T14:04:34.448155+00:00",
+  "generated_at": "2026-08-01T13:27:59.841699+00:00",
   "nodes": [
     {
       "id": "0-pi-qubit",
@@ -681,6 +681,10 @@
     {
       "source": "all-semiconductor-superconducting-qubit",
       "target": "gatemonium"
+    },
+    {
+      "source": "all-semiconductor-superconducting-qubit",
+      "target": "dual-rail-superconducting-qubit"
     },
     {
       "source": "kane-qubit",

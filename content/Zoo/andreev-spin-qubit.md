@@ -90,6 +90,7 @@ where $\tau$ is the channel transparency, $\varphi$ the superconducting phase di
 
 - [[spin-orbit-coupling-for-qubit-control]] — Rashba SOC in the weak link is exactly what turns Andreev states into electrically addressable spin qubits.
 - [[josephson-junction-as-nonlinear-element]] — this is still a Josephson weak link, but one whose nonlinear element carries spinful Andreev structure instead of a simple tunnel-junction cosine.
+- [[dispersive-readout-mechanism]] — the readout layer is still the familiar cQED move of inferring qubit state from a resonator response, even though the state dependence now comes from spinful Andreev supercurrent rather than a transmon dipole.
 - [[quantum-hardware]] — a good cross-family bridge case: one device behaving simultaneously like a spin qubit, a Josephson circuit, and a circuit-QED component.
 - [[divincenzo-criteria]] — parity stability and single-shot readout are the real scaling bottlenecks here, not just raw coherence numbers.
 

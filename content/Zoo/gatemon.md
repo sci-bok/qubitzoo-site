@@ -14,7 +14,7 @@ keywords:
 - inas
 - super-semi
 influence_score: 0.68
-last_updated: '2026-05-12'
+last_updated: '2026-07-20'
 generated_by: scibok-curation
 extracted_by: scibok
 verified_by: scibok-manual-2026-03-21
@@ -95,7 +95,9 @@ which modifies the anharmonicity and energy-level structure compared to a standa
 ## Evergreen context
 
 - [[josephson-junction-as-nonlinear-element]] — the gatemon keeps transmon physics but replaces the oxide tunnel barrier with a semiconductor weak link whose $E_J$ is tuned electrostatically.
-- [[charge-noise-sweet-spot]] — its protection story is still the transmon one: large $E_J/E_C$ flattens charge sensitivity, while the gate adds a control knob without reverting to charge-qubit fragility.
+- [[dispersive-readout-mechanism]] — in practice the measurement story is still the standard circuit-QED one: gate tuning changes the qubit, but the state is read out from a small resonator shift rather than from a new measurement primitive.
+- [[charge-noise-in-superconducting-qubits]] — even with a semiconductor weak link, the underlying CPB/transmon Hamiltonian still inherits the same offset-charge noise channel that large $E_J/E_C$ is meant to suppress.
+- [[charge-noise-sweet-spot]] — its protection story is still the transmon one: keep charge dispersion flat enough that the added gate knob does not drag the device back toward charge-qubit fragility.
 - [[quantum-hardware]] — this is the cleanest bridge between mainstream superconducting control stacks and semiconductor-process ambitions.
 
 ## Related Entries

@@ -133,6 +133,7 @@ State-of-the-art (as of late 2025): $T_1$ up to $1.68\,\text{ms}$ (planar, tanta
 - [[charge-noise-sweet-spot]] — the design pattern behind large-`E_J/E_C` operation
 - [[josephson-junction-as-nonlinear-element]] — the circuit element that provides the weak anharmonicity
 - [[coherence-time-hierarchy]] — how to interpret the `T_1`, `T_2`, and echo numbers in the metrics table
+- [[jaynes-cummings-in-circuits]] — the transmon usually enters circuit QED through the same one-qubit, one-mode interaction that later gets reduced into dispersive readout and cavity-mediated coupling pictures
 - [[dispersive-readout-mechanism]] — the cQED readout architecture that let the transmon replace destructive tunneling-style superconducting measurements
 - [[purcell-protection-via-detuning]] — why transmons are usually parked far enough from their readout resonators, and then paired with Purcell filters, to keep fast measurement from quietly shortening $T_1$
 

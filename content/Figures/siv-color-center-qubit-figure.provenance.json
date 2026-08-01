@@ -1,0 +1,40 @@
+{
+  "artifact": {
+    "media_type": "image/png",
+    "path": "siv-color-center-qubit-figure.png",
+    "sha256": "626042506ad3e80e4e1b7fcdeefd41df741a77a9c822d17c6e9f03f6ad3ea0b4"
+  },
+  "artifact_role": "primary",
+  "blueprint": {
+    "media_type": "image/png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/siv-color-center-qubit-figure.png",
+    "role": "physics-blueprint",
+    "sha256": "e8a93fddd08cff0a01ea7058b767b4bd8cdb49078c03f2054269ac1c8650ce73"
+  },
+  "entry_slug": "siv-color-center-qubit",
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/siv-color-center-qubit-figure-20260726T020847937688Z.png",
+    "supersedes_file": "siv-color-center-qubit-figure.png"
+  },
+  "renderer": {
+    "name": "nano-banana-2",
+    "provider": "Google AI Studio",
+    "requested_model": "google/gemini-3.1-flash-image-preview",
+    "returned_model": "google/gemini-3.1-flash-image-preview"
+  },
+  "request": {
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-07-26T02:08:47.937688+00:00",
+    "id": "gen-1785031716-XX4X79Z5rhIfbeWLzsAp",
+    "image_size": "1K",
+    "prompt_sha256": "6ee61ceda6efc89cae89d2e238fb8842f9fb75f79b3ad500e2e5671df2c97571",
+    "source_media_type": "image/jpeg"
+  },
+  "review": {
+    "notes": "Revalidated during provenance/frontmatter backfill after full-resolution physics and editorial review; approved Nano Banana 2 final.",
+    "reviewed_at": "2026-07-26T02:25:01.350398+00:00",
+    "reviewer": "codex-visual-physics-review-2026-07-25",
+    "status": "passed"
+  },
+  "schema_version": 1
+}

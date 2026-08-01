@@ -100,7 +100,9 @@ where $\omega_r$ is the resonator frequency, $\omega_q$ the qubit frequency, and
 
 ## Evergreen context
 
+- [[jaynes-cummings-in-circuits]] — the dispersive readout Hamiltonian is the large-detuning descendant of the same cavity-qubit interaction that first defined circuit QED
 - [[dispersive-readout-mechanism]] — the standard superconducting readout pathway
+- [[vacuum-rms-field-scaling]] — superconducting readout works so well in part because quasi-1D resonators concentrate zero-point fields strongly enough to make small devices look like good cavities
 - [[resonator-as-quantum-bus]] — why readout resonators double as coupling infrastructure
 - [[purcell-protection-via-detuning]] — the readout-speed versus spontaneous-emission tradeoff
 

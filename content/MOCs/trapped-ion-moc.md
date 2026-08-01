@@ -3,7 +3,7 @@ title: Trapped Ion MOC
 type: moc
 technology_family: Trapped Ion
 note_count: 3
-last_updated: '2026-07-17'
+last_updated: '2026-08-01'
 generated_by: pipeline-moc-v1
 ---
 
@@ -24,6 +24,36 @@ Curated map of Zoo entries in the **Trapped Ion** family.
 - qubit: 1
 
 <!-- CURATED -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -185,6 +215,36 @@ The most useful way to read this family is as a **three-layer stack rather than 
 ## Editorial note
 
 This family should remain the broad modality page. Keep species-specific and gate-stack specialization lightweight here, then route to [[ion-trap-moc]] once the reader is really comparing the practical Yb + MS trapped-ion stack.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

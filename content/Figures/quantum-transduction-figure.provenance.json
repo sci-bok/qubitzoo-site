@@ -1,0 +1,40 @@
+{
+  "artifact": {
+    "media_type": "image/png",
+    "path": "quantum-transduction-figure.png",
+    "sha256": "54d8936147f68b62298624dee3c5ff5d1b54f9353c63dc4bd11936bbc1274ad4"
+  },
+  "artifact_role": "primary",
+  "blueprint": {
+    "media_type": "image/png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/quantum-transduction-figure.png",
+    "role": "physics-blueprint",
+    "sha256": "f822b33211ec43e0a7d380fae589e68d78fa6506852343ebd7d1e9858e325f13"
+  },
+  "entry_slug": "quantum-transduction",
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/quantum-transduction-figure-20260726T020834123724Z.png",
+    "supersedes_file": "quantum-transduction-figure.png"
+  },
+  "renderer": {
+    "name": "nano-banana-2",
+    "provider": "Google AI Studio",
+    "requested_model": "google/gemini-3.1-flash-image-preview",
+    "returned_model": "google/gemini-3.1-flash-image-preview"
+  },
+  "request": {
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-07-26T02:08:34.123724+00:00",
+    "id": "gen-1785031702-AGYQJmk1lEWAJ6J9NBQh",
+    "image_size": "1K",
+    "prompt_sha256": "85b33b19ea9bd1fa146a54ec8148f27af373f81eb188be520ab87779948fa787",
+    "source_media_type": "image/jpeg"
+  },
+  "review": {
+    "notes": "Revalidated during provenance/frontmatter backfill after full-resolution physics and editorial review; approved Nano Banana 2 final.",
+    "reviewed_at": "2026-07-26T02:25:01.233716+00:00",
+    "reviewer": "codex-visual-physics-review-2026-07-25",
+    "status": "passed"
+  },
+  "schema_version": 1
+}

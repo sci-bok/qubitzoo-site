@@ -1,0 +1,40 @@
+{
+  "artifact": {
+    "media_type": "image/png",
+    "path": "cooper-pair-box-charge-qubit-figure.png",
+    "sha256": "7c9d412adab37f37efec3a259120f8704dc58b5ed63840d9c9d7588f04925657"
+  },
+  "artifact_role": "primary",
+  "blueprint": {
+    "media_type": "image/png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/cooper-pair-box-charge-qubit-figure.png",
+    "role": "physics-blueprint",
+    "sha256": "9f41b57e42aa2f11cb1b675274c3fcfd6523b2c3193c80e8a433e1d292b58b63"
+  },
+  "entry_slug": "cooper-pair-box-charge-qubit",
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/cooper-pair-box-charge-qubit-figure-20260726T015845590446Z.png",
+    "supersedes_file": "cooper-pair-box-charge-qubit-figure.png"
+  },
+  "renderer": {
+    "name": "nano-banana-2",
+    "provider": "Google AI Studio",
+    "requested_model": "google/gemini-3.1-flash-image-preview",
+    "returned_model": "google/gemini-3.1-flash-image-preview"
+  },
+  "request": {
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-07-26T01:58:45.590446+00:00",
+    "id": "gen-1785031116-k6tL2uD9wMel3dro7lyY",
+    "image_size": "1K",
+    "prompt_sha256": "8494a2c07a49261091dcc892796296cbf96ba597f99984ddadf93e5e75063b5c",
+    "source_media_type": "image/jpeg"
+  },
+  "review": {
+    "notes": "Revalidated during provenance/frontmatter backfill after full-resolution physics and editorial review; approved Nano Banana 2 final.",
+    "reviewed_at": "2026-07-26T02:25:01.000530+00:00",
+    "reviewer": "codex-visual-physics-review-2026-07-25",
+    "status": "passed"
+  },
+  "schema_version": 1
+}

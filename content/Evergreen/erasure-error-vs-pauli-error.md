@@ -14,7 +14,17 @@ tags:
 
 # Erasure Error vs Pauli Error
 
-The distinction between erasure errors and Pauli errors is one of the most consequential in quantum error correction. A **Pauli error** is an undetected error: the qubit suffers an unknown $X$, $Y$, or $Z$ rotation, and the decoder must determine both *which* qubit failed and *what* error occurred. An **erasure error** is a detected error: some ancillary measurement or leakage signature reveals *which* qubit was lost, and the decoder need only determine the nature of the error. This difference in information available to the decoder has a dramatic effect on correction overhead. For the surface code, the error correction threshold is approximately 1% for Pauli errors but approximately 50% for erasure errors — the theoretical maximum set by the percolation limit. In practical terms, erasure errors are roughly 3× cheaper to correct per unit error rate, meaning an erasure-dominated architecture can reach the same logical error rate with significantly fewer physical qubits.
+The distinction between erasure errors and Pauli errors is one of the most consequential in quantum error correction. A **Pauli error** is hidden inside the computational space: the decoder must infer which qubit failed and which logical action occurred from syndrome data. An **erasure error** comes with location information: loss, leakage, or a heralding measurement identifies the affected qubit even though its encoded state must be treated as lost or arbitrary. The advantage is therefore not that the physical fault is intrinsically smaller, but that the decoder receives side information about where it happened. For independent erasures, the surface-code threshold can approach the roughly 50% bond-percolation limit, compared with order-1% circuit-level thresholds for generic unflagged Pauli noise; those numbers are model-dependent and should not be compared without stating the noise and measurement assumptions.
+
+This note is about the **flagging axis** of an error model. It is deliberately separate from [[noise-bias-and-asymmetric-error-channels]], which asks whether hidden in-codespace faults favor one Pauli direction over another. A device can have a large erasure fraction and little Pauli bias, strong Pauli bias and no erasure flag, both, or neither.
+
+## Routing boundary
+
+| If the architectural resource is... | Start with... | Track... |
+|---|---|---|
+| A known fault location supplied by loss, leakage, or heralding | This note | Erasure fraction, flag-detection fidelity, and unflagged residual error |
+| A skew among hidden $X$, $Y$, and $Z$ faults | [[noise-bias-and-asymmetric-error-channels]] | A declared Pauli-bias convention and its decoder assumptions |
+| Both flagged loss and biased residual Pauli noise | Read both notes | Erasure and Pauli components separately; do not collapse them into one “bias” number |
 
 The physics behind engineering erasure dominance is elegant: the dominant physical error processes are converted into transitions that leave the computational subspace entirely, landing in a detectable "leaked" state. The paradigmatic example is the **dual-rail encoding** in superconducting circuits. A logical qubit is encoded as $|0_L\rangle = |01\rangle$ and $|1_L\rangle = |10\rangle$ across two transmon modes (or a transmon and a cavity). The dominant error — single-photon loss ($T_1$ decay) — sends $|01\rangle \to |00\rangle$ or $|10\rangle \to |00\rangle$. The leaked state $|00\rangle$ is outside the code space and is detected by a parity check before each round of syndrome extraction. Once detected, the error is flagged as an erasure and the decoder operates in the favorable erasure regime. Crucially, the residual Pauli errors (dephasing within the code space, correlated multi-photon events) are much rarer than the converted erasures, establishing an error hierarchy where erasures dominate by a large factor.
 
@@ -29,7 +39,7 @@ The erasure-vs-Pauli hierarchy is now a deliberate design principle for next-gen
 - [[dual-rail-photonic-qubit]] — photon loss naturally produces a detectable vacuum state (erasure)
 - [[rydberg-neutral-atom-qubit]] — atom loss during Rydberg gates detected via fluorescence; erasure-dominant error budget
 - [[surface-code-logical-qubit]] — erasure threshold (~50%) vs Pauli threshold (~1%) drives the overhead advantage
-- [[noise-bias-and-asymmetric-error-channels]] — erasure dominance as a form of error asymmetry exploited by tailored codes
+- [[noise-bias-and-asymmetric-error-channels]] — orthogonal companion for asymmetry among the residual, unflagged Pauli faults
 
 ## References
 

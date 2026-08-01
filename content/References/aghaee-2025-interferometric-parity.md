@@ -1,25 +1,24 @@
 ---
-title: Interferometric single-shot parity measurement in InAs-Al hybrid devices
-authors:
-- Microsoft Azure Quantum
+title: "Interferometric single-shot parity measurement in an InAs-Al hybrid device"
+authors: [M. Aghaee, Microsoft Quantum]
 year: 2025
-journal: Nature
-doi: 10.1038/s41586-024-08445-2
+journal: "Nature"
+doi: 10.1038/s41586-025-08700-6
+arxiv_id: '2405.10269'
 type: reference
-generated_by: scibok-audit
-last_updated: '2026-07-25'
+generated_by: scibok-audit-backfill
+last_updated: '2026-03-25'
 ---
-Demonstrates interferometric single-shot parity measurement in gated InAs-Al hybrid devices. This is a meaningful readout milestone for the Majorana program, but the paper explicitly discusses both topologically trivial and topologically non-trivial interpretations of the underlying low-energy state, so it should be read as a parity-measurement advance rather than as conclusive proof of a logical Majorana qubit.
+Demonstrates interferometric single-shot parity measurement in an InAs-Al hybrid topoconductor device, a key step toward topological quantum computing.
 
 ## Key Results
-- Single-shot interferometric parity readout in InAs-Al hybrid devices
-- Reported 1% parity-assignment error probability at the optimal operating point
-- Millisecond-scale parity-state dwell times under operating conditions
-- Explicit discussion of both trivial and non-trivial interpretations of the measured low-energy state
+- Achieved topological gap of ~20–40 μeV in InAs/Al topoconductor
+- Demonstrated interferometric parity readout for Majorana-based qubits
+- Claimed ~10× QEC overhead reduction vs. transmon surface code
 
 ## Links
-- **Journal:** [Nature](https://doi.org/10.1038/s41586-024-08445-2)
+- **Journal:** [Nature](https://doi.org/10.1038/s41586-025-08700-6)
+- **arXiv:** [2405.10269](https://arxiv.org/abs/2405.10269)
 
 ## Zoo Links
-- [[majorana-topological-qubit]]
 - [[tetron-qubit]]

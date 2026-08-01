@@ -38,10 +38,10 @@ with $S_{n_g}(\omega)$ typically close to a $1/f$ spectrum. The practical signat
 
 2. **Transmon-like circuits suppress the same noise source by flattening the bands**
    - [[transmon]] does not eliminate charge disorder in the environment. It makes $\partial \omega_{01}/\partial n_g$ exponentially small by pushing to large $E_J/E_C$.
-   - Super-semi descendants such as gatemon- or mergemon-like circuits inherit this same logic when they stay in the transmon regime.
+   - [[gatemon]] and [[mergemon]] inherit this same logic when they stay in the transmon regime: keep the CPB Hamiltonian, but flatten its charge dispersion hard enough that offset-charge drift stops dominating the story.
 
 3. **Superinductive / protected circuits redirect the sensitivity budget**
-   - [[fluxonium]], [[0-pi-qubit]], and related protected-circuit designs reduce charge sensitivity by changing the effective energy landscape, so other noises, especially flux or materials loss, often become the dominant limit instead.
+   - [[fluxonium]], [[heavy-fluxonium-qubit]], [[gatemonium]], [[0-pi-qubit]], and related protected-circuit designs reduce charge sensitivity by changing the effective energy landscape, so other noises, especially flux or materials loss, often become the dominant limit instead.
 
 ## Routing boundary
 

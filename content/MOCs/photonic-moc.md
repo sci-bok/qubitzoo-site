@@ -3,7 +3,7 @@ title: Photonic MOC
 type: moc
 technology_family: Photonic
 note_count: 6
-last_updated: '2026-07-17'
+last_updated: '2026-08-01'
 generated_by: pipeline-moc-v1
 ---
 
@@ -25,6 +25,36 @@ Curated map of Zoo entries in the **Photonic** family.
 - qubit: 6
 
 <!-- CURATED -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -146,6 +176,36 @@ The highest-value organizing move in this family is to **separate photonic encod
 ## Editorial note
 
 The next highest-value follow-up is a dedicated evergreen note on the photonic split between **encoding choice** (dual-rail vs time-bin) and **scaling strategy** (KLM vs MBQC vs fusion), but the current pass is enough to stop `photonic-qubit` from floating as an undifferentiated umbrella note.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

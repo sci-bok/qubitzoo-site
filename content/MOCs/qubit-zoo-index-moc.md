@@ -3,7 +3,7 @@ title: Qubit Zoo Index MOC
 type: moc
 technology_family: index
 note_count: 62
-last_updated: '2026-07-17'
+last_updated: '2026-08-01'
 generated_by: pipeline-moc-v1
 ---
 
@@ -26,6 +26,36 @@ Top-level navigation for the Qubit Zoo by technology family.
 - [[qubit-zoo-inclusion-editorial-policy]]
 
 <!-- CURATED -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -186,6 +216,36 @@ Top-level navigation for the Qubit Zoo by technology family.
 - Preserve full Zoo → Evergreen coverage as new entries land, rather than treating coverage itself as an open cleanup target.
 - Prefer curated cross-family routes when the reviewer is already clean: navigation quality now matters more than raw metric movement.
 - Keep family MOCs lightweight above the marker, but preserve real synthesis below it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

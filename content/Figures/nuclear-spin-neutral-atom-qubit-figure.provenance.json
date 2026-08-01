@@ -1,0 +1,40 @@
+{
+  "artifact": {
+    "media_type": "image/png",
+    "path": "nuclear-spin-neutral-atom-qubit-figure.png",
+    "sha256": "b39f2478aa612791481e0610311a1202f574f43b10d828209e7fae1b8dd2773d"
+  },
+  "artifact_role": "primary",
+  "blueprint": {
+    "media_type": "image/png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/nuclear-spin-neutral-atom-qubit-figure.png",
+    "role": "physics-blueprint",
+    "sha256": "966d7b96722290787f92f938464181f76d5bdee8492f08ff5aed518254faf1a6"
+  },
+  "entry_slug": "nuclear-spin-neutral-atom-qubit",
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/nuclear-spin-neutral-atom-qubit-figure-20260726T020003774088Z.png",
+    "supersedes_file": "nuclear-spin-neutral-atom-qubit-figure.png"
+  },
+  "renderer": {
+    "name": "nano-banana-2",
+    "provider": "Google AI Studio",
+    "requested_model": "google/gemini-3.1-flash-image-preview",
+    "returned_model": "google/gemini-3.1-flash-image-preview"
+  },
+  "request": {
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-07-26T02:00:03.774088+00:00",
+    "id": "gen-1785031192-OLNeQfwwFdtclCC5Ajff",
+    "image_size": "1K",
+    "prompt_sha256": "de54074e53c29d3eda38cd52714d9647cef6bc5376bfd325ba734eb362cdb030",
+    "source_media_type": "image/jpeg"
+  },
+  "review": {
+    "notes": "Revalidated during provenance/frontmatter backfill after full-resolution physics and editorial review; approved Nano Banana 2 final.",
+    "reviewed_at": "2026-07-26T02:25:01.194575+00:00",
+    "reviewer": "codex-visual-physics-review-2026-07-25",
+    "status": "passed"
+  },
+  "schema_version": 1
+}

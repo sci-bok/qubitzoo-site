@@ -1,0 +1,41 @@
+{
+  "artifact": {
+    "media_type": "image/png",
+    "path": "erasure-qubit-figure.png",
+    "sha256": "0a030923ab0e666f006264a2a2b9c5c7186d34e98fcb3ba9e5e4aa9a76a76a94"
+  },
+  "artifact_role": "primary",
+  "blueprint": {
+    "media_type": "image/png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/erasure-qubit-blueprint.png",
+    "role": "physics-blueprint",
+    "sha256": "1f9db99360889e508db6e9f1b6c39036292aff01685a5040edc20fdf930d7e4a",
+    "strict": true
+  },
+  "entry_slug": "erasure-qubit",
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/erasure-qubit-figure-20260726T022309037589Z.png",
+    "supersedes_file": "erasure-qubit-figure.png"
+  },
+  "renderer": {
+    "name": "nano-banana-2",
+    "provider": "Google AI Studio",
+    "requested_model": "google/gemini-3.1-flash-image-preview",
+    "returned_model": "google/gemini-3.1-flash-image-preview"
+  },
+  "request": {
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-07-26T02:23:09.037589+00:00",
+    "id": "gen-1785032580-xlMpYf6I69t5m95XxZOX",
+    "image_size": "1K",
+    "prompt_sha256": "300855664cc5882ef6ef8df87bee15a1b3e4fc38506833e2a438c86987c48825",
+    "source_media_type": "image/jpeg"
+  },
+  "review": {
+    "notes": "Revalidated during provenance/frontmatter backfill after full-resolution physics and editorial review; approved Nano Banana 2 final.",
+    "reviewed_at": "2026-07-26T02:25:01.038786+00:00",
+    "reviewer": "codex-visual-physics-review-2026-07-25",
+    "status": "passed"
+  },
+  "schema_version": 1
+}

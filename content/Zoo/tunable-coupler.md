@@ -115,6 +115,7 @@ Fixed-frequency transmon qubits coupled by fixed capacitors suffer from always-o
 
 - [[charge-noise-sweet-spot]] — tunable couplers are one answer to the fixed-frequency dilemma: leave the data qubits near their best operating points, and localize flux sensitivity in a sacrificial interaction element instead.
 - [[josephson-junction-as-nonlinear-element]] — the coupler works because a Josephson element makes its effective inductance, and therefore the mediated interaction, flux-tunable and nonlinear.
+- [[resonator-as-quantum-bus]] — the tunable coupler solves the same architectural problem as the old shared-bus picture, but upgrades it with an explicit idle OFF point instead of living with a permanently-on residual interaction budget.
 - [[threshold-theorem]] — the zero-coupling idle point matters as much as the fast ON state, because correlated idle errors and residual $ZZ$ are exactly the terms that can quietly erase a below-threshold margin.
 
 ## Related Entries

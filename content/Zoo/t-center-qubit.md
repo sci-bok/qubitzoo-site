@@ -3,7 +3,7 @@ title: T-Center Qubit (Silicon Spin-Photon)
 entry_type: qubit
 technology_family: Spin-Photon
 status: demonstrated
-figure_reviewed: false
+figure_reviewed: true
 first_proposed_year: 2020
 first_demonstrated_year: 2020
 keywords:
@@ -19,6 +19,11 @@ last_updated: '2026-06-02'
 generated_by: scibok-curation
 extracted_by: manual
 verified_by: scibok-manual-2026-06-02
+figure_renderer: "nano-banana-2"
+figure_model: "google/gemini-3.1-flash-image-preview"
+figure_provenance: "Figures/t-center-qubit-figure.provenance.json"
+figure_reviewed_by: "codex-visual-physics-review-2026-07-25"
+figure_reviewed_at: "2026-07-26T02:25:01.427554+00:00"
 ---
 
 ## Figure

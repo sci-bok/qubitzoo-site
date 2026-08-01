@@ -6,7 +6,7 @@ journal: "Nature"
 doi: 10.1038/s41586-018-0365-y
 type: reference
 generated_by: scibok-audit-backfill
-last_updated: '2026-07-20'
+last_updated: '2026-07-21'
 ---
 This paper demonstrates coherent spin-photon coupling using a resonant-exchange qubit, establishing RX qubits as a viable circuit-QED-compatible semiconductor spin-qubit modality.
 

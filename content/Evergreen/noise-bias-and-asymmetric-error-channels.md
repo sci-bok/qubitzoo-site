@@ -15,6 +15,8 @@ tags:
 
 In standard quantum error correction theory, errors are often modeled as depolarizing noise where $X$, $Y$, and $Z$ Pauli errors occur with equal probability. However, many physical qubit encodings have strongly asymmetric noise channels — one type of Pauli error is exponentially suppressed relative to others. Exploiting this noise bias enables dramatically more efficient error correction.
 
+This note is about the **directional axis** of hidden, in-codespace errors. It is not a synonym for erasure dominance: [[erasure-error-vs-pauli-error]] concerns whether the decoder is told *where* a fault happened. Keep Pauli bias and erasure fraction as separate coordinates even when one device exploits both.
+
 ## The Concept
 
 A noise channel acting on a qubit has bias $\eta$ defined as:
@@ -29,7 +31,17 @@ $$\mathcal{E}(\rho) = (1 - p_X - p_Y - p_Z)\rho + p_X X\rho X + p_Y Y\rho Y + p_
 
 For a qubit with noise bias $\eta$ and total error rate $p$:
 
-$$p_Z = \frac{\eta}{1 + 2\eta}\,p, \qquad p_X = p_Y = \frac{1}{2(1 + 2\eta)}\,p$$
+$$p_Z = \frac{\eta}{1 + \eta}\,p, \qquad p_X = p_Y = \frac{1}{2(1 + \eta)}\,p,$$
+
+assuming $p_X=p_Y$ and the convention $\eta=p_Z/(p_X+p_Y)$ used above. Some papers instead define bias as $p_Z/p_X$; a numerical bias is meaningless unless the convention is stated.
+
+## Routing boundary
+
+| If the question is... | Start with... |
+|---|---|
+| Which hidden Pauli direction dominates after projection into the codespace? | This note |
+| Does a detector, leakage check, or loss signature reveal the fault location? | [[erasure-error-vs-pauli-error]] |
+| How should a decoder use both flagged events and biased unflagged residuals? | Read both and preserve the two-component channel model |
 
 ## Physical Realizations
 
@@ -47,7 +59,7 @@ reaching $\eta > 10^4$ for $|\alpha|^2 \gtrsim 4$ in experiments (Lescanne et al
 
 ### Erasure qubits (detected errors)
 
-Erasure qubits represent a different form of bias: rather than one Pauli type dominating, the dominant errors are converted to detectable leakage (erasure). A detected error at a known location is strictly easier to correct than an undetected Pauli error. The effective "bias" is between erasure errors (cheap to correct, threshold $\sim 50\%$) and residual Pauli errors (expensive, threshold $\sim 1\%$).
+Erasure conversion is adjacent to, but distinct from, Pauli bias. The dominant process leaves the computational space and produces a detectable flag, while the residual in-codespace channel may still be unbiased or biased. Use [[erasure-error-vs-pauli-error]] for the decoding advantage from known fault locations; return here only to characterize the $X/Y/Z$ structure of the unflagged residual.
 
 ### Superconducting 0-$\pi$ qubit
 
@@ -85,6 +97,13 @@ where the first term is exponentially suppressed by code distance and the second
 - Guillaud & Mirrahimi (2019) proposed cat qubit + repetition code concatenation.
 - Ataides et al. (2021) introduced the XZZX surface code optimized for biased noise.
 - Experimental bias ratios $>10^4$ demonstrated in cat qubits (Lescanne et al. 2020).
+
+## Key relationships
+
+- [[erasure-error-vs-pauli-error]] — companion note for flagged-location information rather than Pauli-direction asymmetry
+- [[kerr-cat-qubit]] and [[cat-codes]] — canonical phase-flip-biased hardware and its tailored coding layer
+- [[0-pi-qubit]] — protected circuit whose remaining error channel, not just total error rate, matters
+- [[bacon-shor-code]] and [[surface-code-logical-qubit]] — code families whose geometry or checks can be adapted to a declared bias model
 
 ## References
 

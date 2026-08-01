@@ -18,6 +18,11 @@ last_updated: '2026-03-18'
 generated_by: seed-ingest-v1
 extracted_by: airtable-seed
 verified_by: scibok-manual-2026-03-18
+figure_renderer: "nano-banana-2"
+figure_model: "google/gemini-3.1-flash-image-preview"
+figure_provenance: "Figures/aeon-qubit-figure.provenance.json"
+figure_reviewed_by: "codex-visual-physics-review-2026-07-25"
+figure_reviewed_at: "2026-07-26T02:25:00.727904+00:00"
 ---
 
 ## Figure

@@ -94,6 +94,7 @@ Fixed-coupling architectures suffer from always-on $ZZ$ interaction, causing idl
 
 - [[charge-noise-sweet-spot]] — the architectural trick is to keep the computational qubits transmon-like and coherence-friendly while moving most of the aggressive tunability into a separate coupling element.
 - [[josephson-junction-as-nonlinear-element]] — both the qubits and the coupler rely on Josephson nonlinearity, but the Gmon repurposes it from single-qubit anharmonicity into programmable interaction engineering.
+- [[resonator-as-quantum-bus]] — Gmon is the switchable descendant of the earlier shared-resonator bus idea: keep the long-range interaction intuition, but move the aggressive tunability into a dedicated coupler with a real OFF point.
 - [[threshold-theorem]] — Gmon is important because suppressing idle $ZZ$ while preserving fast two-qubit gates is exactly the kind of error-budget shaping needed before large surface-code patches become viable.
 
 ## Related Entries

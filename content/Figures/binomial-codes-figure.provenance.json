@@ -1,0 +1,40 @@
+{
+  "artifact": {
+    "media_type": "image/png",
+    "path": "binomial-codes-figure.png",
+    "sha256": "fd5ef84a8362a5dd557edf61403591d108895b96663194a06e60e03ea01cbb15"
+  },
+  "artifact_role": "primary",
+  "blueprint": {
+    "media_type": "image/png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/binomial-codes-figure.png",
+    "role": "physics-blueprint",
+    "sha256": "f4f0e9727aa8c832fb6e625c0dfdf5eb221f02549eadc55ae0b14c1ac6740f15"
+  },
+  "entry_slug": "binomial-codes",
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/binomial-codes-figure-20260726T015747904676Z.png",
+    "supersedes_file": "binomial-codes-figure.png"
+  },
+  "renderer": {
+    "name": "nano-banana-2",
+    "provider": "Google AI Studio",
+    "requested_model": "google/gemini-3.1-flash-image-preview",
+    "returned_model": "google/gemini-3.1-flash-image-preview"
+  },
+  "request": {
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-07-26T01:57:47.904676+00:00",
+    "id": "gen-1785031056-fi1Xotvi8m9jLFoRhFBn",
+    "image_size": "1K",
+    "prompt_sha256": "32859c410ad8789e56290d87dc562039e686a27b60174711b04abec319330f62",
+    "source_media_type": "image/jpeg"
+  },
+  "review": {
+    "notes": "Revalidated during provenance/frontmatter backfill after full-resolution physics and editorial review; approved Nano Banana 2 final.",
+    "reviewed_at": "2026-07-26T02:25:00.844853+00:00",
+    "reviewer": "codex-visual-physics-review-2026-07-25",
+    "status": "passed"
+  },
+  "schema_version": 1
+}

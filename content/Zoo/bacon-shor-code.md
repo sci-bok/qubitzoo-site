@@ -18,6 +18,11 @@ last_updated: '2026-03-21'
 generated_by: scibok-curation
 extracted_by: manual
 verified_by: scibok-manual-2026-03-21
+figure_renderer: "nano-banana-2"
+figure_model: "google/gemini-3.1-flash-image-preview"
+figure_provenance: "Figures/bacon-shor-code-figure.provenance.json"
+figure_reviewed_by: "codex-visual-physics-review-2026-07-25"
+figure_reviewed_at: "2026-07-26T02:25:00.805799+00:00"
 ---
 
 ## Figure
@@ -30,7 +35,7 @@ The Bacon-Shor code is a family of subsystem quantum error-correcting codes defi
 
 The Bacon-Shor code exploits the **subsystem code** framework: the physical Hilbert space decomposes into a logical subsystem, a gauge subsystem, and a stabilizer-fixed subsystem. Only the logical subsystem encodes information; the gauge subsystem is "don't care" degrees of freedom.
 
-For the $[[m^2, 1, m]]$ code on an $m \times m$ grid:
+For the $[\![m^2, 1, m]\!]$ code on an $m \times m$ grid:
 - **X stabilizers:** Products of $XX$ along each pair of adjacent rows.
 - **Z stabilizers:** Products of $ZZ$ along each pair of adjacent columns.
 - **Gauge operators:** Individual $XX$ (horizontal pairs) and $ZZ$ (vertical pairs).
@@ -39,7 +44,7 @@ Syndrome extraction measures only the weight-2 gauge operators, then classically
 
 ## Stabilizer Structure
 
-For the $[[9,1,3]]$ Bacon-Shor code on a 3×3 grid:
+For the $[\![9,1,3]\!]$ Bacon-Shor code on a 3×3 grid:
 
 Gauge generators (weight 2):
 $$X_iX_j \text{ for horizontal neighbors } (i,j)$$
@@ -62,7 +67,7 @@ $$\bar{X} = \prod_{i \in \text{any row}} X_i, \quad \bar{Z} = \prod_{i \in \text
 ## Experimental Status
 
 **First demonstration on trapped ions — Egan et al. (2021):**
-- Implemented the $[[9,1,3]]$ Bacon-Shor code on a 13-ion trapped-ion processor (Honeywell/Quantinuum H1)
+- Implemented the $[\![9,1,3]\!]$ Bacon-Shor code on a 13-ion trapped-ion processor (Honeywell/Quantinuum H1)
 - Demonstrated fault-tolerant syndrome extraction using only weight-2 measurements
 - Achieved logical error rate suppression below physical error rate
 

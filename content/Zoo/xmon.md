@@ -18,6 +18,11 @@ generated_by: scibok-curation
 extracted_by: scibok
 verified_by: scibok-manual-2026-03-21
 figure_reviewed: true
+figure_renderer: "nano-banana-2"
+figure_model: "google/gemini-3.1-flash-image-preview"
+figure_provenance: "Figures/xmon-figure.provenance.json"
+figure_reviewed_by: "codex-visual-physics-review-2026-07-25"
+figure_reviewed_at: "2026-07-26T02:25:01.542885+00:00"
 ---
 
 ## Figure
@@ -94,6 +99,7 @@ Earlier transmon designs used coaxial or lumped-element capacitors that did not 
 
 - [[charge-noise-sweet-spot]] — the Xmon inherits the transmon strategy of buying coherence by flattening charge sensitivity, then spends the saved robustness on a scalable planar layout.
 - [[josephson-junction-as-nonlinear-element]] — the cross capacitor changes packaging, not the underlying source of anharmonicity: the Josephson cosine still does the qubit-making work.
+- [[dispersive-readout-mechanism]] — one arm of the Xmon is effectively reserved for a readout resonator, so the planar geometry bakes the standard circuit-QED measurement layer directly into the qubit footprint.
 - [[threshold-theorem]] — Xmon mattered historically because it was one of the first planar superconducting stacks to pair coherence and gate fidelities in the range needed for surface-code scaling.
 - [[resonator-as-quantum-bus]] — the cross geometry was not just packaging: it gave the planar transmon a clean way to hook into bus-resonator-mediated coupling while still tiling into a 2D grid.
 

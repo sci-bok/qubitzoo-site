@@ -12,10 +12,15 @@ keywords:
 - protected qubit
 - superconducting
 influence_score: 0.80
-last_updated: '2026-03-21'
+last_updated: '2026-07-20'
 generated_by: scibok-curation
 verified_by: scibok-manual-2026-03-21
 figure_reviewed: true
+figure_renderer: "nano-banana-2"
+figure_model: "google/gemini-3.1-flash-image-preview"
+figure_provenance: "Figures/heavy-fluxonium-qubit-figure.provenance.json"
+figure_reviewed_by: "codex-visual-physics-review-2026-07-25"
+figure_reviewed_at: "2026-07-26T02:25:01.077746+00:00"
 ---
 
 ## Figure
@@ -76,7 +81,8 @@ Heavy fluxonium targets a "hardware-protected" operating regime where coherence 
 
 ## Evergreen context
 
-- [[charge-noise-sweet-spot]] — heavy fluxonium gets its best coherence only at carefully chosen protected operating points
+- [[charge-noise-in-superconducting-qubits]] — heavy fluxonium inherits fluxonium's basic win of suppressing CPB-style charge dispersion before it layers on stronger matrix-element protection.
+- [[charge-noise-sweet-spot]] — heavy fluxonium gets its best coherence only at carefully chosen flux-protected operating points on top of that baseline charge insensitivity.
 - [[coherence-time-hierarchy]] — the millisecond-scale $T_1$ and $T_2$ claims are only meaningful in the sweet-spot versus off-sweet-spot context
 - [[noise-bias-and-asymmetric-error-channels]] — disjoint-support wavefunctions suppress relaxation more strongly than the remaining dephasing channels
 

@@ -1,0 +1,40 @@
+{
+  "artifact": {
+    "media_type": "image/png",
+    "path": "blochnium-figure.png",
+    "sha256": "a614866a613a24b7e69e44900e9d45ccf920ba6b3e509d0317f707cd4da867e4"
+  },
+  "artifact_role": "primary",
+  "blueprint": {
+    "media_type": "image/png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/blochnium-figure.png",
+    "role": "physics-blueprint",
+    "sha256": "4448ba4dc45fdb4653fc703cf21dde9596bd351d781c46ee1412a316d528c870"
+  },
+  "entry_slug": "blochnium",
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/blochnium-figure-20260726T015803372765Z.png",
+    "supersedes_file": "blochnium-figure.png"
+  },
+  "renderer": {
+    "name": "nano-banana-2",
+    "provider": "Google AI Studio",
+    "requested_model": "google/gemini-3.1-flash-image-preview",
+    "returned_model": "google/gemini-3.1-flash-image-preview"
+  },
+  "request": {
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-07-26T01:58:03.372765+00:00",
+    "id": "gen-1785031070-XO2eWN7w4k8WMq9ANdg3",
+    "image_size": "1K",
+    "prompt_sha256": "2074758dbb1a10a23111df399bc96cb26f3c0ea56793d34884c7f8cf3f55dd10",
+    "source_media_type": "image/jpeg"
+  },
+  "review": {
+    "notes": "Revalidated during provenance/frontmatter backfill after full-resolution physics and editorial review; approved Nano Banana 2 final.",
+    "reviewed_at": "2026-07-26T02:25:00.884311+00:00",
+    "reviewer": "codex-visual-physics-review-2026-07-25",
+    "status": "passed"
+  },
+  "schema_version": 1
+}

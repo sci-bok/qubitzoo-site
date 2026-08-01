@@ -3,7 +3,7 @@ title: Spin-Photon MOC
 type: moc
 technology_family: Spin-Photon
 note_count: 2
-last_updated: '2026-07-17'
+last_updated: '2026-08-01'
 generated_by: pipeline-moc-v1
 ---
 
@@ -21,6 +21,21 @@ Curated map of Zoo entries in the **Spin-Photon** family.
 - qubit: 2
 
 <!-- CURATED -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -95,11 +110,50 @@ This family is best read as the **network-emitter-optimized descendant branch** 
    - SiV/SnV pay heavily in temperature to buy cleaner optical lines and nanophotonic performance.
    - T centers pay in platform maturity and benchmark depth, but may save substantial systems complexity by starting inside silicon and near telecom wavelengths.
 
+4. **This MOC should usually be read against [[color-center-moc]], not in isolation**
+   - The useful contrast is not “which color center is best?” but “when does a defect stop being primarily a local-spin story and become primarily a network-emitter story?”
+   - `nv-center-qubit` remains the better anchor for room-temperature local-memory maturity, while this page owns the branch where optical interface quality is the main selection criterion.
+
+## Networking-burden comparison
+
+| If the architecture pain point is... | Best first stop | Why |
+|---|---|---|
+| Photon indistinguishability and cavity-integrated nanophotonics | `siv-color-center-qubit` | Inversion symmetry and high ZPL fraction are the whole point. |
+| Native telecom compatibility and silicon photonics | `t-center-qubit` | It starts much closer to the fibre stack the network already wants. |
+| Mature room-temperature defect-spin control with a real local register | [[color-center-moc]] | That is still the NV-centered branch, not this one. |
+| Avoiding a large microwave-to-optical conversion stack | `t-center-qubit`, then [[quantum-transduction]] | Native O-band emission can remove part of the transduction burden rather than merely optimizing around it. |
+| Choosing between clean photons and a gentler cryogenic envelope | Read both entries | SiV buys the best optics; SnV and T centers relax the systems burden in different ways. |
+
+## Network-emitter routing table
+
+| If the real question is... | Start here? | Why |
+|---|---|---|
+| Which defect-spin platform gives the cleanest photons for remote entanglement? | Yes | That is the defining purpose of this family. |
+| Which branch wins on nanophotonic optical quality even if the fridge burden is harsher? | Yes | `siv-color-center-qubit` is the clean-photon-first reference case. |
+| Which branch best reduces downstream telecom integration pain? | Yes | `t-center-qubit` is the silicon-and-telecom-first route. |
+| Which defect-spin qubit is the most mature room-temperature local memory platform? | No | Hand back to [[color-center-moc]] and `nv-center-qubit`. |
+| Is native emission already close enough to the network target to avoid a major transduction stack? | Yes | Read this MOC, then cross-check with [[quantum-transduction]]. |
+
 ## Routing rule
 
 - Read this MOC when the primary question is how to build a better **spin-to-photon interface**, not how to get the most mature defect-spin qubit overall.
 - Hand back to [[color-center-moc]] when room-temperature operation, ODMR-style control, or local defect-spin memory maturity becomes the main criterion.
 - Use [[quantum-transduction]] as the downstream systems check: if a platform already emits where the network wants to live, that is a real architectural advantage, not just a spectroscopy detail.
+- Treat `siv-color-center-qubit` and `t-center-qubit` as complementary answers to different network bottlenecks, not as a simple maturity ladder.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

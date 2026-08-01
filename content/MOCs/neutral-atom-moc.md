@@ -3,7 +3,7 @@ title: Neutral Atom MOC
 type: moc
 technology_family: Neutral Atom
 note_count: 4
-last_updated: '2026-07-17'
+last_updated: '2026-08-01'
 generated_by: pipeline-moc-v1
 ---
 
@@ -23,6 +23,36 @@ Curated map of Zoo entries in the **Neutral Atom** family.
 - qubit: 4
 
 <!-- CURATED -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -146,9 +176,47 @@ This family is easiest to read if you separate **where the qubit is stored** fro
 
 Neutral atoms and trapped ions both offer individually addressable atomic qubits with long coherence, but the routing hinge is the interaction mechanism. Stay here when gates depend on optical tweezers, transient Rydberg excitation, and reconfigurable geometry. Hand off to [[trapped-ion-moc]] when the key story is shared motional modes, Coulomb-coupled gates, or laser-driven phonon control.
 
+### Clock-state atomic boundary
+
+The most common navigation mistake is to group [[alkaline-earth-neutral-atom-clock-qubit]] and [[nuclear-spin-neutral-atom-qubit]] with ion-trap clock-state qubits just because all of them are coherence-first atomic encodings. The family resemblance is real, but the system logic is different.
+
+- Stay in this MOC when the quiet storage states are embedded in a **tweezer or lattice architecture** whose entangling step still comes from temporary Rydberg excitation, geometry rearrangement, or atom-loss-aware operation.
+- Route to [[ion-trap-moc]] when the quiet storage states live inside a **Coulomb crystal** and the real bottleneck is motional-bus engineering, not Rydberg-state borrowing.
+- In practice, [[alkaline-earth-neutral-atom-clock-qubit]] is best read as "clock-state storage inside a neutral-atom processor," not as a softened version of [[ytterbium-hyperfine-qubit]]. The shared coherence philosophy matters, but the architectural constraints diverge as soon as you ask how entanglement, scaling, and reloadability actually work.
+
 ## Editorial note
 
 Use this MOC to clarify the family split between interaction primitive and storage encoding. Keep species-specific experimental detail in the source entries, and keep this page focused on why several different neutral-atom notes still belong to one architectural cluster.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

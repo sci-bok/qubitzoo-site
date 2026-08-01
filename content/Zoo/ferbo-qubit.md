@@ -61,7 +61,7 @@ where $\hat{\sigma}_i$ are Pauli matrices acting on the two-dimensional even-par
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| Charge relaxation suppression | ~10⁻⁴ | $|\langle 0|\hat{n}|1\rangle|^2$ at $\varphi_{\text{ext}} = 0$, protected regime | [Cáceres, Matute-Cañadas et al. 2026](https://arxiv.org/abs/2604.01145) |
+| Charge relaxation suppression | ~10⁻⁴ | $(\langle 0 \rvert \hat{n} \lvert 1 \rangle)^2$ at $\varphi_{\text{ext}} = 0$, protected regime | [Cáceres, Matute-Cañadas et al. 2026](https://arxiv.org/abs/2604.01145) |
 | Flux dispersion | Exponentially suppressed | $\delta E_{01}$ vs $Z/R_Q$ | [Cáceres, Matute-Cañadas et al. 2026](https://arxiv.org/abs/2604.01145) |
 | Protection boundary | $Z/R_Q \approx 2E_C/(\pi\epsilon_r)$ | Sharp transition to protected regime | [Cáceres, Matute-Cañadas et al. 2026](https://arxiv.org/abs/2604.01145) |
 | Optimal $E_C$ | ~15 GHz | Representative parameter set | [Cáceres, Matute-Cañadas et al. 2026](https://arxiv.org/abs/2604.01145) |
@@ -78,6 +78,7 @@ where $\hat{\sigma}_i$ are Pauli matrices acting on the two-dimensional even-par
 
 ## Evergreen context
 
+- [[josephson-junction-as-nonlinear-element]] — FerBo replaces the ordinary oxide junction with a high-transmission weak link whose nonlinear Andreev physics is itself part of the protection mechanism.
 - [[charge-noise-sweet-spot]] — FerBo extends the protected-operating-point idea beyond simple bosonic sweet spots, combining zero-flux biasing with Andreev-mediated relaxation suppression
 - [[cos2phi]] — useful comparison point for how superconducting circuits chase dual protection with higher-harmonic or interference-based design
 - [[noise-bias-and-asymmetric-error-channels]] — the Andreev-space disjoint support is best read as a built-in relaxation bias, not just a generic coherence boost

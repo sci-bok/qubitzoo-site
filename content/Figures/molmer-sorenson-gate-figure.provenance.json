@@ -1,0 +1,40 @@
+{
+  "artifact": {
+    "media_type": "image/png",
+    "path": "molmer-sorenson-gate-figure.png",
+    "sha256": "ed2b2d302f6257b41f5460531a6b2b186b64a74c7f761938c9a31d00bf716be0"
+  },
+  "artifact_role": "primary",
+  "blueprint": {
+    "media_type": "image/png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/molmer-sorenson-gate-figure.png",
+    "role": "physics-blueprint",
+    "sha256": "f84d72e58b69fce7100a0a544b44f64b5f9c8c333fc3081db7974a505562c29b"
+  },
+  "entry_slug": "molmer-sorenson-gate",
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/molmer-sorenson-gate-figure-20260726T015947484599Z.png",
+    "supersedes_file": "molmer-sorenson-gate-figure.png"
+  },
+  "renderer": {
+    "name": "nano-banana-2",
+    "provider": "Google AI Studio",
+    "requested_model": "google/gemini-3.1-flash-image-preview",
+    "returned_model": "google/gemini-3.1-flash-image-preview"
+  },
+  "request": {
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-07-26T01:59:47.484599+00:00",
+    "id": "gen-1785031173-cz3vaOXxX2r2axAXVa6q",
+    "image_size": "1K",
+    "prompt_sha256": "6603cb315ad6efc1d7a5cefa56564320e1dfacb389a6f19fe2f97b4234f37369",
+    "source_media_type": "image/jpeg"
+  },
+  "review": {
+    "notes": "Revalidated during provenance/frontmatter backfill after full-resolution physics and editorial review; approved Nano Banana 2 final.",
+    "reviewed_at": "2026-07-26T02:25:01.155470+00:00",
+    "reviewer": "codex-visual-physics-review-2026-07-25",
+    "status": "passed"
+  },
+  "schema_version": 1
+}

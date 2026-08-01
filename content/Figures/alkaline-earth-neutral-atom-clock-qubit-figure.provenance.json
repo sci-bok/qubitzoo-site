@@ -1,0 +1,40 @@
+{
+  "artifact": {
+    "media_type": "image/png",
+    "path": "alkaline-earth-neutral-atom-clock-qubit-figure.png",
+    "sha256": "9a635625e71d02b90c00a4f730ab2d8d2843b1d64082df82cfa27bf21985906e"
+  },
+  "artifact_role": "primary",
+  "blueprint": {
+    "media_type": "image/png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/alkaline-earth-neutral-atom-clock-qubit-figure.png",
+    "role": "physics-blueprint",
+    "sha256": "07aaaa1d4b0749f41fbb66775452d46914085a3a4ca2c4084cd9fb9179e9c52c"
+  },
+  "entry_slug": "alkaline-earth-neutral-atom-clock-qubit",
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/alkaline-earth-neutral-atom-clock-qubit-figure-20260726T020723307832Z.png",
+    "supersedes_file": "alkaline-earth-neutral-atom-clock-qubit-figure.png"
+  },
+  "renderer": {
+    "name": "nano-banana-2",
+    "provider": "Google AI Studio",
+    "requested_model": "google/gemini-3.1-flash-image-preview",
+    "returned_model": "google/gemini-3.1-flash-image-preview"
+  },
+  "request": {
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-07-26T02:07:23.307832+00:00",
+    "id": "gen-1785031631-pyaD7kxFr3LNhlH3eR9b",
+    "image_size": "1K",
+    "prompt_sha256": "9a6164e349ee616e15faa4bab04893bad0237ea73d3d2549320cd9860481b0f9",
+    "source_media_type": "image/jpeg"
+  },
+  "review": {
+    "notes": "Revalidated during provenance/frontmatter backfill after full-resolution physics and editorial review; approved Nano Banana 2 final.",
+    "reviewed_at": "2026-07-26T02:25:00.766593+00:00",
+    "reviewer": "codex-visual-physics-review-2026-07-25",
+    "status": "passed"
+  },
+  "schema_version": 1
+}

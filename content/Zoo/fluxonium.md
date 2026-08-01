@@ -15,7 +15,7 @@ keywords:
 - heavy fluxonium
 - disjoint support
 influence_score: 0.90
-last_updated: '2026-03-26'
+last_updated: '2026-07-20'
 generated_by: scibok-curation
 extracted_by: scibok
 verified_by: scibok-editorial-audit-2026-03-26
@@ -102,7 +102,8 @@ The transmon's achilles heel is its weak anharmonicity ($\sim -200\,\text{MHz}$)
 ## Evergreen context
 
 - [[josephson-junction-as-nonlinear-element]] — the small junction supplying the nonlinearity
-- [[charge-noise-sweet-spot]] — how fluxonium trades charge sensitivity for protected operating points
+- [[charge-noise-in-superconducting-qubits]] — fluxonium is the classic reminder that the CPB offset-charge problem can be pushed far down without abandoning Josephson-circuit physics.
+- [[charge-noise-sweet-spot]] — charge insensitivity is built into the architecture, but the best coherence still comes from the separate half-flux sweet-spot story.
 - [[coherence-time-hierarchy]] — how to read the sweet-spot versus off-sweet-spot coherence claims
 
 ## Related Entries
