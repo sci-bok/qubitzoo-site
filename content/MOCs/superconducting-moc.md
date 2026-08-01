@@ -22,7 +22,7 @@ Curated map of Zoo entries in the **Superconducting** family.
 | [[bosonic-qubit]] | qubit | demonstrated |
 | [[cat-codes]] | qubit | demonstrated |
 | [[cooper-pair-box-charge-qubit]] | qubit | demonstrated |
-| [[cos2phi-qubit]] | qubit | proposed |
+| [[cos2phi-qubit]] | qubit | demonstrated |
 | [[dual-rail-superconducting-qubit]] | qubit | demonstrated |
 | [[flux-qubit]] | qubit | demonstrated |
 | [[fluxonium]] | qubit | demonstrated |
@@ -233,7 +233,7 @@ A useful routing rule is that `circuit-qed` is **infrastructure, not a peer qubi
 
 - `heavy-fluxonium-qubit` is the **nearest-term coherence-first branch**. It still lives squarely inside familiar fluxonium control and readout practice, but uses disjoint-support wavefunctions and sweet-spot operation to suppress matrix elements before the error ever reaches the decoder.
 - `blochnium` is the **duality branch**. Read it when the interesting claim is quasicharge physics, large anharmonicity, and flux-dispersion flattening, not maximal passive protection in the 0-π sense.
-- `0-pi-qubit` and `cos2phi-qubit` are the **symmetry-engineered protection branch**. They belong together because both aim for multi-axis protection by reshaping the circuit potential itself, even though `0-pi-qubit` is experimentally ahead and `cos2phi-qubit` is still a more aspirational construction.
+- `0-pi-qubit` and `cos2phi-qubit` are the **symmetry-engineered protection branch**. Both are experimentally demonstrated, but neither yet eliminates active error correction: the cos(2φ) route strongly suppresses charge-coupled relaxation while present interference-based devices remain flux-noise limited.
 - `dual-rail-superconducting-qubit` should sit adjacent to this branch, not inside it: the payoff is still lower logical overhead, but via flagged leakage and erasure structure rather than suppressed in-code-space matrix elements.
 
 ## Boundary with the super-semi family
@@ -243,7 +243,6 @@ Route superconducting descendants to [[super-semi-moc]] only when the semiconduc
 ## Editorial note
 
 This family mixes bare qubits, bosonic encodings, and enabling infrastructure. Keep the generated table exhaustive, but use the evergreen layer to prevent the family page from becoming a flat list.
-
 
 
 

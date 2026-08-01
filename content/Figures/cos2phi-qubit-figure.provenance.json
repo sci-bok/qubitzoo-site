@@ -1,0 +1,41 @@
+{
+  "artifact": {
+    "media_type": "image/png",
+    "path": "cos2phi-qubit-figure.png",
+    "sha256": "902b87c2ea5dee6d198d2f2512d47d11acea263f08795b703e9a40be13a373cd"
+  },
+  "artifact_role": "primary",
+  "blueprint": {
+    "media_type": "image/png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/vault/Figures/.candidates/cos2phi-qubit-blueprint-v2.png",
+    "role": "physics-blueprint",
+    "sha256": "9ced6c48a9b5fcffe1117035af5fb1054916e6933314017859b234796b4d4b9c",
+    "strict": true
+  },
+  "entry_slug": "cos2phi-qubit",
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/vault/Figures/.candidates/cos2phi-qubit-figure-20260801T150713902942Z.png",
+    "supersedes_file": "cos2phi-qubit-figure.png"
+  },
+  "renderer": {
+    "name": "nano-banana-2",
+    "provider": "Google AI Studio",
+    "requested_model": "google/gemini-3.1-flash-image-preview",
+    "returned_model": "google/gemini-3.1-flash-image-preview"
+  },
+  "request": {
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-08-01T15:07:13.902942+00:00",
+    "id": "gen-1785596823-ySDm0YbkncYNsTwyHfCZ",
+    "image_size": "1K",
+    "prompt_sha256": "62f1611dfac0cb727fd3ab605933c72dfaba4e12014ae0957b26bd14ce9a16e5",
+    "source_media_type": "image/jpeg"
+  },
+  "review": {
+    "notes": "PASS after independent image-tool adjudication with verified sources: Hamiltonian, \u0394N=\u00b12 parity ladders, phase minima and approximate localized-state relations are correct; the multi-harmonic half-flux element and residual-E1 caveat are accurate; Larsen 2020 and Roverc h 2026 values are explicitly device-specific; no garbled text remains.",
+    "reviewed_at": "2026-08-01T15:09:23.788429+00:00",
+    "reviewer": "scibok-deep-audit-2026-08-01",
+    "status": "passed"
+  },
+  "schema_version": 1
+}
