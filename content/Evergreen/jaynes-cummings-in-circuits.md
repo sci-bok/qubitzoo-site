@@ -28,6 +28,7 @@ Use this note when the live question is:
 - what microscopic coupling $g$ later feeds the dispersive and bus pictures.
 
 Do **not** use this note as the main entry point for:
+- resonator geometry and zero-point-field scaling before a qubit is attached, which belong in [[vacuum-rms-field-scaling]],
 - qubit-state-dependent cavity shifts, which belong in [[dispersive-readout-mechanism]], or
 - effective qubit-qubit exchange through a shared cavity, which belongs in [[resonator-as-quantum-bus]].
 
