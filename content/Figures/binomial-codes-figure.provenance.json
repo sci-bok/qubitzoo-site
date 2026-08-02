@@ -2,18 +2,19 @@
   "artifact": {
     "media_type": "image/png",
     "path": "binomial-codes-figure.png",
-    "sha256": "fd5ef84a8362a5dd557edf61403591d108895b96663194a06e60e03ea01cbb15"
+    "sha256": "917e958677cba2fabcaeacf0b88be8d84df35f0976b4332d0972238f51a9ecba"
   },
   "artifact_role": "primary",
   "blueprint": {
     "media_type": "image/png",
-    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/binomial-codes-figure.png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/binomial-codes-blueprint.png",
     "role": "physics-blueprint",
-    "sha256": "f4f0e9727aa8c832fb6e625c0dfdf5eb221f02549eadc55ae0b14c1ac6740f15"
+    "sha256": "caf0d34016f4a42391cc2e8c6cd25cb5f1e41a0df22a3ee9eca7e7653eed0038",
+    "strict": true
   },
   "entry_slug": "binomial-codes",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/binomial-codes-figure-20260726T015747904676Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/binomial-codes-figure-20260802T134324967279Z.png",
     "supersedes_file": "binomial-codes-figure.png"
   },
   "renderer": {
@@ -24,16 +25,16 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-07-26T01:57:47.904676+00:00",
-    "id": "gen-1785031056-fi1Xotvi8m9jLFoRhFBn",
+    "generated_at": "2026-08-02T13:43:24.967279+00:00",
+    "id": "gen-1785678194-v5q6p9weT7R4JDGFryQ0",
     "image_size": "1K",
-    "prompt_sha256": "32859c410ad8789e56290d87dc562039e686a27b60174711b04abec319330f62",
+    "prompt_sha256": "39e0126a9a7c373c5c067f4a0e86900b27400d1addf46bbe05e8d32ef46f04fe",
     "source_media_type": "image/jpeg"
   },
   "review": {
-    "notes": "Revalidated during provenance/frontmatter backfill after full-resolution physics and editorial review; approved Nano Banana 2 final.",
-    "reviewed_at": "2026-07-26T02:25:00.844853+00:00",
-    "reviewer": "codex-visual-physics-review-2026-07-25",
+    "notes": "Accurate lowest-order binomial codewords, one-photon-loss mapping to odd parity, and parity syndrome; equations and labels verified at full resolution.",
+    "reviewed_at": "2026-08-02T13:47:41.952046+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-02",
     "status": "passed"
   },
   "schema_version": 1

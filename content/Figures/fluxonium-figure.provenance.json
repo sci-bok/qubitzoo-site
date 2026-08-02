@@ -1,0 +1,41 @@
+{
+  "artifact": {
+    "media_type": "image/png",
+    "path": "fluxonium-figure.png",
+    "sha256": "8fe6b3cd00d3f97643bbe8c9d57d7768c6a286cf97a41a63d7f8b2ff071c5dc1"
+  },
+  "artifact_role": "primary",
+  "blueprint": {
+    "media_type": "image/png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/fluxonium-blueprint.png",
+    "role": "physics-blueprint",
+    "sha256": "e0f657bb5f761d1c4d1fba2a8464720874fc587ff2d0f03455a74b14eb7f96c7",
+    "strict": true
+  },
+  "entry_slug": "fluxonium",
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/fluxonium-figure-20260802T135821629151Z.png",
+    "supersedes_file": "fluxonium-figure.png"
+  },
+  "renderer": {
+    "name": "nano-banana-2",
+    "provider": "Google AI Studio",
+    "requested_model": "google/gemini-3.1-flash-image-preview",
+    "returned_model": "google/gemini-3.1-flash-image-preview"
+  },
+  "request": {
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-08-02T13:58:21.629151+00:00",
+    "id": "gen-1785679092-uOMq83aeiJF6EDAbyjOc",
+    "image_size": "1K",
+    "prompt_sha256": "748a6d50f7c6e41f35110241a415818e673ce8706e7ebb754f3c598aa2d0def1",
+    "source_media_type": "image/jpeg"
+  },
+  "review": {
+    "notes": "Accurate fluxonium circuit with Josephson junction, capacitance, and superinductance in parallel; corrected Hamiltonian and half-flux adjacent-well wavefunctions verified at full resolution.",
+    "reviewed_at": "2026-08-02T13:58:42.443051+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-02",
+    "status": "passed"
+  },
+  "schema_version": 1
+}

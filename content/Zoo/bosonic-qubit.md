@@ -4,6 +4,8 @@ entry_type: qubit
 technology_family: Superconducting
 status: demonstrated
 figure_reviewed: false
+figure_policy: none
+figure_reason: umbrella category delegates schematics to specific bosonic encodings
 first_proposed_year: 2001
 first_demonstrated_year: 2013
 keywords:

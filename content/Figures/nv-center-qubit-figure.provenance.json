@@ -1,0 +1,35 @@
+{
+  "artifact": {
+    "media_type": "image/png",
+    "path": "nv-center-qubit-figure.png",
+    "sha256": "13e6d6fefc762bbad0a6386b89df921a2924bea4e436f9d65e23e69ba17fbbf0"
+  },
+  "artifact_role": "primary",
+  "blueprint": null,
+  "entry_slug": "nv-center-qubit",
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/nv-center-qubit-figure-20260802T025310133819Z.png",
+    "supersedes_file": "nv-center-qubit-figure.png"
+  },
+  "renderer": {
+    "name": "nano-banana-2",
+    "provider": "Google AI Studio",
+    "requested_model": "google/gemini-3.1-flash-image-preview",
+    "returned_model": "google/gemini-3.1-flash-image-preview"
+  },
+  "request": {
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-08-02T02:53:10.133819+00:00",
+    "id": "gen-1785639180-m3ZCRuzs9BLR8stKjjd9",
+    "image_size": "1K",
+    "prompt_sha256": "7ca747ea09e49e88b061ba2a98d8812342630656861e718cb5e0aa292d333924",
+    "source_media_type": "image/jpeg"
+  },
+  "review": {
+    "notes": "Approved: one substitutional nitrogen adjacent to one vacancy, correct 2.87 GHz zero-field splitting, and correct spin-dependent fluorescence mechanism.",
+    "reviewed_at": "2026-08-02T02:59:40.996624+00:00",
+    "reviewer": "codex-visual-physics-review-2026-08-01",
+    "status": "passed"
+  },
+  "schema_version": 1
+}

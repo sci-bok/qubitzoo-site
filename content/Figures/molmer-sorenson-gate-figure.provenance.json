@@ -2,18 +2,19 @@
   "artifact": {
     "media_type": "image/png",
     "path": "molmer-sorenson-gate-figure.png",
-    "sha256": "ed2b2d302f6257b41f5460531a6b2b186b64a74c7f761938c9a31d00bf716be0"
+    "sha256": "0ff23403d2e14cb4f002e58cf0b20881c235bfe922c6718d9082ebbed73349b8"
   },
   "artifact_role": "primary",
   "blueprint": {
     "media_type": "image/png",
-    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/molmer-sorenson-gate-figure.png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/molmer-sorenson-gate-blueprint.png",
     "role": "physics-blueprint",
-    "sha256": "f84d72e58b69fce7100a0a544b44f64b5f9c8c333fc3081db7974a505562c29b"
+    "sha256": "065179c271f551b3ee2d12ca6317f6e1ef3271044dd76990619e4e0e7dd352ad",
+    "strict": true
   },
   "entry_slug": "molmer-sorenson-gate",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/molmer-sorenson-gate-figure-20260726T015947484599Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/molmer-sorenson-gate-figure-20260802T141115457660Z.png",
     "supersedes_file": "molmer-sorenson-gate-figure.png"
   },
   "renderer": {
@@ -24,16 +25,16 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-07-26T01:59:47.484599+00:00",
-    "id": "gen-1785031173-cz3vaOXxX2r2axAXVa6q",
+    "generated_at": "2026-08-02T14:11:15.457660+00:00",
+    "id": "gen-1785679865-J0A0Y33yW3XwnzUcFlpr",
     "image_size": "1K",
-    "prompt_sha256": "6603cb315ad6efc1d7a5cefa56564320e1dfacb389a6f19fe2f97b4234f37369",
+    "prompt_sha256": "e40f75d0296361d0909ea5ad99e9725346037d3672a77937cc6b8c2950c498ee",
     "source_media_type": "image/jpeg"
   },
   "review": {
-    "notes": "Revalidated during provenance/frontmatter backfill after full-resolution physics and editorial review; approved Nano Banana 2 final.",
-    "reviewed_at": "2026-07-26T02:25:01.155470+00:00",
-    "reviewer": "codex-visual-physics-review-2026-07-25",
+    "notes": "Accurate shared bichromatic red/blue-sideband drive on both ions, closed motional phase-space loop returning motion to its initial state, and resulting XX entangling unitary; headings and equations are legible.",
+    "reviewed_at": "2026-08-02T14:11:35.574465+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-02",
     "status": "passed"
   },
   "schema_version": 1

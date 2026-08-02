@@ -1,0 +1,41 @@
+{
+  "artifact": {
+    "media_type": "image/png",
+    "path": "singlet-triplet-qubit-figure.png",
+    "sha256": "4e43854a2207c3cbe3319bd992888980d7b881903deda85493ca927e8bb6eeb8"
+  },
+  "artifact_role": "primary",
+  "blueprint": {
+    "media_type": "image/png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/singlet-triplet-qubit-blueprint.png",
+    "role": "physics-blueprint",
+    "sha256": "66fbaf9d1db6449f5ed8fa6fce62e68f19866c5c4afc78de1c17b886e598e4a6",
+    "strict": true
+  },
+  "entry_slug": "singlet-triplet-qubit",
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/singlet-triplet-qubit-figure-20260802T141709528661Z.png",
+    "supersedes_file": "singlet-triplet-qubit-figure.png"
+  },
+  "renderer": {
+    "name": "nano-banana-2",
+    "provider": "Google AI Studio",
+    "requested_model": "google/gemini-3.1-flash-image-preview",
+    "returned_model": "google/gemini-3.1-flash-image-preview"
+  },
+  "request": {
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-08-02T14:17:09.528661+00:00",
+    "id": "gen-1785680219-gaj8jC3eI3npl6D1d60B",
+    "image_size": "1K",
+    "prompt_sha256": "9a1e56170aed83584bd5d6724e9977a5232d14e65491eee43f5702b7d5b8d608",
+    "source_media_type": "image/jpeg"
+  },
+  "review": {
+    "notes": "Accurate |S> and |T0> double-dot basis, orthogonal J(epsilon)/DeltaBz control axes, and parallel Pauli-spin-blockade readout outcomes feeding a charge sensor; no misleading state conversion or metric box.",
+    "reviewed_at": "2026-08-02T14:17:59.275117+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-02",
+    "status": "passed"
+  },
+  "schema_version": 1
+}

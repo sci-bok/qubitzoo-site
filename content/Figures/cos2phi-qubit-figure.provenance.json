@@ -2,19 +2,19 @@
   "artifact": {
     "media_type": "image/png",
     "path": "cos2phi-qubit-figure.png",
-    "sha256": "902b87c2ea5dee6d198d2f2512d47d11acea263f08795b703e9a40be13a373cd"
+    "sha256": "985356197717f539a2f312fe622e6c74f2b0ec2f755b4ded077d3f461f08fb5c"
   },
   "artifact_role": "primary",
   "blueprint": {
     "media_type": "image/png",
-    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/vault/Figures/.candidates/cos2phi-qubit-blueprint-v2.png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/cos2phi-qubit-blueprint.png",
     "role": "physics-blueprint",
-    "sha256": "9ced6c48a9b5fcffe1117035af5fb1054916e6933314017859b234796b4d4b9c",
+    "sha256": "d03f17cea0cc60c2199d2b1dbb0c3e8f09d01962394a918c2f799cb0e9a42af0",
     "strict": true
   },
   "entry_slug": "cos2phi-qubit",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/vault/Figures/.candidates/cos2phi-qubit-figure-20260801T150713902942Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/cos2phi-qubit-figure-20260802T135535565617Z.png",
     "supersedes_file": "cos2phi-qubit-figure.png"
   },
   "renderer": {
@@ -25,16 +25,16 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-01T15:07:13.902942+00:00",
-    "id": "gen-1785596823-ySDm0YbkncYNsTwyHfCZ",
+    "generated_at": "2026-08-02T13:55:35.565617+00:00",
+    "id": "gen-1785678926-G14Ab8XrRUcsEDVrjzdw",
     "image_size": "1K",
-    "prompt_sha256": "62f1611dfac0cb727fd3ab605933c72dfaba4e12014ae0957b26bd14ce9a16e5",
+    "prompt_sha256": "5430f73591e7d99a58ef928c0777af720c9860a3c1c85a72bd5a45f145ca144c",
     "source_media_type": "image/jpeg"
   },
   "review": {
-    "notes": "PASS after independent image-tool adjudication with verified sources: Hamiltonian, \u0394N=\u00b12 parity ladders, phase minima and approximate localized-state relations are correct; the multi-harmonic half-flux element and residual-E1 caveat are accurate; Larsen 2020 and Roverc h 2026 values are explicitly device-specific; no garbled text remains.",
-    "reviewed_at": "2026-08-01T15:09:23.788429+00:00",
-    "reviewer": "scibok-deep-audit-2026-08-01",
+    "notes": "Accurate minimal effective cos(2phi) element, pi-periodic potential with logical wells, and qualitative dual-noise protection; no misleading ordinary-series-junction realization or performance claims.",
+    "reviewed_at": "2026-08-02T13:57:26.397966+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-02",
     "status": "passed"
   },
   "schema_version": 1

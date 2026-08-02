@@ -1,0 +1,41 @@
+{
+  "artifact": {
+    "media_type": "image/png",
+    "path": "silicon-spin-qubit-figure.png",
+    "sha256": "23049c43f265f687262aa18aac763a00e93e902f6aa3e040c176e30598fd0641"
+  },
+  "artifact_role": "primary",
+  "blueprint": {
+    "media_type": "image/png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/silicon-spin-qubit-blueprint.png",
+    "role": "physics-blueprint",
+    "sha256": "50ed5abf20e5213f4d6f1fa93b54b15b0824a4955367468e78a862ad6d1a687c",
+    "strict": true
+  },
+  "entry_slug": "silicon-spin-qubit",
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/silicon-spin-qubit-figure-20260802T141428956083Z.png",
+    "supersedes_file": "silicon-spin-qubit-figure.png"
+  },
+  "renderer": {
+    "name": "nano-banana-2",
+    "provider": "Google AI Studio",
+    "requested_model": "google/gemini-3.1-flash-image-preview",
+    "returned_model": "google/gemini-3.1-flash-image-preview"
+  },
+  "request": {
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-08-02T14:14:28.956083+00:00",
+    "id": "gen-1785680058-aOOdXTTSL8uefJFBD7Xy",
+    "image_size": "1K",
+    "prompt_sha256": "f00838e8569c081d70f3da08c458d970a2e1399933cb89044209227f59025898",
+    "source_media_type": "image/jpeg"
+  },
+  "review": {
+    "notes": "Accurate 28Si/SiGe gate-defined double dot, Zeeman-split spin with EDSR control, exchange coupling, and charge-sensor readout; no unsupported pitch/coherence claims.",
+    "reviewed_at": "2026-08-02T14:16:04.383389+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-02",
+    "status": "passed"
+  },
+  "schema_version": 1
+}

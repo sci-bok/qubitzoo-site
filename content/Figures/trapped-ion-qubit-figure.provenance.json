@@ -1,0 +1,41 @@
+{
+  "artifact": {
+    "media_type": "image/png",
+    "path": "trapped-ion-qubit-figure.png",
+    "sha256": "fa8ecb050cd5cdbdf871b7ce42efa53a77102be19664089a558e4d73bd69200c"
+  },
+  "artifact_role": "primary",
+  "blueprint": {
+    "media_type": "image/png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/trapped-ion-qubit-blueprint.png",
+    "role": "physics-blueprint",
+    "sha256": "7aff1cd834b5c393bf3a565e061d96a7b5765b7dd703b860f0e58e53bd65175c",
+    "strict": true
+  },
+  "entry_slug": "trapped-ion-qubit",
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/trapped-ion-qubit-figure-20260802T142459065985Z.png",
+    "supersedes_file": "trapped-ion-qubit-figure.png"
+  },
+  "renderer": {
+    "name": "nano-banana-2",
+    "provider": "Google AI Studio",
+    "requested_model": "google/gemini-3.1-flash-image-preview",
+    "returned_model": "google/gemini-3.1-flash-image-preview"
+  },
+  "request": {
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-08-02T14:24:59.065985+00:00",
+    "id": "gen-1785680689-IIp52WKJpgDBw1EojlNP",
+    "image_size": "1K",
+    "prompt_sha256": "29aeba5d06a8d399d474a3f9c61d56291154ca1c4654862633794c3bc334a38a",
+    "source_media_type": "image/jpeg"
+  },
+  "review": {
+    "notes": "PASS: consistent 171Yb+ species, correct F=0/F=1 hyperfine qubit labels and 369 nm state-dependent fluorescence, plus shared-motion-mediated two-ion interaction.",
+    "reviewed_at": "2026-08-02T14:28:45.600586+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-02",
+    "status": "passed"
+  },
+  "schema_version": 1
+}

@@ -19,6 +19,11 @@ last_updated: '2026-07-20'
 generated_by: scibok-curation
 extracted_by: scibok
 verified_by: scibok-editorial-audit-2026-03-26
+figure_renderer: "nano-banana-2"
+figure_model: "google/gemini-3.1-flash-image-preview"
+figure_provenance: "Figures/fluxonium-figure.provenance.json"
+figure_reviewed_by: "Codex scientific visual audit 2026-08-02"
+figure_reviewed_at: "2026-08-02T13:58:42.443051+00:00"
 ---
 
 ## Figure

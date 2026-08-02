@@ -1,0 +1,35 @@
+{
+  "artifact": {
+    "media_type": "image/png",
+    "path": "circuit-qed-figure.png",
+    "sha256": "6ee09f84d9c1391a5520fb78050048d050e0ff2c0d2fc7285322edcfb45942d5"
+  },
+  "artifact_role": "primary",
+  "blueprint": null,
+  "entry_slug": "circuit-qed",
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/circuit-qed-figure-20260802T024953039986Z.png",
+    "supersedes_file": "circuit-qed-figure.png"
+  },
+  "renderer": {
+    "name": "nano-banana-2",
+    "provider": "Google AI Studio",
+    "requested_model": "google/gemini-3.1-flash-image-preview",
+    "returned_model": "google/gemini-3.1-flash-image-preview"
+  },
+  "request": {
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-08-02T02:49:53.039986+00:00",
+    "id": "gen-1785638984-befh6h0keECLburmw3ae",
+    "image_size": "1K",
+    "prompt_sha256": "4df535e4d507c9e02e3979d1ed038e8ee631e79fd6ee2a8edf6be35fe25afc77",
+    "source_media_type": "image/jpeg"
+  },
+  "review": {
+    "notes": "Approved: clean Jaynes-Cummings coupling schematic with correct state-dependent dispersive shifts and no visible label corruption.",
+    "reviewed_at": "2026-08-02T02:59:40.805603+00:00",
+    "reviewer": "codex-visual-physics-review-2026-08-01",
+    "status": "passed"
+  },
+  "schema_version": 1
+}

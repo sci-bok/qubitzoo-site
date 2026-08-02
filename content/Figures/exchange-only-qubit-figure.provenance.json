@@ -1,0 +1,41 @@
+{
+  "artifact": {
+    "media_type": "image/png",
+    "path": "exchange-only-qubit-figure.png",
+    "sha256": "1ab74dc6ffb08e531c6aa9e8498c28dd2c17760f83a68fe341c57232ff347ed3"
+  },
+  "artifact_role": "primary",
+  "blueprint": {
+    "media_type": "image/png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/exchange-only-qubit-blueprint.png",
+    "role": "physics-blueprint",
+    "sha256": "b6ac1f1b4c22c176ac35e6ea4181a4266c2f4c1845d148dc15b9cb7dbb11ac7c",
+    "strict": true
+  },
+  "entry_slug": "exchange-only-qubit",
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/exchange-only-qubit-figure-20260802T135547866943Z.png",
+    "supersedes_file": "exchange-only-qubit-figure.png"
+  },
+  "renderer": {
+    "name": "nano-banana-2",
+    "provider": "Google AI Studio",
+    "requested_model": "google/gemini-3.1-flash-image-preview",
+    "returned_model": "google/gemini-3.1-flash-image-preview"
+  },
+  "request": {
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-08-02T13:55:47.866943+00:00",
+    "id": "gen-1785678937-flPbVlNeI2cMUNdsEH2H",
+    "image_size": "1K",
+    "prompt_sha256": "3267d280586199698f6b8be59bf88325aabf2b253858a1e4c6dcf1b0ed5280f3",
+    "source_media_type": "image/jpeg"
+  },
+  "review": {
+    "notes": "Accurate three-electron linear triple dot with J12/J23 exchange-pulse control and fixed-S=1/2 encoded subspace; no malformed codewords or invented metrics.",
+    "reviewed_at": "2026-08-02T13:57:28.239616+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-02",
+    "status": "passed"
+  },
+  "schema_version": 1
+}

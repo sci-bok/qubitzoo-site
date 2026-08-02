@@ -1,0 +1,41 @@
+{
+  "artifact": {
+    "media_type": "image/png",
+    "path": "quantum-gate-figure.png",
+    "sha256": "703e6990a1eacf84d0bd863ab11f8a7031270dd2eadc53014a2a6c2fdd421d06"
+  },
+  "artifact_role": "primary",
+  "blueprint": {
+    "media_type": "image/png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-01/quantum-gate-blueprint.png",
+    "role": "physics-blueprint",
+    "sha256": "7ead7a9a465c137b1df58e2d490bdb888b6f7260e084cb1ff0ac1db9fd53d0f6",
+    "strict": true
+  },
+  "entry_slug": "quantum-gate",
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/quantum-gate-figure-20260802T030322641775Z.png",
+    "supersedes_file": "quantum-gate-figure.png"
+  },
+  "renderer": {
+    "name": "nano-banana-2",
+    "provider": "Google AI Studio",
+    "requested_model": "google/gemini-3.1-flash-image-preview",
+    "returned_model": "google/gemini-3.1-flash-image-preview"
+  },
+  "request": {
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-08-02T03:03:22.641775+00:00",
+    "id": "gen-1785639791-9jyJFYTstGQhtQVSUeFI",
+    "image_size": "1K",
+    "prompt_sha256": "37531b0746ff57848391799dc6ac2553ed9860aef2812578400a73af0885643b",
+    "source_media_type": "image/jpeg"
+  },
+  "review": {
+    "notes": "Approved: faithful blueprint-based Nano Banana 2 rendering of a single-qubit rotation and standard CNOT and controlled-Z circuits.",
+    "reviewed_at": "2026-08-02T03:05:12.320732+00:00",
+    "reviewer": "codex-visual-physics-review-2026-08-01",
+    "status": "passed"
+  },
+  "schema_version": 1
+}

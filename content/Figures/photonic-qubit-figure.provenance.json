@@ -1,0 +1,41 @@
+{
+  "artifact": {
+    "media_type": "image/png",
+    "path": "photonic-qubit-figure.png",
+    "sha256": "f6460334c9f21e6d49d2005d9d8e199eeb5ec393b93b289ca4334584af1ae7d8"
+  },
+  "artifact_role": "primary",
+  "blueprint": {
+    "media_type": "image/png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-01/photonic-qubit-blueprint.png",
+    "role": "physics-blueprint",
+    "sha256": "d933fa6d324764c5a76261c0a3592ce9b528b50c16fa15cc19821e91c2b9569d",
+    "strict": true
+  },
+  "entry_slug": "photonic-qubit",
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/photonic-qubit-figure-20260802T030333040738Z.png",
+    "supersedes_file": "photonic-qubit-figure.png"
+  },
+  "renderer": {
+    "name": "nano-banana-2",
+    "provider": "Google AI Studio",
+    "requested_model": "google/gemini-3.1-flash-image-preview",
+    "returned_model": "google/gemini-3.1-flash-image-preview"
+  },
+  "request": {
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-08-02T03:03:33.040738+00:00",
+    "id": "gen-1785639805-3z4X2DuDnd1ZU45cPAlg",
+    "image_size": "1K",
+    "prompt_sha256": "dbc821cade246311030c05989c72bba8aa1da7d0081db9e472cb395dcb74af4a",
+    "source_media_type": "image/jpeg"
+  },
+  "review": {
+    "notes": "Approved: clean, correct comparison of polarization, dual-rail, and time-bin single-photon encodings.",
+    "reviewed_at": "2026-08-02T03:05:12.367092+00:00",
+    "reviewer": "codex-visual-physics-review-2026-08-01",
+    "status": "passed"
+  },
+  "schema_version": 1
+}

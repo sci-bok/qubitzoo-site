@@ -1,0 +1,41 @@
+{
+  "artifact": {
+    "media_type": "image/png",
+    "path": "classical-control-figure.png",
+    "sha256": "4f52bcac9c3a8a8adda46f5049a81b06c6d973b501bdcbcd01c360aac77bcdc0"
+  },
+  "artifact_role": "primary",
+  "blueprint": {
+    "media_type": "image/png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-01/classical-control-blueprint.png",
+    "role": "physics-blueprint",
+    "sha256": "15473f49177c7ff167c2a58e382fc3c26bca7e36c4394dcd2d28bfc48d4dbf62",
+    "strict": true
+  },
+  "entry_slug": "classical-control",
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/classical-control-figure-20260802T030521890679Z.png",
+    "supersedes_file": "classical-control-figure.png"
+  },
+  "renderer": {
+    "name": "nano-banana-2",
+    "provider": "Google AI Studio",
+    "requested_model": "google/gemini-3.1-flash-image-preview",
+    "returned_model": "google/gemini-3.1-flash-image-preview"
+  },
+  "request": {
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-08-02T03:05:21.890679+00:00",
+    "id": "gen-1785639912-traowhNS4NsARzbZbIb2",
+    "image_size": "1K",
+    "prompt_sha256": "fad075dd1797977f8b8e1a3cb1c2e3e9d93c4271486167338d166de27962ddd0",
+    "source_media_type": "image/jpeg"
+  },
+  "review": {
+    "notes": "Approved: clean end-to-end control, readout, and real-time feedback paths with a correct timing hierarchy and no duplicated blocks.",
+    "reviewed_at": "2026-08-02T03:07:30.915246+00:00",
+    "reviewer": "codex-visual-physics-review-2026-08-01",
+    "status": "passed"
+  },
+  "schema_version": 1
+}

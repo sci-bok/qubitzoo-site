@@ -2,18 +2,19 @@
   "artifact": {
     "media_type": "image/png",
     "path": "heavy-fluxonium-qubit-figure.png",
-    "sha256": "901591aac15e48961b898659373b91eed0ef0a3729737209b7e6a1ae5a80f83b"
+    "sha256": "b74e5f8858519063764d9e3c2576ba7745d5ad0a80d6b29a6946e76921c402e9"
   },
   "artifact_role": "primary",
   "blueprint": {
     "media_type": "image/png",
-    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/heavy-fluxonium-qubit-figure.png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/heavy-fluxonium-qubit-blueprint.png",
     "role": "physics-blueprint",
-    "sha256": "285fbac6aadb80ce335c6ed34ca3e16484170a946e1f758f28704dff90940ba7"
+    "sha256": "8ccf8ef7d390338ec9ce91d27075c40d3efef9f3afb84c9bcc6b801fbbe4c682",
+    "strict": true
   },
   "entry_slug": "heavy-fluxonium-qubit",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/heavy-fluxonium-qubit-figure-20260726T015917256758Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/heavy-fluxonium-qubit-figure-20260802T140509793004Z.png",
     "supersedes_file": "heavy-fluxonium-qubit-figure.png"
   },
   "renderer": {
@@ -24,16 +25,16 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-07-26T01:59:17.256758+00:00",
-    "id": "gen-1785031143-6aQ7rrxlvf54C198P7td",
+    "generated_at": "2026-08-02T14:05:09.793004+00:00",
+    "id": "gen-1785679499-xqY7weNLL1Rmwjxb1Jkl",
     "image_size": "1K",
-    "prompt_sha256": "6df534351f5d1b776c2dc9bcaecf4b2297c8feed57c615d095c68c0cfe6deadf",
+    "prompt_sha256": "a8af5fb185b6043b27b41d2503bba8086f5cc45c161a917d05ac8368b1edacd4",
     "source_media_type": "image/jpeg"
   },
   "review": {
-    "notes": "Revalidated during provenance/frontmatter backfill after full-resolution physics and editorial review; approved Nano Banana 2 final.",
-    "reviewed_at": "2026-07-26T02:25:01.077746+00:00",
-    "reviewer": "codex-visual-physics-review-2026-07-25",
+    "notes": "Accurate heavy-fluxonium parallel circuit with large shunt capacitance/small EC regime, corrected Hamiltonian, disjoint half-flux wavefunctions, and suppressed charge/flux matrix elements; no performance claims.",
+    "reviewed_at": "2026-08-02T14:05:54.715412+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-02",
     "status": "passed"
   },
   "schema_version": 1

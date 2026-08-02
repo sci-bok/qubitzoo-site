@@ -1,0 +1,35 @@
+{
+  "artifact": {
+    "media_type": "image/png",
+    "path": "floquet-codes-figure.png",
+    "sha256": "b2bfc586b52c766c3b31aeccf490d8cc77f4af18cfd42c03725de3d46a8482cb"
+  },
+  "artifact_role": "primary",
+  "blueprint": null,
+  "entry_slug": "floquet-codes",
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/floquet-codes-figure-20260802T025051654172Z.png",
+    "supersedes_file": "floquet-codes-figure.png"
+  },
+  "renderer": {
+    "name": "nano-banana-2",
+    "provider": "Google AI Studio",
+    "requested_model": "google/gemini-3.1-flash-image-preview",
+    "returned_model": "google/gemini-3.1-flash-image-preview"
+  },
+  "request": {
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-08-02T02:50:51.654172+00:00",
+    "id": "gen-1785639042-2f4T5J9ms46ENVjrRJIN",
+    "image_size": "1K",
+    "prompt_sha256": "451803abfd8df455e2985f5ed2847719002f53a231efe83530636bcc254771e8",
+    "source_media_type": "image/jpeg"
+  },
+  "review": {
+    "notes": "Approved: clear honeycomb check schedule XX then YY then ZZ and dynamically evolving logical-operator concept.",
+    "reviewed_at": "2026-08-02T02:59:40.900948+00:00",
+    "reviewer": "codex-visual-physics-review-2026-08-01",
+    "status": "passed"
+  },
+  "schema_version": 1
+}

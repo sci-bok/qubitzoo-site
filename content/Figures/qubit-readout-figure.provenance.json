@@ -1,0 +1,41 @@
+{
+  "artifact": {
+    "media_type": "image/png",
+    "path": "qubit-readout-figure.png",
+    "sha256": "3acca3644fbabb7652bb455ed73a8b1ecd84db2ae9957695f3cfa5e4e9628791"
+  },
+  "artifact_role": "primary",
+  "blueprint": {
+    "media_type": "image/png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/qubit-readout-blueprint.png",
+    "role": "physics-blueprint",
+    "sha256": "2dcaf13eea7087d28fde90257a7d87a720d659ecc467cf35aa99250a9a6d9ebf",
+    "strict": true
+  },
+  "entry_slug": "qubit-readout",
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/qubit-readout-figure-20260802T140925554247Z.png",
+    "supersedes_file": "qubit-readout-figure.png"
+  },
+  "renderer": {
+    "name": "nano-banana-2",
+    "provider": "Google AI Studio",
+    "requested_model": "google/gemini-3.1-flash-image-preview",
+    "returned_model": "google/gemini-3.1-flash-image-preview"
+  },
+  "request": {
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-08-02T14:09:25.554247+00:00",
+    "id": "gen-1785679755-knutfquumYsR1eXfI0Ew",
+    "image_size": "1K",
+    "prompt_sha256": "525b7fc10dd88929c4489e4a7958a419803ab5ff5a8b694481c0f33565ece6f9",
+    "source_media_type": "image/jpeg"
+  },
+  "review": {
+    "notes": "Accurate platform-neutral overview of dispersive microwave, fluorescence, spin-to-charge, and photon-detection readout plus signal-to-classifier feedback chain; no lifetime inference graphic.",
+    "reviewed_at": "2026-08-02T14:10:36.190842+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-02",
+    "status": "passed"
+  },
+  "schema_version": 1
+}

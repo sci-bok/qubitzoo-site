@@ -19,6 +19,11 @@ generated_by: scibok-curation
 extracted_by: scibok
 verified_by: scibok-manual-2026-03-21
 figure_reviewed: true
+figure_renderer: "nano-banana-2"
+figure_model: "google/gemini-3.1-flash-image-preview"
+figure_provenance: "Figures/nv-center-qubit-figure.provenance.json"
+figure_reviewed_by: "codex-visual-physics-review-2026-08-01"
+figure_reviewed_at: "2026-08-02T02:59:40.996624+00:00"
 ---
 
 ## Figure

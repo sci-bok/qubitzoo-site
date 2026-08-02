@@ -18,6 +18,11 @@ last_updated: '2026-06-09'
 generated_by: scibok-curation
 extracted_by: airtable-seed
 verified_by: scibok-manual-2026-03-21
+figure_renderer: "nano-banana-2"
+figure_model: "google/gemini-3.1-flash-image-preview"
+figure_provenance: "Figures/cirac-zoller-gate-figure.provenance.json"
+figure_reviewed_by: "Codex scientific visual audit 2026-08-02"
+figure_reviewed_at: "2026-08-02T13:47:43.831673+00:00"
 ---
 
 ## Figure

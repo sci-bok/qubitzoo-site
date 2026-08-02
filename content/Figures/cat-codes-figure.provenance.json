@@ -2,18 +2,19 @@
   "artifact": {
     "media_type": "image/png",
     "path": "cat-codes-figure.png",
-    "sha256": "91b52744782c0d3035e0dd8dd1fc8a48dd85e9c9f23c3cc95262269943f782d3"
+    "sha256": "63864e66a2153ff7ea7f22905fdf08eff5665989ddb0e62196b848acb5c65b38"
   },
   "artifact_role": "primary",
   "blueprint": {
     "media_type": "image/png",
-    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/cat-codes-figure.png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/cat-codes-blueprint.png",
     "role": "physics-blueprint",
-    "sha256": "e1be20bc34f5c65de2388692546bbad2c9d40c22c26a21410a9766412d739361"
+    "sha256": "b66bed2882f351ec690ec6f2a60a1f63eb27b9727fc80774103fdab1df316ab2",
+    "strict": true
   },
   "entry_slug": "cat-codes",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/cat-codes-figure-20260726T020933901053Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/cat-codes-figure-20260802T140153098256Z.png",
     "supersedes_file": "cat-codes-figure.png"
   },
   "renderer": {
@@ -24,16 +25,16 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-07-26T02:09:33.901053+00:00",
-    "id": "gen-1785031763-El2k5k0VaegD5HAMrjGB",
+    "generated_at": "2026-08-02T14:01:53.098256+00:00",
+    "id": "gen-1785679302-mmKkIwSXO2I4MyT7yo2f",
     "image_size": "1K",
-    "prompt_sha256": "68b0da80645e9bc03a8b3fbdace4bfe3caf1d4b1896d8dcc9cd7935e9e387079",
+    "prompt_sha256": "6fe2192a18dac33e01f9dbeb404dc61c98bf5257f8bd0d3a39a17fd7c70df065",
     "source_media_type": "image/jpeg"
   },
   "review": {
-    "notes": "Revalidated during provenance/frontmatter backfill after full-resolution physics and editorial review; approved Nano Banana 2 final.",
-    "reviewed_at": "2026-07-26T02:25:00.922612+00:00",
-    "reviewer": "codex-visual-physics-review-2026-07-25",
+    "notes": "Accurate even/odd cat-state definitions, one-photon parity toggle, and two-photon stabilization at coherent amplitudes plus/minus alpha; exactly three panels and no metrics or unrelated chip architecture.",
+    "reviewed_at": "2026-08-02T14:03:57.745523+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-02",
     "status": "passed"
   },
   "schema_version": 1

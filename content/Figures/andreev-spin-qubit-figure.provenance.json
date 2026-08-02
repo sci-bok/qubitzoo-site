@@ -1,0 +1,41 @@
+{
+  "artifact": {
+    "media_type": "image/png",
+    "path": "andreev-spin-qubit-figure.png",
+    "sha256": "fddd00ee21c13e045888b69a49d088c4d34e689705a7adcebcfbe55f3793bada"
+  },
+  "artifact_role": "primary",
+  "blueprint": {
+    "media_type": "image/png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/andreev-spin-qubit-blueprint.png",
+    "role": "physics-blueprint",
+    "sha256": "158fdfeaf1e3c4320e949433b8c17764af6c23ce2e899c4a97604752c9473c4a",
+    "strict": true
+  },
+  "entry_slug": "andreev-spin-qubit",
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/andreev-spin-qubit-figure-20260802T134312463594Z.png",
+    "supersedes_file": "andreev-spin-qubit-figure.png"
+  },
+  "renderer": {
+    "name": "nano-banana-2",
+    "provider": "Google AI Studio",
+    "requested_model": "google/gemini-3.1-flash-image-preview",
+    "returned_model": "google/gemini-3.1-flash-image-preview"
+  },
+  "request": {
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-08-02T13:43:12.463594+00:00",
+    "id": "gen-1785678181-dy2MZfkJ0GZoWRZvyQVd",
+    "image_size": "1K",
+    "prompt_sha256": "f0d522f4ab44c834bb707f8ab143d0085227c3c20aaf92266fdac46bf44d6389",
+    "source_media_type": "image/jpeg"
+  },
+  "review": {
+    "notes": "Accurate S-InAs-S weak link, odd-parity spin-split positive-energy Andreev doublet, qubit transition, and dispersive LC readout; labels verified at full resolution.",
+    "reviewed_at": "2026-08-02T13:47:40.124229+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-02",
+    "status": "passed"
+  },
+  "schema_version": 1
+}

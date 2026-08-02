@@ -1,0 +1,35 @@
+{
+  "artifact": {
+    "media_type": "image/png",
+    "path": "ytterbium-hyperfine-qubit-figure.png",
+    "sha256": "479819543425a6f3ac788624f2c872df3d7fb0aa72b91e5119f8842aec6f921e"
+  },
+  "artifact_role": "primary",
+  "blueprint": null,
+  "entry_slug": "ytterbium-hyperfine-qubit",
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/ytterbium-hyperfine-qubit-figure-20260802T025701122360Z.png",
+    "supersedes_file": "ytterbium-hyperfine-qubit-figure.png"
+  },
+  "renderer": {
+    "name": "nano-banana-2",
+    "provider": "Google AI Studio",
+    "requested_model": "google/gemini-3.1-flash-image-preview",
+    "returned_model": "google/gemini-3.1-flash-image-preview"
+  },
+  "request": {
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-08-02T02:57:01.122360+00:00",
+    "id": "gen-1785639410-PYT84gDN59W3qpa7uDNr",
+    "image_size": "1K",
+    "prompt_sha256": "95682be93850d834ad7107dd1fad47893fc7626a3f3911e998c4f01cc59ebee5",
+    "source_media_type": "image/jpeg"
+  },
+  "review": {
+    "notes": "Approved: correct 171Yb+ clock-state encoding, 12.642 GHz splitting, and 369.5 nm state-dependent fluorescence readout.",
+    "reviewed_at": "2026-08-02T02:59:41.136994+00:00",
+    "reviewer": "codex-visual-physics-review-2026-08-01",
+    "status": "passed"
+  },
+  "schema_version": 1
+}

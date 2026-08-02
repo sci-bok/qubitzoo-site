@@ -1,0 +1,41 @@
+{
+  "artifact": {
+    "media_type": "image/png",
+    "path": "gmon-figure.png",
+    "sha256": "6683e34e1d083b28f3774ab542ced688c49f72244573cce6b584846f43730acb"
+  },
+  "artifact_role": "primary",
+  "blueprint": {
+    "media_type": "image/png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/gmon-blueprint.png",
+    "role": "physics-blueprint",
+    "sha256": "229b2bdbd96837e36f79a32acea6f2fea6cd1cf36ffebd208e165373576d487c",
+    "strict": true
+  },
+  "entry_slug": "gmon",
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/gmon-figure-20260802T140215031764Z.png",
+    "supersedes_file": "gmon-figure.png"
+  },
+  "renderer": {
+    "name": "nano-banana-2",
+    "provider": "Google AI Studio",
+    "requested_model": "google/gemini-3.1-flash-image-preview",
+    "returned_model": "google/gemini-3.1-flash-image-preview"
+  },
+  "request": {
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-08-02T14:02:15.031764+00:00",
+    "id": "gen-1785679326-an93luxrkKyEgov9GZE5",
+    "image_size": "1K",
+    "prompt_sha256": "18a846c971e09e6fd7c98a7caf0f299f6c670e940b5998f2cc2ffafb679c2fe9",
+    "source_media_type": "image/jpeg"
+  },
+  "review": {
+    "notes": "Accurate two-Xmon Gmon topology with one flux-tunable inductive coupler, near-zero/active g(t), and exchange between |10> and |01>; labels are unique and legible.",
+    "reviewed_at": "2026-08-02T14:04:01.507190+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-02",
+    "status": "passed"
+  },
+  "schema_version": 1
+}

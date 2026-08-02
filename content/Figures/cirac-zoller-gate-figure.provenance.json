@@ -1,0 +1,41 @@
+{
+  "artifact": {
+    "media_type": "image/png",
+    "path": "cirac-zoller-gate-figure.png",
+    "sha256": "1f91e4c2a67255912ee60e2fc581a50720ac186f13f3288a505c9c39c4513771"
+  },
+  "artifact_role": "primary",
+  "blueprint": {
+    "media_type": "image/png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/cirac-zoller-gate-blueprint.png",
+    "role": "physics-blueprint",
+    "sha256": "245e3428e8a8bbe7c787e63c22d6ab6251465a5b078a7f1a6c5d0997d8d4235c",
+    "strict": true
+  },
+  "entry_slug": "cirac-zoller-gate",
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/cirac-zoller-gate-figure-20260802T134353410723Z.png",
+    "supersedes_file": "cirac-zoller-gate-figure.png"
+  },
+  "renderer": {
+    "name": "nano-banana-2",
+    "provider": "Google AI Studio",
+    "requested_model": "google/gemini-3.1-flash-image-preview",
+    "returned_model": "google/gemini-3.1-flash-image-preview"
+  },
+  "request": {
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-08-02T13:43:53.410723+00:00",
+    "id": "gen-1785678221-PSNkawNp8C0yKtjcdsmo",
+    "image_size": "1K",
+    "prompt_sha256": "bdb607c5c66ba5f4a50055053c713a7b3b7aea289037bed874d9f9405874306e",
+    "source_media_type": "image/jpeg"
+  },
+  "review": {
+    "notes": "Accurate canonical three-pulse Cirac-Zoller sequence with control red-sideband pi, target conditional 2pi through auxiliary state, inverse control pulse, and correct red/blue sideband definitions.",
+    "reviewed_at": "2026-08-02T13:47:43.831673+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-02",
+    "status": "passed"
+  },
+  "schema_version": 1
+}

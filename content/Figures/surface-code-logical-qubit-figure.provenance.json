@@ -2,18 +2,19 @@
   "artifact": {
     "media_type": "image/png",
     "path": "surface-code-logical-qubit-figure.png",
-    "sha256": "cd4d0bc6c4693d8d8ea3d06689d9426c359ae3cb697636e5db522720f01b4a9d"
+    "sha256": "2debea22923c23119590a4c1f188ceb5e7203fae15322e78a4d0d35614818524"
   },
   "artifact_role": "primary",
   "blueprint": {
     "media_type": "image/png",
-    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/surface-code-logical-qubit-figure.png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/surface-code-logical-qubit-blueprint.png",
     "role": "physics-blueprint",
-    "sha256": "ac7bdefc833d5293e84c7d9fe710c78761fae3832e3c26ce85c0ca7d9ba2c706"
+    "sha256": "5fa3f1fa4c9aac2692a75a52ffe7aecbe470fb235ed6e598acb2f74f5cc02ce2",
+    "strict": true
   },
   "entry_slug": "surface-code-logical-qubit",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/surface-code-logical-qubit-figure-20260726T020122764777Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/surface-code-logical-qubit-figure-20260802T143153828497Z.png",
     "supersedes_file": "surface-code-logical-qubit-figure.png"
   },
   "renderer": {
@@ -24,16 +25,16 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-07-26T02:01:22.764777+00:00",
-    "id": "gen-1785031274-P2PWTQQjyJSEUOvUBwq0",
+    "generated_at": "2026-08-02T14:31:53.828497+00:00",
+    "id": "gen-1785681104-eTpOOfUB0D3SGMNWMdx9",
     "image_size": "1K",
-    "prompt_sha256": "a14502f6df9b8ad4121ac97d8668bf02a67d072c6bae5681c89cf71fc91975c0",
+    "prompt_sha256": "d9dc775992d32a2cfa96d615bddcb017ef5f88c250d45acdd841ee4e101e4d9c",
     "source_media_type": "image/jpeg"
   },
   "review": {
-    "notes": "Revalidated during provenance/frontmatter backfill after full-resolution physics and editorial review; approved Nano Banana 2 final.",
-    "reviewed_at": "2026-07-26T02:25:01.388612+00:00",
-    "reviewer": "codex-visual-physics-review-2026-07-25",
+    "notes": "PASS: exact required convention is now explicit and consistent\u2014logical Z connects rough top/bottom boundaries, while logical X connects smooth left/right boundaries.",
+    "reviewed_at": "2026-08-02T14:32:58.109056+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-02",
     "status": "passed"
   },
   "schema_version": 1

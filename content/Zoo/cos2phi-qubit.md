@@ -22,8 +22,8 @@ verified_by: scibok-deep-audit-2026-08-01
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/cos2phi-qubit-figure.provenance.json"
-figure_reviewed_by: "scibok-deep-audit-2026-08-01"
-figure_reviewed_at: "2026-08-01T15:09:23.788429+00:00"
+figure_reviewed_by: "Codex scientific visual audit 2026-08-02"
+figure_reviewed_at: "2026-08-02T13:57:26.397966+00:00"
 ---
 
 ## Figure

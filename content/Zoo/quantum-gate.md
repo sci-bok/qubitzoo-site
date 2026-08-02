@@ -22,7 +22,17 @@ last_updated: '2026-03-25'
 generated_by: scibok-curation
 extracted_by: scibok
 verified_by: scibok
+figure_reviewed: true
+figure_renderer: "nano-banana-2"
+figure_model: "google/gemini-3.1-flash-image-preview"
+figure_provenance: "Figures/quantum-gate-figure.provenance.json"
+figure_reviewed_by: "codex-visual-physics-review-2026-08-01"
+figure_reviewed_at: "2026-08-02T03:05:12.320732+00:00"
 ---
+
+## Figure
+
+![[quantum-gate-figure.png]]
 
 ## Description
 

@@ -2,18 +2,19 @@
   "artifact": {
     "media_type": "image/png",
     "path": "rx-qubit-figure.png",
-    "sha256": "baf23fa510e0cdf3bcc5fb6d92ad2f1591c2a69f8bf0afc82a32a21937abb42f"
+    "sha256": "3fee8373e950eb41903bbed7aedac087c7deac277a8f5cd6f146dd12cef62968"
   },
   "artifact_role": "primary",
   "blueprint": {
     "media_type": "image/png",
-    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/rx-qubit-figure.png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/rx-qubit-blueprint.png",
     "role": "physics-blueprint",
-    "sha256": "a5ccceaea17e7688983b959b14738425e08bbb344f4967d81005a76a21ee02ba"
+    "sha256": "e516396a0cd13d0903c899ed0e17ea3bea61e805c1a700ff9e52bc85252e7934",
+    "strict": true
   },
   "entry_slug": "rx-qubit",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/rx-qubit-figure-20260726T020033204740Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/rx-qubit-figure-20260802T141405333124Z.png",
     "supersedes_file": "rx-qubit-figure.png"
   },
   "renderer": {
@@ -24,16 +25,16 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-07-26T02:00:33.204740+00:00",
-    "id": "gen-1785031221-M1L5KcfAK156aPvQA4Vc",
+    "generated_at": "2026-08-02T14:14:05.333124+00:00",
+    "id": "gen-1785680038-MBhsE0X3NHmDdZpCGR6S",
     "image_size": "1K",
-    "prompt_sha256": "d358689bcf83126ec1b546cd42b146f393928d8d1d1b9dd5184c219d6e998e68",
+    "prompt_sha256": "a75b67b32b5acd5713a6a15c8d43238b1c5c10dcf5f1b767a61afec3f1ff4ac7",
     "source_media_type": "image/jpeg"
   },
   "review": {
-    "notes": "Revalidated during provenance/frontmatter backfill after full-resolution physics and editorial review; approved Nano Banana 2 final.",
-    "reviewed_at": "2026-07-26T02:25:01.273540+00:00",
-    "reviewer": "codex-visual-physics-review-2026-07-25",
+    "notes": "Accurate symmetric three-electron triple dot at JLC=JRC, encoded S=1/2 sweet spot, and resonant modulation of JLC-JRC for transverse rotations; no duplicated panel or resonator-transfer drawing.",
+    "reviewed_at": "2026-08-02T14:16:00.693871+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-02",
     "status": "passed"
   },
   "schema_version": 1

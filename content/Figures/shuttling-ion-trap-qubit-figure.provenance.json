@@ -1,0 +1,41 @@
+{
+  "artifact": {
+    "media_type": "image/png",
+    "path": "shuttling-ion-trap-qubit-figure.png",
+    "sha256": "4e4764761ebfd6571c1082275170ac75f2c974bef2bef8bc1ad680b61d760bce"
+  },
+  "artifact_role": "primary",
+  "blueprint": {
+    "media_type": "image/png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/shuttling-ion-trap-qubit-blueprint.png",
+    "role": "physics-blueprint",
+    "sha256": "2721c96625c0237986eff76c0f155ff704177dd87ad76d8b54341b99f5367e98",
+    "strict": true
+  },
+  "entry_slug": "shuttling-ion-trap-qubit",
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/shuttling-ion-trap-qubit-figure-20260802T141416719459Z.png",
+    "supersedes_file": "shuttling-ion-trap-qubit-figure.png"
+  },
+  "renderer": {
+    "name": "nano-banana-2",
+    "provider": "Google AI Studio",
+    "requested_model": "google/gemini-3.1-flash-image-preview",
+    "returned_model": "google/gemini-3.1-flash-image-preview"
+  },
+  "request": {
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-08-02T14:14:16.719459+00:00",
+    "id": "gen-1785680046-so9IR0JZenDDI3O1PExe",
+    "image_size": "1K",
+    "prompt_sha256": "251c4402efbbabd0c62e59431f11d39dae4ed801dfa2cce264f85ec3e604be4e",
+    "source_media_type": "image/jpeg"
+  },
+  "review": {
+    "notes": "Accurate segmented QCCD junction, time-dependent DC transport waveform, memory/gate/readout zones, and low-motional-excitation constraint; no commercial benchmarks.",
+    "reviewed_at": "2026-08-02T14:16:02.534810+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-02",
+    "status": "passed"
+  },
+  "schema_version": 1
+}

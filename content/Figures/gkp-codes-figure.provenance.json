@@ -1,0 +1,41 @@
+{
+  "artifact": {
+    "media_type": "image/png",
+    "path": "gkp-codes-figure.png",
+    "sha256": "1ae9d77184ee756eb1826d46aa3fe1359e206d21e77214f16664a0435295ec3f"
+  },
+  "artifact_role": "primary",
+  "blueprint": {
+    "media_type": "image/png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/gkp-codes-blueprint.png",
+    "role": "physics-blueprint",
+    "sha256": "5accc72732b5f5be59c8b38aa00ad554034d1e19793a6d4af2af94d7bf6080e5",
+    "strict": true
+  },
+  "entry_slug": "gkp-codes",
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/gkp-codes-figure-20260802T140205043110Z.png",
+    "supersedes_file": "gkp-codes-figure.png"
+  },
+  "renderer": {
+    "name": "nano-banana-2",
+    "provider": "Google AI Studio",
+    "requested_model": "google/gemini-3.1-flash-image-preview",
+    "returned_model": "google/gemini-3.1-flash-image-preview"
+  },
+  "request": {
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-08-02T14:02:05.043110+00:00",
+    "id": "gen-1785679314-T4aRhMOVO2S0u6Sbyizk",
+    "image_size": "1K",
+    "prompt_sha256": "1bc022518474e263c4147d7ed28d77fc29431fef80f48ab5ac7a597402ee925c",
+    "source_media_type": "image/jpeg"
+  },
+  "review": {
+    "notes": "Accurate square GKP phase-space lattice, finite-energy logical combs offset by sqrt(pi), and modular nearest-lattice-point correction of small q/p displacements; no architecture or performance claims.",
+    "reviewed_at": "2026-08-02T14:03:59.630232+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-02",
+    "status": "passed"
+  },
+  "schema_version": 1
+}

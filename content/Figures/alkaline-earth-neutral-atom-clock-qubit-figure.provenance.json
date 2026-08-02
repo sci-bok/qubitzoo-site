@@ -2,18 +2,19 @@
   "artifact": {
     "media_type": "image/png",
     "path": "alkaline-earth-neutral-atom-clock-qubit-figure.png",
-    "sha256": "9a635625e71d02b90c00a4f730ab2d8d2843b1d64082df82cfa27bf21985906e"
+    "sha256": "31a8e313e4c1eed7725b9a8ba0424059a71cff837334edbc1449578e3f85bfe2"
   },
   "artifact_role": "primary",
   "blueprint": {
     "media_type": "image/png",
-    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/alkaline-earth-neutral-atom-clock-qubit-figure.png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/alkaline-earth-neutral-atom-clock-qubit-blueprint.png",
     "role": "physics-blueprint",
-    "sha256": "07aaaa1d4b0749f41fbb66775452d46914085a3a4ca2c4084cd9fb9179e9c52c"
+    "sha256": "05acab75795f6a1aa9445682bb152a06513c0d213e096f1f4d9b9ff907f23bd9",
+    "strict": true
   },
   "entry_slug": "alkaline-earth-neutral-atom-clock-qubit",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/alkaline-earth-neutral-atom-clock-qubit-figure-20260726T020723307832Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/alkaline-earth-neutral-atom-clock-qubit-figure-20260802T134259704104Z.png",
     "supersedes_file": "alkaline-earth-neutral-atom-clock-qubit-figure.png"
   },
   "renderer": {
@@ -24,16 +25,16 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-07-26T02:07:23.307832+00:00",
-    "id": "gen-1785031631-pyaD7kxFr3LNhlH3eR9b",
+    "generated_at": "2026-08-02T13:42:59.704104+00:00",
+    "id": "gen-1785678169-AAEnkl2jWzdAaLAeYuXA",
     "image_size": "1K",
-    "prompt_sha256": "9a6164e349ee616e15faa4bab04893bad0237ea73d3d2549320cd9860481b0f9",
+    "prompt_sha256": "a94c039b5cddca886af0a234d8cbd3506c1b38a5a15a781a60826a21185f2d33",
     "source_media_type": "image/jpeg"
   },
   "review": {
-    "notes": "Revalidated during provenance/frontmatter backfill after full-resolution physics and editorial review; approved Nano Banana 2 final.",
-    "reviewed_at": "2026-07-26T02:25:00.766593+00:00",
-    "reviewer": "codex-visual-physics-review-2026-07-25",
+    "notes": "Accurate 171Yb clock/nuclear-spin/Rydberg-blockade schematic; state labels, level ordering, Raman coupling, and blockade relation verified at full resolution. Minor extra Rydberg descriptor is scientifically correct.",
+    "reviewed_at": "2026-08-02T13:47:38.283916+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-02",
     "status": "passed"
   },
   "schema_version": 1

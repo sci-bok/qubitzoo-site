@@ -1,0 +1,35 @@
+{
+  "artifact": {
+    "media_type": "image/png",
+    "path": "dual-rail-superconducting-qubit-figure.png",
+    "sha256": "cf7e24ec20437dd95262425183fe1487de55603886cedbf9e6a2b14149795993"
+  },
+  "artifact_role": "primary",
+  "blueprint": null,
+  "entry_slug": "dual-rail-superconducting-qubit",
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/dual-rail-superconducting-qubit-figure-20260802T025031004340Z.png",
+    "supersedes_file": "dual-rail-superconducting-qubit-figure.png"
+  },
+  "renderer": {
+    "name": "nano-banana-2",
+    "provider": "Google AI Studio",
+    "requested_model": "google/gemini-3.1-flash-image-preview",
+    "returned_model": "google/gemini-3.1-flash-image-preview"
+  },
+  "request": {
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-08-02T02:50:31.004340+00:00",
+    "id": "gen-1785639020-EkFC1HlMcAEC4EXRrRXJ",
+    "image_size": "1K",
+    "prompt_sha256": "a76570147804ddf04e382697507b7879e811c0aa5b883d5bba4d0729f20014d8",
+    "source_media_type": "image/jpeg"
+  },
+  "review": {
+    "notes": "Approved: correct single-excitation logical basis, capacitive exchange interaction, and erasure state outside the code space.",
+    "reviewed_at": "2026-08-02T02:59:40.853408+00:00",
+    "reviewer": "codex-visual-physics-review-2026-08-01",
+    "status": "passed"
+  },
+  "schema_version": 1
+}

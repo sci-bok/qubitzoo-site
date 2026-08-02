@@ -1,0 +1,41 @@
+{
+  "artifact": {
+    "media_type": "image/png",
+    "path": "hybrid-qubit-figure.png",
+    "sha256": "fb98cf7c34c2156e4fd8a188f8960041f3db54cfac982ac3ed8a05a7c802b27e"
+  },
+  "artifact_role": "primary",
+  "blueprint": {
+    "media_type": "image/png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/hybrid-qubit-blueprint.png",
+    "role": "physics-blueprint",
+    "sha256": "3b06879bac1d4b89a557b7a06abf42ed57ec16479238aac1540bf213bddf9162",
+    "strict": true
+  },
+  "entry_slug": "hybrid-qubit",
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/hybrid-qubit-figure-20260802T140520830287Z.png",
+    "supersedes_file": "hybrid-qubit-figure.png"
+  },
+  "renderer": {
+    "name": "nano-banana-2",
+    "provider": "Google AI Studio",
+    "requested_model": "google/gemini-3.1-flash-image-preview",
+    "returned_model": "google/gemini-3.1-flash-image-preview"
+  },
+  "request": {
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-08-02T14:05:20.830287+00:00",
+    "id": "gen-1785679511-z5W36gy5cXr1GmLpcsoQ",
+    "image_size": "1K",
+    "prompt_sha256": "86469a37bc9bef522edfd030f8892d2ef45f2a5b2f78dc76a6f2fd07417065cc",
+    "source_media_type": "image/jpeg"
+  },
+  "review": {
+    "notes": "Accurate three-electron double-quantum-dot hybrid qubit with (2,1)/(1,2) charge configurations, tunnel coupling, detuning-controlled avoided crossings, and all-electric control; no triple-dot device or metric box.",
+    "reviewed_at": "2026-08-02T14:05:56.539186+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-02",
+    "status": "passed"
+  },
+  "schema_version": 1
+}

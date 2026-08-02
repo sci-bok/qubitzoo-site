@@ -2,18 +2,19 @@
   "artifact": {
     "media_type": "image/png",
     "path": "tetron-qubit-figure.png",
-    "sha256": "2f852247a157fe4470c1be535c4711c2c3c2647241288613c0ebfb58ede57bd9"
+    "sha256": "166e7c047385f8c3d2ac83988fe9af36d4c3904a9392bfc9441055d64fbd115c"
   },
   "artifact_role": "primary",
   "blueprint": {
     "media_type": "image/png",
-    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/tetron-qubit-figure.png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/tetron-qubit-blueprint.png",
     "role": "physics-blueprint",
-    "sha256": "24dfa86ecbea622692ad04921c82525b9cc173c8abcb10babc5cd1cf2c697b99"
+    "sha256": "adbaadddebce3d7279ee8526563c42ba9c8e2d4fcee81064165d93f52fc706b9",
+    "strict": true
   },
   "entry_slug": "tetron-qubit",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/tetron-qubit-figure-20260726T020900751773Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/tetron-qubit-figure-20260802T142448100996Z.png",
     "supersedes_file": "tetron-qubit-figure.png"
   },
   "renderer": {
@@ -24,16 +25,16 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-07-26T02:09:00.751773+00:00",
-    "id": "gen-1785031730-PQhyzB7naxhhd3FTdmt7",
+    "generated_at": "2026-08-02T14:24:48.100996+00:00",
+    "id": "gen-1785680679-v7txy1xcWsUPujq4CBHE",
     "image_size": "1K",
-    "prompt_sha256": "5927f2fa7c779ecaf38a9d6565fc1482dc1c28abf1e249ae051b5c35a3f90e88",
+    "prompt_sha256": "b2f358b1198119f35ce2c8d59aa7f16fb7058735e78235c6739bec0844a1f56d",
     "source_media_type": "image/jpeg"
   },
   "review": {
-    "notes": "Revalidated during provenance/frontmatter backfill after full-resolution physics and editorial review; approved Nano Banana 2 final.",
-    "reviewed_at": "2026-07-26T02:25:01.466387+00:00",
-    "reviewer": "codex-visual-physics-review-2026-07-25",
+    "notes": "PASS: four Majorana zero modes on a floating island with fixed total parity; logical information encoded in pair parity; parity readout through a quantum dot or sensor is correctly shown.",
+    "reviewed_at": "2026-08-02T14:28:43.763206+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-02",
     "status": "passed"
   },
   "schema_version": 1

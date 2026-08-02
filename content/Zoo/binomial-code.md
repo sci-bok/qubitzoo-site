@@ -4,6 +4,8 @@ entry_type: encoding
 technology_family: Superconducting
 status: demonstrated
 figure_reviewed: false
+figure_policy: none
+figure_reason: duplicate redirect to canonical binomial-codes entry
 first_proposed_year: 2016
 first_demonstrated_year: 2016
 keywords:

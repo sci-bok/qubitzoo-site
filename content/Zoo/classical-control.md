@@ -3,7 +3,7 @@ title: Classical Control Hardware
 entry_type: infrastructure
 technology_family: Cross-Platform
 status: demonstrated
-figure_reviewed: false
+figure_reviewed: true
 first_proposed_year: 2000
 first_demonstrated_year: 2000
 keywords:
@@ -22,11 +22,16 @@ last_updated: '2026-03-21'
 generated_by: scibok-curation
 extracted_by: manual
 verified_by: scibok-manual-2026-03-21
+figure_renderer: "nano-banana-2"
+figure_model: "google/gemini-3.1-flash-image-preview"
+figure_provenance: "Figures/classical-control-figure.provenance.json"
+figure_reviewed_by: "codex-visual-physics-review-2026-08-01"
+figure_reviewed_at: "2026-08-02T03:07:30.915246+00:00"
 ---
 
 ## Figure
 
-*(Figure pending)*
+![[classical-control-figure.png]]
 
 ## Description
 

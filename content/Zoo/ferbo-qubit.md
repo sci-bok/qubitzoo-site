@@ -3,7 +3,7 @@ title: FerBo Qubit
 entry_type: qubit
 technology_family: Super-Semi
 status: active
-figure_reviewed: false
+figure_reviewed: true
 first_proposed_year: 2026
 keywords:
 - ferbo
@@ -19,6 +19,11 @@ influence_score: 0.55
 last_updated: '2026-04-02'
 generated_by: scibok-curation
 verified_by: scibok-manual-2026-04-02
+figure_renderer: "nano-banana-2"
+figure_model: "google/gemini-3.1-flash-image-preview"
+figure_provenance: "Figures/ferbo-qubit-figure.provenance.json"
+figure_reviewed_by: "codex-site-image-audit-2026-08-01"
+figure_reviewed_at: "2026-08-02T03:07:08.132079+00:00"
 ---
 
 ## Figure

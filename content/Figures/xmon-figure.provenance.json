@@ -2,18 +2,19 @@
   "artifact": {
     "media_type": "image/png",
     "path": "xmon-figure.png",
-    "sha256": "f63e0117d073b8a41939603de32e4c823508d5878a7c1270b3fdf0cef1b6273e"
+    "sha256": "db2f72b8a113dc282c8d766024a2c5b85d2c0cb72dcd7a7a2b2f15059d49a709"
   },
   "artifact_role": "primary",
   "blueprint": {
     "media_type": "image/png",
-    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/xmon-figure.png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/xmon-blueprint.png",
     "role": "physics-blueprint",
-    "sha256": "28f2ba5b4b57558c7d5f5285e0c25abb9a12309192848287ecf65a904b87417d"
+    "sha256": "cf5e4df431cb795b392b15e1cc63283ac22a305cd890c757ae3a0d55073f1ae7",
+    "strict": true
   },
   "entry_slug": "xmon",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/xmon-figure-20260726T020914746098Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/xmon-figure-20260802T143216714310Z.png",
     "supersedes_file": "xmon-figure.png"
   },
   "renderer": {
@@ -24,16 +25,16 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-07-26T02:09:14.746098+00:00",
-    "id": "gen-1785031743-9d3o6oVpcyHPPvp3ZGBO",
+    "generated_at": "2026-08-02T14:32:16.714310+00:00",
+    "id": "gen-1785681128-RapyAmq1XlgEEzm1GCLD",
     "image_size": "1K",
-    "prompt_sha256": "ab13821518ee48de275027a8a022c663745a1baf347f3f815709d1b8da6a2715",
+    "prompt_sha256": "600026285ff9ac7a992b9f678005ba698009129c633d3c3289a58146fb2c0df4",
     "source_media_type": "image/jpeg"
   },
   "review": {
-    "notes": "Revalidated during provenance/frontmatter backfill after full-resolution physics and editorial review; approved Nano Banana 2 final.",
-    "reviewed_at": "2026-07-26T02:25:01.542885+00:00",
-    "reviewer": "codex-visual-physics-review-2026-07-25",
+    "notes": "PASS: correct cross-capacitor geometry; single SQUID label in the parallel tunable circuit with external flux; anharmonic |0>, |1>, |2> levels are correctly shown.",
+    "reviewed_at": "2026-08-02T14:33:01.759110+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-02",
     "status": "passed"
   },
   "schema_version": 1

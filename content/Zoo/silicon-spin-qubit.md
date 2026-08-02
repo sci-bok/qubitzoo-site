@@ -19,6 +19,11 @@ last_updated: '2026-03-28'
 generated_by: scibok-curation
 extracted_by: manual
 verified_by: scibok-audit-2026-03-28
+figure_renderer: "nano-banana-2"
+figure_model: "google/gemini-3.1-flash-image-preview"
+figure_provenance: "Figures/silicon-spin-qubit-figure.provenance.json"
+figure_reviewed_by: "Codex scientific visual audit 2026-08-02"
+figure_reviewed_at: "2026-08-02T14:16:04.383389+00:00"
 ---
 
 ## Figure

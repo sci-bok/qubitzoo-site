@@ -2,18 +2,19 @@
   "artifact": {
     "media_type": "image/png",
     "path": "quantum-transduction-figure.png",
-    "sha256": "54d8936147f68b62298624dee3c5ff5d1b54f9353c63dc4bd11936bbc1274ad4"
+    "sha256": "fb82bd5f4280ea942635498d2d76ab1190b2b345224ff7117a1b45beb83ffc17"
   },
   "artifact_role": "primary",
   "blueprint": {
     "media_type": "image/png",
-    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/quantum-transduction-figure.png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/quantum-transduction-blueprint.png",
     "role": "physics-blueprint",
-    "sha256": "f822b33211ec43e0a7d380fae589e68d78fa6506852343ebd7d1e9858e325f13"
+    "sha256": "be6317856f0a157f510811c9469c85ae4ef3be213de486a95f145a44b7ff84c7",
+    "strict": true
   },
   "entry_slug": "quantum-transduction",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/quantum-transduction-figure-20260726T020834123724Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/quantum-transduction-figure-20260802T140913849934Z.png",
     "supersedes_file": "quantum-transduction-figure.png"
   },
   "renderer": {
@@ -24,16 +25,16 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-07-26T02:08:34.123724+00:00",
-    "id": "gen-1785031702-AGYQJmk1lEWAJ6J9NBQh",
+    "generated_at": "2026-08-02T14:09:13.849934+00:00",
+    "id": "gen-1785679743-w62IusxDxjekVqwn5hdw",
     "image_size": "1K",
-    "prompt_sha256": "85b33b19ea9bd1fa146a54ec8148f27af373f81eb188be520ab87779948fa787",
+    "prompt_sha256": "30dd11be6e245f992ff10a2e9a2ea3b30364771f5f7deb81b27308308643b099",
     "source_media_type": "image/jpeg"
   },
   "review": {
-    "notes": "Revalidated during provenance/frontmatter backfill after full-resolution physics and editorial review; approved Nano Banana 2 final.",
-    "reviewed_at": "2026-07-26T02:25:01.233716+00:00",
-    "reviewer": "codex-visual-physics-review-2026-07-25",
+    "notes": "Accurate pump-enhanced microwave-mechanical-optical conversion chain, bidirectional quantum link, and qualitative efficiency/noise/bandwidth targets without unsupported demonstrated numbers.",
+    "reviewed_at": "2026-08-02T14:10:34.376274+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-02",
     "status": "passed"
   },
   "schema_version": 1

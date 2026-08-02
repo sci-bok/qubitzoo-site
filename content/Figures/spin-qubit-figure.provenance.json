@@ -1,0 +1,41 @@
+{
+  "artifact": {
+    "media_type": "image/png",
+    "path": "spin-qubit-figure.png",
+    "sha256": "78124ba6d05cf8250d461c3c03ad0d0677f9c867fb895ce3f8921f47105d5ed2"
+  },
+  "artifact_role": "primary",
+  "blueprint": {
+    "media_type": "image/png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/spin-qubit-blueprint.png",
+    "role": "physics-blueprint",
+    "sha256": "88bde594ba409c2c268de572ccbea53f7975108b625bc28a24f19bd16ecf04d1",
+    "strict": true
+  },
+  "entry_slug": "spin-qubit",
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/spin-qubit-figure-20260802T142416577311Z.png",
+    "supersedes_file": "spin-qubit-figure.png"
+  },
+  "renderer": {
+    "name": "nano-banana-2",
+    "provider": "Google AI Studio",
+    "requested_model": "google/gemini-3.1-flash-image-preview",
+    "returned_model": "google/gemini-3.1-flash-image-preview"
+  },
+  "request": {
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-08-02T14:24:16.577311+00:00",
+    "id": "gen-1785680646-9tRkPLDAtyF59bHiTlKh",
+    "image_size": "1K",
+    "prompt_sha256": "974a34f40d91f3b68954d6ab39b00a447a30a1cd798ffc972284275758225a11",
+    "source_media_type": "image/jpeg"
+  },
+  "review": {
+    "notes": "PASS: platform-neutral gate-defined single-electron spin qubit; correct Zeeman splitting and ESR/EDSR control; spin-selective tunneling readout maps spin to charge.",
+    "reviewed_at": "2026-08-02T14:28:38.255587+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-02",
+    "status": "passed"
+  },
+  "schema_version": 1
+}

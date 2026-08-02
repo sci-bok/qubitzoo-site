@@ -20,6 +20,11 @@ last_updated: '2026-06-09'
 generated_by: scibok-curation
 extracted_by: scibok
 verified_by: scibok-audit-2026-03-25
+figure_renderer: "nano-banana-2"
+figure_model: "google/gemini-3.1-flash-image-preview"
+figure_provenance: "Figures/trapped-ion-qubit-figure.provenance.json"
+figure_reviewed_by: "Codex scientific visual audit 2026-08-02"
+figure_reviewed_at: "2026-08-02T14:28:45.600586+00:00"
 ---
 
 ## Figure

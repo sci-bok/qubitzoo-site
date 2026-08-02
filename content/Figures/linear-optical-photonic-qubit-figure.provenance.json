@@ -1,0 +1,41 @@
+{
+  "artifact": {
+    "media_type": "image/png",
+    "path": "linear-optical-photonic-qubit-figure.png",
+    "sha256": "c38ceac40b8319e800487c94b7121bd6148185a07a8eca10ddd7142fb6dcade5"
+  },
+  "artifact_role": "primary",
+  "blueprint": {
+    "media_type": "image/png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/linear-optical-photonic-qubit-blueprint.png",
+    "role": "physics-blueprint",
+    "sha256": "8cb7acff955dddfb4422645f7e6db68a10df738c57cfbae3d1aec4fd42292c8b",
+    "strict": true
+  },
+  "entry_slug": "linear-optical-photonic-qubit",
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/linear-optical-photonic-qubit-figure-20260802T140839935761Z.png",
+    "supersedes_file": "linear-optical-photonic-qubit-figure.png"
+  },
+  "renderer": {
+    "name": "nano-banana-2",
+    "provider": "Google AI Studio",
+    "requested_model": "google/gemini-3.1-flash-image-preview",
+    "returned_model": "google/gemini-3.1-flash-image-preview"
+  },
+  "request": {
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-08-02T14:08:39.935761+00:00",
+    "id": "gen-1785679710-OOFK6fhlHbqWorqo21IS",
+    "image_size": "1K",
+    "prompt_sha256": "0a7f0caf13a7eb9a0d5fbb2f2467f728b12d8c87fce1933a52e2c160322aa693",
+    "source_media_type": "image/jpeg"
+  },
+  "review": {
+    "notes": "Accurate dual-rail single-photon basis, deterministic beam-splitter/phase-shifter single-qubit optics, and ancilla-assisted probabilistic entangling measurement with detectors and feed-forward; no informal labels or metrics.",
+    "reviewed_at": "2026-08-02T14:10:30.737183+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-02",
+    "status": "passed"
+  },
+  "schema_version": 1
+}
