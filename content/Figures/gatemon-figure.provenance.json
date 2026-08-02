@@ -1,0 +1,41 @@
+{
+  "artifact": {
+    "media_type": "image/png",
+    "path": "gatemon-figure.png",
+    "sha256": "52f7ea6a14370b7c38cfdef7d2c2332b1c0b0b6b9848dade26a52752ecdeca12"
+  },
+  "artifact_role": "primary",
+  "blueprint": {
+    "media_type": "image/png",
+    "path": "/private/tmp/qubit-zoo-audit.rQMNou/zettel/tmp/gatemon-audit-blueprint.png",
+    "role": "physics-blueprint",
+    "sha256": "6f7ab1de156abb55624806f09bf23a3f8b0ef3076689f7255e7a1ae1ddb6b53f",
+    "strict": true
+  },
+  "entry_slug": "gatemon",
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/gatemon-figure-20260802T141821807315Z.png",
+    "supersedes_file": "gatemon-figure.png"
+  },
+  "renderer": {
+    "name": "nano-banana-2",
+    "provider": "Google AI Studio",
+    "requested_model": "google/gemini-3.1-flash-image-preview",
+    "returned_model": "google/gemini-3.1-flash-image-preview"
+  },
+  "request": {
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-08-02T14:18:21.807315+00:00",
+    "id": "gen-1785680289-RH9lcQUZiptzaqeUQGv1",
+    "image_size": "1K",
+    "prompt_sha256": "42889c6694d2f2be0b8d69bd8a417eaa114c185e6d10a2bca7c7f836259f37b1",
+    "source_media_type": "image/jpeg"
+  },
+  "review": {
+    "notes": "PASS: device geometry, parallel circuit topology, gate-versus-offset-charge distinction, non-sinusoidal Josephson-potential framing, tunnel-limit approximation, labels, and rendering artifacts all verified.",
+    "reviewed_at": "2026-08-02T14:19:49.777695+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-02",
+    "status": "passed"
+  },
+  "schema_version": 1
+}

@@ -4,10 +4,12 @@ authors: [L. Casparis, M. R. Connolly, M. Kjaergaard, N. J. Pearson, A. Kringhø
 year: 2018
 journal: Nature Nanotechnology
 doi: 10.1038/s41565-018-0207-y
-arxiv_id: '1802.02627'
+arxiv_id: '1711.07665'
 type: reference
 generated_by: scibok-curation
-last_updated: '2026-03-15'
+last_updated: '2026-08-02'
+verification_status: verified
+verified_by: codex-deep-audit-2026-08-02
 ---
 Demonstrates a gatemon qubit based on a proximitized InAs/Al two-dimensional electron gas (2DEG) Josephson junction, with voltage-tunable frequency. Extends the gatemon concept from nanowire to planar geometries, improving reproducibility and scalability.
 
@@ -19,7 +21,7 @@ Demonstrates a gatemon qubit based on a proximitized InAs/Al two-dimensional ele
 
 ## Links
 - **Journal:** [Nature Nanotechnology](https://doi.org/10.1038/s41565-018-0207-y)
-- **arXiv:** [1802.02627](https://arxiv.org/abs/1802.02627)
+- **arXiv:** [1711.07665](https://arxiv.org/abs/1711.07665)
 
 ## Zoo Links
 - [[gatemon]]
