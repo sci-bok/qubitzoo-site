@@ -95,6 +95,7 @@ The surface code is currently the dominant QEC architecture for superconducting 
 
 - [[threshold-theorem]] — the surface code is the canonical practical instantiation of the whole below-threshold scaling story.
 - [[erasure-error-vs-pauli-error]] — one of the most important caveats on surface-code overhead is that its effective threshold changes dramatically once the hardware can flag loss or leakage.
+- [[noise-bias-and-asymmetric-error-channels]] — explains why XZZX checks or asymmetric code distances can beat a square, depolarizing-noise design when the unflagged channel is directionally biased.
 - [[quantum-hardware]] — keeps the code in the right frame: surface-code dominance is really a statement about which hardware layouts and control stacks are easiest to scale today.
 
 ## Related Entries

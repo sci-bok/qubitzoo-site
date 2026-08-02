@@ -92,6 +92,7 @@ The effective code after one complete cycle is equivalent to a topological code 
 - [[threshold-theorem]] — Floquet codes are best understood as a different path to fault-tolerant scaling, trading static stabilizer structure for simpler repeated measurements.
 - [[quantum-hardware]] — the main appeal is hardware-facing: two-body checks fit platforms that struggle with deeper ancilla-assisted stabilizer extraction.
 - [[erasure-error-vs-pauli-error]] — useful when comparing decoder assumptions, because Floquet-code advantages shift noticeably with the underlying flagged-loss versus Pauli-dominated noise model.
+- [[noise-bias-and-asymmetric-error-channels]] — adds the orthogonal question of whether the unflagged residual channel has a dominant Pauli direction that the measurement schedule and decoder should exploit.
 
 ## Related Entries
 

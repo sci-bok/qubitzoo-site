@@ -98,6 +98,7 @@ For asymptotically good codes: $k = \Theta(n)$, $d = \Theta(n)$, giving constant
 
 - [[threshold-theorem]] — qLDPC matters only insofar as its constant-rate promise still lives in a realistic below-threshold regime
 - [[erasure-error-vs-pauli-error]] — a useful lens for reading qLDPC threshold claims, since decoder advantages depend strongly on whether the hardware exposes flagged loss or ordinary Pauli noise
+- [[noise-bias-and-asymmetric-error-channels]] — keeps a second decoder assumption explicit: even after separating flagged erasures, the unflagged residual may be strongly biased among $X$, $Y$, and $Z$ errors
 
 ## Related Entries
 

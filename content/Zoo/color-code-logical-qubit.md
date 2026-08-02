@@ -88,6 +88,7 @@ Color codes are a leading alternative to the surface code when gate-transversali
 - [[threshold-theorem]] — color codes are an alternative route to the same below-threshold scaling goal, but with a different overhead mix than the surface code.
 - [[quantum-hardware]] — helpful umbrella when comparing whether a platform would rather pay for simpler decoding and layout regularity or for the transversal Clifford structure color codes offer.
 - [[erasure-error-vs-pauli-error]] — useful when asking how much color-code performance depends on the assumed noise model instead of the abstract code family alone.
+- [[noise-bias-and-asymmetric-error-channels]] — separates flagged-location information from the directional structure of the remaining Pauli channel, which can change which color-code decoder or lattice variant is actually competitive.
 
 ## Related Entries
 
