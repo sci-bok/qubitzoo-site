@@ -41,4 +41,3 @@ Gatemon-like transmon using an InAs nanowire with a $\beta$-Sn superconducting s
 
 - [[gatemon]]
 - [[transmon]]
-

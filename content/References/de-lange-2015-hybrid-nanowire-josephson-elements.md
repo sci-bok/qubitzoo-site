@@ -37,4 +37,3 @@ Independent 2015 demonstration of microwave circuits built from InAs/NbTiN nanow
 
 - [[gatemon]]
 - [[flux-qubit]]
-

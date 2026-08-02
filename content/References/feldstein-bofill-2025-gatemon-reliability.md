@@ -36,4 +36,3 @@ Systematic study of gatemon frequency stability, hysteresis, dephasing, and shun
 ## Zoo Links
 
 - [[gatemon]]
-

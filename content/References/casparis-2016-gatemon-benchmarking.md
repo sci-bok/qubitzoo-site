@@ -36,4 +36,3 @@ First systematic gate benchmarking and two-qubit operation in a two-nanowire-gat
 
 - [[gatemon]]
 - [[quantum-gate]]
-

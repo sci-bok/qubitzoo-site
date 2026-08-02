@@ -40,4 +40,3 @@ Loss study of InAs-2DEG gatemons and their coplanar-waveguide resonators, showin
 
 - [[gatemon]]
 - [[circuit-qed]]
-
