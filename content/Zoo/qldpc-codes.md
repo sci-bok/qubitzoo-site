@@ -2,6 +2,7 @@
 title: Quantum Low-Density Parity-Check (qLDPC) Codes
 entry_type: encoding
 technology_family: Codes
+moc_facets: [Cross-Platform]
 status: proposed
 figure_reviewed: true
 first_proposed_year: 2021

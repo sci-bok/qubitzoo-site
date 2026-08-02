@@ -2,7 +2,7 @@
 title: FerBo Qubit
 entry_type: qubit
 technology_family: Super-Semi
-status: active
+status: proposed
 figure_reviewed: true
 first_proposed_year: 2026
 keywords:

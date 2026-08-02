@@ -2,8 +2,8 @@
 title: Molecular MOC
 type: moc
 technology_family: Molecular
-note_count: 1
-last_updated: '2026-08-01'
+note_count: 3
+last_updated: '2026-08-02'
 generated_by: pipeline-moc-v1
 ---
 
@@ -14,67 +14,14 @@ Curated map of Zoo entries in the **Molecular** family.
 | Entry | Type | Status |
 |---|---|---|
 | [[molecular-qubit]] | qubit | demonstrated |
+| [[nuclear-magnetic-resonance-qubit]] | qubit | demonstrated |
+| [[polar-molecule-qubit]] | qubit | demonstrated |
 
 ## Composition
 
-- qubit: 1
+- qubit: 3
 
 <!-- CURATED -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Conceptual anchors
 
@@ -84,65 +31,11 @@ Curated map of Zoo entries in the **Molecular** family.
 
 ## Family structure
 
-- `molecular-qubit` is currently the umbrella note for the whole family and should stay synthesis-heavy until the vault has enough material to justify splitting control, readout, or hybrid-interface subnotes.
-- Relative to solid-state spin platforms, the distinguishing feature is **chemistry as Hamiltonian design** rather than lithographic patterning or wafer-scale process control.
-- The strongest graph connection today is outward, not inward: this family should bridge into evergreen notes about coherence engineering, spin-orbit tradeoffs, and hardware-selection criteria rather than pretending there is already a dense molecular subgraph.
+- [[molecular-qubit]] is the chemistry-designed solid-state spin branch: ligand fields and molecular synthesis shape the spin Hamiltonian.
+- [[polar-molecule-qubit]] is the trapped-particle branch: rotational states carry the qubit and electrically induced dipoles provide entangling interactions.
+- [[nuclear-magnetic-resonance-qubit]] is the ensemble-computing branch: nuclear spins inside molecules are controlled spectroscopically, but room-temperature demonstrations use pseudo-pure ensembles rather than individually addressable pure-state qubits.
+- These are genuinely different hardware models. Their shared label is molecular degrees of freedom, not a shared readout stack or scaling architecture.
 
 ## Editorial note
 
-Treat this MOC as a deliberate placeholder for a promising but still sparse family. Favor clear comparison logic over premature subdivision.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Keep the three branches separate in comparisons: chemistry-designed spin registers, trapped polar rotors, and ensemble NMR solve different problems and have radically different scaling limits.

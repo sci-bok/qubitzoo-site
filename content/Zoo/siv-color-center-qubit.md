@@ -2,6 +2,7 @@
 title: SiV / SnV Color Center Qubit
 entry_type: qubit
 technology_family: Spin-Photon
+moc_facets: [Color Center]
 status: demonstrated
 figure_reviewed: true
 first_proposed_year: 2017

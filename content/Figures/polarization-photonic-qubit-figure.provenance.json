@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "entry_slug": "polarization-photonic-qubit",
+  "artifact_role": "primary",
+  "artifact": {
+    "path": "polarization-photonic-qubit-figure.png",
+    "sha256": "f918051e9b6dc9b1b399d139548752686e973f227de864169ae4d8d7746770ca",
+    "media_type": "image/png"
+  },
+  "renderer": {
+    "name": "openai-imagegen",
+    "provider": "OpenAI",
+    "requested_model": "gpt-image-2",
+    "returned_model": "gpt-image-2"
+  },
+  "request": {
+    "id": "exec-8c06ce12-1238-458b-bbf9-ad2564a651b3",
+    "generated_at": "2026-08-02T17:07:49Z",
+    "prompt_sha256": null,
+    "reconstructed": true
+  },
+  "review": {
+    "status": "passed",
+    "reviewer": "Codex scientific visual audit 2026-08-02",
+    "reviewed_at": "2026-08-02T17:07:49Z",
+    "notes": "Accurate H/V encoding, Bloch-sphere basis relation, wave-plate control, and polarization analysis; labels checked at full resolution."
+  },
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/agents/main/agent/codex-home/generated_images/019fc2e9-0448-7f03-9a5f-e6fc5f567780/exec-8c06ce12-1238-458b-bbf9-ad2564a651b3.png",
+    "candidate_retained": true,
+    "verification": "Candidate generated through the built-in OpenAI image renderer and reviewed at full resolution. Exact prompt text was not retained across gateway transcript compaction; the renderer result ID and candidate file are retained."
+  }
+}

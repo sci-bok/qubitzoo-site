@@ -2,7 +2,7 @@
 title: Always-on Exchange Only (AEON)
 entry_type: qubit
 technology_family: Semiconducting
-status: active
+status: demonstrated
 figure_reviewed: true
 seed_id: '11'
 seed_source: qubitzoo-airtable

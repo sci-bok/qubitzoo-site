@@ -2,6 +2,7 @@
 title: Bacon-Shor Code
 entry_type: encoding
 technology_family: Codes
+moc_facets: [Cross-Platform]
 status: demonstrated
 figure_reviewed: true
 first_proposed_year: 2006

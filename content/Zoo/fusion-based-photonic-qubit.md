@@ -1,6 +1,6 @@
 ---
 title: Fusion-Based Photonic Qubit
-entry_type: qubit
+entry_type: architecture
 technology_family: Photonic
 status: proposed
 figure_reviewed: true

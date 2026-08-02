@@ -1,6 +1,6 @@
 {
   "schema": "qubitzoo.genealogy.v1",
-  "generated_at": "2026-08-01T13:27:59.841699+00:00",
+  "generated_at": "2026-08-02T17:20:44.274261+00:00",
   "nodes": [
     {
       "id": "0-pi-qubit",
@@ -16,7 +16,7 @@
       "title": "Always-on Exchange Only (AEON)",
       "family": "Semiconducting",
       "year": 2016,
-      "status": "active",
+      "status": "demonstrated",
       "color": "#22c55e",
       "influence": 0.0
     },
@@ -39,6 +39,15 @@
       "influence": 0.55
     },
     {
+      "id": "andreev-pair-qubit",
+      "title": "Andreev Pair Qubit",
+      "family": "Super-Semi",
+      "year": 2003,
+      "status": "demonstrated",
+      "color": "#06b6d4",
+      "influence": 0.74
+    },
+    {
       "id": "andreev-spin-qubit",
       "title": "Andreev Spin Qubit",
       "family": "Super-Semi",
@@ -57,13 +66,13 @@
       "influence": 0.72
     },
     {
-      "id": "binomial-code",
-      "title": "Binomial Code",
+      "id": "bifluxon-qubit",
+      "title": "Bifluxon Qubit",
       "family": "Superconducting",
-      "year": 2016,
+      "year": 2019,
       "status": "demonstrated",
       "color": "#3b82f6",
-      "influence": 0.68
+      "influence": 0.66
     },
     {
       "id": "binomial-codes",
@@ -138,6 +147,15 @@
       "influence": 0.77
     },
     {
+      "id": "continuous-variable-photonic-qubit",
+      "title": "Continuous-Variable Photonic Qumode",
+      "family": "Photonic",
+      "year": 2005,
+      "status": "demonstrated",
+      "color": "#ef4444",
+      "influence": 0.76
+    },
+    {
       "id": "cooper-pair-box-charge-qubit",
       "title": "Cooper-Pair Box (Charge Qubit)",
       "family": "Superconducting",
@@ -151,7 +169,7 @@
       "title": "cos(2\u03c6) Qubit",
       "family": "Superconducting",
       "year": 2019,
-      "status": "proposed",
+      "status": "demonstrated",
       "color": "#3b82f6",
       "influence": 0.6
     },
@@ -183,6 +201,15 @@
       "influence": 0.0
     },
     {
+      "id": "electron-on-solid-neon-qubit",
+      "title": "Electron-on-Solid-Neon Qubit",
+      "family": "Floating Electron",
+      "year": 2021,
+      "status": "demonstrated",
+      "color": "#6b7280",
+      "influence": 0.72
+    },
+    {
       "id": "erasure-qubit",
       "title": "Erasure Qubit",
       "family": "Cross-Platform",
@@ -196,7 +223,7 @@
       "title": "Exchange-only qubit",
       "family": "Semiconducting",
       "year": 2000,
-      "status": "active",
+      "status": "demonstrated",
       "color": "#22c55e",
       "influence": 0.0
     },
@@ -205,9 +232,18 @@
       "title": "FerBo Qubit",
       "family": "Super-Semi",
       "year": 2026,
-      "status": "active",
+      "status": "proposed",
       "color": "#06b6d4",
       "influence": 0.55
+    },
+    {
+      "id": "flip-flop-qubit",
+      "title": "Flip-Flop Qubit",
+      "family": "Semiconducting",
+      "year": 2017,
+      "status": "proposed",
+      "color": "#22c55e",
+      "influence": 0.72
     },
     {
       "id": "floquet-codes",
@@ -235,6 +271,15 @@
       "status": "demonstrated",
       "color": "#3b82f6",
       "influence": 0.9
+    },
+    {
+      "id": "frequency-bin-photonic-qubit",
+      "title": "Frequency-Bin Photonic Qubit",
+      "family": "Photonic",
+      "year": null,
+      "status": "demonstrated",
+      "color": "#ef4444",
+      "influence": 0.74
     },
     {
       "id": "fusion-based-photonic-qubit",
@@ -349,7 +394,7 @@
       "title": "Majorana Topological Qubit",
       "family": "Topological",
       "year": 2001,
-      "status": "demonstrated",
+      "status": "proposed",
       "color": "#a855f7",
       "influence": 0.69
     },
@@ -374,10 +419,10 @@
     {
       "id": "molmer-sorenson-gate",
       "title": "M\u00f8lmer-S\u00f8rensen Gate",
-      "family": "Ion Trap",
+      "family": "Trapped Ion",
       "year": 1999,
       "status": "demonstrated",
-      "color": "#eab308",
+      "color": "#6b7280",
       "influence": 0.79
     },
     {
@@ -388,6 +433,15 @@
       "status": "demonstrated",
       "color": "#f97316",
       "influence": 0.92
+    },
+    {
+      "id": "nuclear-magnetic-resonance-qubit",
+      "title": "Nuclear Magnetic Resonance (NMR) Qubit",
+      "family": "Molecular",
+      "year": 1997,
+      "status": "demonstrated",
+      "color": "#ec4899",
+      "influence": 0.65
     },
     {
       "id": "nuclear-spin-neutral-atom-qubit",
@@ -444,6 +498,24 @@
       "influence": 0.62
     },
     {
+      "id": "polar-molecule-qubit",
+      "title": "Polar-Molecule Qubit",
+      "family": "Molecular",
+      "year": 2002,
+      "status": "demonstrated",
+      "color": "#ec4899",
+      "influence": 0.76
+    },
+    {
+      "id": "polarization-photonic-qubit",
+      "title": "Polarization Photonic Qubit",
+      "family": "Photonic",
+      "year": null,
+      "status": "demonstrated",
+      "color": "#ef4444",
+      "influence": 0.8
+    },
+    {
       "id": "qldpc-codes",
       "title": "Quantum Low-Density Parity-Check (qLDPC) Codes",
       "family": "Codes",
@@ -478,6 +550,15 @@
       "status": "demonstrated",
       "color": "#6b7280",
       "influence": 0.88
+    },
+    {
+      "id": "rare-earth-ion-qubit",
+      "title": "Rare-Earth Ion Qubit",
+      "family": "Spin-Photon",
+      "year": 2002,
+      "status": "demonstrated",
+      "color": "#6b7280",
+      "influence": 0.72
     },
     {
       "id": "rx-qubit",
@@ -516,6 +597,15 @@
       "influence": 0.75
     },
     {
+      "id": "silicon-carbide-defect-qubit",
+      "title": "Silicon-Carbide Defect Qubit",
+      "family": "Color Center",
+      "year": 2011,
+      "status": "demonstrated",
+      "color": "#6b7280",
+      "influence": 0.74
+    },
+    {
       "id": "silicon-spin-qubit",
       "title": "Silicon Spin Qubit",
       "family": "Semiconducting",
@@ -529,7 +619,7 @@
       "title": "Singlet-Triplet Qubit",
       "family": "Semiconducting",
       "year": 2002,
-      "status": "active",
+      "status": "demonstrated",
       "color": "#22c55e",
       "influence": 0.0
     },
@@ -615,6 +705,15 @@
       "influence": 0.82
     },
     {
+      "id": "unimon-qubit",
+      "title": "Unimon Qubit",
+      "family": "Superconducting",
+      "year": 2022,
+      "status": "demonstrated",
+      "color": "#3b82f6",
+      "influence": 0.72
+    },
+    {
       "id": "xmon",
       "title": "Xmon",
       "family": "Superconducting",
@@ -626,10 +725,10 @@
     {
       "id": "ytterbium-hyperfine-qubit",
       "title": "Ytterbium-171 Hyperfine Qubit",
-      "family": "Ion Trap",
+      "family": "Trapped Ion",
       "year": 2007,
       "status": "demonstrated",
-      "color": "#eab308",
+      "color": "#6b7280",
       "influence": 0.88
     }
   ],
@@ -699,6 +798,18 @@
       "target": "all-semiconductor-superconducting-qubit"
     },
     {
+      "source": "andreev-pair-qubit",
+      "target": "andreev-spin-qubit"
+    },
+    {
+      "source": "andreev-pair-qubit",
+      "target": "gatemon"
+    },
+    {
+      "source": "andreev-pair-qubit",
+      "target": "circuit-qed"
+    },
+    {
       "source": "andreev-spin-qubit",
       "target": "gatemon"
     },
@@ -735,16 +846,24 @@
       "target": "kerr-cat-qubit"
     },
     {
-      "source": "binomial-code",
-      "target": "binomial-codes"
+      "source": "fluxonium",
+      "target": "bifluxon-qubit"
     },
     {
-      "source": "cat-codes",
-      "target": "binomial-code"
+      "source": "0-pi-qubit",
+      "target": "bifluxon-qubit"
     },
     {
-      "source": "gkp-codes",
-      "target": "binomial-code"
+      "source": "bifluxon-qubit",
+      "target": "cos2phi-qubit"
+    },
+    {
+      "source": "bifluxon-qubit",
+      "target": "ferbo-qubit"
+    },
+    {
+      "source": "bifluxon-qubit",
+      "target": "heavy-fluxonium-qubit"
     },
     {
       "source": "cat-codes",
@@ -871,6 +990,26 @@
       "target": "color-code-logical-qubit"
     },
     {
+      "source": "dual-rail-photonic-qubit",
+      "target": "continuous-variable-photonic-qubit"
+    },
+    {
+      "source": "gkp-codes",
+      "target": "continuous-variable-photonic-qubit"
+    },
+    {
+      "source": "continuous-variable-photonic-qubit",
+      "target": "fusion-based-photonic-qubit"
+    },
+    {
+      "source": "linear-optical-photonic-qubit",
+      "target": "continuous-variable-photonic-qubit"
+    },
+    {
+      "source": "photonic-cluster-state-mbqc-qubit",
+      "target": "continuous-variable-photonic-qubit"
+    },
+    {
       "source": "cooper-pair-box-charge-qubit",
       "target": "transmon"
     },
@@ -905,6 +1044,14 @@
     {
       "source": "transmon",
       "target": "cos2phi-qubit"
+    },
+    {
+      "source": "cos2phi-qubit",
+      "target": "gatemonium"
+    },
+    {
+      "source": "cos2phi-qubit",
+      "target": "ferbo-qubit"
     },
     {
       "source": "qubit-readout",
@@ -959,6 +1106,14 @@
       "target": "dual-rail-superconducting-qubit"
     },
     {
+      "source": "semiconductor-charge-qubit",
+      "target": "electron-on-solid-neon-qubit"
+    },
+    {
+      "source": "circuit-qed",
+      "target": "electron-on-solid-neon-qubit"
+    },
+    {
       "source": "dual-rail-photonic-qubit",
       "target": "erasure-qubit"
     },
@@ -1003,12 +1158,24 @@
       "target": "ferbo-qubit"
     },
     {
-      "source": "cos2phi-qubit",
+      "source": "gatemon",
       "target": "ferbo-qubit"
     },
     {
-      "source": "gatemon",
-      "target": "ferbo-qubit"
+      "source": "kane-qubit",
+      "target": "flip-flop-qubit"
+    },
+    {
+      "source": "silicon-spin-qubit",
+      "target": "flip-flop-qubit"
+    },
+    {
+      "source": "loss-divincenzo-qubit",
+      "target": "flip-flop-qubit"
+    },
+    {
+      "source": "spin-qubit",
+      "target": "flip-flop-qubit"
     },
     {
       "source": "surface-code-logical-qubit",
@@ -1043,6 +1210,18 @@
       "target": "heavy-fluxonium-qubit"
     },
     {
+      "source": "time-bin-photonic-qubit",
+      "target": "frequency-bin-photonic-qubit"
+    },
+    {
+      "source": "frequency-bin-photonic-qubit",
+      "target": "polarization-photonic-qubit"
+    },
+    {
+      "source": "dual-rail-photonic-qubit",
+      "target": "frequency-bin-photonic-qubit"
+    },
+    {
       "source": "fusion-based-photonic-qubit",
       "target": "photonic-qubit"
     },
@@ -1067,15 +1246,15 @@
       "target": "gatemonium"
     },
     {
+      "source": "quantum-transduction",
+      "target": "gatemon"
+    },
+    {
       "source": "fluxonium",
       "target": "gatemonium"
     },
     {
       "source": "transmon",
-      "target": "gatemonium"
-    },
-    {
-      "source": "cos2phi-qubit",
       "target": "gatemonium"
     },
     {
@@ -1243,6 +1422,14 @@
       "target": "neutral-atom-qubit"
     },
     {
+      "source": "nuclear-magnetic-resonance-qubit",
+      "target": "quantum-gate"
+    },
+    {
+      "source": "nuclear-magnetic-resonance-qubit",
+      "target": "spin-qubit"
+    },
+    {
       "source": "rydberg-neutral-atom-qubit",
       "target": "nuclear-spin-neutral-atom-qubit"
     },
@@ -1293,6 +1480,22 @@
     {
       "source": "gatemon",
       "target": "planar-josephson-junction-qubit"
+    },
+    {
+      "source": "polar-molecule-qubit",
+      "target": "molecular-qubit"
+    },
+    {
+      "source": "neutral-atom-qubit",
+      "target": "polar-molecule-qubit"
+    },
+    {
+      "source": "time-bin-photonic-qubit",
+      "target": "polarization-photonic-qubit"
+    },
+    {
+      "source": "dual-rail-photonic-qubit",
+      "target": "polarization-photonic-qubit"
     },
     {
       "source": "surface-code-logical-qubit",
@@ -1399,6 +1602,22 @@
       "target": "erasure-qubit"
     },
     {
+      "source": "nv-center-qubit",
+      "target": "rare-earth-ion-qubit"
+    },
+    {
+      "source": "rare-earth-ion-qubit",
+      "target": "siv-color-center-qubit"
+    },
+    {
+      "source": "rare-earth-ion-qubit",
+      "target": "t-center-qubit"
+    },
+    {
+      "source": "rare-earth-ion-qubit",
+      "target": "quantum-transduction"
+    },
+    {
       "source": "singlet-triplet-qubit",
       "target": "rx-qubit"
     },
@@ -1425,6 +1644,18 @@
     {
       "source": "trapped-ion-qubit",
       "target": "shuttling-ion-trap-qubit"
+    },
+    {
+      "source": "nv-center-qubit",
+      "target": "silicon-carbide-defect-qubit"
+    },
+    {
+      "source": "silicon-carbide-defect-qubit",
+      "target": "siv-color-center-qubit"
+    },
+    {
+      "source": "silicon-carbide-defect-qubit",
+      "target": "t-center-qubit"
     },
     {
       "source": "silicon-spin-qubit",
@@ -1529,6 +1760,18 @@
     {
       "source": "fluxonium",
       "target": "tunable-coupler"
+    },
+    {
+      "source": "transmon",
+      "target": "unimon-qubit"
+    },
+    {
+      "source": "fluxonium",
+      "target": "unimon-qubit"
+    },
+    {
+      "source": "bifluxon-qubit",
+      "target": "unimon-qubit"
     },
     {
       "source": "circuit-qed",

@@ -3,7 +3,7 @@ title: Classical Hardware MOC
 type: moc
 technology_family: Classical Hardware
 note_count: 2
-last_updated: '2026-08-01'
+last_updated: '2026-08-02'
 generated_by: pipeline-moc-v1
 ---
 
@@ -22,22 +22,6 @@ Curated map of Zoo entries in the **Classical Hardware** family.
 - readout: 1
 
 <!-- CURATED -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Curated synthesis
 
@@ -110,58 +94,3 @@ This family is best read as the **measurement-side classical interface**, not as
 ## Editorial note
 
 This is a boundary family between quantum hardware and the classical control plane. Keep the curated section focused on architectural role and measurement bottlenecks, not on exhaustive electronics taxonomy.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

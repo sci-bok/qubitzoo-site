@@ -2,8 +2,8 @@
 title: Cross-Platform MOC
 type: moc
 technology_family: Cross-Platform
-note_count: 6
-last_updated: '2026-08-01'
+note_count: 10
+last_updated: '2026-08-02'
 generated_by: pipeline-moc-v1
 ---
 
@@ -14,135 +14,24 @@ Curated map of Zoo entries in the **Cross-Platform** family.
 | Entry | Type | Status |
 |---|---|---|
 | [[quantum-gate]] | concept | demonstrated |
+| [[bacon-shor-code]] | encoding | demonstrated |
 | [[color-code-logical-qubit]] | encoding | demonstrated |
 | [[erasure-qubit]] | encoding | demonstrated |
+| [[floquet-codes]] | encoding | proposed |
+| [[qldpc-codes]] | encoding | proposed |
 | [[surface-code-logical-qubit]] | encoding | demonstrated |
 | [[classical-control]] | infrastructure | demonstrated |
 | [[quantum-transduction]] | infrastructure | demonstrated |
+| [[nuclear-magnetic-resonance-qubit]] | qubit | demonstrated |
 
 ## Composition
 
 - concept: 1
-- encoding: 3
+- encoding: 6
 - infrastructure: 2
+- qubit: 1
 
 <!-- CURATED -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Conceptual anchors
 
@@ -175,118 +64,3 @@ Curated map of Zoo entries in the **Cross-Platform** family.
 ## Editorial note
 
 This family exists for architectural glue. Keep platform-local implementation details in the source hardware families, and use this page to clarify which concepts travel across platforms.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

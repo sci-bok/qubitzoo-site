@@ -1,6 +1,6 @@
 {
   "schema": "qubitzoo.fidelity_tracker.v1",
-  "generated_at": "2026-08-01T13:27:59.808917+00:00",
+  "generated_at": "2026-08-02T17:20:44.241613+00:00",
   "families": [
     {
       "name": "Superconducting",
@@ -271,6 +271,20 @@
               "raw": "0.5\u20135 \u03bcs"
             }
           }
+        },
+        {
+          "slug": "unimon-qubit",
+          "title": "Unimon Qubit",
+          "year": 2022,
+          "status": "demonstrated",
+          "influence": 0.72,
+          "metrics": {
+            "1Q_fidelity": {
+              "value": 99.8,
+              "raw": "99.8%",
+              "ref": "[Hyypp\u00e4 et al. 2022](https://doi.org/10.1038/s41467-022-34614-w)"
+            }
+          }
         }
       ]
     },
@@ -410,7 +424,7 @@
           "slug": "aeon-qubit",
           "title": "Always-on Exchange Only (AEON)",
           "year": 2016,
-          "status": "active",
+          "status": "demonstrated",
           "influence": 0.0,
           "metrics": {
             "1Q_fidelity": {
@@ -433,7 +447,7 @@
           "slug": "exchange-only-qubit",
           "title": "Exchange-only qubit",
           "year": 2000,
-          "status": "active",
+          "status": "demonstrated",
           "influence": 0.0,
           "metrics": {
             "1Q_fidelity": {
@@ -461,7 +475,7 @@
           "slug": "singlet-triplet-qubit",
           "title": "Singlet-Triplet Qubit",
           "year": 2002,
-          "status": "active",
+          "status": "demonstrated",
           "influence": 0.0,
           "metrics": {
             "1Q_fidelity": {
@@ -566,6 +580,20 @@
           }
         },
         {
+          "slug": "molmer-sorenson-gate",
+          "title": "M\u00f8lmer-S\u00f8rensen Gate",
+          "year": 1999,
+          "status": "demonstrated",
+          "influence": 0.79,
+          "metrics": {
+            "2Q_fidelity": {
+              "value": 99.9,
+              "raw": "99.9%+",
+              "ref": "[Ballance et al. 2016](https://doi.org/10.1103/PhysRevLett.117.060504)"
+            }
+          }
+        },
+        {
           "slug": "trapped-ion-qubit",
           "title": "Trapped-Ion Qubit",
           "year": 1995,
@@ -590,6 +618,29 @@
             "T2": {
               "value_us": 600000000.0,
               "raw": ">600 s"
+            }
+          }
+        },
+        {
+          "slug": "ytterbium-hyperfine-qubit",
+          "title": "Ytterbium-171 Hyperfine Qubit",
+          "year": 2007,
+          "status": "demonstrated",
+          "influence": 0.88,
+          "metrics": {
+            "1Q_fidelity": {
+              "value": 99.99,
+              "raw": "99.99%+",
+              "ref": "[Gaebler et al. 2016](https://doi.org/10.1103/PhysRevLett.117.060505)"
+            },
+            "2Q_fidelity": {
+              "value": 99.9,
+              "raw": "99.9%",
+              "ref": "[Ballance et al. 2016](https://doi.org/10.1103/PhysRevLett.117.060504)"
+            },
+            "T1": {
+              "value_us": 10000000.0,
+              "raw": ">10 s"
             }
           }
         },
@@ -700,55 +751,13 @@
           "influence": 0.68,
           "metrics": {
             "1Q_fidelity": {
-              "value": 99.5,
-              "raw": "98\u201399.5%",
-              "ref": "[Larsen et al. 2015](https://doi.org/10.1103/PhysRevLett.115.127001)"
+              "value": 99.3,
+              "raw": ">99.3%",
+              "ref": "[Casparis et al. 2016](https://doi.org/10.1103/PhysRevLett.116.150505)"
             },
             "T1": {
-              "value_us": 10.0,
-              "raw": "1\u201310 \u03bcs"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "name": "Ion Trap",
-      "entries": [
-        {
-          "slug": "molmer-sorenson-gate",
-          "title": "M\u00f8lmer-S\u00f8rensen Gate",
-          "year": 1999,
-          "status": "demonstrated",
-          "influence": 0.79,
-          "metrics": {
-            "2Q_fidelity": {
-              "value": 99.9,
-              "raw": "99.9%+",
-              "ref": "[Ballance et al. 2016](https://doi.org/10.1103/PhysRevLett.117.060504)"
-            }
-          }
-        },
-        {
-          "slug": "ytterbium-hyperfine-qubit",
-          "title": "Ytterbium-171 Hyperfine Qubit",
-          "year": 2007,
-          "status": "demonstrated",
-          "influence": 0.88,
-          "metrics": {
-            "1Q_fidelity": {
-              "value": 99.99,
-              "raw": "99.99%+",
-              "ref": "[Gaebler et al. 2016](https://doi.org/10.1103/PhysRevLett.117.060505)"
-            },
-            "2Q_fidelity": {
-              "value": 99.9,
-              "raw": "99.9%",
-              "ref": "[Ballance et al. 2016](https://doi.org/10.1103/PhysRevLett.117.060504)"
-            },
-            "T1": {
-              "value_us": 10000000.0,
-              "raw": ">10 s"
+              "value_us": 27.0,
+              "raw": "27 \u03bcs"
             }
           }
         }

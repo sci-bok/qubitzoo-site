@@ -2,7 +2,7 @@
 title: Majorana Topological Qubit
 entry_type: qubit
 technology_family: Topological
-status: demonstrated
+status: proposed
 figure_reviewed: true
 first_proposed_year: 2001
 first_demonstrated_year: 2016

@@ -2,8 +2,8 @@
 title: Super-Semi MOC
 type: moc
 technology_family: Super-Semi
-note_count: 5
-last_updated: '2026-08-01'
+note_count: 6
+last_updated: '2026-08-02'
 generated_by: pipeline-moc-v1
 ---
 
@@ -14,132 +14,17 @@ Curated map of Zoo entries in the **Super-Semi** family.
 | Entry | Type | Status |
 |---|---|---|
 | [[all-semiconductor-superconducting-qubit]] | qubit | proposed |
+| [[andreev-pair-qubit]] | qubit | demonstrated |
 | [[andreev-spin-qubit]] | qubit | demonstrated |
-| [[ferbo-qubit]] | qubit | active |
+| [[ferbo-qubit]] | qubit | proposed |
 | [[gatemon]] | qubit | demonstrated |
 | [[gatemonium]] | qubit | demonstrated |
 
 ## Composition
 
-- qubit: 5
+- qubit: 6
 
 <!-- CURATED -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Conceptual anchors
 
@@ -158,6 +43,7 @@ The cleanest way to read this family is to ask **where the semiconductor is doin
    - Read this branch primarily through [[josephson-junction-as-nonlinear-element]] and [[charge-noise-sweet-spot]], not through spin language.
 
 2. **Semiconductor as part of the qubit subspace itself**
+   - [[andreev-pair-qubit]] uses the even-parity empty/doubly occupied Andreev states; its microwave transition is controlled by superconducting phase and weak-link transmission.
    - [[andreev-spin-qubit]] uses spin-split Andreev levels as the qubit degree of freedom, so spin-orbit physics and parity stability are the central story rather than side constraints.
    - [[ferbo-qubit]] pushes further into the protection-first regime: the Andreev sector is part of the mechanism that suppresses relaxation before error correction, which is why it belongs adjacent to [[noise-bias-and-asymmetric-error-channels]] as well as to superconducting protected-circuit notes.
    - This branch should feel closer to "engineered weak-link quantum states" than to ordinary tunable transmons.
@@ -173,6 +59,7 @@ The cleanest way to read this family is to ask **where the semiconductor is doin
 | [[gatemon]] | electrostatic tuning of an otherwise transmon-like Josephson element | ordinary circuit-QED scaling or baseline superconducting benchmarking in [[superconducting-moc]] |
 | [[gatemonium]] | a gate-tunable weak link reshaping which fluxonium regime the same circuit can access | protected-circuit comparison against `fluxonium`, `heavy-fluxonium-qubit`, or `0-pi-qubit` inside [[superconducting-moc]] |
 | [[andreev-spin-qubit]] | odd-parity Andreev states and spin-dependent supercurrent are the qubit resource | nonlocal parity encoding or a topological phase claim in [[topological-moc]] |
+| [[andreev-pair-qubit]] | even-parity Andreev pair states and phase-dependent weak-link spectroscopy are the resource | ordinary Josephson-circuit scaling in [[superconducting-moc]] |
 | [[ferbo-qubit]] | even-parity Andreev structure is being used as a relaxation-bias / protection mechanism inside a fluxonium-like circuit | the comparison becomes purely protected-circuit taxonomy in [[superconducting-moc]] or topological parity protection in [[topological-moc]] |
 | [[all-semiconductor-superconducting-qubit]] | monolithic crystal growth and interface elimination are the conceptual novelty | donor-style atomic fabrication lineage in [[semiconducting-moc]] or ordinary superconducting-circuit performance in [[superconducting-moc]] |
 
@@ -194,119 +81,3 @@ This family shares hardware vocabulary with [[topological-moc]] such as InAs/Al 
 ## Editorial note
 
 This family is about hybridization, not mere material substitution. Keep links focused on what the semiconductor changes in the circuit physics, control surface, or protection story.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

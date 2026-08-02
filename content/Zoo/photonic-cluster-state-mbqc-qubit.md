@@ -1,6 +1,6 @@
 ---
 title: Photonic Cluster-State MBQC Qubit
-entry_type: qubit
+entry_type: architecture
 technology_family: Photonic
 status: demonstrated
 figure_reviewed: true

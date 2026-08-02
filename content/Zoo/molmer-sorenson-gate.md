@@ -1,7 +1,7 @@
 ---
 title: Mølmer-Sørensen Gate
 entry_type: gate
-technology_family: Ion Trap
+technology_family: Trapped Ion
 status: demonstrated
 figure_reviewed: true
 first_proposed_year: 1999

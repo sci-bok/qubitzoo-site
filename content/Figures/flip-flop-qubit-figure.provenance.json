@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "entry_slug": "flip-flop-qubit",
+  "artifact_role": "primary",
+  "artifact": {
+    "path": "flip-flop-qubit-figure.png",
+    "sha256": "e0e8f786afcf4bc44fff7f0bfcb868d6e7dc1b0c5c8f5aec9665e43c9b14acdd",
+    "media_type": "image/png"
+  },
+  "renderer": {
+    "name": "openai-imagegen",
+    "provider": "OpenAI",
+    "requested_model": "gpt-image-2",
+    "returned_model": "gpt-image-2"
+  },
+  "request": {
+    "id": "exec-a31583c6-207c-4948-bb45-ce8ccb991cd0",
+    "generated_at": "2026-08-02T17:07:49Z",
+    "prompt_sha256": null,
+    "reconstructed": true
+  },
+  "review": {
+    "status": "passed",
+    "reviewer": "Codex scientific visual audit 2026-08-02",
+    "reviewed_at": "2026-08-02T17:07:49Z",
+    "notes": "Accurate donor-interface hybridization, antiparallel electron-nuclear basis states, electric control, and r=180 nm predicted coupling context."
+  },
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/agents/main/agent/codex-home/generated_images/019fc2e9-0448-7f03-9a5f-e6fc5f567780/exec-a31583c6-207c-4948-bb45-ce8ccb991cd0.png",
+    "candidate_retained": true,
+    "verification": "Candidate generated through the built-in OpenAI image renderer and reviewed at full resolution. Exact prompt text was not retained across gateway transcript compaction; the renderer result ID and candidate file are retained."
+  }
+}

@@ -2,6 +2,7 @@
 title: Surface-Code Logical Qubit
 entry_type: encoding
 technology_family: Cross-Platform
+moc_facets: [Codes]
 status: demonstrated
 figure_reviewed: true
 first_proposed_year: 1997

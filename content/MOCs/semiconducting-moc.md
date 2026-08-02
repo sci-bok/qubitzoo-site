@@ -2,8 +2,8 @@
 title: Semiconducting MOC
 type: moc
 technology_family: Semiconducting
-note_count: 11
-last_updated: '2026-08-01'
+note_count: 12
+last_updated: '2026-08-02'
 generated_by: pipeline-moc-v1
 ---
 
@@ -13,8 +13,9 @@ Curated map of Zoo entries in the **Semiconducting** family.
 
 | Entry | Type | Status |
 |---|---|---|
-| [[aeon-qubit]] | qubit | active |
-| [[exchange-only-qubit]] | qubit | active |
+| [[aeon-qubit]] | qubit | demonstrated |
+| [[exchange-only-qubit]] | qubit | demonstrated |
+| [[flip-flop-qubit]] | qubit | proposed |
 | [[hole-spin-qubit]] | qubit | demonstrated |
 | [[hybrid-qubit]] | qubit | demonstrated |
 | [[kane-qubit]] | qubit | demonstrated |
@@ -22,174 +23,14 @@ Curated map of Zoo entries in the **Semiconducting** family.
 | [[semiconductor-charge-qubit]] | qubit | demonstrated |
 | [[silicon-spin-qubit]] | qubit | demonstrated |
 | [[loss-divincenzo-qubit]] | qubit | demonstrated |
-| [[singlet-triplet-qubit]] | qubit | active |
+| [[singlet-triplet-qubit]] | qubit | demonstrated |
 | [[spin-qubit]] | qubit | demonstrated |
 
 ## Composition
 
-- qubit: 11
+- qubit: 12
 
 <!-- CURATED -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Conceptual anchors
 
@@ -218,6 +59,7 @@ The highest-value organizing move in this family is to **separate the single-spi
    - [[semiconductor-charge-qubit]] and [[hybrid-qubit]] buy speed by re-admitting charge character into the qubit itself.
    - [[hole-spin-qubit]] uses strong intrinsic SOC to make electrical control native rather than synthetic.
    - [[kane-qubit]] is the donor-spin branch, where atomic placement and hyperfine control replace lithographic quantum-dot tuning as the defining resource.
+   - [[flip-flop-qubit]] is the long-range donor-interface proposal: electron-nuclear flip-flop states borrow a tunable electric dipole from orbital hybridization to mediate predicted coupling across 180–500 nm. Keep its performance numbers labelled as theoretical until the encoding and gates are demonstrated.
 
 ## Routing rule: when to enter which note
 
@@ -226,163 +68,3 @@ The highest-value organizing move in this family is to **separate the single-spi
 - Enter `singlet-triplet-qubit`, `exchange-only-qubit`, `rx-qubit`, and `aeon-qubit` as a sequence when the real comparison is how much encoding and sweet-spot structure is being introduced to civilize exchange control.
 - Enter `semiconductor-charge-qubit`, `hybrid-qubit`, or `hole-spin-qubit` when the main tradeoff is faster electrical control versus renewed charge sensitivity.
 - For semiconductor descendants that cross fully into Josephson-circuit territory, continue in [[super-semi-moc]].
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

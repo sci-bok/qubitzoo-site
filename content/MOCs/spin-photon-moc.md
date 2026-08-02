@@ -2,8 +2,8 @@
 title: Spin-Photon MOC
 type: moc
 technology_family: Spin-Photon
-note_count: 2
-last_updated: '2026-08-01'
+note_count: 5
+last_updated: '2026-08-02'
 generated_by: pipeline-moc-v1
 ---
 
@@ -13,80 +13,17 @@ Curated map of Zoo entries in the **Spin-Photon** family.
 
 | Entry | Type | Status |
 |---|---|---|
+| [[nv-center-qubit]] | qubit | demonstrated |
+| [[rare-earth-ion-qubit]] | qubit | demonstrated |
+| [[silicon-carbide-defect-qubit]] | qubit | demonstrated |
 | [[siv-color-center-qubit]] | qubit | demonstrated |
 | [[t-center-qubit]] | qubit | demonstrated |
 
 ## Composition
 
-- qubit: 2
+- qubit: 5
 
 <!-- CURATED -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Conceptual anchors
 
@@ -109,6 +46,8 @@ This family is best read as the **network-emitter-optimized descendant branch** 
 3. **The family-level comparison is about which systems burden you want to pay**
    - SiV/SnV pay heavily in temperature to buy cleaner optical lines and nanophotonic performance.
    - T centers pay in platform maturity and benchmark depth, but may save substantial systems complexity by starting inside silicon and near telecom wavelengths.
+   - [[silicon-carbide-defect-qubit]] trades some emitter uniformity for wafer-scale wide-bandgap processing and a broad defect palette.
+   - [[rare-earth-ion-qubit]] is the long-memory and spectral-multiplexing branch: Er supplies native C-band photons, while Yb nanophotonic nodes have demonstrated multiplexed remote entanglement.
 
 4. **This MOC should usually be read against [[color-center-moc]], not in isolation**
    - The useful contrast is not “which color center is best?” but “when does a defect stop being primarily a local-spin story and become primarily a network-emitter story?”
@@ -140,68 +79,3 @@ This family is best read as the **network-emitter-optimized descendant branch** 
 - Hand back to [[color-center-moc]] when room-temperature operation, ODMR-style control, or local defect-spin memory maturity becomes the main criterion.
 - Use [[quantum-transduction]] as the downstream systems check: if a platform already emits where the network wants to live, that is a real architectural advantage, not just a spectroscopy detail.
 - Treat `siv-color-center-qubit` and `t-center-qubit` as complementary answers to different network bottlenecks, not as a simple maturity ladder.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

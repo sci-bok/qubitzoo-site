@@ -2,8 +2,8 @@
 title: Superconducting MOC
 type: moc
 technology_family: Superconducting
-note_count: 21
-last_updated: '2026-08-01'
+note_count: 22
+last_updated: '2026-08-02'
 generated_by: pipeline-moc-v1
 ---
 
@@ -14,10 +14,10 @@ Curated map of Zoo entries in the **Superconducting** family.
 | Entry | Type | Status |
 |---|---|---|
 | [[tunable-coupler]] | coupling | demonstrated |
-| [[binomial-code]] | encoding | demonstrated |
 | [[binomial-codes]] | encoding | demonstrated |
 | [[circuit-qed]] | infrastructure | demonstrated |
 | [[0-pi-qubit]] | qubit | demonstrated |
+| [[bifluxon-qubit]] | qubit | demonstrated |
 | [[blochnium]] | qubit | demonstrated |
 | [[bosonic-qubit]] | qubit | demonstrated |
 | [[cat-codes]] | qubit | demonstrated |
@@ -33,176 +33,17 @@ Curated map of Zoo entries in the **Superconducting** family.
 | [[mergemon]] | qubit | demonstrated |
 | [[phase-qubit]] | qubit | demonstrated |
 | [[transmon]] | qubit | demonstrated |
+| [[unimon-qubit]] | qubit | demonstrated |
 | [[xmon]] | qubit | demonstrated |
 
 ## Composition
 
 - coupling: 1
-- encoding: 2
+- encoding: 1
 - infrastructure: 1
-- qubit: 17
+- qubit: 19
 
 <!-- CURATED -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Conceptual anchors
 
@@ -216,7 +57,7 @@ Curated map of Zoo entries in the **Superconducting** family.
 | Branch | What it is really optimizing | Best entry points | Evergreen lens |
 |---|---|---|---|
 | Baseline circuit-QED branch | Fast microwave control, scalable readout, and tunable two-qubit gates in a weakly anharmonic artificial atom stack | `transmon`, `xmon`, `gmon`, `tunable-coupler`, `circuit-qed` | [[josephson-junction-as-nonlinear-element]], [[dispersive-readout-mechanism]], [[resonator-as-quantum-bus]] |
-| Protected-circuit branch | Suppress sensitivity before decoding by reshaping the circuit landscape or exploiting duality | `fluxonium`, `heavy-fluxonium-qubit`, `blochnium`, `0-pi-qubit`, `cos2phi-qubit` | [[charge-noise-sweet-spot]], [[coherence-time-hierarchy]], [[noise-bias-and-asymmetric-error-channels]] |
+| Protected-circuit branch | Suppress sensitivity before decoding by reshaping the circuit landscape or exploiting duality | `fluxonium`, `heavy-fluxonium-qubit`, `blochnium`, `0-pi-qubit`, `cos2phi-qubit`, `bifluxon-qubit` | [[charge-noise-sweet-spot]], [[coherence-time-hierarchy]], [[noise-bias-and-asymmetric-error-channels]] |
 | Bosonic / oscillator branch | Push error correction partly into a long-lived cavity mode instead of a single anharmonic junction mode | `bosonic-qubit`, `cat-codes`, `kerr-cat-qubit`, `gkp-codes`, `binomial-codes` | [[bosonic-code-hierarchy]], [[noise-bias-and-asymmetric-error-channels]], [[erasure-error-vs-pauli-error]] |
 | Rail / erasure branch | Turn dominant relaxation or leakage events into flagged faults that the decoder can exploit | `dual-rail-superconducting-qubit` | [[erasure-error-vs-pauli-error]], [[threshold-theorem]] |
 
@@ -226,7 +67,8 @@ A useful routing rule is that `circuit-qed` is **infrastructure, not a peer qubi
 
 - `transmon`, `xmon`, `gmon`, `flux-qubit`, and the broader circuit-QED stack are the baseline branch: improve raw gate and measurement fidelity, then hand off to [[surface-code-logical-qubit]] or [[color-code-logical-qubit]] for architecture-level scaling.
 - `bosonic-qubit`, `cat-codes`, `kerr-cat-qubit`, `gkp-codes`, and `binomial-codes` are the oscillator branch: the hardware itself already starts behaving like a logical primitive, so route first through [[bosonic-code-hierarchy]] and then ask whether the win comes from general cavity QEC or from biased-noise protection.
-- `0-pi-qubit`, `cos2phi-qubit`, `blochnium`, and `heavy-fluxonium-qubit` are the protected-circuit branch, but they are not interchangeable. The real split is whether the design is buying protection from a sweet-spot-plus-matrix-element strategy, from a duality regime, or from a symmetry-engineered multi-axis potential.
+- `0-pi-qubit`, `cos2phi-qubit`, `bifluxon-qubit`, `blochnium`, and `heavy-fluxonium-qubit` are the protected-circuit branch, but they are not interchangeable. The bifluxon uses odd-charge Aharonov-Casher interference in a split CPB to conserve fluxon parity; the others buy protection through different circuit symmetries or parameter regimes.
+- [[unimon-qubit]] belongs near the baseline/protected boundary: a single junction embedded in a multimode resonator yields strong anharmonicity at a flux sweet spot, but it is not a parity-protected code.
 - `dual-rail-superconducting-qubit` is the erasure-conversion branch: the dominant relaxation event is supposed to leave the codespace in a flagged way, so compare it through [[erasure-error-vs-pauli-error]] rather than only through bare gate fidelity.
 
 ## Protected-circuit routing
@@ -243,162 +85,3 @@ Route superconducting descendants to [[super-semi-moc]] only when the semiconduc
 ## Editorial note
 
 This family mixes bare qubits, bosonic encodings, and enabling infrastructure. Keep the generated table exhaustive, but use the evergreen layer to prevent the family page from becoming a flat list.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

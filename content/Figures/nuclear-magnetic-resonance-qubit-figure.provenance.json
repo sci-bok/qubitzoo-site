@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "entry_slug": "nuclear-magnetic-resonance-qubit",
+  "artifact_role": "primary",
+  "artifact": {
+    "path": "nuclear-magnetic-resonance-qubit-figure.png",
+    "sha256": "016ce9f4b037ae5d61f0198fa361ef550ee459fc5bfe1dc15c858a5d3b34e05f",
+    "media_type": "image/png"
+  },
+  "renderer": {
+    "name": "openai-imagegen",
+    "provider": "OpenAI",
+    "requested_model": "gpt-image-2",
+    "returned_model": "gpt-image-2"
+  },
+  "request": {
+    "id": "exec-cf509e1f-ba24-4b9a-abd9-aaa7b9a21a53",
+    "generated_at": "2026-08-02T17:07:49Z",
+    "prompt_sha256": null,
+    "reconstructed": true
+  },
+  "review": {
+    "status": "passed",
+    "reviewer": "Codex scientific visual audit 2026-08-02",
+    "reviewed_at": "2026-08-02T17:07:49Z",
+    "notes": "Accurate ensemble NMR encoding, chemical shifts/J coupling, RF control, and ensemble readout; no single-spin implication."
+  },
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/agents/main/agent/codex-home/generated_images/019fc2e9-0448-7f03-9a5f-e6fc5f567780/exec-cf509e1f-ba24-4b9a-abd9-aaa7b9a21a53.png",
+    "candidate_retained": true,
+    "verification": "Candidate generated through the built-in OpenAI image renderer and reviewed at full resolution. Exact prompt text was not retained across gateway transcript compaction; the renderer result ID and candidate file are retained."
+  }
+}

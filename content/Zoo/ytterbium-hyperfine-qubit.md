@@ -1,7 +1,7 @@
 ---
 title: Ytterbium-171 Hyperfine Qubit
 entry_type: qubit
-technology_family: Ion Trap
+technology_family: Trapped Ion
 status: demonstrated
 figure_reviewed: true
 first_proposed_year: 2007

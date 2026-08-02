@@ -2,6 +2,7 @@
 title: Nitrogen-Vacancy (NV) Center Qubit
 entry_type: qubit
 technology_family: Color Center
+moc_facets: [Spin-Photon]
 status: demonstrated
 first_proposed_year: 1997
 first_demonstrated_year: 2004

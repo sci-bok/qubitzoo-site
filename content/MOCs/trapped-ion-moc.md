@@ -2,8 +2,8 @@
 title: Trapped Ion MOC
 type: moc
 technology_family: Trapped Ion
-note_count: 3
-last_updated: '2026-08-01'
+note_count: 5
+last_updated: '2026-08-02'
 generated_by: pipeline-moc-v1
 ---
 
@@ -14,176 +14,18 @@ Curated map of Zoo entries in the **Trapped Ion** family.
 | Entry | Type | Status |
 |---|---|---|
 | [[cirac-zoller-gate]] | gate | demonstrated |
+| [[molmer-sorenson-gate]] | gate | demonstrated |
 | [[shuttling-ion-trap-qubit]] | infrastructure | demonstrated |
 | [[trapped-ion-qubit]] | qubit | demonstrated |
+| [[ytterbium-hyperfine-qubit]] | qubit | demonstrated |
 
 ## Composition
 
-- gate: 1
+- gate: 2
 - infrastructure: 1
-- qubit: 1
+- qubit: 2
 
 <!-- CURATED -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Conceptual anchors
 
@@ -206,172 +48,18 @@ The most useful way to read this family is as a **three-layer stack rather than 
    - It exists because the same shared-motion resource that gives all-to-all connectivity also stops scaling cleanly in very long chains.
    - QCCD is therefore best understood as an architectural response to motional-mode crowding, not as a new qubit modality.
 
+## Modern operational stack
+
+- [[ytterbium-hyperfine-qubit]] is the memory-and-readout anchor: clock-state storage, fluorescence detection, and long coherence margins.
+- [[molmer-sorenson-gate]] is the modern entanglement anchor: virtual-phonon XX interactions, robustness beyond the strict Cirac-Zoller ground-state requirement, and pulse shaping toward 99.9%+ two-qubit fidelity.
+- Together they expose the practical systems bottleneck: motional-mode engineering and calibration, not the existence of a clean atomic memory.
+
 ## Routing rule: when to stay here versus hand off
 
-- Stay in this MOC when the question is about the **platform-wide logic** of trapped ions: why motion is the bus, why long chains saturate, and why transport solves a scaling bottleneck.
-- Hand off to [[ion-trap-moc]] when the question becomes the **modern operational stack** built around species-specific clock-state qubits and Mølmer-Sørensen style entangling gates.
+- Stay in this MOC for the full modality stack: optical and hyperfine encodings, Cirac-Zoller and Mølmer-Sørensen gates, shared motion, and QCCD scaling.
+- Enter [[ytterbium-hyperfine-qubit]] or [[molmer-sorenson-gate]] directly for the modern Yb + MS implementation slice.
 - Hand off to [[neutral-atom-moc]] when the comparison shifts from Coulomb-crystal buses to tweezer-rearranged atomic arrays with transient Rydberg interactions.
 
 ## Editorial note
 
-This family should remain the broad modality page. Keep species-specific and gate-stack specialization lightweight here, then route to [[ion-trap-moc]] once the reader is really comparing the practical Yb + MS trapped-ion stack.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+This is the single authoritative trapped-ion family page. Keep species-specific notes only when an isotope introduces a materially distinct encoding or milestone; do not recreate a second family for the Yb + MS stack.

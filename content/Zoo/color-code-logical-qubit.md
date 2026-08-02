@@ -2,6 +2,7 @@
 title: Color-Code Logical Qubit
 entry_type: encoding
 technology_family: Cross-Platform
+moc_facets: [Codes]
 status: demonstrated
 first_proposed_year: 2006
 first_demonstrated_year: 2021

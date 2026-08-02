@@ -2,8 +2,8 @@
 title: Color Center MOC
 type: moc
 technology_family: Color Center
-note_count: 1
-last_updated: '2026-08-01'
+note_count: 4
+last_updated: '2026-08-02'
 generated_by: pipeline-moc-v1
 ---
 
@@ -14,78 +14,15 @@ Curated map of Zoo entries in the **Color Center** family.
 | Entry | Type | Status |
 |---|---|---|
 | [[nv-center-qubit]] | qubit | demonstrated |
+| [[rare-earth-ion-qubit]] | qubit | demonstrated |
+| [[silicon-carbide-defect-qubit]] | qubit | demonstrated |
+| [[siv-color-center-qubit]] | qubit | demonstrated |
 
 ## Composition
 
-- qubit: 1
+- qubit: 4
 
 <!-- CURATED -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Conceptual anchors
 
@@ -104,9 +41,11 @@ This family should stay the **defect-spin anchor**, not a catch-all bucket for e
    - NV centers prioritize a usable local spin register and broad experimental maturity, even though their optical interface is spectrally messy by modern networking standards.
    - The moment the comparison becomes mostly about indistinguishable photons, zero-phonon-line fraction, nanophotonic cavity integration, or telecom-fibre fit, the center of gravity has moved to [[spin-photon-moc]].
 
-3. **Use this page to preserve the room-temperature / ODMR lineage**
+3. **Use this page for the physical defect/materials lineage**
    - Future defect notes belong here if the defining claim is still “optically addressable solid-state spin with a useful local memory stack,” especially when room-temperature or near-room-temperature operation is part of the identity.
-   - Do not absorb newer networking-specialized defects here just because they are also color centers.
+   - Networking-specialized color centers such as SiV/SnV appear here as facets, while [[spin-photon-moc]] owns their network-interface comparison.
+   - [[silicon-carbide-defect-qubit]] adds the wafer-scale wide-bandgap branch: multiple optically active defects, mature semiconductor processing, and operation extending beyond diamond-only materials assumptions.
+   - [[rare-earth-ion-qubit]] appears here as a facet because it is a crystal-hosted optical spin defect, but its primary home is [[spin-photon-moc]] because long-lived memories and multiplexed network nodes are the sharper organizing idea.
 
 ## Defect-platform boundary map
 
@@ -133,71 +72,6 @@ The highest-value use of this MOC is to prevent “color center” from collapsi
 ## Placement rule
 
 - Keep `nv-center-qubit` as the anchor when the question is, "what is the most mature room-temperature defect-spin qubit with a real networking story?"
-- Route to [[spin-photon-moc]] when optical indistinguishability, high zero-phonon-line fraction, or telecom-native interconnects matter more than room-temperature usability.
+- Route to [[spin-photon-moc]] when optical indistinguishability, high zero-phonon-line fraction, or telecom-native interconnects matter more than physical defect taxonomy.
 - Read both MOCs together when Charlie is comparing **defect-spin memory quality** against **network-emitter quality** rather than looking for a single winner.
 - Treat [[quantum-transduction]] as the downstream systems check after that split: NV often implies a harder wavelength / interface burden, while `t-center-qubit` can remove part of it by starting inside the telecom stack.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

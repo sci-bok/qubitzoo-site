@@ -2,7 +2,7 @@
 title: Singlet-Triplet Qubit
 entry_type: qubit
 technology_family: Semiconducting
-status: active
+status: demonstrated
 seed_id: '23'
 seed_source: qubitzoo-airtable
 first_proposed_year: 2002
