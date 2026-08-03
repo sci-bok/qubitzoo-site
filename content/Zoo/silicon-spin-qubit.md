@@ -139,6 +139,16 @@ where $\Delta_v$ is the valley splitting (typically 0.03–1 meV in Si/SiGe, 0.3
 - [[philips-2022-universal-control-six]]
 - [[steinacker-2025-300mm-foundry-silicon]]
 - [[edlbauer-2025-11-qubit-atom-processor]]
+- [[golovach-2006-electric-dipole-induced-spin-resonance]]
+- [[hendrickx-2020-fast-two-qubit-logic-holes-germanium]]
+- [[hendrickx-2021-ge-4qubit]]
+- [[jiang-2025-sige-rx-resonator]]
+- [[kane-1998-silicon-nuclear-spin]]
+- [[loss-divincenzo-1998-quantum-dots]]
+- [[nowack-2007-coherent-control-electric-fields]]
+- [[reed-2016-reduced-sensitivity-charge-noise]]
+- [[scappucci-2021-ge-review]]
+- [[shim-2014-bottom-up-sc]]
 
 ## Evergreen context
 

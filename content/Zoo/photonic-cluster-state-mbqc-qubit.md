@@ -107,6 +107,8 @@ Computation via measurements: measuring qubit $i$ in the basis $\{|+_\theta\rang
 - [[raussendorf-2000-quantum-computing-via-measurements-only]]
 - [[nielsen-2004-optical-quantum-computation-using-cluster]]
 - [[browne-2005-resource-efficient-linear-optical]]
+- [[bombin-2021-interleaving]]
+- [[raussendorf-2001-one-way-computer]]
 
 ## Evergreen context
 

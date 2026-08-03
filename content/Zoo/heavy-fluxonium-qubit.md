@@ -78,6 +78,8 @@ Heavy fluxonium targets a "hardware-protected" operating regime where coherence 
 ## Linked Papers
 
 - [[lin-2018-heavy-fluxonium]]
+- [[nguyen-2019-high-coherence-fluxonium]]
+- [[somoroff-2023-millisecond-coherence-superconducting]]
 
 ## Evergreen context
 

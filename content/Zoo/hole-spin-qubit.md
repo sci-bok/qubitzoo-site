@@ -102,6 +102,8 @@ $$H_{2q} = J(t)\,\mathbf{S}_1\cdot\mathbf{S}_2$$
 - [[hendrickx-2021-ge-4qubit]]
 - [[scappucci-2021-ge-review]]
 - [[dijkema-2026-simultaneous-operation-of-an]]
+- [[golovach-2006-electric-dipole-induced-spin-resonance]]
+- [[hendrickx-2020-fast-two-qubit-logic-holes-germanium]]
 
 ## Evergreen context
 

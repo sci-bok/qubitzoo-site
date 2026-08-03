@@ -91,6 +91,15 @@ The surface code is currently the dominant QEC architecture for superconducting 
 ## Linked Papers
 
 - [[fowler-2012-surface-code-roadmap]]
+- [[acharya-2025-error-correction-below]]
+- [[bacon-2006-bacon-shor]]
+- [[bombin-2006-color-codes]]
+- [[egan-2021-fault-tolerant-control]]
+- [[hastings-2021-floquet]]
+- [[kitaev-2003-fault-tolerant-computation]]
+- [[kubica-2023-erasure-overhead]]
+- [[panteleev-2022-asymptotically-good]]
+- [[puri-2020-bias-preserving-gates]]
 
 ## Evergreen context
 

@@ -96,6 +96,7 @@ Single-qubit operations in dual-rail encoding are realized with beam splitters a
 
 - [[knill-2001-klm]]
 - [[kok-2005-review-article-linear-optical]]
+- [[bartolucci-2023-fbqc]]
 
 ## Evergreen context
 

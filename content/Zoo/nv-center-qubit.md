@@ -111,6 +111,14 @@ NV centers operate at room temperature, can be optically initialized and read ou
 ## Linked Papers
 
 - [[jelezko-2004-nv-center]]
+- [[balasubramanian-2009-ultralong-spin-coherence]]
+- [[bradley-2019-ten-qubit-solid]]
+- [[hensen-2015-loophole-free-bell]]
+- [[knaut-2024-siv-entanglement]]
+- [[maurer-2012-room-temperature-bit]]
+- [[nguyen-2019-siv-network]]
+- [[pompili-2021-realization-multinode-network]]
+- [[robledo-2011-high-fidelity-projective]]
 
 ## Evergreen context
 

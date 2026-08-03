@@ -84,6 +84,8 @@ where $g_E$ captures the electric dipole coupling enabled by spin-charge hybridi
 ## Linked Papers
 
 - [[shi-2015-hybrid-qubit]]
+- [[kim-2014-control-process-tomography]]
+- [[koh-2012-pulse-gated-dot]]
 
 ## Evergreen context
 

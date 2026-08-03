@@ -114,6 +114,21 @@ where $\alpha$ depends on the inter-dot capacitance and the charge-dipole differ
 
 ## Linked Papers
 - [[petta-2005-singlet-triplet]]
+- [[barthel-2009-rapid-single-shot]]
+- [[bluhm-2011-dephasing-time-gaas]]
+- [[bttcher-2022-parametric-longitudinal-coupling]]
+- [[knill-2000-theory-quantum-error-correction-general-noise]]
+- [[levy-2002-universal-computation-spin]]
+- [[lidar-1998-decoherence-free-subspaces-quantum-computation]]
+- [[loss-divincenzo-1998-quantum-dots]]
+- [[martins-2016-symmetric-exchange-gates]]
+- [[maune-2012-coherent-singlet-triplet]]
+- [[puri-2017-engineering-states-light]]
+- [[reed-2016-reduced-sensitivity-charge-noise]]
+- [[shim-2016-semiconductor-inspired]]
+- [[shulman-2012-demonstration-entanglement-electrostatically]]
+- [[yoneda-2018-dot-spin-qubit]]
+- [[zanardi-1997-noiseless-quantum-codes]]
 
 ## Evergreen context
 

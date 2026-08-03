@@ -105,6 +105,13 @@ Individual spin with $S = 1/2$ is the simplest realization of a qubit. The elect
 ## Linked Papers
 
 - [[loss-divincenzo-1998-quantum-dots]]
+- [[divincenzo-2000-physical-implementation]]
+- [[elzerman-2004-single-shot-read]]
+- [[golovach-2006-electric-dipole-induced-spin-resonance]]
+- [[kawakami-2014-electrical-control-long]]
+- [[nowack-2007-coherent-control-electric-fields]]
+- [[reed-2016-reduced-sensitivity-charge-noise]]
+- [[yoneda-2018-dot-spin-qubit]]
 
 ## Evergreen context
 

@@ -143,6 +143,27 @@ Semiconductor spin qubits promise integration with existing CMOS fabrication inf
 ## Linked Papers
 
 - [[loss-divincenzo-1998-quantum-dots]]
+- [[divincenzo-2000-exchange-only]]
+- [[hendrickx-2020-fast-two-qubit-logic-holes-germanium]]
+- [[hendrickx-2021-ge-4qubit]]
+- [[kane-1998-silicon-nuclear-spin]]
+- [[martins-2016-symmetric-exchange-gates]]
+- [[medford-2013-rx-qubit]]
+- [[mills-2022-qubit-silicon-processor]]
+- [[noiri-2022-silicon-1q-fidelity]]
+- [[petersson-2010-semiconductor-charge]]
+- [[petit-2020-hot-silicon]]
+- [[petta-2005-singlet-triplet]]
+- [[philips-2022-universal-control-six]]
+- [[reed-2016-reduced-sensitivity-charge-noise]]
+- [[scappucci-2021-ge-review]]
+- [[shi-2015-hybrid-qubit]]
+- [[shim-2016-aeon]]
+- [[steinacker-2025-300mm-foundry-silicon]]
+- [[veldhorst-2014-silicon-coherence]]
+- [[xue-2022-logic-spin-qubits]]
+- [[yoneda-2018-dot-spin-qubit]]
+- [[zwanenburg-2013-silicon-electronics]]
 
 ## Evergreen context
 

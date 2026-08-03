@@ -101,6 +101,9 @@ The phase qubit provided early demonstrations of quantum coherence and entanglem
 ## Linked Papers
 
 - [[martinis-2002-phase-qubit]]
+- [[clarke-2008-superconducting-bits]]
+- [[neeley-2010-generation-three-qubit]]
+- [[steffen-2006-measurement-entanglement-superconducting]]
 
 ## Evergreen context
 

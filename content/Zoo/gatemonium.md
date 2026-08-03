@@ -99,6 +99,7 @@ The nonsinusoidal current-phase relation of the semiconductor junction introduce
 ## Linked Papers
 
 - [[strickland-2024-gatemonium]]
+- [[somoroff-2023-millisecond-coherence-superconducting]]
 
 ## Evergreen context
 

@@ -96,6 +96,8 @@ which implements rotations about the $X$ axis of the logical Bloch sphere. Combi
 ## Linked Papers
 
 - [[knill-2001-klm]]
+- [[grassl-1997-codes-quantum-erasure-channel]]
+- [[reck-1994-experimental-realization-any]]
 
 ## Evergreen context
 

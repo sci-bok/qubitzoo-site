@@ -90,6 +90,9 @@ Molecular qubits offer a distinct advantage over lithographic platforms: synthet
 ## Linked Papers
 
 - [[yu-2023-molecular-qubit]]
+- [[baldov-2017-design-magnetic-polyoxometalates]]
+- [[gaitaario-2019-molecular-spins-computation]]
+- [[zadrozny-2015-millisecond-coherence-time]]
 
 ## Evergreen context
 

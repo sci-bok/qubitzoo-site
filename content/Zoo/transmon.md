@@ -131,6 +131,32 @@ State-of-the-art (as of late 2025): $T_1$ up to $1.68\,\text{ms}$ (planar, tanta
 
 ## Linked Papers
 - [[koch-2007-transmon]]
+- [[acharya-2025-error-correction-below]]
+- [[arute-2019-supremacy-programmable-superconducting]]
+- [[barends-2013-xmon]]
+- [[barends-2014-superconducting-circuits-surface]]
+- [[bland-2025-millisecond-lifetimes-coherence]]
+- [[campbell-2020-composite-qubit]]
+- [[casparis-2018-ge-gatemon]]
+- [[chen-2014-gmon]]
+- [[divincenzo-2000-physical-implementation]]
+- [[fowler-2012-surface-code-roadmap]]
+- [[larsen-2015-gatemon]]
+- [[levine-2024-dual-rail-erasure]]
+- [[li-2023-error-per-single]]
+- [[madon-2021-mergemon]]
+- [[motzoi-2009-simple-pulses-elimination]]
+- [[nakamura-1999-cpb-coherent-oscillation]]
+- [[paik-2011-observation-high-coherence]]
+- [[place-2021-material-platform-superconducting]]
+- [[purkayastha-2025-sn-inas-gatemon]]
+- [[schreier-2008-suppressing-charge-noise]]
+- [[sun-2026-junction-intrinsic-dissipation-in-hybrid]]
+- [[sung-2021-parametric-coupler]]
+- [[tuokkola-2025-methods-achieve-near]]
+- [[walter-2017-rapid-readout]]
+- [[yan-2018-tunable-coupler]]
+- [[zhao-2020-mergemon]]
 
 ## Evergreen context
 

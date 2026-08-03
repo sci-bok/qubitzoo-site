@@ -101,6 +101,7 @@ Photonic quantum computing offers room-temperature operation, high clock speeds,
 
 - [[bartolucci-2023-fbqc]]
 - [[bombin-2021-interleaving]]
+- [[knill-2001-klm]]
 
 ## Evergreen context
 

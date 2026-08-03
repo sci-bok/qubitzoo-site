@@ -98,6 +98,10 @@ The Cooper-pair box was the original "artificial atom" formed in a superconducti
 ## Linked Papers
 
 - [[nakamura-1999-cpb-coherent-oscillation]]
+- [[bouchiat-1998-coherence-single-cooper]]
+- [[koch-2007-transmon]]
+- [[pashkin-2003-oscillations-coupled-charge]]
+- [[vion-2002-manipulating-state-electrical]]
 
 ## Evergreen context
 

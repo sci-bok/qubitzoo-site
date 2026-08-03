@@ -98,6 +98,7 @@ For clock-state encoding specifically, first-order magnetic sensitivity can be e
 - [[daley-2008-quantum-computing-with-alkaline-earth-atoms]]
 - [[daley-2011-state-dependent-lattices-for-quantum-computing-with-alkaline-earth-metal-atoms]]
 - [[madjarov-2020-high-fidelity-entanglement-and-detection-of-alkaline-earth-rydberg-atoms]]
+- [[ma-2022-nuclear-spin-atom]]
 
 ## Evergreen context
 

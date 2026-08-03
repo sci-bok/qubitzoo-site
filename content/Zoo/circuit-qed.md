@@ -103,6 +103,10 @@ Previous proposals for coupling superconducting qubits used discrete LC circuits
 ## Linked Papers
 
 - [[blais-2004-circuit-qed]]
+- [[strickland-2024-gatemon-losses]]
+- [[teoh-2023-dual-rail-cavity]]
+- [[wallraff-2004-strong-coupling-single]]
+- [[walter-2017-rapid-readout]]
 
 ## Evergreen context
 

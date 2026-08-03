@@ -90,6 +90,9 @@ where $\tau$ is the channel transparency, $\varphi$ the superconducting phase di
 ## Linked Papers
 
 - [[hays-2021-andreev-spin-qubit]]
+- [[aghaee-2021-majorana-spectroscopy]]
+- [[janvier-2015-coherent-manipulation-andreev]]
+- [[larsen-2015-gatemon]]
 
 ## Evergreen context
 

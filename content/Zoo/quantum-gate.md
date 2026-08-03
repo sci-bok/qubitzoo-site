@@ -142,6 +142,7 @@ Gate infidelity $1 - F$ arises from several distinct physical mechanisms:
 
 ## Linked Papers
 - [[heeres-2017-implementing-universal-gate]]
+- [[casparis-2016-gatemon-benchmarking]]
 
 ## Related Entries
 - [[transmon]] — dominant superconducting qubit platform

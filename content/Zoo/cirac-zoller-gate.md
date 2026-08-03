@@ -110,6 +110,12 @@ The Cirac-Zoller gate uses red sideband pulses for state mapping and a $2\pi$ pu
 ## Linked Papers
 
 - [[cirac-zoller-1995-trapped-ion-gate]]
+- [[burd-2021-amplification-boson-mediated]]
+- [[divincenzo-2000-physical-implementation]]
+- [[harty-2014-high-fidelity-preparation]]
+- [[monroe-1995-demonstration-fundamental-logic]]
+- [[myerson-2008-high-fidelity-readout]]
+- [[schmidtkaler-2003-realization-cirac-zoller]]
 
 ## Evergreen context
 

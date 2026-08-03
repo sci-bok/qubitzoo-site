@@ -152,6 +152,19 @@ Two-qubit entangling gates and resonator coupling have **not yet been experiment
 
 ## Linked Papers
 - [[shim-2016-aeon]]
+- [[divincenzo-2000-exchange-only]]
+- [[divincenzo-2000-universal-computation-exchange]]
+- [[doherty-2013-qubit-gates-resonant]]
+- [[knill-2000-theory-quantum-error-correction-general-noise]]
+- [[landig-2018-coherent-spin-photon]]
+- [[lidar-1998-decoherence-free-subspaces-quantum-computation]]
+- [[martins-2016-symmetric-exchange-gates]]
+- [[ruskov-2019-limited-measurement-spin]]
+- [[ruskov-2021-modulated-longitudinal-gates]]
+- [[ruskov-2024-longitudinal-curvature-couplings]]
+- [[shulman-2012-demonstration-entanglement-electrostatically]]
+- [[wang-2011-polarization-entanglement-purification]]
+- [[zanardi-1997-noiseless-quantum-codes]]
 
 ## Evergreen context
 

@@ -119,6 +119,10 @@ Trapped-ion qubits require long coherence times and high-fidelity operations to 
 - [[olmschenk-2007-yb171-qubit]]
 - [[ballance-2016-ion-gate-fidelity]]
 - [[gaebler-2016-ms-gate]]
+- [[noek-2013-high-speed-detection]]
+- [[sorensen-1999-ms-gate]]
+- [[wang-2017-single-qubit-quantum-memory]]
+- [[wang-2021-single-ion-qubit]]
 
 ## Evergreen context
 

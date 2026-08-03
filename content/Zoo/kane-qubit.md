@@ -99,6 +99,9 @@ Nuclear spins in silicon offer the longest coherence times of any solid-state qu
 ## Linked Papers
 
 - [[kane-1998-silicon-nuclear-spin]]
+- [[edlbauer-2025-11-qubit-atom-processor]]
+- [[mdzik-2022-precision-tomography-three]]
+- [[muhonen-2014-storing-information-seconds]]
 
 ## Evergreen context
 

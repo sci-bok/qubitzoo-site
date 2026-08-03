@@ -100,6 +100,10 @@ where $a_m$, $b$, $a_o$ are microwave, mechanical, and optical mode operators, a
 ## Linked Papers
 
 - [[lauk-2020-transduction-review]]
+- [[fan-2018-superconducting-cavity-electro]]
+- [[mirhosseini-2020-superconducting-qubit-optical]]
+- [[sahu-2022-quantum-enabled-operation-microwave-optical-interface]]
+- [[zhao-2025-quantum-enabled-microwave-optical-transduction-silicon-nanomechanics]]
 
 ## Evergreen context
 

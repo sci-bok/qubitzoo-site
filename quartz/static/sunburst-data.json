@@ -52,6 +52,14 @@
           "size": 1
         },
         {
+          "name": "Silicon-Carbide Defect Qubit",
+          "slug": "Zoo/silicon-carbide-defect-qubit",
+          "type": "qubit",
+          "status": "demonstrated",
+          "influence": 0.74,
+          "size": 1
+        },
+        {
           "name": "SiV / SnV Color Center Qubit",
           "slug": "Zoo/siv-color-center-qubit",
           "type": "qubit",
@@ -84,7 +92,7 @@
         {
           "name": "Color-Code Logical Qubit",
           "slug": "Zoo/color-code-logical-qubit",
-          "type": "qubit",
+          "type": "encoding",
           "status": "demonstrated",
           "influence": 0.77,
           "size": 1
@@ -95,14 +103,6 @@
           "type": "encoding",
           "status": "demonstrated",
           "influence": 0.82,
-          "size": 1
-        },
-        {
-          "name": "Nuclear Magnetic Resonance (NMR) Qubit",
-          "slug": "Zoo/nuclear-magnetic-resonance-qubit",
-          "type": "qubit",
-          "status": "demonstrated",
-          "influence": 0.65,
           "size": 1
         },
         {
@@ -127,6 +127,20 @@
           "type": "encoding",
           "status": "demonstrated",
           "influence": 0.83,
+          "size": 1
+        }
+      ]
+    },
+    {
+      "name": "Floating Electron",
+      "color": "#6b7280",
+      "children": [
+        {
+          "name": "Electron-on-Solid-Neon Qubit",
+          "slug": "Zoo/electron-on-solid-neon-qubit",
+          "type": "qubit",
+          "status": "demonstrated",
+          "influence": 0.72,
           "size": 1
         }
       ]
@@ -164,6 +178,22 @@
           "status": "demonstrated",
           "influence": 0.66,
           "size": 1
+        },
+        {
+          "name": "Nuclear Magnetic Resonance (NMR) Qubit",
+          "slug": "Zoo/nuclear-magnetic-resonance-qubit",
+          "type": "qubit",
+          "status": "demonstrated",
+          "influence": 0.65,
+          "size": 1
+        },
+        {
+          "name": "Polar-Molecule Qubit",
+          "slug": "Zoo/polar-molecule-qubit",
+          "type": "qubit",
+          "status": "demonstrated",
+          "influence": 0.76,
+          "size": 1
         }
       ]
     },
@@ -177,14 +207,6 @@
           "type": "qubit",
           "status": "demonstrated",
           "influence": 0.69,
-          "size": 1
-        },
-        {
-          "name": "Cesium-133 Neutral Atom Qubit",
-          "slug": "Zoo/cesium-133-neutral-atom-qubit",
-          "type": "qubit",
-          "status": "demonstrated",
-          "influence": 0.72,
           "size": 1
         },
         {
@@ -218,9 +240,9 @@
       "color": "#ef4444",
       "children": [
         {
-          "name": "Continuous-Variable Photonic Qubit",
+          "name": "Continuous-Variable Photonic Qumode",
           "slug": "Zoo/continuous-variable-photonic-qubit",
-          "type": "qubit",
+          "type": "qumode",
           "status": "demonstrated",
           "influence": 0.76,
           "size": 1
@@ -234,9 +256,17 @@
           "size": 1
         },
         {
+          "name": "Frequency-Bin Photonic Qubit",
+          "slug": "Zoo/frequency-bin-photonic-qubit",
+          "type": "qubit",
+          "status": "demonstrated",
+          "influence": 0.74,
+          "size": 1
+        },
+        {
           "name": "Fusion-Based Photonic Qubit",
           "slug": "Zoo/fusion-based-photonic-qubit",
-          "type": "qubit",
+          "type": "architecture",
           "status": "proposed",
           "influence": 0.72,
           "size": 1
@@ -244,7 +274,7 @@
         {
           "name": "Linear-Optical Photonic Qubit",
           "slug": "Zoo/linear-optical-photonic-qubit",
-          "type": "qubit",
+          "type": "architecture",
           "status": "demonstrated",
           "influence": 0.71,
           "size": 1
@@ -252,9 +282,25 @@
         {
           "name": "Photonic Cluster-State MBQC Qubit",
           "slug": "Zoo/photonic-cluster-state-mbqc-qubit",
-          "type": "qubit",
+          "type": "architecture",
           "status": "demonstrated",
           "influence": 0.7,
+          "size": 1
+        },
+        {
+          "name": "Photonic Qubit",
+          "slug": "Zoo/photonic-qubit",
+          "type": "qubit",
+          "status": "demonstrated",
+          "influence": 0.68,
+          "size": 1
+        },
+        {
+          "name": "Polarization Photonic Qubit",
+          "slug": "Zoo/polarization-photonic-qubit",
+          "type": "qubit",
+          "status": "demonstrated",
+          "influence": 0.8,
           "size": 1
         },
         {
@@ -275,7 +321,7 @@
           "name": "Always-on Exchange Only (AEON)",
           "slug": "Zoo/aeon-qubit",
           "type": "qubit",
-          "status": "active",
+          "status": "demonstrated",
           "influence": 0.5,
           "size": 1
         },
@@ -283,7 +329,7 @@
           "name": "Exchange-only qubit",
           "slug": "Zoo/exchange-only-qubit",
           "type": "qubit",
-          "status": "active",
+          "status": "demonstrated",
           "influence": 0.5,
           "size": 1
         },
@@ -355,7 +401,7 @@
           "name": "Singlet-Triplet Qubit",
           "slug": "Zoo/singlet-triplet-qubit",
           "type": "qubit",
-          "status": "active",
+          "status": "demonstrated",
           "influence": 0.5,
           "size": 1
         },
@@ -379,6 +425,14 @@
           "type": "qubit",
           "status": "proposed",
           "influence": 0.55,
+          "size": 1
+        },
+        {
+          "name": "Andreev Pair Qubit",
+          "slug": "Zoo/andreev-pair-qubit",
+          "type": "qubit",
+          "status": "demonstrated",
+          "influence": 0.74,
           "size": 1
         },
         {
@@ -487,7 +541,7 @@
           "name": "cos(2φ) Qubit",
           "slug": "Zoo/cos2phi-qubit",
           "type": "qubit",
-          "status": "proposed",
+          "status": "demonstrated",
           "influence": 0.6,
           "size": 1
         },
@@ -556,27 +610,11 @@
           "size": 1
         },
         {
-          "name": "Microwave Photonic Qubit",
-          "slug": "Zoo/microwave-photonic-qubit",
-          "type": "qubit",
-          "status": "demonstrated",
-          "influence": 0.68,
-          "size": 1
-        },
-        {
           "name": "Phase Qubit",
           "slug": "Zoo/phase-qubit",
           "type": "qubit",
           "status": "demonstrated",
           "influence": 0.65,
-          "size": 1
-        },
-        {
-          "name": "Quarton Coupler",
-          "slug": "Zoo/quarton-coupler",
-          "type": "technique",
-          "status": "proposed",
-          "influence": 0.62,
           "size": 1
         },
         {
@@ -593,6 +631,14 @@
           "type": "coupling",
           "status": "demonstrated",
           "influence": 0.82,
+          "size": 1
+        },
+        {
+          "name": "Unimon Qubit",
+          "slug": "Zoo/unimon-qubit",
+          "type": "qubit",
+          "status": "demonstrated",
+          "influence": 0.72,
           "size": 1
         },
         {
@@ -613,7 +659,7 @@
           "name": "Majorana Topological Qubit",
           "slug": "Zoo/majorana-topological-qubit",
           "type": "qubit",
-          "status": "demonstrated",
+          "status": "proposed",
           "influence": 0.69,
           "size": 1
         },
@@ -640,30 +686,6 @@
       "color": "#eab308",
       "children": [
         {
-          "name": "Barium-137 Trapped-Ion Qubit",
-          "slug": "Zoo/barium-137-ion-qubit",
-          "type": "qubit",
-          "status": "demonstrated",
-          "influence": 0.82,
-          "size": 1
-        },
-        {
-          "name": "Beryllium-9 Trapped-Ion Qubit",
-          "slug": "Zoo/beryllium-9-ion-qubit",
-          "type": "qubit",
-          "status": "demonstrated",
-          "influence": 0.76,
-          "size": 1
-        },
-        {
-          "name": "Calcium-43 Trapped-Ion Qubit",
-          "slug": "Zoo/calcium-43-ion-qubit",
-          "type": "qubit",
-          "status": "demonstrated",
-          "influence": 0.84,
-          "size": 1
-        },
-        {
           "name": "Cirac-Zoller Gate",
           "slug": "Zoo/cirac-zoller-gate",
           "type": "gate",
@@ -685,22 +707,6 @@
           "type": "infrastructure",
           "status": "demonstrated",
           "influence": 0.75,
-          "size": 1
-        },
-        {
-          "name": "Strontium-88 Trapped-Ion Qubit",
-          "slug": "Zoo/strontium-88-ion-qubit",
-          "type": "qubit",
-          "status": "demonstrated",
-          "influence": 0.78,
-          "size": 1
-        },
-        {
-          "name": "Trapped-Electron Qubit",
-          "slug": "Zoo/trapped-electron-qubit",
-          "type": "qubit",
-          "status": "proposed",
-          "influence": 0.68,
           "size": 1
         },
         {

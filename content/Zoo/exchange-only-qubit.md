@@ -104,6 +104,18 @@ The always-on variant (AEON) demonstrated by **Broz et al. (2025)**:
 
 ## Linked Papers
 - [[divincenzo-2000-exchange-only]]
+- [[divincenzo-2000-universal-computation-exchange]]
+- [[doherty-2013-qubit-gates-resonant]]
+- [[eng-2015-isotopically-enhanced-triple]]
+- [[kempe-2001-theory-decoherence-free]]
+- [[knill-2000-theory-quantum-error-correction-general-noise]]
+- [[lidar-1998-decoherence-free-subspaces-quantum-computation]]
+- [[martins-2016-symmetric-exchange-gates]]
+- [[medford-2013-rx-qubit]]
+- [[shibata-2013-control-size-helicity]]
+- [[shim-2016-aeon]]
+- [[wang-2011-polarization-entanglement-purification]]
+- [[zanardi-1997-noiseless-quantum-codes]]
 
 ## Evergreen context
 

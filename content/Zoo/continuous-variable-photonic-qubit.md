@@ -38,7 +38,7 @@ The CV approach is fundamentally distinct from discrete-variable photonic encodi
 
 Gaussian operations alone are not universal. Universal CV quantum computation requires at least one non-Gaussian resource, for example a cubic-phase gate, photon subtraction, photon-number-resolving detection, or a non-Gaussian ancilla such as a GKP state. In practice, this non-Gaussian ingredient, together with finite-squeezing noise and optical loss, is the main obstacle separating impressive Gaussian demonstrations from fully fault-tolerant quantum computing.
 
-CV photonics has nevertheless achieved striking scale. Yokoyama et al. (2013) generated time-multiplexed one-dimensional CV cluster states with more than one million modes, and Asavanant et al. (2019) demonstrated a two-dimensional CV cluster state with 6,200 modes suitable for universal measurement-based computation. More recently, Jia et al. (2026) reported monolithic on-chip generation, manipulation, and homodyne measurement of four-qumode CV cluster states on a Si$_3$N$_4$ photonic integrated circuit, showing that CV cluster-state hardware is now moving from bulk optics toward integrated quantum photonics. Commercial efforts, especially Xanadu's, have pushed this platform toward programmable photonic processors built around squeezed-light generation, interferometric control, and bosonic error-correction primitives.
+CV photonics has nevertheless achieved striking scale. Yokoyama et al. (2013) generated time-multiplexed one-dimensional CV cluster states with more than 10,000 modes; Yoshikawa et al. (2016) then extended the same architecture beyond one million modes using continuous phase-feedback control. Asavanant et al. (2019) demonstrated a two-dimensional CV cluster state with 6,200 modes suitable for universal measurement-based computation. More recently, Jia et al. (2026) reported monolithic on-chip generation, manipulation, and homodyne measurement of four-qumode CV cluster states on a Si$_3$N$_4$ photonic integrated circuit, showing that CV cluster-state hardware is now moving from bulk optics toward integrated quantum photonics. Commercial efforts, especially Xanadu's, have pushed this platform toward programmable photonic processors built around squeezed-light generation, interferometric control, and bosonic error-correction primitives.
 
 ## Hamiltonian
 
@@ -74,8 +74,12 @@ CV photonics offers several unique advantages: room-temperature operation, deter
 - Universality requires any single non-Gaussian measurement.
 
 **Ultra-large-scale 1D cluster state — Yokoyama et al. (2013):**
-- Demonstrated time-domain-multiplexed CV cluster states with more than $10^6$ entangled modes.
+- Demonstrated time-domain-multiplexed CV cluster states with more than 10,000 entangled modes.
 - Established time-domain multiplexing as the key scalability primitive for CV photonics.
+
+**One-million-mode 1D cluster state — Yoshikawa et al. (2016):**
+- Extended the dual-rail time-domain architecture beyond one million fully inseparable modes.
+- Used continuous phase-feedback control to remove the long-duration drift limit of the 2013 experiment.
 
 **Comprehensive review — Braunstein and van Loock (2005):**
 - Established the theoretical framework for quantum information processing with continuous variables.
@@ -95,7 +99,8 @@ CV photonics offers several unique advantages: room-temperature operation, deter
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| Cluster state size (1D) | $>10^6$ modes | Time-domain multiplexing milestone | [Yokoyama et al. 2013](https://doi.org/10.1038/nphoton.2013.287) |
+| Cluster state size (1D) | $>10^4$ modes | Original time-domain multiplexing milestone | [Yokoyama et al. 2013](https://doi.org/10.1038/nphoton.2013.287) |
+| Extended 1D cluster scale | $>10^6$ modes | Continuous phase-feedback enabled million-mode operation | [Yoshikawa et al. 2016](https://doi.org/10.1063/1.4962732) |
 | Cluster state size (2D) | 6,200 modes | Universal MBQC-compatible square-lattice resource | [Asavanant et al. 2019](https://doi.org/10.1126/science.aay2645) |
 | Integrated cluster-state scale | 4 qumodes on chip | Monolithic generation, control, and homodyne readout on Si$_3$N$_4$ PIC | [Jia et al. 2026](https://doi.org/10.1038/s41566-026-01868-5) |
 | Gate type | Deterministic Gaussian operations | Beam splitters, squeezers, phase shifts, displacements | [Braunstein and van Loock 2005](https://doi.org/10.1103/RevModPhys.77.513) |
@@ -126,6 +131,9 @@ CV photonics offers several unique advantages: room-temperature operation, deter
 ### Time-multiplexed scaling
 - S. Yokoyama et al., "Ultra-large-scale continuous-variable cluster states multiplexed in the time domain," [Nature Photonics 7, 982 (2013)](https://doi.org/10.1038/nphoton.2013.287) | [arXiv:1306.3366](https://arxiv.org/abs/1306.3366)
 
+### Million-mode extension
+- J. Yoshikawa et al., "Generation of one-million-mode continuous-variable cluster state by unlimited time-domain multiplexing," [APL Photonics 1, 060801 (2016)](https://doi.org/10.1063/1.4962732) | [arXiv:1606.06688](https://arxiv.org/abs/1606.06688)
+
 ### Large-scale demonstration
 - W. Asavanant et al., "Generation of time-domain-multiplexed two-dimensional cluster state," [Science 366, 373 (2019)](https://doi.org/10.1126/science.aay2645) | [arXiv:1903.03918](https://arxiv.org/abs/1903.03918)
 
@@ -136,7 +144,11 @@ CV photonics offers several unique advantages: room-temperature operation, deter
 
 - [[braunstein-2005-cv-quantum-information]]
 - [[menicucci-2006-cv-cluster-state]]
+- [[menicucci-2014-fault-tolerant-cv-cluster-states]]
+- [[yokoyama-2013-ultra-large-scale-cv-cluster-state]]
+- [[yoshikawa-2016-one-million-mode-cv-cluster-state]]
 - [[asavanant-2019-2d-cv-cluster-state]]
+- [[jia-2026-monolithic-cv-cluster-state-integration]]
 
 ## Evergreen context
 

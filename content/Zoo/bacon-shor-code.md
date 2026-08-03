@@ -103,6 +103,8 @@ $$\bar{X} = \prod_{i \in \text{any row}} X_i, \quad \bar{Z} = \prod_{i \in \text
 ## Linked Papers
 
 - [[bacon-2006-bacon-shor]]
+- [[aliferis-2007-subsystem-fault-tolerance]]
+- [[egan-2021-fault-tolerant-control]]
 
 ## Evergreen context
 

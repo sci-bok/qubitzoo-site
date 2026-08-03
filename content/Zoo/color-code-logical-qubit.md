@@ -83,6 +83,7 @@ Color codes are a leading alternative to the surface code when gate-transversali
 ## Linked Papers
 
 - [[bombin-2006-color-codes]]
+- [[ryananderson-2021-realization-real-time]]
 
 ## Evergreen context
 

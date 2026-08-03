@@ -102,6 +102,7 @@ Qubit operations (gates, initialization, dynamical decoupling, mid-circuit measu
 - [[martin-2026-xcom-full-mesh-network]]
 - [[monarkha-2026-comparing-optical-microwave-conversion-and]]
 - [[liu-2026-a-plug-and-play-superconducting-quantum]]
+- [[stefanazzi-2022-qick-instrumentation-control]]
 
 ## Related Entries
 

@@ -94,6 +94,11 @@ Earlier transmon designs used coaxial or lumped-element capacitors that did not 
 ## Linked Papers
 
 - [[barends-2013-xmon]]
+- [[arute-2019-supremacy-programmable-superconducting]]
+- [[barends-2014-superconducting-circuits-surface]]
+- [[chen-2014-gmon]]
+- [[koch-2007-transmon]]
+- [[sung-2021-parametric-coupler]]
 
 ## Evergreen context
 

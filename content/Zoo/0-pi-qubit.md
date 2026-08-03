@@ -74,6 +74,9 @@ with design target $E_L \ll E_J$ and anisotropic capacitances producing disjoint
 ## Linked Papers
 
 - [[brooks-2013-0-pi-qubit]]
+- [[gyenis-2021-experimental-realization-protected]]
+- [[kalashnikov-2019-cos2phi]]
+- [[lin-2018-heavy-fluxonium]]
 
 ## Evergreen context
 

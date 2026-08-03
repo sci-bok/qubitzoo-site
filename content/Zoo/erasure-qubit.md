@@ -105,6 +105,11 @@ Quantum error correction overhead is dominated by the rate and type of physical 
 - [[wu-2022-erasure-neutral-atoms]]
 - [[kubica-2023-erasure-overhead]]
 - [[levine-2024-dual-rail-erasure]]
+- [[grassl-1997-codes-quantum-erasure-channel]]
+- [[scholl-2023-erasure-conversion-high]]
+- [[stace-2009-thresholds-topological-codes]]
+- [[teoh-2023-dual-rail-cavity]]
+- [[yan-2022-measurement-logical-qubit]]
 
 ## Evergreen context
 

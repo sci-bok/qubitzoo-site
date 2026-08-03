@@ -99,6 +99,9 @@ where $\chi$ is the dispersive shift. This coupling enables photon-number-resolv
 ## Linked Papers
 
 - [[copetudo-2026-a-direct-controlled-phase-gate]]
+- [[campagneibarcq-2020-error-correction-qubit]]
+- [[joshi-2021-information-processing-bosonic]]
+- [[ofek-2016-extending-lifetime-bit]]
 
 ## Evergreen context
 

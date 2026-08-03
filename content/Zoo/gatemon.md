@@ -117,6 +117,10 @@ At higher channel transparency the full $U_J$ must be retained; equivalently, th
 - [[feldstein-bofill-2025-gatemon-reliability]]
 - [[purkayastha-2025-sn-inas-gatemon]]
 - [[sun-2026-junction-intrinsic-dissipation-in-hybrid]]
+- [[hays-2021-andreev-spin-qubit]]
+- [[shim-2014-bottom-up-sc]]
+- [[shim-2016-semiconductor-inspired]]
+- [[strickland-2024-gatemonium]]
 
 ## Evergreen context
 

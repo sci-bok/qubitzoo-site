@@ -117,6 +117,9 @@ which motivates long wires and hard-gap devices for robust parity protection.
 - [[lai-2021-theory-of-coulomb-blockaded]]
 - [[shen-2018-parity-transitions-in-the]]
 - [[aghaee-2021-majorana-spectroscopy]]
+- [[karzig-2017-tetron]]
+- [[kitaev-2001-unpaired-majorana-fermions]]
+- [[pientka-2017-planar-jj]]
 
 ## Related Entries
 

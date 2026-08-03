@@ -97,6 +97,9 @@ The energy eigenvalues are $E_\pm = \pm\frac{1}{2}\sqrt{\epsilon^2 + 4t_c^2}$, p
 ## Linked Papers
 
 - [[petersson-2010-semiconductor-charge]]
+- [[fujisawa-2006-bidirectional-counting-single]]
+- [[hayashi-2003-coherent-manipulation-electronic]]
+- [[shi-2015-hybrid-qubit]]
 
 ## Evergreen context
 

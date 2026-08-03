@@ -113,6 +113,8 @@ Standard bosonic codes (GKP, binomial) require complex syndrome extraction. The 
 - [[grimm-2020-kerr-cat]]
 - [[puri-2020-bias-preserving-gates]]
 - [[lescanne-2020-bit-flip-suppression]]
+- [[guillaud-2019-repetition-cat-qubits]]
+- [[mirrahimi-2014-cat-codes]]
 
 ## Evergreen context
 

@@ -94,6 +94,9 @@ Fixed-coupling architectures suffer from always-on $ZZ$ interaction, causing idl
 ## Linked Papers
 
 - [[chen-2014-gmon]]
+- [[acharya-2025-error-correction-below]]
+- [[arute-2019-supremacy-programmable-superconducting]]
+- [[yan-2018-tunable-coupler]]
 
 ## Evergreen context
 

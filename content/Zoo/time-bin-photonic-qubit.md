@@ -102,6 +102,7 @@ Polarization qubits suffer rapid decoherence in optical fibers due to birefringe
 
 - [[brendel-1999-time-bin-entanglement]]
 - [[marcikic-2004-teleportation-fiber]]
+- [[takesue-2015-teleportation-100-fiber]]
 
 ## Evergreen context
 

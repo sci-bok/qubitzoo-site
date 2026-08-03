@@ -97,6 +97,11 @@ $$U_{\text{MS}} = \exp\!\left(-i\frac{\pi}{4}\sigma_\phi^{(1)}\sigma_\phi^{(2)}\
 ## Linked Papers
 
 - [[sorensen-1999-ms-gate]]
+- [[ballance-2016-ion-gate-fidelity]]
+- [[benhelm-2008-fault-tolerant-computing]]
+- [[gaebler-2016-ms-gate]]
+- [[mlmer-1999-multiparticle-entanglement-hot]]
+- [[sackett-2000-experimental-entanglement-four]]
 
 ## Evergreen context
 

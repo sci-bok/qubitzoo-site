@@ -159,6 +159,9 @@ Trapped ions offer natural identical qubits (every $^{171}\text{Yb}^+$ ion is id
 - [[kielpinski-2002-shuttling]]
 - [[wang-2017-single-qubit-quantum-memory]]
 - [[smith-2024-single-qubit-gate-errors]]
+- [[olmschenk-2007-yb171-qubit]]
+- [[smith-2025-single-qubit-gates-10-7]]
+- [[wang-2017-ten-minute-coherence]]
 
 ## Evergreen context
 

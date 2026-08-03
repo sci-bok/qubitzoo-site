@@ -97,6 +97,7 @@ at phase difference $\varphi = \pi$, with the topological gap $\propto \alpha$.
 
 - [[pientka-2017-planar-jj]]
 - [[fornieri-2019-planar-jj]]
+- [[stern-2019-fractional-josephson-vortices]]
 
 ## Related Entries
 

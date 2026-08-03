@@ -94,6 +94,7 @@ where $\gamma_i$ are Majorana operators ($\gamma_i^\dagger = \gamma_i$, $\{\gamm
 
 - [[karzig-2017-tetron]]
 - [[aghaee-2025-majorana-1]]
+- [[aghaee-2025-interferometric-parity]]
 
 ## Related Entries
 

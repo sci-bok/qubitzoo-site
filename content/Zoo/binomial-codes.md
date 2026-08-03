@@ -103,6 +103,10 @@ For the simplest single-loss-correcting code, the parity operator $(-1)^{\hat{n}
 ## Linked Papers
 
 - [[michael-2016-binomial-codes]]
+- [[cochrane-1999-macroscopically-distinct-superposition]]
+- [[gottesman-2001-gkp]]
+- [[heeres-2017-implementing-universal-gate]]
+- [[ofek-2016-extending-lifetime-bit]]
 
 ## Evergreen context
 

@@ -83,6 +83,7 @@ QCCD shuttling addresses the core scaling problem of trapped-ion systems: long c
 ## Linked Papers
 
 - [[kielpinski-2002-shuttling]]
+- [[moses-2023-race-track-trapped]]
 
 ## Evergreen context
 

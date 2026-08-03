@@ -46,6 +46,9 @@ find "$CONTENT_DIR" -mindepth 1 -maxdepth 1 \
 for folder in Zoo References Evergreen MOCs Figures; do
   if [ -d "$VAULT_PATH/$folder" ]; then
     cp -R "$VAULT_PATH/$folder" "$CONTENT_DIR/$folder"
+    if [ "$folder" = "Figures" ] && [ -d "$CONTENT_DIR/Figures/.candidates" ]; then
+      rm -rf "$CONTENT_DIR/Figures/.candidates"
+    fi
     echo "  ✓ $folder ($(find "$CONTENT_DIR/$folder" -name '*.md' | wc -l | tr -d ' ') files)"
   fi
 done

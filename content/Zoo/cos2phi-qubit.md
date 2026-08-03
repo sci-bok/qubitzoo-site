@@ -121,6 +121,7 @@ where the intended operating point has $E_1\approx0$. Residual $E_1$ and flux fl
 - [[zhurbina-2026-coherence-limitations-of-a]]
 - [[brooks-2013-0-pi-qubit]]
 - [[messelot-2026-coherence-limits-cos2phi-qubits]]
+- [[kalashnikov-2019-cos2phi]]
 
 ## Evergreen context
 

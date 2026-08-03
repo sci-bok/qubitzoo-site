@@ -13,15 +13,24 @@ In case you didn't qnow* (*the q is silent*), qubits are needed for [quantum com
 
 ## Explore by Technology Family
 
+<!-- FAMILY_TABLE:START -->
 | Family | Entries | Description |
 |--------|---------|-------------|
-| [[superconducting-moc\|🔵 Superconducting]] | 16 | Transmon, fluxonium, flux qubit, and more |
-| [[semiconducting-moc\|🟢 Semiconducting]] | 10 | Spin qubits, quantum dots, hole-spin |
+| [[superconducting-moc\|🔵 Superconducting]] | 22 | Josephson-junction qubits, circuits, couplers, and readout |
+| [[semiconducting-moc\|🟢 Semiconducting]] | 12 | Quantum-dot, donor, and semiconductor spin qubits |
 | [[trapped-ion-moc\|🟡 Trapped Ion]] | 5 | Trapped ions, shuttling architectures |
-| [[neutral-atom-moc\|🟠 Neutral Atom]] | 3 | Rydberg atoms, optical tweezers |
-| [[photonic-moc\|🔴 Photonic]] | 3 | Linear optical, dual-rail, cluster-state |
-| [[topological-moc\|🟣 Topological]] | 4 | Majorana, surface codes, color codes |
-| [[super-semi-moc\|⚡ Super-Semi]] | 3 | Superconducting-semiconducting hybrids |
+| [[neutral-atom-moc\|🟠 Neutral Atom]] | 4 | Rydberg, clock, and nuclear-spin atom encodings |
+| [[photonic-moc\|🔴 Photonic]] | 9 | Discrete-variable and continuous-variable photonics |
+| [[topological-moc\|🟣 Topological]] | 3 | Majorana and topological-superconductor encodings |
+| [[super-semi-moc\|⚡ Super-Semi]] | 6 | Superconductor-semiconductor hybrid devices |
+| [[color-center-moc\|💎 Color Center]] | 4 | Diamond, silicon, and silicon-carbide defects |
+| [[spin-photon-moc\|🔗 Spin-Photon]] | 5 | Network-emitter and optical-interface qubits |
+| [[molecular-moc\|🧪 Molecular]] | 3 | Molecular spin and polar-molecule qubits |
+| [[floating-electron-moc\|🌊 Floating Electron]] | 1 | Electrons hosted above cryogenic surfaces |
+| [[codes-moc\|🧩 Codes]] | 6 | Bosonic and logical error-correcting encodings |
+| [[cross-platform-moc\|🧭 Cross-Platform]] | 10 | Architectures, gates, and platform-independent primitives |
+| [[classical-hardware-moc\|🛠️ Classical Hardware]] | 2 | Cryogenic control and amplification infrastructure |
+<!-- FAMILY_TABLE:END -->
 
 ## Featured Quanimals
 

@@ -89,6 +89,10 @@ which at $J_{12} = J_{23} = J$ gives $\hbar\omega_q \propto J$.
 ## Linked Papers
 
 - [[medford-2013-rx-qubit]]
+- [[gyenis-2021-moving-beyond-transmon]]
+- [[jiang-2025-sige-rx-resonator]]
+- [[landig-2018-coherent-spin-photon]]
+- [[medford-2013-self-consistent-measurement]]
 
 ## Evergreen context
 

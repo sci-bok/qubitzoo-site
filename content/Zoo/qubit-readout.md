@@ -102,6 +102,8 @@ where $\omega_r$ is the resonator frequency, $\omega_q$ the qubit frequency, and
 ## Linked Papers
 
 - [[walter-2017-rapid-readout]]
+- [[blais-2021-circuit-electrodynamics]]
+- [[wallraff-2004-strong-coupling-single]]
 
 ## Evergreen context
 

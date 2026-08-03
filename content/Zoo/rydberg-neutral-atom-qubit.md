@@ -93,6 +93,11 @@ Rydberg neutral-atom qubits combine three key advantages: (1) native all-to-all 
 - [[jaksch-2000-rydberg-gate]]
 - [[henriet-2020-quantum-computing-with-neutral]]
 - [[wu-2020-a-concise-review-of]]
+- [[bluvstein-2024-logical-processor-reconfigurable]]
+- [[ebadi-2021-256-atom-simulator]]
+- [[grassl-1997-codes-quantum-erasure-channel]]
+- [[isenhower-2010-rydberg-cnot]]
+- [[wu-2022-erasure-neutral-atoms]]
 
 ## Evergreen context
 

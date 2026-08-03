@@ -94,6 +94,9 @@ For asymptotically good codes: $k = \Theta(n)$, $d = \Theta(n)$, giving constant
 ## Linked Papers
 
 - [[panteleev-2022-asymptotically-good]]
+- [[breuckmann-2021-balanced-product-codes]]
+- [[hastings-2021-fiber-bundle-codes]]
+- [[tillich-2014-ldpc-codes-positive]]
 
 ## Evergreen context
 

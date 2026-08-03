@@ -159,6 +159,9 @@ For two cavities coupled by a transmon ancilla, the beamsplitter interaction in 
 - [[campbell-2020-composite-qubit]]
 - [[teoh-2023-dual-rail-cavity]]
 - [[levine-2024-dual-rail-erasure]]
+- [[chou-2024-superconducting-dual-rail]]
+- [[grassl-1997-codes-quantum-erasure-channel]]
+- [[huang-2026-logical-multi-qubit]]
 
 ## Evergreen context
 

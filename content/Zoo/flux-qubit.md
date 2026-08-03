@@ -95,6 +95,9 @@ The flux qubit was one of the three original superconducting qubit types (alongs
 ## Linked Papers
 
 - [[mooij-1999-flux-qubit]]
+- [[de-lange-2015-hybrid-nanowire-josephson-elements]]
+- [[orlando-1999-superconducting-persistent-current]]
+- [[yan-2016-flux-qubit-revisited]]
 
 ## Evergreen context
 

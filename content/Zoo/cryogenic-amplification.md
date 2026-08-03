@@ -107,6 +107,7 @@ where $K$ is the Kerr nonlinearity from the Josephson junction and $\epsilon_p$ 
 ## Linked Papers
 
 - [[macklin-2015-jtwpa]]
+- [[clerk-2010-introduction-noise-measurement]]
 
 ## Related Entries
 
