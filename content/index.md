@@ -18,20 +18,20 @@ These maps are **non-exclusive**: one entry may belong to several facets, and th
 <!-- FAMILY_TABLE:START -->
 | Family | Entries | Description |
 |--------|---------|-------------|
-| [[superconducting-moc\|🔵 Superconducting]] | 22 | Josephson-junction qubits, circuits, couplers, and readout |
-| [[semiconducting-moc\|🟢 Semiconducting]] | 12 | Quantum-dot, donor, and semiconductor spin qubits |
-| [[trapped-ion-moc\|🟡 Trapped Ion]] | 5 | Trapped ions, shuttling architectures |
-| [[neutral-atom-moc\|🟠 Neutral Atom]] | 4 | Rydberg, clock, and nuclear-spin atom encodings |
-| [[photonic-moc\|🔴 Photonic]] | 9 | Discrete-variable and continuous-variable photonics |
-| [[topological-moc\|🟣 Majorana / Topological Superconductor]] | 3 | Majorana and topological-superconductor encodings |
-| [[super-semi-moc\|⚡ Super-Semi]] | 6 | Superconductor-semiconductor hybrid devices |
-| [[color-center-moc\|💎 Color Center]] | 4 | Diamond, silicon, and silicon-carbide defects |
-| [[spin-photon-moc\|🔗 Spin-Photon]] | 5 | Network-emitter and optical-interface qubits |
-| [[molecular-moc\|🧪 Molecular]] | 3 | Molecular spin and polar-molecule qubits |
-| [[floating-electron-moc\|🌊 Floating Electron]] | 1 | Electrons hosted above cryogenic surfaces |
-| [[codes-moc\|🧩 Codes]] | 6 | Bosonic and logical error-correcting encodings |
-| [[cross-platform-moc\|🧭 Cross-Platform]] | 10 | Architectures, gates, and platform-independent primitives |
-| [[classical-hardware-moc\|🛠️ Classical Hardware]] | 2 | Cryogenic control and amplification infrastructure |
+| [🔵 Superconducting](/MOCs/superconducting-moc) | 22 | Josephson-junction qubits, circuits, couplers, and readout |
+| [🟢 Semiconducting](/MOCs/semiconducting-moc) | 12 | Quantum-dot, donor, and semiconductor spin qubits |
+| [🟡 Trapped Ion](/MOCs/trapped-ion-moc) | 5 | Trapped ions, shuttling architectures |
+| [🟠 Neutral Atom](/MOCs/neutral-atom-moc) | 4 | Rydberg, clock, and nuclear-spin atom encodings |
+| [🔴 Photonic](/MOCs/photonic-moc) | 9 | Discrete-variable and continuous-variable photonics |
+| [🟣 Majorana ∕ Topological Superconductor](/MOCs/topological-moc) | 3 | Majorana and topological-superconductor encodings |
+| [⚡ Super-Semi](/MOCs/super-semi-moc) | 6 | Superconductor-semiconductor hybrid devices |
+| [💎 Color Center](/MOCs/color-center-moc) | 4 | Diamond, silicon, and silicon-carbide defects |
+| [🔗 Spin-Photon](/MOCs/spin-photon-moc) | 5 | Network-emitter and optical-interface qubits |
+| [🧪 Molecular](/MOCs/molecular-moc) | 3 | Molecular spin and polar-molecule qubits |
+| [🌊 Floating Electron](/MOCs/floating-electron-moc) | 1 | Electrons hosted above cryogenic surfaces |
+| [🧩 Codes](/MOCs/codes-moc) | 6 | Bosonic and logical error-correcting encodings |
+| [🧭 Cross-Platform](/MOCs/cross-platform-moc) | 10 | Architectures, gates, and platform-independent primitives |
+| [🛠️ Classical Hardware](/MOCs/classical-hardware-moc) | 2 | Cryogenic control and amplification infrastructure |
 <!-- FAMILY_TABLE:END -->
 
 ## Featured Quanimals

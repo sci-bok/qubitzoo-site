@@ -76,7 +76,12 @@ for (const family of order) {
   const entry = families.get(family)!
   const meta = metadata[family]
   const display = meta.display ?? family
-  lines.push(`| [[${entry.slug}\\|${meta.icon} ${display}]] | ${entry.count} | ${meta.description} |`)
+  // Quartz treats an ASCII slash inside an internal-link label as a path separator.
+  // Use the visually equivalent division slash so the full public label survives rendering.
+  const linkDisplay = display.replaceAll("/", "∕")
+  lines.push(
+    `| [${meta.icon} ${linkDisplay}](/MOCs/${entry.slug}) | ${entry.count} | ${meta.description} |`,
+  )
 }
 lines.push(endMarker)
 
