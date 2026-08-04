@@ -10,6 +10,26 @@ import { ComponentChildren } from "preact"
 import { concatenateResources } from "../../util/resources"
 import { trieFromAllFiles } from "../../util/ctx"
 
+const zooPlatformMaps = [
+  ["superconducting-moc", "Superconducting"],
+  ["semiconducting-moc", "Semiconducting"],
+  ["trapped-ion-moc", "Trapped Ion"],
+  ["neutral-atom-moc", "Neutral Atom"],
+  ["photonic-moc", "Photonic"],
+  ["topological-moc", "Majorana / Topological Superconductor"],
+  ["color-center-moc", "Color Center"],
+  ["molecular-moc", "Molecular"],
+  ["floating-electron-moc", "Floating Electron"],
+] as const
+
+const zooCrossCuttingMaps = [
+  ["super-semi-moc", "Superconductor–Semiconductor Hybrids"],
+  ["spin-photon-moc", "Spin–Photon Interfaces"],
+  ["codes-moc", "Codes and Logical Encodings"],
+  ["cross-platform-moc", "Cross-Platform Architectures"],
+  ["classical-hardware-moc", "Classical Hardware"],
+] as const
+
 interface FolderContentOptions {
   /**
    * Whether to display number of folders
@@ -101,21 +121,62 @@ export default ((opts?: Partial<FolderContentOptions>) => {
         ? fileData.description
         : htmlToJsx(fileData.filePath!, tree)
     ) as ComponentChildren
+    const normalizedSlug = fileData.slug?.toLowerCase().replace(/\/index$/, "")
+    const isZooLanding = normalizedSlug === "zoo"
 
     return (
       <div class="popover-hint">
         <article class={classes}>{content}</article>
-        <div class="page-listing">
-          {options.showFolderCount && (
+        {isZooLanding && (
+          <section aria-label="Curated Qubit Zoo navigation">
             <p>
-              {i18n(cfg.locale).pages.folderContent.itemsUnderFolder({
-                count: allPagesInFolder.length,
-              })}
+              Start with these curated, non-exclusive maps. An entry can appear in more than one
+              map; membership counts describe organization, not platform importance or maturity.
             </p>
+            <h2>Physical-platform maps</h2>
+            <ul>
+              {zooPlatformMaps.map(([slug, label]) => (
+                <li>
+                  <a href={`/MOCs/${slug}`}>{label}</a>
+                </li>
+              ))}
+            </ul>
+            <h2>Encodings, interfaces, and systems roles</h2>
+            <ul>
+              {zooCrossCuttingMaps.map(([slug, label]) => (
+                <li>
+                  <a href={`/MOCs/${slug}`}>{label}</a>
+                </li>
+              ))}
+            </ul>
+            <p>
+              See the <a href="/MOCs/qubit-zoo-index-moc">complete curated index</a> for guided
+              cross-family routes and the editorial policy.
+            </p>
+          </section>
+        )}
+        <div class="page-listing">
+          {isZooLanding ? (
+            <details>
+              <summary>Browse all {allPagesInFolder.length} entries alphabetically</summary>
+              <div>
+                <PageList {...listProps} />
+              </div>
+            </details>
+          ) : (
+            <>
+              {options.showFolderCount && (
+                <p>
+                  {i18n(cfg.locale).pages.folderContent.itemsUnderFolder({
+                    count: allPagesInFolder.length,
+                  })}
+                </p>
+              )}
+              <div>
+                <PageList {...listProps} />
+              </div>
+            </>
           )}
-          <div>
-            <PageList {...listProps} />
-          </div>
         </div>
       </div>
     )

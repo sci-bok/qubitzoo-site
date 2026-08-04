@@ -78,6 +78,6 @@ This family shares a lot of vocabulary with [[superconducting-moc]], especially 
 
 This family shares hardware vocabulary with [[topological-moc]] such as InAs/Al heterostructures, Josephson weak links, and strong spin-orbit coupling, but it makes a different promise. `gatemon`, `andreev-spin-qubit`, and `ferbo-qubit` stay here because their value comes from tunability, Andreev structure, or circuit-level protection inside an otherwise conventional control stack. Once the central claim becomes nonlocal parity encoding or a phase-biased topological channel that is supposed to suppress errors before code overhead, route the reader to [[topological-moc]] instead.
 
-## Editorial note
+## Scope boundary
 
-This family is about hybridization, not mere material substitution. Keep links focused on what the semiconductor changes in the circuit physics, control surface, or protection story.
+This facet is about hybridization, not mere material substitution: the semiconductor must change the circuit physics, control surface, or protection story.

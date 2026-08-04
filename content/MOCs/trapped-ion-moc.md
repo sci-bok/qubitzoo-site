@@ -60,6 +60,6 @@ The most useful way to read this family is as a **three-layer stack rather than 
 - Enter [[ytterbium-hyperfine-qubit]] or [[molmer-sorenson-gate]] directly for the modern Yb + MS implementation slice.
 - Hand off to [[neutral-atom-moc]] when the comparison shifts from Coulomb-crystal buses to tweezer-rearranged atomic arrays with transient Rydberg interactions.
 
-## Editorial note
+## Scope boundary
 
-This is the single authoritative trapped-ion family page. Keep species-specific notes only when an isotope introduces a materially distinct encoding or milestone; do not recreate a second family for the Yb + MS stack.
+This is the authoritative trapped-ion platform map. Species-specific entries are reserved for materially distinct encodings or milestones rather than one page per isotope.

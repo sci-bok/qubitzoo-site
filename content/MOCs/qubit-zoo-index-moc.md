@@ -3,11 +3,11 @@ title: Qubit Zoo Index MOC
 type: moc
 technology_family: index
 note_count: 81
-last_updated: '2026-08-02'
+last_updated: '2026-08-04'
 generated_by: pipeline-moc-v1
 ---
 
-Top-level navigation for the Qubit Zoo by technology family.
+Top-level navigation for the Qubit Zoo through non-exclusive facets. An entry may appear in more than one map, so facet memberships can sum to more than the unique-entry count. These counts describe editorial organization, not platform importance or maturity.
 
 ## Family MOCs
 
@@ -23,7 +23,7 @@ Top-level navigation for the Qubit Zoo by technology family.
 - [[spin-photon-moc]] (5 entries)
 - [[super-semi-moc]] (6 entries)
 - [[superconducting-moc]] (22 entries)
-- [[topological-moc]] (3 entries)
+- [[topological-moc|Majorana / Topological Superconductor]] (3 entries)
 - [[trapped-ion-moc]] (5 entries)
 
 ## Editorial policy
@@ -55,9 +55,3 @@ Top-level navigation for the Qubit Zoo by technology family.
 - Start in [[superconducting-moc]] when the win is being claimed at the device layer: bosonic encodings, protected circuits, cat-bias engineering, or erasure-converting superconducting encodings all live there first.
 - Move to [[cross-platform-moc]] when the real comparison becomes logical-overhead strategy, decoder assumptions, or systems architecture via [[erasure-qubit]], [[surface-code-logical-qubit]], [[color-code-logical-qubit]], and [[classical-control]].
 - Use [[bosonic-code-hierarchy]], [[noise-bias-and-asymmetric-error-channels]], [[erasure-error-vs-pauli-error]], and [[threshold-theorem]] as the four-note bridge from hardware mechanism to architectural consequence.
-
-## Current graph priorities
-
-- Preserve full Zoo → Evergreen coverage as new entries land, rather than treating coverage itself as an open cleanup target.
-- Prefer curated cross-family routes when the reviewer is already clean: navigation quality now matters more than raw metric movement.
-- Keep family MOCs lightweight above the marker, but preserve real synthesis below it.

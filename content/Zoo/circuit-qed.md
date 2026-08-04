@@ -107,6 +107,7 @@ Previous proposals for coupling superconducting qubits used discrete LC circuits
 - [[teoh-2023-dual-rail-cavity]]
 - [[wallraff-2004-strong-coupling-single]]
 - [[walter-2017-rapid-readout]]
+- [[rathnakaran-2026-squeezing-fueled-quantum-otto-engine]]
 
 ## Evergreen context
 

@@ -5,7 +5,7 @@ title: About
 
 Hi.
 
-The Qubit Zoo collects all the qubits we know about — and we're always finding more. It started as a [manually curated site](https://qubitzoo.org) for hardcore qubit geeks and has evolved into an automated, interlinked knowledge engine that processes the arXiv daily.
+The Qubit Zoo is a curated atlas of physical qubit platforms, encodings, and the hardware primitives needed to operate and scale them. It started as a [manually curated site](https://qubitzoo.org) for hardcore qubit geeks and has evolved into an automated, interlinked knowledge engine that processes the arXiv daily.
 
 ## The Mission
 
@@ -19,8 +19,8 @@ The Zoo is powered by an automated knowledge pipeline:
 
 1. **Daily discovery** from arXiv, filtered for hardware relevance
 2. **Structured extraction** using LLM-assisted agents
-3. **Verification** via dual-model cross-checking
-4. **Human curation** for the important entries
+3. **Model cross-checking** of extracted claims
+4. **Targeted manual curation** for selected entries
 5. **Obsidian vault** as the canonical knowledge store
 6. **Quartz** static site generator for web publication
 
@@ -28,13 +28,15 @@ The Zoo is powered by an automated knowledge pipeline:
 
 > ⚠️ **AI-Generated Content**
 >
-> The Qubit Zoo is largely built and maintained by AI agents. Entries are extracted, structured, and written by LLMs, with automated verification passes but limited human review. This means:
+> The Qubit Zoo is largely built and maintained by AI agents. Entries are extracted, structured, and written by LLMs, with automated cross-checking passes but limited human review. This means:
 >
 > - **Errors are likely.** Metrics may be outdated, citations may be wrong, and descriptions may contain subtle inaccuracies or hallucinations.
 > - **Always verify against primary sources.** Every entry links to the original paper — read it before citing Zoo content in your own work.
 > - **This is a discovery tool, not a reference database.** Use it to find qubits and connections, then do your own due diligence.
 >
 > We actively audit for quality (see [LESSONS.md](https://github.com/sci-bok/qubit-zoo-zettelkasten/blob/main/docs/LESSONS.md) for mistakes we've caught and fixed), but the error rate on an AI-curated corpus of this size is nonzero. If you spot something wrong, [open an issue](https://github.com/sci-bok/qubitzoo-site/issues).
+
+Metadata such as `verified_by` records workflow provenance; it does not imply independent specialist review. Experimental maturity and editorial review are separate questions.
 
 ## About the Zookeeper
 

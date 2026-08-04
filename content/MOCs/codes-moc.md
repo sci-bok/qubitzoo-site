@@ -55,6 +55,4 @@ Taken together, this family is best seen as the place where the Zoo asks **which
 - `surface-code-logical-qubit`, `color-code-logical-qubit`, and `erasure-qubit` appear here through explicit MOC facets while remaining primary members of [[cross-platform-moc]], where their architectural consequences are compared.
 - `qldpc-codes` should usually be read together with [[quantum-transduction]] and modular-hardware notes, since its long-range-check promise matters most once distributed connectivity enters the design.
 
-## Editorial note
-
-Keep this MOC authoritative but selective: a code earns a Zoo entry only when it has a stable hardware-facing identity, demonstrated logical role, or materially different overhead/noise tradeoff. Generic code-theory papers remain in `References/`.
+Zoo coverage is intentionally selective: a code appears here when it has a stable hardware-facing identity, demonstrated logical role, or materially different overhead/noise tradeoff. Generic code-theory papers remain in `References/`.

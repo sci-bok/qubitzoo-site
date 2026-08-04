@@ -91,6 +91,6 @@ This family is best read as the **measurement-side classical interface**, not as
 - `cryogenic-amplification` is the enabling hardware stack for the superconducting branch in particular, where the first added noise in the microwave chain strongly sets practical readout fidelity.
 - This family should read as an **enabling classical interface layer**, not as a standalone qubit modality. Keep qubit-physics details in the platform notes, hand off upstream-control questions to [[classical-control]], and use this page to map where measurement physics and refrigerator-side signal-chain constraints touch the quantum stack.
 
-## Editorial note
+## Scope boundary
 
-This is a boundary family between quantum hardware and the classical control plane. Keep the curated section focused on architectural role and measurement bottlenecks, not on exhaustive electronics taxonomy.
+This is a boundary facet between quantum hardware and the classical control plane. It covers architectural roles and measurement bottlenecks rather than an exhaustive electronics taxonomy.

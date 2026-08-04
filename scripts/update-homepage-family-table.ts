@@ -26,13 +26,17 @@ const order = [
   "Classical Hardware",
 ]
 
-const metadata: Record<string, { icon: string; description: string }> = {
+const metadata: Record<string, { icon: string; description: string; display?: string }> = {
   Superconducting: { icon: "🔵", description: "Josephson-junction qubits, circuits, couplers, and readout" },
   Semiconducting: { icon: "🟢", description: "Quantum-dot, donor, and semiconductor spin qubits" },
   "Trapped Ion": { icon: "🟡", description: "Trapped ions, shuttling architectures" },
   "Neutral Atom": { icon: "🟠", description: "Rydberg, clock, and nuclear-spin atom encodings" },
   Photonic: { icon: "🔴", description: "Discrete-variable and continuous-variable photonics" },
-  Topological: { icon: "🟣", description: "Majorana and topological-superconductor encodings" },
+  Topological: {
+    icon: "🟣",
+    display: "Majorana / Topological Superconductor",
+    description: "Majorana and topological-superconductor encodings",
+  },
   "Super-Semi": { icon: "⚡", description: "Superconductor-semiconductor hybrid devices" },
   "Color Center": { icon: "💎", description: "Diamond, silicon, and silicon-carbide defects" },
   "Spin-Photon": { icon: "🔗", description: "Network-emitter and optical-interface qubits" },
@@ -71,7 +75,8 @@ const lines = [
 for (const family of order) {
   const entry = families.get(family)!
   const meta = metadata[family]
-  lines.push(`| [[${entry.slug}\\|${meta.icon} ${family}]] | ${entry.count} | ${meta.description} |`)
+  const display = meta.display ?? family
+  lines.push(`| [[${entry.slug}\\|${meta.icon} ${display}]] | ${entry.count} | ${meta.description} |`)
 }
 lines.push(endMarker)
 

@@ -16,4 +16,5 @@ First integrated CNOT gate for polarization-encoded photonic qubits. The glass-c
 - **Journal:** [Nature Communications](https://doi.org/10.1038/ncomms1570)
 
 ## Zoo Links
+- [[photonic-qubit]]
 - [[polarization-photonic-qubit]]

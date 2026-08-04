@@ -18,4 +18,5 @@ This paper presents work on experimental realization of any discrete unitary ope
 - **Journal:** [Physical Review Letters](https://doi.org/10.1103/physrevlett.73.58)
 
 ## Zoo Links
+- [[photonic-qubit]]
 - [[dual-rail-photonic-qubit]]

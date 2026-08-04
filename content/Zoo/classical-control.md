@@ -103,6 +103,8 @@ Qubit operations (gates, initialization, dynamical decoupling, mid-circuit measu
 - [[monarkha-2026-comparing-optical-microwave-conversion-and]]
 - [[liu-2026-a-plug-and-play-superconducting-quantum]]
 - [[stefanazzi-2022-qick-instrumentation-control]]
+- [[berritta-2026-adaptive-spectroscopy-of-fast]]
+- [[wegmann-2026-zero-g-a-pre-decoder-aware-decoder]]
 
 ## Related Entries
 

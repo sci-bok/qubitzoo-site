@@ -17,7 +17,7 @@ Developments can also be applied across technologies to advance qubits; so it pa
 
 ### What can be submitted to the qubit zoo?
 
-The qubit zoo attempts to collect all the qubits we know about. "Qubits" is broadly defined in the sense that we include proposals for new qubit gate approaches as inherent to what a qubit is. So, for example, although there may already be an entry on the transmon qubit, there could be another entry that uses transmons in a new way — either by proposing a new two-qubit gate, or a new way to combine transmons to realize a new type of qubit.
+The Zoo is selective rather than exhaustive. "Qubits" is broadly defined to include durable physical platforms, encodings, and hardware primitives with lasting explanatory value. A new transmon gate, for example, earns its own entry only when it defines a stable primitive rather than a one-paper result; otherwise the paper belongs in References.
 
 ### Why isn't qubit X in the Zoo?
 
@@ -25,7 +25,7 @@ Because you haven't submitted it yet. [Open an issue](https://github.com/sci-bok
 
 ### I just put a paper on the arXiv about my new qubit idea. Can I submit it?
 
-Absolutely. Our daily pipeline scans arXiv for new hardware-relevant papers. If it passes relevance filtering, it'll appear automatically. If you want to be sure, [open an issue](https://github.com/sci-bok/qubitzoo-site/issues) with the arXiv ID and we'll fast-track it.
+Absolutely. Our daily pipeline scans arXiv for new hardware-relevant papers. Passing relevance filtering makes a paper eligible for review, not automatic publication as a new Zoo object. If you want to flag it, [open an issue](https://github.com/sci-bok/qubitzoo-site/issues) with the arXiv ID.
 
 ### There's a mistake in qubit X. How do I get it fixed?
 
@@ -34,16 +34,18 @@ Absolutely. Our daily pipeline scans arXiv for new hardware-relevant papers. If 
 ### What's the difference between "seed" and "demonstrated" entries?
 
 - **Seed** entries have basic metadata and links but haven't been fully curated yet
-- **Demonstrated** entries have been hand-verified with correct physics, Hamiltonians, metrics tables with fidelity references, and comprehensive cross-links
+- **Demonstrated** describes experimental maturity: the relevant physical object or operation has been realized. It does not, by itself, mean the page has received independent specialist review.
 
-### How is content verified?
+### How is content checked?
 
 New papers go through a multi-stage pipeline:
 1. **Discovery** — arXiv API + Semantic Scholar enrichment
 2. **Relevance filtering** — hardware-focused classifier rejects off-scope papers
 3. **Structured extraction** — LLM-assisted extraction with deterministic fallback
-4. **Verification** — second model cross-checks extracted claims
-5. **Curation** — top entries are hand-curated with real physics by domain experts
+4. **Model cross-checking** — a second model checks extracted claims and disagreements
+5. **Targeted curation** — selected entries receive primary-source and manual review
+
+Review depth varies across the corpus. Automated cross-checking can catch inconsistencies but is not independent domain-expert verification. Always follow the linked primary source before citing a Zoo claim.
 
 ### What's different from the original qubitzoo.org?
 

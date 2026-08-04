@@ -61,6 +61,6 @@ Curated map of Zoo entries in the **Cross-Platform** family.
 - Photonic notes should usually enter this family through `erasure-qubit`: stay in [[photonic-moc]] while the question is encoding choice (`dual-rail-photonic-qubit`, `time-bin-photonic-qubit`) or resource construction (`linear-optical-photonic-qubit`, `photonic-cluster-state-mbqc-qubit`, `fusion-based-photonic-qubit`), then cross here only once flagged loss or fusion failure becomes a decoder-overhead question.
 - Use `classical-control` and `quantum-transduction` as the two stack edges: one asks whether local feedback can keep up with the code cycle, the other asks whether the logical architecture survives once the machine becomes modular.
 
-## Editorial note
+## Scope boundary
 
-This family exists for architectural glue. Keep platform-local implementation details in the source hardware families, and use this page to clarify which concepts travel across platforms.
+This facet covers architectural glue: platform-local implementation details remain in their physical-platform maps, while this page identifies concepts that travel across platforms.

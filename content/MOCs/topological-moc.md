@@ -1,13 +1,13 @@
 ---
-title: Topological MOC
+title: Majorana / Topological Superconductor MOC
 type: moc
 technology_family: Topological
 note_count: 3
-last_updated: '2026-08-02'
+last_updated: '2026-08-04'
 generated_by: pipeline-moc-v1
 ---
 
-Curated map of Zoo entries in the **Topological** family.
+Curated map of Zoo entries in the **Majorana / Topological Superconductor** family.
 
 ## Entries
 
@@ -53,7 +53,7 @@ A useful guardrail is that a two-end-mode device can demonstrate the *ingredient
 
 ## Boundary with the super-semi family
 
-The materials overlap with [[super-semi-moc]] on purpose, especially around InAs/Al weak links and Josephson geometries, but the classification hinge is different. Keep a note in **Topological** when the qubit claim depends on entering a topological superconducting regime and protecting information in nonlocal fermion parity. If the same hybrid hardware is being used mainly for gate-tunable Josephson physics, Andreev control, or protected-circuit engineering without a topological phase claim, it belongs in [[super-semi-moc]] instead.
+The materials overlap with [[super-semi-moc]] on purpose, especially around InAs/Al weak links and Josephson geometries, but the classification hinge is different. A note belongs in this **Majorana / Topological Superconductor** branch when the qubit claim depends on entering a topological superconducting regime and protecting information in nonlocal fermion parity. If the same hybrid hardware is being used mainly for gate-tunable Josephson physics, Andreev control, or protected-circuit engineering without a topological phase claim, it belongs in [[super-semi-moc]] instead.
 
 A useful mental check is: if removing the words "topological phase" or "nonlocal parity" would leave the note conceptually intact, it probably is not a topological-family note.
 

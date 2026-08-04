@@ -5,13 +5,15 @@ title: Welcome to the Qubit Zoo
 ![[qubitzoo-banner.png]]
 
 
-The [Qubit Zoo](/Zoo) is home to the qubits you qnow and love — and some you don't yet. Every qubit modality, architecture, and gate primitive we could find, organized as a living [Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten) with real physics: Hamiltonians, performance metrics, and links to the papers that started it all.
+The [Qubit Zoo](/Zoo) is home to the qubits you qnow and love — and some you don't yet. It is a curated atlas of physical qubit platforms, encodings, and the hardware primitives needed to operate and scale them, organized as a living [Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten) with Hamiltonians, performance metrics, and links to primary papers.
 
 The qubit zoo is for hardcore qubit geeks and (hopefully) motivates further development of new and better qubits and associated quantum gates, some of which may be inspired by old ideas.
 
 In case you didn't qnow* (*the q is silent*), qubits are needed for [quantum computers](https://en.wikipedia.org/wiki/Quantum_computing).
 
-## Explore by Technology Family
+## Explore the Current Facets
+
+These maps are **non-exclusive**: one entry may belong to several facets, and the membership counts therefore add to more than the number of unique Zoo entries. The facets mix physical platforms with encodings, interfaces, and systems roles; a clearer multi-axis taxonomy is in development. Counts are not rankings of importance or maturity.
 
 <!-- FAMILY_TABLE:START -->
 | Family | Entries | Description |
@@ -21,7 +23,7 @@ In case you didn't qnow* (*the q is silent*), qubits are needed for [quantum com
 | [[trapped-ion-moc\|🟡 Trapped Ion]] | 5 | Trapped ions, shuttling architectures |
 | [[neutral-atom-moc\|🟠 Neutral Atom]] | 4 | Rydberg, clock, and nuclear-spin atom encodings |
 | [[photonic-moc\|🔴 Photonic]] | 9 | Discrete-variable and continuous-variable photonics |
-| [[topological-moc\|🟣 Topological]] | 3 | Majorana and topological-superconductor encodings |
+| [[topological-moc\|🟣 Majorana / Topological Superconductor]] | 3 | Majorana and topological-superconductor encodings |
 | [[super-semi-moc\|⚡ Super-Semi]] | 6 | Superconductor-semiconductor hybrid devices |
 | [[color-center-moc\|💎 Color Center]] | 4 | Diamond, silicon, and silicon-carbide defects |
 | [[spin-photon-moc\|🔗 Spin-Photon]] | 5 | Network-emitter and optical-interface qubits |
@@ -42,7 +44,7 @@ In case you didn't qnow* (*the q is silent*), qubits are needed for [quantum com
 ## Interactive Tools
 
 - **[[genealogy|🧬 Qubit Genealogy]]** — Interactive family tree of qubit evolution.
-- **[[racing|🏁 The Qubit Race]]** — Cross-modality gate fidelity chart. *(Coming soon)*
+- **[[racing|🏁 The Qubit Race]]** — Comparison methodology under development; no leaderboard is published yet.
 
 ## Why a Qubit Zoo?
 
@@ -52,7 +54,7 @@ Developments can also be applied across technologies. It pays to understand qubi
 
 ## How This Works
 
-This site is automatically generated from a curated Obsidian vault. A daily pipeline discovers new papers from arXiv, extracts structured knowledge, and adds entries — all verified before publication.
+This site is generated from a curated Obsidian vault. A daily pipeline discovers papers from arXiv and performs structured extraction and model cross-checks. Review depth varies by entry; those automated checks are not independent expert verification, and primary sources remain authoritative.
 
 - **[[qubit-zoo-inclusion-editorial-policy|Editorial Policy]]** — What belongs in the Zoo
 - Use the **graph view** (right sidebar) to explore connections between entries

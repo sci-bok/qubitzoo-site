@@ -20,6 +20,7 @@ The KLM scheme: proves that efficient quantum computation is possible using only
 - **Journal:** [Nature](https://doi.org/10.1038/35051009)
 
 ## Zoo Links
+- [[photonic-qubit]]
 - [[linear-optical-photonic-qubit]]
 - [[dual-rail-photonic-qubit]]
 - [[fusion-based-photonic-qubit]]

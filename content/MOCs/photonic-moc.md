@@ -62,7 +62,3 @@ The highest-value organizing move in this family is to **separate photonic encod
 - Hand off to [[continuous-variable-photonic-qubit]] when the carrier is an oscillator quadrature rather than a two-level single-photon subspace.
 - Hand off from `photonic-qubit` to [[linear-optical-photonic-qubit]], [[photonic-cluster-state-mbqc-qubit]], or [[fusion-based-photonic-qubit]] when the real comparison is the **scaling architecture**.
 - Once the question stops being optical-hardware-specific and becomes, "what does flagged loss buy the decoder?", cross over to [[cross-platform-moc]] through `erasure-qubit` instead of repeating decoder logic inside this family.
-
-## Editorial note
-
-The next highest-value follow-up is a dedicated evergreen note on the photonic split between **encoding choice** (dual-rail vs time-bin) and **scaling strategy** (KLM vs MBQC vs fusion), but the current pass is enough to stop `photonic-qubit` from floating as an undifferentiated umbrella note.

@@ -3,7 +3,7 @@ title: Molecular MOC
 type: moc
 technology_family: Molecular
 note_count: 3
-last_updated: '2026-08-02'
+last_updated: '2026-08-03'
 generated_by: pipeline-moc-v1
 ---
 
@@ -36,6 +36,14 @@ Curated map of Zoo entries in the **Molecular** family.
 - [[nuclear-magnetic-resonance-qubit]] is the ensemble-computing branch: nuclear spins inside molecules are controlled spectroscopically, but room-temperature demonstrations use pseudo-pure ensembles rather than individually addressable pure-state qubits.
 - These are genuinely different hardware models. Their shared label is molecular degrees of freedom, not a shared readout stack or scaling architecture.
 
-## Editorial note
+## Molecular platform routing table
 
-Keep the three branches separate in comparisons: chemistry-designed spin registers, trapped polar rotors, and ensemble NMR solve different problems and have radically different scaling limits.
+| Branch | Logical degree of freedom | Interaction / control route | Readout model | Decisive scaling bottleneck |
+|---|---|---|---|---|
+| [[molecular-qubit]] | Electronic spin states engineered by ligand field, anisotropy, and hyperfine structure | Microwave spin control; proposed resonator and spin-photon interfaces | Ensemble control remains common; single-molecule readout is emerging | No standard scalable two-qubit coupling and readout stack yet |
+| [[polar-molecule-qubit]] | Rotational and hyperfine states of individually trapped molecules | Switchable electric dipole exchange, naturally producing iSWAP-family gates; see [[sqrt-swap-as-universal-gate]] | State-selective survival detection in optical tweezers | Molecule assembly, cooling, loss, and parallel control |
+| [[nuclear-magnetic-resonance-qubit]] | Nuclear spins within an ensemble of molecules | RF pulses plus intramolecular scalar $J$-coupling | Bulk ensemble magnetization | Pseudo-pure-state signal falls exponentially and cannot support single-shot error correction |
+
+Use this table as a routing test: chemical synthesis alone points to the first branch, individually trapped dipolar rotors to the second, and bulk spectroscopic ensembles to the third. A new molecular entry should not be merged into an existing branch merely because its carrier is a molecule.
+
+The three branches should remain separate in comparisons: chemistry-designed spin registers, trapped polar rotors, and ensemble NMR solve different problems and have radically different scaling limits.

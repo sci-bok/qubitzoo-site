@@ -82,6 +82,6 @@ A useful routing rule is that `circuit-qed` is **infrastructure, not a peer qubi
 
 Route superconducting descendants to [[super-semi-moc]] only when the semiconductor weak link or Andreev physics becomes part of the qubit's defining control story. If the central claim is still protected superconducting-circuit design, cavity coupling, or oscillator-level encoding, keep it here even when the fabrication stack overlaps materially with hybrid devices.
 
-## Editorial note
+## Scope boundary
 
-This family mixes bare qubits, bosonic encodings, and enabling infrastructure. Keep the generated table exhaustive, but use the evergreen layer to prevent the family page from becoming a flat list.
+This facet currently mixes bare qubits, bosonic encodings, and enabling infrastructure. Its table is exhaustive within the facet, while the Evergreen links distinguish those different conceptual layers.

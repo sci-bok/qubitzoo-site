@@ -72,6 +72,6 @@ The most common navigation mistake is to group [[alkaline-earth-neutral-atom-clo
 - Route to [[trapped-ion-moc]] when the quiet storage states live inside a **Coulomb crystal** and the real bottleneck is motional-bus engineering, not Rydberg-state borrowing.
 - In practice, [[alkaline-earth-neutral-atom-clock-qubit]] is best read as "clock-state storage inside a neutral-atom processor," not as a softened version of [[ytterbium-hyperfine-qubit]]. The shared coherence philosophy matters, but the architectural constraints diverge as soon as you ask how entanglement, scaling, and reloadability actually work.
 
-## Editorial note
+## Scope boundary
 
-Use this MOC to clarify the family split between interaction primitive and storage encoding. Keep species-specific experimental detail in the source entries, and keep this page focused on why several different neutral-atom notes still belong to one architectural cluster.
+This map distinguishes interaction primitives from storage encodings. Species-specific experimental details live in the source entries; this page explains why several neutral-atom implementations still form one architectural cluster.

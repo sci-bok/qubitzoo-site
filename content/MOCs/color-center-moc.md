@@ -73,5 +73,5 @@ The highest-value use of this MOC is to prevent “color center” from collapsi
 
 - Keep `nv-center-qubit` as the anchor when the question is, "what is the most mature room-temperature defect-spin qubit with a real networking story?"
 - Route to [[spin-photon-moc]] when optical indistinguishability, high zero-phonon-line fraction, or telecom-native interconnects matter more than physical defect taxonomy.
-- Read both MOCs together when Charlie is comparing **defect-spin memory quality** against **network-emitter quality** rather than looking for a single winner.
+- Read both MOCs together when comparing **defect-spin memory quality** against **network-emitter quality** rather than looking for a single winner.
 - Treat [[quantum-transduction]] as the downstream systems check after that split: NV often implies a harder wavelength / interface burden, while `t-center-qubit` can remove part of it by starting inside the telecom stack.

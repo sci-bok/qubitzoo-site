@@ -44,12 +44,16 @@ Optional but encouraged:
 - Explicit scaling bottlenecks
 - Typical operating regime values
 
+`status: demonstrated` is an experimental-maturity claim: the relevant physical object or operation has been realized. It does **not** imply independent specialist review of the page. The requirements above are publication-quality checks, separate from experimental maturity.
+
 ## 4) Metadata policy
 
 - `first_proposed_year` = year of first proposal of the modality, not year of latest processed paper.
 - `technology_family` should never be `Unknown` for stable Zoo entries.
+- `verified_by` records workflow provenance, not independent expert verification.
+- Automated model cross-checking, primary-source checking, specialist review, and external review must not be described as equivalent levels of scrutiny.
 - `generated_by` values:
-  - `scibok-curation` for human-curated/public-facing entries
+  - `scibok-curation` for manually curated/public-facing entries
   - `seed-ingest-v1` only for legacy seed notes pending promotion
 
 ## 5) Protection policy
@@ -58,11 +62,12 @@ Pipeline safety rule:
 - Curated/demonstrated Zoo entries are protected from automated overwrite.
 - Automated processing may append References and side artifacts, but cannot downgrade entry quality.
 
-## 6) Promotion workflow (seed -> demonstrated)
+## 6) Publication workflow for demonstrated entries
 
-To promote a seed entry:
-1. Verify historical metadata (year, seminal refs)
-2. Add physics section + Hamiltonian
-3. Add metrics table with fidelity source references
-4. Validate links and taxonomy conventions
-5. Set `status: demonstrated`, `generated_by: scibok-curation`
+Before publishing an entry with `status: demonstrated`:
+1. Confirm that primary evidence supports the experimental-maturity claim
+2. Check historical metadata (year, seminal references)
+3. Add physics section + Hamiltonian or governing formalism
+4. Add metrics table with fidelity-source references
+5. Validate links and taxonomy conventions
+6. Record the actual review provenance without implying specialist review
