@@ -1,33 +1,36 @@
 {
-  "schema_version": 1,
-  "entry_slug": "andreev-pair-qubit",
-  "artifact_role": "primary",
   "artifact": {
+    "media_type": "image/png",
     "path": "andreev-pair-qubit-figure.png",
-    "sha256": "bdc55b71656923ac274626e0979f34d5d9d417867062d555fc6d48126ebd1934",
-    "media_type": "image/png"
+    "sha256": "e9371e4b95b3dc9a744106a10c72414ee50f5d39f6a9386ab779ac30403ffff5"
+  },
+  "artifact_role": "primary",
+  "blueprint": null,
+  "entry_slug": "andreev-pair-qubit",
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/andreev-pair-qubit-figure-20260805T141420292728Z.png",
+    "supersedes_file": "andreev-pair-qubit-figure.png"
   },
   "renderer": {
-    "name": "openai-imagegen",
-    "provider": "OpenAI",
-    "requested_model": "gpt-image-2",
-    "returned_model": "gpt-image-2"
+    "name": "nano-banana-2",
+    "provider": "Google AI Studio",
+    "requested_model": "google/gemini-3.1-flash-image-preview",
+    "returned_model": "google/gemini-3.1-flash-image-preview"
   },
   "request": {
-    "id": "exec-b708fbff-244c-4136-8696-ab0e8ace9aed",
-    "generated_at": "2026-08-02T17:07:49Z",
-    "prompt_sha256": null,
-    "reconstructed": true
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-08-05T14:14:20.292728+00:00",
+    "id": "gen-1785939249-kHplN4dhMz3jMO68CPyH",
+    "image_size": "1K",
+    "prompt_sha256": "3f50bb1e8852f819c46ff88823994b98af2a950a277a9620686b676a1590b062",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "status": "passed",
-    "reviewer": "Codex scientific visual audit 2026-08-02",
-    "reviewed_at": "2026-08-02T17:07:49Z",
-    "notes": "Corrected candidate with even-parity Andreev-pair encoding, phase-dependent transition, and resonator coupling; misleading curves removed."
+    "notes": "Approved after full-resolution review. Central physics passes: fixed-phase many-body manifolds place even |0> at -E_A, spin-degenerate odd parity at zero, and even |1> at +E_A; the pair transition is hbar omega_A=2E_A; the single 2E_A(phi) curve is positive with a minimum near pi for tau<1; the highlighted E_A equation and quantum-Rabi interaction are correct; the observed 490 MHz coupling and 6 mm APQ1/APQ2 cavity topology are source-backed. Rich apparatus/control/readout detail is retained. One small ancillary x-axis label in the avoided-crossing inset is garbled but does not affect the scientific story.",
+    "reviewed_at": "2026-08-05T14:14:51.186395+00:00",
+    "reviewer": "Scibok daily deep audit 2026-08-05",
+    "status": "passed"
   },
-  "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/agents/main/agent/codex-home/generated_images/019fc2e9-0448-7f03-9a5f-e6fc5f567780/exec-b708fbff-244c-4136-8696-ab0e8ace9aed.png",
-    "candidate_retained": true,
-    "verification": "Candidate generated through the built-in OpenAI image renderer and reviewed at full resolution. Exact prompt text was not retained across gateway transcript compaction; the renderer result ID and candidate file are retained."
-  }
+  "schema_version": 1
 }

@@ -4,6 +4,7 @@ authors: [L. Y. Cheung, R. Haller, A. Kononov, C. Ciaccia, J. H. Ungerer, T. Kan
 year: 2024
 journal: Nature Physics
 doi: 10.1038/s41567-024-02630-w
+arxiv: 2310.15995
 type: reference
 generated_by: scibok-curation
 last_updated: '2026-08-02'
@@ -14,6 +15,7 @@ Demonstrates microwave-photon-mediated coherent coupling between two Andreev pai
 
 ## Links
 - **Journal:** [Nature Physics](https://doi.org/10.1038/s41567-024-02630-w)
+- **Preprint:** [arXiv:2310.15995](https://arxiv.org/abs/2310.15995)
 
 ## Zoo Links
 - [[andreev-pair-qubit]]

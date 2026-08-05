@@ -4,6 +4,7 @@ authors: [L. Bretheau, Ç. Ö. Girit, H. Pothier, D. Esteve, C. Urbina]
 year: 2013
 journal: Nature
 doi: 10.1038/nature12315
+arxiv: 1305.4091
 type: reference
 generated_by: scibok-curation
 last_updated: '2026-08-02'
@@ -14,6 +15,7 @@ First direct spectroscopy of excited even-parity Andreev pair states in supercon
 
 ## Links
 - **Journal:** [Nature](https://doi.org/10.1038/nature12315)
+- **Preprint:** [arXiv:1305.4091](https://arxiv.org/abs/1305.4091)
 
 ## Zoo Links
 - [[andreev-pair-qubit]]
