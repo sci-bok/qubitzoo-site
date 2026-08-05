@@ -22,8 +22,8 @@ figure_reviewed: true
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/cat-codes-figure.provenance.json"
-figure_reviewed_by: "Codex scientific visual audit 2026-08-02"
-figure_reviewed_at: "2026-08-02T14:03:57.745523+00:00"
+figure_reviewed_by: "Codex scientific visual audit 2026-08-05"
+figure_reviewed_at: "2026-08-05T04:45:10.913590+00:00"
 ---
 
 ## Figure

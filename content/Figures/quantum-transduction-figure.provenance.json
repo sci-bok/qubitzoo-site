@@ -2,19 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "quantum-transduction-figure.png",
-    "sha256": "fb82bd5f4280ea942635498d2d76ab1190b2b345224ff7117a1b45beb83ffc17"
+    "sha256": "4200bc0cd666b963753968a2fef96b398b9b4bbdbe74eb42c19a4d439bcbca59"
   },
   "artifact_role": "primary",
-  "blueprint": {
-    "media_type": "image/png",
-    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/quantum-transduction-blueprint.png",
-    "role": "physics-blueprint",
-    "sha256": "be6317856f0a157f510811c9469c85ae4ef3be213de486a95f145a44b7ff84c7",
-    "strict": true
-  },
+  "blueprint": null,
   "entry_slug": "quantum-transduction",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/quantum-transduction-figure-20260802T140913849934Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/quantum-transduction-figure-20260805T043117556937Z.png",
     "supersedes_file": "quantum-transduction-figure.png"
   },
   "renderer": {
@@ -25,16 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-02T14:09:13.849934+00:00",
-    "id": "gen-1785679743-w62IusxDxjekVqwn5hdw",
+    "generated_at": "2026-08-05T04:31:17.556937+00:00",
+    "id": "gen-1785904258-YQgrkD8qRKVWcj0JKM2J",
     "image_size": "1K",
-    "prompt_sha256": "30dd11be6e245f992ff10a2e9a2ea3b30364771f5f7deb81b27308308643b099",
-    "source_media_type": "image/jpeg"
+    "prompt_sha256": "a52ec075bdb31c9f2865bbe6edb2fd56ef330c0f8256ce635e0f06fa9bd46796",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Accurate pump-enhanced microwave-mechanical-optical conversion chain, bidirectional quantum link, and qualitative efficiency/noise/bandwidth targets without unsupported demonstrated numbers.",
-    "reviewed_at": "2026-08-02T14:10:34.376274+00:00",
-    "reviewer": "Codex scientific visual audit 2026-08-02",
+    "notes": "Approved after targeted full-resolution scientific review. The candidate restores the rich explanatory visual language and its central encoding, topology, interactions, and readout/QEC story are sound; minor ancillary typography is acceptable.",
+    "reviewed_at": "2026-08-05T04:32:43.473822+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-05",
     "status": "passed"
   },
   "schema_version": 1

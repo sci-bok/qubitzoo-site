@@ -2,19 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "binomial-codes-figure.png",
-    "sha256": "917e958677cba2fabcaeacf0b88be8d84df35f0976b4332d0972238f51a9ecba"
+    "sha256": "f6c60d53ac6402be20b6da997414d801f4bb75a63a823875fbc569c2dd93ace3"
   },
   "artifact_role": "primary",
-  "blueprint": {
-    "media_type": "image/png",
-    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/binomial-codes-blueprint.png",
-    "role": "physics-blueprint",
-    "sha256": "caf0d34016f4a42391cc2e8c6cd25cb5f1e41a0df22a3ee9eca7e7653eed0038",
-    "strict": true
-  },
+  "blueprint": null,
   "entry_slug": "binomial-codes",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/binomial-codes-figure-20260802T134324967279Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/binomial-codes-figure-20260805T043624595215Z.png",
     "supersedes_file": "binomial-codes-figure.png"
   },
   "renderer": {
@@ -25,16 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-02T13:43:24.967279+00:00",
-    "id": "gen-1785678194-v5q6p9weT7R4JDGFryQ0",
+    "generated_at": "2026-08-05T04:36:24.595215+00:00",
+    "id": "gen-1785904575-k080zd3TV4HFFOYBl67W",
     "image_size": "1K",
-    "prompt_sha256": "39e0126a9a7c373c5c067f4a0e86900b27400d1addf46bbe05e8d32ef46f04fe",
-    "source_media_type": "image/jpeg"
+    "prompt_sha256": "ea40a9c9590ca24fce6d7fe844b97ca789cb3be787de4c174aeede971b4462e6",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Accurate lowest-order binomial codewords, one-photon-loss mapping to odd parity, and parity syndrome; equations and labels verified at full resolution.",
-    "reviewed_at": "2026-08-02T13:47:41.952046+00:00",
-    "reviewer": "Codex scientific visual audit 2026-08-02",
+    "notes": "Approved rich explanatory Wave 2 plate after full-resolution scientific review. Central device/code structure, logical encoding, control, error mechanism, and readout/system consequence pass; minor ancillary typography is accepted.",
+    "reviewed_at": "2026-08-05T04:45:10.861862+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-05",
     "status": "passed"
   },
   "schema_version": 1

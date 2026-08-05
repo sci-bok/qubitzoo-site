@@ -2,19 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "rx-qubit-figure.png",
-    "sha256": "3fee8373e950eb41903bbed7aedac087c7deac277a8f5cd6f146dd12cef62968"
+    "sha256": "1564eee18e411a81f5a4b5b475dc0742e05b29927a7c120cc1e38efac238c86f"
   },
   "artifact_role": "primary",
-  "blueprint": {
-    "media_type": "image/png",
-    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/rx-qubit-blueprint.png",
-    "role": "physics-blueprint",
-    "sha256": "e516396a0cd13d0903c899ed0e17ea3bea61e805c1a700ff9e52bc85252e7934",
-    "strict": true
-  },
+  "blueprint": null,
   "entry_slug": "rx-qubit",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/rx-qubit-figure-20260802T141405333124Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/rx-qubit-figure-20260805T055221436535Z.png",
     "supersedes_file": "rx-qubit-figure.png"
   },
   "renderer": {
@@ -25,16 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-02T14:14:05.333124+00:00",
-    "id": "gen-1785680038-MBhsE0X3NHmDdZpCGR6S",
+    "generated_at": "2026-08-05T05:52:21.436535+00:00",
+    "id": "gen-1785909130-eICGHkadFtcXEGsHnWNj",
     "image_size": "1K",
-    "prompt_sha256": "a75b67b32b5acd5713a6a15c8d43238b1c5c10dcf5f1b767a61afec3f1ff4ac7",
-    "source_media_type": "image/jpeg"
+    "prompt_sha256": "2784a85f2624b65e3df06f631db817ead262d1d3e07e7f3356dc45ce6f0faa14",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Accurate symmetric three-electron triple dot at JLC=JRC, encoded S=1/2 sweet spot, and resonant modulation of JLC-JRC for transverse rotations; no duplicated panel or resonator-transfer drawing.",
-    "reviewed_at": "2026-08-02T14:16:00.693871+00:00",
-    "reviewer": "Codex scientific visual audit 2026-08-02",
+    "notes": "Approved after sweet-spot correction. The RX splitting now has a local extremum at the symmetric point, with resonant exchange control, charge readout, and resonator scaling presented coherently.",
+    "reviewed_at": "2026-08-05T06:04:01.936576+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-05",
     "status": "passed"
   },
   "schema_version": 1

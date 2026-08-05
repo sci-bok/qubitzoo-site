@@ -2,19 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "t-center-qubit-figure.png",
-    "sha256": "3c306f7079fef9758e1986ace9c12fca7e74e3c6e50c0ff6d08de47c96471dcc"
+    "sha256": "e38a909a65046549c9b378c966aeb34228612166ec09382c6ad4aff78bc823ad"
   },
   "artifact_role": "primary",
-  "blueprint": {
-    "media_type": "image/png",
-    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/t-center-qubit-blueprint.png",
-    "role": "physics-blueprint",
-    "sha256": "41d9b65dd5721a49f9b3e4ec30177ded7f818573e318ee86f28ccdb1b52ab4fb",
-    "strict": true
-  },
+  "blueprint": null,
   "entry_slug": "t-center-qubit",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/t-center-qubit-figure-20260802T143349513215Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/t-center-qubit-figure-20260805T052004475906Z.png",
     "supersedes_file": "t-center-qubit-figure.png"
   },
   "renderer": {
@@ -25,16 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-02T14:33:49.513215+00:00",
-    "id": "gen-1785681219-FMgOBGc3ejRTRtVQdXQr",
+    "generated_at": "2026-08-05T05:20:04.475906+00:00",
+    "id": "gen-1785907186-LiqgcOdcGhSJYlXvoKnK",
     "image_size": "1K",
-    "prompt_sha256": "2df1803fc3fc22bf970872a14c34630adba0de2faea3bbbb76ea11f486856842",
-    "source_media_type": "image/jpeg"
+    "prompt_sha256": "1390e01b6531b765ed7a0eb4a8cf90f5f21a5880bff2a321ffe8b7f31c8b0c7b",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "PASS: correct C-C-H point defect, electron-plus-nuclear spin sublevels with 1326 nm optical transition, and a continuous two-photon beam-splitter-to-detector heralding path without spurious equations.",
-    "reviewed_at": "2026-08-02T14:34:03.726746+00:00",
-    "reviewer": "Codex scientific visual audit 2026-08-02",
+    "notes": "Approved rich explanatory Wave 3 plate after full-resolution review. The central hardware/encoding/control/readout or infrastructure narrative is sound; minor ancillary labels and rendering artifacts are accepted under the detail-first policy.",
+    "reviewed_at": "2026-08-05T05:30:32.098957+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-05",
     "status": "passed"
   },
   "schema_version": 1

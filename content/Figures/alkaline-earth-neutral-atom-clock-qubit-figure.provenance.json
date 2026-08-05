@@ -2,19 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "alkaline-earth-neutral-atom-clock-qubit-figure.png",
-    "sha256": "31a8e313e4c1eed7725b9a8ba0424059a71cff837334edbc1449578e3f85bfe2"
+    "sha256": "3457cce1fada53ccbfeaabbb52b7ebf87e526e68f7f5e7111237412c3720fc66"
   },
   "artifact_role": "primary",
-  "blueprint": {
-    "media_type": "image/png",
-    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/alkaline-earth-neutral-atom-clock-qubit-blueprint.png",
-    "role": "physics-blueprint",
-    "sha256": "05acab75795f6a1aa9445682bb152a06513c0d213e096f1f4d9b9ff907f23bd9",
-    "strict": true
-  },
+  "blueprint": null,
   "entry_slug": "alkaline-earth-neutral-atom-clock-qubit",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/alkaline-earth-neutral-atom-clock-qubit-figure-20260802T134259704104Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/alkaline-earth-neutral-atom-clock-qubit-figure-20260805T042901875216Z.png",
     "supersedes_file": "alkaline-earth-neutral-atom-clock-qubit-figure.png"
   },
   "renderer": {
@@ -25,16 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-02T13:42:59.704104+00:00",
-    "id": "gen-1785678169-AAEnkl2jWzdAaLAeYuXA",
+    "generated_at": "2026-08-05T04:29:01.875216+00:00",
+    "id": "gen-1785904131-kyb0PWfvGMIPbb9Vskm6",
     "image_size": "1K",
-    "prompt_sha256": "a94c039b5cddca886af0a234d8cbd3506c1b38a5a15a781a60826a21185f2d33",
-    "source_media_type": "image/jpeg"
+    "prompt_sha256": "b402c44fe1843c766eae7de38004d93bdb5021852771a0642668d820584316cb",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Accurate 171Yb clock/nuclear-spin/Rydberg-blockade schematic; state labels, level ordering, Raman coupling, and blockade relation verified at full resolution. Minor extra Rydberg descriptor is scientifically correct.",
-    "reviewed_at": "2026-08-02T13:47:38.283916+00:00",
-    "reviewer": "Codex scientific visual audit 2026-08-02",
+    "notes": "Approved after targeted full-resolution scientific review. The candidate restores the rich explanatory visual language and its central encoding, topology, interactions, and readout/QEC story are sound; minor ancillary typography is acceptable.",
+    "reviewed_at": "2026-08-05T04:32:43.157761+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-05",
     "status": "passed"
   },
   "schema_version": 1

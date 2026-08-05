@@ -2,19 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "cos2phi-qubit-figure.png",
-    "sha256": "985356197717f539a2f312fe622e6c74f2b0ec2f755b4ded077d3f461f08fb5c"
+    "sha256": "fa4680f16905b7b732f621a73d886b950fd579f0565c5e1e1e8bd937e28aee05"
   },
   "artifact_role": "primary",
-  "blueprint": {
-    "media_type": "image/png",
-    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/cos2phi-qubit-blueprint.png",
-    "role": "physics-blueprint",
-    "sha256": "d03f17cea0cc60c2199d2b1dbb0c3e8f09d01962394a918c2f799cb0e9a42af0",
-    "strict": true
-  },
+  "blueprint": null,
   "entry_slug": "cos2phi-qubit",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/cos2phi-qubit-figure-20260802T135535565617Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/cos2phi-qubit-figure-20260805T044907837546Z.png",
     "supersedes_file": "cos2phi-qubit-figure.png"
   },
   "renderer": {
@@ -25,16 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-02T13:55:35.565617+00:00",
-    "id": "gen-1785678926-G14Ab8XrRUcsEDVrjzdw",
+    "generated_at": "2026-08-05T04:49:07.837546+00:00",
+    "id": "gen-1785905330-LkK6rMUFn2AstRiGM3xN",
     "image_size": "1K",
-    "prompt_sha256": "5430f73591e7d99a58ef928c0777af720c9860a3c1c85a72bd5a45f145ca144c",
-    "source_media_type": "image/jpeg"
+    "prompt_sha256": "1cb328c25708099705467c87b75fafa8a7731d74224a65137cdeeac5bcd0d8b3",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Accurate minimal effective cos(2phi) element, pi-periodic potential with logical wells, and qualitative dual-noise protection; no misleading ordinary-series-junction realization or performance claims.",
-    "reviewed_at": "2026-08-02T13:57:26.397966+00:00",
-    "reviewer": "Codex scientific visual audit 2026-08-02",
+    "notes": "Approved after targeted mechanism correction. The rich explanatory structure and central Andreev-spin, cos(2phi), or direct-gmon physics now pass; minor small-label and metric typography imperfections are accepted.",
+    "reviewed_at": "2026-08-05T04:53:58.027571+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-05",
     "status": "passed"
   },
   "schema_version": 1

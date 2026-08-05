@@ -2,15 +2,14 @@
   "artifact": {
     "media_type": "image/png",
     "path": "kerr-cat-qubit-figure.png",
-    "sha256": "306b5559ec5f44de4ba9e2824db9fd351659765ff94983851ae9d73a2fdd5dc9"
+    "sha256": "bd72ac5b96e515d5fead30cead7a4fd8a6b2647929f456b7aff7b902f9fda04b"
   },
   "artifact_role": "primary",
+  "blueprint": null,
   "entry_slug": "kerr-cat-qubit",
   "lineage": {
-    "historical_import": true,
-    "origin_commit": "96335d772df99ab1d56cd0162a453ad4c7bbe8ea",
-    "origin_commit_subject": "figures: generate all 60 Zoo entry figures + cleanup stale assets",
-    "verification": "Renderer identity reconstructed from the Qubit Zoo Nano Banana 2 generation record; original provider request metadata was not retained."
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/kerr-cat-qubit-figure-20260805T051844812688Z.png",
+    "supersedes_file": "kerr-cat-qubit-figure.png"
   },
   "renderer": {
     "name": "nano-banana-2",
@@ -19,15 +18,18 @@
     "returned_model": "google/gemini-3.1-flash-image-preview"
   },
   "request": {
-    "generated_at": "2026-03-15T18:06:35-04:00",
-    "id": null,
-    "prompt_sha256": null,
-    "reconstructed": true
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-08-05T05:18:44.812688+00:00",
+    "id": "gen-1785907109-cR8jmF8duR7OVW8tMyuH",
+    "image_size": "1K",
+    "prompt_sha256": "b27f503fe6d0dc78dc7ca11ebd1083882654f9992c94dc1702a98b87004d4928",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Full-resolution asset audit confirmed that this embedded primary is legible and traces to the historical Nano Banana 2 generation workflow, so it was retained to avoid unnecessary regeneration. This renderer/coverage review does not claim a new scientific peer review of every label.",
-    "reviewed_at": "2026-08-02T03:07:08.132079+00:00",
-    "reviewer": "codex-site-image-audit-2026-08-01",
+    "notes": "Approved rich explanatory Wave 3 plate after full-resolution review. The central hardware/encoding/control/readout or infrastructure narrative is sound; minor ancillary labels and rendering artifacts are accepted under the detail-first policy.",
+    "reviewed_at": "2026-08-05T05:30:31.996360+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-05",
     "status": "passed"
   },
   "schema_version": 1

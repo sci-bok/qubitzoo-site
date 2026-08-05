@@ -3,9 +3,7 @@ title: Bosonic Qubit
 entry_type: qubit
 technology_family: Superconducting
 status: demonstrated
-figure_reviewed: false
-figure_policy: none
-figure_reason: umbrella category delegates schematics to specific bosonic encodings
+figure_reviewed: true
 first_proposed_year: 2001
 first_demonstrated_year: 2013
 keywords:
@@ -19,13 +17,18 @@ last_updated: '2026-03-21'
 generated_by: scibok-curation
 extracted_by: claude-code
 verified_by: scibok-manual-2026-03-21
+figure_renderer: "nano-banana-2"
+figure_model: "google/gemini-3.1-flash-image-preview"
+figure_provenance: "Figures/bosonic-qubit-figure.provenance.json"
+figure_reviewed_by: "Codex scientific visual audit 2026-08-05"
+figure_reviewed_at: "2026-08-05T04:28:42.537869+00:00"
 ---
 
 > **Note:** This is a **category entry** covering the bosonic qubit paradigm. Individual bosonic encodings have their own detailed entries: [[cat-codes]], [[binomial-codes]], [[gkp-codes]].
 
 ## Figure
 
-*(No dedicated figure — see individual encoding entries for specific schematics.)*
+![[bosonic-qubit-figure.png]]
 
 ## Description
 

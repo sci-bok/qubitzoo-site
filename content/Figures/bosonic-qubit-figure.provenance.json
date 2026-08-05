@@ -1,0 +1,36 @@
+{
+  "artifact": {
+    "media_type": "image/png",
+    "path": "bosonic-qubit-figure.png",
+    "sha256": "b0a065083d67f1f67a08c83b9207f74f7ca77165518054366b4e75cbe7656c51"
+  },
+  "artifact_role": "primary",
+  "blueprint": null,
+  "entry_slug": "bosonic-qubit",
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/bosonic-qubit-figure-20260805T042521186436Z.png",
+    "supersedes_file": "bosonic-qubit-figure.png"
+  },
+  "renderer": {
+    "name": "nano-banana-2",
+    "provider": "Google AI Studio",
+    "requested_model": "google/gemini-3.1-flash-image-preview",
+    "returned_model": "google/gemini-3.1-flash-image-preview"
+  },
+  "request": {
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-08-05T04:25:21.186436+00:00",
+    "id": "gen-1785903910-ctkqJQR2Dto8rufAIZUt",
+    "image_size": "1K",
+    "prompt_sha256": "64ebf1dad178100f638dc7cba1823a6b389c0ec4a496b2a292a793873a5accdb",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
+  },
+  "review": {
+    "notes": "Approved rich explanatory plate after full-resolution review. Apparatus-to-encoding/control/readout narrative is strong; central physics is sound. Minor ancillary typography imperfections are acceptable under the approved visual policy.",
+    "reviewed_at": "2026-08-05T04:28:42.537869+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-05",
+    "status": "passed"
+  },
+  "schema_version": 1
+}

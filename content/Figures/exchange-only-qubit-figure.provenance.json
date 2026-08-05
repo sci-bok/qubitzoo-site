@@ -2,19 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "exchange-only-qubit-figure.png",
-    "sha256": "1ab74dc6ffb08e531c6aa9e8498c28dd2c17760f83a68fe341c57232ff347ed3"
+    "sha256": "aad1866533412274534ca326bba8fb4bee828f25a8899c7c5be3c866a9de3164"
   },
   "artifact_role": "primary",
-  "blueprint": {
-    "media_type": "image/png",
-    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/exchange-only-qubit-blueprint.png",
-    "role": "physics-blueprint",
-    "sha256": "b6ac1f1b4c22c176ac35e6ea4181a4266c2f4c1845d148dc15b9cb7dbb11ac7c",
-    "strict": true
-  },
+  "blueprint": null,
   "entry_slug": "exchange-only-qubit",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/exchange-only-qubit-figure-20260802T135547866943Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/exchange-only-qubit-figure-20260805T042932161363Z.png",
     "supersedes_file": "exchange-only-qubit-figure.png"
   },
   "renderer": {
@@ -25,16 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-02T13:55:47.866943+00:00",
-    "id": "gen-1785678937-flPbVlNeI2cMUNdsEH2H",
+    "generated_at": "2026-08-05T04:29:32.161363+00:00",
+    "id": "gen-1785904159-FhKV7fYpEFB71tbderL7",
     "image_size": "1K",
-    "prompt_sha256": "3267d280586199698f6b8be59bf88325aabf2b253858a1e4c6dcf1b0ed5280f3",
-    "source_media_type": "image/jpeg"
+    "prompt_sha256": "83e631cb68a71b7ce513806daa992bae292dfb87bfbb4b44a771c32d93712497",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Accurate three-electron linear triple dot with J12/J23 exchange-pulse control and fixed-S=1/2 encoded subspace; no malformed codewords or invented metrics.",
-    "reviewed_at": "2026-08-02T13:57:28.239616+00:00",
-    "reviewer": "Codex scientific visual audit 2026-08-02",
+    "notes": "Approved after targeted full-resolution scientific review. The candidate restores the rich explanatory visual language and its central encoding, topology, interactions, and readout/QEC story are sound; minor ancillary typography is acceptable.",
+    "reviewed_at": "2026-08-05T04:32:43.264265+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-05",
     "status": "passed"
   },
   "schema_version": 1

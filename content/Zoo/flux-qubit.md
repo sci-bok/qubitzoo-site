@@ -21,8 +21,8 @@ verified_by: scibok-manual-2026-03-21
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/flux-qubit-figure.provenance.json"
-figure_reviewed_by: "Codex scientific visual audit 2026-08-02"
-figure_reviewed_at: "2026-08-02T13:57:30.092986+00:00"
+figure_reviewed_by: "Codex scientific visual audit 2026-08-05"
+figure_reviewed_at: "2026-08-05T06:17:53.042422+00:00"
 ---
 
 ## Figure

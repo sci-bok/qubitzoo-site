@@ -2,19 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "siv-color-center-qubit-figure.png",
-    "sha256": "741b020bf04a4bf5f0266562aeb91a68b02c73cdda6d8e0c33d1ab3d518a4051"
+    "sha256": "cc3f37d22b652b0eab79cd7a350b9d417ab2e9c8280fa69c39a6765ba8e77f60"
   },
   "artifact_role": "primary",
-  "blueprint": {
-    "media_type": "image/png",
-    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/siv-color-center-qubit-blueprint.png",
-    "role": "physics-blueprint",
-    "sha256": "5b94301bee3ba3bb8c531120ea5af1799c2987b6126b8253533ba765df2b6f6e",
-    "strict": true
-  },
+  "blueprint": null,
   "entry_slug": "siv-color-center-qubit",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/siv-color-center-qubit-figure-20260802T141927441513Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/siv-color-center-qubit-figure-20260805T043849369340Z.png",
     "supersedes_file": "siv-color-center-qubit-figure.png"
   },
   "renderer": {
@@ -25,16 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-02T14:19:27.441513+00:00",
-    "id": "gen-1785680356-HKHKB9GujKq9hvBPgcE9",
+    "generated_at": "2026-08-05T04:38:49.369340+00:00",
+    "id": "gen-1785904709-fbjEifZtJrIzYLklDMZx",
     "image_size": "1K",
-    "prompt_sha256": "a7a08ee1a5d2f8688e65397ea1f6d3b9dfacbe278b2b2b15a5f49a1f1a9995bd",
-    "source_media_type": "image/jpeg"
+    "prompt_sha256": "ab312bdf1e05422d6be2d71c3ee4001596a088c0e1c6bf45d97ea3e705c360cd",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Accurate SiV- split-vacancy geometry, explicitly labeled ground-orbital branches separated by about 48 GHz, 737 nm optical transition, and clear separation from SnV- level structure; no malformed spin labels or mixed title.",
-    "reviewed_at": "2026-08-02T14:19:46.594024+00:00",
-    "reviewer": "Codex scientific visual audit 2026-08-02",
+    "notes": "Approved rich explanatory Wave 2 plate after full-resolution scientific review. Central device/code structure, logical encoding, control, error mechanism, and readout/system consequence pass; minor ancillary typography is accepted.",
+    "reviewed_at": "2026-08-05T04:45:11.171751+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-05",
     "status": "passed"
   },
   "schema_version": 1

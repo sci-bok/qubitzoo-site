@@ -2,19 +2,19 @@
   "artifact": {
     "media_type": "image/png",
     "path": "trapped-ion-qubit-figure.png",
-    "sha256": "fa8ecb050cd5cdbdf871b7ce42efa53a77102be19664089a558e4d73bd69200c"
+    "sha256": "ea859d895e92d940608d828014c32b382a6c74ee31898d5a5e4ae0c20acbe0a4"
   },
   "artifact_role": "primary",
   "blueprint": {
     "media_type": "image/png",
-    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/trapped-ion-qubit-blueprint.png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/trapped-ion-qubit-figure.png",
     "role": "physics-blueprint",
-    "sha256": "7aff1cd834b5c393bf3a565e061d96a7b5765b7dd703b860f0e58e53bd65175c",
-    "strict": true
+    "sha256": "fa8ecb050cd5cdbdf871b7ce42efa53a77102be19664089a558e4d73bd69200c",
+    "strict": false
   },
   "entry_slug": "trapped-ion-qubit",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/trapped-ion-qubit-figure-20260802T142459065985Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/trapped-ion-qubit-figure-20260805T042459500538Z.png",
     "supersedes_file": "trapped-ion-qubit-figure.png"
   },
   "renderer": {
@@ -25,16 +25,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-02T14:24:59.065985+00:00",
-    "id": "gen-1785680689-IIp52WKJpgDBw1EojlNP",
+    "generated_at": "2026-08-05T04:24:59.500538+00:00",
+    "id": "gen-1785903887-DV4XPmhekNcCCgngbuOS",
     "image_size": "1K",
-    "prompt_sha256": "29aeba5d06a8d399d474a3f9c61d56291154ca1c4654862633794c3bc334a38a",
-    "source_media_type": "image/jpeg"
+    "prompt_sha256": "3df9026d840469c7d321be81e0a13ad075546f699abb6cac2c6af29d5dd11dad",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "PASS: consistent 171Yb+ species, correct F=0/F=1 hyperfine qubit labels and 369 nm state-dependent fluorescence, plus shared-motion-mediated two-ion interaction.",
-    "reviewed_at": "2026-08-02T14:28:45.600586+00:00",
-    "reviewer": "Codex scientific visual audit 2026-08-02",
+    "notes": "Approved rich explanatory plate after full-resolution review. Apparatus-to-encoding/control/readout narrative is strong; central physics is sound. Minor ancillary typography imperfections are acceptable under the approved visual policy.",
+    "reviewed_at": "2026-08-05T04:28:42.485509+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-05",
     "status": "passed"
   },
   "schema_version": 1

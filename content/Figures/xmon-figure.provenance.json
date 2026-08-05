@@ -2,19 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "xmon-figure.png",
-    "sha256": "db2f72b8a113dc282c8d766024a2c5b85d2c0cb72dcd7a7a2b2f15059d49a709"
+    "sha256": "2c88978b6f3209bb57a91491f82f4fb5648dba2cda471645000ada506afdb8ca"
   },
   "artifact_role": "primary",
-  "blueprint": {
-    "media_type": "image/png",
-    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/xmon-blueprint.png",
-    "role": "physics-blueprint",
-    "sha256": "cf5e4df431cb795b392b15e1cc63283ac22a305cd890c757ae3a0d55073f1ae7",
-    "strict": true
-  },
+  "blueprint": null,
   "entry_slug": "xmon",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/xmon-figure-20260802T143216714310Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/xmon-figure-20260805T043915446190Z.png",
     "supersedes_file": "xmon-figure.png"
   },
   "renderer": {
@@ -25,16 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-02T14:32:16.714310+00:00",
-    "id": "gen-1785681128-RapyAmq1XlgEEzm1GCLD",
+    "generated_at": "2026-08-05T04:39:15.446190+00:00",
+    "id": "gen-1785904732-CwE1btBXe5lKSrZGbBMG",
     "image_size": "1K",
-    "prompt_sha256": "600026285ff9ac7a992b9f678005ba698009129c633d3c3289a58146fb2c0df4",
-    "source_media_type": "image/jpeg"
+    "prompt_sha256": "dad39d6cd71f13176ed390f1961fc1d69aec7b5c0e62491efebae5e41fe60f42",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "PASS: correct cross-capacitor geometry; single SQUID label in the parallel tunable circuit with external flux; anharmonic |0>, |1>, |2> levels are correctly shown.",
-    "reviewed_at": "2026-08-02T14:33:01.759110+00:00",
-    "reviewer": "Codex scientific visual audit 2026-08-02",
+    "notes": "Approved rich explanatory Wave 2 plate after full-resolution scientific review. Central device/code structure, logical encoding, control, error mechanism, and readout/system consequence pass; minor ancillary typography is accepted.",
+    "reviewed_at": "2026-08-05T04:45:11.223399+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-05",
     "status": "passed"
   },
   "schema_version": 1

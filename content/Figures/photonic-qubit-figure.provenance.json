@@ -2,19 +2,19 @@
   "artifact": {
     "media_type": "image/png",
     "path": "photonic-qubit-figure.png",
-    "sha256": "f6460334c9f21e6d49d2005d9d8e199eeb5ec393b93b289ca4334584af1ae7d8"
+    "sha256": "f9f712fa0eb526adad51561f6ccba5a426eff64f93733a858c684c0185aa496f"
   },
   "artifact_role": "primary",
   "blueprint": {
     "media_type": "image/png",
-    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-01/photonic-qubit-blueprint.png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/photonic-qubit-figure.png",
     "role": "physics-blueprint",
-    "sha256": "d933fa6d324764c5a76261c0a3592ce9b528b50c16fa15cc19821e91c2b9569d",
-    "strict": true
+    "sha256": "f6460334c9f21e6d49d2005d9d8e199eeb5ec393b93b289ca4334584af1ae7d8",
+    "strict": false
   },
   "entry_slug": "photonic-qubit",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/photonic-qubit-figure-20260802T030333040738Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/photonic-qubit-figure-20260805T042247894158Z.png",
     "supersedes_file": "photonic-qubit-figure.png"
   },
   "renderer": {
@@ -25,16 +25,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-02T03:03:33.040738+00:00",
-    "id": "gen-1785639805-3z4X2DuDnd1ZU45cPAlg",
+    "generated_at": "2026-08-05T04:22:47.894158+00:00",
+    "id": "gen-1785903755-2zqgkzlDXH0s8I48JI08",
     "image_size": "1K",
-    "prompt_sha256": "dbc821cade246311030c05989c72bba8aa1da7d0081db9e472cb395dcb74af4a",
-    "source_media_type": "image/jpeg"
+    "prompt_sha256": "63606cb6591432c41ce1cc1773d1f22b801e81320f5723dda0f97948c21cd2a7",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Approved: clean, correct comparison of polarization, dual-rail, and time-bin single-photon encodings.",
-    "reviewed_at": "2026-08-02T03:05:12.367092+00:00",
-    "reviewer": "codex-visual-physics-review-2026-08-01",
+    "notes": "Approved rich explanatory plate after full-resolution review. Apparatus-to-encoding/control/readout narrative is strong; central physics is sound. Minor ancillary typography imperfections are acceptable under the approved visual policy.",
+    "reviewed_at": "2026-08-05T04:28:42.327099+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-05",
     "status": "passed"
   },
   "schema_version": 1

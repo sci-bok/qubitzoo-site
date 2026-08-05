@@ -7,8 +7,8 @@ figure_reviewed: true
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/polarization-photonic-qubit-figure.provenance.json"
-figure_reviewed_by: "Codex independent scientific visual audit 2026-08-03"
-figure_reviewed_at: "2026-08-03T14:12:42.222473+00:00"
+figure_reviewed_by: "Codex scientific visual audit 2026-08-05"
+figure_reviewed_at: "2026-08-05T04:32:43.370163+00:00"
 keywords: [photon polarization, horizontal vertical, waveplate, CNOT, quantum communication, integrated photonics]
 influence_score: 0.80
 last_updated: '2026-08-02'

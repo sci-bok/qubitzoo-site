@@ -21,8 +21,8 @@ verified_by: scibok-manual-2026-03-21
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/dual-rail-superconducting-qubit-figure.provenance.json"
-figure_reviewed_by: "codex-visual-physics-review-2026-08-01"
-figure_reviewed_at: "2026-08-02T02:59:40.853408+00:00"
+figure_reviewed_by: "Codex scientific visual audit 2026-08-05"
+figure_reviewed_at: "2026-08-05T04:45:11.017052+00:00"
 ---
 
 ## Figure

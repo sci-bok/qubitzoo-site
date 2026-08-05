@@ -2,19 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "cat-codes-figure.png",
-    "sha256": "63864e66a2153ff7ea7f22905fdf08eff5665989ddb0e62196b848acb5c65b38"
+    "sha256": "65cf670607e953f352b30acaca26f4c2ff1df6ea3f70d65aa335412821170b9f"
   },
   "artifact_role": "primary",
-  "blueprint": {
-    "media_type": "image/png",
-    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/cat-codes-blueprint.png",
-    "role": "physics-blueprint",
-    "sha256": "b66bed2882f351ec690ec6f2a60a1f63eb27b9727fc80774103fdab1df316ab2",
-    "strict": true
-  },
+  "blueprint": null,
   "entry_slug": "cat-codes",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/cat-codes-figure-20260802T140153098256Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/cat-codes-figure-20260805T043637718452Z.png",
     "supersedes_file": "cat-codes-figure.png"
   },
   "renderer": {
@@ -25,16 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-02T14:01:53.098256+00:00",
-    "id": "gen-1785679302-mmKkIwSXO2I4MyT7yo2f",
+    "generated_at": "2026-08-05T04:36:37.718452+00:00",
+    "id": "gen-1785904587-IyMwBjf44vUiyx9qRHzH",
     "image_size": "1K",
-    "prompt_sha256": "6fe2192a18dac33e01f9dbeb404dc61c98bf5257f8bd0d3a39a17fd7c70df065",
-    "source_media_type": "image/jpeg"
+    "prompt_sha256": "165167b22d0985559b63781b24dca7ab57c1c5c25540814e530750917d57aa22",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Accurate even/odd cat-state definitions, one-photon parity toggle, and two-photon stabilization at coherent amplitudes plus/minus alpha; exactly three panels and no metrics or unrelated chip architecture.",
-    "reviewed_at": "2026-08-02T14:03:57.745523+00:00",
-    "reviewer": "Codex scientific visual audit 2026-08-02",
+    "notes": "Approved rich explanatory Wave 2 plate after full-resolution scientific review. Central device/code structure, logical encoding, control, error mechanism, and readout/system consequence pass; minor ancillary typography is accepted.",
+    "reviewed_at": "2026-08-05T04:45:10.913590+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-05",
     "status": "passed"
   },
   "schema_version": 1

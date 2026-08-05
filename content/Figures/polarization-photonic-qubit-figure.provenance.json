@@ -2,19 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "polarization-photonic-qubit-figure.png",
-    "sha256": "3934626626c4a4ae96aea334197c4e0f17d49c10403261f59f21d066c8b9f9d6"
+    "sha256": "ff3f888ae16f62eb1f8cfde930e6a18661ccf388ff6cf60b260f96917e55716b"
   },
   "artifact_role": "primary",
-  "blueprint": {
-    "media_type": "image/png",
-    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/vault/Figures/.candidates/polarization-photonic-qubit-blueprint-v2.png",
-    "role": "physics-blueprint",
-    "sha256": "07f4a13827220e413fbc9515aad100eaa6a95358f0e77dc3eef93b5bc66a70d0",
-    "strict": true
-  },
+  "blueprint": null,
   "entry_slug": "polarization-photonic-qubit",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/vault/Figures/.candidates/polarization-photonic-qubit-figure-20260803T141117982542Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/polarization-photonic-qubit-figure-20260805T043031596929Z.png",
     "supersedes_file": "polarization-photonic-qubit-figure.png"
   },
   "renderer": {
@@ -25,16 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-03T14:11:17.982542+00:00",
-    "id": "gen-1785766258-0Cjd6niUhM0pntapTc4o",
-    "image_size": "2K",
-    "prompt_sha256": "37897757d43d8e467fd08463666b1876c16eeec97e7f0d3c565f0502c24bbf47",
-    "source_media_type": "image/jpeg"
+    "generated_at": "2026-08-05T04:30:31.596929+00:00",
+    "id": "gen-1785904218-a9BICsozlKFzOjzOT6bS",
+    "image_size": "1K",
+    "prompt_sha256": "be61ad7e51a84fd3736097701e924fadb7198228b2d327d63dcf7cab5f0db8de",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "PASS: transverse H/V encoding and normalization are correct; QWP-HWP-QWP control and PBS H/V outputs are unambiguous; Crespi PPDC transmissivities, the single HOM interaction, coincidence postselection, and P=1/9 are explicit; no garbled labels or deterministic-gate implication remain.",
-    "reviewed_at": "2026-08-03T14:12:42.222473+00:00",
-    "reviewer": "Codex independent scientific visual audit 2026-08-03",
+    "notes": "Approved after targeted full-resolution scientific review. The candidate restores the rich explanatory visual language and its central encoding, topology, interactions, and readout/QEC story are sound; minor ancillary typography is acceptable.",
+    "reviewed_at": "2026-08-05T04:32:43.370163+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-05",
     "status": "passed"
   },
   "schema_version": 1

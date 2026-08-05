@@ -2,19 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "bacon-shor-code-figure.png",
-    "sha256": "2595780820582a0929b121a27e13c15f6bde74da928edf73d70079ed8d283bf7"
+    "sha256": "658e4cfe2b36f3913018f33adb11f3afeeb8a2456a6086f2baf7935a5c5cc4c4"
   },
   "artifact_role": "primary",
-  "blueprint": {
-    "media_type": "image/png",
-    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/bacon-shor-code-blueprint.png",
-    "role": "physics-blueprint",
-    "sha256": "1815ac7f4f587e1cd006f4e82e2a400b57a93d8ae2cbb23e3d40758e911c30e7",
-    "strict": true
-  },
+  "blueprint": null,
   "entry_slug": "bacon-shor-code",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/bacon-shor-code-figure-20260726T022258420139Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/bacon-shor-code-figure-20260805T053534138381Z.png",
     "supersedes_file": "bacon-shor-code-figure.png"
   },
   "renderer": {
@@ -25,16 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-07-26T02:22:58.420139+00:00",
-    "id": "gen-1785032570-Sdhn1p3sudw0ame9IBn7",
+    "generated_at": "2026-08-05T05:35:34.138381+00:00",
+    "id": "gen-1785908121-xd0lsh84KdInSbxlDwRF",
     "image_size": "1K",
-    "prompt_sha256": "8b74a1041a156ec982d3f9caaf585eec968012b2f4a8a330dd3b06d0ebd89c75",
-    "source_media_type": "image/jpeg"
+    "prompt_sha256": "11d55398e3d924b16f43f1c6a6b8965d7ff7fd4ec315e9a1548de389c32fe8c6",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Revalidated during provenance/frontmatter backfill after full-resolution physics and editorial review; approved Nano Banana 2 final.",
-    "reviewed_at": "2026-07-26T02:25:00.805799+00:00",
-    "reviewer": "codex-visual-physics-review-2026-07-25",
+    "notes": "Approved after targeted structural correction. Gauge orientation, triple-dot hybrid encoding, or fixed-even tetron parity now pass; rich explanatory detail is preserved.",
+    "reviewed_at": "2026-08-05T05:46:41.881351+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-05",
     "status": "passed"
   },
   "schema_version": 1

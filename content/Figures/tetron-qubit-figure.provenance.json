@@ -2,19 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "tetron-qubit-figure.png",
-    "sha256": "166e7c047385f8c3d2ac83988fe9af36d4c3904a9392bfc9441055d64fbd115c"
+    "sha256": "1c65a9af58bc9d32845b588533f16e74a71f8d97dd1e563a73afd942dac22479"
   },
   "artifact_role": "primary",
-  "blueprint": {
-    "media_type": "image/png",
-    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/tetron-qubit-blueprint.png",
-    "role": "physics-blueprint",
-    "sha256": "adbaadddebce3d7279ee8526563c42ba9c8e2d4fcee81064165d93f52fc706b9",
-    "strict": true
-  },
+  "blueprint": null,
   "entry_slug": "tetron-qubit",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/tetron-qubit-figure-20260802T142448100996Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/tetron-qubit-figure-20260805T053652259045Z.png",
     "supersedes_file": "tetron-qubit-figure.png"
   },
   "renderer": {
@@ -25,16 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-02T14:24:48.100996+00:00",
-    "id": "gen-1785680679-v7txy1xcWsUPujq4CBHE",
+    "generated_at": "2026-08-05T05:36:52.259045+00:00",
+    "id": "gen-1785908199-bIpBuv7opMe5WJmbDNRX",
     "image_size": "1K",
-    "prompt_sha256": "b2f358b1198119f35ce2c8d59aa7f16fb7058735e78235c6739bec0844a1f56d",
-    "source_media_type": "image/jpeg"
+    "prompt_sha256": "0c9f03cb4e49a2efa287e1439fe908e8076a220af2e7352cc874e90a22cd8a7c",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "PASS: four Majorana zero modes on a floating island with fixed total parity; logical information encoded in pair parity; parity readout through a quantum dot or sensor is correctly shown.",
-    "reviewed_at": "2026-08-02T14:28:43.763206+00:00",
-    "reviewer": "Codex scientific visual audit 2026-08-02",
+    "notes": "Approved after targeted structural correction. Gauge orientation, triple-dot hybrid encoding, or fixed-even tetron parity now pass; rich explanatory detail is preserved.",
+    "reviewed_at": "2026-08-05T05:46:41.983186+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-05",
     "status": "passed"
   },
   "schema_version": 1

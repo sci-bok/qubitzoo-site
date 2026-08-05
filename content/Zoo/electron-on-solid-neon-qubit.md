@@ -4,11 +4,11 @@ entry_type: qubit
 technology_family: Floating Electron
 status: demonstrated
 figure_reviewed: true
-figure_renderer: "openai-imagegen"
-figure_model: "gpt-image-2"
+figure_renderer: "nano-banana-2"
+figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/electron-on-solid-neon-qubit-figure.provenance.json"
-figure_reviewed_by: "Codex scientific visual audit 2026-08-02"
-figure_reviewed_at: "2026-08-02T17:07:49Z"
+figure_reviewed_by: "Codex scientific visual audit 2026-08-05"
+figure_reviewed_at: "2026-08-05T05:30:31.892912+00:00"
 first_proposed_year: 2021
 first_demonstrated_year: 2022
 keywords: [electron on neon, floating electron, motional qubit, charge qubit, circuit QED, vacuum interface]

@@ -2,19 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "flux-qubit-figure.png",
-    "sha256": "1ffbb8dfc7d4ec456d0a50191da0b391abab0425e43ecd4a092094e6dd0f859e"
+    "sha256": "e3cd5b3740399ade67c93ab19ef5cf1682fe6d0dfc10a294c1aab89ece130013"
   },
   "artifact_role": "primary",
-  "blueprint": {
-    "media_type": "image/png",
-    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/flux-qubit-blueprint.png",
-    "role": "physics-blueprint",
-    "sha256": "cd6edc34d756267dc8c2edfb632861dc9acd7d4fdf0724243fcbb47e18b52317",
-    "strict": true
-  },
+  "blueprint": null,
   "entry_slug": "flux-qubit",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/flux-qubit-figure-20260802T135557395199Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/flux-qubit-figure-20260805T061641508689Z.png",
     "supersedes_file": "flux-qubit-figure.png"
   },
   "renderer": {
@@ -25,16 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-02T13:55:57.395199+00:00",
-    "id": "gen-1785678949-iQxzsrZAKLry3abi3pzY",
+    "generated_at": "2026-08-05T06:16:41.508689+00:00",
+    "id": "gen-1785910589-Viq7G5A9WYQbnHIT0eZX",
     "image_size": "1K",
-    "prompt_sha256": "a77659b72f7e642b76ed8ec710f4fbb8293c273ef06d76afcee5ba1e383ca0e4",
-    "source_media_type": "image/jpeg"
+    "prompt_sha256": "8eb45bce83ae67f2d4052e6432a7e964bd3636b4b73e649466c0f04887a2fdf3",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Accurate canonical three-Josephson-junction persistent-current loop with two EJ junctions and one alpha-EJ junction, opposite-current states, and half-flux avoided crossing.",
-    "reviewed_at": "2026-08-02T13:57:30.092986+00:00",
-    "reviewer": "Codex scientific visual audit 2026-08-02",
+    "notes": "Approved after strict rerender: rich explanatory plate with the canonical three-junction loop, avoided crossing, persistent-current double well, and dispersive readout; central topology is correct.",
+    "reviewed_at": "2026-08-05T06:17:53.042422+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-05",
     "status": "passed"
   },
   "schema_version": 1

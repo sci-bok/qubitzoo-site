@@ -2,19 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "molmer-sorenson-gate-figure.png",
-    "sha256": "0ff23403d2e14cb4f002e58cf0b20881c235bfe922c6718d9082ebbed73349b8"
+    "sha256": "ed12324ceb5c4115067f6ee05381ccbb021380b449f9f61b44d4b4a76be364f9"
   },
   "artifact_role": "primary",
-  "blueprint": {
-    "media_type": "image/png",
-    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/molmer-sorenson-gate-blueprint.png",
-    "role": "physics-blueprint",
-    "sha256": "065179c271f551b3ee2d12ca6317f6e1ef3271044dd76990619e4e0e7dd352ad",
-    "strict": true
-  },
+  "blueprint": null,
   "entry_slug": "molmer-sorenson-gate",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/molmer-sorenson-gate-figure-20260802T141115457660Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/molmer-sorenson-gate-figure-20260805T045752417673Z.png",
     "supersedes_file": "molmer-sorenson-gate-figure.png"
   },
   "renderer": {
@@ -25,16 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-02T14:11:15.457660+00:00",
-    "id": "gen-1785679865-J0A0Y33yW3XwnzUcFlpr",
+    "generated_at": "2026-08-05T04:57:52.417673+00:00",
+    "id": "gen-1785905856-erSKOKoLdwxJg19s2PsR",
     "image_size": "1K",
-    "prompt_sha256": "e40f75d0296361d0909ea5ad99e9725346037d3672a77937cc6b8c2950c498ee",
-    "source_media_type": "image/jpeg"
+    "prompt_sha256": "4de5c5aaf6e3ac25ec3c34336ba9d0879015fc923392d361d4f82f60ea892522",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Accurate shared bichromatic red/blue-sideband drive on both ions, closed motional phase-space loop returning motion to its initial state, and resulting XX entangling unitary; headings and equations are legible.",
-    "reviewed_at": "2026-08-02T14:11:35.574465+00:00",
-    "reviewer": "Codex scientific visual audit 2026-08-02",
+    "notes": "Approved after species/encoding correction. The 171Yb+ hyperfine states, bichromatic sidebands, spin-dependent closed phase-space trajectory, XX interaction, and motion-disentangled gate result pass; small label imperfections are accepted.",
+    "reviewed_at": "2026-08-05T05:03:40.743575+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-05",
     "status": "passed"
   },
   "schema_version": 1

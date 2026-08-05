@@ -2,19 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "silicon-spin-qubit-figure.png",
-    "sha256": "23049c43f265f687262aa18aac763a00e93e902f6aa3e040c176e30598fd0641"
+    "sha256": "4a60e7aa927fb48f6f81a89353a9322ca4345665e96e33b91242cd6c784926dc"
   },
   "artifact_role": "primary",
-  "blueprint": {
-    "media_type": "image/png",
-    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/silicon-spin-qubit-blueprint.png",
-    "role": "physics-blueprint",
-    "sha256": "50ed5abf20e5213f4d6f1fa93b54b15b0824a4955367468e78a862ad6d1a687c",
-    "strict": true
-  },
+  "blueprint": null,
   "entry_slug": "silicon-spin-qubit",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/silicon-spin-qubit-figure-20260802T141428956083Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/silicon-spin-qubit-figure-20260805T043356545068Z.png",
     "supersedes_file": "silicon-spin-qubit-figure.png"
   },
   "renderer": {
@@ -25,16 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-02T14:14:28.956083+00:00",
-    "id": "gen-1785680058-aOOdXTTSL8uefJFBD7Xy",
+    "generated_at": "2026-08-05T04:33:56.545068+00:00",
+    "id": "gen-1785904425-x30PKH3NgurIJCZgfAdC",
     "image_size": "1K",
-    "prompt_sha256": "f00838e8569c081d70f3da08c458d970a2e1399933cb89044209227f59025898",
-    "source_media_type": "image/jpeg"
+    "prompt_sha256": "21ba13b240f871849ac4b360d99d9d129f7dc9753decb5635cc029fafa69d35f",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Accurate 28Si/SiGe gate-defined double dot, Zeeman-split spin with EDSR control, exchange coupling, and charge-sensor readout; no unsupported pitch/coherence claims.",
-    "reviewed_at": "2026-08-02T14:16:04.383389+00:00",
-    "reviewer": "Codex scientific visual audit 2026-08-02",
+    "notes": "Approved after narrow correction review. The rich apparatus-to-encoding/control/readout story and central physics pass. A few small ancillary label/rendering imperfections remain and are accepted under the user-approved detail-first figure policy.",
+    "reviewed_at": "2026-08-05T04:34:35.575001+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-05",
     "status": "passed"
   },
   "schema_version": 1

@@ -2,19 +2,19 @@
   "artifact": {
     "media_type": "image/png",
     "path": "qubit-readout-figure.png",
-    "sha256": "3acca3644fbabb7652bb455ed73a8b1ecd84db2ae9957695f3cfa5e4e9628791"
+    "sha256": "7727b8ba07a0eee2b25d517dca43988c3948e482b48252a5968bdd8b8dc603be"
   },
   "artifact_role": "primary",
   "blueprint": {
     "media_type": "image/png",
-    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/qubit-readout-blueprint.png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/qubit-readout-figure.png",
     "role": "physics-blueprint",
-    "sha256": "2dcaf13eea7087d28fde90257a7d87a720d659ecc467cf35aa99250a9a6d9ebf",
-    "strict": true
+    "sha256": "3acca3644fbabb7652bb455ed73a8b1ecd84db2ae9957695f3cfa5e4e9628791",
+    "strict": false
   },
   "entry_slug": "qubit-readout",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/qubit-readout-figure-20260802T140925554247Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/qubit-readout-figure-20260805T042354073450Z.png",
     "supersedes_file": "qubit-readout-figure.png"
   },
   "renderer": {
@@ -25,16 +25,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-02T14:09:25.554247+00:00",
-    "id": "gen-1785679755-knutfquumYsR1eXfI0Ew",
+    "generated_at": "2026-08-05T04:23:54.073450+00:00",
+    "id": "gen-1785903822-ZNZXfqOzlQ33i4Co0Im5",
     "image_size": "1K",
-    "prompt_sha256": "525b7fc10dd88929c4489e4a7958a419803ab5ff5a8b694481c0f33565ece6f9",
-    "source_media_type": "image/jpeg"
+    "prompt_sha256": "feb198560bd4a60578b337443e152ab4fc4f73c77ed66e412d097452b6f8ed34",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Accurate platform-neutral overview of dispersive microwave, fluorescence, spin-to-charge, and photon-detection readout plus signal-to-classifier feedback chain; no lifetime inference graphic.",
-    "reviewed_at": "2026-08-02T14:10:36.190842+00:00",
-    "reviewer": "Codex scientific visual audit 2026-08-02",
+    "notes": "Approved rich explanatory plate after full-resolution review. Apparatus-to-encoding/control/readout narrative is strong; central physics is sound. Minor ancillary typography imperfections are acceptable under the approved visual policy.",
+    "reviewed_at": "2026-08-05T04:28:42.380406+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-05",
     "status": "passed"
   },
   "schema_version": 1

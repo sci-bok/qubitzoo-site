@@ -2,19 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "surface-code-logical-qubit-figure.png",
-    "sha256": "2debea22923c23119590a4c1f188ceb5e7203fae15322e78a4d0d35614818524"
+    "sha256": "0e4e9ad407eb92b631def3cf3d9645702606b17b93fe6b2d3a8a71358a29f19d"
   },
   "artifact_role": "primary",
-  "blueprint": {
-    "media_type": "image/png",
-    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/surface-code-logical-qubit-blueprint.png",
-    "role": "physics-blueprint",
-    "sha256": "5fa3f1fa4c9aac2692a75a52ffe7aecbe470fb235ed6e598acb2f74f5cc02ce2",
-    "strict": true
-  },
+  "blueprint": null,
   "entry_slug": "surface-code-logical-qubit",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/surface-code-logical-qubit-figure-20260802T143153828497Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/surface-code-logical-qubit-figure-20260805T043144541428Z.png",
     "supersedes_file": "surface-code-logical-qubit-figure.png"
   },
   "renderer": {
@@ -25,16 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-02T14:31:53.828497+00:00",
-    "id": "gen-1785681104-eTpOOfUB0D3SGMNWMdx9",
+    "generated_at": "2026-08-05T04:31:44.541428+00:00",
+    "id": "gen-1785904293-7idEigi6zJFtO9WJDk9D",
     "image_size": "1K",
-    "prompt_sha256": "d9dc775992d32a2cfa96d615bddcb017ef5f88c250d45acdd841ee4e101e4d9c",
-    "source_media_type": "image/jpeg"
+    "prompt_sha256": "64c0fea2f76538cd6f40179584b99e898c9ad6d7dfe5c319deac0e769abad61a",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "PASS: exact required convention is now explicit and consistent\u2014logical Z connects rough top/bottom boundaries, while logical X connects smooth left/right boundaries.",
-    "reviewed_at": "2026-08-02T14:32:58.109056+00:00",
-    "reviewer": "Codex scientific visual audit 2026-08-02",
+    "notes": "Approved after targeted full-resolution scientific review. The candidate restores the rich explanatory visual language and its central encoding, topology, interactions, and readout/QEC story are sound; minor ancillary typography is acceptable.",
+    "reviewed_at": "2026-08-05T04:32:43.526452+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-05",
     "status": "passed"
   },
   "schema_version": 1

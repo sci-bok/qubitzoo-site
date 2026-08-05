@@ -2,19 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "singlet-triplet-qubit-figure.png",
-    "sha256": "4e43854a2207c3cbe3319bd992888980d7b881903deda85493ca927e8bb6eeb8"
+    "sha256": "44dcf9a639daa2c609ddbe0ce518f9c55e8bdbef5c0ec7f6ca34e7d1f74b2796"
   },
   "artifact_role": "primary",
-  "blueprint": {
-    "media_type": "image/png",
-    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/singlet-triplet-qubit-blueprint.png",
-    "role": "physics-blueprint",
-    "sha256": "66fbaf9d1db6449f5ed8fa6fce62e68f19866c5c4afc78de1c17b886e598e4a6",
-    "strict": true
-  },
+  "blueprint": null,
   "entry_slug": "singlet-triplet-qubit",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/singlet-triplet-qubit-figure-20260802T141709528661Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/singlet-triplet-qubit-figure-20260805T061907643008Z.png",
     "supersedes_file": "singlet-triplet-qubit-figure.png"
   },
   "renderer": {
@@ -25,16 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-02T14:17:09.528661+00:00",
-    "id": "gen-1785680219-gaj8jC3eI3npl6D1d60B",
+    "generated_at": "2026-08-05T06:19:07.643008+00:00",
+    "id": "gen-1785910737-KdaMLUoMJNTWkEDeabX9",
     "image_size": "1K",
-    "prompt_sha256": "9a1e56170aed83584bd5d6724e9977a5232d14e65491eee43f5702b7d5b8d608",
-    "source_media_type": "image/jpeg"
+    "prompt_sha256": "ff6477eb55ab93c045b2b07c5c8edd59557ff01f62722f565c47b9b1c030095c",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Accurate |S> and |T0> double-dot basis, orthogonal J(epsilon)/DeltaBz control axes, and parallel Pauli-spin-blockade readout outcomes feeding a charge sensor; no misleading state conversion or metric box.",
-    "reviewed_at": "2026-08-02T14:17:59.275117+00:00",
-    "reviewer": "Codex scientific visual audit 2026-08-02",
+    "notes": "Approved after strict rerender: the S/T0 logical equations, exchange/gradient controls, and Pauli-blockade mapping are correct. Minor spin-icon stylization is accepted under the rich-plate policy.",
+    "reviewed_at": "2026-08-05T06:19:46.827188+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-05",
     "status": "passed"
   },
   "schema_version": 1

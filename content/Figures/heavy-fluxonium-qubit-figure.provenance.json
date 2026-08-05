@@ -2,19 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "heavy-fluxonium-qubit-figure.png",
-    "sha256": "b74e5f8858519063764d9e3c2576ba7745d5ad0a80d6b29a6946e76921c402e9"
+    "sha256": "77b16ee5d31a3b359af7602884362e9f800a5126fef02bcfc73cd5716279d6e3"
   },
   "artifact_role": "primary",
-  "blueprint": {
-    "media_type": "image/png",
-    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/heavy-fluxonium-qubit-blueprint.png",
-    "role": "physics-blueprint",
-    "sha256": "8ccf8ef7d390338ec9ce91d27075c40d3efef9f3afb84c9bcc6b801fbbe4c682",
-    "strict": true
-  },
+  "blueprint": null,
   "entry_slug": "heavy-fluxonium-qubit",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/heavy-fluxonium-qubit-figure-20260802T140509793004Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/heavy-fluxonium-qubit-figure-20260805T043811641152Z.png",
     "supersedes_file": "heavy-fluxonium-qubit-figure.png"
   },
   "renderer": {
@@ -25,16 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-02T14:05:09.793004+00:00",
-    "id": "gen-1785679499-xqY7weNLL1Rmwjxb1Jkl",
+    "generated_at": "2026-08-05T04:38:11.641152+00:00",
+    "id": "gen-1785904680-HQzaSblKrOunlxV96l9q",
     "image_size": "1K",
-    "prompt_sha256": "a8af5fb185b6043b27b41d2503bba8086f5cc45c161a917d05ac8368b1edacd4",
-    "source_media_type": "image/jpeg"
+    "prompt_sha256": "d2cd5e8223f4dabe5e72877deb546fea7c22c7fead71c143534adfdc11b592bd",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Accurate heavy-fluxonium parallel circuit with large shunt capacitance/small EC regime, corrected Hamiltonian, disjoint half-flux wavefunctions, and suppressed charge/flux matrix elements; no performance claims.",
-    "reviewed_at": "2026-08-02T14:05:54.715412+00:00",
-    "reviewer": "Codex scientific visual audit 2026-08-02",
+    "notes": "Approved rich explanatory Wave 2 plate after full-resolution scientific review. Central device/code structure, logical encoding, control, error mechanism, and readout/system consequence pass; minor ancillary typography is accepted.",
+    "reviewed_at": "2026-08-05T04:45:11.120239+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-05",
     "status": "passed"
   },
   "schema_version": 1

@@ -24,8 +24,8 @@ verified_by: scibok-manual-2026-03-21
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/erasure-qubit-figure.provenance.json"
-figure_reviewed_by: "codex-visual-physics-review-2026-07-25"
-figure_reviewed_at: "2026-07-26T02:25:01.038786+00:00"
+figure_reviewed_by: "Codex scientific visual audit 2026-08-05"
+figure_reviewed_at: "2026-08-05T04:32:43.210815+00:00"
 ---
 
 ## Figure

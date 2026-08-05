@@ -1,33 +1,36 @@
 {
-  "schema_version": 1,
-  "entry_slug": "electron-on-solid-neon-qubit",
-  "artifact_role": "primary",
   "artifact": {
+    "media_type": "image/png",
     "path": "electron-on-solid-neon-qubit-figure.png",
-    "sha256": "44f5afd0a41c5465cbedcbf15a9405bed1416379aa178a808425befb2707f10e",
-    "media_type": "image/png"
+    "sha256": "b306949425de2cbe3b3f4c4dfef018150b25552934c35ad6e9e1b81572a45f37"
+  },
+  "artifact_role": "primary",
+  "blueprint": null,
+  "entry_slug": "electron-on-solid-neon-qubit",
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/electron-on-solid-neon-qubit-figure-20260805T051730263295Z.png",
+    "supersedes_file": "electron-on-solid-neon-qubit-figure.png"
   },
   "renderer": {
-    "name": "openai-imagegen",
-    "provider": "OpenAI",
-    "requested_model": "gpt-image-2",
-    "returned_model": "gpt-image-2"
+    "name": "nano-banana-2",
+    "provider": "Google AI Studio",
+    "requested_model": "google/gemini-3.1-flash-image-preview",
+    "returned_model": "google/gemini-3.1-flash-image-preview"
   },
   "request": {
-    "id": "exec-1a108160-4683-44fa-95fe-e02d71719427",
-    "generated_at": "2026-08-02T17:07:49Z",
-    "prompt_sha256": null,
-    "reconstructed": true
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-08-05T05:17:30.263295+00:00",
+    "id": "gen-1785907037-UAy8BmUMZ4g1XwhwDHHQ",
+    "image_size": "1K",
+    "prompt_sha256": "509bdd38d074095110e21621e48a4799bc470defa16977cc8f1bd0c1d903b5d1",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "status": "passed",
-    "reviewer": "Codex scientific visual audit 2026-08-02",
-    "reviewed_at": "2026-08-02T17:07:49Z",
-    "notes": "Accurate vacuum electron, solid-neon surface, lateral electrostatic trap, two motional levels, and circuit-QED coupling; labels checked at full resolution."
+    "notes": "Approved rich explanatory Wave 3 plate after full-resolution review. The central hardware/encoding/control/readout or infrastructure narrative is sound; minor ancillary labels and rendering artifacts are accepted under the detail-first policy.",
+    "reviewed_at": "2026-08-05T05:30:31.892912+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-05",
+    "status": "passed"
   },
-  "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/agents/main/agent/codex-home/generated_images/019fc2e9-0448-7f03-9a5f-e6fc5f567780/exec-1a108160-4683-44fa-95fe-e02d71719427.png",
-    "candidate_retained": true,
-    "verification": "Candidate generated through the built-in OpenAI image renderer and reviewed at full resolution. Exact prompt text was not retained across gateway transcript compaction; the renderer result ID and candidate file are retained."
-  }
+  "schema_version": 1
 }

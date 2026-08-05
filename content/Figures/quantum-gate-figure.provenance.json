@@ -2,19 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "quantum-gate-figure.png",
-    "sha256": "703e6990a1eacf84d0bd863ab11f8a7031270dd2eadc53014a2a6c2fdd421d06"
+    "sha256": "37f563255f95e9df577cb9deff04cee108c7323915235c195570d8a213147de5"
   },
   "artifact_role": "primary",
-  "blueprint": {
-    "media_type": "image/png",
-    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-01/quantum-gate-blueprint.png",
-    "role": "physics-blueprint",
-    "sha256": "7ead7a9a465c137b1df58e2d490bdb888b6f7260e084cb1ff0ac1db9fd53d0f6",
-    "strict": true
-  },
+  "blueprint": null,
   "entry_slug": "quantum-gate",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/quantum-gate-figure-20260802T030322641775Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/quantum-gate-figure-20260805T043056214602Z.png",
     "supersedes_file": "quantum-gate-figure.png"
   },
   "renderer": {
@@ -25,16 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-02T03:03:22.641775+00:00",
-    "id": "gen-1785639791-9jyJFYTstGQhtQVSUeFI",
+    "generated_at": "2026-08-05T04:30:56.214602+00:00",
+    "id": "gen-1785904234-Ji1g2p4GYt0a3wYeWMD3",
     "image_size": "1K",
-    "prompt_sha256": "37531b0746ff57848391799dc6ac2553ed9860aef2812578400a73af0885643b",
-    "source_media_type": "image/jpeg"
+    "prompt_sha256": "6af69c8518e17a0f412320d859e1fd352507171938c992ac1ad9a9f8e2774366",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Approved: faithful blueprint-based Nano Banana 2 rendering of a single-qubit rotation and standard CNOT and controlled-Z circuits.",
-    "reviewed_at": "2026-08-02T03:05:12.320732+00:00",
-    "reviewer": "codex-visual-physics-review-2026-08-01",
+    "notes": "Approved after targeted full-resolution scientific review. The candidate restores the rich explanatory visual language and its central encoding, topology, interactions, and readout/QEC story are sound; minor ancillary typography is acceptable.",
+    "reviewed_at": "2026-08-05T04:32:43.422450+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-05",
     "status": "passed"
   },
   "schema_version": 1

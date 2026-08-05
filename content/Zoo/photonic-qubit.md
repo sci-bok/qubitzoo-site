@@ -14,8 +14,8 @@ figure_reviewed: true
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/photonic-qubit-figure.provenance.json"
-figure_reviewed_by: "codex-visual-physics-review-2026-08-01"
-figure_reviewed_at: "2026-08-02T03:05:12.367092+00:00"
+figure_reviewed_by: "Codex scientific visual audit 2026-08-05"
+figure_reviewed_at: "2026-08-05T04:28:42.327099+00:00"
 ---
 
 > **Note:** This is a **category entry** covering the photonic-qubit paradigm. Specific encodings and architectures have their own detailed entries: [[dual-rail-photonic-qubit]], [[time-bin-photonic-qubit]], [[linear-optical-photonic-qubit]], [[photonic-cluster-state-mbqc-qubit]], and [[fusion-based-photonic-qubit]].

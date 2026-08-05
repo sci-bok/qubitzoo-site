@@ -2,19 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "gkp-codes-figure.png",
-    "sha256": "1ae9d77184ee756eb1826d46aa3fe1359e206d21e77214f16664a0435295ec3f"
+    "sha256": "dafe057fef670f7e7c417384be540f56a3f12aeb694c4d4a213130e55f440b3e"
   },
   "artifact_role": "primary",
-  "blueprint": {
-    "media_type": "image/png",
-    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/gkp-codes-blueprint.png",
-    "role": "physics-blueprint",
-    "sha256": "5accc72732b5f5be59c8b38aa00ad554034d1e19793a6d4af2af94d7bf6080e5",
-    "strict": true
-  },
+  "blueprint": null,
   "entry_slug": "gkp-codes",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/gkp-codes-figure-20260802T140205043110Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/gkp-codes-figure-20260805T043743150119Z.png",
     "supersedes_file": "gkp-codes-figure.png"
   },
   "renderer": {
@@ -25,16 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-02T14:02:05.043110+00:00",
-    "id": "gen-1785679314-T4aRhMOVO2S0u6Sbyizk",
+    "generated_at": "2026-08-05T04:37:43.150119+00:00",
+    "id": "gen-1785904652-Q935Q7Iaxe1BoGqmYiCn",
     "image_size": "1K",
-    "prompt_sha256": "1bc022518474e263c4147d7ed28d77fc29431fef80f48ab5ac7a597402ee925c",
-    "source_media_type": "image/jpeg"
+    "prompt_sha256": "6b0ca9892a63fdbeca81ee5c82d1dfaf8cc5a7842c3bdc3f1b54787426ee79a9",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Accurate square GKP phase-space lattice, finite-energy logical combs offset by sqrt(pi), and modular nearest-lattice-point correction of small q/p displacements; no architecture or performance claims.",
-    "reviewed_at": "2026-08-02T14:03:59.630232+00:00",
-    "reviewer": "Codex scientific visual audit 2026-08-02",
+    "notes": "Approved rich explanatory Wave 2 plate after full-resolution scientific review. Central device/code structure, logical encoding, control, error mechanism, and readout/system consequence pass; minor ancillary typography is accepted.",
+    "reviewed_at": "2026-08-05T04:45:11.068340+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-05",
     "status": "passed"
   },
   "schema_version": 1

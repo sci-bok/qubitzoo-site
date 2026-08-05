@@ -2,19 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "linear-optical-photonic-qubit-figure.png",
-    "sha256": "c38ceac40b8319e800487c94b7121bd6148185a07a8eca10ddd7142fb6dcade5"
+    "sha256": "36a314595dba4874f7db22ec008311f0c93a2820bb8a57ba09c885a2fbe820b3"
   },
   "artifact_role": "primary",
-  "blueprint": {
-    "media_type": "image/png",
-    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/linear-optical-photonic-qubit-blueprint.png",
-    "role": "physics-blueprint",
-    "sha256": "8cb7acff955dddfb4422645f7e6db68a10df738c57cfbae3d1aec4fd42292c8b",
-    "strict": true
-  },
+  "blueprint": null,
   "entry_slug": "linear-optical-photonic-qubit",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/linear-optical-photonic-qubit-figure-20260802T140839935761Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/linear-optical-photonic-qubit-figure-20260805T043000815464Z.png",
     "supersedes_file": "linear-optical-photonic-qubit-figure.png"
   },
   "renderer": {
@@ -25,16 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-02T14:08:39.935761+00:00",
-    "id": "gen-1785679710-OOFK6fhlHbqWorqo21IS",
+    "generated_at": "2026-08-05T04:30:00.815464+00:00",
+    "id": "gen-1785904189-A9nxbJC2ux6OOfWz8mR0",
     "image_size": "1K",
-    "prompt_sha256": "0a7f0caf13a7eb9a0d5fbb2f2467f728b12d8c87fce1933a52e2c160322aa693",
-    "source_media_type": "image/jpeg"
+    "prompt_sha256": "eac834e62bbb6c59ace8ad5c2d1edbce2d8240c85223e644d26b6cb30f39d4fc",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Accurate dual-rail single-photon basis, deterministic beam-splitter/phase-shifter single-qubit optics, and ancilla-assisted probabilistic entangling measurement with detectors and feed-forward; no informal labels or metrics.",
-    "reviewed_at": "2026-08-02T14:10:30.737183+00:00",
-    "reviewer": "Codex scientific visual audit 2026-08-02",
+    "notes": "Approved after targeted full-resolution scientific review. The candidate restores the rich explanatory visual language and its central encoding, topology, interactions, and readout/QEC story are sound; minor ancillary typography is acceptable.",
+    "reviewed_at": "2026-08-05T04:32:43.317918+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-05",
     "status": "passed"
   },
   "schema_version": 1

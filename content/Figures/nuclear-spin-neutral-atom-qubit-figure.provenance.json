@@ -2,19 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "nuclear-spin-neutral-atom-qubit-figure.png",
-    "sha256": "130140d137070bf2089a134703aaef0908493e11a7ba29ca41f07f7cc3c64d33"
+    "sha256": "5b949a8a24ff66c6369bdea04e70792de9a68d0d0d14c40f33c07dff78dd84dc"
   },
   "artifact_role": "primary",
-  "blueprint": {
-    "media_type": "image/png",
-    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/nuclear-spin-neutral-atom-qubit-blueprint.png",
-    "role": "physics-blueprint",
-    "sha256": "eed3e5ca629152f707f9367ee3040f1d8893bb233979b6601e6b15a0b62d78e5",
-    "strict": true
-  },
+  "blueprint": null,
   "entry_slug": "nuclear-spin-neutral-atom-qubit",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/nuclear-spin-neutral-atom-qubit-figure-20260802T140902100632Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/nuclear-spin-neutral-atom-qubit-figure-20260805T043320462628Z.png",
     "supersedes_file": "nuclear-spin-neutral-atom-qubit-figure.png"
   },
   "renderer": {
@@ -25,16 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-02T14:09:02.100632+00:00",
-    "id": "gen-1785679731-FCI7fYY8rGDZJqZjIvMG",
+    "generated_at": "2026-08-05T04:33:20.462628+00:00",
+    "id": "gen-1785904388-GRChyEBV71cW4ECU63Om",
     "image_size": "1K",
-    "prompt_sha256": "eecc37cbe49a70222fdfd43870a6f2f837d24d10b1446d796b6787107aa09800",
-    "source_media_type": "image/jpeg"
+    "prompt_sha256": "d560afc1e0f7b514ca7bc0431b228eb06b67234643f28981b9148f6f413a3148",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Accurate 87Sr nuclear-spin sublevels in the 1S0 ground manifold, Raman control, and temporary Rydberg-blockade gate path; no clock-state encoding is mixed in.",
-    "reviewed_at": "2026-08-02T14:10:32.569298+00:00",
-    "reviewer": "Codex scientific visual audit 2026-08-02",
+    "notes": "Approved after narrow correction review. The rich apparatus-to-encoding/control/readout story and central physics pass. A few small ancillary label/rendering imperfections remain and are accepted under the user-approved detail-first figure policy.",
+    "reviewed_at": "2026-08-05T04:34:35.471517+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-05",
     "status": "passed"
   },
   "schema_version": 1

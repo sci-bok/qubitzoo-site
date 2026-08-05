@@ -2,18 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "aeon-qubit-figure.png",
-    "sha256": "ad6f119851e05050a017a4db0ca9bdef1b77f4d57bd880940204f7546467ebf7"
+    "sha256": "0bac00e3cea350f5288b083a7489cc2b304bc9c3e6db8930049c66378e4c460e"
   },
   "artifact_role": "primary",
-  "blueprint": {
-    "media_type": "image/png",
-    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/aeon-qubit-figure.png",
-    "role": "physics-blueprint",
-    "sha256": "de4a2fc08bd1c27d36fac0ff82b0f03cab5ce9190b3f8e96bee578ec02c45fa8"
-  },
+  "blueprint": null,
   "entry_slug": "aeon-qubit",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/aeon-qubit-figure-20260726T015707930043Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/aeon-qubit-figure-20260805T043555891239Z.png",
     "supersedes_file": "aeon-qubit-figure.png"
   },
   "renderer": {
@@ -24,16 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-07-26T01:57:07.930043+00:00",
-    "id": "gen-1785031019-livWGOvLd6fCbkZKe0Gc",
+    "generated_at": "2026-08-05T04:35:55.891239+00:00",
+    "id": "gen-1785904545-T0Sq0zSIlPBnG3mLbFwM",
     "image_size": "1K",
-    "prompt_sha256": "931729f7e51f65b177884767576a6e8a0e4bdeb252319b4dfd82075c31d0abea",
-    "source_media_type": "image/jpeg"
+    "prompt_sha256": "1dfdfc64d75fd235944161d56b8a02e01429ee754221725a0079edc6ff12671b",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Revalidated during provenance/frontmatter backfill after full-resolution physics and editorial review; approved Nano Banana 2 final.",
-    "reviewed_at": "2026-07-26T02:25:00.727904+00:00",
-    "reviewer": "codex-visual-physics-review-2026-07-25",
+    "notes": "Approved rich explanatory Wave 2 plate after full-resolution scientific review. Central device/code structure, logical encoding, control, error mechanism, and readout/system consequence pass; minor ancillary typography is accepted.",
+    "reviewed_at": "2026-08-05T04:45:10.809276+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-05",
     "status": "passed"
   },
   "schema_version": 1
