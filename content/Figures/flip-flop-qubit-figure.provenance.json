@@ -1,33 +1,36 @@
 {
-  "schema_version": 1,
-  "entry_slug": "flip-flop-qubit",
-  "artifact_role": "primary",
   "artifact": {
+    "media_type": "image/png",
     "path": "flip-flop-qubit-figure.png",
-    "sha256": "e0e8f786afcf4bc44fff7f0bfcb868d6e7dc1b0c5c8f5aec9665e43c9b14acdd",
-    "media_type": "image/png"
+    "sha256": "98f9894cce3caf6a5e12e8cd8f2d07b866846753b53cad52da268afd0723df13"
+  },
+  "artifact_role": "primary",
+  "blueprint": null,
+  "entry_slug": "flip-flop-qubit",
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/flip-flop-qubit-figure-20260805T122903434123Z.png",
+    "supersedes_file": "flip-flop-qubit-figure.png"
   },
   "renderer": {
-    "name": "openai-imagegen",
-    "provider": "OpenAI",
-    "requested_model": "gpt-image-2",
-    "returned_model": "gpt-image-2"
+    "name": "nano-banana-2",
+    "provider": "Google AI Studio",
+    "requested_model": "google/gemini-3.1-flash-image-preview",
+    "returned_model": "google/gemini-3.1-flash-image-preview"
   },
   "request": {
-    "id": "exec-a31583c6-207c-4948-bb45-ce8ccb991cd0",
-    "generated_at": "2026-08-02T17:07:49Z",
-    "prompt_sha256": null,
-    "reconstructed": true
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-08-05T12:29:03.434123+00:00",
+    "id": "gen-1785932930-LIaDGbX4N1W95nTskY7z",
+    "image_size": "1K",
+    "prompt_sha256": "a56c75fb686ec57d7f26ae0c9f2696b563550cdb3cecd23ac063fd9d01da1663",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "status": "passed",
-    "reviewer": "Codex scientific visual audit 2026-08-02",
-    "reviewed_at": "2026-08-02T17:07:49Z",
-    "notes": "Accurate donor-interface hybridization, antiparallel electron-nuclear basis states, electric control, and r=180 nm predicted coupling context."
+    "notes": "Rich donor-interface plate with only antiparallel logical states, exact epsilon_ff and g_so formulas, all-electric control, and explicitly predicted 180-500 nm coupling and model errors.",
+    "reviewed_at": "2026-08-05T12:35:45.883950+00:00",
+    "reviewer": "Codex corpus visual/physics audit 2026-08-05",
+    "status": "passed"
   },
-  "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/agents/main/agent/codex-home/generated_images/019fc2e9-0448-7f03-9a5f-e6fc5f567780/exec-a31583c6-207c-4948-bb45-ce8ccb991cd0.png",
-    "candidate_retained": true,
-    "verification": "Candidate generated through the built-in OpenAI image renderer and reviewed at full resolution. Exact prompt text was not retained across gateway transcript compaction; the renderer result ID and candidate file are retained."
-  }
+  "schema_version": 1
 }

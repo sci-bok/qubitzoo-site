@@ -1,33 +1,42 @@
 {
-  "schema_version": 1,
-  "entry_slug": "nuclear-magnetic-resonance-qubit",
-  "artifact_role": "primary",
   "artifact": {
+    "media_type": "image/png",
     "path": "nuclear-magnetic-resonance-qubit-figure.png",
-    "sha256": "016ce9f4b037ae5d61f0198fa361ef550ee459fc5bfe1dc15c858a5d3b34e05f",
-    "media_type": "image/png"
+    "sha256": "eb6590387e63d9128cfbb5e5de04ca2778d27f377536e2c9f1ed6f2b4469cfe6"
+  },
+  "artifact_role": "primary",
+  "blueprint": {
+    "media_type": "image/png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/tmp/style-audit-blueprints-2026-08-05/nuclear-magnetic-resonance-qubit-blueprint.png",
+    "role": "physics-blueprint",
+    "sha256": "2c040640d4c49d0768b2f75243a07e06178c1c308c32d9c606cd3c9f38cda125",
+    "strict": false
+  },
+  "entry_slug": "nuclear-magnetic-resonance-qubit",
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/nuclear-magnetic-resonance-qubit-figure-20260805T121943380836Z.png",
+    "supersedes_file": "nuclear-magnetic-resonance-qubit-figure.png"
   },
   "renderer": {
-    "name": "openai-imagegen",
-    "provider": "OpenAI",
-    "requested_model": "gpt-image-2",
-    "returned_model": "gpt-image-2"
+    "name": "nano-banana-2",
+    "provider": "Google AI Studio",
+    "requested_model": "google/gemini-3.1-flash-image-preview",
+    "returned_model": "google/gemini-3.1-flash-image-preview"
   },
   "request": {
-    "id": "exec-cf509e1f-ba24-4b9a-abd9-aaa7b9a21a53",
-    "generated_at": "2026-08-02T17:07:49Z",
-    "prompt_sha256": null,
-    "reconstructed": true
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-08-05T12:19:43.380836+00:00",
+    "id": "gen-1785932369-GErKmnWtHgCZJKePjixl",
+    "image_size": "1K",
+    "prompt_sha256": "d81a31853d4bdf310b9e08bd3d9dad2a0d5dc038af09ec939686e0edb14bacef",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "status": "passed",
-    "reviewer": "Codex scientific visual audit 2026-08-02",
-    "reviewed_at": "2026-08-02T17:07:49Z",
-    "notes": "Accurate ensemble NMR encoding, chemical shifts/J coupling, RF control, and ensemble readout; no single-spin implication."
+    "notes": "Rich liquid-state NMR apparatus with correct RF control, scalar J coupling, FID readout, and historical context.",
+    "reviewed_at": "2026-08-05T12:35:45.958764+00:00",
+    "reviewer": "Codex corpus visual/physics audit 2026-08-05",
+    "status": "passed"
   },
-  "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/agents/main/agent/codex-home/generated_images/019fc2e9-0448-7f03-9a5f-e6fc5f567780/exec-cf509e1f-ba24-4b9a-abd9-aaa7b9a21a53.png",
-    "candidate_retained": true,
-    "verification": "Candidate generated through the built-in OpenAI image renderer and reviewed at full resolution. Exact prompt text was not retained across gateway transcript compaction; the renderer result ID and candidate file are retained."
-  }
+  "schema_version": 1
 }

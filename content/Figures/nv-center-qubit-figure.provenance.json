@@ -2,13 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "nv-center-qubit-figure.png",
-    "sha256": "13e6d6fefc762bbad0a6386b89df921a2924bea4e436f9d65e23e69ba17fbbf0"
+    "sha256": "bb3a99ff7cf6519f6a3fc0db88fd481b1e8ea5286203260a41a2e385c012c831"
   },
   "artifact_role": "primary",
   "blueprint": null,
   "entry_slug": "nv-center-qubit",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/nv-center-qubit-figure-20260802T025310133819Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/nv-center-qubit-figure-20260805T121221342778Z.png",
     "supersedes_file": "nv-center-qubit-figure.png"
   },
   "renderer": {
@@ -19,16 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-02T02:53:10.133819+00:00",
-    "id": "gen-1785639180-m3ZCRuzs9BLR8stKjjd9",
+    "generated_at": "2026-08-05T12:12:21.342778+00:00",
+    "id": "gen-1785931929-Rl5zg5rt9ZiQ5v37l5Ux",
     "image_size": "1K",
-    "prompt_sha256": "7ca747ea09e49e88b061ba2a98d8812342630656861e718cb5e0aa292d333924",
-    "source_media_type": "image/jpeg"
+    "prompt_sha256": "ba57385f151541cad5fccc0739c5630ab9511b31295e55c49b486b205be7132c",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Approved: one substitutional nitrogen adjacent to one vacancy, correct 2.87 GHz zero-field splitting, and correct spin-dependent fluorescence mechanism.",
-    "reviewed_at": "2026-08-02T02:59:40.996624+00:00",
-    "reviewer": "codex-visual-physics-review-2026-08-01",
+    "notes": "Rich NV center lattice, S=1 levels, microwave control, optical initialization, and spin-dependent fluorescence readout.",
+    "reviewed_at": "2026-08-05T12:35:46.331972+00:00",
+    "reviewer": "Codex corpus visual/physics audit 2026-08-05",
     "status": "passed"
   },
   "schema_version": 1

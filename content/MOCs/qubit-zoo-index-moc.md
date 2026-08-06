@@ -23,7 +23,7 @@ Top-level navigation for the Qubit Zoo through non-exclusive facets. An entry ma
 - [[spin-photon-moc]] (5 entries)
 - [[super-semi-moc]] (6 entries)
 - [[superconducting-moc]] (22 entries)
-- [[topological-moc|Majorana / Topological Superconductor]] (3 entries)
+- [[topological-moc|Majorana / Topological]] (3 entries)
 - [[trapped-ion-moc]] (5 entries)
 
 ## Editorial policy

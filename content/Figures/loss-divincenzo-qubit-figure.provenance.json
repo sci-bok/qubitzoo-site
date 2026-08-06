@@ -2,15 +2,14 @@
   "artifact": {
     "media_type": "image/png",
     "path": "loss-divincenzo-qubit-figure.png",
-    "sha256": "bde9cd6cc0b97e2b4f1194c34fe8ef83cec0741dd5a821ba4fe93b969ac33d11"
+    "sha256": "74f10ec859bd983eb19c7d23c403bb4ded84f9f5b91ad4012a054884ad02107a"
   },
   "artifact_role": "primary",
+  "blueprint": null,
   "entry_slug": "loss-divincenzo-qubit",
   "lineage": {
-    "historical_import": true,
-    "origin_commit": "96335d772df99ab1d56cd0162a453ad4c7bbe8ea",
-    "origin_commit_subject": "figures: generate all 60 Zoo entry figures + cleanup stale assets",
-    "verification": "Renderer identity reconstructed from the Qubit Zoo Nano Banana 2 generation record; original provider request metadata was not retained."
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/loss-divincenzo-qubit-figure-20260805T121207608932Z.png",
+    "supersedes_file": "loss-divincenzo-qubit-figure.png"
   },
   "renderer": {
     "name": "nano-banana-2",
@@ -19,15 +18,18 @@
     "returned_model": "google/gemini-3.1-flash-image-preview"
   },
   "request": {
-    "generated_at": "2026-03-15T18:06:35-04:00",
-    "id": null,
-    "prompt_sha256": null,
-    "reconstructed": true
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-08-05T12:12:07.608932+00:00",
+    "id": "gen-1785931874-xGyLV0PXsiLvUMEQmVbe",
+    "image_size": "1K",
+    "prompt_sha256": "baae03772719cb79b04477759a1eada3f4301bf7641247486b1f144a0aec9a6f",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Full-resolution asset audit confirmed that this embedded primary is legible and traces to the historical Nano Banana 2 generation workflow, so it was retained to avoid unnecessary regeneration. This renderer/coverage review does not claim a new scientific peer review of every label.",
-    "reviewed_at": "2026-08-02T03:07:08.132079+00:00",
-    "reviewer": "codex-site-image-audit-2026-08-01",
+    "notes": "Rich single-spin quantum-dot apparatus, Zeeman encoding, EDSR/exchange control, spin-to-charge readout, and architecture.",
+    "reviewed_at": "2026-08-05T12:35:46.294500+00:00",
+    "reviewer": "Codex corpus visual/physics audit 2026-08-05",
     "status": "passed"
   },
   "schema_version": 1

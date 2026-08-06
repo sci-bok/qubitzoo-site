@@ -2,15 +2,14 @@
   "artifact": {
     "media_type": "image/png",
     "path": "transmon-figure.png",
-    "sha256": "3fbcc5ca8794bc0d9b4c4b817b1815209b3daab7ca3fa2b3b0c59632f0670bf9"
+    "sha256": "4d6dd733ea9a00d7b6e2f8f99227b2eccec0c30b397d31046cdec1f8aae548b4"
   },
   "artifact_role": "primary",
+  "blueprint": null,
   "entry_slug": "transmon",
   "lineage": {
-    "historical_import": true,
-    "origin_commit": "2a149a11f8a9c730ee6f1852ee29eb1e47880289",
-    "origin_commit_subject": "zoo+figures: bulk Nano Banana generation (43 new) + embed all figures into all Zoo notes",
-    "verification": "Renderer identity reconstructed from the Qubit Zoo Nano Banana 2 generation record; original provider request metadata was not retained."
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/transmon-figure-20260805T122441027493Z.png",
+    "supersedes_file": "transmon-figure.png"
   },
   "renderer": {
     "name": "nano-banana-2",
@@ -19,15 +18,18 @@
     "returned_model": "google/gemini-3.1-flash-image-preview"
   },
   "request": {
-    "generated_at": "2026-03-10T16:44:11-04:00",
-    "id": null,
-    "prompt_sha256": null,
-    "reconstructed": true
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-08-05T12:24:41.027493+00:00",
+    "id": "gen-1785932667-Mn9W3wsqMp3C5tBdN8od",
+    "image_size": "1K",
+    "prompt_sha256": "6b0393d04b4dfeb2c33ba8dce32085d186875c641fa5e708a9961e442c8529b0",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Full-resolution asset audit confirmed that this embedded primary is legible and traces to the historical Nano Banana 2 generation workflow, so it was retained to avoid unnecessary regeneration. This renderer/coverage review does not claim a new scientific peer review of every label.",
-    "reviewed_at": "2026-08-02T03:07:08.132079+00:00",
-    "reviewer": "codex-site-image-audit-2026-08-01",
+    "notes": "Rich transmon device with unique E0-E3 levels and omega_01/12/23 transitions, drive, charge protection, and dispersive readout.",
+    "reviewed_at": "2026-08-05T12:35:46.480117+00:00",
+    "reviewer": "Codex corpus visual/physics audit 2026-08-05",
     "status": "passed"
   },
   "schema_version": 1

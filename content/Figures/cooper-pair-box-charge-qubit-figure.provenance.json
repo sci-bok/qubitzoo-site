@@ -2,18 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "cooper-pair-box-charge-qubit-figure.png",
-    "sha256": "7c9d412adab37f37efec3a259120f8704dc58b5ed63840d9c9d7588f04925657"
+    "sha256": "799b5ec836384b18abf6498b92c599880c824796535eb4a80c6efd5a90a4c5a2"
   },
   "artifact_role": "primary",
-  "blueprint": {
-    "media_type": "image/png",
-    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/cooper-pair-box-charge-qubit-figure.png",
-    "role": "physics-blueprint",
-    "sha256": "9f41b57e42aa2f11cb1b675274c3fcfd6523b2c3193c80e8a433e1d292b58b63"
-  },
+  "blueprint": null,
   "entry_slug": "cooper-pair-box-charge-qubit",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/cooper-pair-box-charge-qubit-figure-20260726T015845590446Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/cooper-pair-box-charge-qubit-figure-20260805T121221348155Z.png",
     "supersedes_file": "cooper-pair-box-charge-qubit-figure.png"
   },
   "renderer": {
@@ -24,16 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-07-26T01:58:45.590446+00:00",
-    "id": "gen-1785031116-k6tL2uD9wMel3dro7lyY",
+    "generated_at": "2026-08-05T12:12:21.348155+00:00",
+    "id": "gen-1785931917-kZkW6FcnbFLu4wYq6Odk",
     "image_size": "1K",
-    "prompt_sha256": "8494a2c07a49261091dcc892796296cbf96ba597f99984ddadf93e5e75063b5c",
-    "source_media_type": "image/jpeg"
+    "prompt_sha256": "c7d23d6fc1a8aaab171a366682b9f042da45dd115afbb7a4d333342f96f9e8ed",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Revalidated during provenance/frontmatter backfill after full-resolution physics and editorial review; approved Nano Banana 2 final.",
-    "reviewed_at": "2026-07-26T02:25:01.000530+00:00",
-    "reviewer": "codex-visual-physics-review-2026-07-25",
+    "notes": "Rich CPB physical mechanism, charge-dispersion sweet spot, coherent control, tunneling readout, and scaling context.",
+    "reviewed_at": "2026-08-05T12:35:46.145715+00:00",
+    "reviewer": "Codex corpus visual/physics audit 2026-08-05",
     "status": "passed"
   },
   "schema_version": 1

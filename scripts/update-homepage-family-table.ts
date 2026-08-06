@@ -34,7 +34,7 @@ const metadata: Record<string, { icon: string; description: string; display?: st
   Photonic: { icon: "🔴", description: "Discrete-variable and continuous-variable photonics" },
   Topological: {
     icon: "🟣",
-    display: "Majorana / Topological Superconductor",
+    display: "Majorana / Topological",
     description: "Majorana and topological-superconductor encodings",
   },
   "Super-Semi": { icon: "⚡", description: "Superconductor-semiconductor hybrid devices" },

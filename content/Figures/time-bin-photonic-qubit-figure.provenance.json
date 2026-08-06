@@ -2,18 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "time-bin-photonic-qubit-figure.png",
-    "sha256": "81b127cd068bbc4980f7951bd24178d95f508d21a14ca5fe9368816bae0cfc01"
+    "sha256": "0a7e41adfa03e5644b086db40ecad29dd9fe718f70d720598a8ccf4c0fb783e2"
   },
   "artifact_role": "primary",
-  "blueprint": {
-    "media_type": "image/png",
-    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/time-bin-photonic-qubit-figure.png",
-    "role": "physics-blueprint",
-    "sha256": "6966bbbd56566834c18775faa148a7fb4604588143b0ef19b69ec5e10b49d423"
-  },
+  "blueprint": null,
   "entry_slug": "time-bin-photonic-qubit",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/time-bin-photonic-qubit-figure-20260726T020237754687Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/time-bin-photonic-qubit-figure-20260805T122425517877Z.png",
     "supersedes_file": "time-bin-photonic-qubit-figure.png"
   },
   "renderer": {
@@ -24,16 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-07-26T02:02:37.754687+00:00",
-    "id": "gen-1785031346-9giIe0RcHaUBiT9YCye6",
+    "generated_at": "2026-08-05T12:24:25.517877+00:00",
+    "id": "gen-1785932653-bvTxHPsqhqz0MZfMYjBD",
     "image_size": "1K",
-    "prompt_sha256": "3f60b92b5a312b97196cd1c7b9601e29de6aa7e55496fbe4be5b4901fda24202",
-    "source_media_type": "image/jpeg"
+    "prompt_sha256": "2750fa737be576eda2a42a40cec831de3ef6c4285462ede4b1bdb8be47aa0531",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Revalidated during provenance/frontmatter backfill after full-resolution physics and editorial review; approved Nano Banana 2 final.",
-    "reviewed_at": "2026-07-26T02:25:01.504325+00:00",
-    "reviewer": "codex-visual-physics-review-2026-07-25",
+    "notes": "Rich time-bin preparation, encoding, long-haul distribution, time-resolved/interferometric readout, and cited metric table without invented curves.",
+    "reviewed_at": "2026-08-05T12:35:46.442379+00:00",
+    "reviewer": "Codex corpus visual/physics audit 2026-08-05",
     "status": "passed"
   },
   "schema_version": 1

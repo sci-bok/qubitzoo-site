@@ -22,8 +22,8 @@ verified_by: scibok-manual-2026-03-21
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/gatemonium-figure.provenance.json"
-figure_reviewed_by: "codex-site-image-audit-2026-08-01"
-figure_reviewed_at: "2026-08-02T03:07:08.132079+00:00"
+figure_reviewed_by: "Codex corpus visual/physics audit 2026-08-05"
+figure_reviewed_at: "2026-08-05T12:35:46.257417+00:00"
 ---
 
 ## Figure

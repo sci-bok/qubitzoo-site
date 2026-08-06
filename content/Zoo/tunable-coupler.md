@@ -25,8 +25,8 @@ verified_by: scibok-manual-2026-03-21
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/tunable-coupler-figure.provenance.json"
-figure_reviewed_by: "codex-visual-physics-review-2026-08-01"
-figure_reviewed_at: "2026-08-02T02:59:41.090424+00:00"
+figure_reviewed_by: "Codex corpus visual/physics audit 2026-08-05"
+figure_reviewed_at: "2026-08-05T12:35:46.517578+00:00"
 ---
 
 ## Figure

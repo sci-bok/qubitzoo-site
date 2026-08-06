@@ -2,13 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "tunable-coupler-figure.png",
-    "sha256": "55b040f63793d7b938d581d16699bd3f806cff5d2856f1fad1b779a7586f8cc6"
+    "sha256": "0e6368a97046415ee634e1402f467ec26030d7c51973a464af29416af2be511d"
   },
   "artifact_role": "primary",
   "blueprint": null,
   "entry_slug": "tunable-coupler",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/tunable-coupler-figure-20260802T025634258570Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/tunable-coupler-figure-20260805T123354630362Z.png",
     "supersedes_file": "tunable-coupler-figure.png"
   },
   "renderer": {
@@ -19,16 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-02T02:56:34.258570+00:00",
-    "id": "gen-1785639383-ROgTdrLLdWSEa0pLl52P",
+    "generated_at": "2026-08-05T12:33:54.630362+00:00",
+    "id": "gen-1785933222-X4iTb1wGf72MFpB5hZaN",
     "image_size": "1K",
-    "prompt_sha256": "a00d6aaa1926c93e00aa3aa497801857358e4e9bdffc0ca7558f2d488ff5ac4a",
-    "source_media_type": "image/jpeg"
+    "prompt_sha256": "4b0005844a52cbc78323505b3ccfcb6df1db64f1b7a21b54a33b680f7368c958",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Approved: clear flux-tunable coupler between two qubits with off/on coupling and avoided-crossing behavior.",
-    "reviewed_at": "2026-08-02T02:59:41.090424+00:00",
-    "reviewer": "codex-visual-physics-review-2026-08-01",
+    "notes": "Rich Q1-C-Q2 device, correct effective-coupling expression, OFF-point cancellation, residual-ZZ and gate metrics, and CZ |11>-|20> trajectory.",
+    "reviewed_at": "2026-08-05T12:35:46.517578+00:00",
+    "reviewer": "Codex corpus visual/physics audit 2026-08-05",
     "status": "passed"
   },
   "schema_version": 1

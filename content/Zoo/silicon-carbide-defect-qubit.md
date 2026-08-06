@@ -5,11 +5,11 @@ technology_family: Color Center
 moc_facets: [Spin-Photon]
 status: demonstrated
 figure_reviewed: true
-figure_renderer: "openai-imagegen"
-figure_model: "gpt-image-2"
+figure_renderer: "nano-banana-2"
+figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/silicon-carbide-defect-qubit-figure.provenance.json"
-figure_reviewed_by: "Codex scientific visual audit 2026-08-02"
-figure_reviewed_at: "2026-08-02T17:07:49Z"
+figure_reviewed_by: "Codex corpus visual/physics audit 2026-08-05"
+figure_reviewed_at: "2026-08-05T12:35:46.070691+00:00"
 first_proposed_year: 2011
 first_demonstrated_year: 2011
 keywords: [silicon carbide, SiC, divacancy, silicon vacancy, defect spin, spin photon, wafer scale]

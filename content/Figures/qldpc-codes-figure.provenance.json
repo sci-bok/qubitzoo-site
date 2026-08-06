@@ -2,13 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "qldpc-codes-figure.png",
-    "sha256": "93578230a78e4d2d4bd0cbddfa3136d12ba9cd91146f8aebd7da3e139736be92"
+    "sha256": "94b1f27b1e8c2ab5cc1282df33e5850d1b933eb18d95556c0506e089ccb08c6f"
   },
   "artifact_role": "primary",
   "blueprint": null,
   "entry_slug": "qldpc-codes",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/qldpc-codes-figure-20260802T025334569342Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/qldpc-codes-figure-20260805T122450926527Z.png",
     "supersedes_file": "qldpc-codes-figure.png"
   },
   "renderer": {
@@ -19,16 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-02T02:53:34.569342+00:00",
-    "id": "gen-1785639205-iwaekhVjMEvoEH053yCI",
+    "generated_at": "2026-08-05T12:24:50.926527+00:00",
+    "id": "gen-1785932667-2uagyl5mcbfswJTsV9Y0",
     "image_size": "1K",
-    "prompt_sha256": "f1223dc767ee47c5f523015ab4c0a7fcbb24e8d11361a383f0705ae448bb6480",
-    "source_media_type": "image/jpeg"
+    "prompt_sha256": "a52a8b68a78cd0dff3d4fbbcb0e446e6f57cc13289a20db77b9b0ed08df40ae8",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Approved: sparse Tanner-graph representation and qualitative constant-rate/nonlocal scaling contrast avoid the old misleading local 2D depiction.",
-    "reviewed_at": "2026-08-02T02:59:41.043243+00:00",
-    "reviewer": "codex-visual-physics-review-2026-08-01",
+    "notes": "Rich qLDPC sparsity, CSS commutation, constant-rate asymptotics, qualitative hypergraph-product construction, and explicitly proposed nonlocal implementations.",
+    "reviewed_at": "2026-08-05T12:35:46.405314+00:00",
+    "reviewer": "Codex corpus visual/physics audit 2026-08-05",
     "status": "passed"
   },
   "schema_version": 1

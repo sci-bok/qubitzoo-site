@@ -1,33 +1,36 @@
 {
-  "schema_version": 1,
-  "entry_slug": "rare-earth-ion-qubit",
-  "artifact_role": "primary",
   "artifact": {
+    "media_type": "image/png",
     "path": "rare-earth-ion-qubit-figure.png",
-    "sha256": "0139186ea6587287d53ccbe6087dcf4357323efb5a8c24e2afbf139aa930fc78",
-    "media_type": "image/png"
+    "sha256": "58df4da5a22b18cde5d969023932203572ebe24e4e375444ce00949e4b286175"
+  },
+  "artifact_role": "primary",
+  "blueprint": null,
+  "entry_slug": "rare-earth-ion-qubit",
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/rare-earth-ion-qubit-figure-20260805T121049755145Z.png",
+    "supersedes_file": "rare-earth-ion-qubit-figure.png"
   },
   "renderer": {
-    "name": "openai-imagegen",
-    "provider": "OpenAI",
-    "requested_model": "gpt-image-2",
-    "returned_model": "gpt-image-2"
+    "name": "nano-banana-2",
+    "provider": "Google AI Studio",
+    "requested_model": "google/gemini-3.1-flash-image-preview",
+    "returned_model": "google/gemini-3.1-flash-image-preview"
   },
   "request": {
-    "id": "exec-1e96b483-2758-4e0c-8096-1c733d587ecf",
-    "generated_at": "2026-08-02T17:07:49Z",
-    "prompt_sha256": null,
-    "reconstructed": true
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-08-05T12:10:49.755145+00:00",
+    "id": "gen-1785931837-YZBms14i8gE0RmR1RIss",
+    "image_size": "1K",
+    "prompt_sha256": "e55c38b1ae895ea9a3f639813dcf6dd38de22083632a92e61d1997e1ba8c2c98",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "status": "passed",
-    "reviewer": "Codex scientific visual audit 2026-08-02",
-    "reviewed_at": "2026-08-02T17:07:49Z",
-    "notes": "Corrected typography and verified rare-earth crystal-host, hyperfine-memory, cavity-enhanced optical-interface, and network-node panels."
+    "notes": "Rich rare-earth cavity platform, Er/Eu encodings, QND readout, and multiplexed network context; central physics passed.",
+    "reviewed_at": "2026-08-05T12:35:46.034071+00:00",
+    "reviewer": "Codex corpus visual/physics audit 2026-08-05",
+    "status": "passed"
   },
-  "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/agents/main/agent/codex-home/generated_images/019fc2e9-0448-7f03-9a5f-e6fc5f567780/exec-1e96b483-2758-4e0c-8096-1c733d587ecf.png",
-    "candidate_retained": true,
-    "verification": "Candidate generated through the built-in OpenAI image renderer and reviewed at full resolution. Exact prompt text was not retained across gateway transcript compaction; the renderer result ID and candidate file are retained."
-  }
+  "schema_version": 1
 }

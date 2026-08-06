@@ -16,7 +16,7 @@ const zooPlatformMaps = [
   ["trapped-ion-moc", "Trapped Ion"],
   ["neutral-atom-moc", "Neutral Atom"],
   ["photonic-moc", "Photonic"],
-  ["topological-moc", "Majorana / Topological Superconductor"],
+  ["topological-moc", "Majorana / Topological"],
   ["color-center-moc", "Color Center"],
   ["molecular-moc", "Molecular"],
   ["floating-electron-moc", "Floating Electron"],

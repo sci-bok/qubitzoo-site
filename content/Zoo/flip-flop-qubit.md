@@ -4,11 +4,11 @@ entry_type: qubit
 technology_family: Semiconducting
 status: proposed
 figure_reviewed: true
-figure_renderer: "openai-imagegen"
-figure_model: "gpt-image-2"
+figure_renderer: "nano-banana-2"
+figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/flip-flop-qubit-figure.provenance.json"
-figure_reviewed_by: "Codex scientific visual audit 2026-08-02"
-figure_reviewed_at: "2026-08-02T17:07:49Z"
+figure_reviewed_by: "Codex corpus visual/physics audit 2026-08-05"
+figure_reviewed_at: "2026-08-05T12:35:45.883950+00:00"
 first_proposed_year: 2017
 first_demonstrated_year: null
 keywords:
