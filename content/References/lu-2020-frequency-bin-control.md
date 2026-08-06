@@ -6,7 +6,7 @@ journal: Physical Review Letters
 doi: 10.1103/PhysRevLett.125.120503
 type: reference
 generated_by: scibok-curation
-last_updated: '2026-08-02'
+last_updated: '2026-08-06'
 verification_status: verified
 verified_by: codex-title-page-and-crossref-2026-08-02
 ---
@@ -14,6 +14,7 @@ Demonstrates arbitrary single-qubit control of two-bin frequency encodings using
 
 ## Links
 - **Journal:** [Physical Review Letters](https://doi.org/10.1103/PhysRevLett.125.120503)
+- **arXiv:** [2008.07444](https://arxiv.org/abs/2008.07444)
 
 ## Zoo Links
 - [[frequency-bin-photonic-qubit]]
