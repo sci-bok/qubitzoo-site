@@ -111,6 +111,7 @@ Standard bosonic codes (like GKP) require complex active error correction. The c
 - [[lescanne-2020-bit-flip-suppression]]
 - [[michael-2016-binomial-codes]]
 - [[puri-2020-bias-preserving-gates]]
+- [[ye-2026-bias-preserving-cat-cat-cnot-gate]]
 
 ## Evergreen context
 

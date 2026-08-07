@@ -14,7 +14,6 @@ Demonstrates a dipolar iSWAP gate between individually trapped NaCs molecules. T
 
 ## Links
 - **Journal:** [Nature](https://doi.org/10.1038/s41586-024-08177-3)
-- **arXiv:** [2406.15345](https://arxiv.org/abs/2406.15345)
 
 ## Zoo Links
 - [[polar-molecule-qubit]]

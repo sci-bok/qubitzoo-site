@@ -1,6 +1,6 @@
 {
   "schema": "qubitzoo.genealogy.v1",
-  "generated_at": "2026-08-02T17:20:44.274261+00:00",
+  "generated_at": "2026-08-07T14:00:11.113336+00:00",
   "nodes": [
     {
       "id": "0-pi-qubit",
@@ -483,7 +483,7 @@
       "id": "photonic-qubit",
       "title": "Photonic Qubit",
       "family": "Photonic",
-      "year": 2026,
+      "year": 1984,
       "status": "demonstrated",
       "color": "#ef4444",
       "influence": 0.68
@@ -1066,8 +1066,8 @@
       "target": "cryogenic-amplification"
     },
     {
-      "source": "dual-rail-photonic-qubit",
-      "target": "photonic-qubit"
+      "source": "photonic-qubit",
+      "target": "dual-rail-photonic-qubit"
     },
     {
       "source": "dual-rail-photonic-qubit",
@@ -1222,8 +1222,8 @@
       "target": "frequency-bin-photonic-qubit"
     },
     {
-      "source": "fusion-based-photonic-qubit",
-      "target": "photonic-qubit"
+      "source": "photonic-qubit",
+      "target": "fusion-based-photonic-qubit"
     },
     {
       "source": "time-bin-photonic-qubit",
@@ -1322,8 +1322,8 @@
       "target": "kerr-cat-qubit"
     },
     {
-      "source": "linear-optical-photonic-qubit",
-      "target": "photonic-qubit"
+      "source": "photonic-qubit",
+      "target": "linear-optical-photonic-qubit"
     },
     {
       "source": "linear-optical-photonic-qubit",
@@ -1450,8 +1450,8 @@
       "target": "transmon"
     },
     {
-      "source": "photonic-cluster-state-mbqc-qubit",
-      "target": "photonic-qubit"
+      "source": "photonic-qubit",
+      "target": "photonic-cluster-state-mbqc-qubit"
     },
     {
       "source": "photonic-cluster-state-mbqc-qubit",
@@ -1466,8 +1466,8 @@
       "target": "gkp-codes"
     },
     {
-      "source": "time-bin-photonic-qubit",
-      "target": "photonic-qubit"
+      "source": "photonic-qubit",
+      "target": "time-bin-photonic-qubit"
     },
     {
       "source": "tetron-qubit",

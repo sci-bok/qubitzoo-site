@@ -35,6 +35,7 @@ Curated map of Zoo entries in the **Cross-Platform** family.
 
 ## Conceptual anchors
 
+- [[codes-moc]] is the authoritative map when the comparison is about check structure, measurement schedule, or code-family identity; this page takes over when those choices become hardware-wide overhead and systems questions.
 - [[threshold-theorem]] is the main bridge from `surface-code-logical-qubit` and `color-code-logical-qubit` back to hardware performance targets.
 - [[erasure-error-vs-pauli-error]] separates `erasure-qubit` from the ordinary stabilizer-code story and explains why flagged loss can change the overhead regime.
 - [[noise-bias-and-asymmetric-error-channels]] is the complementary lens when the win comes from skewed Pauli channels rather than explicit erasure detection.
@@ -44,6 +45,7 @@ Curated map of Zoo entries in the **Cross-Platform** family.
 
 - `quantum-gate` is the operation layer: it stays abstract on purpose so the same gate idea can descend either into physical pulse stacks or into encoded logical actions.
 - `surface-code-logical-qubit` and `color-code-logical-qubit` are the geometry-and-decoder layer: both answer the threshold problem, but with different overhead, layout, and gate-transversality tradeoffs.
+- `bacon-shor-code`, `floquet-codes`, and `qldpc-codes` are the check-structure layer: they move complexity respectively into gauge redundancy, time-ordered measurements, or sparse nonlocal connectivity. Their code-level comparison belongs in [[codes-moc]]; their control, connectivity, and decoder consequences belong here.
 - `erasure-qubit` is the noise-model layer: it does not replace a code family so much as change the decoder assumptions under which the other logical encodings should be judged.
 - `classical-control` and `quantum-transduction` are the systems layer: one closes the real-time local feedback loop, the other opens the nonlocal modular-network loop.
 
@@ -60,6 +62,12 @@ Curated map of Zoo entries in the **Cross-Platform** family.
 - Stay in a source hardware family when the central claim is hardware-shaped noise, then cross over here only after the error model is clear. In practice that means reading `kerr-cat-qubit`, `0-pi-qubit`, or `dual-rail-superconducting-qubit` through [[noise-bias-and-asymmetric-error-channels]] or [[erasure-error-vs-pauli-error]] before collapsing them into `surface-code-logical-qubit`, `color-code-logical-qubit`, or `erasure-qubit`.
 - Photonic notes should usually enter this family through `erasure-qubit`: stay in [[photonic-moc]] while the question is encoding choice (`dual-rail-photonic-qubit`, `time-bin-photonic-qubit`) or resource construction (`linear-optical-photonic-qubit`, `photonic-cluster-state-mbqc-qubit`, `fusion-based-photonic-qubit`), then cross here only once flagged loss or fusion failure becomes a decoder-overhead question.
 - Use `classical-control` and `quantum-transduction` as the two stack edges: one asks whether local feedback can keep up with the code cycle, the other asks whether the logical architecture survives once the machine becomes modular.
+
+## Boundary with the Codes MOC
+
+- Stay in [[codes-moc]] while the live question is *which stabilizers, gauge operators, or measurement schedule define the code*.
+- Cross here when the live question becomes *what that code demands from a physical machine*: local-feedback latency for Bacon-Shor or Floquet cycles, long-range connectivity for qLDPC checks, or decoder assumptions for erasure-aware logical qubits.
+- `surface-code-logical-qubit`, `color-code-logical-qubit`, and `erasure-qubit` intentionally appear in both facets. In [[codes-moc]] they are code/noise-model families; here they are portable architectural overlays used to compare otherwise unrelated hardware modalities.
 
 ## Scope boundary
 

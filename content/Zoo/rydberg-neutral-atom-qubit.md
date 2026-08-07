@@ -98,6 +98,9 @@ Rydberg neutral-atom qubits combine three key advantages: (1) native all-to-all 
 - [[grassl-1997-codes-quantum-erasure-channel]]
 - [[isenhower-2010-rydberg-cnot]]
 - [[wu-2022-erasure-neutral-atoms]]
+- [[zeytinoglu-2026-fast-quantum-interconnects-via]]
+- [[wang-2026-neutral-atom-quantum-computing]]
+- [[sagi-2026-motional-refocusing-for-trap-off]]
 
 ## Evergreen context
 

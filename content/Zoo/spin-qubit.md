@@ -164,6 +164,8 @@ Semiconductor spin qubits promise integration with existing CMOS fabrication inf
 - [[xue-2022-logic-spin-qubits]]
 - [[yoneda-2018-dot-spin-qubit]]
 - [[zwanenburg-2013-silicon-electronics]]
+- [[gzyl-2026-emission-dynamics-in-zincblende]]
+- [[xue-2026-controllable-interaction-between-photons]]
 
 ## Evergreen context
 

@@ -1,22 +1,20 @@
 {
   "schema": "qubitzoo.changelog.v1",
-  "generated_at_utc": "2026-08-04T13:12:51.212Z",
+  "generated_at_utc": "2026-08-07T14:00:10.990Z",
   "window_hours": 24,
   "site": {
     "repo_root": "/Users/scibok/.openclaw/workspace/repos/qubitzoo-site",
     "commits": [
       {
-        "sha": "746c9477",
-        "iso": "2026-08-03T10:14:28-04:00",
-        "subject": "zoo: deep-audit polarization photonic qubit",
+        "sha": "4ddc1b55",
+        "iso": "2026-08-06T10:09:25-04:00",
+        "subject": "Audit frequency-bin photonic qubit",
         "files": [
-          "content/Figures/polarization-photonic-qubit-figure.png",
-          "content/Figures/polarization-photonic-qubit-figure.provenance.json",
-          "content/References/bennett-1992-experimental-quantum-cryptography.md",
-          "content/References/bennett-brassard-1984-bb84-polarization.md",
-          "content/References/huang-2026-on-demand-polarization-cnot.md",
-          "content/References/lu-2024-polarization-frequency-cnot.md",
-          "content/Zoo/polarization-photonic-qubit.md"
+          "content/References/congia-2026-integrated-frequency-processor.md",
+          "content/References/koviri-2026-frequency-bin-qudits.md",
+          "content/References/lu-2020-frequency-bin-control.md",
+          "content/References/yang-2026-tfln-frequency-processor.md",
+          "content/Zoo/frequency-bin-photonic-qubit.md"
         ]
       }
     ]
@@ -26,35 +24,23 @@
     "available": true,
     "commits": [
       {
-        "sha": "0c7774b2",
-        "iso": "2026-08-04T06:11:32-04:00",
-        "subject": "zoo: pipeline queue-run processed=10 failed=0 (2026-08-04 10:11 UTC)",
+        "sha": "9e14712b",
+        "iso": "2026-08-07T06:17:46-04:00",
+        "subject": "zoo: pipeline queue-run processed=10 failed=0 (2026-08-07 10:17 UTC)",
         "files": [
-          "References/berritta-2026-adaptive-spectroscopy-of-fast.md",
-          "References/rathnakaran-2026-squeezing-fueled-quantum-otto-engine.md",
-          "References/wegmann-2026-zero-g-a-pre-decoder-aware-decoder.md",
-          "References/yarkoni-2026-the-pangaea-architecture-fault-tolerant.md",
-          "Zoo/circuit-qed.md",
-          "Zoo/classical-control.md",
-          "Zoo/photonic-cluster-state-mbqc-qubit.md"
+          "References/bazayeva-2026-i-qmapper-error-aware-layout-optimization.md",
+          "References/rathi-2026-x-z-round-scheduling-for.md",
+          "References/wysocki-2026-detailed-interpretable-characterization-of.md",
+          "Zoo/qubit-readout.md",
+          "Zoo/transmon.md"
         ]
       },
       {
-        "sha": "5fd99f77",
-        "iso": "2026-08-03T10:46:46-04:00",
-        "subject": "Improve molecular MOC routing synthesis",
+        "sha": "ee6ca9d2",
+        "iso": "2026-08-06T10:47:51-04:00",
+        "subject": "Add stationary-to-flying interface routing",
         "files": [
-          "MOCs/molecular-moc.md"
-        ]
-      },
-      {
-        "sha": "e4d5cb53",
-        "iso": "2026-08-03T10:14:38-04:00",
-        "subject": "zoo: sync reviewed polarization figure",
-        "files": [
-          "Figures/polarization-photonic-qubit-figure.png",
-          "Figures/polarization-photonic-qubit-figure.provenance.json",
-          "Zoo/polarization-photonic-qubit.md"
+          "MOCs/qubit-zoo-index-moc.md"
         ]
       }
     ]
@@ -64,76 +50,60 @@
     "available": true,
     "commits": [
       {
-        "sha": "0db89658",
-        "iso": "2026-08-04T06:11:30-04:00",
-        "subject": "zoo: pipeline queue-run processed=10 failed=0 (2026-08-04 10:11 UTC)",
+        "sha": "bc2b7c27",
+        "iso": "2026-08-07T06:17:44-04:00",
+        "subject": "zoo: pipeline queue-run processed=10 failed=0 (2026-08-07 10:17 UTC)",
         "files": [
           "data/canon_coverage.json",
           "data/classics_backlog.json",
           "data/classics_resolver_report.json",
           "data/discovery_queue.json",
-          "data/exports/paper_feed/2026-08-04/paper_feed.v1.jsonl",
+          "data/exports/paper_feed/2026-08-07/paper_feed.v1.jsonl",
           "data/exports/paper_feed/latest.json",
           "data/influence_history.jsonl",
           "data/obsidian_cli_remediation.jsonl",
           "data/processed_papers.jsonl",
           "data/quarantine_queue.json",
           "data/reports/.last-morning-summary-date",
-          "data/reports/2026-08-03/calibration-json.err.log",
-          "data/reports/2026-08-03/calibration.err.log",
-          "data/reports/2026-08-03/calibration.json",
-          "data/reports/2026-08-03/calibration.txt",
-          "data/reports/2026-08-03/influence-scoring.log",
-          "data/reports/2026-08-03/moc-build.log",
-          "data/reports/2026-08-03/moc-generate.log",
-          "data/reports/2026-08-03/ops-report-json.err.log",
-          "data/reports/2026-08-03/ops-report.err.log",
-          "data/reports/2026-08-03/ops-report.json",
-          "data/reports/2026-08-03/ops-report.txt",
-          "data/reports/2026-08-03/quarantine-triage.log",
-          "data/reports/2026-08-03/queue-summary.json",
-          "data/reports/2026-08-03/queue.log",
-          "data/reports/2026-08-03/reference-backlink-dry-run.json",
-          "data/reports/2026-08-03/reference-backlink-dry-run.log",
-          "data/reports/2026-08-03/reference-backlink-migration.log",
-          "data/reports/2026-08-03/reference-orphan-quarantine-dry-run.json",
-          "data/reports/2026-08-03/run-summary.json",
-          "data/reports/2026-08-03/run-summary.txt",
-          "data/reports/2026-08-03/zettel-review.log",
-          "data/reports/2026-08-03/zoo-links.log",
-          "data/reports/2026-08-03/zoo-note-conventions.log",
-          "data/reports/2026-08-03/zoo-source-references.log",
-          "data/reports/2026-08-04/canon-coverage.log",
-          "data/reports/2026-08-04/canon-coverage.md",
-          "data/reports/2026-08-04/classics-build.log",
-          "data/reports/2026-08-04/classics-resolve.log",
-          "data/reports/2026-08-04/discovery.log",
-          "data/reports/2026-08-04/preflight.log",
-          "data/reports/2026-08-04/prioritize-classics.log",
-          "data/reports/2026-08-04/queue.log",
+          "data/reports/2026-08-06/calibration-json.err.log",
+          "data/reports/2026-08-06/calibration.err.log",
+          "data/reports/2026-08-06/calibration.json",
+          "data/reports/2026-08-06/calibration.txt",
+          "data/reports/2026-08-06/influence-scoring.log",
+          "data/reports/2026-08-06/moc-build.log",
+          "data/reports/2026-08-06/moc-generate.log",
+          "data/reports/2026-08-06/ops-report-json.err.log",
+          "data/reports/2026-08-06/ops-report.err.log",
+          "data/reports/2026-08-06/ops-report.json",
+          "data/reports/2026-08-06/ops-report.txt",
+          "data/reports/2026-08-06/queue-summary.json",
+          "data/reports/2026-08-06/queue.log",
+          "data/reports/2026-08-06/run-summary.json",
+          "data/reports/2026-08-06/run-summary.txt",
+          "data/reports/2026-08-06/zettel-review.log",
+          "data/reports/2026-08-06/zoo-links.log",
+          "data/reports/2026-08-06/zoo-note-conventions.log",
+          "data/reports/2026-08-06/zoo-source-references.log",
+          "data/reports/2026-08-07/canon-coverage.log",
+          "data/reports/2026-08-07/canon-coverage.md",
+          "data/reports/2026-08-07/classics-build.log",
+          "data/reports/2026-08-07/classics-resolve.log",
+          "data/reports/2026-08-07/discovery.log",
+          "data/reports/2026-08-07/preflight.log",
+          "data/reports/2026-08-07/prioritize-classics.log",
+          "data/reports/2026-08-07/queue.log",
           "data/reports/latest-run-summary.json",
           "data/reports/latest-run-summary.txt",
           "data/reports/run-history.jsonl",
-          "data/reports/weekly/2026-W32/quarantine-triage.json"
+          "data/zoo_source_references.json"
         ]
       },
       {
-        "sha": "d67c137f",
-        "iso": "2026-08-03T10:15:46-04:00",
-        "subject": "audit: record polarization photonic deep review",
+        "sha": "94dffabe",
+        "iso": "2026-08-06T10:10:34-04:00",
+        "subject": "Record frequency-bin photonic qubit audit",
         "files": [
-          "data/audit-tracker.json",
-          "vault/Figures/.candidates/polarization-photonic-qubit-blueprint-v2.png",
-          "vault/Figures/.candidates/polarization-photonic-qubit-blueprint.png",
-          "vault/Figures/.candidates/polarization-photonic-qubit-blueprint.svg",
-          "vault/Figures/.candidates/polarization-photonic-qubit-figure-20260803T140725701280Z.png",
-          "vault/Figures/.candidates/polarization-photonic-qubit-figure-20260803T140725701280Z.provenance.json",
-          "vault/Figures/.candidates/polarization-photonic-qubit-figure-20260803T140949793977Z.png",
-          "vault/Figures/.candidates/polarization-photonic-qubit-figure-20260803T140949793977Z.provenance.json",
-          "vault/Figures/.candidates/polarization-photonic-qubit-figure-20260803T141117982542Z.png",
-          "vault/Figures/.candidates/polarization-photonic-qubit-figure-20260803T141117982542Z.provenance.json",
-          "vault/Figures/polarization-photonic-qubit-figure.png",
-          "vault/Figures/polarization-photonic-qubit-figure.provenance.json"
+          "data/audit-tracker.json"
         ]
       }
     ]
@@ -141,9 +111,9 @@
   "pipeline": {
     "status": "ok",
     "mode": "full",
-    "timestamp_utc": "2026-08-04T10:00:01Z",
-    "timestamp_local": "2026-08-04 06:00:01 EDT",
-    "papers_added": 4,
+    "timestamp_utc": "2026-08-07T10:00:05Z",
+    "timestamp_local": "2026-08-07 06:00:05 EDT",
+    "papers_added": 3,
     "failing_steps": []
   }
 }

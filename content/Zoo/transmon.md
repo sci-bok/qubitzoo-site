@@ -157,6 +157,10 @@ State-of-the-art (as of late 2025): $T_1$ up to $1.68\,\text{ms}$ (planar, tanta
 - [[walter-2017-rapid-readout]]
 - [[yan-2018-tunable-coupler]]
 - [[zhao-2020-mergemon]]
+- [[wu-2026-demonstrating-advantages-of-dynamic]]
+- [[lu-2026-dynamically-suppressing-cavity-dephasing]]
+- [[qiao-2026-transducer-leakage-error-suppression]]
+- [[wysocki-2026-detailed-interpretable-characterization-of]]
 
 ## Evergreen context
 

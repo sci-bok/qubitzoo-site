@@ -3,7 +3,7 @@ title: Qubit Zoo Index MOC
 type: moc
 technology_family: index
 note_count: 81
-last_updated: '2026-08-04'
+last_updated: '2026-08-06'
 generated_by: pipeline-moc-v1
 ---
 
@@ -44,6 +44,13 @@ Top-level navigation for the Qubit Zoo through non-exclusive facets. An entry ma
 - Move to [[spin-photon-moc]] when the real comparison is remote entanglement, photon indistinguishability, or telecom-native links via [[siv-color-center-qubit]] and [[t-center-qubit]].
 - Use [[divincenzo-criteria]] as the common scorecard, then [[coherence-time-hierarchy]] to track where each platform parks the cost: local coherence, cryogenic overhead, or photonic interface quality.
 
+## High-value cross-family slice: stationary-to-flying interfaces
+
+- Start in [[superconducting-moc]] or [[semiconducting-moc]] while the information is still stored and controlled in a microwave-native stationary qubit. Local resonators and exchange links can move excitations around a processor, but they do not by themselves produce a low-loss fibre channel.
+- Move through [[cross-platform-moc]] and [[quantum-transduction]] when the architecture must convert microwave quantum information into optical photons. Judge this route by end-to-end efficiency, added noise, bandwidth, and refrigerator heat load together; optimizing any one metric in isolation can hide the real systems cost.
+- Take the native-emitter alternative through [[spin-photon-moc]] when the stationary qubit already has a useful optical transition. This can remove a frequency-conversion stage, but it moves the burden to photon collection, indistinguishability, spectral stability, and the emitter's cryogenic envelope.
+- End in [[photonic-moc]] once the question becomes which flying encoding or optical computation model carries the information onward. Use [[divincenzo-criteria]] to compare the two interface strategies without confusing a good local qubit with a complete networking stack.
+
 ## High-value cross-family slice: semiconductor-superconductor boundary
 
 - Use [[super-semi-moc]] when the same InAs/Al or Josephson-weak-link hardware is being used for tunable circuit physics, Andreev-spin control, or protected-circuit variants like [[ferbo-qubit]].
@@ -53,5 +60,6 @@ Top-level navigation for the Qubit Zoo through non-exclusive facets. An entry ma
 ## High-value cross-family slice: hardware-assisted fault tolerance
 
 - Start in [[superconducting-moc]] when the win is being claimed at the device layer: bosonic encodings, protected circuits, cat-bias engineering, or erasure-converting superconducting encodings all live there first.
-- Move to [[cross-platform-moc]] when the real comparison becomes logical-overhead strategy, decoder assumptions, or systems architecture via [[erasure-qubit]], [[surface-code-logical-qubit]], [[color-code-logical-qubit]], and [[classical-control]].
+- Move through [[codes-moc]] when the next question is which check structure, measurement schedule, or connectivity tradeoff best matches that hardware; this is where Bacon-Shor, Floquet, qLDPC, surface-code, and color-code choices are compared as code families.
+- Move to [[cross-platform-moc]] when the comparison becomes hardware-wide overhead, decoder assumptions, feedback latency, or modular systems architecture via [[erasure-qubit]], [[surface-code-logical-qubit]], [[color-code-logical-qubit]], [[classical-control]], and [[quantum-transduction]].
 - Use [[bosonic-code-hierarchy]], [[noise-bias-and-asymmetric-error-channels]], [[erasure-error-vs-pauli-error]], and [[threshold-theorem]] as the four-note bridge from hardware mechanism to architectural consequence.

@@ -111,6 +111,7 @@ GKP codes protect against the dominant error channel in bosonic systems — smal
 - [[flhmann-2019-encoding-qubit-trapped]]
 - [[michael-2016-binomial-codes]]
 - [[sivak-2023-real-time-error]]
+- [[shiina-2026-high-rate-and-resource-efficient-all-photonic]]
 
 ## Evergreen context
 

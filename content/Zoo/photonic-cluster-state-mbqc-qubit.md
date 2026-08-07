@@ -110,6 +110,7 @@ Computation via measurements: measuring qubit $i$ in the basis $\{|+_\theta\rang
 - [[bombin-2021-interleaving]]
 - [[raussendorf-2001-one-way-computer]]
 - [[yarkoni-2026-the-pangaea-architecture-fault-tolerant]]
+- [[feng-2026-on-chip-generation-of-multi-qubit]]
 
 ## Evergreen context
 
