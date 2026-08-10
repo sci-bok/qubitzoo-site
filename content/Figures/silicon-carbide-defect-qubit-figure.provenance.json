@@ -2,13 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "silicon-carbide-defect-qubit-figure.png",
-    "sha256": "90ec57f882a864de0dab7fcd05cb5634c345e41b364799e0004ad19822cabd77"
+    "sha256": "c175d0f306a27a7c0393216df869c7c73467c21f301970181d4962cd98cc4adf"
   },
   "artifact_role": "primary",
   "blueprint": null,
   "entry_slug": "silicon-carbide-defect-qubit",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/silicon-carbide-defect-qubit-figure-20260805T122851794678Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/silicon-carbide-defect-qubit-figure-20260810T140551222619Z.png",
     "supersedes_file": "silicon-carbide-defect-qubit-figure.png"
   },
   "renderer": {
@@ -19,17 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-05T12:28:51.794678+00:00",
-    "id": "gen-1785932917-uTENAJQBRnDJOVqsY958",
+    "generated_at": "2026-08-10T14:05:51.222619+00:00",
+    "id": "gen-1786370739-5Foi0ObGgSkCZx596C3f",
     "image_size": "1K",
-    "prompt_sha256": "e450d2be89340065b7164971dc36e5cd940ba39da66e4254e8aec86d820734bb",
+    "prompt_sha256": "fa01d1873297dfb9be03b01cc5c9c82c7b4cc311240e357d4ff5b27045f61a1b",
     "source_media_type": "image/jpeg",
     "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Rich neutral-divacancy plate with correct S=1 level structure, V_Si taxonomy only, microwave/optical control, coherence, and nuclear-memory context.",
-    "reviewed_at": "2026-08-05T12:35:46.070691+00:00",
-    "reviewer": "Codex corpus visual/physics audit 2026-08-05",
+    "notes": "PASS: full-resolution review confirms correct neutral-divacancy S=1 versus silicon-vacancy S=3/2 taxonomy; correct zero-field state ordering and Zeeman splitting; complete representative Hamiltonian with D, E, Zeeman, and hyperfine terms; source-backed 2.3 ms Hahn-echo and >14.5 ms dynamically decoupled coherence; distinct V1 spin-photon entanglement, individual-V2 2025 PDMR, and integrated PL6 electron-13C register narratives. Rich explanatory composition passes the house-style gate. Minor repeated headings and compact ancillary wording do not alter the scientific story.",
+    "reviewed_at": "2026-08-10T14:06:45.468976+00:00",
+    "reviewer": "Codex daily deep audit 2026-08-10",
     "status": "passed"
   },
   "schema_version": 1
