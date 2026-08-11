@@ -3,7 +3,7 @@ title: Electron-on-Solid-Neon Qubit
 entry_type: qubit
 technology_family: Floating Electron
 status: demonstrated
-figure_reviewed: false
+figure_reviewed: true
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/electron-on-solid-neon-qubit-figure.provenance.json"
@@ -11,9 +11,11 @@ first_proposed_year: 2021
 first_demonstrated_year: 2022
 keywords: [electron on neon, floating electron, motional qubit, charge qubit, circuit QED, vacuum interface]
 influence_score: 0.72
-last_updated: '2026-08-08'
+last_updated: '2026-08-11'
 generated_by: scibok-curation
-verified_by: codex-daily-deep-audit-2026-08-08
+verified_by: codex-daily-deep-audit-2026-08-11
+figure_reviewed_by: "Codex daily deep audit 2026-08-11"
+figure_reviewed_at: "2026-08-11T14:14:12.016519+00:00"
 ---
 
 ## Figure
@@ -66,6 +68,9 @@ For detuning $\Delta=\omega_{01}-\omega_r$ with $|\Delta|\gg g_{01}$, the resona
 **Confinement mechanism — Kanai et al. (2024):**
 - Showed theoretically that nanoscale solid-neon bumps can naturally confine electrons in ring-like lateral states, explaining why uncontrolled surface morphology can determine which electrons become usable qubits.
 
+**Surface-morphology trapping — Zheng et al. (2025):**
+- Experimentally compared resonator-trench depth and surface roughness, finding that shallow etching improves charge-state coupling and that fabrication-induced morphology controls the formation of strongly coupled electron states.
+
 **Multi-qubit control — Li et al. (2026 preprint; first posted 2025):**
 - Demonstrated coherent cross-resonance and bSWAP operations between interacting eNe charge qubits and observed direct charge–charge coupling up to $62.5\,\mathrm{MHz}$ in a three-qubit device.
 - No two-qubit gate fidelity was reported, so this remains a control milestone rather than a fidelity benchmark.
@@ -76,6 +81,9 @@ For detuning $\Delta=\omega_{01}-\omega_r$ with $|\Delta|\gg g_{01}$, the resona
 **Spin-compatible fast control — Wang et al. (2026 preprint):**
 - Demonstrated microwave readout and charge-qubit Rabi frequencies up to $76\,\mathrm{MHz}$ with a magnetic-field-compatible NbTiN nanowire resonator.
 - The device still trapped the electron at an unintended surface site, underscoring that deterministic positioning remains unresolved.
+
+**Engineered deterministic trapping — Surse et al. (2026 preprint):**
+- Proposed a smooth dielectric underlayer with selectively etched trapping sites and supported it with coupled Schrödinger–Poisson simulations; this is a device-engineering proposal, not a demonstrated deterministic loader.
 
 ## Key Metrics
 
@@ -98,6 +106,7 @@ For detuning $\Delta=\omega_{01}-\omega_r$ with $|\Delta|\gg g_{01}$, the resona
 - The large motional dipole enables fast control and strong coupling but also increases sensitivity to electric-field fluctuations.
 - Direct charge–charge coupling now supports coherent multi-qubit operations, but calibrated high-fidelity entangling gates have not yet been reported.
 - Levitated-neon-particle arrays are a 2026 peer-reviewed proposal for separating the qubit host from substrate roughness; they are not yet an experimental processor architecture.
+- An engineered dielectric underlayer with lithographically defined minima is a July 2026 preprint route to deterministic trapping; experimental validation remains open.
 
 ## References
 
@@ -112,23 +121,28 @@ For detuning $\Delta=\omega_{01}-\omega_r$ with $|\Delta|\gg g_{01}$, the resona
 ### Confinement and scaling
 
 - T. Kanai, D. Jin, and W. Guo, "Single-Electron Qubits Based on Quantum Ring States on Solid Neon Surface," [Physical Review Letters 132, 250603 (2024)](https://doi.org/10.1103/PhysRevLett.132.250603) — [arXiv:2311.02501](https://arxiv.org/abs/2311.02501).
+- K. Zheng, X. Song, and K. W. Murch, "Surface-Morphology-Assisted Trapping of Strongly Coupled Electron-on-Neon Charge States," [Physical Review Letters 135, 080601 (2025)](https://doi.org/10.1103/8v7d-53x7) — [arXiv:2503.01847](https://arxiv.org/abs/2503.01847).
 - S. Inui et al., "On-Chip Levitated Neon Particle Arrays for Robust and Scalable Electron Qubits," [PRX Quantum 7, 033019 (2026)](https://doi.org/10.1103/j7mn-x9f2) — [arXiv:2512.00654](https://arxiv.org/abs/2512.00654).
+- K. Surse et al., "Deterministic single-electron trapping on solid neon using engineered dielectric surface geometry," [arXiv:2607.13448 (2026)](https://arxiv.org/abs/2607.13448).
 
 ## Linked Papers
 
 - [[zhou-2022-solid-neon-electron-qubit]]
 - [[zhou-2024-neon-charge-qubit]]
 - [[kanai-2024-neon-ring-states]]
+- [[zheng-2025-neon-surface-morphology]]
 - [[li-2026-interacting-neon-qubits]]
 - [[li-2026-neon-noise-resilience]]
 - [[wang-2026-fast-neon-charge-control]]
 - [[inui-2026-levitated-neon-arrays]]
+- [[surse-2026-deterministic-neon-trapping]]
 
 ## Evergreen context
 
 - [[jaynes-cummings-in-circuits]] — electron-photon strong coupling reduces to this interaction after two-level truncation and the rotating-wave approximation.
 - [[dispersive-readout-mechanism]] — explains how the motional state produces a state-dependent resonator shift.
 - [[charge-noise-sweet-spot]] — the central comparison for a strongly electric-dipole-coupled motional qubit.
+- [[vacuum-rms-field-scaling]] — separates the resonator-side zero-point voltage from the electron's large motional dipole, the two ingredients that together set the observed charge-photon coupling.
 
 ## Related Entries
 

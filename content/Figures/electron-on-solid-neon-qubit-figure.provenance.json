@@ -2,13 +2,19 @@
   "artifact": {
     "media_type": "image/png",
     "path": "electron-on-solid-neon-qubit-figure.png",
-    "sha256": "b306949425de2cbe3b3f4c4dfef018150b25552934c35ad6e9e1b81572a45f37"
+    "sha256": "eb8079f6e476d08c2f36b0c705f0bfd7e6874d7e04d56ff8ec7568553e70a618"
   },
   "artifact_role": "primary",
-  "blueprint": null,
+  "blueprint": {
+    "media_type": "image/png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/electron-on-solid-neon-qubit-blueprint.png",
+    "role": "physics-blueprint",
+    "sha256": "3b3f293f7d32f8bb2d47af66e0b0e1bf3d11c0c672ed67b96ebedcde11f4fb9e",
+    "strict": true
+  },
   "entry_slug": "electron-on-solid-neon-qubit",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/electron-on-solid-neon-qubit-figure-20260805T051730263295Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/electron-on-solid-neon-qubit-figure-20260811T141328915708Z.png",
     "supersedes_file": "electron-on-solid-neon-qubit-figure.png"
   },
   "renderer": {
@@ -19,17 +25,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-05T05:17:30.263295+00:00",
-    "id": "gen-1785907037-UAy8BmUMZ4g1XwhwDHHQ",
+    "generated_at": "2026-08-11T14:13:28.915708+00:00",
+    "id": "gen-1786457598-HoG2yVfKSB4RwzjLYVbq",
     "image_size": "1K",
-    "prompt_sha256": "509bdd38d074095110e21621e48a4799bc470defa16977cc8f1bd0c1d903b5d1",
+    "prompt_sha256": "78da308a24d90b078c3112b83f9fb3d81b03e19c830fdb6dafd13f7ec702ae1d",
     "source_media_type": "image/jpeg",
     "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Approved rich explanatory Wave 3 plate after full-resolution review. The central hardware/encoding/control/readout or infrastructure narrative is sound; minor ancillary labels and rendering artifacts are accepted under the detail-first policy.",
-    "reviewed_at": "2026-08-05T05:30:31.892912+00:00",
-    "reviewer": "Codex scientific visual audit 2026-08-05",
+    "notes": "Approved after independent full-resolution review: the rich four-panel plate correctly separates the demonstrated natural-bump device from proposed engineered/levitated trapping routes; shows E0,|0> below E1,|1> with omega_01 only between them; uses the correct motional electric-dipole g01 coupling mechanism without Josephson variables or unsafe equations; shows exactly two IQ clusters; and reproduces the source-backed 2024 benchmarks. Tolerated ancillary wording artifacts: prompt-leak phrases \"per rules\" and the small \"guard electrod\" typo.",
+    "reviewed_at": "2026-08-11T14:14:12.016519+00:00",
+    "reviewer": "Codex daily deep audit 2026-08-11",
     "status": "passed"
   },
   "schema_version": 1
