@@ -2,13 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "unimon-qubit-figure.png",
-    "sha256": "c5624917651218d006978babd879a118f696152f1064927c7f4a31e420a66b00"
+    "sha256": "2e8a613d8956896bb94bc18ff09b0fc2baba14fba6c4b4ea17bfc347daf75193"
   },
   "artifact_role": "primary",
   "blueprint": null,
   "entry_slug": "unimon-qubit",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/unimon-qubit-figure-20260805T121155792770Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/unimon-qubit-figure-20260812T140522259213Z.png",
     "supersedes_file": "unimon-qubit-figure.png"
   },
   "renderer": {
@@ -19,17 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-05T12:11:55.792770+00:00",
-    "id": "gen-1785931874-OfwdukGjT8Qi4tl2spk8",
+    "generated_at": "2026-08-12T14:05:22.259213+00:00",
+    "id": "gen-1786543510-jQ920VXP0xM6MKtPnt1P",
     "image_size": "1K",
-    "prompt_sha256": "c59e13c625d55d668cfaefe8e768ce9f56a98c5e29bac76792a047e85386e292",
+    "prompt_sha256": "4533782021a572ff064f2f9697c16c991dba8b4e6dafcf9d65f1f0708e48b8a3",
     "source_media_type": "image/jpeg",
     "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Rich unimon device, potential, control/readout, gradiometric sweet spots, and entry-backed metrics.",
-    "reviewed_at": "2026-08-05T12:35:46.108122+00:00",
-    "reviewer": "Codex corpus visual/physics audit 2026-08-05",
+    "notes": "APPROVE: independent full-resolution re-review confirms every complementary device view represents the same unique central Josephson junction in series with the CPW center conductor; no SQUID, second physical junction, or shunt branch is introduced. Both CPW ends remain grounded, two-loop differential-flux gradiometry is consistent, control/readout are weak capacitive couplings, the half-flux positive-quartic expansion and f12>f01 ladder are correct, and the three Hyyppa 2022 metrics match the source. Minor ancillary hyphenation/spacing is nonblocking.",
+    "reviewed_at": "2026-08-12T14:06:47.537472+00:00",
+    "reviewer": "codex-daily-deep-audit-2026-08-12",
     "status": "passed"
   },
   "schema_version": 1

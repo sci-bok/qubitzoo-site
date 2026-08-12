@@ -3,7 +3,7 @@ title: Unimon Qubit
 entry_type: qubit
 technology_family: Superconducting
 status: demonstrated
-figure_reviewed: false
+figure_reviewed: true
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/unimon-qubit-figure.provenance.json"
@@ -11,9 +11,11 @@ first_proposed_year: 2022
 first_demonstrated_year: 2022
 keywords: [unimon, superconducting qubit, geometric inductance, single junction, high anharmonicity, flux sweet spot]
 influence_score: 0.72
-last_updated: '2026-08-09'
+last_updated: '2026-08-12'
 generated_by: scibok-curation
-verified_by: codex-daily-deep-audit-2026-08-09
+verified_by: codex-daily-deep-audit-2026-08-12
+figure_reviewed_by: "codex-daily-deep-audit-2026-08-12"
+figure_reviewed_at: "2026-08-12T14:06:47.537472+00:00"
 ---
 
 ## Figure
@@ -87,6 +89,7 @@ The 2024 multimode analysis by Tuohino et al. showed that high-frequency modes m
 - [[josephson-junction-as-nonlinear-element]] — the single junction converts a distributed resonator mode into an anharmonic qubit.
 - [[charge-noise-sweet-spot]] — absence of a charge island and half-flux operation define the protection story.
 - [[resonator-as-quantum-bus]] — the unimon blurs the usual boundary between qubit mode and resonator mode.
+- [[vacuum-rms-field-scaling]] — connects the distributed CPW geometry and proposed high-impedance designs to the zero-point voltage available for coupling, before junction nonlinearity is considered.
 
 ## Related Entries
 
