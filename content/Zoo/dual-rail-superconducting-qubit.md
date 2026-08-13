@@ -3,6 +3,7 @@ title: Dual-Rail Superconducting Qubit
 entry_type: qubit
 technology_family: Superconducting
 status: demonstrated
+influence_score: 0.50
 figure_reviewed: true
 first_proposed_year: 2016
 first_demonstrated_year: 2020
@@ -14,15 +15,15 @@ keywords:
 - erasure
 - cavity
 - baseband
-last_updated: '2026-03-21'
+last_updated: '2026-08-13'
 generated_by: scibok-curation
 extracted_by: manual
-verified_by: scibok-manual-2026-03-21
+verified_by: scibok-deep-audit-2026-08-13
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/dual-rail-superconducting-qubit-figure.provenance.json"
-figure_reviewed_by: "Codex scientific visual audit 2026-08-05"
-figure_reviewed_at: "2026-08-05T04:45:11.017052+00:00"
+figure_reviewed_by: "Codex scientific visual audit 2026-08-13"
+figure_reviewed_at: "2026-08-13T14:23:21.020035+00:00"
 ---
 
 ## Figure
@@ -31,22 +32,24 @@ figure_reviewed_at: "2026-08-05T04:45:11.017052+00:00"
 
 ## Description
 
-The dual-rail superconducting qubit encodes quantum information in the single-excitation subspace of two coupled superconducting modes: $|0_L\rangle = |01\rangle$ and $|1_L\rangle = |10\rangle$. This encoding — borrowed from semiconductor spin qubit and photonic qubit design — converts dominant $T_1$ decay into detectable erasure errors and, in the transmon-pair implementation, enables microwave-free control via baseband pulses.
+The dual-rail superconducting qubit encodes quantum information in the single-excitation subspace of two superconducting modes: $|0_L\rangle = |01\rangle$ and $|1_L\rangle = |10\rangle$ in the bare-mode basis. At resonance, coupled-transmon implementations often work in the symmetric and antisymmetric eigenbasis $|\pm\rangle=(|10\rangle\pm|01\rangle)/\sqrt{2}$. In either basis, loss of the single excitation produces $|00\rangle$, a state outside the codespace that can be detected and reported as an erasure.
 
 The concept originates in quantum optics (a single photon across two spatial modes is the canonical photonic qubit; see [[dual-rail-photonic-qubit]]), but the specific application to superconducting circuits was proposed by Shim & Tahan (2016), who recognized that the same encoding applied to coupled transmons yields a Hamiltonian formally identical to the semiconductor singlet-triplet qubit — with the logical splitting set by mode detuning, controllable by baseband flux/voltage pulses.
 
-The encoding has been realized in two distinct physical platforms:
+The encoding has been realized in three closely related superconducting implementations:
 
-**Transmon-pair (composite qubit, CQB)** — Two capacitively coupled transmons with a small avoided crossing, controlled entirely by non-adiabatic baseband pulses and coherent Landau-Zener interference. No microwave drives required. First demonstrated by Campbell et al. (2020) with Clifford fidelities >99.7%.
+**Small-gap composite qubit (CQB)** — Two capacitively coupled transmons operated around a small avoided crossing and controlled by non-adiabatic baseband pulses plus coherent Landau-Zener interference. Campbell et al. (2020) demonstrated Clifford fidelities above 99.7% without resonant microwave qubit drives.
 
-**Cavity dual-rail** — Two microwave cavities (typically 3D stub cavities with photon lifetimes >1 ms) coupled by a transmon ancilla. The cavity version leverages long photon lifetimes and converts dominant photon loss into detectable erasure events. Note: the cavity implementation does use microwave drives for state preparation, beamsplitter operations, and readout — the strict "no microwave qubit drive" advantage applies primarily to the transmon-pair CQB. Demonstrated by Teoh et al. (2023, Yale/Schoelkopf) and Levine et al. (2024, AWS).
+**Coupled-transmon erasure qubit** — Two resonantly coupled tunable transmons form protected symmetric/antisymmetric logical eigenstates. Levine et al. (2024) demonstrated millisecond-scale codespace coherence, $2.19(2)\times10^{-3}$ erasure probability per single-qubit gate, residual errors about 40 times smaller, and mid-circuit erasure checks adding less than 0.1% dephasing. Huang et al. (2026) scaled this approach to four dual-rail qubits and logical multi-qubit entanglement.
+
+**Cavity dual-rail** — Two long-lived microwave-cavity modes are coupled through driven circuit-QED interactions with a transmon ancilla. The cavity version converts photon loss into erasures but still uses microwave drives for state preparation, beamsplitter operations, erasure checks, and readout. Chou et al. (2024) demonstrated 0.01%-level logical SPAM error and detected more than 99% of cavity-decay events; de Graaf et al. (2025) later demonstrated a hardware-efficient mid-circuit erasure check using joint-photon-number splitting.
 
 Key advantages of the dual-rail encoding:
 
 - **Erasure detection:** The encoded subspace $\{|01\rangle, |10\rangle\}$ has exactly one excitation. Any $T_1$ decay produces $|00\rangle$, which is outside the codespace and detectable — converting the dominant error channel into an erasure. The double-excitation state $|11\rangle$ is also outside the codespace and detectable, but is reached by excitation errors (heating, gate errors), not by $T_1$ relaxation.
 - **Microwave-free control (CQB):** In the transmon-pair implementation, all single-qubit gates are performed by baseband (DC) flux pulses that detune the two transmons, eliminating the need for microwave generators, mixers, and filters per qubit.
 - **Super-semi compatibility:** The encoding is especially natural for variable-junction qubits (gatemons, super-semi junctions) where junction tunability replaces flux tunability.
-- **QEC efficiency:** Erasure conversion reduces surface code overhead by 3–10× compared to standard depolarizing noise.
+- **QEC efficiency:** Because an erasure reveals its location, a distance-$d$ code can ideally correct up to $d-1$ erasures, compared with only $\lfloor(d-1)/2\rfloor$ arbitrary Pauli errors. Real hardware gains depend on the erasure-check and residual-Pauli error budgets.
 
 
 ## Hamiltonian
@@ -55,20 +58,24 @@ Key advantages of the dual-rail encoding:
 
 $$H = \frac{\omega_1}{2}\sigma_z^{(1)} + \frac{\omega_2}{2}\sigma_z^{(2)} + g(\sigma_+^{(1)}\sigma_-^{(2)} + \text{h.c.})$$
 
-In the $\{|01\rangle, |10\rangle\}$ single-excitation subspace, this reduces to:
+In the ordered basis $\{|10\rangle, |01\rangle\}$, and after dropping a common energy offset, this reduces to:
 
 $$H_{\text{encoded}} = \frac{\Delta}{2}\tau_z + g\,\tau_x$$
 
-where $\Delta = \omega_1 - \omega_2$ is the detuning (baseband-controllable via flux) and $g$ is the transmon-transmon coupling. Logical $Z$ rotations come from $\Delta$ (tunable), logical $X$ rotations from $g$ (always-on exchange). This is formally identical to the singlet-triplet spin qubit Hamiltonian $H = (J/2)\sigma_z + (g\mu_B\Delta B_z/2)\sigma_x$ — the semiconductor-superconductor bridge that motivated the proposal.
+where $\Delta = \omega_1 - \omega_2$ is the mode detuning, $g$ is the exchange coupling, and $\tau_i$ act on the bare dual-rail basis. At $\Delta=0$, the eigenstates are $|\pm\rangle=(|10\rangle\pm|01\rangle)/\sqrt{2}$ with splitting $2g$. Detuning and exchange therefore generate rotations about two noncommuting logical axes; the exact pulse implementation differs between the small-gap CQB and the resonantly coupled erasure-qubit architecture. This is the same two-level structure exploited by singlet-triplet spin qubits, up to basis and coefficient conventions.
 
 ### Cavity dual-rail encoding
 
-For two cavities coupled by a transmon ancilla, the beamsplitter interaction in the single-photon subspace gives the same effective Hamiltonian. The transmon mediates a parametrically activated coupling $g_\text{BS}(t)$ between the cavity modes, enabling controlled rotations in the logical subspace.
+For two cavity modes, a parametrically activated beamsplitter interaction has the form
+
+$$H_{\mathrm{BS}}/\hbar=g_{\mathrm{BS}}(t)e^{i\phi}a^\dagger b+g_{\mathrm{BS}}(t)e^{-i\phi}ab^\dagger.$$
+
+In the single-photon subspace this is again a controllable logical transverse interaction. The pump phase $\phi$ selects the equatorial rotation axis; separate mode detuning supplies a logical $Z$ term. Erasure checks measure total excitation number (or an equivalent joint observable) without resolving whether the photon occupies mode $a$ or $b$, so they need not reveal the logical state.
 
 
 ## Motivation
 
-- **Erasure advantage:** Converting $T_1$ errors (the dominant error channel in superconducting qubits) into detectable erasures dramatically improves QEC performance. Erasure errors are ~3× cheaper to correct than Pauli errors in surface codes.
+- **Erasure advantage:** Converting amplitude damping or photon loss into a located error gives the outer decoder more information than an unflagged Pauli fault.
 - **Microwave-free scaling (CQB):** Eliminating microwave control lines removes a major bottleneck for scaling — no microwave generators, mixers, filters, or IQ calibration per qubit.
 - **Temperature tolerance:** Baseband control may enable operation at higher temperatures where microwave thermal population is problematic.
 - **Cross-platform insight:** The semiconductor-inspired encoding demonstrates that design principles from spin qubits can yield practical advantages in superconducting circuits.
@@ -83,16 +90,16 @@ For two cavities coupled by a transmon ancilla, the beamsplitter interaction in 
 - Coupled CQB-CQB operations demonstrated
 - No microwave generators/mixers/filters needed
 
-**Cavity dual-rail — Teoh et al. (2023, Yale/Schoelkopf):**
-- Logical qubit in $|01\rangle$/$|10\rangle$ of two 3D stub superconducting cavities
-- Photon lifetime: >1 ms
-- Erasure:Pauli error ratio strongly biased (>10:1)
-- QND parity measurement via transmon ancilla
+**Cavity dual-rail proposal — Teoh et al. (2023):**
+- Gate-based architecture in the single-photon subspace of two superconducting cavities
+- Universal state preparation, logical readout, and one- and two-qubit gates mediated by a transmon ancilla
+- First-order cavity and ancilla faults designed to become detectable erasures
 
-**Cavity dual-rail — Levine et al. (2024, AWS):**
-- Erasure detection rate: >99% of $T_1$ errors detected
-- Effective $T_1$ (undetected): ~10× improvement over bare transmon
-- First demonstration of erasure conversion in superconducting circuits
+**Coupled-transmon erasure qubit — Levine et al. (2024):**
+- Resonantly coupled tunable transmons, not storage cavities
+- Millisecond-scale codespace coherence
+- Erasure probability $2.19(2)\times10^{-3}$ per single-qubit gate; residual errors about 40 times lower
+- Mid-circuit erasure check with less than 0.1% induced dephasing per check
 
 **Erasure-detected logical measurements — Chou et al. (2024, Yale):**
 - Logical state preparation and measurement errors at the **0.01% level** ($\sim 10^{-4}$)
@@ -100,13 +107,19 @@ For two cavities coupled by a transmon ancilla, the beamsplitter interaction in 
 - Confirmed error hierarchy: decay errors ~0.2%/μs, phase errors 6× less, bit flips ≥140× less
 - First confirmation of the error hierarchy needed for efficient erasure code concatenation
 
-**Two-qubit gates — Mehta et al. (2025, Yale):**
-- Bias-preserving and error-detectable two-qubit entangling operations
-- Demonstrated in dual-rail cavity system
+**Compact cavity and mid-circuit checks — Koottandavida et al. (2024); de Graaf et al. (2025):**
+- Double-post cavity: erasure rate $3.981(3)\,\mathrm{ms}^{-1}$ and residual postselected dephasing up to $0.17\,\mathrm{ms}^{-1}$
+- Joint-photon-number-splitting check: missed-erasure fraction $(9.0\pm0.5)\times10^{-4}$, with 2.92% erasure and 0.31% Pauli error per check
+
+**Two-qubit gates — Quantum Circuits, Inc. Team (2025 preprint):**
+- Approximately 500 ns cavity dual-rail entangling gate
+- Residual gate infidelity below 0.1% after erasure detection and approximately 0.5% erasure per gate
+- The paper title page credits the corporate team; “Mehta et al.” is arXiv metadata rather than the displayed paper byline
 
 **Multi-qubit entanglement — Huang et al. (2026):**
-- Logical multi-qubit entanglement with dual-rail superconducting qubits
-- Published in Nature Physics
+- Four coupled-transmon dual-rail qubits with logical single-qubit gate errors on the order of $10^{-5}$ after postselection
+- Logical Bell-state fidelity 98.8%; logical CNOT process fidelity 98.1% at 13% erasure rate; three-logical-qubit GHZ fidelity 93.9%
+- Published in Nature Physics; the archival values supersede the earlier preprint values
 
 
 ## Key Metrics
@@ -114,13 +127,16 @@ For two cavities coupled by a transmon ancilla, the beamsplitter interaction in 
 | Metric | Value | Notes | Fidelity reference |
 |---|---|---|---|
 | Clifford fidelity (CQB) | >99.7% | Baseband-only control, Landau-Zener | [Campbell et al. 2020](https://doi.org/10.1103/PhysRevX.10.041051) |
+| Erasure per 1Q gate (coupled transmons) | $2.19(2)\times10^{-3}$ | Residual errors ~40× lower | [Levine et al. 2024](https://doi.org/10.1103/PhysRevX.14.011051) |
+| Erasure-check dephasing (coupled transmons) | <0.1% per check | Mid-circuit detection | [Levine et al. 2024](https://doi.org/10.1103/PhysRevX.14.011051) |
 | SPAM error (cavity) | ~10⁻⁴ (0.01%) | Erasure-detected logical measurement | [Chou et al. 2024](https://doi.org/10.1038/s41567-024-02539-4) |
-| Cavity $T_1$ | >1 ms | 3D stub cavities | [Teoh et al. 2023](https://doi.org/10.1073/pnas.2221736120) |
-| Erasure detection rate | >99% | Dominant $T_1$ errors detected | [Levine et al. 2024](https://doi.org/10.1103/PhysRevX.14.011051) |
-| Effective $T_1$ (undetected) | ~10× bare | After erasure post-selection | [Levine et al. 2024](https://doi.org/10.1103/PhysRevX.14.011051) |
+| Cavity-decay detection | >99% | Decay events assigned as erasures | [Chou et al. 2024](https://doi.org/10.1038/s41567-024-02539-4) |
 | Decay error rate | ~0.2%/μs | Dominant error channel | [Chou et al. 2024](https://doi.org/10.1038/s41567-024-02539-4) |
 | Phase error rate | ~6× lower than decay | Confirmed error hierarchy | [Chou et al. 2024](https://doi.org/10.1038/s41567-024-02539-4) |
 | Bit flip rate | ≥140× lower than decay | Strongly suppressed | [Chou et al. 2024](https://doi.org/10.1038/s41567-024-02539-4) |
+| Missed-erasure fraction (cavity check) | $(9.0\pm0.5)\times10^{-4}$ | Joint-photon-number splitting | [de Graaf et al. 2025](https://doi.org/10.1038/s41534-024-00944-4) |
+| Logical CNOT process fidelity | 98.1% | 13% erasure rate; four-dual-rail processor | [Huang et al. 2026](https://doi.org/10.1038/s41567-026-03211-9) |
+| Three-logical-qubit GHZ fidelity | 93.9% | Coupled-transmon dual rail | [Huang et al. 2026](https://doi.org/10.1038/s41567-026-03211-9) |
 
 
 ## Scaling Considerations
@@ -128,7 +144,7 @@ For two cavities coupled by a transmon ancilla, the beamsplitter interaction in 
 - **Microwave-free advantage (CQB):** Eliminates microwave generators, mixers, and filters per qubit — major simplification for large-scale systems.
 - **Temperature tolerance:** Baseband control may enable operation at higher temperatures where microwave thermal population is problematic.
 - **Super-semi synergy:** Gate-voltage-tunable junctions (gatemons) are a natural fit: detuning is controlled by gate voltages rather than flux, avoiding flux noise entirely.
-- **QEC integration:** Erasure conversion reduces surface code overhead by 3–10× compared to standard depolarizing noise. The confirmed error hierarchy (decay ≫ phase ≫ bit flip) enables efficient concatenation with tailored erasure codes.
+- **QEC integration:** The confirmed hierarchy (erasure/decay ≫ phase ≫ bit flip) can be exploited by an outer code, but system-level benefit requires counting the erasure rate, residual Pauli faults, check-induced faults, and the cost of postselection or real-time decoding together.
 
 
 ## References
@@ -141,14 +157,16 @@ For two cavities coupled by a transmon ancilla, the beamsplitter interaction in 
 
 ### Cavity dual-rail
 - J. D. Teoh et al., "Dual-rail encoding with superconducting cavities," [PNAS 120, e2221736120 (2023)](https://doi.org/10.1073/pnas.2221736120) — [arXiv:2212.12077](https://arxiv.org/abs/2212.12077)
+- A. Koottandavida et al., "Erasure Detection of a Dual-Rail Qubit Encoded in a Double-Post Superconducting Cavity," [PRL 132, 180601 (2024)](https://doi.org/10.1103/PhysRevLett.132.180601)
+
+### Coupled-transmon erasure qubit
 - H. Levine et al., "Demonstrating a long-coherence dual-rail erasure qubit using tunable transmons," [PRX 14, 011051 (2024)](https://doi.org/10.1103/PhysRevX.14.011051) — [arXiv:2307.08737](https://arxiv.org/abs/2307.08737)
+- W. Huang et al., "Logical multi-qubit entanglement with dual-rail superconducting qubits," [Nature Phys. 22, 591–597 (2026)](https://doi.org/10.1038/s41567-026-03211-9) — [arXiv:2504.12099](https://arxiv.org/abs/2504.12099)
 
 ### Erasure-detected logical operations
-- K. S. Chou et al., "Demonstrating a superconducting dual-rail cavity qubit with erasure-detected logical measurements," [Nature Phys. (2024)](https://doi.org/10.1038/s41567-024-02539-4) — [arXiv:2307.03169](https://arxiv.org/abs/2307.03169)
-- N. Mehta et al., "Bias-preserving and error-detectable entangling operations in a superconducting dual-rail system," [arXiv:2503.10935 (2025)](https://arxiv.org/abs/2503.10935)
-
-### Multi-qubit entanglement
-- W. Huang et al., "Logical multi-qubit entanglement with dual-rail superconducting qubits," [Nature Phys. (2026)](https://doi.org/10.1038/s41567-026-03211-9)
+- K. S. Chou et al., "A superconducting dual-rail cavity qubit with erasure-detected logical measurements," [Nature Phys. 20, 1454–1460 (2024)](https://doi.org/10.1038/s41567-024-02539-4) — [arXiv:2307.03169](https://arxiv.org/abs/2307.03169)
+- S. J. de Graaf et al., "A mid-circuit erasure check on a dual-rail cavity qubit using the joint-photon number-splitting regime of circuit QED," [npj Quantum Inf. 11, 1 (2025)](https://doi.org/10.1038/s41534-024-00944-4)
+- Quantum Circuits, Inc. Team, "Bias-preserving and error-detectable entangling operations in a superconducting dual-rail system," [arXiv:2503.10935 (2025)](https://arxiv.org/abs/2503.10935)
 
 ### Related photonic dual-rail
 - E. Knill, R. Laflamme, and G. J. Milburn, "A scheme for efficient quantum computation with linear optics," [Nature 409, 46 (2001)](https://doi.org/10.1038/35051009) — KLM protocol using dual-rail photonic encoding
@@ -160,6 +178,9 @@ For two cavities coupled by a transmon ancilla, the beamsplitter interaction in 
 - [[teoh-2023-dual-rail-cavity]]
 - [[levine-2024-dual-rail-erasure]]
 - [[chou-2024-superconducting-dual-rail]]
+- [[koottandavida-2024-double-post-dual-rail]]
+- [[de-graaf-2025-mid-circuit-erasure-check]]
+- [[qci-team-2025-bias-preserving-dual-rail]]
 - [[grassl-1997-codes-quantum-erasure-channel]]
 - [[huang-2026-logical-multi-qubit]]
 

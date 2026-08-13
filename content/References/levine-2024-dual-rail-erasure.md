@@ -10,7 +10,7 @@ authors:
 - E. A. Wollack
 - P. Arrangoiz-Arriola
 - A. Khalajhedayati
-- R. Bhaskar
+- R. Sanil
 - others
 year: 2024
 journal: Physical Review X
@@ -18,16 +18,16 @@ doi: 10.1103/PhysRevX.14.011051
 arxiv_id: '2307.08737'
 type: reference
 generated_by: scibok-curation
-last_updated: '2026-03-15'
+last_updated: '2026-08-13'
 ---
 
-First experimental demonstration of a dual-rail erasure qubit in superconducting circuits. Encodes a qubit in the single-photon subspace of two coupled transmon-based cavities, where the dominant T₁ errors are converted to detectable erasure events (photon loss leaves the codespace). Achieves coherence times significantly beyond the T₁ limit of the individual components.
+Experimental dual-rail erasure qubit formed from two resonantly coupled tunable transmons. The logical eigenstates are symmetric and antisymmetric combinations in the single-excitation manifold; transmon $T_1$ loss leaves that manifold as a detectable erasure, while the hybridization suppresses residual dephasing.
 
 ## Key Results
-- Erasure detection rate: >99% of T₁ errors detected as erasures
-- Effective T₁ (undetected error): ~10× improvement over bare transmon T₁
-- Dual-rail encoding: |0⟩ = |10⟩, |1⟩ = |01⟩ across two modes
-- Compatible with surface code error correction with reduced overhead
+- Millisecond-scale coherence within the qubit subspace
+- Erasure probability per single-qubit gate: $2.19(2)\times10^{-3}$
+- Residual errors approximately 40 times lower than erasures
+- Mid-circuit erasure check induced less than 0.1% dephasing per check
 
 
 ## Links
@@ -37,3 +37,4 @@ First experimental demonstration of a dual-rail erasure qubit in superconducting
 ## Zoo Links
 - [[erasure-qubit]]
 - [[transmon]]
+- [[dual-rail-superconducting-qubit]]

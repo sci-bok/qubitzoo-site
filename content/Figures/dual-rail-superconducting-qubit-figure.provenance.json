@@ -2,13 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "dual-rail-superconducting-qubit-figure.png",
-    "sha256": "07787bc95ceb93be6095b163f53dd80cde56f5a13664204638c1452a62f50f1b"
+    "sha256": "42c211d3b3e6602f765ed1323dad20b4319250b29db27654fa074e9d83d9d38d"
   },
   "artifact_role": "primary",
   "blueprint": null,
   "entry_slug": "dual-rail-superconducting-qubit",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/dual-rail-superconducting-qubit-figure-20260805T043730144271Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/dual-rail-superconducting-qubit-figure-20260813T142251723294Z.png",
     "supersedes_file": "dual-rail-superconducting-qubit-figure.png"
   },
   "renderer": {
@@ -19,17 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-05T04:37:30.144271+00:00",
-    "id": "gen-1785904634-6OQtEHclzjv1TpnJ6E8D",
+    "generated_at": "2026-08-13T14:22:51.723294+00:00",
+    "id": "gen-1786630960-gNMKj8YUktQcpdMRBmCb",
     "image_size": "1K",
-    "prompt_sha256": "b04605bab7824877afa3e503dac054ed91a68cc6278eae1920cf1d58194f386e",
+    "prompt_sha256": "a102a8b216849288746e6e50c77c2a6f9c6ae7e5f62e6de6a8fbf3f782c16d67",
     "source_media_type": "image/jpeg",
     "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Approved rich explanatory Wave 2 plate after full-resolution scientific review. Central device/code structure, logical encoding, control, error mechanism, and readout/system consequence pass; minor ancillary typography is accepted.",
-    "reviewed_at": "2026-08-05T04:45:11.017052+00:00",
-    "reviewer": "Codex scientific visual audit 2026-08-05",
+    "notes": "Approved after full-resolution review. Central physics passes: odd-parity N=1 codespace {|01>,|10>}; even-parity N=0/2 erasure/leakage outcomes; T1/photon-loss conversion; N=1 no-erasure versus N=0/2 flag mapping; separated CQB, coupled-transmon, and cavity platforms; correct cavity pump difference; source-backed platform metrics; and 2026 multi-module consequence. Rich explanatory style passes. Minor ancillary MIC lettering on cavity icons is tolerated.",
+    "reviewed_at": "2026-08-13T14:23:21.020035+00:00",
+    "reviewer": "Codex scientific visual audit 2026-08-13",
     "status": "passed"
   },
   "schema_version": 1
