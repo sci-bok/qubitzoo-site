@@ -4,6 +4,7 @@ authors: [J. Medford, J. Beil, J. M. Taylor, S. D. Bartlett, A. C. Doherty, E. I
 year: 2013
 journal: "Nature Nanotechnology"
 doi: 10.1038/nnano.2013.168
+arxiv_id: '1302.1933'
 type: reference
 generated_by: scibok-audit-backfill
 last_updated: '2026-03-25'
@@ -16,6 +17,8 @@ This paper presents work on self-consistent measurement and state tomography of 
 
 ## Links
 - **Journal:** [Nature Nanotechnology](https://doi.org/10.1038/nnano.2013.168)
+- **arXiv:** [1302.1933](https://arxiv.org/abs/1302.1933)
 
 ## Zoo Links
 - [[rx-qubit]]
+- [[exchange-only-qubit]]
