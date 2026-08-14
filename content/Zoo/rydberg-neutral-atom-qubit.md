@@ -101,6 +101,8 @@ Rydberg neutral-atom qubits combine three key advantages: (1) native all-to-all 
 - [[zeytinoglu-2026-fast-quantum-interconnects-via]]
 - [[wang-2026-neutral-atom-quantum-computing]]
 - [[sagi-2026-motional-refocusing-for-trap-off]]
+- [[zhang-2026-robust-controlled-z-gate-for]]
+- [[jung-2026-shots-to-approximate-solution-scaling-in-neutral]]
 
 ## Evergreen context
 

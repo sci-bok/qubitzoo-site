@@ -3,7 +3,7 @@ title: Codes MOC
 type: moc
 technology_family: Codes
 note_count: 6
-last_updated: '2026-08-02'
+last_updated: '2026-08-08'
 generated_by: pipeline-moc-v1
 ---
 
@@ -48,6 +48,19 @@ Taken together, this family is best seen as the place where the Zoo asks **which
 
 - [[threshold-theorem]] is the top-level reason these entries matter architecturally.
 - [[erasure-error-vs-pauli-error]] is useful for separating codes that assume ordinary Pauli noise from hardware paths with flagged loss / erasure structure.
+
+## Hardware–code co-design routing
+
+| Entry | Primary resource it exploits | Hardware burden it moves or accepts | Read next when... |
+|---|---|---|---|
+| [[surface-code-logical-qubit]] | A regular 2D nearest-neighbor patch with repeated local checks | Many physical qubits and fast, sustained syndrome extraction | the question becomes whether noise bias or erasure information changes the baseline patch overhead |
+| [[color-code-logical-qubit]] | Transversal Clifford gates and three-colorable stabilizer geometry | Higher-weight checks and a different decoding / circuit-level threshold trade | transversal gates matter enough to justify harder stabilizer extraction |
+| [[bacon-shor-code]] | Low-weight gauge measurements | Redundant subsystem encoding plus classical reconstruction of stabilizers | local parity measurement is easier than direct high-weight checks |
+| [[floquet-codes]] | Time-ordered low-weight measurements | Schedule-aware control and a stroboscopic decoder | the hardware prefers simple checks but can sustain precise cyclic timing |
+| [[qldpc-codes]] | Sparse checks with finite rate and favorable asymptotic overhead | Nonlocal connectivity and more demanding decoding | modular links, shuttling, or another long-range interaction layer is already credible |
+| [[erasure-qubit]] | Reliable fault-location side information | Leakage / loss checks and high flag-detection fidelity | the decoder should compare known fault locations with the residual unflagged Pauli channel |
+
+The first five rows choose a **code structure**. The last row changes the **information supplied to the decoder** and can therefore be layered onto several code structures rather than selected as a mutually exclusive geometry. Keep that distinction explicit: a surface-code or color-code implementation may also be erasure-aware, and its overhead should then be evaluated with [[erasure-error-vs-pauli-error]] rather than a generic depolarizing-noise threshold.
 
 ## Scope boundary
 

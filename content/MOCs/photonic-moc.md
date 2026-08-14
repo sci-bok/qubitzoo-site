@@ -3,7 +3,7 @@ title: Photonic MOC
 type: moc
 technology_family: Photonic
 note_count: 9
-last_updated: '2026-08-02'
+last_updated: '2026-08-12'
 generated_by: pipeline-moc-v1
 ---
 
@@ -54,6 +54,20 @@ The highest-value organizing move in this family is to **separate photonic encod
    - [[photonic-cluster-state-mbqc-qubit]] shifts the burden from online gates to offline cluster-state preparation plus adaptive measurement.
    - [[fusion-based-photonic-qubit]] goes one step further and treats failed entangling attempts as an architectural primitive rather than an exception.
    - Both belong in the same fault-tolerance conversation because they live or die on whether loss and fusion failures stay structured enough for erasure-aware decoding and percolation-style thresholds.
+
+## Encoding-to-architecture routing matrix
+
+The two layers are composable rather than mutually exclusive. Use the row to choose **what carries the information**, then the column to choose **how the machine obtains entangling power and fault tolerance**.
+
+| Encoding route | Gate-based linear optics | Cluster-state MBQC | Fusion-based architecture |
+|---|---|---|---|
+| [[dual-rail-photonic-qubit]] | Canonical KLM-style carrier: beam splitters and phase shifters act directly on spatial rails | Natural graph-state carrier when dual-rail photons are prepared and consumed by adaptive measurements | Natural fit for discrete Bell/fusion measurements; loss is usually a detectable rail-vacancy event |
+| [[polarization-photonic-qubit]] | Compact single-qubit control and common proof-of-principle LOQC encoding | Widely used for small photonic cluster demonstrations | Fusion-compatible, but deployed systems inherit polarization-drift and mode-matching burdens |
+| [[time-bin-photonic-qubit]] | Possible, but active switching and interferometric delay stability replace simple on-chip rail routing | Strong fit for sequentially emitted and temporally multiplexed cluster states | Strong fit when repeated source cycles and delay networks feed fusion attempts |
+| [[frequency-bin-photonic-qubit]] | Electro-optic mixing supplies dense mode transformations in place of spatial interferometer meshes | Useful when frequency-comb modes supply a multiplexed graph-state resource | Promising multiplexing layer for routing successful attempts, not a distinct fusion rule by itself |
+| [[continuous-variable-photonic-qubit]] | Do not route through discrete single-photon KLM by default; Gaussian mode transformations are deterministic but not universal alone | CV cluster states are native, with non-Gaussian resources or [[bosonic-code-hierarchy|bosonic encodings]] needed for fault tolerance | Keep separate from the discrete-qubit fusion branch unless a specific hybrid or GKP construction supplies the bridge |
+
+[[photonic-qubit]] does not occupy one cell: it is the carrier-level umbrella above the matrix. Likewise, [[linear-optical-photonic-qubit]], [[photonic-cluster-state-mbqc-qubit]], and [[fusion-based-photonic-qubit]] label columns rather than alternative encodings. This prevents a category error such as asking whether “dual rail or fusion based” is the better qubit—the former chooses a Hilbert-space encoding, while the latter chooses a resource-building architecture.
 
 ## Where the umbrella note belongs
 

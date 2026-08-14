@@ -3,7 +3,7 @@ title: Andreev Pair Qubit
 entry_type: qubit
 technology_family: Super-Semi
 status: demonstrated
-figure_reviewed: true
+figure_reviewed: false
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/andreev-pair-qubit-figure.provenance.json"

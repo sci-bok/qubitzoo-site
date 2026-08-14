@@ -108,6 +108,7 @@ The transmon's achilles heel is its weak anharmonicity ($\sim -200\,\text{MHz}$)
 - [[lin-2018-heavy-fluxonium]]
 - [[pechenezhskiy-2020-blochnium]]
 - [[strickland-2024-gatemonium]]
+- [[n-2026-inductively-protected-andreev-ipa-spin]]
 
 ## Evergreen context
 

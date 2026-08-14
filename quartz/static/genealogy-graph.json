@@ -1,6 +1,6 @@
 {
   "schema": "qubitzoo.genealogy.v1",
-  "generated_at": "2026-08-07T14:00:11.113336+00:00",
+  "generated_at": "2026-08-14T14:00:57.503453+00:00",
   "nodes": [
     {
       "id": "0-pi-qubit",
@@ -198,7 +198,7 @@
       "year": 2016,
       "status": "demonstrated",
       "color": "#3b82f6",
-      "influence": 0.0
+      "influence": 0.5
     },
     {
       "id": "electron-on-solid-neon-qubit",
@@ -1114,6 +1114,14 @@
       "target": "electron-on-solid-neon-qubit"
     },
     {
+      "source": "qubit-readout",
+      "target": "electron-on-solid-neon-qubit"
+    },
+    {
+      "source": "spin-qubit",
+      "target": "electron-on-solid-neon-qubit"
+    },
+    {
       "source": "dual-rail-photonic-qubit",
       "target": "erasure-qubit"
     },
@@ -1656,6 +1664,14 @@
     {
       "source": "silicon-carbide-defect-qubit",
       "target": "t-center-qubit"
+    },
+    {
+      "source": "quantum-transduction",
+      "target": "silicon-carbide-defect-qubit"
+    },
+    {
+      "source": "qubit-readout",
+      "target": "silicon-carbide-defect-qubit"
     },
     {
       "source": "silicon-spin-qubit",

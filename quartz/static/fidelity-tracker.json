@@ -1,6 +1,6 @@
 {
   "schema": "qubitzoo.fidelity_tracker.v1",
-  "generated_at": "2026-08-07T14:00:11.079635+00:00",
+  "generated_at": "2026-08-14T14:00:57.470263+00:00",
   "families": [
     {
       "name": "Superconducting",
@@ -852,6 +852,29 @@
               "value": 99.0,
               "raw": ">99%",
               "ref": "[Knill et al. 2001](https://doi.org/10.1038/35051009)"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Floating Electron",
+      "entries": [
+        {
+          "slug": "electron-on-solid-neon-qubit",
+          "title": "Electron-on-Solid-Neon Qubit",
+          "year": 2021,
+          "status": "demonstrated",
+          "influence": 0.72,
+          "metrics": {
+            "1Q_fidelity": {
+              "value": 99.97,
+              "raw": "99.97%",
+              "ref": "[Zhou et al. 2024](https://doi.org/10.1038/s41567-023-02247-5)"
+            },
+            "T1": {
+              "value_us": 102.2,
+              "raw": "102.2 \u03bcs"
             }
           }
         }

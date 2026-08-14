@@ -3,7 +3,7 @@ title: T-Center Qubit (Silicon Spin-Photon)
 entry_type: qubit
 technology_family: Spin-Photon
 status: demonstrated
-figure_reviewed: true
+figure_reviewed: false
 first_proposed_year: 2020
 first_demonstrated_year: 2020
 keywords:

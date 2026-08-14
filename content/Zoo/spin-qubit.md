@@ -166,6 +166,12 @@ Semiconductor spin qubits promise integration with existing CMOS fabrication inf
 - [[zwanenburg-2013-silicon-electronics]]
 - [[gzyl-2026-emission-dynamics-in-zincblende]]
 - [[xue-2026-controllable-interaction-between-photons]]
+- [[allende-2026-a-spin-bond-theory-unifying]]
+- [[pinchenkova-2026-parity-resolved-quantum-capacitance-and]]
+- [[takeda-2026-assessing-fidelity-limiting-factors-and]]
+- [[leng-2026-phonon-assisted-transport-and-hole-phonon]]
+- [[wuttig-2026-probing-impurity-quantum-criticality]]
+- [[niu-2026-gate-control-of-g-factor]]
 
 ## Evergreen context
 

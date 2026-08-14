@@ -98,6 +98,7 @@ These rows establish demonstrated capabilities; they are not universal platform 
 - [[knill-2001-klm]]
 - [[crespi-2011-polarization-photonic-gates]]
 - [[li-2026-experimental-tabletop-petz-recovery]]
+- [[ferrari-2026-robust-ion-photon-entanglement-via]]
 
 ## References
 

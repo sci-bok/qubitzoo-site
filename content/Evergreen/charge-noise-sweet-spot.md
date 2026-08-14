@@ -38,7 +38,8 @@ This note is about the **protected operating-point pattern across platforms**. F
 
 3. **Engineered multi-axis protection**
    - [[aeon-qubit]] is the clean semiconductor example: a **double sweet spot** that is first-order insensitive along two detuning axes at once.
-   - [[0-pi-qubit]] and [[cos2phi-qubit]] are the protected-circuit analogs, where the goal is not just one good bias point but a deliberately flattened multi-parameter energy landscape.
+   - [[0-pi-qubit]] is the protected-circuit analog where the goal is not just one good bias point but a deliberately flattened multi-parameter energy landscape.
+   - [[cos2phi-qubit]] is adjacent but more specific: its ideal second harmonic enforces Cooper-pair-parity selection rules, while practical interference-based devices can trade strong charge-transition suppression for severe flux sensitivity. The circuit ingredient itself belongs in [[cos2phi]].
    - [[fluxonium]] sits adjacent to this category: it combines strong charge insensitivity with a separate flux sweet spot, so the operating-point story is multi-dimensional even if the design logic differs from the $0$-$\pi$ family.
 
 ## Why this pattern matters across very different hardware
@@ -57,6 +58,12 @@ Protection is never free.
 
 This is the central design tradeoff: **flat spectra are quiet spectra, but flat spectra are also harder to steer**.
 
+## Boundary with [[cos2phi]]
+
+This note classifies **response geometry**: which noisy coordinate has a vanishing first derivative, whether that protection is local or extended, and what second-order curvature remains. [[cos2phi]] classifies a **Hamiltonian mechanism**: a $\pi$-periodic Josephson term that can conserve Cooper-pair parity and suppress selected charge-coupled matrix elements.
+
+Do not infer one from the other. Ordinary transmons and semiconductor spin qubits use valuable sweet spots without a $\cos(2\varphi)$ element, while a $\cos(2\varphi)$-dominated qubit can still be limited by flux noise when the second harmonic is produced through half-flux interference.
+
 ## Key relationships
 
 - [[cooper-pair-box-charge-qubit]] — narrow symmetry-point protection, but fragile away from degeneracy
@@ -67,7 +74,8 @@ This is the central design tradeoff: **flat spectra are quiet spectra, but flat 
 - [[aeon-qubit]] — two-dimensional double sweet spot in the exchange-only family
 - [[fluxonium]] — combines charge insensitivity with a separate flux sweet spot
 - [[0-pi-qubit]] — multi-axis protected superconducting circuit
-- [[cos2phi-qubit]] — related protected-circuit strategy with flattened sensitivity landscape
+- [[cos2phi-qubit]] — parity-protected circuit whose charge-transition suppression can coexist with a separate flux-noise penalty
+- [[cos2phi]] — companion note on the second-harmonic Hamiltonian ingredient rather than the operating-point response
 - [[charge-noise-in-superconducting-qubits]] — complementary note on the underlying noise mechanism
 
 ## References

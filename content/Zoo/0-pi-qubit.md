@@ -16,7 +16,7 @@ influence_score: 0.76
 last_updated: '2026-03-21'
 generated_by: scibok-curation
 verified_by: scibok-manual-2026-03-21
-figure_reviewed: true
+figure_reviewed: false
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/0-pi-qubit-figure.provenance.json"

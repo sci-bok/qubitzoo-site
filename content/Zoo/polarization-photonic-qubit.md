@@ -3,7 +3,7 @@ title: Polarization Photonic Qubit
 entry_type: qubit
 technology_family: Photonic
 status: demonstrated
-figure_reviewed: true
+figure_reviewed: false
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/polarization-photonic-qubit-figure.provenance.json"

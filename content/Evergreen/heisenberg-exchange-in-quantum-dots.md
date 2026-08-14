@@ -46,6 +46,8 @@ $$U_{\mathrm{ex}}(\Phi) = \exp\!\left[-i\Phi\,\vec S_1 \cdot \vec S_2\right].$$
 
 The important router is not the exact matrix form, but the fact that **pulse area is the abstraction boundary**. Once $J(t)$ has been reduced to a calibrated area, short pulses give partial swaps, the canonical half-swap pulse gives the native entangler of the Loss-DiVincenzo picture, and the same area logic survives after projection into larger encoded-spin manifolds.
 
+For the direct two-spin gate identity, entangling action, and universal-gate construction, continue to [[sqrt-swap-as-universal-gate]]. Keep $\sqrt{\mathrm{SWAP}}$ distinct from $\sqrt{\mathrm{iSWAP}}$: isotropic $\vec S_1\!\cdot\!\vec S_2$ exchange generates the former, while an XY / flip-flop interaction generates the latter.
+
 ## Encoded-spin projections
 
 | Branch | What exchange becomes after projection | Best entry points |
