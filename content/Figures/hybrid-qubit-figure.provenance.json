@@ -2,13 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "hybrid-qubit-figure.png",
-    "sha256": "4597685e073de38b8cf440b43abb4294baf072b5c02084ddd604bd975ed277ba"
+    "sha256": "a942bad4f37c94476645ac640f45cd1a76fb36bd58c036c7b5867bcca6afc343"
   },
   "artifact_role": "primary",
   "blueprint": null,
   "entry_slug": "hybrid-qubit",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/hybrid-qubit-figure-20260805T053606444304Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/hybrid-qubit-figure-20260815T141614133620Z.png",
     "supersedes_file": "hybrid-qubit-figure.png"
   },
   "renderer": {
@@ -19,17 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-05T05:36:06.444304+00:00",
-    "id": "gen-1785908151-GCO4Q7N2DaELxLIxwz3S",
-    "image_size": "1K",
-    "prompt_sha256": "febab6d0d66d2c56687e64e3804c4d3a0d19a6deec445cdf3f0dd26ca7b272a1",
+    "generated_at": "2026-08-15T14:16:14.133620+00:00",
+    "id": "gen-1786803355-KVnR71KRvYJybJuKLt5s",
+    "image_size": "2K",
+    "prompt_sha256": "bc8414bbbf0382e81bb8389000e03c4430212115bcc123d93ff329a431c5ebab",
     "source_media_type": "image/jpeg",
     "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Approved after targeted structural correction. Gauge orientation, triple-dot hybrid encoding, or fixed-even tetron parity now pass; rich explanatory detail is preserved.",
-    "reviewed_at": "2026-08-05T05:46:41.932038+00:00",
-    "reviewer": "Codex scientific visual audit 2026-08-05",
+    "notes": "Approved after full-resolution independent image review: exactly two dots and three electrons; consistent (2,1)/(1,2) qubit sectors; correct S=1/2, S_z=-1/2 Clebsch-Gordan basis; logical states identified as the two lowest hybridized eigenstates; leakage kept above the logical branches with avoided-crossing intent; coherent detuning-drive mechanism; correct reservoir-assisted |0>->(1,2), |1>->(1,1) readout map; and source-backed 2015/2025 performance callouts. Minor ancillary wording artifact ('formulas to for') is tolerable and does not obscure central physics.",
+    "reviewed_at": "2026-08-15T14:16:58.356258+00:00",
+    "reviewer": "Codex daily deep audit 2026-08-15",
     "status": "passed"
   },
   "schema_version": 1

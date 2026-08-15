@@ -157,7 +157,7 @@ Semiconductor spin qubits promise integration with existing CMOS fabrication inf
 - [[philips-2022-universal-control-six]]
 - [[reed-2016-reduced-sensitivity-charge-noise]]
 - [[scappucci-2021-ge-review]]
-- [[shi-2015-hybrid-qubit]]
+- [[shi-2012-fast-hybrid-double-dot]]
 - [[shim-2016-aeon]]
 - [[steinacker-2025-300mm-foundry-silicon]]
 - [[veldhorst-2014-silicon-coherence]]
