@@ -15,10 +15,10 @@ keywords:
   - superinductance
   - semiconductor Josephson junction
 influence_score: 0.60
-last_updated: '2026-08-16'
+last_updated: '2026-08-17'
 generated_by: scibok-curation
 extracted_by: airtable-seed
-verified_by: codex-daily-deep-audit-2026-08-16
+verified_by: codex-daily-deep-audit-2026-08-17
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/gatemonium-figure.provenance.json"
@@ -43,7 +43,7 @@ The superinductance is achieved using approximately 600 planar Al-InAs Josephson
 
 ## Hamiltonian
 
-$$H = 4E_C(\hat{n} - n_g)^2 + \frac{1}{2}E_L\left(\hat{\varphi}-\varphi_{\mathrm{ext}}\right)^2 + U_J(\hat{\varphi};V_g),$$
+$$H = 4E_C\hat{n}^2 + \frac{1}{2}E_L\left(\hat{\varphi}-\varphi_{\mathrm{ext}}\right)^2 + U_J(\hat{\varphi};V_g),$$
 
 with the sinusoidal weak-link approximation
 
@@ -54,10 +54,10 @@ where:
 - $E_J(V_g)$ is the gate-voltage-tunable Josephson energy of the single junction
 - $E_L = (\Phi_0/2\pi)^2/L_{\text{array}}$ is the inductive energy from the superinductive shunt
 - $\hat{n}$ is the Cooper pair number operator conjugate to $\hat{\varphi}$
-- $n_g$ is the offset charge
+- $[\hat{\varphi},\hat n]=i$
 - $\varphi_{\mathrm{ext}}$ is the reduced external flux through the loop
 
-This is the standard fluxonium Hamiltonian with a gate-dependent junction potential. At half-flux-quantum bias, $\varphi_{\mathrm{ext}}=\pi$; equivalent phase-origin conventions can move this offset from the inductive term into the Josephson term, but it must appear exactly once.
+This is the standard single-mode fluxonium Hamiltonian with a gate-dependent junction potential. A static offset charge does not appear as a physical control parameter in this ideal model: because the superinductor makes the phase coordinate noncompact, a term $4E_C(\hat n-n_g)^2$ is unitarily gauge-equivalent to the expression above. At half-flux-quantum bias, $\varphi_{\mathrm{ext}}=\pi$; equivalent phase-origin conventions can move this offset from the inductive term into the Josephson term, but it must appear exactly once.
 
 For a short semiconductor junction with channel transparencies $\tau_i$, the spectroscopic model instead uses an Andreev weak-link potential of the form
 
