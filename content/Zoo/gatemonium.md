@@ -15,10 +15,10 @@ keywords:
   - superinductance
   - semiconductor Josephson junction
 influence_score: 0.60
-last_updated: '2026-08-17'
+last_updated: '2026-08-18'
 generated_by: scibok-curation
 extracted_by: airtable-seed
-verified_by: codex-daily-deep-audit-2026-08-17
+verified_by: codex-daily-deep-audit-2026-08-18
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/gatemonium-figure.provenance.json"
