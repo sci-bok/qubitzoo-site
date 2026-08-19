@@ -2,19 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "gatemonium-figure.png",
-    "sha256": "5ea52d8b73fe9d7375c1e591beba1c671ff3f0a529747e057ef54aa49d65b2cb"
+    "sha256": "b78c4169c13ee4f800136eb082a781e0db3b4ea124877c1769ce64dc179e765b"
   },
   "artifact_role": "primary",
-  "blueprint": {
-    "media_type": "image/png",
-    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/tmp/style-audit-blueprints-2026-08-05/gatemonium-blueprint.png",
-    "role": "physics-blueprint",
-    "sha256": "57a02d4fb11f1b760be4f2789fedc1b31ff9241d416b74497c994d0857d4c967",
-    "strict": false
-  },
+  "blueprint": null,
   "entry_slug": "gatemonium",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/gatemonium-figure-20260805T121912914080Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/gatemonium-figure-20260819T140557335047Z.png",
     "supersedes_file": "gatemonium-figure.png"
   },
   "renderer": {
@@ -25,17 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-05T12:19:12.914080+00:00",
-    "id": "gen-1785932332-MEnTD0mcWq0WaeW7zsNz",
+    "generated_at": "2026-08-19T14:05:57.335047+00:00",
+    "id": "gen-1787148345-2a3SV0wCHT6sSLy005X2",
     "image_size": "1K",
-    "prompt_sha256": "f1ef5a73d6f6638fdc6a732a0ca2359af7be49223f2a954b69990762b42aa9c8",
+    "prompt_sha256": "0d81753ebddf1e235c86f36911693e58e01cc946912c67e8a6b654d5ff034676",
     "source_media_type": "image/jpeg",
     "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Rich gatemonium device, correct gate-tunable fluxonium potential, nonnegative spectroscopy axis, Hamiltonian, and tuning mechanism.",
-    "reviewed_at": "2026-08-05T12:35:46.257417+00:00",
-    "reviewer": "Codex corpus visual/physics audit 2026-08-05",
+    "notes": "Approved after full-resolution review: exact one-weak-link plus planar junction-array fluxonium topology; explicit independent external-flux bias; neutral Vg-to-transparency-to-EJ mechanism; correct EJ/EC regime criterion and qualified channel-specific protection; correct general fluxonium and Andreev-potential equations; source-backed Device A/B metrics only; rich explanatory plate. Minor ancillary issues are one InAS capitalization artifact and '+-' in place of the plus-minus glyph for the Rabi-envelope uncertainty.",
+    "reviewed_at": "2026-08-19T14:06:39.223311+00:00",
+    "reviewer": "Codex daily deep audit 2026-08-19",
     "status": "passed"
   },
   "schema_version": 1

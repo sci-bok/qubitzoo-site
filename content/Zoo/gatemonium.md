@@ -3,7 +3,7 @@ title: Gatemonium
 entry_type: qubit
 technology_family: Super-Semi
 status: demonstrated
-figure_reviewed: false
+figure_reviewed: true
 first_proposed_year: 2024
 first_demonstrated_year: 2024
 keywords:
@@ -15,15 +15,15 @@ keywords:
   - superinductance
   - semiconductor Josephson junction
 influence_score: 0.60
-last_updated: '2026-08-18'
+last_updated: '2026-08-19'
 generated_by: scibok-curation
 extracted_by: airtable-seed
-verified_by: codex-daily-deep-audit-2026-08-18
+verified_by: codex-daily-deep-audit-2026-08-19
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/gatemonium-figure.provenance.json"
-figure_reviewed_by: "Codex daily deep audit 2026-08-16"
-figure_reviewed_at: "2026-08-16T14:05:00+00:00"
+figure_reviewed_by: "Codex daily deep audit 2026-08-19"
+figure_reviewed_at: "2026-08-19T14:06:39.223311+00:00"
 ---
 
 ## Figure
