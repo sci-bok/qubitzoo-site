@@ -2,13 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "mergemon-figure.png",
-    "sha256": "337046c0eb4f5c34459a7029bb1f1346d05bc29b2cc57e5b8304d16df454391c"
+    "sha256": "2c2aa508f96440e558d70fb080ad4cd2f59a3502629795308aeac9a69a40ac9d"
   },
   "artifact_role": "primary",
   "blueprint": null,
   "entry_slug": "mergemon",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/mergemon-figure-20260802T025234352248Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/mergemon-figure-20260820T140909951334Z.png",
     "supersedes_file": "mergemon-figure.png"
   },
   "renderer": {
@@ -19,16 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-02T02:52:34.352248+00:00",
-    "id": "gen-1785639146-45P9WQnRwe4D1f21FlXV",
+    "generated_at": "2026-08-20T14:09:09.951334+00:00",
+    "id": "gen-1787234934-dreIrjslsZBjXDuHTy0e",
     "image_size": "1K",
-    "prompt_sha256": "32264d66fcba34eed3c4df3ecc8d2d29393cc41ea3e7e792be4b9e9db9e36f1e",
-    "source_media_type": "image/jpeg"
+    "prompt_sha256": "49296334adaaa8f4c8ee83c78aaf7801a50e8c45ea4a4d7e3fdf536f5fdb1c29",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Approved: accurately contrasts external-shunt transmon geometry with junction-self-capacitance mergemon geometry.",
-    "reviewed_at": "2026-08-02T02:59:40.948872+00:00",
-    "reviewer": "codex-visual-physics-review-2026-08-01",
+    "notes": "PASS: rich explanatory plate corrects the old conventional-versus-merged junction-area reversal; shows two consistent nonlinear-LC circuits, correct |0> below |1> ordering and anharmonicity, junction-dominated versus external-shunt capacitance, residual surface loss, microwave control, and dispersive readout. Minor ancillary typography imperfections are non-blocking.",
+    "reviewed_at": "2026-08-20T14:09:40.264888+00:00",
+    "reviewer": "codex-visual-physics-review-2026-08-20",
     "status": "passed"
   },
   "schema_version": 1
