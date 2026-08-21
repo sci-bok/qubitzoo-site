@@ -68,11 +68,13 @@ DeMille proposed dipolar quantum computation with trapped polar molecules in 200
 ## References
 
 - D. DeMille, "Quantum Computation with Trapped Polar Molecules," [Phys. Rev. Lett. 88, 067901 (2002)](https://doi.org/10.1103/PhysRevLett.88.067901).
+- Y. Bao et al., "Dipolar spin-exchange and entanglement between molecules in an optical tweezer array," [Science 382, 1138–1143 (2023)](https://doi.org/10.1126/science.adf8999) — [arXiv:2211.09780](https://arxiv.org/abs/2211.09780).
 - L. R. B. Picard et al., "Entanglement and iSWAP gate between molecular qubits," [Nature 637, 821–826 (2025)](https://doi.org/10.1038/s41586-024-08177-3).
 
 ## Linked Papers
 
 - [[demille-2002-polar-molecule-quantum-computation]]
+- [[bao-2023-dipolar-spin-exchange-entanglement]]
 - [[picard-2025-molecular-iswap]]
 
 ## Evergreen context
