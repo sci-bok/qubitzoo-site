@@ -121,6 +121,7 @@ NV centers operate at room temperature, can be optically initialized and read ou
 - [[robledo-2011-high-fidelity-projective]]
 - [[rathi-2026-engineering-nanodiamonds-for-quantum]]
 - [[kozodaev-2026-squeezing-for-dispersive-readout]]
+- [[rana-2026-spin-bath-mediated-long-lived]]
 
 ## Evergreen context
 

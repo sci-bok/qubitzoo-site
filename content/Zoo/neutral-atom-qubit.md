@@ -130,6 +130,8 @@ The blockade condition $C_6/R^6 \gg \hbar\Omega$ prevents simultaneous Rydberg e
 - [[wu-2022-erasure-neutral-atoms]]
 - [[sturm-2026-efficient-assembly-of-a]]
 - [[ikari-2026-do-not-let-cnots]]
+- [[liu-2026-architecture-and-compilation-co-design]]
+- [[roschinski-2026-programmable-cavity-qed-with]]
 
 ## Evergreen context
 

@@ -121,6 +121,7 @@ with $\omega_0/2\pi \approx 226$ THz (1326 nm). In real devices, orientation-dep
 - [[deabreu-2023-waveguide-integrated-silicon-t-centres]]
 - [[photonic-2024-distributed-qc]]
 - [[dobinson-2025-electrically-triggered-spin-photon-devices-in-silicon]]
+- [[zhang-2026-resolving-and-resetting-the]]
 
 ## Evergreen context
 

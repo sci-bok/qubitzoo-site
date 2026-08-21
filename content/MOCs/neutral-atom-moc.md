@@ -3,7 +3,7 @@ title: Neutral Atom MOC
 type: moc
 technology_family: Neutral Atom
 note_count: 4
-last_updated: '2026-08-02'
+last_updated: '2026-08-20'
 generated_by: pipeline-moc-v1
 ---
 
@@ -51,6 +51,19 @@ This family is easiest to read if you separate **where the qubit is stored** fro
    - The Rydberg branch spends coherence budget to keep the interaction primitive immediate.
    - The alkaline-earth / nuclear-spin branch spends hardware complexity to keep the stored qubit quieter and only borrow interaction strength transiently.
    - That is why these notes belong together but should not collapse into one generic “neutral atom” narrative.
+
+## Storage–interaction routing matrix
+
+The four entries become easier to compare if storage and entanglement are treated as separate architectural choices. The last column records the cost of keeping those roles together or pulling them apart.
+
+| Entry | Where information idles | How entanglement is activated | Architectural price paid |
+|---|---|---|---|
+| [[neutral-atom-qubit]] | Platform-level umbrella spanning ground-state hyperfine, clock, and nuclear-spin encodings | Transient Rydberg excitation inside a reconfigurable tweezer array | The overview must carry array assembly, transport, atom-loss detection, and reloading without pretending every species uses the same storage manifold |
+| [[rydberg-neutral-atom-qubit]] | Alkali hyperfine ground states in the gate-first processor branch | Direct blockade-mediated Rydberg gates | Rydberg decay, laser noise, atomic motion, and detectable atom loss sit close to the main computational path |
+| [[alkaline-earth-neutral-atom-clock-qubit]] | The long-lived $^1S_0 \leftrightarrow {}^3P_0$ clock manifold | Rydberg excitation from the metastable branch, with state-dependent trapping available for control | Extra optical transitions and state-dependent control buy a cleaner storage manifold at the cost of a more elaborate laser and trapping stack |
+| [[nuclear-spin-neutral-atom-qubit]] | Weakly magnetic nuclear-spin sublevels, typically in the $^1S_0$ ground manifold | Rydberg or clock-state manifolds are borrowed only during control and entanglement | Memory and interaction are cleanly separated, but the gate path is less direct and the encoding remains a less mature systems branch |
+
+Atom loss cuts across this matrix rather than defining one row. Read [[erasure-error-vs-pauli-error]] with the umbrella, Rydberg, and alkaline-earth branches when loss is detected or converted into a flagged event; do not assume that choosing a nuclear-spin storage manifold automatically supplies an erasure mechanism.
 
 ## Routing rule
 

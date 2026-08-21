@@ -1,6 +1,6 @@
 {
   "schema": "qubitzoo.genealogy.v1",
-  "generated_at": "2026-08-14T14:00:57.503453+00:00",
+  "generated_at": "2026-08-21T14:00:09.746022+00:00",
   "nodes": [
     {
       "id": "0-pi-qubit",
@@ -346,7 +346,7 @@
     },
     {
       "id": "hybrid-qubit",
-      "title": "Hybrid Qubit (Semiconductor Triple-Dot)",
+      "title": "Hybrid Qubit (Semiconductor Double Dot)",
       "family": "Semiconducting",
       "year": 2012,
       "status": "demonstrated",
@@ -402,7 +402,7 @@
       "id": "mergemon",
       "title": "Merged-Element Transmon (Mergemon)",
       "family": "Superconducting",
-      "year": 2014,
+      "year": 2020,
       "status": "demonstrated",
       "color": "#3b82f6",
       "influence": 0.68
@@ -1154,6 +1154,14 @@
       "target": "hybrid-qubit"
     },
     {
+      "source": "silicon-spin-qubit",
+      "target": "exchange-only-qubit"
+    },
+    {
+      "source": "loss-divincenzo-qubit",
+      "target": "exchange-only-qubit"
+    },
+    {
       "source": "fluxonium",
       "target": "ferbo-qubit"
     },
@@ -1266,6 +1274,10 @@
       "target": "gatemonium"
     },
     {
+      "source": "mergemon",
+      "target": "gatemonium"
+    },
+    {
       "source": "flux-qubit",
       "target": "gatemonium"
     },
@@ -1310,8 +1322,20 @@
       "target": "hybrid-qubit"
     },
     {
+      "source": "semiconductor-charge-qubit",
+      "target": "hybrid-qubit"
+    },
+    {
       "source": "hybrid-qubit",
       "target": "hole-spin-qubit"
+    },
+    {
+      "source": "qubit-readout",
+      "target": "hybrid-qubit"
+    },
+    {
+      "source": "circuit-qed",
+      "target": "hybrid-qubit"
     },
     {
       "source": "kane-qubit",
@@ -1351,10 +1375,6 @@
     },
     {
       "source": "loss-divincenzo-qubit",
-      "target": "exchange-only-qubit"
-    },
-    {
-      "source": "loss-divincenzo-qubit",
       "target": "semiconductor-charge-qubit"
     },
     {
@@ -1382,15 +1402,15 @@
       "target": "mergemon"
     },
     {
-      "source": "mergemon",
-      "target": "gatemon"
-    },
-    {
-      "source": "mergemon",
-      "target": "gatemonium"
+      "source": "gatemon",
+      "target": "mergemon"
     },
     {
       "source": "silicon-spin-qubit",
+      "target": "mergemon"
+    },
+    {
+      "source": "circuit-qed",
       "target": "mergemon"
     },
     {
@@ -1642,10 +1662,6 @@
       "target": "semiconductor-charge-qubit"
     },
     {
-      "source": "semiconductor-charge-qubit",
-      "target": "hybrid-qubit"
-    },
-    {
       "source": "silicon-spin-qubit",
       "target": "semiconductor-charge-qubit"
     },
@@ -1680,10 +1696,6 @@
     {
       "source": "silicon-spin-qubit",
       "target": "singlet-triplet-qubit"
-    },
-    {
-      "source": "silicon-spin-qubit",
-      "target": "exchange-only-qubit"
     },
     {
       "source": "silicon-spin-qubit",

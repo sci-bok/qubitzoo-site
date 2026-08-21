@@ -3,7 +3,7 @@ title: Semiconducting MOC
 type: moc
 technology_family: Semiconducting
 note_count: 12
-last_updated: '2026-08-02'
+last_updated: '2026-08-15'
 generated_by: pipeline-moc-v1
 ---
 
@@ -60,6 +60,21 @@ The highest-value organizing move in this family is to **separate the single-spi
    - [[hole-spin-qubit]] uses strong intrinsic SOC to make electrical control native rather than synthetic.
    - [[kane-qubit]] is the donor-spin branch, where atomic placement and hyperfine control replace lithographic quantum-dot tuning as the defining resource.
    - [[flip-flop-qubit]] is the long-range donor-interface proposal: electron-nuclear flip-flop states borrow a tunable electric dipole from orbital hybridization to mediate predicted coupling across 180–500 nm. Keep its performance numbers labelled as theoretical until the encoding and gates are demonstrated.
+
+## Exchange-control routing matrix
+
+The dot-defined entries are easiest to distinguish by following the same physical resource through three layers: **encoding**, **control regime**, and **residual cost**. This table is a routing aid, not a performance ranking.
+
+| Entry | Logical encoding | What exchange / charge motion does | Protection or control advantage | Residual architectural cost |
+|---|---|---|---|---|
+| [[loss-divincenzo-qubit]] | One electron spin per dot | A pulsed interdot exchange coupling supplies the native two-spin entangler | Minimal encoding overhead; local spin control and exchange entangling gates stay conceptually separate | Requires a separate one-qubit drive mechanism plus calibrated, low-crosstalk exchange pulses |
+| [[singlet-triplet-qubit]] | Two spins in the $\{|S\rangle,|T_0\rangle\}$ subspace | Exchange becomes a logical splitting; a field gradient supplies the second rotation axis | Collective magnetic noise is partly rejected, and symmetric exchange operation can suppress first-order detuning noise | The gradient, charge admixture, and leakage outside the encoded subspace remain active error channels |
+| [[exchange-only-qubit]] | Three-spin decoherence-free subsystem | Pairwise exchange generates non-collinear logical axes, using serial or simultaneous baseband pulses | No microwave drive or engineered field gradient is required; uniform magnetic noise acts mainly on the gauge subsystem | Encoded entangling gates are pulse-heavy, while local gradients, charge noise, leakage, and calibration crosstalk remain |
+| [[rx-qubit]] | The same three-spin encoded manifold | Always-on symmetric exchange defines the splitting; resonant exchange modulation drives gates | Operates at a detuning sweet spot and couples naturally to resonators | Requires phase-locked RF control and accepts an always-on precession / interaction budget |
+| [[aeon-qubit]] | Three spins with always-on nearest-neighbor exchange | Barrier-gate modulation steers simultaneous exchange while remaining at a double detuning sweet spot | Baseband universal control can stay first-order insensitive to both detuning coordinates | The protected point has no transverse electric dipole, complicating ordinary cavity coupling and long-range interconnects |
+| [[hybrid-qubit]] | Three-electron charge-spin states in a double dot | Detuning and tunnel coupling deliberately mix charge sectors to enable very fast electrical gates | Compact footprint and strong electric controllability, with useful protected operating points | Charge sensitivity and leakage are reduced rather than removed; the speed gain has not translated into leading spin-qubit fidelity |
+
+Read the first two columns through [[exchange-interaction-in-quantum-dots]] when the question is how the gates manufacture $J$. Read the third and fourth columns through [[heisenberg-exchange-in-quantum-dots]], [[decoherence-free-subspace]], and [[charge-noise-sweet-spot]] when the question is what that coupling becomes after projection and which noise channel survives.
 
 ## Routing rule: when to enter which note
 

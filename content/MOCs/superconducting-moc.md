@@ -3,7 +3,7 @@ title: Superconducting MOC
 type: moc
 technology_family: Superconducting
 note_count: 22
-last_updated: '2026-08-02'
+last_updated: '2026-08-19'
 generated_by: pipeline-moc-v1
 ---
 
@@ -62,6 +62,24 @@ Curated map of Zoo entries in the **Superconducting** family.
 | Rail / erasure branch | Turn dominant relaxation or leakage events into flagged faults that the decoder can exploit | `dual-rail-superconducting-qubit` | [[erasure-error-vs-pauli-error]], [[threshold-theorem]] |
 
 A useful routing rule is that `circuit-qed` is **infrastructure, not a peer qubit**. Enter it when the live question is about readout, coupling, resonators, or cavity-mediated control. Enter `transmon`, `fluxonium`, `blochnium`, or the bosonic-code notes when the live question is what degree of freedom is actually carrying the logical information.
+
+## Baseline lineage and role separation
+
+The baseline branch is easy to misread as a flat list of competing qubits. It is better understood as a lineage plus two architecture layers:
+
+| Entry | Role in the graph | What changed relative to its nearest neighbor |
+|---|---|---|
+| [[cooper-pair-box-charge-qubit]] | charge-qubit ancestor | exposed the coherent Josephson-charge degree of freedom, but also the charge-dispersion problem that motivated the transmon |
+| [[transmon]] | dominant encoding baseline | moved to large $E_J/E_C$ so charge dispersion falls exponentially while usable anharmonicity remains |
+| [[xmon]] | planar layout descendant | kept the transmon Hamiltonian and changed capacitor geometry and connectivity for 2D integration |
+| [[gmon]] | packaged qubit-plus-coupler architecture | added a flux-tunable interaction path to Xmon-style qubits so coupling can cross through zero rather than remain always on |
+| [[tunable-coupler]] | reusable coupling component | abstracts the interaction element away from any one qubit layout; compare it on ON/OFF ratio, parasitic $ZZ$, and gate path, not as an encoding |
+| [[circuit-qed]] | readout and bus infrastructure | supplies resonators, dispersive measurement, Purcell engineering, and mediated coupling around the qubit |
+| [[mergemon]] | compact materials / participation variant | kept transmon-like encoding but merged most shunt capacitance into the junction, trading footprint against concentrated dielectric participation |
+| [[unimon-qubit]] | distributed-mode alternative | placed one junction inside a grounded resonator mode, avoiding an isolated charge island and obtaining a flux sweet spot with positive anharmonicity |
+| [[phase-qubit]] and [[flux-qubit]] | historical side branches | encode in a tilted-washboard well or persistent-current manifold rather than following the CPB-to-transmon charge-dispersion route |
+
+This separation prevents three category errors: treating `xmon` as a new encoding instead of a transmon layout, treating `tunable-coupler` or `circuit-qed` as peer qubits, and treating `mergemon` as a protection mechanism rather than a compactness-and-participation trade. When the comparison is about the **carrier Hamiltonian**, start with `cooper-pair-box-charge-qubit`, `transmon`, `unimon-qubit`, `phase-qubit`, or `flux-qubit`. When it is about **processor wiring**, start with `xmon`, `gmon`, `tunable-coupler`, or `circuit-qed`.
 
 ## Hardware-assisted fault-tolerance routes
 

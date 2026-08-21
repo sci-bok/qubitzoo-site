@@ -3,25 +3,28 @@ title: Changelog
 description: Recent changes to the Qubit Zoo site and source content (rolling 24h window).
 ---
 
-_Auto-generated at 2026-08-14T14:00:57.380Z (UTC). Covers the last 24 hours. If a window passes with no activity, sections will be empty._
+_Auto-generated at 2026-08-21T14:00:09.620Z (UTC). Covers the last 24 hours. If a window passes with no activity, sections will be empty._
 
 ## Public-facing site changes
 
 Commits to this site repo (qubitzoo-site) — these have already shipped or will ship on the next deploy.
 
-**f5252cfe** · 2026-08-13 10:24:54 — content: deep-audit dual-rail superconducting qubit
+**51c575b7** · 2026-08-20 10:12:53 — zoo(audit): publish mergemon deep audit
 
-<details><summary>files (9)</summary>
+<details><summary>files (12)</summary>
 
-- `content/Figures/dual-rail-superconducting-qubit-figure.png`
-- `content/Figures/dual-rail-superconducting-qubit-figure.provenance.json`
-- `content/References/chou-2024-superconducting-dual-rail.md`
-- `content/References/de-graaf-2025-mid-circuit-erasure-check.md`
-- `content/References/huang-2026-logical-multi-qubit.md`
-- `content/References/koottandavida-2024-double-post-dual-rail.md`
-- `content/References/levine-2024-dual-rail-erasure.md`
-- `content/References/qci-team-2025-bias-preserving-dual-rail.md`
-- `content/Zoo/dual-rail-superconducting-qubit.md`
+- `content/Figures/mergemon-figure.png`
+- `content/Figures/mergemon-figure.provenance.json`
+- `content/References/balgley-2025-coherent-vdw-mergemon.md`
+- `content/References/balgley-2025-crystalline-mergemon.md`
+- `content/References/daum-2025-mergemon-tls.md`
+- `content/References/goswami-2022-finmet.md`
+- `content/References/knudsen-2026-crystalline-germanium-jj.md`
+- `content/References/madon-2021-mergemon.md`
+- `content/References/mamin-2021-mergemon.md`
+- `content/References/shim-2014-bottom-up-sc.md`
+- `content/References/zhao-2020-mergemon.md`
+- `content/Zoo/mergemon.md`
 
 </details>
 
@@ -30,38 +33,44 @@ Commits to this site repo (qubitzoo-site) — these have already shipped or will
 
 Commits in the source vault touching `Zoo/`, `References/`, `Evergreen/`, `MOCs/`, `Figures/`. These are queued to appear on the site at the next sync + deploy.
 
-**e3d5297a** · 2026-08-14 06:22:32 — zoo: pipeline queue-run processed=10 failed=0 (2026-08-14 10:22 UTC)
-
-<details><summary>files (12)</summary>
-
-- `References/brudney-2026-mid-circuit-ground-state-cooling-and.md`
-- `References/jung-2026-shots-to-approximate-solution-scaling-in-neutral.md`
-- `References/n-2026-inductively-protected-andreev-ipa-spin.md`
-- `References/niu-2026-gate-control-of-g-factor.md`
-- `References/vyas-2026-homomorphic-aggregation-of-continuous-variable.md`
-- `References/wahl-2026-ion-trap-on-borosilicate.md`
-- `References/zhang-2026-robust-controlled-z-gate-for.md`
-- `Zoo/fluxonium.md`
-- `Zoo/gkp-codes.md`
-- `Zoo/rydberg-neutral-atom-qubit.md`
-- `Zoo/spin-qubit.md`
-- `Zoo/trapped-ion-qubit.md`
-
-</details>
-
-**c463793b** · 2026-08-13 10:24:43 — zoo: deep-audit dual-rail superconducting qubit
+**93135d00** · 2026-08-21 06:13:38 — zoo: pipeline queue-run processed=9 failed=0 (2026-08-21 10:13 UTC)
 
 <details><summary>files (9)</summary>
 
-- `Figures/dual-rail-superconducting-qubit-figure.png`
-- `Figures/dual-rail-superconducting-qubit-figure.provenance.json`
-- `References/chou-2024-superconducting-dual-rail.md`
-- `References/de-graaf-2025-mid-circuit-erasure-check.md`
-- `References/huang-2026-logical-multi-qubit.md`
-- `References/koottandavida-2024-double-post-dual-rail.md`
-- `References/levine-2024-dual-rail-erasure.md`
-- `References/qci-team-2025-bias-preserving-dual-rail.md`
-- `Zoo/dual-rail-superconducting-qubit.md`
+- `References/buka-2026-search-for-majorana-bound.md`
+- `References/ibad-2026-coherence-protection-of-a.md`
+- `References/li-2026-high-fidelity-control-of.md`
+- `References/liu-2026-architecture-and-compilation-co-design.md`
+- `References/roschinski-2026-programmable-cavity-qed-with.md`
+- `Zoo/andreev-spin-qubit.md`
+- `Zoo/hole-spin-qubit.md`
+- `Zoo/neutral-atom-qubit.md`
+- `Zoo/transmon.md`
+
+</details>
+
+**2050576c** · 2026-08-20 10:49:27 — moc: clarify neutral-atom storage and interaction routing
+
+<details><summary>files (1)</summary>
+
+- `MOCs/neutral-atom-moc.md`
+
+</details>
+
+**de2a5409** · 2026-08-20 10:12:33 — zoo(audit): refresh mergemon SOTA and figure
+
+<details><summary>files (10)</summary>
+
+- `Figures/mergemon-figure.png`
+- `Figures/mergemon-figure.provenance.json`
+- `References/balgley-2025-coherent-vdw-mergemon.md`
+- `References/balgley-2025-crystalline-mergemon.md`
+- `References/daum-2025-mergemon-tls.md`
+- `References/goswami-2022-finmet.md`
+- `References/knudsen-2026-crystalline-germanium-jj.md`
+- `References/mamin-2021-mergemon.md`
+- `References/shim-2014-bottom-up-sc.md`
+- `Zoo/mergemon.md`
 
 </details>
 
@@ -70,48 +79,47 @@ Commits in the source vault touching `Zoo/`, `References/`, `Evergreen/`, `MOCs/
 
 Commits in the pipeline/automation repo (qubit-zoo-zettelkasten). These capture backend fixes, audits, and build/report changes that may not be visible on the public site yet.
 
-**c2187f7c** · 2026-08-14 06:22:30 — zoo: pipeline queue-run processed=10 failed=0 (2026-08-14 10:22 UTC)
+**bfe947b4** · 2026-08-21 06:13:35 — zoo: pipeline queue-run processed=9 failed=0 (2026-08-21 10:13 UTC)
 
-<details><summary>files (42)</summary>
+<details><summary>files (41)</summary>
 
 - `data/canon_coverage.json`
 - `data/classics_backlog.json`
 - `data/classics_resolver_report.json`
-- `data/discovery_queue.json`
-- `data/exports/paper_feed/2026-08-14/paper_feed.v1.jsonl`
+- `data/exports/paper_feed/2026-08-21/paper_feed.v1.jsonl`
 - `data/exports/paper_feed/latest.json`
 - `data/influence_history.jsonl`
 - `data/obsidian_cli_remediation.jsonl`
 - `data/processed_papers.jsonl`
 - `data/quarantine_queue.json`
 - `data/reports/.last-morning-summary-date`
-- `data/reports/2026-08-13/calibration-json.err.log`
-- `data/reports/2026-08-13/calibration.err.log`
-- `data/reports/2026-08-13/calibration.json`
-- `data/reports/2026-08-13/calibration.txt`
-- `data/reports/2026-08-13/influence-scoring.log`
-- `data/reports/2026-08-13/moc-build.log`
-- `data/reports/2026-08-13/moc-generate.log`
-- `data/reports/2026-08-13/ops-report-json.err.log`
-- `data/reports/2026-08-13/ops-report.err.log`
-- `data/reports/2026-08-13/ops-report.json`
-- `data/reports/2026-08-13/ops-report.txt`
-- `data/reports/2026-08-13/queue-summary.json`
-- `data/reports/2026-08-13/queue.log`
-- `data/reports/2026-08-13/run-summary.json`
-- `data/reports/2026-08-13/run-summary.txt`
-- `data/reports/2026-08-13/zettel-review.log`
-- `data/reports/2026-08-13/zoo-links.log`
-- `data/reports/2026-08-13/zoo-note-conventions.log`
-- `data/reports/2026-08-13/zoo-source-references.log`
-- `data/reports/2026-08-14/canon-coverage.log`
-- `data/reports/2026-08-14/canon-coverage.md`
-- `data/reports/2026-08-14/classics-build.log`
-- `data/reports/2026-08-14/classics-resolve.log`
-- `data/reports/2026-08-14/discovery.log`
-- `data/reports/2026-08-14/preflight.log`
-- `data/reports/2026-08-14/prioritize-classics.log`
-- `data/reports/2026-08-14/queue.log`
+- `data/reports/2026-08-20/calibration-json.err.log`
+- `data/reports/2026-08-20/calibration.err.log`
+- `data/reports/2026-08-20/calibration.json`
+- `data/reports/2026-08-20/calibration.txt`
+- `data/reports/2026-08-20/influence-scoring.log`
+- `data/reports/2026-08-20/moc-build.log`
+- `data/reports/2026-08-20/moc-generate.log`
+- `data/reports/2026-08-20/ops-report-json.err.log`
+- `data/reports/2026-08-20/ops-report.err.log`
+- `data/reports/2026-08-20/ops-report.json`
+- `data/reports/2026-08-20/ops-report.txt`
+- `data/reports/2026-08-20/queue-summary.json`
+- `data/reports/2026-08-20/queue.log`
+- `data/reports/2026-08-20/run-summary.json`
+- `data/reports/2026-08-20/run-summary.txt`
+- `data/reports/2026-08-20/zettel-review.log`
+- `data/reports/2026-08-20/zoo-links.log`
+- `data/reports/2026-08-20/zoo-note-conventions.log`
+- `data/reports/2026-08-20/zoo-source-references.log`
+- `data/reports/2026-08-21/canon-coverage.log`
+- `data/reports/2026-08-21/canon-coverage.md`
+- `data/reports/2026-08-21/classics-build.log`
+- `data/reports/2026-08-21/classics-resolve.log`
+- `data/reports/2026-08-21/discovery.log`
+- `data/reports/2026-08-21/preflight.log`
+- `data/reports/2026-08-21/prioritize-classics.log`
+- `data/reports/2026-08-21/queue.log`
 - `data/reports/latest-run-summary.json`
 - `data/reports/latest-run-summary.txt`
 - `data/reports/run-history.jsonl`
@@ -119,12 +127,11 @@ Commits in the pipeline/automation repo (qubit-zoo-zettelkasten). These capture 
 
 </details>
 
-**8d389ab9** · 2026-08-13 10:25:07 — audit: record dual-rail superconducting review
+**fcae7ee6** · 2026-08-20 10:13:33 — audit: record mergemon deep audit
 
-<details><summary>files (2)</summary>
+<details><summary>files (1)</summary>
 
 - `data/audit-tracker.json`
-- `data/figure-style-audit-2026-08-04.json`
 
 </details>
 
@@ -132,6 +139,6 @@ Commits in the pipeline/automation repo (qubit-zoo-zettelkasten). These capture 
 ## Pipeline status
 
 - **Status:** `ok` (mode: `full`)
-- **Last run:** 2026-08-14 06:00:03 EDT
-- **Papers added in last run:** 7
+- **Last run:** 2026-08-21 06:00:03 EDT
+- **Papers added in last run:** 5
 - **Failing steps:** none

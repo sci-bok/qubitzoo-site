@@ -3,7 +3,7 @@ title: Spin-Photon MOC
 type: moc
 technology_family: Spin-Photon
 note_count: 5
-last_updated: '2026-08-02'
+last_updated: '2026-08-17'
 generated_by: pipeline-moc-v1
 ---
 
@@ -53,25 +53,19 @@ This family is best read as the **network-emitter-optimized descendant branch** 
    - The useful contrast is not “which color center is best?” but “when does a defect stop being primarily a local-spin story and become primarily a network-emitter story?”
    - `nv-center-qubit` remains the better anchor for room-temperature local-memory maturity, while this page owns the branch where optical interface quality is the main selection criterion.
 
-## Networking-burden comparison
+## Node-stack comparison
 
-| If the architecture pain point is... | Best first stop | Why |
-|---|---|---|
-| Photon indistinguishability and cavity-integrated nanophotonics | `siv-color-center-qubit` | Inversion symmetry and high ZPL fraction are the whole point. |
-| Native telecom compatibility and silicon photonics | `t-center-qubit` | It starts much closer to the fibre stack the network already wants. |
-| Mature room-temperature defect-spin control with a real local register | [[color-center-moc]] | That is still the NV-centered branch, not this one. |
-| Avoiding a large microwave-to-optical conversion stack | `t-center-qubit`, then [[quantum-transduction]] | Native O-band emission can remove part of the transduction burden rather than merely optimizing around it. |
-| Choosing between clean photons and a gentler cryogenic envelope | Read both entries | SiV buys the best optics; SnV and T centers relax the systems burden in different ways. |
+A spin-photon platform is not selected by one record number. A useful node must preserve a local state, emit a usable photon, survive the fibre stack, and expose enough parallelism to overcome heralding loss. The five entries place their strongest asset—and their remaining systems debt—at different layers of that chain.
 
-## Network-emitter routing table
+| Branch | Strongest node asset | Photon / network route | Bottleneck that still dominates |
+|---|---|---|---|
+| [[nv-center-qubit]] | Most mature electron-plus-nuclear register, including room-temperature local control | 637-nm emission with a weak zero-phonon fraction; long links usually need aggressive collection engineering and wavelength conversion | Optical collection, spectral stability, and the gap between excellent local memory and efficient remote entanglement |
+| [[siv-color-center-qubit]] | Inversion-symmetric, high-ZPL optical interface with strong nanophotonic performance | Clean visible / near-visible photons are cavity friendly, but deployed telecom links still add a conversion layer | Phonon-limited spin coherence, especially for SiV, plus the temperature and diamond-fabrication burden |
+| [[t-center-qubit]] | Electron-plus-nuclear register inside a silicon-photonics-compatible host | Native 1326-nm O-band emission removes much of the wavelength-conversion burden | Device yield, spectral uniformity, and benchmark maturity compared with diamond emitters |
+| [[silicon-carbide-defect-qubit]] | Room-temperature defect-spin control and nuclear registers in a wafer-scale wide-bandgap platform | Near-infrared spin-photon interfaces can be integrated in SiC waveguides, but are not automatically telecom-native | Transform-limited optical stability and reproducible cavity-coupled single-defect yield across a fragmented defect landscape |
+| [[rare-earth-ion-qubit]] | Exceptionally long spin memories plus intrinsic spectral multiplexing | Er supplies native C-band photons; other useful species trade that advantage for different memory and optical properties | Weak 4f oscillator strength makes cavity enhancement essential, while deterministic local multi-ion gates remain immature |
 
-| If the real question is... | Start here? | Why |
-|---|---|---|
-| Which defect-spin platform gives the cleanest photons for remote entanglement? | Yes | That is the defining purpose of this family. |
-| Which branch wins on nanophotonic optical quality even if the fridge burden is harsher? | Yes | `siv-color-center-qubit` is the clean-photon-first reference case. |
-| Which branch best reduces downstream telecom integration pain? | Yes | `t-center-qubit` is the silicon-and-telecom-first route. |
-| Which defect-spin qubit is the most mature room-temperature local memory platform? | No | Hand back to [[color-center-moc]] and `nv-center-qubit`. |
-| Is native emission already close enough to the network target to avoid a major transduction stack? | Yes | Read this MOC, then cross-check with [[quantum-transduction]]. |
+Read the columns in order. [[coherence-time-hierarchy]] tests whether the local memory survives the heralding cycle; [[purcell-protection-via-detuning]] and [[resonator-as-quantum-bus]] expose how much cavity engineering is needed to turn that memory into a photon; [[quantum-transduction]] then prices the wavelength mismatch between the emitter and the deployed link. This keeps a native-telecom advantage distinct from a clean-emitter advantage: SiV can win the local optical interface while T centers or Er reduce the downstream fibre burden.
 
 ## Routing rule
 

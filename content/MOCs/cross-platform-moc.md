@@ -48,6 +48,17 @@ Curated map of Zoo entries in the **Cross-Platform** family.
 - `bacon-shor-code`, `floquet-codes`, and `qldpc-codes` are the check-structure layer: they move complexity respectively into gauge redundancy, time-ordered measurements, or sparse nonlocal connectivity. Their code-level comparison belongs in [[codes-moc]]; their control, connectivity, and decoder consequences belong here.
 - `erasure-qubit` is the noise-model layer: it does not replace a code family so much as change the decoder assumptions under which the other logical encodings should be judged.
 - `classical-control` and `quantum-transduction` are the systems layer: one closes the real-time local feedback loop, the other opens the nonlocal modular-network loop.
+- `nuclear-magnetic-resonance-qubit` is the historical transfer layer: its shaped pulses, refocusing sequences, and early algorithm demonstrations helped establish portable control abstractions, even though its ensemble processor architecture did not scale.
+
+## NMR as a portability test
+
+[[nuclear-magnetic-resonance-qubit]] appears in this facet because it cleanly separates a platform's **transferable methods** from its **non-transferable scaling assumptions**.
+
+- The portable layer runs toward [[quantum-gate]] and [[classical-control]]: selective rotations, refocusing, composite pulses, and optimal-control methods survived the NMR processor model and became general hardware tools.
+- The non-portable layer stays with [[molecular-moc]]: pseudo-pure ensemble preparation, bulk-magnetization readout, and exponentially shrinking signal are properties of the liquid-state architecture, not generic quantum-computing constraints.
+- The routing rule is therefore historical and methodological. Use this page to ask what NMR exported to later platforms; use [[molecular-moc]] to judge NMR itself against [[divincenzo-criteria]] and scalable processor requirements.
+
+This distinction prevents an early algorithm demonstration from being mistaken for a scalable systems architecture: gate sequences transferred, but the state-preparation and measurement model did not.
 
 ## Family structure
 
@@ -55,6 +66,7 @@ Curated map of Zoo entries in the **Cross-Platform** family.
 - `erasure-qubit` is a noise-engineering pattern that can be instantiated in multiple families, not a single device recipe.
 - `classical-control` and `quantum-transduction` are scaling interfaces: one connects algorithms to physical waveforms, the other connects local processors to networked photonic links.
 - `quantum-gate` should stay as the operation-level abstraction that ties these layers together, not become a dumping ground for platform-specific pulse details.
+- `nuclear-magnetic-resonance-qubit` is intentionally a secondary facet here and a primary member of [[molecular-moc]]; its cross-platform role is methodological inheritance, not present-day hardware competitiveness.
 
 ## Routing rule: when to enter this family
 

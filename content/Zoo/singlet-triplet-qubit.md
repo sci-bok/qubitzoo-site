@@ -129,6 +129,7 @@ where $\alpha$ depends on the inter-dot capacitance and the charge-dipole differ
 - [[shulman-2012-demonstration-entanglement-electrostatically]]
 - [[yoneda-2018-dot-spin-qubit]]
 - [[zanardi-1997-noiseless-quantum-codes]]
+- [[wang-2026-zendot-an-llm-integrated-quantum]]
 
 ## Evergreen context
 

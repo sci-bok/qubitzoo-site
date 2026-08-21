@@ -1,26 +1,26 @@
 {
   "schema": "qubitzoo.content_sync.v1",
-  "synced_at_utc": "2026-08-14T14:00:57.527850+00:00",
+  "synced_at_utc": "2026-08-21T14:00:09.770177+00:00",
   "source": {
     "vault_repo": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/../qubit-zettelkasten",
-    "vault_head": "e3d5297a8ff0b13d5dd2e74f47645acd260bd3e4",
+    "vault_head": "93135d00ad388ebca89095bfb7a78f5583325892",
     "pipeline_summary": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/reports/latest-run-summary.json",
-    "pipeline_run_timestamp_utc": "2026-08-14T10:00:03Z",
-    "pipeline_run_timestamp_local": "2026-08-14 06:00:03 EDT",
+    "pipeline_run_timestamp_utc": "2026-08-21T10:00:03Z",
+    "pipeline_run_timestamp_local": "2026-08-21 06:00:03 EDT",
     "pipeline_run_status": "ok",
     "pipeline_run_mode": "full"
   },
   "counts": {
     "vault": {
       "zoo": 81,
-      "references": 335,
+      "references": 371,
       "evergreen": 23,
       "mocs": 16,
       "figures": 187
     },
     "site_content": {
       "zoo": 81,
-      "references": 335,
+      "references": 371,
       "evergreen": 23,
       "mocs": 16,
       "figures": 187

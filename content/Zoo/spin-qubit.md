@@ -172,6 +172,7 @@ Semiconductor spin qubits promise integration with existing CMOS fabrication inf
 - [[leng-2026-phonon-assisted-transport-and-hole-phonon]]
 - [[wuttig-2026-probing-impurity-quantum-criticality]]
 - [[niu-2026-gate-control-of-g-factor]]
+- [[chattopadhyay-2026-quantum-mpemba-speedups-in]]
 
 ## Evergreen context
 

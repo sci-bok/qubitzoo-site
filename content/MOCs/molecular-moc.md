@@ -3,7 +3,7 @@ title: Molecular MOC
 type: moc
 technology_family: Molecular
 note_count: 3
-last_updated: '2026-08-03'
+last_updated: '2026-08-14'
 generated_by: pipeline-moc-v1
 ---
 
@@ -22,6 +22,12 @@ Curated map of Zoo entries in the **Molecular** family.
 - qubit: 3
 
 <!-- CURATED -->
+
+## Curated synthesis
+
+“Molecular” names the physical carrier, not a common processor architecture. The useful comparison is therefore not molecule versus atom, but **where each branch places addressability, interaction, and scaling cost**. [[molecular-qubit]] puts design freedom into synthesis but still lacks a standard single-molecule control/readout stack; [[polar-molecule-qubit]] gains individual addressing and a native dipolar entangler by paying an assembly, cooling, and survival-detection cost; [[nuclear-magnetic-resonance-qubit]] has exceptionally mature coherent control but pays an exponential pseudo-pure-state signal penalty because it addresses ensembles rather than individual processors.
+
+This makes experimental age a poor proxy for architectural maturity. NMR reached algorithm demonstrations first yet closed off as a scalable route; molecular spin qubits show that chemistry can engineer coherence without by itself supplying an integration stack; trapped polar molecules are the newest branch but already expose a credible two-particle gate primitive. Read the family as three different answers to the same question: **which part of the quantum computer is delegated to molecular structure, and which unsolved burden remains outside the molecule?**
 
 ## Conceptual anchors
 

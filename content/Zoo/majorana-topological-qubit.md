@@ -120,6 +120,7 @@ which motivates long wires and hard-gap devices for robust parity protection.
 - [[karzig-2017-tetron]]
 - [[kitaev-2001-unpaired-majorana-fermions]]
 - [[pientka-2017-planar-jj]]
+- [[chang-2026-half-a-qubit-an]]
 
 ## Related Entries
 
