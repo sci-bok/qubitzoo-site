@@ -13,15 +13,15 @@ keywords:
 - superconducting
 - macroscopic quantum tunneling
 influence_score: 0.65
-last_updated: '2026-08-22'
+last_updated: '2026-08-23'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-deep-audit-2026-08-22
+verified_by: scibok-deep-audit-2026-08-23
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/phase-qubit-figure.provenance.json"
-figure_reviewed_by: "Codex corpus visual/physics audit 2026-08-05"
-figure_reviewed_at: "2026-08-05T12:35:46.368565+00:00"
+figure_reviewed_by: "Codex deep audit 2026-08-23 (failed review; primary retained)"
+figure_reviewed_at: "2026-08-23T14:09:30+00:00"
 ---
 
 ## Figure
@@ -88,7 +88,8 @@ The phase qubit provided early demonstrations of quantum coherence and entanglem
 
 **Recent status — 2024–2026:**
 - No phase-qubit processor result or coherence/gate record superseding the early-2010s endpoint was found
-- Ouyang et al. (2024) experimentally revisited the bias-controlled crossover of a current-biased junction from a nearly harmonic oscillator to a nonlinear two-level artificial atom; subsequent work has emphasized threshold detection rather than phase-qubit computing
+- Ouyang et al. (2024) experimentally revisited the bias-controlled crossover of a current-biased junction from a nearly harmonic oscillator to a nonlinear two-level artificial atom
+- Chai et al. (2025, 2026) developed current-biased Josephson-junction threshold-detector protocols from few-photon sensitivity toward simulated single-photon sensitivity using fast nonadiabatic bias sweeps; these are detector results, not a revival of the phase-qubit processor architecture
 
 ## Key Metrics
 
@@ -116,6 +117,8 @@ The phase qubit provided early demonstrations of quantum coherence and entanglem
 
 ### Recent current-biased-junction context
 - P. H. Ouyang et al., "Experimental evidence for a current-biased Josephson junction acting as either a macroscopic boson or fermion," [Phys. Rev. Research 6, 013236 (2024)](https://doi.org/10.1103/PhysRevResearch.6.013236)
+- Y. Q. Chai et al., "Measuring weak microwave signals via current-biased Josephson junctions: Approaching the quantum limit of energy detection," [Phys. Rev. B 111, 024501 (2025)](https://doi.org/10.1103/PhysRevB.111.024501)
+- Y. Q. Chai et al., "Measuring weak microwave signals via a current-biased Josephson junction: Suppressing its thermal noise via fast bias current sweeps," [Phys. Rev. B 113, 224503 (2026)](https://doi.org/10.1103/k7jv-j9b5), [arXiv:2510.20570](https://arxiv.org/abs/2510.20570)
 
 ### Reviews
 - J. Clarke and F. K. Wilhelm, "Superconducting quantum bits," [Nature 453, 1031 (2008)](https://doi.org/10.1038/nature07128)
@@ -131,6 +134,8 @@ The phase qubit provided early demonstrations of quantum coherence and entanglem
 - [[steffen-2006-measurement-entanglement-superconducting]]
 - [[patel-2013-coherent-phase-qubit-silicon-capacitor]]
 - [[ouyang-2024-current-biased-josephson-boson-fermion]]
+- [[chai-2025-cbjj-quantum-limit-microwave-detection]]
+- [[chai-2026-cbjj-single-photon-detection]]
 
 ## Evergreen context
 
