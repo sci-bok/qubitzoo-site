@@ -13,15 +13,15 @@ keywords:
 - superconducting
 - macroscopic quantum tunneling
 influence_score: 0.65
-last_updated: '2026-08-23'
+last_updated: '2026-08-24'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-deep-audit-2026-08-23
+verified_by: scibok-deep-audit-2026-08-24
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/phase-qubit-figure.provenance.json"
-figure_reviewed_by: "Codex deep audit 2026-08-23 (failed review; primary retained)"
-figure_reviewed_at: "2026-08-23T14:09:30+00:00"
+figure_reviewed_by: "Codex deep audit 2026-08-24 (failed review; primary retained)"
+figure_reviewed_at: "2026-08-24T14:09:30+00:00"
 ---
 
 ## Figure
@@ -40,7 +40,7 @@ The phase qubit was historically important—the Martinis group used it extensiv
 
 ## Hamiltonian
 
-For a current-biased junction, with $\hat Q=2e\hat n$, $[\hat\varphi,\hat n]=i$, and $\Phi_0/2\pi=\hbar/2e$,
+For a current-biased junction, with $\hat Q=2e\hat n$, $[\hat\varphi,\hat n]=i$, and $\Phi_0/2\pi=\hbar/2e$, let $C$ denote the total capacitance seen by the junction phase mode, including the junction and intentional shunt capacitances,
 
 $$H = \frac{\hat{Q}^2}{2C} - E_J\cos\hat{\varphi} - \frac{\Phi_0 I_\text{bias}}{2\pi}\hat{\varphi}.$$
 
