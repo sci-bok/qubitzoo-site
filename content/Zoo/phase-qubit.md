@@ -13,15 +13,15 @@ keywords:
 - superconducting
 - macroscopic quantum tunneling
 influence_score: 0.65
-last_updated: '2026-08-24'
+last_updated: '2026-08-25'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-deep-audit-2026-08-24
+verified_by: scibok-deep-audit-2026-08-25
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/phase-qubit-figure.provenance.json"
-figure_reviewed_by: "Codex deep audit 2026-08-24 (failed review; primary retained)"
-figure_reviewed_at: "2026-08-24T14:09:30+00:00"
+figure_reviewed_by: "Codex deep audit 2026-08-25 (failed review; primary retained)"
+figure_reviewed_at: "2026-08-25T14:21:00+00:00"
 ---
 
 ## Figure
