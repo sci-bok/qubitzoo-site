@@ -2,13 +2,19 @@
   "artifact": {
     "media_type": "image/png",
     "path": "phase-qubit-figure.png",
-    "sha256": "1277ca10b4dd006a1f66280bb32ddaece1bac74c242cadfbde597478be3a2834"
+    "sha256": "8f9ae1b3eb007b81a63f142fd4cf03160cf1b936305deef1e1c8403196f3d833"
   },
   "artifact_role": "primary",
-  "blueprint": null,
+  "blueprint": {
+    "media_type": "image/png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/tmp/phase-qubit-audit-2026-08-26/phase-qubit-blueprint.png",
+    "role": "physics-blueprint",
+    "sha256": "0bf5dfbfeba07a205b4e9815b0c8aa4328c17c497a367d96059e0283943cb641",
+    "strict": true
+  },
   "entry_slug": "phase-qubit",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/phase-qubit-figure-20260805T122425996881Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/phase-qubit-figure-20260826T141650159419Z.png",
     "supersedes_file": "phase-qubit-figure.png"
   },
   "renderer": {
@@ -19,17 +25,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-05T12:24:25.996881+00:00",
-    "id": "gen-1785932652-eSGaacIdteEtt7nw55Sc",
+    "generated_at": "2026-08-26T14:16:50.159419+00:00",
+    "id": "gen-1787753794-MGPrsalBoesQtZxs0uHX",
     "image_size": "1K",
-    "prompt_sha256": "f070c96d185de9b601e8a9cf098c95805360250aea7ad21e4b6e44fd93b2fcec",
+    "prompt_sha256": "d178f642ad2713982748259dcb4c6a0eb31b7bb99e810dd77cbedffe082bdb00",
     "source_media_type": "image/jpeg",
     "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Rich current-biased phase-qubit device, tilted washboard, microwave control, and unambiguous destructive tunneling readout outcomes.",
-    "reviewed_at": "2026-08-05T12:35:46.368565+00:00",
-    "reviewer": "Codex corpus visual/physics audit 2026-08-05",
+    "notes": "Passed full-resolution independent physics and rich-style review: single current-biased junction plus C_total, correct decreasing three-level ladder, omega_12 < omega_01, microwave control confined to |0><->|1>, and direct state-selective tunneling with |1> -> running finite-voltage state and |0> -> trapped zero-voltage state. One minor ancillary washboard-label typo is non-blocking.",
+    "reviewed_at": "2026-08-26T14:17:55.801521+00:00",
+    "reviewer": "Scibok daily deep audit 2026-08-26",
     "status": "passed"
   },
   "schema_version": 1
