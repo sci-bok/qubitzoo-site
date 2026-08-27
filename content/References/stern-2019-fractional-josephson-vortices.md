@@ -4,9 +4,10 @@ authors: [Ady Stern, Erez Berg]
 year: 2019
 journal: "Physical Review Letters"
 doi: 10.1103/physrevlett.122.107701
+arxiv_id: '1810.01200'
 type: reference
 generated_by: scibok-audit-backfill
-last_updated: '2026-03-25'
+last_updated: '2026-08-27'
 ---
 
 This paper presents work on fractional josephson vortices and braiding of majorana zero modes in planar superconductor-semiconductor heterostructures.
@@ -16,6 +17,7 @@ This paper presents work on fractional josephson vortices and braiding of majora
 
 ## Links
 - **Journal:** [Physical Review Letters](https://doi.org/10.1103/physrevlett.122.107701)
+- **arXiv:** [1810.01200](https://arxiv.org/abs/1810.01200)
 
 ## Zoo Links
 - [[planar-josephson-junction-qubit]]
