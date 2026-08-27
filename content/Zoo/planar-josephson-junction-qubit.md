@@ -73,8 +73,10 @@ for a weak-link width $W$. The topological boundary is found from a closure and 
 
 **Detection and device engineering — 2024–2026:**
 - Pekerten et al. (2024) proposed microwave signatures—resonance-frequency shifts and a half-slope absorption feature—to distinguish topological gap reopening in multiband pJJs.
+- Elfeky et al. (2025) demonstrated dispersive microwave spectroscopy of gate-defined Andreev bound states in an Al/InAs planar junction, resolving modes with up to 99.94% transparency and an average induced gap near 150 μeV. This establishes a noninvasive spectroscopy tool, not a topological-state demonstration.
 - Yu et al. (2025) experimentally showed that patterned superconducting contacts plus gates can reshape wave functions and enhance finite-field supercurrent, a device-engineering route toward fewer occupied subbands and a larger topological gap.
 - Paudel et al. (2025) predicted that narrowing each superconducting strip to roughly 100–200 nm can raise the clean-device topological gap to as much as 40% of the parent gap; this is an optimization target, not an experimental Majorana-gap measurement.
+- Mudi et al. (2026) reported re-entrant switching currents in several InAs/Al planar junctions but showed that disorder-driven mode interference in a corrugated weak link can reproduce such features without a Zeeman-driven topological transition. Re-entrance alone is therefore not a unique topological diagnostic.
 - Garrido et al. (2026) predicted tunable end-like versus edge-like Majorana localization in the presence of Rashba and Dresselhaus coupling, emphasizing that endpoint placement is geometry- and parameter-dependent.
 - As of August 2026, no pJJ experiment has demonstrated non-Abelian exchange, fusion rules, protected logical operations, or a qubit fidelity/coherence benchmark.
 
@@ -93,6 +95,7 @@ for a weak-link width $W$. The topological boundary is found from a closure and 
 | InAs/Al weak-link geometry | 80 nm × 1.6 μm | Main Fornieri device; additional devices used 80 and 120 nm widths | [Fornieri et al. 2019](https://doi.org/10.1038/s41586-019-1068-8) |
 | Dual-end device geometry | 100 nm × 1.6 μm | Gap closing/reopening and zero-bias spectroscopy | [Banerjee et al. 2023](https://doi.org/10.1103/PhysRevB.107.245304) |
 | Reopened induced gap | ~50 μeV at half-integer loop flux | Representative Banerjee device; not a measured topological minigap | [Banerjee et al. 2023](https://doi.org/10.1103/PhysRevB.107.245304) |
+| Microwave-resolved ABS transparency / induced gap | Up to 99.94% / ~150 μeV average | Gate-defined Al/InAs constriction; spectroscopy capability, not evidence of topology | [Elfeky et al. 2025](https://doi.org/10.1103/PhysRevResearch.7.013248) |
 | Predicted optimized strip width / topological gap | 100–200 nm / up to 40% of parent gap | Clean-device theory for narrow superconducting strips; not experimentally demonstrated | [Paudel et al. 2025](https://doi.org/10.1103/894x-sl81) |
 | Demonstrated logical-qubit fidelity/coherence | None | Platform remains at topological-signature and device-engineering stage | [Yu et al. 2025](https://doi.org/10.1103/3ccp-qyqs) |
 
@@ -112,7 +115,9 @@ for a weak-link width $W$. The topological boundary is found from a closure and 
 - A. Fornieri et al., "Evidence of topological superconductivity in planar Josephson junctions," [Nature 569, 89 (2019)](https://doi.org/10.1038/s41586-019-1068-8) — [arXiv:1809.03037](https://arxiv.org/abs/1809.03037)
 - H. Ren et al., "Topological superconductivity in a phase-controlled Josephson junction," [Nature 569, 93 (2019)](https://doi.org/10.1038/s41586-019-1148-9) — [arXiv:1809.03076](https://arxiv.org/abs/1809.03076)
 - A. Banerjee et al., "Signatures of a topological phase transition in a planar Josephson junction," [Phys. Rev. B 107, 245304 (2023)](https://doi.org/10.1103/PhysRevB.107.245304) — [arXiv:2201.03453](https://arxiv.org/abs/2201.03453)
+- B. H. Elfeky et al., "Microwave Andreev bound state spectroscopy in a semiconductor-based Planar Josephson junction," [Phys. Rev. Research 7, 013248 (2025)](https://doi.org/10.1103/PhysRevResearch.7.013248) — [arXiv:2408.08487](https://arxiv.org/abs/2408.08487)
 - P. Yu et al., "Gate-tunable enhancement of supercurrent in hybrid planar Josephson junctions," [Phys. Rev. B 112, 075419 (2025)](https://doi.org/10.1103/3ccp-qyqs) — [arXiv:2404.09901](https://arxiv.org/abs/2404.09901)
+- S. R. Mudi et al., "Comparison of Origins of Re-Entrant Supercurrents at High In-Plane Magnetic Fields in Planar InAs-Al Josephson Junctions," [arXiv:2603.28530 (2026)](https://arxiv.org/abs/2603.28530)
 
 ### Related theory
 - A. Stern and E. Berg, "Fractional Josephson Vortices and Braiding of Majorana Zero Modes in Planar Superconductor-Semiconductor Heterostructures," [Phys. Rev. Lett. 122, 107701 (2019)](https://doi.org/10.1103/PhysRevLett.122.107701) — [arXiv:1810.01200](https://arxiv.org/abs/1810.01200)
@@ -128,8 +133,10 @@ for a weak-link width $W$. The topological boundary is found from a closure and 
 - [[ren-2019-phase-controlled-planar-jj]]
 - [[banerjee-2023-planar-jj-topological-transition]]
 - [[pekerten-2024-microwave-planar-jj]]
+- [[elfeky-2025-microwave-planar-jj]]
 - [[yu-2025-gate-tunable-planar-jj]]
 - [[paudel-2025-narrow-strip-planar-jj]]
+- [[mudi-2026-reentrant-planar-jj]]
 - [[garrido-2026-planar-jj-edge-end]]
 
 ## Related Entries
