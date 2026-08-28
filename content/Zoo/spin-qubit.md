@@ -173,6 +173,8 @@ Semiconductor spin qubits promise integration with existing CMOS fabrication inf
 - [[wuttig-2026-probing-impurity-quantum-criticality]]
 - [[niu-2026-gate-control-of-g-factor]]
 - [[chattopadhyay-2026-quantum-mpemba-speedups-in]]
+- [[willmes-2026-enhanced-intrinsic-spin-orbit-driving]]
+- [[vaxevani-2026-parity-dependent-coupling-of-molecular]]
 
 ## Evergreen context
 

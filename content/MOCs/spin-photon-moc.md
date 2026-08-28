@@ -3,7 +3,7 @@ title: Spin-Photon MOC
 type: moc
 technology_family: Spin-Photon
 note_count: 5
-last_updated: '2026-08-17'
+last_updated: '2026-08-25'
 generated_by: pipeline-moc-v1
 ---
 
@@ -29,7 +29,9 @@ Curated map of Zoo entries in the **Spin-Photon** family.
 
 - [[divincenzo-criteria]] criteria 6 and 7 organize this family more cleanly than gate-centric comparisons, because every note here is really about turning a local spin memory into a networkable module.
 - [[coherence-time-hierarchy]] captures the main engineering cost of those cleaner optical interfaces: spectral quality, cryogenic burden, and memory lifetime move together rather than independently.
+- [[spin-photon-interfaces-separate-emission-collection-and-wavelength-matching]] is the family-level interface router: it separates intrinsic emission quality, collection into a controlled mode, and wavelength compatibility with the deployed link instead of collapsing them into one generic “optical interface” score.
 - [[quantum-transduction]] is a useful boundary note: platforms here are most interesting when they reduce or avoid transduction pain by emitting photons that are already spectrally useful for networking.
+- Keep resonant optical-cavity enhancement on the optical branch mapped by [[spin-photon-interfaces-separate-emission-collection-and-wavelength-matching]], rather than routing it through microwave circuit-QED notes: [[rare-earth-ion-qubit]] and [[siv-color-center-qubit]] use nanophotonic cavities to enhance emission and collection, not the off-resonant lifetime-protection mechanism described by [[purcell-protection-via-detuning]].
 
 ## Curated synthesis
 
@@ -65,11 +67,15 @@ A spin-photon platform is not selected by one record number. A useful node must 
 | [[silicon-carbide-defect-qubit]] | Room-temperature defect-spin control and nuclear registers in a wafer-scale wide-bandgap platform | Near-infrared spin-photon interfaces can be integrated in SiC waveguides, but are not automatically telecom-native | Transform-limited optical stability and reproducible cavity-coupled single-defect yield across a fragmented defect landscape |
 | [[rare-earth-ion-qubit]] | Exceptionally long spin memories plus intrinsic spectral multiplexing | Er supplies native C-band photons; other useful species trade that advantage for different memory and optical properties | Weak 4f oscillator strength makes cavity enhancement essential, while deterministic local multi-ion gates remain immature |
 
-Read the columns in order. [[coherence-time-hierarchy]] tests whether the local memory survives the heralding cycle; [[purcell-protection-via-detuning]] and [[resonator-as-quantum-bus]] expose how much cavity engineering is needed to turn that memory into a photon; [[quantum-transduction]] then prices the wavelength mismatch between the emitter and the deployed link. This keeps a native-telecom advantage distinct from a clean-emitter advantage: SiV can win the local optical interface while T centers or Er reduce the downstream fibre burden.
+Read the columns in order. [[coherence-time-hierarchy]] tests whether the local memory survives the heralding cycle. [[spin-photon-interfaces-separate-emission-collection-and-wavelength-matching]] then separates the optical-interface budget into emission, collection, and link matching: [[siv-color-center-qubit]] anchors high-ZPL cavity coupling, [[rare-earth-ion-qubit]] anchors cavity enhancement of weak 4f transitions, and [[silicon-carbide-defect-qubit]] or [[t-center-qubit]] expose integrated waveguide/cavity yield. Finally, [[quantum-transduction]] prices any wavelength mismatch that remains between the emitted photon and the deployed link.
+
+Do not substitute [[purcell-protection-via-detuning]] or [[resonator-as-quantum-bus]] for that middle layer. Those Evergreens describe off-resonant microwave cavity coupling in circuit QED—respectively suppressing cavity-mediated decay and mediating virtual qubit exchange—whereas these spin-photon nodes generally seek resonant optical Purcell enhancement and efficient photon extraction. Keeping that boundary explicit prevents a shared word, “cavity,” from collapsing two different physical jobs.
+
+This reading order keeps a native-telecom advantage distinct from a clean-emitter advantage: SiV can win the local optical interface while T centers or Er reduce the downstream fibre burden.
 
 ## Routing rule
 
-- Read this MOC when the primary question is how to build a better **spin-to-photon interface**, not how to get the most mature defect-spin qubit overall.
+- Read this MOC when the primary question is how to build a better **spin-to-photon interface**, not how to get the most mature defect-spin qubit overall; use [[spin-photon-interfaces-separate-emission-collection-and-wavelength-matching]] when that comparison needs to be decomposed into emission, collection, and link matching.
 - Hand back to [[color-center-moc]] when room-temperature operation, ODMR-style control, or local defect-spin memory maturity becomes the main criterion.
 - Use [[quantum-transduction]] as the downstream systems check: if a platform already emits where the network wants to live, that is a real architectural advantage, not just a spectroscopy detail.
 - Treat `siv-color-center-qubit` and `t-center-qubit` as complementary answers to different network bottlenecks, not as a simple maturity ladder.

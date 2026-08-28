@@ -117,6 +117,7 @@ Qubit states are typically the spin-up and spin-down states of the lower orbital
 
 - [[divincenzo-criteria]] — SiV and SnV are standout examples of the communication criteria, because inversion-symmetric optical transitions make spin-to-photon conversion far cleaner than in NV centers, but only if the cryogenic coherence constraint is handled.
 - [[coherence-time-hierarchy]] — the platform's main systems tradeoff is the split between excellent optical coherence and phonon-limited spin coherence, especially for SiV versus the larger-orbit SnV variant.
+- [[spin-photon-interfaces-separate-emission-collection-and-wavelength-matching]] — places the high-ZPL nanocavity advantage upstream of the separate cryogenic-coherence and downstream telecom-conversion burdens.
 
 ## Related Entries
 

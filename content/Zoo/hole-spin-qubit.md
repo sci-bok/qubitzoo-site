@@ -107,6 +107,8 @@ $$H_{2q} = J(t)\,\mathbf{S}_1\cdot\mathbf{S}_2$$
 - [[massai-2026-engineering-two-qubit-gates-via]]
 - [[wang-2026-superfast-hole-spin-qubits]]
 - [[ibad-2026-coherence-protection-of-a]]
+- [[gyorgy-2026-switchable-heavy-hole-light-hole-spin-qubit]]
+- [[valvo-2026-light-hole-spin-qubits-in]]
 
 ## Evergreen context
 

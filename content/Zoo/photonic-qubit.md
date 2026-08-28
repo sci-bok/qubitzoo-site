@@ -100,6 +100,7 @@ These rows establish demonstrated capabilities; they are not universal platform 
 - [[li-2026-experimental-tabletop-petz-recovery]]
 - [[ferrari-2026-robust-ion-photon-entanglement-via]]
 - [[kolar-2026-integrated-dual-resonator-architecture-for]]
+- [[cohen-2026-a-heterogeneously-integrated-coupled-cavity]]
 
 ## References
 

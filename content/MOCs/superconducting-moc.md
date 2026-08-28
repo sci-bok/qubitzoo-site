@@ -3,7 +3,7 @@ title: Superconducting MOC
 type: moc
 technology_family: Superconducting
 note_count: 22
-last_updated: '2026-08-19'
+last_updated: '2026-08-22'
 generated_by: pipeline-moc-v1
 ---
 
@@ -77,9 +77,22 @@ The baseline branch is easy to misread as a flat list of competing qubits. It is
 | [[circuit-qed]] | readout and bus infrastructure | supplies resonators, dispersive measurement, Purcell engineering, and mediated coupling around the qubit |
 | [[mergemon]] | compact materials / participation variant | kept transmon-like encoding but merged most shunt capacitance into the junction, trading footprint against concentrated dielectric participation |
 | [[unimon-qubit]] | distributed-mode alternative | placed one junction inside a grounded resonator mode, avoiding an isolated charge island and obtaining a flux sweet spot with positive anharmonicity |
-| [[phase-qubit]] and [[flux-qubit]] | historical side branches | encode in a tilted-washboard well or persistent-current manifold rather than following the CPB-to-transmon charge-dispersion route |
+| [[phase-qubit]] | historical control-and-measurement branch | used a shallow tilted-washboard well and state-selective escape to demonstrate tomography and multi-qubit entanglement, but destructive readout and the absence of a flux sweet spot made it a poor processor endpoint |
+| [[flux-qubit]] | persistent-current branch | encoded in opposite circulating-current states, preserving strong magnetic coupling and large anharmonicity while trading against flux-noise sensitivity |
 
 This separation prevents three category errors: treating `xmon` as a new encoding instead of a transmon layout, treating `tunable-coupler` or `circuit-qed` as peer qubits, and treating `mergemon` as a protection mechanism rather than a compactness-and-participation trade. When the comparison is about the **carrier Hamiltonian**, start with `cooper-pair-box-charge-qubit`, `transmon`, `unimon-qubit`, `phase-qubit`, or `flux-qubit`. When it is about **processor wiring**, start with `xmon`, `gmon`, `tunable-coupler`, or `circuit-qed`.
+
+## What the historical branches actually proved
+
+The charge, phase, and flux branches should not be read as three obsolete labels on the way to the transmon. Each established a different piece of the superconducting-computing stack, and each failed or survived for a different architectural reason.
+
+| Branch | Durable proof | Limiting architecture trade | Where the idea survives |
+|---|---|---|---|
+| [[cooper-pair-box-charge-qubit]] | coherent control of a circuit-level charge degree of freedom | a narrow charge sweet spot could not prevent strong dephasing across the wider operating manifold | [[transmon]] keeps the same Hamiltonian but flattens charge dispersion across the band |
+| [[phase-qubit]] | fast control, single-shot tunneling readout, state tomography, and two- then three-qubit entanglement in a strongly anharmonic well | measurement destroys the stored state, while strong bias dependence and no flux sweet spot left the best cited device at $T_1=1.6\,\mu\text{s}$ and $T_2^*=110\,\text{ns}$ | current-biased junctions remain useful nonlinear systems and threshold detectors, but not a competitive processor-qubit branch |
+| [[flux-qubit]] | coherent superposition of macroscopically distinct persistent currents with strong magnetic coupling | the same large persistent current that makes coupling easy also exposes the device to $1/f$ flux noise | C-shunt descendants, fluxonium-adjacent circuit design, and flux-qubit quantum annealing preserve parts of the branch |
+
+The decisive transmon transition was therefore more than a coherence-record race. It combined broad charge-dispersion suppression with nondestructive [[dispersive-readout-mechanism|dispersive readout]] and a reusable [[circuit-qed]] coupling/readout stack. The phase qubit remains important as the branch that proved sophisticated control and entanglement before those processor-level ingredients converged; the flux qubit remains a distinct lineage rather than merely another abandoned precursor.
 
 ## Hardware-assisted fault-tolerance routes
 

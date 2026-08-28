@@ -162,6 +162,10 @@ State-of-the-art (as of late 2025): $T_1$ up to $1.68\,\text{ms}$ (planar, tanta
 - [[qiao-2026-transducer-leakage-error-suppression]]
 - [[wysocki-2026-detailed-interpretable-characterization-of]]
 - [[li-2026-high-fidelity-control-of]]
+- [[salmanogli-2026-a-unified-quantum-neural]]
+- [[yang-2026-the-gain-engineered-transmon]]
+- [[direkci-2026-dissipatively-stabilized-0-n-fock]]
+- [[spring-2026-low-leakage-superconducting-qubit-measurement]]
 
 ## Evergreen context
 

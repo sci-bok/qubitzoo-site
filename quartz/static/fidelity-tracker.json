@@ -1,6 +1,6 @@
 {
   "schema": "qubitzoo.fidelity_tracker.v1",
-  "generated_at": "2026-08-21T14:00:09.712153+00:00",
+  "generated_at": "2026-08-28T14:00:11.667113+00:00",
   "families": [
     {
       "name": "Superconducting",
@@ -262,13 +262,13 @@
           "influence": 0.65,
           "metrics": {
             "readout": {
-              "value": 96.0,
-              "raw": "85\u201396%",
-              "ref": "[Martinis et al. 2002](https://doi.org/10.1103/PhysRevLett.89.117901)"
+              "value": 90.0,
+              "raw": "85% (2002); about 90% (2006)",
+              "ref": "[Martinis et al. 2002](https://doi.org/10.1103/PhysRevLett.89.117901); [Steffen et al. 2006](https://doi.org/10.1103/PhysRevLett.97.050502)"
             },
             "T1": {
-              "value_us": 5.0,
-              "raw": "0.5\u20135 \u03bcs"
+              "value_us": 1.5999999999999999,
+              "raw": "1.6 \u03bcs"
             }
           }
         },

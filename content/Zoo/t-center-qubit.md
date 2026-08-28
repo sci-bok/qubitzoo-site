@@ -127,6 +127,7 @@ with $\omega_0/2\pi \approx 226$ THz (1326 nm). In real devices, orientation-dep
 
 - [[divincenzo-criteria]] — T centres are notable because the same silicon defect platform addresses stationary-spin storage and optical communication, rather than bolting a separate transducer onto an otherwise disconnected qubit.
 - [[coherence-time-hierarchy]] — the platform naturally fits a layered-memory picture: an optically active electron spin for interfacing, plus slower but much longer-lived local nuclear-spin storage.
+- [[spin-photon-interfaces-separate-emission-collection-and-wavelength-matching]] — shows why native O-band emission and silicon-photonic routing remove different pieces of the interface budget rather than constituting one generic integration advantage.
 
 ## Related Entries
 

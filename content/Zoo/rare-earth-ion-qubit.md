@@ -141,8 +141,8 @@ Rare-earth ions in crystals offer a unique combination: extremely long spin cohe
 ## Evergreen context
 
 - [[coherence-time-hierarchy]] — distinguishes hours-long Eu nuclear memories from faster optically active Er and Yb network qubits.
-- [[purcell-protection-via-detuning]] — explains how cavities accelerate otherwise weak 4f optical transitions while controlling unwanted decay.
-- [[resonator-as-quantum-bus]] — provides the local cavity-coupling layer beneath multiplexed network nodes.
+- [[divincenzo-criteria]] — keeps exceptional memory time separate from the still-open requirements for practical local gates, readout, and a scalable node interface.
+- [[spin-photon-interfaces-separate-emission-collection-and-wavelength-matching]] — routes weak-oscillator-strength cavity enhancement through the resonant optical-emission mechanism rather than through off-resonant microwave circuit-QED notes.
 
 ## Related Entries
 

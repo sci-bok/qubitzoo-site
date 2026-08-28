@@ -127,6 +127,7 @@ NV centers operate at room temperature, can be optically initialized and read ou
 
 - [[divincenzo-criteria]] — NV centers are the cleanest defect-spin example of combining optical initialization/readout with the communication criteria for stationary-to-flying qubit conversion.
 - [[coherence-time-hierarchy]] — the platform's main advantage is layered memory: millisecond electron-spin control paired with much longer-lived nearby nuclear-spin storage.
+- [[spin-photon-interfaces-separate-emission-collection-and-wavelength-matching]] — separates the mature local register from NV's harder optical task: routing a weak zero-phonon channel into a useful network photon.
 
 ## Related Entries
 

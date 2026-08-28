@@ -3,7 +3,7 @@ title: Qubit Zoo Index MOC
 type: moc
 technology_family: index
 note_count: 81
-last_updated: '2026-08-06'
+last_updated: '2026-08-26'
 generated_by: pipeline-moc-v1
 ---
 
@@ -56,6 +56,14 @@ Top-level navigation for the Qubit Zoo through non-exclusive facets. An entry ma
 - Use [[super-semi-moc]] when the same InAs/Al or Josephson-weak-link hardware is being used for tunable circuit physics, Andreev-spin control, or protected-circuit variants like [[ferbo-qubit]].
 - Switch to [[topological-moc]] when the decisive claim is nonlocal parity encoding or a topological superconducting channel, as in [[majorana-topological-qubit]], [[planar-josephson-junction-qubit]], and [[tetron-qubit]].
 - Keep [[josephson-junction-as-nonlinear-element]] and [[spin-orbit-coupling-for-qubit-control]] as the shared mechanism notes, then use [[threshold-theorem]] to judge whether the topological branch actually earns its overhead-reduction promise.
+
+## High-value cross-family slice: two-qubit interaction carriers
+
+- Start in [[semiconducting-moc]] when neighboring spins entangle through electrically pulsed exchange. Read [[exchange-interaction-in-quantum-dots]] for how gate voltages manufacture $J(t)$, then [[heisenberg-exchange-in-quantum-dots]] for the logical unitary after the charge sector has been projected out. The scaling debt is local wiring, charge sensitivity, and routing beyond a nearest-neighbor exchange graph.
+- Move to [[superconducting-moc]] when a microwave resonator or tunable coupler mediates the interaction. [[resonator-as-quantum-bus]] explains the shared-mode route; the architectural comparison should track parasitic $ZZ$, idle isolation, frequency crowding, and coupler calibration rather than treating every connected edge as equivalent.
+- Use [[trapped-ion-moc]] when the carrier is a collective phonon mode. [[motional-mode-coupling-in-ion-traps]] explains why ions can interact across a chain and why that advantage eventually creates mode-crowding, heating, and closure constraints that motivate shuttling into smaller interaction zones.
+- Use [[neutral-atom-moc]] when the interaction is borrowed transiently from Rydberg excitation rather than stored in a persistent bus. [[rydberg-blockade-mechanism]] ties gate range to blockade strength and geometry, while tweezer rearrangement changes which pairs are brought into that interaction neighborhood.
+- Compare these branches by asking three questions in order: **what carries the interaction, how completely can it be turned off or disentangled at gate end, and what resource must be routed or recalibrated as the processor grows?** Raw two-qubit fidelity alone hides the architectural cost that distinguishes direct exchange, virtual photons, collective motion, and blockade.
 
 ## High-value cross-family slice: hardware-assisted fault tolerance
 

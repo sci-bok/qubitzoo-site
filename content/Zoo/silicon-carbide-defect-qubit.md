@@ -97,6 +97,7 @@ The platform has since advanced from isolated-spin control to network-node primi
 
 - [[coherence-time-hierarchy]] — connects electron-spin operations to longer nuclear-memory timescales.
 - [[divincenzo-criteria]] — evaluates the trade between local spin quality and network-interface maturity.
+- [[spin-photon-interfaces-separate-emission-collection-and-wavelength-matching]] — identifies spectral stability and reproducible cavity/waveguide coupling as the interface bridge between SiC's local register and a scalable network node.
 
 ## Related Entries
 

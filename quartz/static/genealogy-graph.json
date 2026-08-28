@@ -1,6 +1,6 @@
 {
   "schema": "qubitzoo.genealogy.v1",
-  "generated_at": "2026-08-21T14:00:09.746022+00:00",
+  "generated_at": "2026-08-28T14:00:11.765789+00:00",
   "nodes": [
     {
       "id": "0-pi-qubit",
@@ -411,7 +411,7 @@
       "id": "molecular-qubit",
       "title": "Molecular Qubit",
       "family": "Molecular",
-      "year": 2007,
+      "year": 2001,
       "status": "demonstrated",
       "color": "#ec4899",
       "influence": 0.66
@@ -1414,11 +1414,19 @@
       "target": "mergemon"
     },
     {
+      "source": "molecular-qubit",
+      "target": "polar-molecule-qubit"
+    },
+    {
       "source": "nv-center-qubit",
       "target": "molecular-qubit"
     },
     {
       "source": "spin-qubit",
+      "target": "molecular-qubit"
+    },
+    {
+      "source": "qubit-readout",
       "target": "molecular-qubit"
     },
     {
@@ -1508,10 +1516,6 @@
     {
       "source": "gatemon",
       "target": "planar-josephson-junction-qubit"
-    },
-    {
-      "source": "polar-molecule-qubit",
-      "target": "molecular-qubit"
     },
     {
       "source": "neutral-atom-qubit",
