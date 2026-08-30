@@ -14,10 +14,10 @@ keywords:
 - InAs
 - proximity effect
 influence_score: 0.62
-last_updated: '2026-08-29'
+last_updated: '2026-08-30'
 generated_by: scibok-curation
 extracted_by: manual
-verified_by: scibok-deep-audit-2026-08-29
+verified_by: scibok-deep-audit-2026-08-30
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/planar-josephson-junction-qubit-figure.provenance.json"
