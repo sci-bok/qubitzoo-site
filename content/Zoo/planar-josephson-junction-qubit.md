@@ -14,10 +14,10 @@ keywords:
 - InAs
 - proximity effect
 influence_score: 0.62
-last_updated: '2026-08-31'
+last_updated: '2026-09-01'
 generated_by: scibok-curation
 extracted_by: manual
-verified_by: scibok-deep-audit-2026-08-31
+verified_by: scibok-deep-audit-2026-09-01
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/planar-josephson-junction-qubit-figure.provenance.json"
@@ -78,7 +78,7 @@ for a weak-link width $W$. The topological boundary is found from a closure and 
 - Paudel et al. (2025) predicted that narrowing each superconducting strip to roughly 100–200 nm can raise the clean-device topological gap to as much as 40% of the parent gap; this is an optimization target, not an experimental Majorana-gap measurement.
 - Mudi et al. (2026) reported re-entrant switching currents in several InAs/Al planar junctions but showed that disorder-driven mode interference in a corrugated weak link can reproduce such features without a Zeeman-driven topological transition. Re-entrance alone is therefore not a unique topological diagnostic.
 - Garrido et al. (2026) predicted tunable end-like versus edge-like Majorana localization in the presence of Rashba and Dresselhaus coupling, emphasizing that endpoint placement is geometry- and parameter-dependent.
-- As of August 2026, no pJJ experiment has demonstrated non-Abelian exchange, fusion rules, protected logical operations, or a qubit fidelity/coherence benchmark.
+- As of September 2026, no pJJ experiment has demonstrated non-Abelian exchange, fusion rules, protected logical operations, or a qubit fidelity/coherence benchmark.
 
 ## Evergreen context
 
