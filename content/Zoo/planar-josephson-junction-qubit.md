@@ -3,7 +3,7 @@ title: Planar Josephson Junction Topological Qubit
 entry_type: qubit
 technology_family: Topological
 status: proposed
-figure_reviewed: false
+figure_reviewed: true
 first_proposed_year: 2017
 keywords:
 - planar Josephson junction
@@ -14,13 +14,15 @@ keywords:
 - InAs
 - proximity effect
 influence_score: 0.62
-last_updated: '2026-09-01'
+last_updated: '2026-09-02'
 generated_by: scibok-curation
 extracted_by: manual
-verified_by: scibok-deep-audit-2026-09-01
+verified_by: scibok-deep-audit-2026-09-02
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/planar-josephson-junction-qubit-figure.provenance.json"
+figure_reviewed_by: "scibok-deep-audit-2026-09-02"
+figure_reviewed_at: "2026-09-02T14:17:36.629954+00:00"
 ---
 
 ## Figure

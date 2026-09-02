@@ -2,15 +2,20 @@
   "artifact": {
     "media_type": "image/png",
     "path": "planar-josephson-junction-qubit-figure.png",
-    "sha256": "89dab1ead87e59264d4d0fde53ba8a49a5e71184491c6d846352d84d93c7dfa4"
+    "sha256": "3342a9e192cfdd05acaf5daf8a9213323ddcea75982fc07e06d00439082c686b"
   },
   "artifact_role": "primary",
+  "blueprint": {
+    "media_type": "image/png",
+    "path": "/private/tmp/planar-blueprint-20260902-v2.png",
+    "role": "physics-blueprint",
+    "sha256": "db231452da1dd04fb4949fff86f3e20aae0381915167c473b5bb236ab59e2e4e",
+    "strict": true
+  },
   "entry_slug": "planar-josephson-junction-qubit",
   "lineage": {
-    "historical_import": true,
-    "origin_commit": "52868540cd6c8aaf3532fd1b6dfe3c1dd1821e8f",
-    "origin_commit_subject": "taxonomy: Codes family + Topological expansion",
-    "verification": "Renderer identity reconstructed from the Qubit Zoo Nano Banana 2 generation record; original provider request metadata was not retained."
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/vault/Figures/.candidates/planar-josephson-junction-qubit-figure-20260902T141617821705Z.png",
+    "supersedes_file": "planar-josephson-junction-qubit-figure.png"
   },
   "renderer": {
     "name": "nano-banana-2",
@@ -19,15 +24,18 @@
     "returned_model": "google/gemini-3.1-flash-image-preview"
   },
   "request": {
-    "generated_at": "2026-03-15T19:04:58-04:00",
-    "id": null,
-    "prompt_sha256": null,
-    "reconstructed": true
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-09-02T14:16:17.821705+00:00",
+    "id": "gen-1788358564-IN36XzZ5JpreZZrGuY01",
+    "image_size": "1K",
+    "prompt_sha256": "2d2e599f957b3ca3d570c26833c45b90aaafac854487953f48a3ae27aa43fa8f",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Full-resolution asset audit confirmed that this embedded primary is legible and traces to the historical Nano Banana 2 generation workflow, so it was retained to avoid unnecessary regeneration. This renderer/coverage review does not claim a new scientific peer review of every label.",
-    "reviewed_at": "2026-08-02T03:07:08.132079+00:00",
-    "reviewer": "codex-site-image-audit-2026-08-01",
+    "notes": "Approved after full-resolution image review. The rich four-panel plate preserves a correct top-view pJJ with the weak link and B_parallel=B_x along x, upper/lower bank phases +phi/2 and -phi/2, and two endpoint MZMs. It cleanly separates two disconnected finite segments with exactly gamma_1 through gamma_4 and fixed-even-parity logical basis states; shows a device-specific class-D bulk gap closing/reopening with nu:0 to 1 and explicitly rejects a universal nanowire criterion; and distinguishes invasive end tunneling from non-invasive dispersive spectroscopy while stating that ZBPs, re-entrance, microwave gap reopening, and end correlations are signatures rather than proof. Minor ancillary duplications around gate/weak-link callouts do not alter the scientific story.",
+    "reviewed_at": "2026-09-02T14:17:36.629954+00:00",
+    "reviewer": "scibok-deep-audit-2026-09-02",
     "status": "passed"
   },
   "schema_version": 1
