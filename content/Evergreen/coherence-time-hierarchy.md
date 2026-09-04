@@ -101,10 +101,17 @@ This suppresses noise at frequencies $f \ll N/(2t)$, effectively moving the sens
 
 ## Historical Context
 
+In parallel, the [[decoherence-free-subspace]] approach pursues the same goal — preserving coherence — through a complementary strategy: instead of refocusing noise dynamically, it encodes logical information in a noise-symmetry-protected subspace where the problematic perturbations are algebraically invisible.
+
 - Hahn (1950) introduced the spin echo in NMR, the precursor to $T_2$ measurement.
 - Carr & Purcell (1954) and Meiboom & Gill (1958) developed multi-pulse decoupling (CPMG).
 - Ithier et al. (2005) performed the first comprehensive noise spectroscopy of a superconducting qubit using $T_1$, $T_2^*$, and $T_2^{\text{echo}}$.
 - Bylander et al. (2011) demonstrated CPMG noise spectroscopy in transmons.
+
+## Key relationships
+
+- [[decoherence-free-subspace]] — a passive coherence-extension technique: DFS encodes qubits in a noise-symmetry-protected subspace, effectively removing certain dephasing contributions from the measured $T_2^*$
+- [[noise-bias-and-asymmetric-error-channels]] — the coherence hierarchy ($T_1$, $T_2$, $T_\varphi$) constraints the available error budget; the dominant noise channel determines both the coherence limit and the achievable bias ratio
 
 ## References
 

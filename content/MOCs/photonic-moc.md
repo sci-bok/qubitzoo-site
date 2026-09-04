@@ -3,7 +3,7 @@ title: Photonic MOC
 type: moc
 technology_family: Photonic
 note_count: 9
-last_updated: '2026-08-12'
+last_updated: '2026-09-01'
 generated_by: pipeline-moc-v1
 ---
 
@@ -68,6 +68,20 @@ The two layers are composable rather than mutually exclusive. Use the row to cho
 | [[continuous-variable-photonic-qubit]] | Do not route through discrete single-photon KLM by default; Gaussian mode transformations are deterministic but not universal alone | CV cluster states are native, with non-Gaussian resources or [[bosonic-code-hierarchy|bosonic encodings]] needed for fault tolerance | Keep separate from the discrete-qubit fusion branch unless a specific hybrid or GKP construction supplies the bridge |
 
 [[photonic-qubit]] does not occupy one cell: it is the carrier-level umbrella above the matrix. Likewise, [[linear-optical-photonic-qubit]], [[photonic-cluster-state-mbqc-qubit]], and [[fusion-based-photonic-qubit]] label columns rather than alternative encodings. This prevents a category error such as asking whether “dual rail or fusion based” is the better qubit—the former chooses a Hilbert-space encoding, while the latter chooses a resource-building architecture.
+
+## When photonic loss is actually an erasure
+
+The slogan “photon loss is an erasure” is conditional. Leaving a one-photon codespace is useful to a decoder only when the apparatus can localize the missing photon to a known space-time mode. Otherwise the same physical loss can appear merely as an ambiguous no-click event. Keep the loss ledger separate from faults that leave the photon count apparently valid:
+
+| Failure stage | Observable syndrome | Decoder-facing model | Routing consequence |
+|---|---|---|---|
+| Source, switch, coupling, or propagation loss | An expected occupied mode is empty | Erasure only if heralding or the measurement pattern identifies the missing mode; otherwise it is an unlocated failure | Read discrete encodings through [[erasure-error-vs-pauli-error]], but carry the full end-to-end efficiency budget into every architecture column |
+| Detector inefficiency | No click, indistinguishable from upstream loss at the detector alone | Located erasure only when redundant outcomes or a protocol-level acceptance test expose it | Do not credit an encoding with erasure tolerance without specifying its detector and heralding model |
+| Dark counts or multiphoton contamination | A false click or an apparently valid outcome with the wrong photon number | Usually an unflagged logical or measurement fault, not an erasure | Route through [[noise-bias-and-asymmetric-error-channels]] rather than folding all source and detector defects into a single loss percentage |
+| Spectral, temporal, polarization, or spatial mismatch | Photons arrive, but interference visibility and fusion fidelity fall | Coherent or stochastic gate error unless a separate mode-quality test rejects the event | This is the shared bottleneck for KLM, cluster-state, and fusion columns even when transmission loss is low |
+| Finite squeezing in [[continuous-variable-photonic-qubit]] | Analog quadrature displacement accumulates through the cluster | Continuous Gaussian noise until a GKP-like layer discretizes it | Use [[bosonic-code-hierarchy]]; do not import the discrete single-photon erasure story unchanged |
+
+This separation also explains why component records do not multiply into architectural maturity. Better transmission helps the first row, but cannot repair distinguishability, false outcomes, or finite-squeezing noise. Conversely, a high-visibility fusion experiment does not establish that source-to-detector loss is sufficiently localized for an erasure-aware threshold calculation. The relevant threshold claim must state which failures are flagged, where they are located, and which residual faults remain unheralded.
 
 ## Where the umbrella note belongs
 

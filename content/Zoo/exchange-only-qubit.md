@@ -159,6 +159,7 @@ Thus $J_{12}$ and $J_{23}$ generate rotations about axes separated by $120^\circ
 - [[madzik-2025-operating-two-exchange-only]]
 - [[broz-2026-always-on-exchange-only]]
 - [[broz-2026-leakage-protected-idle]]
+- [[stemp-2026-device-characterization-of-si-sige]]
 
 ## Evergreen context
 

@@ -1,6 +1,6 @@
 {
   "schema": "qubitzoo.fidelity_tracker.v1",
-  "generated_at": "2026-08-28T14:00:11.667113+00:00",
+  "generated_at": "2026-09-04T14:00:10.754878+00:00",
   "families": [
     {
       "name": "Superconducting",
@@ -478,29 +478,6 @@
               "value": 99.9,
               "raw": "98\u201399.9%",
               "ref": "[Gyenis et al. 2021](https://doi.org/10.1103/PRXQuantum.2.030101)"
-            }
-          }
-        },
-        {
-          "slug": "semiconductor-charge-qubit",
-          "title": "Semiconductor Charge Qubit",
-          "year": 2003,
-          "status": "demonstrated",
-          "influence": 0.62,
-          "metrics": {
-            "1Q_fidelity": {
-              "value": 90.0,
-              "raw": "~90%",
-              "ref": "[Petersson et al. 2010](https://doi.org/10.1103/PhysRevLett.105.246804)"
-            },
-            "readout": {
-              "value": 95.0,
-              "raw": "~95%",
-              "ref": "[Petersson et al. 2010](https://doi.org/10.1103/PhysRevLett.105.246804)"
-            },
-            "T1": {
-              "value_us": 0.01,
-              "raw": "~10 ns"
             }
           }
         }

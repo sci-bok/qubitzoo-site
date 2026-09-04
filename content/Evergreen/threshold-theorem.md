@@ -59,7 +59,7 @@ The threshold theorem transforms the question "can we build a quantum computer?"
 
 3. **Coherence-to-gate-time ratio**: The number of gates executable within coherence time, $T_2/t_{\text{gate}}$, sets an upper bound on circuit depth and determines how far below threshold the effective error rate falls.
 
-4. **Correlated errors**: The theorem assumes errors are weakly correlated. Spatially or temporally correlated noise (e.g., cosmic rays, TLS fluctuations) can reduce the effective threshold.
+4. **Correlated errors**: The theorem assumes errors are weakly correlated. Spatially or temporally correlated noise (e.g., cosmic rays, TLS fluctuations) can reduce the effective threshold. Passive protection schemes such as [[decoherence-free-subspace]] encodings can relax this assumption by algebraically removing susceptibility to the dominant correlated noise channel before the active QEC layer is applied.
 
 The **logical error rate** for a distance-$d$ surface code below threshold scales as:
 
@@ -85,6 +85,11 @@ Relaxing these assumptions typically lowers the threshold but does not eliminate
 - Kitaev (2003) introduced topological codes (toric/surface code) with higher thresholds.
 - Dennis et al. (2002) mapped surface code decoding to a statistical mechanics problem, establishing $p_{\text{th}} \approx 10.9\%$ for depolarizing noise.
 - Google Willow (2024) first experimental demonstration of below-threshold operation in a surface code.
+
+## Key relationships
+
+- [[decoherence-free-subspace]] — passive protection (DFS) reduces the effective error rate seen by the active QEC layer, effectively raising the threshold by shifting part of the error budget into a symmetry-protected subspace
+- [[erasure-error-vs-pauli-error]] — erasure-dominated noise has a dramatically higher threshold (~50% for surface codes) than depolarizing Pauli noise (~1%); the threshold theorem generalizes to any noise model with a threshold $> 0$
 
 ## References
 

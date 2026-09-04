@@ -3,7 +3,7 @@ title: Color Center MOC
 type: moc
 technology_family: Color Center
 note_count: 4
-last_updated: '2026-08-02'
+last_updated: '2026-08-31'
 generated_by: pipeline-moc-v1
 ---
 
@@ -47,27 +47,18 @@ This family should stay the **defect-spin anchor**, not a catch-all bucket for e
    - [[silicon-carbide-defect-qubit]] adds the wafer-scale wide-bandgap branch: multiple optically active defects, mature semiconductor processing, and operation extending beyond diamond-only materials assumptions.
    - [[rare-earth-ion-qubit]] appears here as a facet because it is a crystal-hosted optical spin defect, but its primary home is [[spin-photon-moc]] because long-lived memories and multiplexed network nodes are the sharper organizing idea.
 
-## Defect-platform boundary map
+## Materials-property to interface map
 
-The highest-value use of this MOC is to prevent “color center” from collapsing into a vague synonym for every solid-state spin-photon platform.
+The useful family comparison starts with the microscopic property that makes each host or defect attractive, then follows the systems debt that property leaves behind. This keeps “color center” from becoming a vague synonym for every solid-state optical spin.
 
-| If the pressure is... | Start here? | Better handoff if needed |
-|---|---|---|
-| Room-temperature operation, ODMR control, and a mature local electron-plus-nuclear memory stack | Yes | `nv-center-qubit` is still the anchor case. |
-| Cleaner photons and nanophotonic indistinguishability matter more than room-temperature usability | Start here briefly | Then hand off to [[spin-photon-moc]]. |
-| Native telecom-band emission and silicon-photonics integration dominate the architecture question | No | Go directly to [[spin-photon-moc]] and `t-center-qubit`. |
-| The real comparison is “best defect-spin network node overall” | Yes | Use this page for the NV baseline, then compare against [[spin-photon-moc]]. |
-| The real burden is microwave-to-optical conversion or fibre-stack mismatch | Sometimes | Cross-check with [[quantum-transduction]] after choosing the emitter family. |
+| Branch | Materials-level resource | What it buys locally | Debt exposed at the network boundary |
+|---|---|---|---|
+| [[nv-center-qubit]] | A robust spin-1 ground state with spin-selective intersystem crossing | Room-temperature optical pumping/readout and a mature electron-plus-nuclear register | A weak zero-phonon channel and spectral instability make collection and indistinguishable-photon generation harder than the local qubit operation |
+| [[siv-color-center-qubit]] | Inversion-symmetric split-vacancy structure | Stable optical transitions and a high zero-phonon fraction suited to nanophotonic remote-entanglement links | Orbital-phonon coupling moves the main cost into cryogenic spin coherence, especially for SiV |
+| [[silicon-carbide-defect-qubit]] | A wafer-scale wide-bandgap semiconductor hosting several optically addressable defect species | Room-temperature control, nuclear-spin registers, and monolithic waveguide/device integration | Defect-to-defect heterogeneity, spectral stability, and reproducible cavity-coupled yield limit a uniform node stack |
+| [[rare-earth-ion-qubit]] | Shielded 4f states in crystalline hosts | Extremely long memories, narrow transitions, and spectral multiplexing; erbium can add native telecom emission | Weak oscillator strength makes resonant cavity enhancement essential, while deterministic local multi-ion gates remain immature |
 
-## Defect-spin routing table
-
-| If the real question is... | Start here? | Better handoff if not |
-|---|---|---|
-| Which defect-spin platform is the most mature all-around qubit and memory node? | Yes | `nv-center-qubit` is the anchor case. |
-| How does room-temperature ODMR compare with cryogenic optical-network optimization? | Yes | Then jump to [[spin-photon-moc]] for the emitter-first branch. |
-| Which defect gives the cleanest photons for remote entanglement? | No | Go to [[spin-photon-moc]]. |
-| Which platform best preserves a local electron-plus-nuclear memory stack? | Yes | NV remains the clearest baseline. |
-| Which solid-state spin node minimizes downstream telecom / transduction burden? | No | Go to [[spin-photon-moc]], then cross-check with [[quantum-transduction]]. |
+Read this table from left to right before comparing headline records. [[coherence-time-hierarchy]] tests whether the local register survives a remote-entanglement cycle; [[spin-photon-interfaces-separate-emission-collection-and-wavelength-matching]] then separates the remaining optical debt into emission, collection, and link matching. Once those interface terms dominate the decision, hand off to [[spin-photon-moc]] rather than extending the materials taxonomy into a network-architecture ranking.
 
 ## Placement rule
 

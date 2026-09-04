@@ -3,7 +3,7 @@ title: Codes MOC
 type: moc
 technology_family: Codes
 note_count: 6
-last_updated: '2026-08-08'
+last_updated: '2026-08-28'
 generated_by: pipeline-moc-v1
 ---
 
@@ -48,6 +48,18 @@ Taken together, this family is best seen as the place where the Zoo asks **which
 
 - [[threshold-theorem]] is the top-level reason these entries matter architecturally.
 - [[erasure-error-vs-pauli-error]] is useful for separating codes that assume ordinary Pauli noise from hardware paths with flagged loss / erasure structure.
+- [[noise-bias-and-asymmetric-error-channels]] keeps directional asymmetry among the remaining hidden Pauli faults separate from erasure side information.
+
+## Two-axis error-model routing
+
+Code geometry is only one layer of the hardware-code decision. Before comparing thresholds or overheads, place the physical channel on two independent axes:
+
+| Decoder resource | What the hardware reveals | Code-level consequence |
+|---|---|---|
+| [[erasure-error-vs-pauli-error|Erasure fraction]] | which qubit suffered a flagged loss or leakage event | use the known location directly; track flag-detection fidelity and the unflagged residual channel |
+| [[noise-bias-and-asymmetric-error-channels|Pauli bias]] | no fault location, but one hidden Pauli direction dominates | reshape checks, code distances, or decoder priors around the declared bias convention |
+
+These resources can coexist. An erasure-aware surface code may still face strongly biased residual Pauli faults after all flagged events are removed; a cat or protected-circuit encoding may have large Pauli bias without any erasure flag. Do not compress both effects into one “bias” or one effective physical-error rate. Route the flagged component through [[erasure-error-vs-pauli-error]], the hidden directional component through [[noise-bias-and-asymmetric-error-channels]], and only then compare code structures in the table below.
 
 ## Hardware–code co-design routing
 

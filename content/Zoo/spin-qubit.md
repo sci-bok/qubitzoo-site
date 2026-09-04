@@ -175,6 +175,12 @@ Semiconductor spin qubits promise integration with existing CMOS fabrication inf
 - [[chattopadhyay-2026-quantum-mpemba-speedups-in]]
 - [[willmes-2026-enhanced-intrinsic-spin-orbit-driving]]
 - [[vaxevani-2026-parity-dependent-coupling-of-molecular]]
+- [[bogaczewicz-2026-signatures-of-inter-sideband-coherence]]
+- [[peil-2026-predictive-wavelength-tailoring-of]]
+- [[wang-2026-scalar-spin-chirality-from]]
+- [[raghuvanshi-2026-phonon-limited-detection-thresholds-for]]
+- [[vaidhyanathan-2026-qarray-a-physics-informed-gpu-accelerated]]
+- [[richter-2026-low-frequency-charge-noise-in]]
 
 ## Evergreen context
 

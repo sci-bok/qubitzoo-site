@@ -113,6 +113,8 @@ GKP codes protect against the dominant error channel in bosonic systems — smal
 - [[sivak-2023-real-time-error]]
 - [[shiina-2026-high-rate-and-resource-efficient-all-photonic]]
 - [[vyas-2026-homomorphic-aggregation-of-continuous-variable]]
+- [[kumar-2026-deterministic-universal-logical-gates]]
+- [[roberts-2026-bosonic-codes-from-compact]]
 
 ## Evergreen context
 

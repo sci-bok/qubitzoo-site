@@ -3,7 +3,7 @@ title: Super-Semi MOC
 type: moc
 technology_family: Super-Semi
 note_count: 6
-last_updated: '2026-08-02'
+last_updated: '2026-09-02'
 generated_by: pipeline-moc-v1
 ---
 
@@ -62,6 +62,20 @@ The cleanest way to read this family is to ask **where the semiconductor is doin
 | [[andreev-pair-qubit]] | even-parity Andreev pair states and phase-dependent weak-link spectroscopy are the resource | ordinary Josephson-circuit scaling in [[superconducting-moc]] |
 | [[ferbo-qubit]] | even-parity Andreev structure is being used as a relaxation-bias / protection mechanism inside a fluxonium-like circuit | the comparison becomes purely protected-circuit taxonomy in [[superconducting-moc]] or topological parity protection in [[topological-moc]] |
 | [[all-semiconductor-superconducting-qubit]] | monolithic crystal growth and interface elimination are the conceptual novelty | donor-style atomic fabrication lineage in [[semiconducting-moc]] or ordinary superconducting-circuit performance in [[superconducting-moc]] |
+
+## Weak-link participation ladder
+
+The semiconductor weak link can enter the qubit at three different depths: as a tunable circuit coefficient, as the microscopic two-level system, or as one half of a deliberately hybridized protected mode. That distinction is more useful than grouping every device by material stack alone.
+
+| Branch | Where the computational state primarily lives | Role of Andreev occupation / parity | Main control and readout layer | Failure mode that must stay visible |
+|---|---|---|---|---|
+| [[gatemon]] | The collective charge-phase mode of a transmon-like circuit | The weak-link spectrum is folded into $U_J(\varphi;V_g)$ while the junction is assumed to remain on its even-parity ground branch; parity is not the encoding | Gate voltage tunes the junction; ordinary circuit-QED drive and dispersive readout operate the qubit | Gate noise, hysteresis, and junction-intrinsic loss can erase the benefit of voltage tunability; accidental weak-link occupation appears as instability rather than a logical operation |
+| [[gatemonium]] | Fluxonium-like plasmon / fluxon modes set by $E_C$, $E_L$, external flux, and the gate-tuned weak-link potential | Andreev channel transparencies reshape the nonlinear potential, but the demonstrated device does not encode information in a chosen quasiparticle-parity manifold | Gate control of $E_J$ is combined with flux bias and circuit-QED spectroscopy / control | Array inductive loss, nonsinusoidal weak-link calibration, and gate-noise susceptibility must be separated from the ideal fluxonium sweet-spot story |
+| [[andreev-pair-qubit]] | The two even-parity states of one Andreev doublet | The logical transition changes pair occupation while remaining in the even sector; a parity switch leaves that computational manifold | Phase-dependent microwave and cavity coupling address the pair transition | Quasiparticle trapping, parity switching, and relaxation out of the selected doublet are first-class state-lifecycle errors |
+| [[andreev-spin-qubit]] | The spin-split odd-parity states of one trapped quasiparticle | A fixed odd-parity sector is the prerequisite for the spin qubit; spin-dependent supercurrent supplies the readout signal | Spin-orbit-enabled control plus dispersive sensing of the junction response | Quasiparticle poisoning changes the parity sector, while spin relaxation and single-shot-readout fidelity remain separate bottlenecks |
+| [[ferbo-qubit]] | A proposed hybrid of one bosonic fluxonium-like mode and an even-parity Andreev pseudospin | Disjoint support in the Andreev degree of freedom is intended to suppress selected bosonic relaxation matrix elements; the fermionic sector is part of the protection mechanism | High-transmission weak-link engineering and a zero-flux operating point define the protected regime | The predicted bias must still survive experimental state preparation, parity stability, high-impedance fabrication, and readout |
+
+Use this ladder to avoid calling every fixed-parity condition “parity protection.” In [[andreev-pair-qubit]] and [[andreev-spin-qubit]], parity stability is primarily a prerequisite that keeps the device inside its chosen computational sector. In [[ferbo-qubit]], structure *within* the even-parity Andreev space is proposed to suppress a particular relaxation matrix element, which is a stronger but still theory-stage claim. Read that final row through [[noise-bias-and-asymmetric-error-channels]] rather than treating it as generic immunity, and use [[divincenzo-criteria]] to keep preparation and readout evidence separate from Hamiltonian protection.
 
 ## Routing rule inside the family
 

@@ -14,7 +14,7 @@ tags:
 
 # Decoherence-Free Subspace
 
-A decoherence-free subspace (DFS) is a subspace of the system Hilbert space that is inherently immune to a particular noise channel by virtue of a symmetry in the system-environment coupling. The key insight is algebraic: if the noise operators $\{L_k\}$ in the Lindblad master equation all act identically on every state within a subspace — meaning every state in the subspace is a degenerate eigenstate of all $L_k^\dagger L_k$ — then no information encoded in that subspace leaks to the environment. No active error correction is needed; the protection is passive and exact (to the extent the noise symmetry holds).
+A decoherence-free subspace (DFS) is a subspace of the system Hilbert space that is inherently immune to a particular noise channel by virtue of a symmetry in the system-environment coupling. The key insight is algebraic: if the noise operators $\{L_k\}$ in the Lindblad master equation all act identically on every state within a subspace — meaning every state in the subspace is a degenerate eigenstate of all $L_k^\dagger L_k$ — then no information encoded in that subspace leaks to the environment. No active error correction is needed; the protection is passive and exact (to the extent the noise symmetry holds). The practical consequence is that the effective coherence time of the protected subspace is limited only by symmetry-breaking perturbations, not by the dominant noise channel itself — a direct connection to the [[coherence-time-hierarchy]].
 
 The canonical example in spin qubits is protection against collective dephasing — spatially uniform magnetic field fluctuations that shift all spins equally. If the noise Hamiltonian is $H_{\text{noise}} = B(t) \sum_i S_z^{(i)}$, then any subspace with a fixed total $S_z$ eigenvalue is invariant under this perturbation. More precisely, the $m_S = 0$ subspace of $N$ spin-1/2 particles (total $z$-projection zero) contains states that acquire identical phases under uniform $B$-field fluctuations. For two spins, the singlet $|S\rangle = (|\!\uparrow\downarrow\rangle - |\!\downarrow\uparrow\rangle)/\sqrt{2}$ is the unique $m_S = 0$ state with total spin $S = 0$; it spans a trivial (one-dimensional) DFS. The singlet-triplet qubit exploits a related structure: the two $m_S = 0$ states $|S\rangle$ and $|T_0\rangle = (|\!\uparrow\downarrow\rangle + |\!\downarrow\uparrow\rangle)/\sqrt{2}$ form a two-dimensional subspace that is degenerate under uniform fields, though $|S\rangle$ and $|T_0\rangle$ themselves differ in total spin and can split under exchange or gradient terms.
 
@@ -27,6 +27,10 @@ It is important to distinguish a decoherence-free **subspace** from a decoherenc
 - [[exchange-only-qubit]] — encodes in the 3-spin DFS; all gates via exchange within the protected subspace
 - [[aeon-qubit]] — always-on exchange variant operating at a sweet spot within the 3-spin DFS
 - [[singlet-triplet-qubit]] — operates in the 2-spin $m_S = 0$ subspace; partial DFS protection against uniform field noise
+- [[coherence-time-hierarchy]] — DFS provides a passive coherence-preserving mechanism; the relevant figure of merit is how well the noise symmetry is maintained, not the raw $T_2$ of the unprotected constituents
+- [[noise-bias-and-asymmetric-error-channels]] — DFS is a form of passive noise bias: the protected subspace is immune to certain error channels, leaving only the complementary biased residual
+- [[erasure-error-vs-pauli-error]] — DFS is a passive alternative to erasure conversion; both reduce the effective decoder burden by altering the error structure rather than fighting it
+- [[charge-noise-in-superconducting-qubits]] — collective charge noise in superconducting circuits is a noise source that DFS can protect against, though most practical superconducting DFS implementations remain theoretical
 
 ## References
 

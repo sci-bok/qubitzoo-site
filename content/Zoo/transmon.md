@@ -166,6 +166,10 @@ State-of-the-art (as of late 2025): $T_1$ up to $1.68\,\text{ms}$ (planar, tanta
 - [[yang-2026-the-gain-engineered-transmon]]
 - [[direkci-2026-dissipatively-stabilized-0-n-fock]]
 - [[spring-2026-low-leakage-superconducting-qubit-measurement]]
+- [[zhou-2026-superconducting-flux-memory-for]]
+- [[fontaine-2026-programming-anharmonic-potentials-in]]
+- [[luca-2026-implementation-of-quantum-gates]]
+- [[lyngfelt-2026-analog-quantum-simulation-of]]
 
 ## Evergreen context
 

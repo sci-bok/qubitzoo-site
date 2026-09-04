@@ -3,7 +3,7 @@ title: Cross-Platform MOC
 type: moc
 technology_family: Cross-Platform
 note_count: 10
-last_updated: '2026-08-02'
+last_updated: '2026-08-29'
 generated_by: pipeline-moc-v1
 ---
 
@@ -40,6 +40,7 @@ Curated map of Zoo entries in the **Cross-Platform** family.
 - [[erasure-error-vs-pauli-error]] separates `erasure-qubit` from the ordinary stabilizer-code story and explains why flagged loss can change the overhead regime.
 - [[noise-bias-and-asymmetric-error-channels]] is the complementary lens when the win comes from skewed Pauli channels rather than explicit erasure detection.
 - [[divincenzo-criteria]] explains why `classical-control` and `quantum-transduction` belong here even though they are not qubits.
+- [[classical-hardware-moc]] owns the measurement-side path from qubit pointer states through amplification and discrimination; this page takes over when that path closes a code-cycle feedback loop or when coherent quantum information must cross a module boundary.
 
 ## Architecture stack
 
@@ -67,6 +68,17 @@ This distinction prevents an early algorithm demonstration from being mistaken f
 - `classical-control` and `quantum-transduction` are scaling interfaces: one connects algorithms to physical waveforms, the other connects local processors to networked photonic links.
 - `quantum-gate` should stay as the operation-level abstraction that ties these layers together, not become a dumping ground for platform-specific pulse details.
 - `nuclear-magnetic-resonance-qubit` is intentionally a secondary facet here and a primary member of [[molecular-moc]]; its cross-platform role is methodological inheritance, not present-day hardware competitiveness.
+
+## Local feedback versus coherent inter-module links
+
+[[classical-control]] and [[quantum-transduction]] sit at different boundaries of a scalable machine. They should not be read as consecutive versions of the same communication problem.
+
+| Systems path | Information crossing the boundary | Primary success condition | Route elsewhere when... |
+|---|---|---|---|
+| Qubit measurement $\rightarrow$ decoder $\rightarrow$ corrective waveform | A classical record of a syndrome or measurement result | End-to-end latency, deterministic timing, and sustained throughput fit inside the code cycle | the bottleneck is producing or preserving the analog measurement record; use [[classical-hardware-moc]] |
+| Local quantum mode $\rightarrow$ network-compatible optical mode | An unmeasured quantum state or entanglement resource | Conversion efficiency, added noise, bandwidth, and refrigerator heat load jointly preserve useful entanglement rate | the optical carrier and computation model are already chosen; continue in [[photonic-moc]] |
+
+The classification hinge is whether measurement is allowed. A decoder loop deliberately turns quantum information into classical bits before acting back on the processor; a transducer must preserve coherence precisely because measuring at the module boundary would destroy the distributed operation. Modular fault tolerance may require both loops, but their error budgets compose differently: control latency limits how quickly local syndromes can be used, while transduction loss and noise limit how often remote checks or entanglement links succeed. Keep both costs explicit before claiming that a code with nonlocal checks is hardware-ready.
 
 ## Routing rule: when to enter this family
 

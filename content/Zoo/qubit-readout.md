@@ -109,6 +109,8 @@ where $\omega_r$ is the resonator frequency, $\omega_q$ the qubit frequency, and
 - [[bazayeva-2026-i-qmapper-error-aware-layout-optimization]]
 - [[chen-2026-hundred-hertz-quantum-circuit-iteration]]
 - [[cuce-2026-single-shot-quantum-state-classification]]
+- [[abraham-2026-fast-microwave-free-state-preparation]]
+- [[czartowski-2026-energetic-costs-of-subspace]]
 
 ## Evergreen context
 

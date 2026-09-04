@@ -77,6 +77,8 @@ Do not infer one from the other. Ordinary transmons and semiconductor spin qubit
 - [[cos2phi-qubit]] — parity-protected circuit whose charge-transition suppression can coexist with a separate flux-noise penalty
 - [[cos2phi]] — companion note on the second-harmonic Hamiltonian ingredient rather than the operating-point response
 - [[charge-noise-in-superconducting-qubits]] — complementary note on the underlying noise mechanism
+- [[coherence-time-hierarchy]] — the sweet-spot pattern is precisely a way to push $T_2^*$ toward $T_2$ and beyond by suppressing low-frequency (e.g., $1/f$) dephasing at the operating point
+- [[decoherence-free-subspace]] — both are passive protection strategies: sweet spots remove first-order noise sensitivity, DFS removes entire noise channels by symmetry; they can be combined in encodings like [[aeon-qubit]] and [[singlet-triplet-qubit]]
 
 ## References
 

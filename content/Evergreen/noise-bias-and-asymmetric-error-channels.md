@@ -104,6 +104,9 @@ where the first term is exponentially suppressed by code distance and the second
 - [[kerr-cat-qubit]] and [[cat-codes]] — canonical phase-flip-biased hardware and its tailored coding layer
 - [[0-pi-qubit]] — protected circuit whose remaining error channel, not just total error rate, matters
 - [[bacon-shor-code]] and [[surface-code-logical-qubit]] — code families whose geometry or checks can be adapted to a declared bias model
+- [[threshold-theorem]] — the threshold is strongly noise-model-dependent; exploiting bias raises the effective threshold and reduces the physical-qubit overhead required to reach fault tolerance
+- [[coherence-time-hierarchy]] — the dominant coherence loss (e.g., $T_1$ vs $T_\varphi$) determines which Pauli direction dominates, and hence the achievable bias ratio
+- [[decoherence-free-subspace]] — a complementary, passive way to skew the effective error model: DFS eliminates certain Pauli channels entirely rather than merely suppressing them exponentially
 
 ## References
 

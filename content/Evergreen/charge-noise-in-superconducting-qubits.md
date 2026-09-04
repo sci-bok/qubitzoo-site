@@ -29,7 +29,7 @@ Away from protection points, the leading term dominates and the pure-dephasing r
 
 $$\Gamma_\varphi \propto \left|\frac{\partial E_{01}}{\partial n_g}\right|^2 S_{n_g}(\omega \to 0),$$
 
-with $S_{n_g}(\omega)$ typically close to a $1/f$ spectrum. The practical signature is spectral wandering and Ramsey dephasing that improves dramatically once the circuit is moved to a flatter part of its charge-dispersion landscape.
+with $S_{n_g}(\omega)$ typically close to a $1/f$ spectrum. The practical signature is spectral wandering and Ramsey dephasing that improves dramatically once the circuit is moved to a flatter part of its charge-dispersion landscape. See [[coherence-time-hierarchy]] for how this $1/f$ charge noise translates into the $T_2^*$ and $T_2$ measurements that characterize device performance.
 
 ## Why some superconducting qubits care more than others
 
@@ -61,6 +61,8 @@ with $S_{n_g}(\omega)$ typically close to a $1/f$ spectrum. The practical signat
 - [[cooper-pair-box-charge-qubit]] — the cleanest example of direct charge-noise vulnerability
 - [[transmon]] — exponential suppression of charge dispersion at large $E_J/E_C$
 - [[charge-noise-sweet-spot]] — the complementary note on protected operating points
+- [[coherence-time-hierarchy]] — charge noise directly limits $T_2^*$ and $T_2$ in superconducting qubits; the $1/f$ spectrum produces Gaussian Ramsey decay and a characteristic echo signature
+- [[decoherence-free-subspace]] — collective charge fluctuations can, in principle, be protected by a DFS encoding; however, most superconducting DFS proposals rely on symmetry under uniform offset charge, which is harder to realize at scale than the individual sweet-spot techniques listed here
 
 ## References
 

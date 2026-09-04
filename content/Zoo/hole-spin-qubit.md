@@ -109,6 +109,8 @@ $$H_{2q} = J(t)\,\mathbf{S}_1\cdot\mathbf{S}_2$$
 - [[ibad-2026-coherence-protection-of-a]]
 - [[gyorgy-2026-switchable-heavy-hole-light-hole-spin-qubit]]
 - [[valvo-2026-light-hole-spin-qubits-in]]
+- [[tan-2026-strain-tunable-spin-relaxation-in]]
+- [[medeiros-2026-spin-to-polarization-mapping-with-a]]
 
 ## Evergreen context
 

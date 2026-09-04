@@ -3,7 +3,7 @@ title: Majorana / Topological MOC
 type: moc
 technology_family: Topological
 note_count: 3
-last_updated: '2026-08-04'
+last_updated: '2026-08-30'
 generated_by: pipeline-moc-v1
 ---
 
@@ -42,6 +42,20 @@ The easiest way to misread this family is to collapse three different claim leve
 - [[tetron-qubit]] is the **computing architecture claim**: four Majorana modes in a fixed-parity layout, repeated parity measurements, and the possibility of turning protection into an actual logical resource.
 
 A useful guardrail is that a two-end-mode device can demonstrate the *ingredients* of topological protection without yet constituting a full logical qubit. In this family, the graph should climb from topological-channel evidence, to parity control, to fixed-parity four-mode encoding, and only then to protected computational primitives judged against [[divincenzo-criteria]] and [[threshold-theorem]].
+
+## Experimental-evidence ladder
+
+Track two claims separately: **evidence for a topological phase** and **evidence for a useful qubit**. Progress on the first ledger does not automatically advance the second.
+
+| Rung | What would advance the claim | Best entry to inspect | What it still would not establish |
+|---|---|---|---|
+| Candidate topological channel | A hard induced gap plus phase-, field-, and gate-dependent closing/reopening, with trivial Andreev and disorder explanations actively excluded | [[planar-josephson-junction-qubit]] for the phase-biased 2DEG route; [[majorana-topological-qubit]] for the nanowire route | Non-Abelian statistics, a protected state space, or any qubit fidelity |
+| Nonlocal parity degree of freedom | Separation-dependent suppression of mode overlap together with repeatable parity-sensitive readout and a measured poisoning lifetime | [[majorana-topological-qubit]] for the protection primitive | A fixed-total-parity four-mode encoding or a controllable logical basis |
+| Operational encoded qubit | Four-mode initialization, repeated parity measurement, and calibrated single- and joint-qubit operations within the encoded subspace | [[tetron-qubit]] | That the operations inherit an error advantage from topology rather than merely using Majorana-compatible hardware |
+| Hardware-level protection | Error rates that improve with separation or another protection knob under the full preparation/control/readout stack, compared with an unprotected baseline | Read all three notes as a materials-to-architecture chain | Below-threshold logical suppression or a reduced fault-tolerance overhead |
+| Fault-tolerance advantage | Logical error suppression with scale and an overhead comparison under a stated decoder and noise model | [[threshold-theorem]] and the appropriate code entry | Nothing less should be treated as experimental confirmation of a system-level overhead claim |
+
+This ladder prevents a common category error: a cleaner zero-bias or gap-reopening signature can strengthen the *materials* case while leaving the *computing* case unchanged. Conversely, parity readout becomes architecture evidence only when its fidelity, lifetime, repeatability, and role in encoded operations are measured together.
 
 ## Boundary-case routing table
 

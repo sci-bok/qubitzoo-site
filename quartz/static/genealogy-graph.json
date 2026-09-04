@@ -1,6 +1,6 @@
 {
   "schema": "qubitzoo.genealogy.v1",
-  "generated_at": "2026-08-28T14:00:11.765789+00:00",
+  "generated_at": "2026-09-04T14:00:10.792249+00:00",
   "nodes": [
     {
       "id": "0-pi-qubit",
@@ -582,7 +582,7 @@
       "id": "semiconductor-charge-qubit",
       "title": "Semiconductor Charge Qubit",
       "family": "Semiconducting",
-      "year": 2003,
+      "year": 1999,
       "status": "demonstrated",
       "color": "#22c55e",
       "influence": 0.62
@@ -1518,6 +1518,10 @@
       "target": "planar-josephson-junction-qubit"
     },
     {
+      "source": "qubit-readout",
+      "target": "planar-josephson-junction-qubit"
+    },
+    {
       "source": "neutral-atom-qubit",
       "target": "polar-molecule-qubit"
     },
@@ -1658,12 +1662,16 @@
       "target": "rydberg-neutral-atom-qubit"
     },
     {
-      "source": "singlet-triplet-qubit",
+      "source": "spin-qubit",
       "target": "semiconductor-charge-qubit"
     },
     {
-      "source": "cooper-pair-box-charge-qubit",
-      "target": "semiconductor-charge-qubit"
+      "source": "semiconductor-charge-qubit",
+      "target": "singlet-triplet-qubit"
+    },
+    {
+      "source": "semiconductor-charge-qubit",
+      "target": "cooper-pair-box-charge-qubit"
     },
     {
       "source": "silicon-spin-qubit",
@@ -1736,10 +1744,6 @@
     {
       "source": "spin-qubit",
       "target": "aeon-qubit"
-    },
-    {
-      "source": "spin-qubit",
-      "target": "semiconductor-charge-qubit"
     },
     {
       "source": "surface-code-logical-qubit",
