@@ -12,16 +12,16 @@ keywords:
 - spin
 - semiconductor
 - double-quantum-dot
-last_updated: '2026-09-04'
+last_updated: '2026-09-05'
 generated_by: seed-ingest-v1
 extracted_by: airtable-seed
-verified_by: scibok-deep-audit-2026-09-04
-figure_reviewed: false
+verified_by: scibok-deep-audit-2026-09-05
+figure_reviewed: true
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/singlet-triplet-qubit-figure.provenance.json"
-figure_reviewed_by: "Scibok daily deep audit 2026-09-04"
-figure_reviewed_at: "2026-09-04T14:20:52Z"
+figure_reviewed_by: "Scibok daily deep audit 2026-09-05"
+figure_reviewed_at: "2026-09-05T14:08:05.609734+00:00"
 ---
 
 ## Description
@@ -89,6 +89,7 @@ where $\alpha$ depends on inter-DQD capacitance and on the charge admixture of t
 - **Bøttcher et al. (2022)**: Parametric longitudinal coupling to high-impedance SC resonator
 - **Ungerer et al. (2024)**: Strong single-photon coupling in an InAs nanowire $S$–$T$ device, $g/2\pi=139\pm4$ MHz
 - **Song et al. (2024)**: ~100 MHz field-gradient-driven oscillations with quality factor $Q>580$ in $^{28}$Si/SiGe
+- **Ma et al. (2024)**: Enhanced-latching Pauli-spin-blockade readout in a Si-MOS DQD with 97.59% average experimental state-readout fidelity by threshold classification
 - **Zhang et al. (2025)**: Universal control of four neighboring $S$–$T_-$ hole-spin qubits in a $2\times4$ germanium dot array; this is a related polarized-triplet variant, not the $S$–$T_0$ encoding defined above
 - **Tsoukalas et al. (2026)**: Resonantly driven germanium hole $S$–$T_0$ qubit with 99.68(2)% average gate fidelity; continuous dressing extended rotating-frame coherence to $T_{2\rho}^*=20.3\,\mu\text{s}$ while retaining 99.63(7)% gates
 
@@ -110,6 +111,7 @@ where $\alpha$ depends on inter-DQD capacitance and on the charge admixture of t
 
 ### Readout
 - C. Barthel et al., "Rapid single-shot measurement of a singlet-triplet qubit," [PRL 103, 160503 (2009)](https://doi.org/10.1103/PhysRevLett.103.160503)
+- R.-L. Ma et al., "Singlet-triplet-state readout in silicon metal-oxide-semiconductor double quantum dots," [Physical Review Applied 21, 034022 (2024)](https://doi.org/10.1103/PhysRevApplied.21.034022), [arXiv:2309.09723](https://arxiv.org/abs/2309.09723)
 
 ### Resonator coupling
 - C. G. L. Bøttcher et al., "Parametric longitudinal coupling between a high-impedance superconducting resonator and a semiconductor quantum dot singlet-triplet spin qubit," [Nature Commun. 13, 4773 (2022)](https://doi.org/10.1038/s41467-022-32236-w)
@@ -127,6 +129,7 @@ where $\alpha$ depends on inter-DQD capacitance and on the charge admixture of t
 - [[bttcher-2022-parametric-longitudinal-coupling]]
 - [[levy-2002-universal-computation-spin]]
 - [[loss-divincenzo-1998-quantum-dots]]
+- [[ma-2024-singlet-triplet-state-readout]]
 - [[martins-2016-symmetric-exchange-gates]]
 - [[maune-2012-coherent-singlet-triplet]]
 - [[nichol-2017-high-fidelity-entangling-gate]]
@@ -163,6 +166,6 @@ where $\alpha$ depends on inter-DQD capacitance and on the charge admixture of t
 | Gate fidelity (1Q) | 99.68(2)% bare resonant; 99.63(7)% dressed | Average physical-gate fidelity for a Ge hole $S$–$T_0$ qubit | [Tsoukalas et al. 2026](https://doi.org/10.1038/s41467-025-65569-3) |
 | Entangling-gate fidelity (2Q) | 90% | Capacitively coupled GaAs $S$–$T_0$ qubits; process estimate from self-consistent tomography | [Nichol et al. 2017](https://doi.org/10.1038/s41534-016-0003-1) |
 | Representative 1Q gate time | 327 ns bare; 500 ns dressed | $X_\pi$ gates in the 2026 Ge hole device | [Tsoukalas et al. 2026](https://doi.org/10.1038/s41467-025-65569-3) |
-| Readout fidelity | $>90\%$ in ~7 μs | Pauli spin blockade plus charge sensing in GaAs | [Barthel et al. 2009](https://doi.org/10.1103/PhysRevLett.103.160503) |
+| Readout fidelity | 97.59% average experimental state fidelity (Si-MOS); $>90\%$ in ~7 μs (GaAs) | Enhanced-latching Pauli spin blockade with threshold classification in Si-MOS; the separately reported 99.67% machine-learning number was obtained on simulated traces and is not used as the experimental benchmark | [Ma et al. 2024](https://doi.org/10.1103/PhysRevApplied.21.034022); [Barthel et al. 2009](https://doi.org/10.1103/PhysRevLett.103.160503) |
 | Spin-photon coupling | $g/2\pi=139\pm4$ MHz | Strong-coupling InAs nanowire experiment; $\gamma/2\pi=116\pm7$ MHz and $\kappa/2\pi=19.8\pm0.2$ MHz | [Ungerer et al. 2024](https://doi.org/10.1038/s41467-024-45235-w) |
 | Scaled control milestone | Four neighboring $S$–$T_-$ qubits; 1Q fidelities 99.49(8)–99.84(1)% | Related polarized-triplet encoding in a $2\times4$ Ge hole array; Bell-state fidelities 73(1)–90(1)% | [Zhang et al. 2025](https://doi.org/10.1038/s41565-024-01817-9) |

@@ -2,13 +2,19 @@
   "artifact": {
     "media_type": "image/png",
     "path": "singlet-triplet-qubit-figure.png",
-    "sha256": "44dcf9a639daa2c609ddbe0ce518f9c55e8bdbef5c0ec7f6ca34e7d1f74b2796"
+    "sha256": "00aebb870bd87e640000741b2a661ad4753464e7999cded9cb7b61593f1ab2bd"
   },
   "artifact_role": "primary",
-  "blueprint": null,
+  "blueprint": {
+    "media_type": "image/png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/2026-08-02-repairs/singlet-triplet-qubit-blueprint.png",
+    "role": "physics-blueprint",
+    "sha256": "70a121a5906a91fc9563d1a568a1d0b3747e0c5db1bcb45521ac19142466a110",
+    "strict": true
+  },
   "entry_slug": "singlet-triplet-qubit",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/singlet-triplet-qubit-figure-20260805T061907643008Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/singlet-triplet-qubit-figure-20260905T140648620499Z.png",
     "supersedes_file": "singlet-triplet-qubit-figure.png"
   },
   "renderer": {
@@ -19,17 +25,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-05T06:19:07.643008+00:00",
-    "id": "gen-1785910737-KdaMLUoMJNTWkEDeabX9",
+    "generated_at": "2026-09-05T14:06:48.620499+00:00",
+    "id": "gen-1788617195-nTKpJG9TwBomzr7ZJYxo",
     "image_size": "1K",
-    "prompt_sha256": "ff6477eb55ab93c045b2b07c5c8edd59557ff01f62722f565c47b9b1c030095c",
+    "prompt_sha256": "ddc249e9762ec0a5b3409262276e88299c1fc3f39573ad14a8a873b547686557",
     "source_media_type": "image/jpeg",
     "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Approved after strict rerender: the S/T0 logical equations, exchange/gradient controls, and Pauli-blockade mapping are correct. Minor spin-icon stylization is accepted under the rich-plate policy.",
-    "reviewed_at": "2026-08-05T06:19:46.827188+00:00",
-    "reviewer": "Codex scientific visual audit 2026-08-05",
+    "notes": "PASS at full resolution. Rich four-view explanatory plate. Central physics is correct: every (1,1) state contains exactly one carrier per dot; the S/T0 ket equations use antiparallel-spin superpositions; S(1,1) maps to S(0,2) with the left dot empty and two opposite-spin carriers in the right dot while T0(1,1) stays occupied and blocked; J and Delta E_Z drive the defined logical z and x axes; the J(epsilon) sweet spot is correctly ordered; physical boundary-spin exchange 2-3 is separated from capacitive coupling. No Josephson/inductor cross-contamination or unsupported performance claims. Minor issue accepted: an arrow is drawn inside the empty left dot of the S(0,2) readout cartoon to indicate tunneling, but no carrier marker is present and the charge label is unambiguous.",
+    "reviewed_at": "2026-09-05T14:08:05.609734+00:00",
+    "reviewer": "Scibok daily deep audit 2026-09-05",
     "status": "passed"
   },
   "schema_version": 1
