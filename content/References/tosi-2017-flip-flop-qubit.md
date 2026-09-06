@@ -13,6 +13,7 @@ journal: Nature Communications
 volume: "8"
 pages: "450"
 doi: 10.1038/s41467-017-00378-x
+arxiv_id: '1509.08538'
 entry_type: reference
 tags:
 - flip-flop qubit
@@ -29,3 +30,8 @@ Proposes the flip-flop qubit: encoding quantum information in the combined elect
 ## Cited In
 
 - [[flip-flop-qubit]]
+
+## Links
+
+- **DOI:** [10.1038/s41467-017-00378-x](https://doi.org/10.1038/s41467-017-00378-x)
+- **arXiv:** [1509.08538](https://arxiv.org/abs/1509.08538)

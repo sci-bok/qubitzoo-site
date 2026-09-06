@@ -2,13 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "flip-flop-qubit-figure.png",
-    "sha256": "98f9894cce3caf6a5e12e8cd8f2d07b866846753b53cad52da268afd0723df13"
+    "sha256": "8b32c76d9d56fa534faf60b8607eeab97000c8e511dd803af3500301d5125ebb"
   },
   "artifact_role": "primary",
   "blueprint": null,
   "entry_slug": "flip-flop-qubit",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/flip-flop-qubit-figure-20260805T122903434123Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/flip-flop-qubit-figure-20260906T141658639922Z.png",
     "supersedes_file": "flip-flop-qubit-figure.png"
   },
   "renderer": {
@@ -19,17 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-05T12:29:03.434123+00:00",
-    "id": "gen-1785932930-LIaDGbX4N1W95nTskY7z",
+    "generated_at": "2026-09-06T14:16:58.639922+00:00",
+    "id": "gen-1788704206-UbphXKsCtdYeodaTG50w",
     "image_size": "1K",
-    "prompt_sha256": "a56c75fb686ec57d7f26ae0c9f2696b563550cdb3cecd23ac063fd9d01da1663",
+    "prompt_sha256": "5a6cba650eb88ddd1eefb07c01616860d527d4e15efc41197f23f65fa182525b",
     "source_media_type": "image/jpeg",
     "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Rich donor-interface plate with only antiparallel logical states, exact epsilon_ff and g_so formulas, all-electric control, and explicitly predicted 180-500 nm coupling and model errors.",
-    "reviewed_at": "2026-08-05T12:35:45.883950+00:00",
-    "reviewer": "Codex corpus visual/physics audit 2026-08-05",
+    "notes": "PASS: rich four-view explanatory plate. Full-resolution review confirms |0>=|down_e Up_n> and |1>=|up_e Down_n>; the 2023 E_ac-to-A(E)-to-coherent-rotation path is separated from auxiliary ESR/NMR preparation and spin-dependent readout; experimental 118.5(2.5) kHz, 98.4(2)% and T1 values are labeled as demonstrated; the 2017 donor-interface panel has correct |d>, |i>, V_t, d, and epsilon_o; the two-dipole panel has correct lateral r, V_dd proportional to 1/r^3, separate predicted range/coupling/error claims, and an explicit no-demonstrated-two-qubit-gate status. Minor dense ancillary typography is acceptable.",
+    "reviewed_at": "2026-09-06T14:17:50.790778+00:00",
+    "reviewer": "Scibok daily deep audit 2026-09-06",
     "status": "passed"
   },
   "schema_version": 1

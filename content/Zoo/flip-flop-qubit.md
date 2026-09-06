@@ -2,15 +2,15 @@
 title: Flip-Flop Qubit
 entry_type: qubit
 technology_family: Semiconducting
-status: proposed
+status: demonstrated
 figure_reviewed: true
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/flip-flop-qubit-figure.provenance.json"
-figure_reviewed_by: "Codex corpus visual/physics audit 2026-08-05"
-figure_reviewed_at: "2026-08-05T12:35:45.883950+00:00"
+figure_reviewed_by: "Scibok daily deep audit 2026-09-06"
+figure_reviewed_at: "2026-09-06T14:17:50.790778+00:00"
 first_proposed_year: 2017
-first_demonstrated_year: null
+first_demonstrated_year: 2023
 keywords:
 - flip-flop qubit
 - silicon
@@ -21,10 +21,10 @@ keywords:
 - electron-nuclear spin
 - Tosi
 influence_score: 0.72
-last_updated: '2026-08-02'
+last_updated: '2026-09-06'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: codex-recovery-audit-2026-08-02
+verified_by: scibok-deep-audit-2026-09-06
 ---
 
 ## Figure
@@ -33,15 +33,15 @@ verified_by: codex-recovery-audit-2026-08-02
 
 ## Description
 
-The flip-flop qubit encodes quantum information in the combined electron-nuclear spin states of a phosphorus ($^{31}\text{P}$) donor atom in silicon. The two computational basis states are:
+The flip-flop qubit encodes quantum information in the combined electron-nuclear spin states of a phosphorus ($^{31}\text{P}$) donor atom in silicon. Using the convention adopted in the proposal and experimental demonstration, the computational basis states are:
 
-$$|0\rangle = |\!\uparrow_e\, \Downarrow_n\rangle, \quad |1\rangle = |\!\downarrow_e\, \Uparrow_n\rangle$$
+$$|0\rangle = |\!\downarrow_e\, \Uparrow_n\rangle, \quad |1\rangle = |\!\uparrow_e\, \Downarrow_n\rangle$$
 
 where arrows denote electron spin ($\uparrow/\downarrow$) and nuclear spin ($\Uparrow/\Downarrow$) orientations. In each state, the electron and nuclear spins point in opposite directions — hence "flip-flop." These states are connected by a simultaneous electron-nuclear spin flip driven by transverse hyperfine interaction, which can be electrically tuned by displacing the electron wavefunction relative to the nucleus using gate electrodes.
 
-The critical innovation is to hybridize the donor-bound orbital $|d\rangle$ with an interface orbital $|i\rangle$. Their vertical separation $d$ creates a tunable electric dipole $ed$, and hyperfine coupling transfers that electric interaction to the flip-flop spin subspace. In the proposal, a $1\,\text{MHz}$ effective coupling can be maintained for donor separations from 180 to 500 nm by retuning the donor-interface tunnel coupling. That is far less placement-sensitive than the exchange interaction used by conventional donor-spin architectures.
+The 2017 processor proposal adds a deliberately hybridized orbital degree of freedom: a donor-bound orbital $|d\rangle$ and an interface orbital $|i\rangle$. Their vertical separation $d$ creates a tunable electric dipole $ed$, and hyperfine coupling transfers that electric interaction to the flip-flop spin subspace. In the proposal, a $1\,\text{MHz}$ effective coupling can be maintained for donor separations from 180 to 500 nm by retuning the donor-interface tunnel coupling. That is far less placement-sensitive than the exchange interaction used by conventional donor-spin architectures.
 
-The qubit is controlled entirely via microwave electric fields applied to gate electrodes, without requiring oscillating magnetic fields or ESR/NMR pulses. The qubit frequency is tunable via dc gate voltages that shift the electron position, and two-qubit gates are activated by tuning two qubits into resonance.
+The first experiment, reported in 2023, demonstrated coherent electric control of the same flip-flop spin encoding in a single implanted phosphorus donor. It modulated the hyperfine coupling by electrically distorting the donor electron wavefunction, but did **not** reach the donor-interface large-dipole regime or demonstrate the proposed long-range two-qubit coupling. The logical flip-flop rotation itself uses a microwave electric field; the experiment still used auxiliary ESR/NMR operations for preparation and readout.
 
 ## Hamiltonian
 
@@ -51,13 +51,36 @@ $$
 \mathcal H_{\mathrm{orb}}=\frac{1}{2}\left[V_t\sigma_x-\frac{ed(E_z-E_z^0)}{h}\sigma_z\right],
 $$
 
-where $V_t$ is the donor-interface tunnel coupling and $E_z^0$ is the ionization field. The spin sector contains the electron and nuclear Zeeman terms plus the electrically tunable hyperfine interaction $A(E_z)\mathbf S\!\cdot\!\mathbf I$. Its bare flip-flop splitting is
+where $V_t$ is the donor-interface tunnel coupling and $E_z^0$ is the ionization field. Let $P_i=|i\rangle\!\langle i|=(1+\sigma_z)/2$ and $P_d=|d\rangle\!\langle d|=(1-\sigma_z)/2$. A representative spin-orbital Hamiltonian is
+
+$$
+\frac{H}{h}=\mathcal H_{\mathrm{orb}}+\gamma_eB_0(1+\Delta\gamma P_i)S_z-\gamma_nB_0I_z+A P_d\,\mathbf S\!\cdot\!\mathbf I,
+$$
+
+where $\Delta\gamma$ allows for the interface-dependent electron gyromagnetic ratio. The bare flip-flop splitting is
 
 $$
 \epsilon_{\mathrm{ff}}=\sqrt{[(\gamma_e+\gamma_n)B_0]^2+A(E_z)^2}.
 $$
 
-The transverse part of $A\mathbf S\!\cdot\!\mathbf I$ couples the flip-flop and charge sectors with $g_{\mathrm{so}}=(A/4)(V_t/\epsilon_o)$. An ac electric field therefore drives the spin transition through a second-order electric-dipole process.
+with $\gamma_+=\gamma_e+\gamma_n$. The orbital splitting is
+
+$$\epsilon_o=\sqrt{V_t^2+[ed(E_z-E_z^0)/h]^2}.$$
+
+The transverse hyperfine term couples the flip-flop and charge sectors with $g_{\mathrm{so}}=(A/4)(V_t/\epsilon_o)$. In the donor-interface regime, an ac electric field drives the spin transition through the second-order charge-mediated rate
+
+$$
+g_E^{\mathrm{ff}}=\frac{g_{\mathrm{so}}g_E}{2}\left(\frac{1}{\delta_{\mathrm{so}}}+\frac{1}{\delta_E}\right),\qquad
+g_E=\frac{eE_{\mathrm{ac}}d}{4h}\frac{V_t}{\epsilon_o}.
+$$
+
+The 2023 single-donor experiment is described directly in the flip-flop subspace, after dropping a common energy shift, by
+
+$$
+\frac{H_{\mathrm{ff}}}{h}=\frac{1}{2}\left[\gamma_+B_0\sigma_z+A(E)\sigma_x\right],
+$$
+
+so a small hyperfine modulation gives $f_{\mathrm{Rabi}}^{\mathrm{ff}}\simeq [\partial A(E)/(2\partial E)]E_{\mathrm{ac}}$ in the rotating-wave limit.
 
 For two vertical donor-interface dipoles, the direct charge-sector interaction is
 
@@ -74,42 +97,67 @@ The flip-flop qubit addresses the central scaling bottleneck of silicon donor qu
 
 ## Experimental Status
 
-**Theoretical proposal — Tosi et al. (2017):**
+**Donor-interface processor proposal — Tosi et al. (2017):**
 - Proposed the flip-flop qubit encoding and electric dipole coupling mechanism.
 - Calculated one- and two-qubit gate errors near $10^{-3}$ under the paper's realistic-noise assumptions.
 - Showed that coupling to a superconducting microwave resonator could extend entanglement to macroscopic distances.
 - Predicted a tunable $1\,\text{MHz}$ effective coupling across 180–500 nm donor separations; the illustrated $\sqrt{i\mathrm{SWAP}}$ gate used $r=180\,\text{nm}$.
 
-**Status as of 2026:**
-- The flip-flop qubit remains a theoretical proposal; no experimental demonstration of the flip-flop encoding or the predicted long-range dipole coupling has been reported.
-- Related experimental progress includes single-shot readout of individual phosphorus donors (Morello et al.), coherent control of P donor electron and nuclear spins in silicon, and sub-nanometer donor placement via STM lithography (Simmons group).
+**Single-donor demonstration — Savytskyy et al. (2023):**
+- Demonstrated coherent microwave-electric control of the $|\!\downarrow_e\Uparrow_n\rangle\leftrightarrow|\!\uparrow_e\Downarrow_n\rangle$ transition in one implanted $^{31}\text{P}$ donor.
+- Reached a Rabi frequency of $118.5(2.5)\,\text{kHz}$ and an average native one-qubit gate fidelity of $98.4(2)\%$.
+- Measured $T_1^{\mathrm{ff}}=173(12)\,\text{s}$, Ramsey $T_2^*=4.09(88)\,\mu\text{s}$, and Hahn-echo $T_2^{\mathrm H}=184(24)\,\mu\text{s}$.
+- The device used hyperfine Stark modulation of a distorted donor orbital; it did not transfer the electron to an interface dot or test dipole-mediated two-qubit gates.
+
+**2024–2026 updates:**
+- De Michielis and Ferraro (2024/2025) simulated parallel gates in four-qubit arrays and found spectator/parallel-operation effects to be especially severe for simultaneous two-qubit gates; this is a theoretical scaling result, not a hardware benchmark.
+- D'Onofrio, Ferraro, and De Michielis (2026) developed a spin-orbital simulator and predicted composite $\sqrt{i\mathrm{SWAP}}$ and $i\mathrm{SWAP}$ infidelities of $4.72\times10^{-4}$ and $6.14\times10^{-4}$ after local phase compensation in an isolated pair. They also found that spectator qubits require geometry-aware recalibration; the work is an arXiv preprint.
+- A 2026 APS conference abstract reported MHz-rate electric driving of flip-flop states in an antimony-donor/MOS-dot device. This is a conference-level extension to a high-spin donor, not yet a peer-reviewed phosphorus flip-flop processor result.
+
+**Status as of September 2026:** the single-$^{31}\text{P}$ flip-flop encoding and electric control are experimentally demonstrated. The donor-interface large-dipole operating point, the predicted 180–500 nm logical coupling, and any flip-flop two-qubit gate remain undemonstrated.
 
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
+| 1Q native gate fidelity | $98.4(2)\%$ | Randomized benchmarking; demonstrated single donor | [Savytskyy et al. 2023](https://doi.org/10.1126/sciadv.add9408) |
+| Electric-drive Rabi frequency | $118.5(2.5)\,\text{kHz}$ | Highest applied microwave power in the demonstrated device | [Savytskyy et al. 2023](https://doi.org/10.1126/sciadv.add9408) |
+| $T_1^{\mathrm{ff}}$ | $173(12)\,\text{s}$ | Demonstrated single donor | [Savytskyy et al. 2023](https://doi.org/10.1126/sciadv.add9408) |
+| Ramsey $T_2^*$ | $4.09(88)\,\mu\text{s}$ | Demonstrated single donor | [Savytskyy et al. 2023](https://doi.org/10.1126/sciadv.add9408) |
+| Hahn-echo $T_2^{\mathrm H}$ | $184(24)\,\mu\text{s}$ | Demonstrated single donor | [Savytskyy et al. 2023](https://doi.org/10.1126/sciadv.add9408) |
 | Coupling range | 180–500 nm | Range over which $g_{2q}^{\mathrm{ff}}=1\,\text{MHz}$ was maintained by retuning $V_t$; predicted | [Tosi et al. 2017](https://doi.org/10.1038/s41467-017-00378-x) |
 | Coupling strength | 1 MHz | Tunable second-order logical coupling; predicted | [Tosi et al. 2017](https://doi.org/10.1038/s41467-017-00378-x) |
-| Control mechanism | All-electric | Microwave electric fields via gate electrodes | [Tosi et al. 2017](https://doi.org/10.1038/s41467-017-00378-x) |
 | $\sqrt{i\mathrm{SWAP}}$ error | $\sim3\times10^{-3}$ | Optimized model near $r=180\,\text{nm}$; not demonstrated | [Tosi et al. 2017](https://doi.org/10.1038/s41467-017-00378-x) |
-| 1Q $x/y$-gate error | $\sim10^{-3}$ | Modelled at the ionization point; not demonstrated | [Tosi et al. 2017](https://doi.org/10.1038/s41467-017-00378-x) |
 
 ## Scaling Considerations
 
 - **Fabrication tolerance**: tunability maintains the proposed $1\,\text{MHz}$ coupling across 180–500 nm spacing, but donor depth and interface quality still control $d$, $V_t$, and charge noise.
 - **Charge noise sensitivity**: operating near the charge-spin hybridization point exposes the qubit to charge noise from the Si/SiO₂ interface, which could limit coherence. Optimal operating points that balance dipole strength against charge noise sensitivity need experimental validation.
 - **Magnetic field requirements**: a static magnetic field of ~0.4 T is needed to define the qubit, plus precise tuning to the anticrossing regime — adding complexity.
-- **Experimental validation**: as of 2026, no experimental demonstration of the flip-flop encoding or long-range coupling has been reported, making all performance metrics theoretical predictions.
+- **Experimental gap**: single-qubit electric control is demonstrated, but the intended donor-interface ionization point, long-range dipole coupling, and two-qubit gate have not been demonstrated.
 - **Resonator coupling**: the proposal includes coupling to superconducting resonators for long-range (mm-scale) interactions, but this adds the complexity of integrating superconducting and semiconductor technologies.
 
 ## References
 
 ### Original proposal
-- G. Tosi et al., "Silicon quantum processor with robust long-distance qubit couplings," [Nat. Commun. 8, 450 (2017)](https://doi.org/10.1038/s41467-017-00378-x)
+- G. Tosi et al., "Silicon quantum processor with robust long-distance qubit couplings," [Nat. Commun. 8, 450 (2017)](https://doi.org/10.1038/s41467-017-00378-x) | [arXiv:1509.08538](https://arxiv.org/abs/1509.08538)
+
+### Experimental demonstration
+- R. Savytskyy et al., "An electrically driven single-atom 'flip-flop' qubit," [Sci. Adv. 9, eadd9408 (2023)](https://doi.org/10.1126/sciadv.add9408) | [arXiv:2202.04438](https://arxiv.org/abs/2202.04438)
+
+### Scaling and control studies
+- M. De Michielis and E. Ferraro, "Impact of Parallel Gating on Gate Fidelities in Linear, Square, and Star Arrays of Noisy Flip-Flop Qubits," [Adv. Quantum Technol. 8, 2400341 (2025)](https://doi.org/10.1002/qute.202400341) | [arXiv:2407.20166](https://arxiv.org/abs/2407.20166)
+- L. D'Onofrio, E. Ferraro, and M. De Michielis, "Numerical Optimization of Two-Qubit Gates in Silicon Flip-Flop Qubit Arrays under Electrical Control," [arXiv:2607.29123](https://arxiv.org/abs/2607.29123) (2026 preprint)
+
+### Recent conference report
+- S. Kruskic et al., "Integrating high-spin antimony donors with MOS quantum dots in silicon, Part 2: Flip-Flop qubit operation," [APS Global Physics Summit 2026 abstract](https://meetings-archive.aps.org/smt/2026/mar-y10/4/)
 
 ## Linked Papers
 
 - [[tosi-2017-flip-flop-qubit]]
+- [[savytskyy-2023-electrically-driven-flip-flop-qubit]]
+- [[de-michielis-2025-parallel-gating-flip-flop-arrays]]
+- [[donofrio-2026-flip-flop-two-qubit-optimization]]
 
 ## Evergreen context
 
@@ -123,3 +171,4 @@ The flip-flop qubit addresses the central scaling bottleneck of silicon donor qu
 - [[silicon-spin-qubit]] — broader silicon spin qubit family
 - [[loss-divincenzo-qubit]] — quantum dot spin qubit with short-range exchange coupling
 - [[spin-qubit]] — general spin qubit concept
+- [[circuit-qed]] — proposed resonator bus for millimeter-scale coupling
