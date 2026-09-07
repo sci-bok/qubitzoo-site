@@ -3,7 +3,7 @@ title: Bifluxon Qubit
 entry_type: qubit
 technology_family: Superconducting
 status: demonstrated
-figure_reviewed: true
+figure_reviewed: false
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/bifluxon-qubit-figure.provenance.json"
@@ -22,10 +22,10 @@ keywords:
 - charge noise protection
 - flux noise protection
 influence_score: 0.66
-last_updated: '2026-08-02'
+last_updated: '2026-09-07'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: codex-recovery-audit-2026-08-02
+verified_by: scibok-deep-audit-2026-09-07
 ---
 
 ## Figure
@@ -62,9 +62,14 @@ The central challenge in superconducting quantum computing is decoherence from e
 **First demonstration — Kalashnikov et al. (2020):**
 - Fabricated a bifluxon circuit with a CPB shunted by a granular aluminum superinductor.
 - Demonstrated tenfold increase in energy relaxation time ($T_1$ up to 100 μs) when the offset charge was tuned from the unprotected point to the charge-parity sweet spot.
-- Measured charge-noise dephasing time $T_2^* > 1\,\mu\text{s}$.
+- Inferred a lower bound $T_\phi \gtrsim 1\,\mu\text{s}$ for charge-noise-induced pure dephasing; the protected-state Ramsey measurement was limited by gate-pulse jitter, so this was not a $T_2^*$ record.
 - Confirmed the Aharonov-Casher protection mechanism by observing the charge-dependent oscillation of $T_1$.
 - Published in PRX Quantum 1, 010307 (2020).
+
+**Related bifluxon-tunnelling fluxonium — Ardati et al. (2024):**
+- Demonstrated a simpler fluxonium realization in which resonant $4\pi$ phase slips couple equal-parity fluxon wells at zero applied flux.
+- Measured $T_1=177\pm3\,\mu\text{s}$ and Hahn-echo $T_2^E=75\pm5\,\mu\text{s}$ at an approximately 3 GHz qubit transition.
+- This is a partially protected fluxonium implementation, not the split-CPB Aharonov-Casher circuit of the 2020 bifluxon experiment.
 
 ## Key Metrics
 
@@ -72,13 +77,15 @@ The central challenge in superconducting quantum computing is decoherence from e
 |--------|-------|-------|--------------------|
 | $T_1$ (protected) | ~100 μs | At charge-parity sweet spot | [Kalashnikov et al. 2020](https://doi.org/10.1103/PRXQuantum.1.010307) |
 | $T_1$ (unprotected) | ~10 μs | Away from sweet spot | [Kalashnikov et al. 2020](https://doi.org/10.1103/PRXQuantum.1.010307) |
-| $T_2^*$ | >1 μs | Charge-noise limited | [Kalashnikov et al. 2020](https://doi.org/10.1103/PRXQuantum.1.010307) |
+| $T_\phi$ lower bound (split-CPB bifluxon) | $\gtrsim$1 μs | Protected-state Ramsey bound; limited by gate-pulse jitter | [Kalashnikov et al. 2020](https://doi.org/10.1103/PRXQuantum.1.010307) |
+| $T_1$ (bifluxon-tunnelling fluxonium) | 177 ± 3 μs | Zero-flux, partially protected fluxonium realization | [Ardati et al. 2024](https://doi.org/10.1103/PhysRevX.14.041014) |
+| $T_2^E$ (bifluxon-tunnelling fluxonium) | 75 ± 5 μs | Hahn echo in the same 2024 device | [Ardati et al. 2024](https://doi.org/10.1103/PhysRevX.14.041014) |
 | $E_J/E_C$ | ~1 | CPB regime (charge-sensitive) | [Kalashnikov et al. 2020](https://doi.org/10.1103/PRXQuantum.1.010307) |
 | $E_L/E_J$ | ≪1 | Large superinductance required | [Kalashnikov et al. 2020](https://doi.org/10.1103/PRXQuantum.1.010307) |
 
 ## Scaling Considerations
 
-- **Superinductor quality**: the protection level scales with the inductance of the superinductive shunt. Current granular aluminum superinductors achieve $L \sim 1\,\mu\text{H}$, but higher values with lower loss are needed for stronger protection.
+- **Superinductor quality**: the 2020 split-CPB prototype had fitted $E_L/h=0.94\,\text{GHz}$, corresponding to $L\approx0.174\,\mu\text{H}$. Its modelling estimated that the strong-delocalization regime needed for full flux-dephasing protection would require an ultrahigh-impedance superinductor with $L>30\,\mu\text{H}$ and a self-resonance above 1 GHz. A distinct 2024 bifluxon-tunnelling fluxonium device used $L\sim1\,\mu\text{H}$.
 - **Charge stability**: the protection mechanism requires stable tuning to the odd-charge parity point. Charge jumps (quasiparticle poisoning) can move the system away from the sweet spot, temporarily disabling protection.
 - **Gate implementation**: universal gates on a protected qubit are inherently difficult because the same protection that suppresses noise also suppresses intentional control signals. Proposals include using the charge degree of freedom for $X$ gates and flux for $Z$ gates, but experimental gate demonstrations are still pending.
 - **$\cos(\varphi/2)$ arrays**: the demonstration proposes combining several split-CPB $\cos(\varphi/2)$ elements to enhance dephasing protection, but this adds fabrication and control complexity.
@@ -89,9 +96,13 @@ The central challenge in superconducting quantum computing is decoherence from e
 ### Proposal and demonstration
 - K. Kalashnikov et al., "Bifluxon: Fluxon-Parity-Protected Superconducting Qubit," [PRX Quantum 1, 010307 (2020)](https://doi.org/10.1103/PRXQuantum.1.010307) | [arXiv:1910.03769](https://arxiv.org/abs/1910.03769)
 
+### Related modern realization
+- W. Ardati et al., "Using Bifluxon Tunneling to Protect the Fluxonium Qubit," [Physical Review X 14, 041014 (2024)](https://doi.org/10.1103/PhysRevX.14.041014) | [arXiv:2402.04495](https://arxiv.org/abs/2402.04495)
+
 ## Linked Papers
 
 - [[kalashnikov-2020-bifluxon]]
+- [[ardati-2024-bifluxon-tunneling]]
 
 ## Evergreen context
 

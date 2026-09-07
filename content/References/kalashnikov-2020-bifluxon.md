@@ -4,11 +4,12 @@ authors:
 - K. Kalashnikov
 - W. T. Hsieh
 - W. Zhang
-- C. Lu
-- P. Brink
-- M. Kozorezov
-- M. Vool
-- U. Vool
+- W.-S. Lu
+- P. Kamenov
+- A. Di Paolo
+- A. Blais
+- M. E. Gershenson
+- M. Bell
 year: 2020
 journal: PRX Quantum
 volume: "1"
@@ -27,7 +28,7 @@ tags:
 
 ## Summary
 
-Introduces and experimentally demonstrates the bifluxon qubit — a fluxon-parity-protected superconducting qubit consisting of a Cooper-pair box shunted by a granular aluminum superinductor. At the charge-parity sweet spot (odd electron number), Aharonov-Casher interference creates a $\cos(\varphi/2)$ potential with degenerate double-well minima, providing exponential suppression of both charge-noise-induced energy decay and flux-noise dephasing. Demonstrates tenfold increase in $T_1$ (up to 100 μs) when toggling protection via gate-controlled charge.
+Introduces and experimentally demonstrates the bifluxon qubit — a fluxon-parity-protected superconducting circuit consisting of a split Cooper-pair box shunted by a granular-aluminum superinductor. At odd island charge, Aharonov-Casher interference suppresses single-fluxon tunnelling and produces effective $4\pi$-periodic dynamics with logical wavefunctions in disjoint even- and odd-fluxon sectors. The prototype demonstrated a tenfold increase in $T_1$ (up to 100 μs) when protection was switched on; full dephasing protection remained a next-generation array goal.
 
 ## Cited In
 
