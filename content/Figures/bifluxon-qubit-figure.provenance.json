@@ -2,13 +2,19 @@
   "artifact": {
     "media_type": "image/png",
     "path": "bifluxon-qubit-figure.png",
-    "sha256": "67cfcb6845213ef3c1909e55ff49411fb3e1734114b10f2d00565fbf831142a6"
+    "sha256": "23f33bf29b4c18e2f34b55330dafb7bb2eee4817085653b05875cf4b9db1eeb3"
   },
   "artifact_role": "primary",
-  "blueprint": null,
+  "blueprint": {
+    "media_type": "image/png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/data/figure-blueprints/bifluxon-qubit-audit-2026-09-08.png",
+    "role": "physics-blueprint",
+    "sha256": "92dec258a3387b96f5f6e5902049e962d64783a343f62d8112c2bd5a89cd1c1e",
+    "strict": true
+  },
   "entry_slug": "bifluxon-qubit",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/bifluxon-qubit-figure-20260805T121055403946Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/bifluxon-qubit-figure-20260908T141252740134Z.png",
     "supersedes_file": "bifluxon-qubit-figure.png"
   },
   "renderer": {
@@ -19,17 +25,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-05T12:10:55.403946+00:00",
-    "id": "gen-1785931835-oE4T1sIKBKATIKTdiHB7",
+    "generated_at": "2026-09-08T14:12:52.740134+00:00",
+    "id": "gen-1788876760-A0GOAlB3Zlc9wzqNHT5S",
     "image_size": "1K",
-    "prompt_sha256": "4a88b0b8c9f91c1e08f21da5781b27fc3399cce1541086ae077c08e5d4759fc5",
+    "prompt_sha256": "ae79949a26b229eb19d35646a8779b137688078750a26095eac5248545997824",
     "source_media_type": "image/jpeg",
     "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Rich bifluxon apparatus, Aharonov-Casher interference, protected parity states, and readout context; central physics passed.",
-    "reviewed_at": "2026-08-05T12:35:45.846572+00:00",
-    "reviewer": "Codex corpus visual/physics audit 2026-08-05",
+    "notes": "Approved after full-resolution image review: exact two-junction split-CPB island plus one superinductor loop; n_g=1/2 correctly cancels E_SPS without conflating E_J; ordered m=-2..2 wells show forbidden m->m+1 and allowed m->m+2; |0_L>/|1_L> support is correctly even/odd; disjoint-support relaxation protection is separated from susceptibility-based dispersive readout; rich explanatory style passed.",
+    "reviewed_at": "2026-09-08T14:13:38.676811+00:00",
+    "reviewer": "Scibok daily deep audit 2026-09-08",
     "status": "passed"
   },
   "schema_version": 1

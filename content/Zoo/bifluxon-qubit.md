@@ -3,12 +3,12 @@ title: Bifluxon Qubit
 entry_type: qubit
 technology_family: Superconducting
 status: demonstrated
-figure_reviewed: false
+figure_reviewed: true
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/bifluxon-qubit-figure.provenance.json"
-figure_reviewed_by: "Codex corpus visual/physics audit 2026-08-05"
-figure_reviewed_at: "2026-08-05T12:35:45.846572+00:00"
+figure_reviewed_by: "Scibok daily deep audit 2026-09-08"
+figure_reviewed_at: "2026-09-08T14:13:38.676811+00:00"
 first_proposed_year: 2019
 first_demonstrated_year: 2020
 keywords:
