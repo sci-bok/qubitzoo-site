@@ -181,6 +181,9 @@ Semiconductor spin qubits promise integration with existing CMOS fabrication inf
 - [[raghuvanshi-2026-phonon-limited-detection-thresholds-for]]
 - [[vaidhyanathan-2026-qarray-a-physics-informed-gpu-accelerated]]
 - [[richter-2026-low-frequency-charge-noise-in]]
+- [[sotiropoulos-2026-photo-induced-wavelength-tuning-of]]
+- [[mcintyre-2026-one-clean-qubit-spectroscopy-of-simulated]]
+- [[huang-2026-enhancing-charge-stability-of]]
 
 ## Evergreen context
 

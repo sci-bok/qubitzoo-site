@@ -3,7 +3,7 @@ title: Trapped Ion MOC
 type: moc
 technology_family: Trapped Ion
 note_count: 5
-last_updated: '2026-08-18'
+last_updated: '2026-09-08'
 generated_by: pipeline-moc-v1
 ---
 
@@ -65,6 +65,19 @@ The two gate notes and the shuttling note answer different questions. The first 
 | [[shuttling-ion-trap-qubit]] | Ions are transported between short-chain memory, interaction, and readout zones; a local MS or related gate still supplies entanglement inside each zone | Transport must preserve internal coherence and deliver a sufficiently cold, well-characterized motional state for the next local gate | Keeps local mode spectra tractable while scaling processor connectivity beyond one long Coulomb crystal | Junction routing, scheduling, transport-induced excitation, recooling, and calibration across many zones | the question has shifted from one gate pulse to machine-scale connectivity and throughput |
 
 This map prevents two common category errors. MS gates are less sensitive to the initial phonon occupation than Cirac-Zoller gates, but they are not independent of motion: residual phase-space displacement still leaves spin and motion entangled. Likewise, QCCD does not replace the phonon-bus gate; it repeatedly reconstructs a small, controllable local bus after transport. Read all three through [[motional-mode-coupling-in-ion-traps]] to track where motional complexity moves rather than assuming it disappears.
+
+## Coherence evidence ladder
+
+Trapped-ion coherence records are easy to flatten into a single platform number, but they answer different architectural questions. Route a claim by the protection resource it consumes before comparing it with another result.
+
+| Evidence layer | What is being protected | Resource that creates the margin | What the headline does **not** establish |
+|---|---|---|---|
+| Passive clock-state encoding | One ion's internal-state splitting | First-order magnetic-field insensitivity of a hyperfine clock transition, as in [[ytterbium-hyperfine-qubit]] | That the same coherence survives laser exposure, transport, repeated measurement, or a full processor duty cycle |
+| Dynamically decoupled memory | One stored ion over a long idle interval | A sustained refocusing sequence suppresses residual magnetic and oscillator noise | A bare $T_2^*$, or a memory that remains simultaneously available for arbitrary gates |
+| Sympathetically cooled memory | Internal-state coherence plus usable motional/readout conditions | A second species removes heating without directly scattering from the data ion; long-memory demonstrations may combine this with dynamical decoupling | That cooling itself suppresses magnetic dephasing, or that the result is a property of the qubit species alone |
+| Decoherence-free encoded memory | A logical state distributed across multiple ions | Symmetry cancels collective noise inside a protected subspace; see [[decoherence-free-subspace]] | Protection against differential noise, gate faults, leakage, or the physical-qubit overhead of the encoding |
+
+The comparison discipline is therefore: use [[coherence-time-hierarchy]] to name the measured timescale, then name the active or encoded resource that produced it. In particular, the ten-minute $^{171}\mathrm{Yb}^+$ memory result should be read as a stack—clock-state storage, dynamical decoupling, and sympathetic cooling—not attributed to any one ingredient in isolation. This keeps memory demonstrations informative for architecture without silently turning them into bare-species or processor-wide specifications.
 
 ## Routing rule: when to stay here versus hand off
 

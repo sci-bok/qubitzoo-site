@@ -129,6 +129,7 @@ At higher channel transparency the full $U_J$ must be retained; equivalently, th
 - [[charge-noise-in-superconducting-qubits]] — even with a semiconductor weak link, the underlying CPB/transmon Hamiltonian still inherits the same offset-charge noise channel that large $E_J/E_C$ is meant to suppress.
 - [[charge-noise-sweet-spot]] — its protection story is still the transmon one: keep charge dispersion flat enough that the added gate knob does not drag the device back toward charge-qubit fragility.
 - [[quantum-hardware]] — this is the cleanest bridge between mainstream superconducting control stacks and semiconductor-process ambitions.
+- [[purcell-protection-via-detuning]] — the Sun et al. (2026) matched-device comparison shows gatemon $T_1$ fell well below the Purcell limit, pinning the residual loss on junction-intrinsic dissipation rather than circuit-QED design.
 
 ## Related Entries
 

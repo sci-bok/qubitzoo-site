@@ -3,7 +3,7 @@ title: Molecular MOC
 type: moc
 technology_family: Molecular
 note_count: 3
-last_updated: '2026-08-21'
+last_updated: '2026-09-09'
 generated_by: pipeline-moc-v1
 ---
 
@@ -64,3 +64,15 @@ The [[molecular-qubit]] branch now contains several experimental regimes that sh
 Read these as complementary rungs rather than a performance leaderboard: ensemble $T_2$, single-molecule $T_1$, optical contrast, and exchange times measure different parts of the processor stack. The next decisive evidence is not another isolated record but a repeatable experiment combining local initialization, coherent interaction, and qubit-specific readout in one architecture.
 
 The three branches should remain separate in comparisons: chemistry-designed spin registers, trapped polar rotors, and ensemble NMR solve different problems and have radically different scaling limits.
+
+## Cross-family boundary routing
+
+The carrier being a molecule is enough to place these entries together, but not enough to decide where a systems comparison should continue. Route outward according to the architectural question that dominates:
+
+| Molecular branch | Stay in this MOC when the question is... | Hand off when the question becomes... |
+|---|---|---|
+| [[polar-molecule-qubit]] | Rotational/hyperfine storage, switchable permanent-dipole exchange, or molecule formation and survival detection | Tweezer-array assembly is being compared through Rydberg blockade, atom rearrangement, or atom-loss handling; use [[neutral-atom-moc]] |
+| [[nuclear-magnetic-resonance-qubit]] | Pseudo-pure-state preparation, scalar $J$-coupling inside molecules, bulk readout, or the ensemble-signal scaling failure | The subject is the portable inheritance of selective pulses, refocusing, and optimal control rather than NMR as a processor; use [[cross-platform-moc]] |
+| [[molecular-qubit]] | Chemical synthesis, ligand fields, anisotropy, or isotope choice engineers the spin Hamiltonian itself | A fixed host-lattice defect defines the materials platform; use [[color-center-moc]]. If emission, collection, and wavelength matching dominate instead, use [[spin-photon-moc]] |
+
+The placement test is therefore not “does this system contain a molecule?” but “which design layer supplies the claimed advantage?” Molecular structure owns the primary note only when it supplies the encoding, interaction, or Hamiltonian engineering rather than merely hosting a control technique or optical interface.

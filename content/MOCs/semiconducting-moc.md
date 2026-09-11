@@ -3,7 +3,7 @@ title: Semiconducting MOC
 type: moc
 technology_family: Semiconducting
 note_count: 12
-last_updated: '2026-08-15'
+last_updated: '2026-09-06'
 generated_by: pipeline-moc-v1
 ---
 
@@ -15,7 +15,7 @@ Curated map of Zoo entries in the **Semiconducting** family.
 |---|---|---|
 | [[aeon-qubit]] | qubit | demonstrated |
 | [[exchange-only-qubit]] | qubit | demonstrated |
-| [[flip-flop-qubit]] | qubit | proposed |
+| [[flip-flop-qubit]] | qubit | demonstrated |
 | [[hole-spin-qubit]] | qubit | demonstrated |
 | [[hybrid-qubit]] | qubit | demonstrated |
 | [[kane-qubit]] | qubit | demonstrated |
@@ -59,7 +59,7 @@ The highest-value organizing move in this family is to **separate the single-spi
    - [[semiconductor-charge-qubit]] and [[hybrid-qubit]] buy speed by re-admitting charge character into the qubit itself.
    - [[hole-spin-qubit]] uses strong intrinsic SOC to make electrical control native rather than synthetic.
    - [[kane-qubit]] is the donor-spin branch, where atomic placement and hyperfine control replace lithographic quantum-dot tuning as the defining resource.
-   - [[flip-flop-qubit]] is the long-range donor-interface proposal: electron-nuclear flip-flop states borrow a tunable electric dipole from orbital hybridization to mediate predicted coupling across 180–500 nm. Keep its performance numbers labelled as theoretical until the encoding and gates are demonstrated.
+   - [[flip-flop-qubit]] is the donor-interface extension: the electron–nuclear encoding and microwave-electric one-qubit control are now demonstrated, but the large donor–interface dipole, 180–500 nm logical coupling, and two-qubit gate remain proposal-stage. Keep those evidence layers separate.
 
 ## Exchange-control routing matrix
 
@@ -76,10 +76,22 @@ The dot-defined entries are easiest to distinguish by following the same physica
 
 Read the first two columns through [[exchange-interaction-in-quantum-dots]] when the question is how the gates manufacture $J$. Read the third and fourth columns through [[heisenberg-exchange-in-quantum-dots]], [[decoherence-free-subspace]], and [[charge-noise-sweet-spot]] when the question is what that coupling becomes after projection and which noise channel survives.
 
+## Donor branch evidence ladder
+
+The donor entries are easiest to misread when a demonstrated local operation is allowed to validate a more ambitious coupling architecture. Route them by asking **which layer has actually crossed from proposal to hardware**.
+
+| Entry | Demonstrated core | Scaling mechanism under test | Claim that must remain separate |
+|---|---|---|---|
+| [[kane-qubit]] | Individual phosphorus electron/nuclear-spin control, ultralong nuclear memory, exchange-mediated gates, and multi-qubit donor processors | Atomically placed donors with hyperfine addressability and short-range electron exchange | Demonstrated donor processors validate the Kane lineage, but do not remove the placement and dense-control burden of local exchange |
+| [[flip-flop-qubit]] | The electron–nuclear flip-flop transition and microwave-electric one-qubit control in a single implanted donor | Gate-controlled donor–interface orbital admixture intended to create a strong electric dipole and relax donor-spacing constraints | The donor–interface ionization point, predicted 180–500 nm dipole coupling, resonator-mediated extension, and any flip-flop two-qubit gate remain undemonstrated |
+
+Use [[coherence-time-hierarchy]] to keep Kane's nuclear-memory record distinct from the coherence of an electrically hybridized flip-flop transition. Use [[charge-noise-sweet-spot]] for the flip-flop design tension: the same orbital admixture that makes long-range electrical coupling possible also imports interface-charge noise. Finally, use [[resonator-as-quantum-bus]] only for the proposed microwave extension beyond direct dipole coupling, not as evidence that the local donor–interface gate has already been realized.
+
 ## Routing rule: when to enter which note
 
 - Enter `spin-qubit` or `silicon-spin-qubit` when the question is platform-level competitiveness, fabrication trajectory, or the overall semiconductor pitch.
 - Enter `loss-divincenzo-qubit` when you want the cleanest “single spin + exchange” template.
 - Enter `singlet-triplet-qubit`, `exchange-only-qubit`, `rx-qubit`, and `aeon-qubit` as a sequence when the real comparison is how much encoding and sweet-spot structure is being introduced to civilize exchange control.
 - Enter `semiconductor-charge-qubit`, `hybrid-qubit`, or `hole-spin-qubit` when the main tradeoff is faster electrical control versus renewed charge sensitivity.
+- Enter `kane-qubit` when the donor story is atomic placement, hyperfine addressability, and demonstrated short-range exchange; enter `flip-flop-qubit` when the question is whether orbital admixture can trade that placement burden for electrically mediated range.
 - For semiconductor descendants that cross fully into Josephson-circuit territory, continue in [[super-semi-moc]].

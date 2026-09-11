@@ -170,6 +170,9 @@ State-of-the-art (as of late 2025): $T_1$ up to $1.68\,\text{ms}$ (planar, tanta
 - [[fontaine-2026-programming-anharmonic-potentials-in]]
 - [[luca-2026-implementation-of-quantum-gates]]
 - [[lyngfelt-2026-analog-quantum-simulation-of]]
+- [[guan-2026-mitigating-capacitive-loading-enables]]
+- [[lisenfeld-2026-readout-failures-in-superconducting]]
+- [[kubo-2026-instantaneous-frame-theory-of-strongly]]
 
 ## Evergreen context
 

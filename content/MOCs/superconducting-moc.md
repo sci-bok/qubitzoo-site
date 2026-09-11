@@ -3,7 +3,7 @@ title: Superconducting MOC
 type: moc
 technology_family: Superconducting
 note_count: 22
-last_updated: '2026-08-22'
+last_updated: '2026-09-07'
 generated_by: pipeline-moc-v1
 ---
 
@@ -107,7 +107,17 @@ The decisive transmon transition was therefore more than a coherence-record race
 - `heavy-fluxonium-qubit` is the **nearest-term coherence-first branch**. It still lives squarely inside familiar fluxonium control and readout practice, but uses disjoint-support wavefunctions and sweet-spot operation to suppress matrix elements before the error ever reaches the decoder.
 - `blochnium` is the **duality branch**. Read it when the interesting claim is quasicharge physics, large anharmonicity, and flux-dispersion flattening, not maximal passive protection in the 0-π sense.
 - `0-pi-qubit` and `cos2phi-qubit` are the **symmetry-engineered protection branch**. Both are experimentally demonstrated, but neither yet eliminates active error correction: the cos(2φ) route strongly suppresses charge-coupled relaxation while present interference-based devices remain flux-noise limited.
+- [[bifluxon-qubit]] is the **fluxon-parity branch**, but its two experimental realizations must stay separate. The 2020 split-CPB circuit uses odd-charge Aharonov–Casher interference to suppress single-fluxon tunnelling; the 2024 bifluxon-tunnelling fluxonium uses resonant $4\pi$ phase slips between equal-parity wells at zero flux. The latter is a partially protected fluxonium, not a second-generation measurement of the same split-CPB device.
 - `dual-rail-superconducting-qubit` should sit adjacent to this branch, not inside it: the payoff is still lower logical overhead, but via flagged leakage and erasure structure rather than suppressed in-code-space matrix elements.
+
+### Bifluxon evidence-routing guardrail
+
+| Evidence track | Protection mechanism | What the reported coherence supports | What not to infer |
+|---|---|---|---|
+| 2020 split-CPB bifluxon | Charge-parity-tuned destructive interference of single-fluxon tunnelling | A roughly tenfold protected-point $T_1$ improvement and a lower bound on charge-noise dephasing | Do not quote the dephasing bound as a protected-state $T_2^*$ record or assume full flux-noise protection was reached |
+| 2024 bifluxon-tunnelling fluxonium | Resonant $4\pi$ phase slips coupling equal-parity fluxon wells | $T_1=177\pm3\,\mu\text{s}$ and Hahn-echo $T_2^E=75\pm5\,\mu\text{s}$ for that distinct, partially protected device | Do not transfer these metrics to the 2020 split-CPB architecture or collapse the two circuit mechanisms into one maturity claim |
+
+Use [[coherence-time-hierarchy]] to preserve the $T_\phi$ versus $T_2^*$ versus $T_2^E$ distinction, and [[charge-noise-sweet-spot]] to track which control coordinate is actually protected in each device. The shared word *bifluxon* identifies a fluxon-parity idea, not an interchangeable circuit or metric set.
 
 ## Boundary with the super-semi family
 

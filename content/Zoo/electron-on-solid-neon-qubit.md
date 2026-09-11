@@ -143,6 +143,7 @@ For detuning $\Delta=\omega_{01}-\omega_r$ with $|\Delta|\gg g_{01}$, the resona
 - [[dispersive-readout-mechanism]] — explains how the motional state produces a state-dependent resonator shift.
 - [[charge-noise-sweet-spot]] — the central comparison for a strongly electric-dipole-coupled motional qubit.
 - [[vacuum-rms-field-scaling]] — separates the resonator-side zero-point voltage from the electron's large motional dipole, the two ingredients that together set the observed charge-photon coupling.
+- [[purcell-protection-via-detuning]] — the measured $T_1$ values are Purcell-limited at most bias points; detuning from the resonator is the primary knob for extending the charge-qubit lifetime.
 
 ## Related Entries
 

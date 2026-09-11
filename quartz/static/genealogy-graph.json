@@ -1,6 +1,6 @@
 {
   "schema": "qubitzoo.genealogy.v1",
-  "generated_at": "2026-09-04T14:00:10.792249+00:00",
+  "generated_at": "2026-09-11T14:00:08.904560+00:00",
   "nodes": [
     {
       "id": "0-pi-qubit",
@@ -241,7 +241,7 @@
       "title": "Flip-Flop Qubit",
       "family": "Semiconducting",
       "year": 2017,
-      "status": "proposed",
+      "status": "demonstrated",
       "color": "#22c55e",
       "influence": 0.72
     },
@@ -1194,6 +1194,10 @@
       "target": "flip-flop-qubit"
     },
     {
+      "source": "circuit-qed",
+      "target": "flip-flop-qubit"
+    },
+    {
       "source": "surface-code-logical-qubit",
       "target": "floquet-codes"
     },
@@ -1722,6 +1726,18 @@
       "target": "aeon-qubit"
     },
     {
+      "source": "spin-qubit",
+      "target": "singlet-triplet-qubit"
+    },
+    {
+      "source": "qubit-readout",
+      "target": "singlet-triplet-qubit"
+    },
+    {
+      "source": "singlet-triplet-qubit",
+      "target": "circuit-qed"
+    },
+    {
       "source": "siv-color-center-qubit",
       "target": "t-center-qubit"
     },
@@ -1732,10 +1748,6 @@
     {
       "source": "spin-qubit",
       "target": "loss-divincenzo-qubit"
-    },
-    {
-      "source": "spin-qubit",
-      "target": "singlet-triplet-qubit"
     },
     {
       "source": "spin-qubit",

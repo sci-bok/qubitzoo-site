@@ -166,6 +166,7 @@ Trapped ions offer natural identical qubits (every $^{171}\text{Yb}^+$ ion is id
 - [[brudney-2026-mid-circuit-ground-state-cooling-and]]
 - [[velasco-2026-extreme-ultraviolet-spectroscopy-using-quantum]]
 - [[tang-2026-frequency-multiplexed-parallel-gates-for]]
+- [[chakraborty-2026-quantum-ram-implementation-using-multiple]]
 
 ## Evergreen context
 

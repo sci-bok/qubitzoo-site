@@ -28,10 +28,10 @@ keywords:
 - cavity QED
 - nanophotonic
 influence_score: 0.72
-last_updated: '2026-09-10'
+last_updated: '2026-09-09'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-deep-audit-2026-09-10
+verified_by: codex-deep-audit-2026-09-09
 ---
 
 ## Figure
@@ -44,7 +44,7 @@ Rare-earth ion qubits encode quantum information in electronic or nuclear spin s
 
 - **Erbium (Er³⁺)**: Possesses a $^4I_{15/2} \to {^4I_{13/2}}$ optical transition near 1536 nm, directly in the telecom C-band. This gives Er a native low-loss fiber interface without quantum frequency conversion. The $^{167}\text{Er}^{3+}$ isotope ($I = 7/2$) provides eight nuclear-spin sublevels for storage and processing.
 
-- **Europium (Eu³⁺)**: Supports exceptionally long ensemble hyperfine coherence. The 2015 six-hour result was extended in a 2025 study to nuclear-spin coherence exceeding 10 hours under ZEFOZ and dynamical decoupling [Wang et al., PRX Quantum 6, 010302 (2025)], with even longer durations projected at millikelvin temperatures. Minute-scale photonic quantum storage at the ZEFOZ point was independently demonstrated with a 27 s 1/e storage lifetime [Meng et al., arXiv:2511.12537].
+- **Europium (Eu³⁺)**: Supports exceptionally long ensemble hyperfine coherence. The 2015 six-hour result was extended in 2025 to more than 13 hours for the full selected ensemble and more than 18 hours for a spectrally narrow subensemble at 125 mK, using a ZEFOZ field and dynamical decoupling.
 
 - **Praseodymium (Pr³⁺)**: Used in early demonstrations of quantum memory protocols including electromagnetically induced transparency (EIT), atomic frequency comb (AFC) storage, and controlled reversible inhomogeneous broadening (CRIB).
 
@@ -99,11 +99,6 @@ Rare-earth ions in crystals offer a unique combination: extremely long spin cohe
 - Spin coherence $T_2 > 30\,\text{ms}$ for a cavity-coupled ion.
 - Single-shot readout fidelity >95%.
 
-**Dual epitaxial Er telecom spin-photon interfaces — Gupta et al. (2025):**
-- Demonstrated two erbium-based telecom spin-photon interfaces in an epitaxial thin-film platform with long-lived coherence.
-- Achieved spin coherence exceeding 10 ms, kilohertz-level optical linewidths, and 92% single-shot readout fidelity.
-- The fiber-integrated bottom-up approach is designed for scalable quantum light-matter interfaces at telecommunication wavelengths.
-
 **Multiplexed remote entanglement — Ruskuc et al. (2025):**
 - Built a two-node network with multiple spectrally distinguishable $^{171}\mathrm{Yb}^{3+}$ ions coupled to nanophotonic cavities.
 - Entangled two remote ion pairs in a multiplexed protocol using frequency-erasing photon detection and real-time feedforward.
@@ -117,8 +112,6 @@ Rare-earth ions in crystals offer a unique combination: extremely long spin cohe
 | Optical wavelength (Er³⁺) | 1536 nm | Telecom C-band; native fiber compatibility | [Dibos et al. 2018](https://doi.org/10.1103/PhysRevLett.120.243601) |
 | Single-shot readout fidelity | 94.6% | Single Er³⁺ via cavity QND | [Raha et al. 2020](https://doi.org/10.1038/s41467-020-15138-7) |
 | Purcell enhancement | >650× | Er³⁺ in Si nanophotonic cavity | [Dibos et al. 2018](https://doi.org/10.1103/PhysRevLett.120.243601) |
-| Er spin coherence (epitaxial) | >10 ms | Er³⁺ in epitaxial thin film, telecom C-band | [Gupta et al. 2025](https://doi.org/10.1038/s41467-025-64780-6) |
-| Single-shot readout fidelity | 92% | Epitaxial Er³⁺, telecom cycling transition | [Gupta et al. 2025](https://doi.org/10.1038/s41467-025-64780-6) |
 | Multiplexed remote pairs | 2 | Two $^{171}\mathrm{Yb}^{3+}$ ion pairs across two nodes | [Ruskuc et al. 2025](https://doi.org/10.1038/s41586-024-08537-z) |
 | Multipartite network state | 3-ion W state | Three distinguishable ions | [Ruskuc et al. 2025](https://doi.org/10.1038/s41586-024-08537-z) |
 
@@ -134,8 +127,6 @@ Rare-earth ions in crystals offer a unique combination: extremely long spin cohe
 
 ### Coherence record
 - M. Zhong et al., "Optically addressable nuclear spins in a solid with a six-hour coherence time," [Nature 517, 177 (2015)](https://doi.org/10.1038/nature14025)
-- F. Wang et al., "Nuclear Spins in a Solid Exceeding 10-Hour Coherence Times for Ultra-Long-Term Quantum Storage," [PRX Quantum 6, 010302 (2025)](https://doi.org/10.1103/PRXQuantum.6.010302)
-- R.-R. Meng et al., "Minute-Scale Photonic Quantum Memory," [arXiv:2511.12537](https://arxiv.org/abs/2511.12537)
 
 ### Single-ion detection and readout
 - A. M. Dibos et al., "Atomic Source of Single Photons in the Telecom Band," [Phys. Rev. Lett. 120, 243601 (2018)](https://doi.org/10.1103/PhysRevLett.120.243601) | [arXiv:1711.10368](https://arxiv.org/abs/1711.10368)
@@ -144,20 +135,15 @@ Rare-earth ions in crystals offer a unique combination: extremely long spin cohe
 ### Cavity QED
 - J. M. Kindem et al., "Control and single-shot readout of an ion embedded in a nanophotonic cavity," [Nature 580, 201 (2020)](https://doi.org/10.1038/s41586-020-2160-9) | [arXiv:1907.12161](https://arxiv.org/abs/1907.12161)
 
-### Telecom spin-photon interfaces
-- S. Gupta et al., "Dual epitaxial telecom spin-photon interfaces with long-lived coherence," [Nat. Commun. 16, 9814 (2025)](https://doi.org/10.1038/s41467-025-64780-6)
-
 ### Multiplexed quantum networking
 - A. Ruskuc et al., "Multiplexed entanglement of multi-emitter quantum network nodes," [Nature 639, 54–59 (2025)](https://doi.org/10.1038/s41586-024-08537-z)
 
 ## Linked Papers
 
 - [[zhong-2015-six-hour-coherence]]
-- [[wang-2025-prx-quantum-eu-coherence]]
 - [[dibos-2018-telecom-single-photon]]
 - [[raha-2020-rare-earth-qnd-readout]]
 - [[kindem-2020-single-ion-nanophotonic]]
-- [[gupta-2025-er-telecom-spin-photon]]
 - [[ruskuc-2025-multiplexed-rare-earth-network]]
 
 ## Evergreen context
@@ -165,6 +151,7 @@ Rare-earth ions in crystals offer a unique combination: extremely long spin cohe
 - [[coherence-time-hierarchy]] — distinguishes hours-long Eu nuclear memories from faster optically active Er and Yb network qubits.
 - [[divincenzo-criteria]] — keeps exceptional memory time separate from the still-open requirements for practical local gates, readout, and a scalable node interface.
 - [[spin-photon-interfaces-separate-emission-collection-and-wavelength-matching]] — routes weak-oscillator-strength cavity enhancement through the resonant optical-emission mechanism rather than through off-resonant microwave circuit-QED notes.
+- [[purcell-protection-via-detuning]] — the same $\kappa(g/\Delta)^2$ framework that suppresses spontaneous emission in circuit QED produces >650× cavity-enhanced emission here; the sign reverses because the optical 4f–4f transition is Purcell-enhanced rather than Purcell-protected.
 
 ## Related Entries
 

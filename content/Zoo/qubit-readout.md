@@ -111,6 +111,8 @@ where $\omega_r$ is the resonator frequency, $\omega_q$ the qubit frequency, and
 - [[cuce-2026-single-shot-quantum-state-classification]]
 - [[abraham-2026-fast-microwave-free-state-preparation]]
 - [[czartowski-2026-energetic-costs-of-subspace]]
+- [[shen-2026-the-resource-cost-of]]
+- [[min-2026-direct-cultivation-of-entangled]]
 
 ## Evergreen context
 

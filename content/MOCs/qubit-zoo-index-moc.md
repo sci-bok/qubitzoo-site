@@ -3,7 +3,7 @@ title: Qubit Zoo Index MOC
 type: moc
 technology_family: index
 note_count: 81
-last_updated: '2026-08-26'
+last_updated: '2026-09-04'
 generated_by: pipeline-moc-v1
 ---
 
@@ -64,6 +64,14 @@ Top-level navigation for the Qubit Zoo through non-exclusive facets. An entry ma
 - Use [[trapped-ion-moc]] when the carrier is a collective phonon mode. [[motional-mode-coupling-in-ion-traps]] explains why ions can interact across a chain and why that advantage eventually creates mode-crowding, heating, and closure constraints that motivate shuttling into smaller interaction zones.
 - Use [[neutral-atom-moc]] when the interaction is borrowed transiently from Rydberg excitation rather than stored in a persistent bus. [[rydberg-blockade-mechanism]] ties gate range to blockade strength and geometry, while tweezer rearrangement changes which pairs are brought into that interaction neighborhood.
 - Compare these branches by asking three questions in order: **what carries the interaction, how completely can it be turned off or disentangled at gate end, and what resource must be routed or recalibrated as the processor grows?** Raw two-qubit fidelity alone hides the architectural cost that distinguishes direct exchange, virtual photons, collective motion, and blockade.
+
+## High-value cross-family slice: storage manifold versus interaction manifold
+
+- Start in [[neutral-atom-moc]] for the cleanest deliberate separation: information idles in hyperfine, clock, or nuclear-spin states, then temporarily borrows a Rydberg manifold for entanglement. [[coherence-time-hierarchy]] explains the storage advantage; [[rydberg-blockade-mechanism]] explains the decay, leakage, and laser-control debt introduced during gates.
+- Move to [[semiconducting-moc]] when encoded spin information is protected from uniform magnetic noise but electrical exchange control still borrows charge admixture. Read [[decoherence-free-subspace]] for what the encoding removes and [[charge-noise-sweet-spot]] for the residual cost of making that protected information electrically steerable.
+- Use [[trapped-ion-moc]] when internal electronic or hyperfine states store the qubit while collective motion is populated only as a gate bus. [[motional-mode-coupling-in-ion-traps]] makes the key success condition explicit: the phonon trajectory must close so the logical state disentangles from motion at gate end.
+- Use [[superconducting-moc]] when the separation is engineered through dressed modes rather than distinct atomic manifolds. A data qubit can stay detuned while virtual cavity photons or a tunable coupler activate an interaction, but [[purcell-protection-via-detuning]] and [[resonator-as-quantum-bus]] show that the borrowed mode still leaves lifetime and residual-coupling costs.
+- Compare these branches by asking: **where does information wait, what auxiliary degree of freedom is occupied or admixed during a gate, and what evidence shows that degree of freedom is empty or disentangled afterward?** This catches leakage and bus-reset failure modes that a two-qubit fidelity number can conceal.
 
 ## High-value cross-family slice: hardware-assisted fault tolerance
 

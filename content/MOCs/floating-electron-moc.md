@@ -3,7 +3,7 @@ title: Floating Electron MOC
 type: moc
 technology_family: Floating Electron
 note_count: 1
-last_updated: '2026-08-10'
+last_updated: '2026-09-05'
 generated_by: pipeline-moc-v1
 ---
 
@@ -35,6 +35,19 @@ The useful circuit-QED comparison is a four-step chain, not just the statement t
 4. The same cavity admixture also opens a relaxation channel. [[purcell-protection-via-detuning]] explains why the entry's reported long-$T_1$ bias point with reduced Purcell decay is part of the architecture tradeoff rather than an unrelated coherence detail.
 
 This ordering keeps three knobs distinct: the resonator's vacuum field, the electron's dipole matrix element, and the chosen detuning. Together they determine whether stronger coupling buys faster readout, more cavity-induced decay, or both.
+
+## Evidence-to-scaling ladder
+
+The platform's evidence is now strong enough that **single-qubit quality is no longer the cleanest proxy for architectural maturity**. Read the record in four layers:
+
+| Layer | Best current evidence | What it establishes | What it does not establish |
+|---|---|---|---|
+| Circuit-QED primitive | [[zhou-2022-solid-neon-electron-qubit]] | One trapped electron can reach strong microwave coupling, coherent control, and dispersive readout | Reproducible trap placement or a processor-scale device geometry |
+| Single-qubit quality | [[zhou-2024-neon-charge-qubit]] and [[li-2026-neon-noise-resilience]] | High-fidelity one-qubit control, near-$0.1\,\mathrm{ms}$ coherence, and operation above the lowest dilution-refrigerator temperatures | A calibrated entangling gate or uniform multi-site performance |
+| Multi-qubit interaction | [[li-2026-interacting-neon-qubits]] | Direct charge-charge coupling and coherent cross-resonance / bSWAP operations in a three-qubit device | A reported two-qubit gate fidelity; coherent interaction is not yet a fault-tolerance benchmark |
+| Spatial control | [[zheng-2025-neon-surface-morphology]] diagnoses morphology-selected traps; [[wang-2026-fast-neon-charge-control]] still reports an unintended site | The dominant integration problem is experimentally visible rather than hypothetical | A demonstrated deterministic loader; [[inui-2026-levitated-neon-arrays]] and [[surse-2026-deterministic-neon-trapping]] remain architecture proposals |
+
+This ladder changes the comparison question. The near-term discriminator is not whether an isolated eNe qubit can be coherent and fast; it is whether fabrication can place known electrons at designed sites with reproducible frequencies and separations, then turn the observed interactions into calibrated two-qubit gates. Keep proposed spin storage downstream of that test: a magnetic-field-compatible resonator is enabling infrastructure, not evidence that an electron-spin eNe qubit has been realized.
 
 ## Coverage frontier
 
