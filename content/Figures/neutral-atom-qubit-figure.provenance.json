@@ -2,15 +2,14 @@
   "artifact": {
     "media_type": "image/png",
     "path": "neutral-atom-qubit-figure.png",
-    "sha256": "ba5eb7a2cfa6912cb96b2e7b8143023f299061bd8a052012789bd14dedcbe2c7"
+    "sha256": "a51411e8bd219f697170c0754b3c8256a386662a5133282b679d88ef920b71d9"
   },
   "artifact_role": "primary",
+  "blueprint": null,
   "entry_slug": "neutral-atom-qubit",
   "lineage": {
-    "historical_import": true,
-    "origin_commit": "96335d772df99ab1d56cd0162a453ad4c7bbe8ea",
-    "origin_commit_subject": "figures: generate all 60 Zoo entry figures + cleanup stale assets",
-    "verification": "Renderer identity reconstructed from the Qubit Zoo Nano Banana 2 generation record; original provider request metadata was not retained."
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/neutral-atom-qubit-figure-20260911T142046486871Z.png",
+    "supersedes_file": "neutral-atom-qubit-figure.png"
   },
   "renderer": {
     "name": "nano-banana-2",
@@ -19,15 +18,18 @@
     "returned_model": "google/gemini-3.1-flash-image-preview"
   },
   "request": {
-    "generated_at": "2026-03-15T18:06:35-04:00",
-    "id": null,
-    "prompt_sha256": null,
-    "reconstructed": true
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-09-11T14:20:46.486871+00:00",
+    "id": "gen-1789136391-pJXkSa74npDCRE5u122s",
+    "image_size": "1K",
+    "prompt_sha256": "ba5e0740b88afbc4b10f536f4c6c67ace9641c79b5da34f653c703cb880a2f0e",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Full-resolution asset audit confirmed that this embedded primary is legible and traces to the historical Nano Banana 2 generation workflow, so it was retained to avoid unnecessary regeneration. This renderer/coverage review does not claim a new scientific peer review of every label.",
-    "reviewed_at": "2026-08-02T03:07:08.132079+00:00",
-    "reviewer": "codex-site-image-audit-2026-08-01",
+    "notes": "Regenerated from full entry context: monotonic repulsive V_vdW=C6/R^6 curve with R_B marker, |rr> out-of-resonance shift with blocked second excitation, explicit CZ truth table, consistent |0>=F=1<mF=0> below |1>=F=2<mF=0> in all panels, correct 6.834 GHz / n~50-100 / 480nm / 850nm labels. Full-resolution audit PASSED all physics and richness gates.",
+    "reviewed_at": "2026-09-11T14:23:12.986032+00:00",
+    "reviewer": "scibok-audit-2026-09-11",
     "status": "passed"
   },
   "schema_version": 1
