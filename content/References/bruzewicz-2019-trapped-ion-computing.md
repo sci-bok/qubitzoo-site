@@ -21,3 +21,4 @@ Trapped ions are among the most promising systems for practical quantum computin
 
 ## Zoo Links
 - [[trapped-ion-qubit]]
+- [[beryllium-9-ion-qubit]]

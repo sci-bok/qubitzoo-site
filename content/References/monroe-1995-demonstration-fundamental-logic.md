@@ -19,3 +19,4 @@ This paper presents work on demonstration of a fundamental quantum logic gate.
 
 ## Zoo Links
 - [[cirac-zoller-gate]]
+- [[beryllium-9-ion-qubit]]
