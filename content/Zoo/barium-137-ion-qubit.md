@@ -18,10 +18,10 @@ keywords:
 - QCCD
 - dual species
 influence_score: 0.82
-last_updated: '2026-09-12'
+last_updated: '2026-09-14'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-deep-audit-2026-09-12
+verified_by: scibok-deep-audit-2026-09-14
 ---
 
 ## Figure
@@ -123,6 +123,5 @@ The species is especially compelling inside a QCCD architecture. In Helios, $^{1
 
 - [[trapped-ion-qubit]] — parent platform
 - [[ytterbium-hyperfine-qubit]] — alternative hyperfine ion species; Yb-171 serves as sympathetic coolant in Helios
-- [[strontium-88-ion-qubit]] — another visible-wavelength trapped-ion species for comparison
 - [[shuttling-ion-trap-qubit]] — QCCD architecture used by Helios
 - [[molmer-sorenson-gate]] — entangling gate family used in Ba+ systems
