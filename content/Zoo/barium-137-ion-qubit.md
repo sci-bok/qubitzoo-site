@@ -3,7 +3,7 @@ title: Barium-137 Trapped-Ion Qubit
 entry_type: qubit
 technology_family: Trapped Ion
 status: demonstrated
-figure_reviewed: false
+figure_reviewed: true
 first_proposed_year: 2010
 first_demonstrated_year: 2010
 keywords:
@@ -18,10 +18,15 @@ keywords:
 - QCCD
 - dual species
 influence_score: 0.82
-last_updated: '2026-09-14'
+last_updated: '2026-09-15'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-deep-audit-2026-09-14
+verified_by: scibok-deep-audit-2026-09-15
+figure_renderer: "nano-banana-2"
+figure_model: "google/gemini-3.1-flash-image-preview"
+figure_provenance: "Figures/barium-137-ion-qubit-figure.provenance.json"
+figure_reviewed_by: "scibok-deep-audit-2026-09-15"
+figure_reviewed_at: "2026-09-15T14:18:21.756463+00:00"
 ---
 
 ## Figure
@@ -34,7 +39,7 @@ The barium-137 trapped-ion qubit encodes quantum information in the hyperfine ma
 
 A major attraction of $^{137}\mathrm{Ba}^+$ is its favorable laser stack for qubit control and readout. Fluorescence detection uses the 493 nm $6S_{1/2}\!\to\!6P_{1/2}$ transition with 650 nm repumping from $5D_{3/2}$, while shelving and protected measurement use the narrow 1762 nm transition to the metastable $5D_{5/2}$ manifold. In Helios, single- and two-qubit gates are driven by pairs of 515 nm Raman beams separated by the qubit splitting. Compared with ultraviolet-gated species, this pushes the core qubit-control optics into a more mature visible/near-IR regime with higher available laser power and reduced UV-induced optics degradation.
 
-Quantinuum's Helios processor made $^{137}\mathrm{Ba}^+$ the first barium-based species deployed in a large-scale trapped-ion quantum computer. Helios is a 98-qubit QCCD processor with $^{137}\mathrm{Ba}^+$ data qubits and co-trapped $^{171}\mathrm{Yb}^+$ coolant ions for sympathetic recooling. Averaged over its operational zones, Helios reports single-qubit, two-qubit, and SPAM infidelities of $2.5(1)\times10^{-5}$, $7.9(2)\times10^{-4}$, and $4.8(6)\times10^{-4}$ respectively, corresponding to fidelities of 99.9975%, 99.921%, and 99.952%. The Helios results were published in Nature in 2026 (Ransford et al., doi:10.1038/s41586-026-10676-4). In 2026, the same Helios hardware was used to demonstrate encoded computations with 48 to 94 logical qubits using high-rate iceberg codes (Dasu et al. 2026).
+Quantinuum's Helios processor made $^{137}\mathrm{Ba}^+$ the first barium-based species deployed in a large-scale trapped-ion quantum computer. Helios is a 98-qubit QCCD processor with $^{137}\mathrm{Ba}^+$ data qubits and co-trapped $^{171}\mathrm{Yb}^+$ coolant ions for sympathetic recooling. Averaged over its operational zones, the published Nature version reports single-qubit, two-qubit, and standard-SPAM infidelities of $2.5(1)\times10^{-5}$, $7.9(2)\times10^{-4}$, and $3.3(5)\times10^{-4}$ respectively, corresponding to fidelities of 99.9975%, 99.921%, and 99.967%. (The earlier arXiv v1 reported $4.8(6)\times10^{-4}$ for SPAM.) The Helios results were published in Nature in 2026 (Ransford et al., doi:10.1038/s41586-026-10676-4). In 2026, the same Helios hardware was used to demonstrate encoded computations with 48 to 94 logical qubits using high-rate iceberg codes (Dasu et al. 2026).
 
 ## Hamiltonian
 
@@ -46,7 +51,7 @@ where $A_{\mathrm{hfs}}$ is the magnetic-dipole hyperfine constant, $\mathbf I$ 
 
 $$\Delta E_{\mathrm{hfs}} = h\times 8.037\,\mathrm{GHz}.$$
 
-At zero field, the $m_F=0 \leftrightarrow m_F=0$ transition is a true clock transition with no first-order Zeeman shift. Helios operates instead at a finite bias field of about $3.95\,\mathrm{G}$, where the qubit remains an approximate clock transition with second-order magnetic sensitivity; the paper quotes a second-order coefficient of $488.8\,\mathrm{Hz/G^2}$ at zero field. State preparation and measurement are implemented by coherently mapping the $|F=1,m_F=0\rangle$ state into the metastable $5D_{5/2}$ manifold with 1762 nm pulses, followed by fluorescence detection on the 493/650 nm cycling transitions.
+At zero field, the $m_F=0 \leftrightarrow m_F=0$ transition is a true clock transition with no first-order Zeeman shift. Helios operates instead at a finite bias field of about $3.95\,\mathrm{G}$. The dominant low-field Breit--Rabi shift relative to zero field is quadratic, with a quoted coefficient of $488.8\,\mathrm{Hz/G^2}$; therefore the transition has a nonzero local slope with respect to small field fluctuations about the finite operating point, even though Helios describes the states as approximate clock states. State preparation and measurement are implemented by coherently mapping the $|F=1,m_F=0\rangle$ state into the metastable $5D_{5/2}$ manifold with 1762 nm pulses, followed by fluorescence detection on the 493/650 nm cycling transitions.
 
 ## Motivation
 
@@ -64,7 +69,7 @@ The species is especially compelling inside a QCCD architecture. In Helios, $^{1
 **Large-scale processor deployment — Ransford et al. (2025/2026):**
 - Introduced Helios, a 98-qubit QCCD processor using $^{137}\mathrm{Ba}^+$ hyperfine qubits as data qubits.
 - Co-trapped $^{171}\mathrm{Yb}^+$ coolant ions provide sympathetic recooling with 369 nm light.
-- Reported average infidelities of $2.5(1)\times10^{-5}$ (1Q), $7.9(2)\times10^{-4}$ (2Q), and $4.8(6)\times10^{-4}$ (SPAM).
+- The published Nature version reports average infidelities of $2.5(1)\times10^{-5}$ (1Q), $7.9(2)\times10^{-4}$ (2Q), and $3.3(5)\times10^{-4}$ (standard SPAM); the earlier arXiv v1 gave $4.8(6)\times10^{-4}$ for SPAM.
 - Used a four-way X junction, rotatable storage ring, and 8 parallel operation zones for all-to-all connectivity via transport.
 - Published in Nature in 2026: [doi:10.1038/s41586-026-10676-4](https://doi.org/10.1038/s41586-026-10676-4).
 
@@ -76,21 +81,23 @@ The species is especially compelling inside a QCCD architecture. In Helios, $^{1
 **High-dimensional qudit control (2026):**
 - In a separate line of work, a single $^{137}\mathrm{Ba}^+$ ion was operated as a 25-level qudit, with heralded state preparation and measurement fidelity of 99.51%.
 - Demonstrates the rich Hilbert space accessible within the $^{137}\mathrm{Ba}^+$ hyperfine and Zeeman manifold beyond the standard two-level qubit encoding.
+- Published as Low et al., Nature Communications 17, 7098 (2026), [doi:10.1038/s41467-026-72662-8](https://doi.org/10.1038/s41467-026-72662-8).
 
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| Hyperfine splitting | 8.037 GHz | $|F=1,m_F=0\rangle \leftrightarrow |F=2,m_F=0\rangle$ clock transition | [Dietrich et al. 2010](https://doi.org/10.1103/PhysRevA.81.052328) |
+| Hyperfine splitting | 8.037 GHz | $\lvert F=1,m_F=0\rangle \leftrightarrow \lvert F=2,m_F=0\rangle$ clock transition | [Dietrich et al. 2010](https://doi.org/10.1103/PhysRevA.81.052328) |
 | 1Q gate fidelity | 99.9975% | Helios zone-averaged benchmark | [Ransford et al. 2025/2026](https://doi.org/10.1038/s41586-026-10676-4) |
 | 2Q gate fidelity | 99.921% | Native $R_{ZZ}(\pi/2)$ / MS-family entangling benchmark on Helios | [Ransford et al. 2025/2026](https://doi.org/10.1038/s41586-026-10676-4) |
-| SPAM fidelity | 99.952% | From average infidelity $4.8(6)\times10^{-4}$ | [Ransford et al. 2025/2026](https://doi.org/10.1038/s41586-026-10676-4) |
+| SPAM fidelity | 99.967% | Published standard-SPAM average; infidelity $3.3(5)\times10^{-4}$ | [Ransford et al. 2026](https://doi.org/10.1038/s41586-026-10676-4) |
 | 1Q/2Q gate wavelength | 515 nm | Raman beam pairs separated by the qubit splitting | [Ransford et al. 2025/2026](https://doi.org/10.1038/s41586-026-10676-4) |
 | Cooling / detection | 493 nm | $6S_{1/2} \to 6P_{1/2}$ fluorescence transition | [Dietrich et al. 2010](https://doi.org/10.1103/PhysRevA.81.052328) |
 | Repump wavelength | 650 nm | Clears population from $5D_{3/2}$ during fluorescence cycle | [Dietrich et al. 2010](https://doi.org/10.1103/PhysRevA.81.052328) |
 | Shelving wavelength | 1762 nm | Coherent mapping to the $5D_{5/2}$ manifold for readout | [Dietrich et al. 2010](https://doi.org/10.1103/PhysRevA.81.052328) |
 | Bias field (Helios) | 3.95 G | Approximate clock-state operation point | [Ransford et al. 2025/2026](https://doi.org/10.1038/s41586-026-10676-4) |
 | Logical qubits demonstrated | 48–94 | High-rate iceberg-code benchmarks on Helios | [Dasu et al. 2026](https://arxiv.org/abs/2602.22211) |
+| 25-level qudit SPAM fidelity | $99.51\pm0.05\%$ | Heralded average over all 25 encoded levels in one $^{137}\mathrm{Ba}^+$ ion | [Low et al. 2026](https://doi.org/10.1038/s41467-026-72662-8) |
 
 ## Scaling Considerations
 
@@ -113,11 +120,15 @@ The species is especially compelling inside a QCCD architecture. In Helios, $^{1
 ### Logical-layer milestone
 - S. Dasu et al., "Computing with many encoded logical qubits beyond break-even," [arXiv:2602.22211 (2026)](https://arxiv.org/abs/2602.22211)
 
+### High-dimensional qudit control
+- P. J. Low, N. C. F. Zutt, G. A. Tathed, and C. Senko, "Quantum logic operations and algorithms in a single 25-level atomic qudit," [Nature Communications 17, 7098 (2026)](https://doi.org/10.1038/s41467-026-72662-8)
+
 ## Linked Papers
 
 - [[dietrich-2010-barium-hyperfine-qubit]]
 - [[ransford-2025-helios-98-qubit]]
 - [[dasu-2026-many-encoded-logical-qubits]]
+- [[low-2026-25-level-barium-qudit]]
 
 ## Related Entries
 

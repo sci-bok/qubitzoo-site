@@ -1,0 +1,42 @@
+{
+  "artifact": {
+    "media_type": "image/png",
+    "path": "barium-137-ion-qubit-figure.png",
+    "sha256": "8907c550e4480969cc3c747d88437ce0ff720ef27acb906d89b3ca6e19115fb8"
+  },
+  "artifact_role": "primary",
+  "blueprint": {
+    "media_type": "image/png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/tmp/barium-137-blueprint.png",
+    "role": "physics-blueprint",
+    "sha256": "578efa19d91d1a353b603750bda3fb1d0e8802dc168f5f61b8151833262fa316",
+    "strict": true
+  },
+  "entry_slug": "barium-137-ion-qubit",
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/barium-137-ion-qubit-figure-20260915T141728848707Z.png",
+    "supersedes_file": "barium-137-ion-qubit-figure.png"
+  },
+  "renderer": {
+    "name": "nano-banana-2",
+    "provider": "Google AI Studio",
+    "requested_model": "google/gemini-3.1-flash-image-preview",
+    "returned_model": "google/gemini-3.1-flash-image-preview"
+  },
+  "request": {
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-09-15T14:17:28.848707+00:00",
+    "id": "gen-1789481832-jjCTFCmbZ5OHF5XEDRHD",
+    "image_size": "2K",
+    "prompt_sha256": "3ba12dfccb2d3d60689d0b4804dbe59f1be89d26eadbf2a9d7829f1b5fe30be6",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
+  },
+  "review": {
+    "notes": "Approved after full-resolution image-tool review. Rich explanatory plate passes central physics: F=2 above F=1 with five/three sublevel ticks; unique |1>=|F=2,mF=0> and |0>=|F=1,mF=0> states separated by 8.037 GHz; 1762 nm shelves |0> to dark 5D5/2 while |1> remains bright in 6S1/2 under 493/650 nm; 515 nm Raman control; Helios storage ring, X junction, two operation regions with eight total zones, 137Ba+ data, 171Yb+ coolant, and 98-qubit all-to-all-by-transport context. No unsupported equations or numerical claims. Minor awkward brace wording is ancillary.",
+    "reviewed_at": "2026-09-15T14:18:21.756463+00:00",
+    "reviewer": "scibok-deep-audit-2026-09-15",
+    "status": "passed"
+  },
+  "schema_version": 1
+}
