@@ -2,19 +2,19 @@
   "artifact": {
     "media_type": "image/png",
     "path": "nuclear-magnetic-resonance-qubit-figure.png",
-    "sha256": "eb6590387e63d9128cfbb5e5de04ca2778d27f377536e2c9f1ed6f2b4469cfe6"
+    "sha256": "2504368458480e5d54f56cd84a86a84e7617c188de4f1ea95539b1d0b3020e29"
   },
   "artifact_role": "primary",
   "blueprint": {
     "media_type": "image/png",
-    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/tmp/style-audit-blueprints-2026-08-05/nuclear-magnetic-resonance-qubit-blueprint.png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/nuclear-magnetic-resonance-qubit-figure-20260916T140949100343Z.png",
     "role": "physics-blueprint",
-    "sha256": "2c040640d4c49d0768b2f75243a07e06178c1c308c32d9c606cd3c9f38cda125",
-    "strict": false
+    "sha256": "04831a1644357ce0c5f17c58086e52c27b3e96a1164ebfa622cd78afaa4ee1fe",
+    "strict": true
   },
   "entry_slug": "nuclear-magnetic-resonance-qubit",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/nuclear-magnetic-resonance-qubit-figure-20260805T121943380836Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/nuclear-magnetic-resonance-qubit-figure-20260916T141107397519Z.png",
     "supersedes_file": "nuclear-magnetic-resonance-qubit-figure.png"
   },
   "renderer": {
@@ -25,17 +25,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-05T12:19:43.380836+00:00",
-    "id": "gen-1785932369-GErKmnWtHgCZJKePjixl",
+    "generated_at": "2026-09-16T14:11:07.397519+00:00",
+    "id": "gen-1789567854-7VohQRmmMNKk84BvX7Nq",
     "image_size": "1K",
-    "prompt_sha256": "d81a31853d4bdf310b9e08bd3d9dad2a0d5dc038af09ec939686e0edb14bacef",
+    "prompt_sha256": "756440c46c5f791fee8996a4fb176861ab15c5357aaa8631369f69b4250d7465",
     "source_media_type": "image/jpeg",
     "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Rich liquid-state NMR apparatus with correct RF control, scalar J coupling, FID readout, and historical context.",
-    "reviewed_at": "2026-08-05T12:35:45.958764+00:00",
-    "reviewer": "Codex corpus visual/physics audit 2026-08-05",
+    "notes": "Passed strict full-resolution independent review. Rich four-panel explanatory plate preserves correct positive-gamma 1H/13C level ordering, RF/refocusing plus timed scalar-J controlled-phase mechanism, effective-not-purified pseudo-pure-state semantics, and ensemble FID-to-spectrum readout. No blocking central-physics or critical-label defects found.",
+    "reviewed_at": "2026-09-16T14:11:44.444867+00:00",
+    "reviewer": "Codex daily deep audit 2026-09-16",
     "status": "passed"
   },
   "schema_version": 1

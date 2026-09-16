@@ -10,7 +10,7 @@ authors:
 year: 2001
 journal: Nature
 volume: "414"
-pages: "883-886"
+pages: "883-887"
 doi: 10.1038/414883a
 arxiv: "quant-ph/0112176"
 entry_type: reference
