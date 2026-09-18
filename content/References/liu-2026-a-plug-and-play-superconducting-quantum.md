@@ -9,14 +9,14 @@ authors:
 - Hao Wu
 - Xiangyu Ren
 - Zhengqi Niu
-- Wangpeng Gao
+- Wanpeng Gao
 - Chenluo Zhang
 - Pei Huang
 - Yu Wu
 - Liliang Ying
 - Wei Peng
 - Jaw-Shen Tsai
-- Zhirong Lin
+- Zhi-Rong Lin
 year: 2026
 journal: arXiv preprint
 doi: null

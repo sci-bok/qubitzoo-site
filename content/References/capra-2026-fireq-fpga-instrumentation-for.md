@@ -8,7 +8,7 @@ authors:
 - Andrea De Simone
 - Deborah Volpe
 - Angelo Nucciotti
-- Roldolfo Carobene
+- Rodolfo Carobene
 - Claudio Gatti
 - Andrea Giachero
 - Fabrizio Riente

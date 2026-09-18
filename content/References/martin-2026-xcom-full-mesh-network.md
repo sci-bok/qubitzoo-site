@@ -8,8 +8,8 @@ authors:
 - Neal Wilcer
 - Sho Uemura
 - Sara Sussman
-- David I Schuster
 - Gustavo Cancelo
+- David I Schuster
 year: 2026
 journal: arXiv preprint
 doi: null
