@@ -72,6 +72,8 @@ Polarization qubits are a mature quantum-communication encoding. Crespi et al. d
 
 - [[erasure-error-vs-pauli-error]] — photon loss is often detectable and should not be modeled as an anonymous Pauli error.
 - [[threshold-theorem]] — explains why probabilistic gates require architectural overhead rather than invalidating scalability outright.
+- [[coherence-time-hierarchy]] — decoherence is dominated by environment-induced birefringence and polarization-mode dispersion, which drive differential phase drift between $H$ and $V$; this is a dephasing problem, not a $T_1$ relaxation problem, and is why time-bin transport outlasts polarization on long fibers.
+- [[noise-bias-and-asymmetric-error-channels]] — uncontrolled birefringence biases the residual in-codespace error toward a $Z$-like phase channel in the $H$/$V$ basis while photon loss remains a separate flagged erasure, giving a naturally asymmetric error model.
 
 ## Related Entries
 

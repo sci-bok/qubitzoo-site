@@ -3,7 +3,7 @@ title: Photonic MOC
 type: moc
 technology_family: Photonic
 note_count: 9
-last_updated: '2026-09-01'
+last_updated: '2026-09-17'
 generated_by: pipeline-moc-v1
 ---
 
@@ -68,6 +68,20 @@ The two layers are composable rather than mutually exclusive. Use the row to cho
 | [[continuous-variable-photonic-qubit]] | Do not route through discrete single-photon KLM by default; Gaussian mode transformations are deterministic but not universal alone | CV cluster states are native, with non-Gaussian resources or [[bosonic-code-hierarchy|bosonic encodings]] needed for fault tolerance | Keep separate from the discrete-qubit fusion branch unless a specific hybrid or GKP construction supplies the bridge |
 
 [[photonic-qubit]] does not occupy one cell: it is the carrier-level umbrella above the matrix. Likewise, [[linear-optical-photonic-qubit]], [[photonic-cluster-state-mbqc-qubit]], and [[fusion-based-photonic-qubit]] label columns rather than alternative encodings. This prevents a category error such as asking whether “dual rail or fusion based” is the better qubit—the former chooses a Hilbert-space encoding, while the latter chooses a resource-building architecture.
+
+## CV scale-claim ladder
+
+Mode count, graph geometry, computational universality, fault tolerance, and photonic integration are separate achievements in [[continuous-variable-photonic-qubit]]. Route a CV result by the strongest claim its evidence actually supports:
+
+| Evidence rung | What the result establishes | Representative milestone in the vault | What it does **not** establish |
+|---|---|---|---|
+| Long-lived Gaussian resource generation | Squeezing and entanglement can be sustained across a very long time-multiplexed train | More than one million 1D modes in [[yoshikawa-2016-one-million-mode-cv-cluster-state]] | A 1D wire is not by itself a universal MBQC resource, and mode count does not measure logical circuit depth |
+| Universal resource-state geometry | The experiment generated a 2D cluster graph compatible with universal measurement patterns | 6,200-mode 2D cluster state in [[asavanant-2019-2d-cv-cluster-state]] | Gaussian homodyne processing alone still does not supply the non-Gaussian ingredient required for universal quantum computation |
+| Non-Gaussian computational universality | A cubic-phase operation, suitable non-Gaussian measurement, or encoded non-Gaussian ancilla closes the Gaussian toolbox's universality gap | The requirement articulated in [[menicucci-2006-cv-cluster-state]] and the GKP route mapped by [[bosonic-code-hierarchy]] | Universality is not fault tolerance; finite-energy states, loss, and accumulated displacement noise still set an error budget |
+| Fault-tolerant logical operation | Finite-squeezing noise is discretized and corrected below a stated threshold under explicit loss and detector assumptions | The threshold architecture in [[menicucci-2014-fault-tolerant-cv-cluster-states]] | A threshold proposal does not show that the required squeezing, non-Gaussian states, and repeated correction have been integrated at scale |
+| Integrated subsystem | Sources, interferometers, entangling operations, and homodyne readout coexist on one photonic chip | Four-qumode monolithic stack in [[jia-2026-monolithic-cv-cluster-state-integration]] | Component co-integration at small scale does not inherit the million-mode result or demonstrate a fault-tolerant logical qubit |
+
+Read this ladder vertically rather than as a single leaderboard. The million-mode experiment is strongest evidence for temporal-mode generation and phase stability; the 2D experiment advances resource geometry; the four-mode chip advances integration. None can substitute for the non-Gaussian, finite-squeezing error-correction layer. Use [[threshold-theorem]] for the final systems claim and [[bosonic-code-hierarchy]] for the GKP bridge from analog quadrature noise to a protected logical qubit.
 
 ## When photonic loss is actually an erasure
 

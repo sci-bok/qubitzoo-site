@@ -113,6 +113,8 @@ where $\omega_r$ is the resonator frequency, $\omega_q$ the qubit frequency, and
 - [[czartowski-2026-energetic-costs-of-subspace]]
 - [[shen-2026-the-resource-cost-of]]
 - [[min-2026-direct-cultivation-of-entangled]]
+- [[li-2026-qubit-based-benchmarking-of-inp]]
+- [[hoefler-2026-quantum-computers-will-not]]
 
 ## Evergreen context
 

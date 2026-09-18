@@ -3,7 +3,7 @@ title: Molecular MOC
 type: moc
 technology_family: Molecular
 note_count: 3
-last_updated: '2026-09-09'
+last_updated: '2026-09-16'
 generated_by: pipeline-moc-v1
 ---
 
@@ -64,6 +64,17 @@ The [[molecular-qubit]] branch now contains several experimental regimes that sh
 Read these as complementary rungs rather than a performance leaderboard: ensemble $T_2$, single-molecule $T_1$, optical contrast, and exchange times measure different parts of the processor stack. The next decisive evidence is not another isolated record but a repeatable experiment combining local initialization, coherent interaction, and qubit-specific readout in one architecture.
 
 The three branches should remain separate in comparisons: chemistry-designed spin registers, trapped polar rotors, and ensemble NMR solve different problems and have radically different scaling limits.
+
+### NMR evidence-routing guardrail
+
+Liquid-state [[nuclear-magnetic-resonance-qubit|NMR]] remains scientifically useful, but its demonstrations must be routed by what they actually establish:
+
+1. **Compiled Grover and Shor experiments** established that coherent pulse sequences could realize small quantum algorithms; they did not establish scalable state preparation or molecule-resolved measurement.
+2. **The 12-spin control benchmark** established unusually deep, calibrated control of an ensemble spin Hamiltonian; the pseudo-pure-state signal cost still grows exponentially with register size.
+3. **Modern superchannel, exceptional-point, and recovery-map experiments** establish NMR as a precise protocol and open-system simulation testbed; they are not renewed evidence for NMR as a scalable digital processor.
+4. **The missing rung** is an architecture with efficient pure-state initialization, single-shot qubit-specific readout, and repeatable mid-circuit feedback. No increase in pulse sophistication alone supplies that rung.
+
+This separates **control complexity** from **processor scalability**. Route pulse design, refocusing, and protocol demonstrations toward [[cross-platform-moc]] and [[classical-control]]; keep pseudo-pure preparation, ensemble readout, and the scaling judgment in this MOC.
 
 ## Cross-family boundary routing
 

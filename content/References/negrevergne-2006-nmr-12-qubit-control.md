@@ -1,16 +1,6 @@
 ---
 title: "Benchmarking Quantum Control Methods on a 12-Qubit System"
-authors:
-- C. Negrevergne
-- T. S. Mahesh
-- C. A. Ryan
-- M. Ditty
-- F. Cyr-Racine
-- W. Power
-- N. Boulant
-- T. Havel
-- D. G. Cory
-- R. Laflamme
+authors: [C. Negrevergne, T. S. Mahesh, C. A. Ryan, M. Ditty, F. Cyr-Racine, W. Power, N. Boulant, T. Havel, D. G. Cory, R. Laflamme]
 year: 2006
 journal: Physical Review Letters
 volume: "96"

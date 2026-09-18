@@ -1,9 +1,6 @@
 ---
 title: "Non-Markovian exceptional points by interpolating quantum channels"
-authors:
-- Wai Chun Wong
-- Bei Zeng
-- Jensen Li
+authors: [Wai Chun Wong, Bei Zeng, Jensen Li]
 year: 2026
 journal: npj Quantum Information
 volume: "12"

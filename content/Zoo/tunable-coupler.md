@@ -119,6 +119,8 @@ Fixed-frequency transmon qubits coupled by fixed capacitors suffer from always-o
 - [[arute-2019-supremacy-programmable-superconducting]]
 - [[barends-2013-xmon]]
 - [[guo-2026-entangling-superconducting-qubits-via]]
+- [[jin-2026-a-double-resonator-coupler-for]]
+- [[xu-2026-remote-adiabatic-controlled-z-gate]]
 
 ## Evergreen context
 

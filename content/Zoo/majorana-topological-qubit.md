@@ -122,6 +122,7 @@ which motivates long wires and hard-gap devices for robust parity protection.
 - [[pientka-2017-planar-jj]]
 - [[chang-2026-half-a-qubit-an]]
 - [[hance-2026-why-three-a-two-level]]
+- [[cespedes-2026-geometric-quantifier-of-the]]
 
 ## Related Entries
 

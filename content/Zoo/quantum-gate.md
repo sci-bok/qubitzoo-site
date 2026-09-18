@@ -40,7 +40,7 @@ A quantum gate is a **physical operation** that implements a unitary transformat
 
 **Single-qubit gates** rotate the Bloch vector about arbitrary axes and are typically the highest-fidelity operations on any platform. Physically, they correspond to resonant or near-resonant driving of the qubit transition (e.g., $\hat{H} = \frac{\Omega(t)}{2}\hat{\sigma}_x$ for a Rabi drive with envelope $\Omega(t)$).
 
-**Two-qubit entangling gates** (CNOT, CZ, $\sqrt{\text{iSWAP}}$, etc.) create entanglement by exploiting a controllable interaction between qubits — capacitive coupling, shared motional modes, exchange interaction, or dipolar Rydberg blockade. These are typically the fidelity-limiting operations and the primary bottleneck for fault-tolerant quantum computing.
+**Two-qubit entangling gates** (CNOT, CZ, $\sqrt{\text{iSWAP}}$, etc.) create entanglement by exploiting a controllable interaction between qubits — capacitive coupling, [[motional-mode-coupling-in-ion-traps|shared motional modes]], exchange interaction, or dipolar [[rydberg-blockade-mechanism|Rydberg blockade]]. These are typically the fidelity-limiting operations and the primary bottleneck for fault-tolerant quantum computing.
 
 ## Physical Implementations by Platform
 
@@ -75,7 +75,7 @@ Gate times are $\sim 0.1{-}10\,\mu\text{s}$ depending on driving mechanism and R
 
 **Single-qubit gates** use global or site-selective Raman transitions between hyperfine ground states of alkali atoms ($^{87}\text{Rb}$, $^{133}\text{Cs}$) held in optical tweezer arrays. Gate times are $\sim 1{-}10\,\mu\text{s}$.
 
-**Two-qubit gates** exploit the **Rydberg blockade**: when one atom is excited to a Rydberg state ($n \sim 50{-}100$), the strong dipole–dipole interaction ($\sim \text{GHz}$ at $\mu\text{m}$ separations) shifts the doubly-excited state out of resonance, implementing a conditional phase (CZ) gate. Gate times are $\sim 0.1{-}1\,\mu\text{s}$.
+**Two-qubit gates** exploit the [[rydberg-blockade-mechanism|Rydberg blockade]]: when one atom is excited to a Rydberg state ($n \sim 50{-}100$), the strong dipole–dipole interaction ($\sim \text{GHz}$ at $\mu\text{m}$ separations) shifts the doubly-excited state out of resonance, implementing a conditional phase (CZ) gate. Gate times are $\sim 0.1{-}1\,\mu\text{s}$.
 
 ### Photonic Qubits
 
@@ -157,6 +157,8 @@ Gate infidelity $1 - F$ arises from several distinct physical mechanisms:
 - [[tunable-coupler]] — mediates high-fidelity 2Q gates in SC processors
 - [[cirac-zoller-gate]] — original trapped-ion 2Q gate proposal
 - [[molmer-sorenson-gate]] — workhorse trapped-ion entangling gate
+- [[motional-mode-coupling-in-ion-traps]] — the shared phonon bus underlying MS, Cirac-Zoller, and LS gates
+- [[rydberg-blockade-mechanism]] — the physical mechanism behind Rydberg-mediated entangling gates
 - [[dual-rail-photonic-qubit]] — photonic encoding for linear-optical gates
 - [[linear-optical-photonic-qubit]] — KLM-scheme photonic gates
 - [[exchange-only-qubit]] — all-exchange spin qubit gates

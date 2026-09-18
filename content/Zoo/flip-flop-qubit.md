@@ -163,7 +163,7 @@ The flip-flop qubit addresses the central scaling bottleneck of silicon donor qu
 
 - [[charge-noise-sweet-spot]] — the donor-interface orbital creates both the useful electric dipole and the main electric-noise exposure.
 - [[resonator-as-quantum-bus]] — covers the proposal's route from hundreds-of-nanometres dipole coupling to longer-range microwave links.
-- [[sqrt-swap-as-universal-gate]] — supplies the gate-level context for the predicted $\sqrt{i\mathrm{SWAP}}$ operation.
+- [[sqrt-swap-as-universal-gate]] — use only for its explicit SWAP-versus-iSWAP boundary: the predicted flip-flop entangler comes from projected dipolar XY coupling and is $\sqrt{i\mathrm{SWAP}}$, not the isotropic-exchange $\sqrt{\mathrm{SWAP}}$ primitive.
 
 ## Related Entries
 

@@ -1,14 +1,6 @@
 ---
 title: "Experimental simulation of quantum superchannels"
-authors:
-- Hang Li
-- Kai Wang
-- Shijie Wei
-- Fan Yang
-- Xinyu Chen
-- Barry C. Sanders
-- Dong-Sheng Wang
-- Gui-Lu Long
+authors: [Hang Li, Kai Wang, Shijie Wei, Fan Yang, Xinyu Chen, Barry C. Sanders, Dong-Sheng Wang, Gui-Lu Long]
 year: 2024
 journal: New Journal of Physics
 volume: "26"

@@ -1,6 +1,6 @@
 {
   "schema": "qubitzoo.genealogy.v1",
-  "generated_at": "2026-09-11T14:00:08.904560+00:00",
+  "generated_at": "2026-09-18T14:00:12.532543+00:00",
   "nodes": [
     {
       "id": "0-pi-qubit",
@@ -1468,6 +1468,14 @@
     {
       "source": "nuclear-magnetic-resonance-qubit",
       "target": "spin-qubit"
+    },
+    {
+      "source": "nuclear-magnetic-resonance-qubit",
+      "target": "molecular-qubit"
+    },
+    {
+      "source": "nuclear-magnetic-resonance-qubit",
+      "target": "classical-control"
     },
     {
       "source": "rydberg-neutral-atom-qubit",

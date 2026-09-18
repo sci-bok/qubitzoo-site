@@ -111,6 +111,8 @@ $$H_{2q} = J(t)\,\mathbf{S}_1\cdot\mathbf{S}_2$$
 - [[valvo-2026-light-hole-spin-qubits-in]]
 - [[tan-2026-strain-tunable-spin-relaxation-in]]
 - [[medeiros-2026-spin-to-polarization-mapping-with-a]]
+- [[wang-2026-chiral-classical-and-quantum]]
+- [[orekhov-2026-coherent-and-ultra-low-power-edsr]]
 
 ## Evergreen context
 

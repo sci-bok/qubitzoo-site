@@ -72,6 +72,8 @@ Lu et al. demonstrated fully arbitrary control of frequency-bin qubits in 2020. 
 
 - [[erasure-error-vs-pauli-error]] — optical loss remains the dominant fault channel even when control occurs in frequency space.
 - [[quantum-hardware]] — the encoding is inseparable from the bandwidth, loss, and calibration limits of electro-optic hardware.
+- [[coherence-time-hierarchy]] — because both spectral modes share one spatial path, the usable coherence window is set by inter-bin relative phase stability (drive coherence, path-length drift) rather than intrinsic $T_1$/$T_2$ storage; the relevant metric is interferometric visibility, not relaxation.
+- [[noise-bias-and-asymmetric-error-channels]] — the error model splits cleanly: photon loss is a flagged erasure, while spectral leakage and drive-phase drift bias the residual in-codespace noise toward dephasing — exactly the asymmetric structure photonic decoders are built to exploit.
 
 ## Related Entries
 

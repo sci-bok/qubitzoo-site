@@ -105,6 +105,7 @@ For clock-state encoding specifically, first-order magnetic sensitivity can be e
 - [[coherence-time-hierarchy]] — the clock-state pitch is fundamentally a gate-time versus storage-time advantage story
 - [[rydberg-blockade-mechanism]] — these platforms still cash out their entangling power by temporarily promoting clock-state atoms into interacting Rydberg manifolds
 - [[erasure-error-vs-pauli-error]] — alkaline-earth neutral atoms are one of the clearest routes to deliberate erasure-dominant QEC rather than plain Pauli-noise suppression
+- [[divincenzo-criteria]] — the memory/control separation enabled by clock states and state-dependent lattices is exactly the lens for testing whether a coherence-first encoding still satisfies scalable initialization, gate, and readout requirements
 
 ## Related Entries
 

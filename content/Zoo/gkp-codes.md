@@ -115,11 +115,14 @@ GKP codes protect against the dominant error channel in bosonic systems — smal
 - [[vyas-2026-homomorphic-aggregation-of-continuous-variable]]
 - [[kumar-2026-deterministic-universal-logical-gates]]
 - [[roberts-2026-bosonic-codes-from-compact]]
+- [[wadewitz-2026-probabilistic-error-cancellation-for]]
+- [[burgath-2026-spin-grid-states-for]]
 
 ## Evergreen context
 
 - [[bosonic-code-hierarchy]] — the broader map of bosonic encodings
 - [[dispersive-readout-mechanism]] — superconducting GKP experiments still cash out as repeated ancilla-assisted stabilizer readout inside a cavity-transmon stack
+- [[motional-mode-coupling-in-ion-traps]] — the shared phonon-bus coupling underlying trapped-ion GKP implementations (Flühmann et al. 2019)
 - [[threshold-theorem]] — why finite-energy GKP states matter for fault-tolerant thresholds
 - [[erasure-error-vs-pauli-error]] — clarifies what kinds of oscillator errors GKP is designed to convert and correct
 

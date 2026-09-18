@@ -184,6 +184,8 @@ Semiconductor spin qubits promise integration with existing CMOS fabrication inf
 - [[sotiropoulos-2026-photo-induced-wavelength-tuning-of]]
 - [[mcintyre-2026-one-clean-qubit-spectroscopy-of-simulated]]
 - [[huang-2026-enhancing-charge-stability-of]]
+- [[ni-2026-in-situ-quantum-optical-measurement]]
+- [[pelloux-prayer-2026-highly-uniform-first-electron-position]]
 
 ## Evergreen context
 

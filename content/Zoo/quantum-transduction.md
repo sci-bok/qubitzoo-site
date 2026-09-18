@@ -110,6 +110,9 @@ where $a_m$, $b$, $a_o$ are microwave, mechanical, and optical mode operators, a
 
 - [[divincenzo-criteria]] — transduction matters because most microwave-native qubits satisfy the computing criteria but fail the communication criteria until a stationary-to-flying qubit interface is added.
 - [[quantum-hardware]] — this is not a qubit modality by itself but a systems-level interconnect layer that turns otherwise isolated chips into modular quantum hardware.
+- [[spin-photon-interfaces-separate-emission-collection-and-wavelength-matching]] — transduction and native spin-photon emission are the two architectural paths to networking; this evergreen's three-part framework (emission quality, collection efficiency, wavelength matching) makes the comparison explicit rather than collapsing all three into a single generic "optical interface" score.
+- [[coherence-time-hierarchy]] — transduction latency and added noise must both fit within the coherence budget that the qubit and the deployed code define; the hierarchy determines whether a transduced link or a native-emission path preserves usable entanglement under realistic cryogenic and fiber constraints.
+- [[noise-bias-and-asymmetric-error-channels]] — transduction introduces thermal-photon noise that is fundamentally asymmetric relative to qubit-local relaxation and dephasing, so the systems-level error model for a distributed code must account for a noise source with a different structure than the processor-local one.
 
 ## Related Entries
 

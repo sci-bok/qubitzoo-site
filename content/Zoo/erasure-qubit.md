@@ -116,6 +116,7 @@ Quantum error correction overhead is dominated by the rate and type of physical 
 - [[erasure-error-vs-pauli-error]] — the decoder-level reason erasure-biased architectures buy disproportionate logical overhead relief
 - [[threshold-theorem]] — connects the physical erasure hierarchy back to the central below-threshold scaling question
 - [[quantum-hardware]] — helpful umbrella when comparing which hardware stacks can realistically turn dominant faults into flagged leakage instead of hidden Pauli errors
+- [[rydberg-blockade-mechanism]] — the Rydberg blockade enables the neutral-atom erasure conversion that turns gate errors into detectable atom loss (Wu et al. 2022, Scholl et al. 2023)
 
 ## Related Entries
 

@@ -101,6 +101,8 @@ These rows establish demonstrated capabilities; they are not universal platform 
 - [[ferrari-2026-robust-ion-photon-entanglement-via]]
 - [[kolar-2026-integrated-dual-resonator-architecture-for]]
 - [[cohen-2026-a-heterogeneously-integrated-coupled-cavity]]
+- [[cameron-2026-entanglement-swapping-across-a]]
+- [[wu-2026-experimental-certification-of-the]]
 
 ## References
 

@@ -173,6 +173,12 @@ State-of-the-art (as of late 2025): $T_1$ up to $1.68\,\text{ms}$ (planar, tanta
 - [[guan-2026-mitigating-capacitive-loading-enables]]
 - [[lisenfeld-2026-readout-failures-in-superconducting]]
 - [[kubo-2026-instantaneous-frame-theory-of-strongly]]
+- [[gohar-2026-the-halo-engine-mathcal-o-1-step]]
+- [[liu-2026-two-qubit-gates-for-the]]
+- [[kang-2026-quantum-simulation-of-two-dimensional]]
+- [[geisert-2026-parametric-two-qubit-gates-via]]
+- [[park-2026-an-all-van-der-waals-qubit]]
+- [[heunisch-2026-analytic-leakage-suppression-with]]
 
 ## Evergreen context
 

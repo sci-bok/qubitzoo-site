@@ -3,7 +3,7 @@ title: Semiconducting MOC
 type: moc
 technology_family: Semiconducting
 note_count: 12
-last_updated: '2026-09-06'
+last_updated: '2026-09-15'
 generated_by: pipeline-moc-v1
 ---
 
@@ -86,6 +86,14 @@ The donor entries are easiest to misread when a demonstrated local operation is 
 | [[flip-flop-qubit]] | The electron–nuclear flip-flop transition and microwave-electric one-qubit control in a single implanted donor | Gate-controlled donor–interface orbital admixture intended to create a strong electric dipole and relax donor-spacing constraints | The donor–interface ionization point, predicted 180–500 nm dipole coupling, resonator-mediated extension, and any flip-flop two-qubit gate remain undemonstrated |
 
 Use [[coherence-time-hierarchy]] to keep Kane's nuclear-memory record distinct from the coherence of an electrically hybridized flip-flop transition. Use [[charge-noise-sweet-spot]] for the flip-flop design tension: the same orbital admixture that makes long-range electrical coupling possible also imports interface-charge noise. Finally, use [[resonator-as-quantum-bus]] only for the proposed microwave extension beyond direct dipole coupling, not as evidence that the local donor–interface gate has already been realized.
+
+### Donor coupling-mechanism guardrail
+
+The donor lineage does **not** inherit one generic “exchange gate.” [[kane-qubit]] uses a J-gate to tune approximately isotropic Heisenberg exchange between neighboring donor electrons; after the electron-mediated nuclear-spin sequence is reduced to its gate primitive, [[exchange-interaction-in-quantum-dots]], [[heisenberg-exchange-in-quantum-dots]], and [[sqrt-swap-as-universal-gate]] are the relevant conceptual chain.
+
+[[flip-flop-qubit]] was proposed specifically to relax that short-range placement constraint. Donor–interface orbital admixture gives each encoded electron–nuclear transition an electric dipole, and two such qubits interact through a projected dipole–dipole **XY / flip-flop coupling**. Its predicted entangler is therefore in the $\sqrt{\mathrm{iSWAP}}$ family, not the isotropic $\sqrt{\mathrm{SWAP}}$ family. Read [[sqrt-swap-as-universal-gate]] only for its explicit SWAP-versus-iSWAP boundary, and do not route the proposed 180–500 nm coupling through the quantum-dot Heisenberg-exchange notes.
+
+This distinction matters architecturally: Kane pays atomic-placement and short-range-overlap costs to obtain exchange, whereas the flip-flop proposal deliberately borrows charge character to obtain range and then pays in interface-noise exposure. Similar gate names do not make those coupling mechanisms interchangeable.
 
 ## Routing rule: when to enter which note
 

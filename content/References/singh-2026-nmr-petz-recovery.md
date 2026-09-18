@@ -1,12 +1,6 @@
 ---
 title: "Realizing the Petz recovery map on an NMR quantum processor"
-authors:
-- Gayatri Singh
-- Ram Sagar Sahani
-- Vinayak Jagadish
-- Lea Lautenbacher
-- Nadja K. Bernardes
-- Kavita Dorai
+authors: [Gayatri Singh, Ram Sagar Sahani, Vinayak Jagadish, Lea Lautenbacher, Nadja K. Bernardes, Kavita Dorai]
 year: 2026
 journal: Physical Review A
 volume: "113"

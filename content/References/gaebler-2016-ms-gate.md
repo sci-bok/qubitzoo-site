@@ -38,4 +38,3 @@ Demonstrates a universal gate set for ⁹Be⁺ hyperfine qubits with single-qubi
 - [[ytterbium-hyperfine-qubit]]
 - [[trapped-ion-qubit]]
 - [[molmer-sorenson-gate]]
-- [[beryllium-9-ion-qubit]]

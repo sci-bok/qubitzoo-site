@@ -105,11 +105,15 @@ Rydberg neutral-atom qubits combine three key advantages: (1) native all-to-all 
 - [[jung-2026-shots-to-approximate-solution-scaling-in-neutral]]
 - [[wang-2026-an-exchange-assisted-entangling-gate]]
 - [[banger-2026-finite-blockade-dynamics-of-a]]
+- [[kobayashi-2026-quantifying-the-dual-isotope-advantage]]
+- [[jin-2026-a-programmable-rydberg-quantum]]
 
 ## Evergreen context
 
 - [[rydberg-blockade-mechanism]] — the interaction mechanism behind fast neutral-atom entangling gates
 - [[coherence-time-hierarchy]] — useful for comparing hyperfine memory versus Rydberg-state gate timescales
+- [[erasure-error-vs-pauli-error]] — erasure conversion is why atom loss and Rydberg leakage in the Bluvstein 2024 logical processor become a strategic advantage rather than a plain error burden
+- [[threshold-theorem]] — the 48-logical-qubit processor demonstration is precisely an empirical probe of below-threshold operation on reconfigurable atom arrays
 
 ## Related Entries
 

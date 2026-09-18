@@ -58,6 +58,7 @@ Qubit operations (gates, initialization, dynamical decoupling, mid-circuit measu
 - [[quantum-hardware]] treats control electronics as part of the machine, not just lab scaffolding, because usable qubits only matter if compiled programs can reach them as calibrated, deterministic waveforms.
 - [[divincenzo-criteria]] makes the dependency explicit: universal gates, reliable state preparation, and qubit-specific measurement all fail in practice if the classical stack cannot synthesize, synchronize, and condition the required signals.
 - [[threshold-theorem]] turns classical latency into a fault-tolerance constraint, since mid-circuit measurement and decoder feedback are only useful if the control system can react before accumulated errors erase the syndrome value.
+- [[coherence-time-hierarchy]] — classical control latency (waveform synthesis, measurement digitization, decoder processing) must fit within the coherence budget of the fastest qubit in the architecture; the hierarchy makes this dependency explicit by separating coherence into distinct timescales and noise floors.
 
 ## Scaling Considerations
 
@@ -106,6 +107,7 @@ Qubit operations (gates, initialization, dynamical decoupling, mid-circuit measu
 - [[berritta-2026-adaptive-spectroscopy-of-fast]]
 - [[wegmann-2026-zero-g-a-pre-decoder-aware-decoder]]
 - [[capra-2026-fireq-fpga-instrumentation-for]]
+- [[huszabianlou-2026-error-bounded-fixed-point-design-of]]
 
 ## Related Entries
 
