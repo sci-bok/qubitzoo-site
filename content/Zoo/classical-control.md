@@ -16,10 +16,10 @@ keywords:
   - synchronization
   - room-temperature electronics
 influence_score: 0.65
-last_updated: '2026-09-18'
+last_updated: '2026-09-19'
 generated_by: scibok-curation
 extracted_by: manual
-verified_by: codex-daily-audit-2026-09-18
+verified_by: codex-daily-audit-2026-09-19
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/classical-control-figure.provenance.json"
@@ -86,6 +86,11 @@ Calibration and digital predistortion seek an inverse filter $g$ such that $g*h\
 - A hardware-integrated FPGA neural-network decoder demonstrated real-time distance-3 surface-code correction on a superconducting processor.
 - The deterministic closed-loop latency was 550 ns, including 124 ns for decoding, within a 1.25 $\mu$s QEC cycle.
 
+**Open-source QEC control stack — Liu et al. (2026):**
+- A three-board ZCU216 RFSoC prototype built on RISC-Q integrated pulse control, syndrome aggregation, network communication, decoding, and feedback distribution.
+- The measured distance-3 decoding-feedback path took 446 ns. The prototype was hardware-tested but not coupled to a live qubit processor, so this is a control-stack latency result rather than an experimental QEC cycle.
+- Sub-microsecond performance through distance 21 (about 881 physical qubits) was an extrapolation from measured subsystems, not a demonstrated processor-scale result.
+
 **Direct-RF control and calibration — La Capra et al. and Huszabianlou et al. (2026):**
 - FIREQ generated and acquired direct-RF signals up to 9.3 GHz, with 107 ps pulse-duration resolution and 1.7 ns event-timing resolution on a ZCU216 RFSoC.
 - A QubiC fixed-point FIR/IIR predistortion cascade operated at a 500 MHz fabric clock for 1 GS/s flux lines and added 162 ns latency, making the control-transfer function an explicit hardware-design constraint.
@@ -125,6 +130,7 @@ Calibration and digital predistortion seek an inverse filter $g$ such that $g*h\
 | Multi-board clock alignment | Within 100 ps | Drift-free synchronization of QICK execution clocks | [Martin et al. 2026](https://arxiv.org/abs/2603.18977) |
 | Inter-board communication latency | $<185$ ns | Deterministic all-to-all simultaneous XCOM messaging | [Martin et al. 2026](https://arxiv.org/abs/2603.18977) |
 | Closed-loop QEC latency | 550 ns | Includes 124 ns FPGA decoding inside a 1.25 $\mu$s surface-code cycle | [Yang et al. 2026](https://arxiv.org/abs/2605.04892) |
+| Prototype QEC decoding-feedback latency | 446 ns | Three-board RISC-Q/RFSoC distance-3 control-stack prototype; not connected to a live qubit processor | [Liu et al. 2026](https://arxiv.org/abs/2603.16203) |
 | RFSoC pulse-duration resolution | 107 ps | FIREQ direct-RF generation to 9.3 GHz; event timing resolution 1.7 ns | [La Capra et al. 2026](https://arxiv.org/abs/2608.29399) |
 | Millikelvin controller fidelity | 99.9% average Clifford fidelity | 10 mK controller; estimated operation energy 0.121 fJ | [Liu et al. 2026](https://arxiv.org/abs/2604.05693) |
 | Real-time flux predistortion latency | 162 ns | Representative FIR/IIR cascade at 500 MHz for 1 GS/s flux lines | [Huszabianlou et al. 2026](https://arxiv.org/abs/2609.16488) |
@@ -141,6 +147,7 @@ Calibration and digital predistortion seek an inverse filter $g$ such that $g*h\
 - V. Monarkha et al., "Comparing optical-microwave conversion and all-microwave control schemes for a transmon qubit," [arXiv:2603.18780 (2026)](https://arxiv.org/abs/2603.18780)
 - K. Liu et al., "A plug-and-play superconducting quantum controller at millikelvin temperatures enables exceeding 99.9% average gate fidelity," [arXiv:2604.05693 (2026)](https://arxiv.org/abs/2604.05693)
 - X. Yang et al., "Real-time Surface-Code Error Correction Using an FPGA-based Neural-Network Decoder," [arXiv:2605.04892 (2026)](https://arxiv.org/abs/2605.04892)
+- J. Liu et al., "A Scalable Open-Source QEC System with Sub-Microsecond Decoding-Feedback Latency," [arXiv:2603.16203 (2026)](https://arxiv.org/abs/2603.16203)
 
 ## Linked Papers
 
@@ -153,6 +160,7 @@ Calibration and digital predistortion seek an inverse filter $g$ such that $g*h\
 - [[capra-2026-fireq-fpga-instrumentation-for]]
 - [[huszabianlou-2026-error-bounded-fixed-point-design-of]]
 - [[yang-2026-real-time-surface-code-error-correction]]
+- [[liu-2026-scalable-open-source-qec-system]]
 
 ## Related Entries
 
