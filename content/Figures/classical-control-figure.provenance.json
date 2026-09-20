@@ -2,13 +2,19 @@
   "artifact": {
     "media_type": "image/png",
     "path": "classical-control-figure.png",
-    "sha256": "2af81e3f52ee20bef7cbf420804de439b484e3103d1449161406346db6de5e14"
+    "sha256": "0ec5e0395c458578788b83f11f4624ff3012af5aa51af6ab6a9ae8780543512e"
   },
   "artifact_role": "primary",
-  "blueprint": null,
+  "blueprint": {
+    "media_type": "image/png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/classical-control-figure-20260919T141314675203Z.png",
+    "role": "physics-blueprint",
+    "sha256": "75e9c3645e6360ed9f9da362404b42536c880e13a74c998e91be7791c02fd7aa",
+    "strict": false
+  },
   "entry_slug": "classical-control",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/classical-control-figure-20260805T051715106437Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/classical-control-figure-20260920T140719813366Z.png",
     "supersedes_file": "classical-control-figure.png"
   },
   "renderer": {
@@ -19,17 +25,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-05T05:17:15.106437+00:00",
-    "id": "gen-1785907018-ByrK6xIxELBKRfjP93C0",
-    "image_size": "1K",
-    "prompt_sha256": "9fedfe212b51a33ebb4c76ad0e89e75fffaf9ac2795fbbd1fc3bd0439b5e6312",
+    "generated_at": "2026-09-20T14:07:19.813366+00:00",
+    "id": "gen-1789913217-NMUwAgjQryG5qDp78OmA",
+    "image_size": "2K",
+    "prompt_sha256": "bcb837cabe14cb0d94633836cb0e75bee8d5f32ece30dbd221bfec933342468d",
     "source_media_type": "image/jpeg",
     "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Approved rich explanatory Wave 3 plate after full-resolution review. The central hardware/encoding/control/readout or infrastructure narrative is sound; minor ancillary labels and rendering artifacts are accepted under the detail-first policy.",
-    "reviewed_at": "2026-08-05T05:30:31.841333+00:00",
-    "reviewer": "Codex scientific visual audit 2026-08-05",
+    "notes": "Approved after full-resolution image-tool review: rich four-panel explanatory plate; complete continuous readout/feedback chain in correct order (10 mK resonator -> circulators/isolators -> JPA/TWPA -> 4 K HEMT -> room-temperature downconversion -> ADC -> DSP/I-Q integration -> discriminator/decoder -> one feedback sequencer -> DAC/control return); XCOM 100 ps alignment and <185 ns communication latency are correct; Yang 550 ns/124 ns/1.25 us claims remain separate; optical delivery and 10 mK controller callouts are correct. Minor ancillary spelling artifacts are non-blocking.",
+    "reviewed_at": "2026-09-20T14:08:53.941354+00:00",
+    "reviewer": "Codex scientific visual audit 2026-09-20",
     "status": "passed"
   },
   "schema_version": 1

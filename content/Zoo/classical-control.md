@@ -3,7 +3,7 @@ title: Classical Control Hardware
 entry_type: infrastructure
 technology_family: Cross-Platform
 status: demonstrated
-figure_reviewed: false
+figure_reviewed: true
 keywords:
   - control electronics
   - AWG
@@ -16,15 +16,15 @@ keywords:
   - synchronization
   - room-temperature electronics
 influence_score: 0.65
-last_updated: '2026-09-19'
+last_updated: '2026-09-20'
 generated_by: scibok-curation
 extracted_by: manual
-verified_by: codex-daily-audit-2026-09-19
+verified_by: codex-daily-audit-2026-09-20
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/classical-control-figure.provenance.json"
-figure_reviewed_by: "Codex scientific visual audit 2026-08-05"
-figure_reviewed_at: "2026-08-05T05:30:31.841333+00:00"
+figure_reviewed_by: "Codex scientific visual audit 2026-09-20"
+figure_reviewed_at: "2026-09-20T14:08:53.941354+00:00"
 ---
 
 ## Figure
