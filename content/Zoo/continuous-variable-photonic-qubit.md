@@ -38,7 +38,9 @@ The CV approach is fundamentally distinct from discrete-variable photonic encodi
 
 Gaussian operations alone are not universal. Universal CV quantum computation requires a suitable non-Gaussian gate, measurement, or ancilla, such as a cubic-phase resource, photon-number-resolving detection used for conditional state preparation, or a GKP state. Photon subtraction is a useful non-Gaussian state-engineering primitive, but is not by itself interchangeable with a deterministic cubic-phase gate. In practice, scalable non-Gaussian resource preparation, finite-squeezing noise, and optical loss are the main obstacles separating impressive Gaussian demonstrations from fully fault-tolerant quantum computing.
 
-CV photonics has nevertheless achieved striking scale. Yokoyama et al. (2013) generated time-multiplexed one-dimensional CV cluster states with more than 10,000 modes; Yoshikawa et al. (2016) then extended the same architecture beyond one million sequential modes using continuous phase-feedback control. Asavanant et al. (2019) demonstrated a two-dimensional CV cluster state with 6,200 modes for universal measurement-based computation once the required non-Gaussian resource and adaptive control are supplied. In 2025, Roh et al. demonstrated deterministic one-, two-, and three-dimensional cluster-state connectivities in time-frequency modes, while Wang et al. generated programmable one- and two-dimensional cluster quantum microcombs containing as many as 60 qumodes on a microresonator. Larsen et al. also demonstrated an integrated optical source of GKP states, although further loss reduction is still required for fault-tolerant operation. Jia et al. (2026) subsequently reported monolithic on-chip generation, manipulation, and balanced-homodyne measurement of four-qumode CV cluster states on a Si$_3$N$_4$ photonic integrated circuit. Together these results show complementary progress in graph connectivity, on-chip mode count, non-Gaussian resources, and full-system integration.
+CV photonics has nevertheless achieved striking scale. Yokoyama et al. (2013) generated time-multiplexed one-dimensional CV cluster states with more than 10,000 modes; Yoshikawa et al. (2016) then extended the same architecture beyond one million sequential modes using continuous phase-feedback control. Asavanant et al. (2019) demonstrated a two-dimensional CV cluster state with 6,200 modes for universal measurement-based computation once the required non-Gaussian resource and adaptive control are supplied. In 2025, Roh et al. demonstrated deterministic one-, two-, and three-dimensional cluster-state connectivities in time-frequency modes, while Wang et al. generated programmable one- and two-dimensional cluster quantum microcombs containing as many as 60 qumodes on a microresonator. Larsen et al. also demonstrated an integrated optical source of GKP states, although further loss reduction is still required for fault-tolerant operation. Jia et al. (2026) subsequently reported monolithic on-chip generation, manipulation, and balanced-homodyne measurement of four-qumode CV cluster states on a Si$_3$N$_4$ photonic integrated circuit.
+
+Yu et al. (2026) then reported **Clavina**, a modular time-bin processor that combines a programmable Gaussian linear-optical unit with addressable inline-squeezing and measurement-induced Kerr modules. The experiment maintained cluster-state nullifier correlations below the $-3$ dB inseparability threshold across 8,000 time bins, demonstrated a physical nonlinear gate, and produced approximate one-dimensional GKP states quasi-deterministically at about 2,000 states per second. These results are complementary rather than directly rankable: million-mode experiments establish sequential cluster-state scale, microcombs and monolithic chips establish integration, while Clavina addresses the missing nonlinear-resource layer. None yet constitutes a fault-tolerant logical photonic computer.
 
 ## Hamiltonian
 
@@ -109,6 +111,12 @@ CV photonics offers several unique advantages: room-temperature optical processi
 - Integrated squeezed-light sources, interferometers, entangling operations, and homodyne components on a Si$_3$N$_4$ chip.
 - Marked a shift from bulk-optics CV experiments toward scalable photonic integrated circuits.
 
+**Extensible Gaussian-plus-nonlinear processor — Yu et al. (2026):**
+- Combined a fully programmable time-bin linear-optical unit with switchable inline-squeezing and measurement-induced Kerr modules.
+- Verified cluster-state correlations below the $-3$ dB inseparability threshold across 8,000 time bins and demonstrated a Kerr interaction with low-photon-number process fidelity $0.820 \pm 0.033$ for the reported test point.
+- Generated approximate one-dimensional optical GKP states quasi-deterministically at about 2,000 states per second using near-on-demand non-Gaussian resource injection and real-time feedforward.
+- Did not yet demonstrate a two-dimensional fault-tolerant GKP state or logical fault-tolerant computation; loss and squeezing remain limiting.
+
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
@@ -120,6 +128,9 @@ CV photonics offers several unique advantages: room-temperature optical processi
 | On-chip cluster-state scale | 60 qumodes | Programmable 1D/2D microcomb graphs; not a full processor | [Wang et al. 2025](https://doi.org/10.1038/s41377-025-01812-2) |
 | Integrated cluster-state scale | 4 qumodes on chip | Monolithic generation, control, and homodyne readout on Si$_3$N$_4$ PIC | [Jia et al. 2026](https://doi.org/10.1038/s41566-026-01868-5) |
 | Integrated non-Gaussian resource | Optical GKP state with $\geq4$ resolved peaks in both $q$ and $p$ | $3 \times 3$ negative-Wigner lattice; further loss reduction needed for fault tolerance | [Larsen et al. 2025](https://doi.org/10.1038/s41586-025-09044-5) |
+| Extensible cluster-state run | 8,000 time bins | Nullifier variances remained below the $-3$ dB inseparability threshold | [Yu et al. 2026](https://doi.org/10.1038/s41566-026-01962-8) |
+| Measurement-induced Kerr gate | $0.820 \pm 0.033$ process fidelity | Low-photon-number Fock subspace, coherent input $\alpha=0.5$, Kerr phase $\Phi=\pi/3$ | [Yu et al. 2026](https://doi.org/10.1038/s41566-026-01962-8) |
+| Quasi-deterministic GKP generation | $\sim2{,}000$ states/s | Approximate 1D GKP states; not a full 2D fault-tolerant grid state | [Yu et al. 2026](https://doi.org/10.1038/s41566-026-01962-8) |
 | Gate type | Deterministic Gaussian operations | Beam splitters, squeezers, phase shifts, displacements | [Braunstein and van Loock 2005](https://doi.org/10.1103/RevModPhys.77.513) |
 | Universality requirement | At least one suitable non-Gaussian resource | Cubic-phase or GKP ancilla; conditional PNR-enabled state preparation is another route | [Menicucci et al. 2006](https://doi.org/10.1103/PhysRevLett.97.110501) |
 | Fault-tolerance target | 20.5 dB in the original 2014 architecture | Threshold is architecture- and code-dependent; this value should not be treated as universal | [Menicucci 2014](https://doi.org/10.1103/PhysRevLett.112.120504) |
@@ -129,7 +140,7 @@ CV photonics offers several unique advantages: room-temperature optical processi
 ## Scaling Considerations
 
 - **Squeezing threshold**: finite squeezing is the central quantitative bottleneck. The cited 2014 fault-tolerance construction required 20.5 dB of initial squeezing; later architectures can shift the threshold, so no single dB value applies universally. The gap between source squeezing, delivered squeezing after loss, and code-level requirements remains a major roadblock.
-- **Non-Gaussian operations**: the Gaussian no-go theorem means that the most challenging experimental component — generating high-quality non-Gaussian states or implementing non-Gaussian gates — cannot be avoided.
+- **Non-Gaussian operations**: the Gaussian no-go theorem means that the most challenging experimental component — generating high-quality non-Gaussian states or implementing non-Gaussian gates — cannot be avoided. Clavina demonstrated a modular Kerr resource and quasi-deterministic approximate GKP generation, but its reported one-dimensional GKP state is not yet a fault-tolerant two-dimensional code state.
 - **Noise accumulation**: finite squeezing introduces additive Gaussian noise at each gate, which accumulates through deep circuits. GKP encoding provides a path to discretize the noise and apply standard error correction.
 - **Loss sensitivity**: photon loss degrades squeezed states, and loss in homodyne detection reduces measurement efficiency. Ultra-low-loss integrated photonics are needed for scaling.
 - **Hybrid approaches**: combining CV cluster states with GKP-encoded logical qubits is considered the most promising path to fault-tolerant CV quantum computing, bridging the CV and DV paradigms.
@@ -169,6 +180,9 @@ CV photonics offers several unique advantages: room-temperature optical processi
 ### Integrated photonics
 - X. Jia et al., "Monolithic integration of continuous-variable cluster-state generation, manipulation and measurement," [Nature Photonics 20, 428-436 (2026)](https://doi.org/10.1038/s41566-026-01868-5)
 
+### Extensible universal processor
+- S. Yu et al., "Extensible universal photonic quantum computing with nonlinearity," [Nature Photonics (2026)](https://doi.org/10.1038/s41566-026-01962-8)
+
 ## Linked Papers
 
 - [[lloyd-1999-quantum-computation-continuous-variables]]
@@ -182,6 +196,7 @@ CV photonics offers several unique advantages: room-temperature optical processi
 - [[wang-2025-cluster-quantum-microcombs]]
 - [[larsen-2025-integrated-photonic-gkp-source]]
 - [[jia-2026-monolithic-cv-cluster-state-integration]]
+- [[yu-2026-extensible-universal-photonic-computing]]
 
 ## Evergreen context
 
