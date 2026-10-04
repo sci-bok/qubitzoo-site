@@ -3,7 +3,7 @@ title: Cross-Platform MOC
 type: moc
 technology_family: Cross-Platform
 note_count: 10
-last_updated: '2026-08-29'
+last_updated: '2026-09-18'
 generated_by: pipeline-moc-v1
 ---
 
@@ -79,6 +79,27 @@ This distinction prevents an early algorithm demonstration from being mistaken f
 | Local quantum mode $\rightarrow$ network-compatible optical mode | An unmeasured quantum state or entanglement resource | Conversion efficiency, added noise, bandwidth, and refrigerator heat load jointly preserve useful entanglement rate | the optical carrier and computation model are already chosen; continue in [[photonic-moc]] |
 
 The classification hinge is whether measurement is allowed. A decoder loop deliberately turns quantum information into classical bits before acting back on the processor; a transducer must preserve coherence precisely because measuring at the module boundary would destroy the distributed operation. Modular fault tolerance may require both loops, but their error budgets compose differently: control latency limits how quickly local syndromes can be used, while transduction loss and noise limit how often remote checks or entanglement links succeed. Keep both costs explicit before claiming that a code with nonlocal checks is hardware-ready.
+
+## Feedback-loop budget: do not hide the boundary in one latency number
+
+A reported decoder latency is only one term in the physical correction loop. For routing purposes, decompose the end-to-end deadline as
+
+$$
+T_{\mathrm{loop}}
+=T_{\mathrm{meas}}+T_{\mathrm{capture}}+T_{\mathrm{infer}}+T_{\mathrm{decode}}+T_{\mathrm{route}}+T_{\mathrm{actuate}},
+$$
+
+with the warning that a real controller may pipeline or overlap some terms. The useful question is not whether one component is fast in isolation, but whether the sustained loop—including its jitter and worst-case tail—meets the syndrome-freshness or feed-forward deadline of the chosen protocol.
+
+| Budget term | What it includes | Primary graph route | Failure hidden by quoting only decoder time |
+|---|---|---|---|
+| $T_{\mathrm{meas}}$ | Qubit-to-pointer mapping and the integration window needed to separate states | [[qubit-readout]] and, for superconducting dispersive measurement, [[dispersive-readout-mechanism]] | The digital pipeline waits on a slow or weak physical measurement |
+| $T_{\mathrm{capture}}$ | First-stage gain, digitization, channelization, and movement of samples into programmable logic | [[classical-hardware-moc]]; [[cryogenic-amplification]] when microwave SNR is limiting | A fast decoder receives late or low-quality bits because the analog front end is the bottleneck |
+| $T_{\mathrm{infer}}+T_{\mathrm{decode}}$ | State discrimination, syndrome assembly, and inference of a correction or frame update | [[classical-control]] plus the relevant code route in [[codes-moc]] | An accelerator benchmark omits acquisition, transfer, or protocol overhead |
+| $T_{\mathrm{route}}$ | Deterministic inter-board communication, scheduling, and alignment of the decision with the target cycle | [[classical-control]] | Mean latency looks acceptable while skew, congestion, or tail latency misses deterministic deadlines |
+| $T_{\mathrm{actuate}}$ | Waveform launch, signal-chain response, and completion of the conditional operation or frame update | [[classical-control]] and the destination platform MOC | “Loop closed” means a bit was produced, not that the processor received the intended physical action |
+
+This decomposition also separates **deadline** from **throughput**. A demonstration can fit one correction inside one cycle yet still fail to sustain repeated rounds across a larger code because acquisition bandwidth, decoder scaling, or inter-board traffic grows with check count. Use [[threshold-theorem]] only after the whole loop has been mapped onto the code's repeated-cycle workload; a sub-microsecond component result is evidence about one layer, not by itself evidence of fault-tolerant operation.
 
 ## Routing rule: when to enter this family
 

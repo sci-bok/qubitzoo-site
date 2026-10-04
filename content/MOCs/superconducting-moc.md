@@ -3,7 +3,7 @@ title: Superconducting MOC
 type: moc
 technology_family: Superconducting
 note_count: 22
-last_updated: '2026-09-07'
+last_updated: '2026-09-19'
 generated_by: pipeline-moc-v1
 ---
 
@@ -109,6 +109,20 @@ The decisive transmon transition was therefore more than a coherence-record race
 - `0-pi-qubit` and `cos2phi-qubit` are the **symmetry-engineered protection branch**. Both are experimentally demonstrated, but neither yet eliminates active error correction: the cos(2φ) route strongly suppresses charge-coupled relaxation while present interference-based devices remain flux-noise limited.
 - [[bifluxon-qubit]] is the **fluxon-parity branch**, but its two experimental realizations must stay separate. The 2020 split-CPB circuit uses odd-charge Aharonov–Casher interference to suppress single-fluxon tunnelling; the 2024 bifluxon-tunnelling fluxonium uses resonant $4\pi$ phase slips between equal-parity wells at zero flux. The latter is a partially protected fluxonium, not a second-generation measurement of the same split-CPB device.
 - `dual-rail-superconducting-qubit` should sit adjacent to this branch, not inside it: the payoff is still lower logical overhead, but via flagged leakage and erasure structure rather than suppressed in-code-space matrix elements.
+
+### Protection-mechanism ledger
+
+The word *protected* hides several physically different claims. Route each branch by the resource that creates the selection rule or flat response, then keep the residual vulnerability attached to that same claim.
+
+| Branch | Protection resource | What is actually suppressed | Residual systems debt |
+|---|---|---|---|
+| [[heavy-fluxonium-qubit]] | Large phase-space mass, disjoint-support wavefunctions, and half-flux sweet-spot operation | Charge dispersion, first-order flux response at the sweet spot, and selected relaxation matrix elements | Slow/weak control can accompany the same small matrix elements; off-sweet-spot flux noise and a less mature two-qubit stack remain |
+| [[blochnium]] | Extreme-inductive Bloch-band regime: no charge island and a flattened lowest-band flux dispersion | Offset-charge sensitivity by construction and first-order flux sensitivity at the sweet spot | The large, low-loss superinductance is a fabrication burden; early echo coherence shows that duality is not the same as full passive protection |
+| [[0-pi-qubit]] | Multimode circuit symmetry and exponentially separated wavefunction support in the ideal parameter regime | Local-noise matrix elements, in principle across both relaxation and dephasing channels | Disorder and parameter spread break the symmetry, while protected control and fabrication of the required extreme circuit parameters remain difficult |
+| [[cos2phi-qubit]] | A dominant $-E_2\cos(2\phi)$ term and Cooper-pair-parity conservation; see [[cos2phi]] | Charge-coupled transitions between opposite-parity eigenstates | Residual first-harmonic terms break parity, and interference-based implementations can trade charge protection for strong flux-noise sensitivity |
+| [[bifluxon-qubit]] | Destructive Aharonov–Casher interference of single-fluxon paths at the odd-charge point | Single-fluxon tunnelling and the associated relaxation matrix element | Junction imbalance and charge-parity jumps reopen the forbidden path; full flux-dephasing protection requires a much stronger superinductive regime than the first demonstration |
+
+This ledger is a mechanism map, not a maturity ranking. A long $T_1$ in heavy fluxonium and a parity selection rule in a cos(2φ) or bifluxon device are evidence for different parts of the error budget. Compare the resulting channels through [[noise-bias-and-asymmetric-error-channels]], and compare any quoted lifetime through [[coherence-time-hierarchy]] before using it as an architectural figure of merit.
 
 ### Bifluxon evidence-routing guardrail
 

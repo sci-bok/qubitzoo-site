@@ -3,7 +3,7 @@ title: Neutral Atom MOC
 type: moc
 technology_family: Neutral Atom
 note_count: 4
-last_updated: '2026-08-20'
+last_updated: '2026-09-21'
 generated_by: pipeline-moc-v1
 ---
 
@@ -64,6 +64,20 @@ The four entries become easier to compare if storage and entanglement are treate
 | [[nuclear-spin-neutral-atom-qubit]] | Weakly magnetic nuclear-spin sublevels, typically in the $^1S_0$ ground manifold | Rydberg or clock-state manifolds are borrowed only during control and entanglement | Memory and interaction are cleanly separated, but the gate path is less direct and the encoding remains a less mature systems branch |
 
 Atom loss cuts across this matrix rather than defining one row. Read [[erasure-error-vs-pauli-error]] with the umbrella, Rydberg, and alkaline-earth branches when loss is detected or converted into a flagged event; do not assume that choosing a nuclear-spin storage manifold automatically supplies an erasure mechanism.
+
+## Error-channel routing: loss is only useful when it is flagged
+
+The family-level error story has three separate ledgers. Collapsing them into a single "atom loss" number overstates the architectural advantage.
+
+| Ledger | Typical neutral-atom mechanism | Decoder-visible form | What must be reported |
+|---|---|---|---|
+| Flagged erasure | An atom leaves the trap, or a shelving / leakage check identifies that the computational state is gone | A known bad site or operation; route through [[erasure-error-vs-pauli-error]] | Physical loss probability, flag-detection fidelity and latency, false flags, and the residual error conditioned on no flag |
+| Unflagged in-codespace error | Laser phase or amplitude noise, Doppler shifts, imperfect blockade, and coherent control error | Hidden Pauli or coherent error inferred only through syndrome data | The residual Pauli channel after erasure postselection, including any directional bias rather than only an average gate fidelity |
+| Reload and rearrangement debt | Empty-site replacement, atom transport, recooling, and array repair | Not a gate error by itself, but a cycle-time and correlated-fault cost | Reload success, transport / recooling time, memory error accumulated by spectator qubits, and whether repair interrupts parallel operation |
+
+This gives a stricter routing rule: **detectable loss is a candidate erasure, not automatically a useful erasure channel**. The advantage survives only if the flag arrives before decoding needs it, identifies the affected location reliably, and does not hide a large unflagged residual channel. Conversely, a quiet clock or nuclear-spin storage manifold can reduce idle error without changing the flagging axis at all. Use [[coherence-time-hierarchy]] for the storage benefit and [[erasure-error-vs-pauli-error]] only for the location information actually delivered to the decoder.
+
+The comparison between branches should therefore preserve both coordinates. The alkali Rydberg branch has the most direct evidence for loss-aware logical operation, while alkaline-earth architectures can deliberately engineer leakage and loss into detectable manifolds. The nuclear-spin branch should not inherit that claim merely because it shares species or Rydberg access; its memory advantage and its erasure-conversion evidence must be evaluated separately.
 
 ## Routing rule
 

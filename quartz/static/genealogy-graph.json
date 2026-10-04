@@ -1,6 +1,6 @@
 {
   "schema": "qubitzoo.genealogy.v1",
-  "generated_at": "2026-09-18T14:00:12.532543+00:00",
+  "generated_at": "2026-10-04T15:40:41.214121+00:00",
   "nodes": [
     {
       "id": "0-pi-qubit",
@@ -132,7 +132,7 @@
       "id": "classical-control",
       "title": "Classical Control Hardware",
       "family": "Cross-Platform",
-      "year": 2000,
+      "year": null,
       "status": "demonstrated",
       "color": "#6b7280",
       "influence": 0.65
@@ -966,16 +966,16 @@
       "target": "circuit-qed"
     },
     {
-      "source": "classical-control",
-      "target": "cryogenic-amplification"
+      "source": "cryogenic-amplification",
+      "target": "classical-control"
     },
     {
       "source": "qubit-readout",
       "target": "classical-control"
     },
     {
-      "source": "classical-control",
-      "target": "quantum-transduction"
+      "source": "quantum-transduction",
+      "target": "classical-control"
     },
     {
       "source": "surface-code-logical-qubit",

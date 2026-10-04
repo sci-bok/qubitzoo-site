@@ -3,7 +3,7 @@ title: Changelog
 description: Recent changes to the Qubit Zoo site and source content (rolling 24h window).
 ---
 
-_Auto-generated at 2026-09-18T14:00:12.411Z (UTC). Covers the last 24 hours. If a window passes with no activity, sections will be empty._
+_Auto-generated at 2026-10-04T15:40:40.988Z (UTC). Covers the last 24 hours. If a window passes with no activity, sections will be empty._
 
 ## Public-facing site changes
 
@@ -13,92 +13,15 @@ _No site commits in the last 24 hours._
 
 ## Source/content changes affecting the next publish
 
-Commits in the source vault touching `Zoo/`, `References/`, `Evergreen/`, `MOCs/`, `Figures/`. These are queued to appear on the site at the next sync + deploy.
-
-**d7298688** · 2026-09-18 06:06:56 — zoo: pipeline queue-run processed=8 failed=0 (2026-09-18 10:06 UTC)
-
-<details><summary>files (11)</summary>
-
-- `References/heunisch-2026-analytic-leakage-suppression-with.md`
-- `References/hoefler-2026-quantum-computers-will-not.md`
-- `References/orekhov-2026-coherent-and-ultra-low-power-edsr.md`
-- `References/pelloux-prayer-2026-highly-uniform-first-electron-position.md`
-- `References/tamiya-2026-proof-of-a-positive.md`
-- `References/wu-2026-experimental-certification-of-the.md`
-- `Zoo/hole-spin-qubit.md`
-- `Zoo/photonic-qubit.md`
-- `Zoo/qubit-readout.md`
-- `Zoo/spin-qubit.md`
-- `Zoo/transmon.md`
-
-</details>
-
-**ad926c98** · 2026-09-17 10:47:02 — zettel synthesis: separate CV photonic scale claims
-
-<details><summary>files (1)</summary>
-
-- `MOCs/photonic-moc.md`
-
-</details>
-
+_No content-affecting vault commits in the last 24 hours._
 
 ## Backstage maintenance and automation changes
 
-Commits in the pipeline/automation repo (qubit-zoo-zettelkasten). These capture backend fixes, audits, and build/report changes that may not be visible on the public site yet.
-
-**27d98f53** · 2026-09-18 06:03:42 — zoo: pipeline queue-run processed=8 failed=0 (2026-09-18 10:03 UTC)
-
-<details><summary>files (42)</summary>
-
-- `data/canon_coverage.json`
-- `data/classics_backlog.json`
-- `data/classics_resolver_report.json`
-- `data/exports/paper_feed/2026-09-18/paper_feed.v1.jsonl`
-- `data/exports/paper_feed/latest.json`
-- `data/influence_history.jsonl`
-- `data/processed_papers.jsonl`
-- `data/quarantine_queue.json`
-- `data/reports/.last-morning-summary-date`
-- `data/reports/2026-09-17/calibration-json.err.log`
-- `data/reports/2026-09-17/calibration.err.log`
-- `data/reports/2026-09-17/calibration.json`
-- `data/reports/2026-09-17/calibration.txt`
-- `data/reports/2026-09-17/influence-scoring.log`
-- `data/reports/2026-09-17/moc-build.log`
-- `data/reports/2026-09-17/moc-generate.log`
-- `data/reports/2026-09-17/ops-report-json.err.log`
-- `data/reports/2026-09-17/ops-report.err.log`
-- `data/reports/2026-09-17/ops-report.json`
-- `data/reports/2026-09-17/ops-report.txt`
-- `data/reports/2026-09-17/queue-summary.json`
-- `data/reports/2026-09-17/queue.log`
-- `data/reports/2026-09-17/run-summary.json`
-- `data/reports/2026-09-17/run-summary.txt`
-- `data/reports/2026-09-17/zettel-review.log`
-- `data/reports/2026-09-17/zoo-links.log`
-- `data/reports/2026-09-17/zoo-note-conventions.log`
-- `data/reports/2026-09-17/zoo-source-references.log`
-- `data/reports/2026-09-18/canon-coverage.log`
-- `data/reports/2026-09-18/canon-coverage.md`
-- `data/reports/2026-09-18/classics-build.log`
-- `data/reports/2026-09-18/classics-resolve.log`
-- `data/reports/2026-09-18/discovery.log`
-- `data/reports/2026-09-18/preflight.log`
-- `data/reports/2026-09-18/prioritize-classics.log`
-- `data/reports/2026-09-18/queue.log`
-- `data/reports/latest-run-summary.json`
-- `data/reports/latest-run-summary.txt`
-- `data/reports/run-history.jsonl`
-- `data/zoo_source_references.json`
-- `vault/Figures/.candidates/continuous-variable-photonic-qubit-figure-20260917T141119539464Z.png`
-- `vault/Figures/.candidates/continuous-variable-photonic-qubit-figure-20260917T141119539464Z.provenance.json`
-
-</details>
-
+_No pipeline or automation commits in the last 24 hours._
 
 ## Pipeline status
 
 - **Status:** `ok` (mode: `full`)
-- **Last run:** 2026-09-18 06:00:05 EDT
-- **Papers added in last run:** 6
+- **Last run:** 2026-09-21 06:00:01 EDT
+- **Papers added in last run:** 0
 - **Failing steps:** none

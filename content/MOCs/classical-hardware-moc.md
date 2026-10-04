@@ -3,7 +3,7 @@ title: Classical Hardware MOC
 type: moc
 technology_family: Classical Hardware
 note_count: 2
-last_updated: '2026-08-27'
+last_updated: '2026-09-20'
 generated_by: pipeline-moc-v1
 ---
 
@@ -52,6 +52,20 @@ This family is best read as the **measurement-side classical interface**, not as
 | Local quantum carrier → network-compatible carrier | [[quantum-transduction]] | Convert microwave or other local quantum excitations into low-loss optical links without destroying coherence | Conversion efficiency, added noise, bandwidth | Use only when the information must remain quantum across a module boundary; ordinary room-temperature readout does not require quantum transduction |
 
 These rows are not a universal serial chain: fluorescence and spin-to-charge readout bypass cryogenic microwave amplification, while a modular processor may transduce a quantum state without measuring it. The matrix is a fault-localization tool. It keeps sensor physics in [[qubit-readout]], superconducting first-stage noise in [[cryogenic-amplification]], feedback timing in [[classical-control]], and coherent interconnect conversion in [[quantum-transduction]].
+
+## Pointer-generation routes across platforms
+
+The first row of that matrix is itself a family of mechanisms. Before comparing assignment fidelity or measurement time, identify what physical pointer carries the state information and which conversion step can fail.
+
+| Platform branch | State-to-pointer conversion | What the detector actually receives | Primary graph route | Failure that belongs upstream of the classical chain |
+|---|---|---|---|---|
+| Superconducting circuits | State-dependent cavity susceptibility shifts the phase or amplitude of a microwave probe | A weak microwave field whose quadrature distributions must be separated | [[dispersive-readout-mechanism]], [[qubit-readout]], then [[cryogenic-amplification]] | Insufficient dispersive contrast, measurement-induced transitions, or non-QND back-action before first-stage gain |
+| Trapped ions and neutral atoms | State-selective optical cycling maps an internal state onto bright or dark fluorescence | A photon-count distribution collected over a finite detection window | [[trapped-ion-moc]] or [[neutral-atom-moc]], then [[qubit-readout]] | Imperfect shelving, off-resonant pumping, leakage from the cycling transition, or atom loss that changes what “dark” means |
+| Semiconductor spin qubits | Pauli blockade, energy-selective tunnelling, or another spin-to-charge step converts spin parity / occupation into charge motion | A charge-sensor current, reflectometry phase, or occupation threshold | [[semiconducting-moc]], then [[qubit-readout]] | A failed spin-to-charge conversion or relaxation during the conversion window, even if the charge sensor is ideal |
+| Defect-spin nodes | Spin-dependent fluorescence or ODMR contrast converts the local spin state into an optical-count record | A low-count optical signal, often accumulated over repeated excitation cycles | [[color-center-moc]] for local defect readout; [[spin-photon-moc]] when emitted-photon quality is the network resource | Poor spin-selective optical contrast, intersystem-crossing errors, or spectral instability before collection loss is counted |
+| Photonic qubits | The carrier is already flying; interferometers or mode sorters rotate the encoding into detector-resolvable output modes | Click patterns, photon number, arrival time, frequency bin, or homodyne quadratures | [[photonic-moc]], then [[qubit-readout]] | Mode mismatch, indistinguishability failure, or loss before detection; use [[erasure-error-vs-pauli-error]] only when the missing mode is actually localized |
+
+This table prevents a misleading use of “detector fidelity.” A perfect amplifier cannot repair a cavity pointer that never separated; a perfect photon counter cannot repair a dark state produced by optical pumping rather than by the qubit; and a perfect charge sensor cannot repair a failed spin-to-charge conversion. Diagnose the state-to-pointer map first, then the analog chain, then discrimination and feedback. Only the superconducting microwave branch necessarily passes through [[cryogenic-amplification]].
 
 ## Conceptual anchors
 
