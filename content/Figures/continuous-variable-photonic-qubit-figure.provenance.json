@@ -1,0 +1,42 @@
+{
+  "artifact": {
+    "media_type": "image/png",
+    "path": "continuous-variable-photonic-qubit-figure.png",
+    "sha256": "7d2f7a27961905172f68e6b6b983bd2da2981adacb2cbd26adc442327037586b"
+  },
+  "artifact_role": "primary",
+  "blueprint": {
+    "media_type": "image/png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/vault/Figures/.candidates/continuous-variable-photonic-qubit-figure-20261006T140924230299Z.png",
+    "role": "physics-blueprint",
+    "sha256": "39bbdeb993ff4572225cd3691cce92a3cd8db884afcfc7cef41e21e2f2c493d9",
+    "strict": false
+  },
+  "entry_slug": "continuous-variable-photonic-qubit",
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/vault/Figures/.candidates/continuous-variable-photonic-qubit-figure-20261006T141052960210Z.png",
+    "supersedes_file": "continuous-variable-photonic-qubit-figure.png"
+  },
+  "renderer": {
+    "name": "nano-banana-2",
+    "provider": "Google AI Studio",
+    "requested_model": "google/gemini-3.1-flash-image-preview",
+    "returned_model": "google/gemini-3.1-flash-image-preview"
+  },
+  "request": {
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-10-06T14:10:52.960210+00:00",
+    "id": "gen-1791295839-zxhh5JZf4OhIBJT7gUnF",
+    "image_size": "1K",
+    "prompt_sha256": "682132ba1cd3a3bbe09757ba1684e4585743faeae68802145160ccf914f37638",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
+  },
+  "review": {
+    "notes": "PASS: rich explanatory plate with correct q-squeezing convention, square-lattice GKP stabilizers and 2D q-p grid, complete balanced-homodyne signal+LO/50:50-BS/dual-photodiode/difference-current chain, correct cluster nullifier and causal ordering, accurate Gaussian/non-Gaussian universality framing, and properly distinguished sequential versus integrated mode scales. Tolerable ancillary imperfections: one Wigner inset repeats q where p would improve clarity, and a generic readout ellipse is tilted.",
+    "reviewed_at": "2026-10-06T14:11:35.514775+00:00",
+    "reviewer": "Codex independent image audit 2026-10-06",
+    "status": "passed"
+  },
+  "schema_version": 1
+}
