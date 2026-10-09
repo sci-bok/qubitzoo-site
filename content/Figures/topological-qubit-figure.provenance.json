@@ -1,0 +1,42 @@
+{
+  "artifact": {
+    "media_type": "image/png",
+    "path": "topological-qubit-figure.png",
+    "sha256": "8b835e1b0e86b64cb95373a6c87e91ab714f6404fc390219d4127a71e6f16ee2"
+  },
+  "artifact_role": "primary",
+  "blueprint": {
+    "media_type": "image/png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/topological-qubit-figure-20261009T141147535721Z.png",
+    "role": "physics-blueprint",
+    "sha256": "d67223f8a3ae9385889ff50b6d892d70b8649331f9cd9dbca9c98587f30ccf0f",
+    "strict": true
+  },
+  "entry_slug": "topological-qubit",
+  "lineage": {
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/topological-qubit-figure-20261009T141434359144Z.png",
+    "supersedes_file": "topological-qubit-figure.png"
+  },
+  "renderer": {
+    "name": "nano-banana-2",
+    "provider": "Google AI Studio",
+    "requested_model": "google/gemini-3.1-flash-image-preview",
+    "returned_model": "google/gemini-3.1-flash-image-preview"
+  },
+  "request": {
+    "aspect_ratio": "4:3",
+    "generated_at": "2026-10-09T14:14:34.359144+00:00",
+    "id": "gen-1791555257-tQFZDj0hXKmM2wO6X9pE",
+    "image_size": "2K",
+    "prompt_sha256": "8f5fdd1e24feee35d28905b054f7aacdbec5901ebe71444851e122e06af89820",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
+  },
+  "review": {
+    "notes": "PASS: Rich four-panel plate. Verified local commuting-projector D(G) Hamiltonian and commutator, |0_L>/|1_L> Ising fusion basis, exact Ising and Fibonacci fusion rules, dim(H_fusion)>1 distinction, R/F braid mechanism, Fibonacci braid universality versus Clifford-only Ising braids, compiled digital circuit without passive gap protection, fusion/charge readout, and the exact 2026 Quantinuum claim of 54 physical qubits with logical qutrits. No fidelity percentage or protected-fidelity overclaim.",
+    "reviewed_at": "2026-10-09T14:15:14.278444+00:00",
+    "reviewer": "Codex full-resolution physics audit 2026-10-09",
+    "status": "passed"
+  },
+  "schema_version": 1
+}

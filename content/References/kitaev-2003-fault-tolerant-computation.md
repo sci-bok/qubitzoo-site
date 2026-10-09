@@ -19,3 +19,4 @@ This paper presents work on fault-tolerant quantum computation by anyons.
 
 ## Zoo Links
 - [[surface-code-logical-qubit]]
+- [[topological-qubit]]
