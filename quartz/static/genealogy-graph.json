@@ -1,6 +1,6 @@
 {
   "schema": "qubitzoo.genealogy.v1",
-  "generated_at": "2026-10-04T15:40:41.214121+00:00",
+  "generated_at": "2026-10-09T14:00:08.310775+00:00",
   "nodes": [
     {
       "id": "0-pi-qubit",
@@ -150,7 +150,7 @@
       "id": "continuous-variable-photonic-qubit",
       "title": "Continuous-Variable Photonic Qumode",
       "family": "Photonic",
-      "year": 2005,
+      "year": 1999,
       "status": "demonstrated",
       "color": "#ef4444",
       "influence": 0.76
@@ -678,6 +678,15 @@
       "influence": 0.7
     },
     {
+      "id": "topological-qubit",
+      "title": "Topological Qubit",
+      "family": "Topological",
+      "year": 2026,
+      "status": "demonstrated",
+      "color": "#a855f7",
+      "influence": 0.68
+    },
+    {
       "id": "transmon",
       "title": "Transmon",
       "family": "Superconducting",
@@ -994,20 +1003,24 @@
       "target": "continuous-variable-photonic-qubit"
     },
     {
-      "source": "gkp-codes",
-      "target": "continuous-variable-photonic-qubit"
+      "source": "continuous-variable-photonic-qubit",
+      "target": "bosonic-qubit"
+    },
+    {
+      "source": "continuous-variable-photonic-qubit",
+      "target": "gkp-codes"
     },
     {
       "source": "continuous-variable-photonic-qubit",
       "target": "fusion-based-photonic-qubit"
     },
     {
-      "source": "linear-optical-photonic-qubit",
-      "target": "continuous-variable-photonic-qubit"
+      "source": "continuous-variable-photonic-qubit",
+      "target": "linear-optical-photonic-qubit"
     },
     {
-      "source": "photonic-cluster-state-mbqc-qubit",
-      "target": "continuous-variable-photonic-qubit"
+      "source": "continuous-variable-photonic-qubit",
+      "target": "photonic-cluster-state-mbqc-qubit"
     },
     {
       "source": "cooper-pair-box-charge-qubit",

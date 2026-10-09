@@ -179,6 +179,8 @@ State-of-the-art (as of late 2025): $T_1$ up to $1.68\,\text{ms}$ (planar, tanta
 - [[geisert-2026-parametric-two-qubit-gates-via]]
 - [[park-2026-an-all-van-der-waals-qubit]]
 - [[heunisch-2026-analytic-leakage-suppression-with]]
+- [[hajr-2026-dynamically-protected-erasure-qubit]]
+- [[haug-2026-a-quasiparticle-protected-superconducting-qubit]]
 
 ## Evergreen context
 

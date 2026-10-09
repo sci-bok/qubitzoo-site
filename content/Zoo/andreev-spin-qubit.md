@@ -94,6 +94,7 @@ where $\tau$ is the channel transparency, $\varphi$ the superconducting phase di
 - [[janvier-2015-coherent-manipulation-andreev]]
 - [[larsen-2015-gatemon]]
 - [[buka-2026-search-for-majorana-bound]]
+- [[ilicin-2026-quasiparticle-resolved-variational-theory-of]]
 
 ## Evergreen context
 

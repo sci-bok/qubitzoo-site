@@ -2,8 +2,8 @@
 title: Qubit Zoo Index MOC
 type: moc
 technology_family: index
-note_count: 81
-last_updated: '2026-09-04'
+note_count: 82
+last_updated: '2026-10-06'
 generated_by: pipeline-moc-v1
 ---
 
@@ -23,7 +23,7 @@ Top-level navigation for the Qubit Zoo through non-exclusive facets. An entry ma
 - [[spin-photon-moc]] (5 entries)
 - [[super-semi-moc]] (6 entries)
 - [[superconducting-moc]] (22 entries)
-- [[topological-moc|Majorana / Topological]] (3 entries)
+- [[topological-moc|Majorana / Topological]] (4 entries)
 - [[trapped-ion-moc]] (5 entries)
 
 ## Editorial policy

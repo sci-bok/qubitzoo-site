@@ -117,6 +117,7 @@ GKP codes protect against the dominant error channel in bosonic systems — smal
 - [[roberts-2026-bosonic-codes-from-compact]]
 - [[wadewitz-2026-probabilistic-error-cancellation-for]]
 - [[burgath-2026-spin-grid-states-for]]
+- [[koudia-2026-joint-gkp-encoding-for]]
 
 ## Evergreen context
 

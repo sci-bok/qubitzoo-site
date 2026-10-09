@@ -123,6 +123,8 @@ which motivates long wires and hard-gap devices for robust parity protection.
 - [[chang-2026-half-a-qubit-an]]
 - [[hance-2026-why-three-a-two-level]]
 - [[cespedes-2026-geometric-quantifier-of-the]]
+- [[laubscher-2026-measurement-induced-enhancement-of-the]]
+- [[hanotel-2026-from-majorana-to-bloch]]
 
 ## Related Entries
 

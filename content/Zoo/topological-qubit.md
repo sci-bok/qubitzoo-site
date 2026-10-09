@@ -1,0 +1,30 @@
+---
+title: Topological Qubit
+entry_type: qubit
+technology_family: Topological
+status: demonstrated
+first_proposed_year: 2026
+keywords: []
+influence_score: 0.68
+last_updated: '2026-10-06'
+generated_by: pipeline-v1
+extracted_by: claude-code
+verified_by: codex
+---
+
+Topological Qubit is a topological qubit approach for quantum computing hardware. Source: latex text.
+
+## Description
+Topological Qubit is classified as qubit hardware in the Topological family based on title/abstract evidence.
+
+## Motivation
+Reduce dominant hardware limitations while preserving controllability and readout compatibility.
+
+## Key Findings
+
+
+## Linked Papers
+- [[debortoli-2026-interferometric-braiding-of-non-abelian]]
+
+## Related Entries
+- [[quantum-hardware]]

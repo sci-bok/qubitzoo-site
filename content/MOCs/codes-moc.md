@@ -3,7 +3,7 @@ title: Codes MOC
 type: moc
 technology_family: Codes
 note_count: 6
-last_updated: '2026-08-28'
+last_updated: '2026-10-05'
 generated_by: pipeline-moc-v1
 ---
 
@@ -73,6 +73,21 @@ These resources can coexist. An erasure-aware surface code may still face strong
 | [[erasure-qubit]] | Reliable fault-location side information | Leakage / loss checks and high flag-detection fidelity | the decoder should compare known fault locations with the residual unflagged Pauli channel |
 
 The first five rows choose a **code structure**. The last row changes the **information supplied to the decoder** and can therefore be layered onto several code structures rather than selected as a mutually exclusive geometry. Keep that distinction explicit: a surface-code or color-code implementation may also be erasure-aware, and its overhead should then be evaluated with [[erasure-error-vs-pauli-error]] rather than a generic depolarizing-noise threshold.
+
+## Inner encoding versus outer code
+
+The entries above are easiest to compare once the protection stack is split into two layers. An **inner encoding** reshapes one hardware element into a better effective qubit; an **outer code** spreads logical information across many such effective qubits. These layers are complementary, not competing choices.
+
+| Inner layer | Channel presented to the outer decoder | Natural outer-code question |
+|---|---|---|
+| [[cat-codes]] or [[kerr-cat-qubit]] | Strongly biased residual Pauli noise, provided gates preserve the bias | Can a repetition-style or asymmetric surface-code layout exploit the declared bias without gate-induced mixing? |
+| [[gkp-codes]] | Analog displacement syndromes plus residual logical Pauli faults after finite-squeezing correction | Does the decoder retain the analog reliability information, and what residual channel remains after each correction round? |
+| [[binomial-codes]] | Discrete photon-loss / gain syndromes from a finite Fock-space code | How often must syndrome extraction run, and which ancilla faults become correlated outer-code errors? |
+| [[dual-rail-superconducting-qubit]] or [[erasure-qubit]] | Located erasures plus a smaller unflagged Pauli remainder | Which outer code uses the flags in real time, and how much advantage survives missed flags and check-induced faults? |
+
+Use [[bosonic-code-hierarchy]] to choose among oscillator-level inner encodings, [[noise-bias-and-asymmetric-error-channels]] to describe hidden directional faults, and [[erasure-error-vs-pauli-error]] to describe known fault locations. Only after that channel transformation is explicit should the discussion select [[surface-code-logical-qubit]], [[color-code-logical-qubit]], [[bacon-shor-code]], [[floquet-codes]], or [[qldpc-codes]] as an outer structure.
+
+This prevents a common category error: “cat versus surface code” and “dual rail versus surface code” are usually false alternatives. The meaningful comparison is the complete stack—physical mode, inner encoding and checks, effective channel, outer code, and decoder—and whether the overhead saved by channel shaping exceeds the control and syndrome-extraction cost added underneath.
 
 ## Scope boundary
 

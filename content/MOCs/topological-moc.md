@@ -2,8 +2,8 @@
 title: Majorana / Topological MOC
 type: moc
 technology_family: Topological
-note_count: 3
-last_updated: '2026-08-30'
+note_count: 4
+last_updated: '2026-10-06'
 generated_by: pipeline-moc-v1
 ---
 
@@ -16,10 +16,11 @@ Curated map of Zoo entries in the **Majorana / Topological** family.
 | [[majorana-topological-qubit]] | qubit | proposed |
 | [[planar-josephson-junction-qubit]] | qubit | proposed |
 | [[tetron-qubit]] | qubit | proposed |
+| [[topological-qubit]] | qubit | demonstrated |
 
 ## Composition
 
-- qubit: 3
+- qubit: 4
 
 <!-- CURATED -->
 
