@@ -44,3 +44,7 @@ Text truncated: **no**.
 
 Ingestion notes:
 - LaTeX source extraction failed
+
+## Zoo Links
+- [[spin-qubit]]
+- [[silicon-spin-qubit]]
