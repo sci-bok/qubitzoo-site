@@ -2,13 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "circuit-qed-figure.png",
-    "sha256": "6ee09f84d9c1391a5520fb78050048d050e0ff2c0d2fc7285322edcfb45942d5"
+    "sha256": "675e28cd44090c378d99d3cbb106a799030a9ec871e8291083d325f1cb145a68"
   },
   "artifact_role": "primary",
   "blueprint": null,
   "entry_slug": "circuit-qed",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/circuit-qed-figure-20260802T024953039986Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/circuit-qed-figure-20261012T144233976939Z.png",
     "supersedes_file": "circuit-qed-figure.png"
   },
   "renderer": {
@@ -19,16 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-02T02:49:53.039986+00:00",
-    "id": "gen-1785638984-befh6h0keECLburmw3ae",
+    "generated_at": "2026-10-12T14:42:33.976939+00:00",
+    "id": "gen-1791816143-XPL8SnQm4QGc1NEJEp7d",
     "image_size": "1K",
-    "prompt_sha256": "4df535e4d507c9e02e3979d1ed038e8ee631e79fd6ee2a8edf6be35fe25afc77",
-    "source_media_type": "image/jpeg"
+    "prompt_sha256": "98576f07d87bf9a63d88eee680f018d8e55e3b97ca1e5e38f1d14ad1bba469e8",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Approved: clean Jaynes-Cummings coupling schematic with correct state-dependent dispersive shifts and no visible label corruption.",
-    "reviewed_at": "2026-08-02T02:59:40.805603+00:00",
-    "reviewer": "codex-visual-physics-review-2026-08-01",
+    "notes": "Approved at full resolution: rich four-panel explanatory plate; CPW/transmon topology and unique C_in/C_out are correct; dressed-state ladder has |g,0>, ordered n=1 and n=2 doublets with single 2g and 2g sqrt(2) splittings; detuning, dispersive shift, IQ axes/pointers, Purcell rate, and Spring 2025 metrics are correct. Minor ancillary artifacts: a stray small angle-label fragment, a duplicated Multiplexed Readout heading, and a stray asterisk.",
+    "reviewed_at": "2026-10-12T14:43:04.023446+00:00",
+    "reviewer": "codex-visual-physics-review-2026-10-12",
     "status": "passed"
   },
   "schema_version": 1

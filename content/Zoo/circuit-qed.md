@@ -17,15 +17,15 @@ keywords:
 - qnd measurement
 - quantum bus
 influence_score: 0.85
-last_updated: '2026-03-21'
+last_updated: '2026-10-12'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-manual-2026-03-21
+verified_by: scibok-manual-2026-10-12
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/circuit-qed-figure.provenance.json"
-figure_reviewed_by: "codex-visual-physics-review-2026-08-01"
-figure_reviewed_at: "2026-08-02T02:59:40.805603+00:00"
+figure_reviewed_by: "codex-visual-physics-review-2026-10-12"
+figure_reviewed_at: "2026-10-12T14:43:04.023446+00:00"
 ---
 
 ## Figure
@@ -34,63 +34,70 @@ figure_reviewed_at: "2026-08-02T02:59:40.805603+00:00"
 
 ## Description
 
-Circuit quantum electrodynamics (circuit QED) is the solid-state realization of cavity QED, where a superconducting qubit plays the role of the atom and a coplanar waveguide (CPW) transmission line resonator plays the role of the optical cavity. Proposed by Blais, Huang, Wallraff, Girvin, and Schoelkopf (2004), the key insight is that the zero-point energy of a quasi-1D resonator is concentrated in an extremely small effective volume ($\approx 10^{-5}$ cubic wavelengths), producing rms vacuum fields $\mathcal{E}_\text{rms} \sim 0.2\,\text{V/m}$ — about 100× larger than 3D microwave cavities. Combined with the enormous transition dipole moment of the Cooper pair box ($d \sim 2 \times 10^4$ atomic units), this yields coupling strengths three orders of magnitude beyond atomic microwave cQED.
+Circuit quantum electrodynamics (circuit QED) is the on-chip analogue of cavity QED: a superconducting artificial atom couples coherently to a quantized mode of a microwave resonator. In the original Blais et al. proposal, a quasi-one-dimensional coplanar-waveguide (CPW) resonator confined its zero-point energy to an effective volume of about $10^{-5}$ cubic wavelengths, producing $\mathcal{E}_\mathrm{rms}\sim0.2\,\mathrm{V/m}$. Together with the Cooper-pair-box dipole moment ($d\sim2\times10^4\,ea_0$), this led to the proposal-scale estimate $g/\pi\sim100\,\mathrm{MHz}$—not $g/2\pi\sim100\,\mathrm{MHz}$.
 
-The system reaches the **strong coupling regime** where the vacuum Rabi frequency $g/2\pi \sim 100\,\text{MHz}$ vastly exceeds both the cavity decay rate $\kappa$ and the qubit decay rate $\gamma$. In the **dispersive regime** ($|\Delta| = |\omega_q - \omega_r| \gg g$), the cavity frequency shifts by $\pm\chi = \pm g^2/\Delta$ depending on the qubit state, enabling quantum non-demolition (QND) readout. The resonator simultaneously provides **Purcell protection** — suppressing spontaneous emission by a factor $(g/\Delta)^2$ — and acts as a **quantum bus** for entangling qubits at different antinodes via virtual photon exchange.
+The defining regime is **strong coupling**, $g\gg\kappa,\gamma$, where coherent qubit–photon exchange outpaces cavity loss $\kappa$ and qubit decoherence $\gamma$. Wallraff et al. first demonstrated it in 2004 with $g/2\pi\approx5.8\,\mathrm{MHz}$, $\kappa/2\pi=0.8\,\mathrm{MHz}$, and $\gamma/2\pi=0.7\,\mathrm{MHz}$, observing a vacuum-Rabi splitting of $2g/2\pi\approx11.6\,\mathrm{MHz}$.
 
-Circuit QED is the foundational measurement and coupling architecture underlying virtually all modern superconducting quantum processors.
+Most processor applications operate instead in the **dispersive regime**, $|\Delta|=|\omega_q-\omega_r|\gg g$. The qubit shifts the resonator frequency by a state-dependent amount, enabling QND readout, while virtual photons mediate interactions between separated qubits. Detuning suppresses cavity-mediated relaxation to the Purcell rate $\Gamma_P\simeq\kappa(g/\Delta)^2$; engineered Purcell filters can suppress that channel further. Circuit QED now underlies superconducting-qubit readout, resonator buses, bosonic encodings, microwave quantum optics, and hybrid quantum interfaces.
 
 ## Hamiltonian
 
-At the charge degeneracy point, the system is described by the Jaynes-Cummings Hamiltonian:
+The two-level quantum-Rabi model is
 
-$$H = \hbar\omega_r\left(a^\dagger a + \frac{1}{2}\right) + \frac{\hbar\omega_q}{2}\sigma_z + \hbar g(a^\dagger \sigma_- + a\sigma_+)$$
+$$H_\mathrm{Rabi}=\hbar\omega_r a^\dagger a+\frac{\hbar\omega_q}{2}\sigma_z+\hbar g(a+a^\dagger)\sigma_x.$$
 
-where $\omega_r$ is the resonator frequency, $\omega_q$ is the qubit frequency, $g$ is the vacuum Rabi coupling, and $a^{(\dagger)}$ are the resonator photon operators.
+Near resonance and for $g\ll\omega_r,\omega_q$, the rotating-wave approximation gives the Jaynes–Cummings Hamiltonian
 
-The coupling strength is:
+$$H_\mathrm{JC}=\hbar\omega_r a^\dagger a+\frac{\hbar\omega_q}{2}\sigma_z+\hbar g(a^\dagger\sigma_-+a\sigma_+).$$
+
+Here $\omega_r$ is the resonator frequency, $\omega_q$ is the qubit transition frequency, $g$ is the single-photon coupling rate, and $a^{(\dagger)}$ are photon annihilation (creation) operators. At exact resonance, the $n\ge1$ excitation manifold contains
+
+$$|n,\pm\rangle=\frac{|e,n-1\rangle\pm|g,n\rangle}{\sqrt2},$$
+
+split by $2g\sqrt n$. This ordering is the central vacuum-Rabi signature.
+
+For the original Cooper-pair-box geometry at its charge sweet spot,
 
 $$g = \frac{\beta e}{\hbar}\sqrt{\frac{\hbar\omega_r}{cL}}$$
 
-where $\beta = C_g/C_\Sigma$ is the capacitive coupling ratio, $c$ is the capacitance per unit length, and $L$ is the resonator length.
+where $\beta=C_g/C_\Sigma$, $c$ is capacitance per unit length, and $L$ is resonator length.
 
-In the dispersive regime ($|\Delta| \gg g$), the effective Hamiltonian becomes:
+With $\Delta\equiv\omega_q-\omega_r$ and $|\Delta|\gg g$, a two-level dispersive approximation is
 
-$$H_\text{disp} \approx \hbar(\omega_r + \chi\sigma_z)a^\dagger a + \frac{\hbar(\omega_q + \chi)}{2}\sigma_z$$
+$$H_\mathrm{disp}\approx\hbar(\omega_r+\chi\sigma_z)a^\dagger a+\frac{\hbar(\omega_q+\chi)}{2}\sigma_z,\qquad \chi=\frac{g^2}{\Delta}.$$
 
-where $\chi = g^2/\Delta$ is the dispersive shift. The qubit-state-dependent cavity frequency shift enables QND measurement of the qubit.
+For a weakly anharmonic transmon, higher levels modify the shift to approximately $\chi\simeq g^2\alpha/[\Delta(\Delta+\alpha)]$, where $\alpha=\omega_{12}-\omega_{01}<0$. The measured resonator separation is $2|\chi|$ in the ideal two-state readout picture.
 
 ## Motivation
 
-Previous proposals for coupling superconducting qubits used discrete LC circuits or large Josephson junctions, which suffered from parasitic resonances and 1/f noise sensitivity. The transmission line resonator approach provides: strong inhibition of spontaneous emission (Purcell protection), high-fidelity QND readout via dispersive phase shifts, a natural quantum bus for entangling qubits separated by centimeter distances, and compatibility with standard lithographic fabrication. Circuit QED made dispersive readout and multi-qubit coupling practical, enabling the scaling of superconducting quantum processors.
+Compared with earlier lumped-element proposals, lithographic transmission-line resonators offered reproducible modes, large zero-point voltages, spatially separated antinodes, and controlled input/output coupling. Those ingredients made strong coupling, dispersive measurement, and cavity-mediated state transfer practical. Modern implementations add dedicated Purcell filters because a readout resonator is both a measurement channel and, without filtering, a radiative decay channel.
 
 ## Experimental Status
 
 **First strong coupling — Wallraff et al. (2004):**
-- Achieved strong coupling between a Cooper pair box and a CPW resonator with $g/2\pi \sim 100\,\text{MHz}$.
-- Observed vacuum Rabi splitting in transmission spectroscopy.
+- Coupled a Cooper pair box to a 6.04-GHz CPW resonator with $g/2\pi\approx5.8\,\mathrm{MHz}$.
+- Observed a vacuum-Rabi splitting of about 11.6 MHz, larger than both $\kappa/2\pi=0.8\,\mathrm{MHz}$ and $\gamma/2\pi=0.7\,\mathrm{MHz}$.
 
-**Dispersive readout established:**
-- QND measurement of qubit state via cavity phase shift became the standard readout method for all transmon-based processors.
+**Cavity quantum bus — Majer et al. (2007):**
+- Demonstrated coherent state transfer between two spatially separated superconducting qubits through virtual photons in a shared transmission-line cavity.
 
-**Quantum bus demonstrations:**
-- Two qubits at different antinodes entangled via virtual photon exchange with effective coupling $g_1 g_2/\Delta$.
+**Long-lived cavity modes and bosonic encodings — Teoh et al. (2023):**
+- Used two superconducting cavities with photon lifetimes above 1 ms as the modes of a dual-rail qubit, with transmon-assisted control and erasure detection.
 
-**3D circuit QED:**
-- Extension to 3D microwave cavities achieved resonator lifetimes $>1\,\text{ms}$, enabling long-lived bosonic codes.
+**Fast multiplexed dispersive readout — Spring et al. (2025):**
+- Combined readout and filter resonators with intrinsic notch filtering, obtaining 99.77% average assignment fidelity across four qubits in a 56-ns integration window; the best channel exceeded 99.9%.
+
+**Millimeter-wave circuit QED — Dixit et al. (2026):**
+- Coupled a 3.1-GHz transmon to a 34.7-GHz cavity at $g/2\pi=1.3\,\mathrm{GHz}$ and achieved greater than 99% readout fidelity without a quantum-limited first-stage amplifier, demonstrating a highly detuned extension of the architecture.
 
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| Vacuum Rabi coupling $g/2\pi$ | 50–400 MHz | Depending on qubit type and geometry | — |
-| Resonator $T_1$ | 1–10 μs (2D), >1 ms (3D) | Planar vs 3D cavity | — |
-| Dispersive shift $\chi/2\pi$ | 0.5–5 MHz | $\chi = g^2/\Delta$ | — |
-| Readout speed | 200–500 ns | Dispersive measurement | — |
-| Purcell limit $T_1^P$ | >1 ms | With Purcell filter | — |
-| Resonator footprint | ~5 mm (λ/2) | Coplanar waveguide | — |
-| Operating temperature | 10–20 mK | Dilution refrigerator | — |
-| Strong coupling ratio $g/\kappa$ | 10–1000 | $\kappa$ = resonator linewidth | — |
+| First strong-coupling demonstration | $g/2\pi\approx5.8$ MHz; $2g/2\pi\approx11.6$ MHz | 6.04-GHz CPW resonator; $\kappa/2\pi=0.8$ MHz, $\gamma/2\pi=0.7$ MHz | [Wallraff et al. 2004](https://doi.org/10.1038/nature02851) |
+| Long-lived cavity photon | $T_1>1$ ms | Two 3D stub cavities used for dual-rail encoding | [Teoh et al. 2023](https://doi.org/10.1073/pnas.2221736120) |
+| Multiplexed assignment fidelity | 99.77% average; best $>99.9\%$ | Four qubits, 56-ns integration, resonator linewidths up to 42 MHz | [Spring et al. 2025](https://doi.org/10.1103/PRXQuantum.6.020345) |
+| Millimeter-wave readout | $>99\%$ fidelity | 34.7-GHz cavity, 3.1-GHz transmon, $g/2\pi=1.3$ GHz | [Dixit et al. 2026](https://doi.org/10.1103/c84y-ggqs) |
 
 ## References
 
@@ -98,11 +105,22 @@ Previous proposals for coupling superconducting qubits used discrete LC circuits
 - A. Blais et al., "Cavity quantum electrodynamics for superconducting electrical circuits: An architecture for quantum computation," [Phys. Rev. A 69, 062320 (2004)](https://doi.org/10.1103/PhysRevA.69.062320) — [arXiv:cond-mat/0402216](https://arxiv.org/abs/cond-mat/0402216)
 
 ### First experimental demonstration
-- A. Wallraff et al., "Strong coupling of a single photon to a superconducting qubit using circuit quantum electrodynamics," [Nature 431, 162 (2004)](https://doi.org/10.1038/nature02851)
+- A. Wallraff et al., "Strong coupling of a single photon to a superconducting qubit using circuit quantum electrodynamics," [Nature 431, 162–167 (2004)](https://doi.org/10.1038/nature02851) — [arXiv:cond-mat/0407325](https://arxiv.org/abs/cond-mat/0407325)
+
+### Review and milestones
+- A. Blais et al., "Circuit quantum electrodynamics," [Rev. Mod. Phys. 93, 025005 (2021)](https://doi.org/10.1103/RevModPhys.93.025005) — [arXiv:2005.12667](https://arxiv.org/abs/2005.12667)
+- J. Majer et al., "Coupling superconducting qubits via a cavity bus," [Nature 449, 443–447 (2007)](https://doi.org/10.1038/nature06184) — [arXiv:0709.2135](https://arxiv.org/abs/0709.2135)
+- J. D. Teoh et al., "Dual-rail encoding with superconducting cavities," [PNAS 120, e2221736120 (2023)](https://doi.org/10.1073/pnas.2221736120) — [arXiv:2212.12077](https://arxiv.org/abs/2212.12077)
+- P. A. Spring et al., "Fast Multiplexed Superconducting-Qubit Readout with Intrinsic Purcell Filtering Using a Multiconductor Transmission Line," [PRX Quantum 6, 020345 (2025)](https://doi.org/10.1103/PRXQuantum.6.020345) — [arXiv:2409.04967](https://arxiv.org/abs/2409.04967)
+- A. V. Dixit et al., "Millimeter wave readout of a superconducting qubit," [Phys. Rev. Lett., accepted 3 September 2026](https://doi.org/10.1103/c84y-ggqs) — [arXiv:2603.13837](https://arxiv.org/abs/2603.13837)
 
 ## Linked Papers
 
 - [[blais-2004-circuit-qed]]
+- [[blais-2021-circuit-electrodynamics]]
+- [[dixit-2026-millimeter-wave-readout]]
+- [[majer-2007-cavity-bus]]
+- [[spring-2025-fast-multiplexed-readout]]
 - [[strickland-2024-gatemon-losses]]
 - [[teoh-2023-dual-rail-cavity]]
 - [[wallraff-2004-strong-coupling-single]]
@@ -123,3 +141,5 @@ Previous proposals for coupling superconducting qubits used discrete LC circuits
 - [[cooper-pair-box-charge-qubit]] — original qubit in the Blais et al. proposal
 - [[fluxonium]] — also operates within circuit QED, requires auxiliary readout
 - [[qubit-readout]] — dispersive readout is the primary application of circuit QED
+- [[bosonic-qubit]] — long-lived cavity modes host oscillator encodings
+- [[dual-rail-superconducting-qubit]] — two circuit-QED cavity modes encode an erasure-biased qubit
