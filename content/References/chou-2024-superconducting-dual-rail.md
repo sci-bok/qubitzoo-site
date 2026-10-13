@@ -22,4 +22,5 @@ Experimental dual-rail qubit encoded in the single-photon subspace of two superc
 - **arXiv:** [2307.03169](https://arxiv.org/abs/2307.03169)
 
 ## Zoo Links
+- [[bosonic-qubit]]
 - [[dual-rail-superconducting-qubit]]

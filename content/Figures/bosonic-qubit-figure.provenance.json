@@ -27,10 +27,10 @@
     "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Approved rich explanatory plate after full-resolution review. Apparatus-to-encoding/control/readout narrative is strong; central physics is sound. Minor ancillary typography imperfections are acceptable under the approved visual policy.",
-    "reviewed_at": "2026-08-05T04:28:42.537869+00:00",
-    "reviewer": "Codex scientific visual audit 2026-08-05",
-    "status": "passed"
+    "notes": "Failed re-review: the two-component cat equations are paired with a four-lobe phase-space depiction, and the plate omits a dedicated binomial/Fock-state encoding view. Three replacement candidates were rejected for central cat, binomial, or GKP-axis errors; retain this rich primary only as an unapproved placeholder.",
+    "reviewed_at": "2026-10-13T14:18:00+00:00",
+    "reviewer": "Codex scientific visual audit 2026-10-13",
+    "status": "failed"
   },
   "schema_version": 1
 }

@@ -40,3 +40,6 @@ Disputes resolved: **0**.
 Citation count snapshot (Semantic Scholar): **0**.
 Ingestion source: **latex**.
 Text truncated: **no**.
+
+## Zoo Links
+- [[bosonic-qubit]]
