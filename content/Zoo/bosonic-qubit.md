@@ -13,15 +13,15 @@ keywords:
   - harmonic oscillator
   - quantum error correction
 influence_score: 0.80
-last_updated: '2026-10-13'
+last_updated: '2026-10-14'
 generated_by: scibok-curation
 extracted_by: claude-code
-verified_by: scibok-deep-audit-2026-10-13
+verified_by: scibok-deep-audit-2026-10-14
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/bosonic-qubit-figure.provenance.json"
-figure_reviewed_by: "Codex scientific visual audit 2026-10-13 — failed; regeneration required"
-figure_reviewed_at: "2026-10-13T14:03:00+00:00"
+figure_reviewed_by: "Codex scientific visual audit 2026-10-14 — failed; regeneration required"
+figure_reviewed_at: "2026-10-14T14:06:00+00:00"
 ---
 
 > **Note:** This is a **category entry** covering the bosonic-qubit paradigm. Individual encodings have their own detailed entries, including [[cat-codes]], [[binomial-codes]], [[gkp-codes]], and [[dual-rail-superconducting-qubit]].
@@ -89,6 +89,9 @@ where the sign of $\chi$ follows the displayed convention. The number-dependent 
 - D-Wave Quantum Inc. demonstrated a roughly 500 ns dual-rail cavity CZ with about 0.5% erasure probability, residual Pauli errors below 0.1%, and bit flips at the $10^{-6}$ level.
 - Copetudo et al. reported a direct Raman-assisted controlled-phase interaction between microwave photons without populating the nonlinear coupler (preprint).
 
+**Fully planar bosonic QEC — Jha et al. (2026 preprint):**
+- Demonstrated finite-energy GKP state preparation and measurement-free stabilization in an on-chip Archimedean spiral resonator controlled by a heavy-fluxonium ancilla. The corrected logical lifetime improved by $1.59\pm0.05$ on average across the three Pauli axes, establishing the first standalone bosonic QEC demonstration in a fully planar superconducting circuit.
+
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
@@ -101,6 +104,7 @@ where the sign of $\chi$ follows the displayed convention. The number-dependent 
 | Distance-5 logical error per cycle | $1.65(3)\%$ | Concatenated cat + repetition-code memory | [Putterman et al. 2025](https://doi.org/10.1038/s41586-025-08642-7) |
 | Dual-rail CZ | $\sim500$ ns; $\sim0.5\%$ erasure; $<0.1\%$ residual Pauli error | Bias-preserving cavity-qubit entangling gate | [D-Wave Quantum Inc. 2026](https://doi.org/10.1038/s41586-026-10822-y) |
 | Photon-loss-conditioned gate infidelity | 5× reduction | Error-semitransparent logical $\{X,H,T\}$ control | [Roy et al. 2026](https://doi.org/10.1038/s41467-026-78317-y) |
+| Fully planar GKP QEC lifetime gain | $1.59\pm0.05$ | Measurement-free QEC with a heavy-fluxonium ancilla and on-chip spiral resonator | [Jha et al. 2026](https://arxiv.org/abs/2609.26880) |
 
 ## References
 
@@ -116,6 +120,7 @@ where the sign of $\chi$ follows the displayed convention. The number-dependent 
 - H. Putterman et al., "Hardware-efficient quantum error correction via concatenated bosonic qubits," [Nature **638**, 927 (2025)](https://doi.org/10.1038/s41586-025-08642-7)
 - S. Roy, O. C. Wetherbee, and V. Fatemi, "Error semitransparent universal control of a bosonic logical qubit," [Nature Communications (2026)](https://doi.org/10.1038/s41467-026-78317-y)
 - D-Wave Quantum Inc., "An entangling gate for dual-rail erasure qubits," [Nature **656**, 47 (2026)](https://doi.org/10.1038/s41586-026-10822-y)
+- S. R. Jha et al., "Bosonic Error Correction with Fluxonium," [arXiv:2609.26880 (2026)](https://arxiv.org/abs/2609.26880)
 
 ## Linked Papers
 
@@ -125,6 +130,7 @@ where the sign of $\chi$ follows the displayed convention. The number-dependent 
 - [[d-wave-quantum-2026-entangling-dual-rail-gate]]
 - [[hu-2019-binomial-bosonic-logical-qubit]]
 - [[joshi-2021-information-processing-bosonic]]
+- [[jha-2026-bosonic-error-correction-fluxonium]]
 - [[ofek-2016-extending-lifetime-bit]]
 - [[putterman-2025-hardware-efficient-bosonic-qec]]
 - [[reagor-2016-quantum-memory-millisecond]]
@@ -146,5 +152,6 @@ where the sign of $\chi$ follows the displayed convention. The number-dependent 
 - [[kerr-cat-qubit]] — driven-dissipative cat code variant
 - [[circuit-qed]] — hardware platform
 - [[transmon]] — ancilla qubit used for bosonic state preparation, control, and readout
+- [[fluxonium]] — long-lived nonlinear ancilla used in the first fully planar standalone bosonic-QEC demonstration
 - [[dual-rail-superconducting-qubit]] — two-mode bosonic encoding that converts photon loss into a detected erasure
 - [[erasure-qubit]] — system-level context for exploiting detected leakage or loss
