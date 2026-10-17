@@ -27,9 +27,9 @@
     "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Failed re-review: the two-component cat equations are paired with a four-lobe phase-space depiction, and the plate omits a dedicated binomial/Fock-state encoding view. Three replacement candidates were rejected for central cat, binomial, or GKP-axis errors; retain this rich primary only as an unapproved placeholder.",
-    "reviewed_at": "2026-10-13T14:18:00+00:00",
-    "reviewer": "Codex scientific visual audit 2026-10-13",
+    "notes": "Failed re-review: the two-component cat equations are paired with a four-lobe phase-space depiction, and the plate omits a dedicated binomial/Fock-state encoding view. Four new rich replacement candidates were formally rejected on 2026-10-17 for central cat-loss semantics, number-conditioned control labels, GKP coset ambiguity, duplicated or garbled metric attribution, or malformed control text. Retain this rich primary only as an unapproved placeholder.",
+    "reviewed_at": "2026-10-17T14:08:00+00:00",
+    "reviewer": "Codex scientific visual audit 2026-10-17",
     "status": "failed"
   },
   "schema_version": 1

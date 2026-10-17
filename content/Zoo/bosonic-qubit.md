@@ -13,15 +13,15 @@ keywords:
   - harmonic oscillator
   - quantum error correction
 influence_score: 0.80
-last_updated: '2026-10-14'
+last_updated: '2026-10-17'
 generated_by: scibok-curation
 extracted_by: claude-code
-verified_by: scibok-deep-audit-2026-10-14
+verified_by: scibok-deep-audit-2026-10-17
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/bosonic-qubit-figure.provenance.json"
-figure_reviewed_by: "Codex scientific visual audit 2026-10-14 — failed; regeneration required"
-figure_reviewed_at: "2026-10-14T14:06:00+00:00"
+figure_reviewed_by: "Codex scientific visual audit 2026-10-17 — failed; four replacement candidates rejected"
+figure_reviewed_at: "2026-10-17T14:08:00+00:00"
 ---
 
 > **Note:** This is a **category entry** covering the bosonic-qubit paradigm. Individual encodings have their own detailed entries, including [[cat-codes]], [[binomial-codes]], [[gkp-codes]], and [[dual-rail-superconducting-qubit]].
