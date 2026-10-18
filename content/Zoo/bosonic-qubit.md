@@ -1,7 +1,7 @@
 ---
 title: Bosonic Qubit
 entry_type: qubit
-technology_family: Superconducting
+technology_family: Cross-Platform
 status: demonstrated
 figure_reviewed: false
 first_proposed_year: 2001
@@ -13,15 +13,15 @@ keywords:
   - harmonic oscillator
   - quantum error correction
 influence_score: 0.80
-last_updated: '2026-10-17'
+last_updated: '2026-10-18'
 generated_by: scibok-curation
 extracted_by: claude-code
-verified_by: scibok-deep-audit-2026-10-17
+verified_by: scibok-deep-audit-2026-10-18
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/bosonic-qubit-figure.provenance.json"
-figure_reviewed_by: "Codex scientific visual audit 2026-10-17 — failed; four replacement candidates rejected"
-figure_reviewed_at: "2026-10-17T14:08:00+00:00"
+figure_reviewed_by: "Codex scientific visual audit 2026-10-18 — failed; two additional replacement candidates rejected"
+figure_reviewed_at: "2026-10-18T14:08:00+00:00"
 ---
 
 > **Note:** This is a **category entry** covering the bosonic-qubit paradigm. Individual encodings have their own detailed entries, including [[cat-codes]], [[binomial-codes]], [[gkp-codes]], and [[dual-rail-superconducting-qubit]].
@@ -84,6 +84,9 @@ where the sign of $\chi$ follows the displayed convention. The number-dependent 
 **Concatenated cat-code memory — Putterman et al. (2025):**
 - Combined five stabilized bosonic cat qubits with a distance-5 repetition code. The phase-flip correction operated below threshold, with a minimum measured logical error of $1.65(3)\%$ per cycle at distance 5.
 
+**Trapped-ion GKP logic — Matsos et al. (2025):**
+- Deterministically implemented an energy-preserving universal logical gate set on finite-energy GKP states encoded in two motional modes of a trapped ion, including the first two-logical-qubit GKP entangling gate and direct GKP Bell-state preparation from vacuum.
+
 **Error-structured logical operations — 2026:**
 - Roy et al. demonstrated an error-semitransparent $\{X,H,T\}$ gate set and a fivefold reduction of infidelity conditioned on photon loss.
 - D-Wave Quantum Inc. demonstrated a roughly 500 ns dual-rail cavity CZ with about 0.5% erasure probability, residual Pauli errors below 0.1%, and bit flips at the $10^{-6}$ level.
@@ -102,6 +105,7 @@ where the sign of $\chi$ follows the displayed convention. The number-dependent 
 | Dual-rail logical SPAM error | 0.01% level | With integrated erasure detection | [Chou et al. 2024](https://doi.org/10.1038/s41567-024-02539-4) |
 | Detected cavity-decay events | $>99\%$ | Dual-rail decay flagged as erasure | [Chou et al. 2024](https://doi.org/10.1038/s41567-024-02539-4) |
 | Distance-5 logical error per cycle | $1.65(3)\%$ | Concatenated cat + repetition-code memory | [Putterman et al. 2025](https://doi.org/10.1038/s41586-025-08642-7) |
+| Trapped-ion GKP logical gates | 0.960 single-qubit process fidelity; 0.680 two-qubit CZ process fidelity; 0.842 Bell-state fidelity | Deterministic, energy-preserving control of finite-energy GKP states in two motional modes | [Matsos et al. 2025](https://doi.org/10.1038/s41567-025-03002-8) |
 | Dual-rail CZ | $\sim500$ ns; $\sim0.5\%$ erasure; $<0.1\%$ residual Pauli error | Bias-preserving cavity-qubit entangling gate | [D-Wave Quantum Inc. 2026](https://doi.org/10.1038/s41586-026-10822-y) |
 | Photon-loss-conditioned gate infidelity | 5× reduction | Error-semitransparent logical $\{X,H,T\}$ control | [Roy et al. 2026](https://doi.org/10.1038/s41467-026-78317-y) |
 | Fully planar GKP QEC lifetime gain | $1.59\pm0.05$ | Measurement-free QEC with a heavy-fluxonium ancilla and on-chip spiral resonator | [Jha et al. 2026](https://arxiv.org/abs/2609.26880) |
@@ -118,6 +122,7 @@ where the sign of $\chi$ follows the displayed convention. The number-dependent 
 - V. V. Sivak et al., "Real-time quantum error correction beyond break-even," [Nature **616**, 50 (2023)](https://doi.org/10.1038/s41586-023-05782-6)
 - K. S. Chou et al., "A superconducting dual-rail cavity qubit with erasure-detected logical measurements," [Nature Physics **20**, 1454 (2024)](https://doi.org/10.1038/s41567-024-02539-4)
 - H. Putterman et al., "Hardware-efficient quantum error correction via concatenated bosonic qubits," [Nature **638**, 927 (2025)](https://doi.org/10.1038/s41586-025-08642-7)
+- V. G. Matsos et al., "Universal quantum gate set for Gottesman–Kitaev–Preskill logical qubits," [Nature Physics **21**, 1664 (2025)](https://doi.org/10.1038/s41567-025-03002-8)
 - S. Roy, O. C. Wetherbee, and V. Fatemi, "Error semitransparent universal control of a bosonic logical qubit," [Nature Communications (2026)](https://doi.org/10.1038/s41467-026-78317-y)
 - D-Wave Quantum Inc., "An entangling gate for dual-rail erasure qubits," [Nature **656**, 47 (2026)](https://doi.org/10.1038/s41586-026-10822-y)
 - S. R. Jha et al., "Bosonic Error Correction with Fluxonium," [arXiv:2609.26880 (2026)](https://arxiv.org/abs/2609.26880)
@@ -131,6 +136,7 @@ where the sign of $\chi$ follows the displayed convention. The number-dependent 
 - [[hu-2019-binomial-bosonic-logical-qubit]]
 - [[joshi-2021-information-processing-bosonic]]
 - [[jha-2026-bosonic-error-correction-fluxonium]]
+- [[matsos-2025-universal-gkp-logical-gates]]
 - [[ofek-2016-extending-lifetime-bit]]
 - [[putterman-2025-hardware-efficient-bosonic-qec]]
 - [[reagor-2016-quantum-memory-millisecond]]
@@ -155,3 +161,4 @@ where the sign of $\chi$ follows the displayed convention. The number-dependent 
 - [[fluxonium]] — long-lived nonlinear ancilla used in the first fully planar standalone bosonic-QEC demonstration
 - [[dual-rail-superconducting-qubit]] — two-mode bosonic encoding that converts photon loss into a detected erasure
 - [[erasure-qubit]] — system-level context for exploiting detected leakage or loss
+- [[trapped-ion-qubit]] — platform context for mechanical-mode GKP state preparation and logical gates
