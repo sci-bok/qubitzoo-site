@@ -2,13 +2,19 @@
   "artifact": {
     "media_type": "image/png",
     "path": "bosonic-qubit-figure.png",
-    "sha256": "b0a065083d67f1f67a08c83b9207f74f7ca77165518054366b4e75cbe7656c51"
+    "sha256": "bd4bc7c45bf03ce7ef6ded8714a47b1bb8356b379c8f179616cd5b6d07feace9"
   },
   "artifact_role": "primary",
-  "blueprint": null,
+  "blueprint": {
+    "media_type": "image/png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/bosonic-qubit-figure-20261021T140641218936Z.png",
+    "role": "physics-blueprint",
+    "sha256": "3fcc97be6fbbc9e028821ae0bad55e210b3bdfd872b62c00146fe4c74dd93ba7",
+    "strict": true
+  },
   "entry_slug": "bosonic-qubit",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/bosonic-qubit-figure-20260805T042521186436Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/bosonic-qubit-figure-20261021T140744111259Z.png",
     "supersedes_file": "bosonic-qubit-figure.png"
   },
   "renderer": {
@@ -19,18 +25,18 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-05T04:25:21.186436+00:00",
-    "id": "gen-1785903910-ctkqJQR2Dto8rufAIZUt",
-    "image_size": "1K",
-    "prompt_sha256": "64ebf1dad178100f638dc7cba1823a6b389c0ec4a496b2a292a793873a5accdb",
+    "generated_at": "2026-10-21T14:07:44.111259+00:00",
+    "id": "gen-1792591646-QWbmXnkkHUv7pYYyByZe",
+    "image_size": "2K",
+    "prompt_sha256": "eba43743c4dae710fa457741a24b853cc39885d04def99942c0ad818a0d9f5e5",
     "source_media_type": "image/jpeg",
     "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Failed re-review: the two-component cat equations are paired with a four-lobe phase-space depiction, and the plate omits a dedicated binomial/Fock-state encoding view. Four new rich replacement candidates were formally rejected on 2026-10-17 for central cat-loss semantics, number-conditioned control labels, GKP coset ambiguity, duplicated or garbled metric attribution, or malformed control text. Retain this rich primary only as an unapproved placeholder.",
-    "reviewed_at": "2026-10-17T14:08:00+00:00",
-    "reviewer": "Codex scientific visual audit 2026-10-17",
-    "status": "failed"
+    "notes": "PASS after full-resolution review: rich apparatus and causal narrative; correct two-component cat equations with two coherent components and even/odd interference; exact binomial occupations and single-loss syndromes; coherent square GKP cosets with sqrt(pi)/2sqrt(pi) spacing; dual-rail |10>/|01> loss to |00> erasure; exact dispersive Hamiltonian; critical labels and control flow legible. Minor ancillary wording artifacts do not alter the scientific story.",
+    "reviewed_at": "2026-10-21T14:08:29.807635+00:00",
+    "reviewer": "Codex scientific visual audit 2026-10-21",
+    "status": "passed"
   },
   "schema_version": 1
 }
