@@ -70,6 +70,7 @@ which motivates long wires and hard-gap devices for robust parity protection.
 - [[spin-orbit-coupling-for-qubit-control]] is part of the nanowire recipe: Rashba spin-orbit coupling, Zeeman splitting, and induced pairing together create the topological regime that supports end Majorana modes.
 - [[divincenzo-criteria]] is still the right scorecard here, because zero-bias spectroscopy and parity signatures are not yet the same as scalable initialization, protected gates, and high-fidelity readout.
 - [[threshold-theorem]] is the downstream test for whether nonlocal parity encoding actually buys a fault-tolerance advantage rather than just a distinctive spectroscopy signal.
+- [[noise-bias-and-asymmetric-error-channels]] is the residual-error ledger: nonlocal encoding may suppress local overlap-induced logical faults, but poisoning and control-induced errors must still be projected into a declared logical Pauli channel before a protection advantage can be compared.
 
 ## Experimental Status
 
@@ -125,6 +126,8 @@ which motivates long wires and hard-gap devices for robust parity protection.
 - [[cespedes-2026-geometric-quantifier-of-the]]
 - [[laubscher-2026-measurement-induced-enhancement-of-the]]
 - [[hanotel-2026-from-majorana-to-bloch]]
+- [[kanno-2026-quantum-classical-break-even-in-electronic]]
+- [[kam-2026-an-entanglement-band-structure]]
 
 ## Related Entries
 

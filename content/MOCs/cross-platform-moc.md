@@ -2,8 +2,8 @@
 title: Cross-Platform MOC
 type: moc
 technology_family: Cross-Platform
-note_count: 10
-last_updated: '2026-09-18'
+note_count: 11
+last_updated: '2026-10-19'
 generated_by: pipeline-moc-v1
 ---
 
@@ -22,6 +22,7 @@ Curated map of Zoo entries in the **Cross-Platform** family.
 | [[surface-code-logical-qubit]] | encoding | demonstrated |
 | [[classical-control]] | infrastructure | demonstrated |
 | [[quantum-transduction]] | infrastructure | demonstrated |
+| [[bosonic-qubit]] | qubit | demonstrated |
 | [[nuclear-magnetic-resonance-qubit]] | qubit | demonstrated |
 
 ## Composition
@@ -29,7 +30,7 @@ Curated map of Zoo entries in the **Cross-Platform** family.
 - concept: 1
 - encoding: 6
 - infrastructure: 2
-- qubit: 1
+- qubit: 2
 
 <!-- CURATED -->
 

@@ -181,6 +181,14 @@ State-of-the-art (as of late 2025): $T_1$ up to $1.68\,\text{ms}$ (planar, tanta
 - [[heunisch-2026-analytic-leakage-suppression-with]]
 - [[hajr-2026-dynamically-protected-erasure-qubit]]
 - [[haug-2026-a-quasiparticle-protected-superconducting-qubit]]
+- [[franzen-2026-deterministic-and-programmable-generation]]
+- [[yuan-2026-experimental-realization-of-a]]
+- [[wang-2026-quantum-enhanced-search-for-galactic]]
+- [[machino-2026-zz-free-bswap-gates-under]]
+- [[fechant-2026-superconducting-circuits-host-two-level]]
+- [[richard-2026-accurate-gap-control-of]]
+- [[chen-2026-controlled-z-gates-via-floquet]]
+- [[huang-2026-high-fidelity-and-robust-controlled-z]]
 
 ## Evergreen context
 

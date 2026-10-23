@@ -1,6 +1,6 @@
 {
   "schema": "qubitzoo.genealogy.v1",
-  "generated_at": "2026-10-09T14:00:08.310775+00:00",
+  "generated_at": "2026-10-23T14:00:08.616610+00:00",
   "nodes": [
     {
       "id": "0-pi-qubit",
@@ -95,10 +95,10 @@
     {
       "id": "bosonic-qubit",
       "title": "Bosonic Qubit",
-      "family": "Superconducting",
+      "family": "Cross-Platform",
       "year": 2001,
       "status": "demonstrated",
-      "color": "#3b82f6",
+      "color": "#6b7280",
       "influence": 0.8
     },
     {
@@ -681,7 +681,7 @@
       "id": "topological-qubit",
       "title": "Topological Qubit",
       "family": "Topological",
-      "year": 2026,
+      "year": 1997,
       "status": "demonstrated",
       "color": "#a855f7",
       "influence": 0.68
@@ -927,6 +927,22 @@
       "target": "transmon"
     },
     {
+      "source": "bosonic-qubit",
+      "target": "fluxonium"
+    },
+    {
+      "source": "bosonic-qubit",
+      "target": "dual-rail-superconducting-qubit"
+    },
+    {
+      "source": "bosonic-qubit",
+      "target": "erasure-qubit"
+    },
+    {
+      "source": "trapped-ion-qubit",
+      "target": "bosonic-qubit"
+    },
+    {
       "source": "cat-codes",
       "target": "gkp-codes"
     },
@@ -973,6 +989,10 @@
     {
       "source": "qubit-readout",
       "target": "circuit-qed"
+    },
+    {
+      "source": "circuit-qed",
+      "target": "dual-rail-superconducting-qubit"
     },
     {
       "source": "cryogenic-amplification",
@@ -1112,10 +1132,6 @@
     },
     {
       "source": "singlet-triplet-qubit",
-      "target": "dual-rail-superconducting-qubit"
-    },
-    {
-      "source": "circuit-qed",
       "target": "dual-rail-superconducting-qubit"
     },
     {
@@ -1809,6 +1825,26 @@
     {
       "source": "time-bin-photonic-qubit",
       "target": "photonic-cluster-state-mbqc-qubit"
+    },
+    {
+      "source": "topological-qubit",
+      "target": "majorana-topological-qubit"
+    },
+    {
+      "source": "topological-qubit",
+      "target": "tetron-qubit"
+    },
+    {
+      "source": "topological-qubit",
+      "target": "surface-code-logical-qubit"
+    },
+    {
+      "source": "topological-qubit",
+      "target": "color-code-logical-qubit"
+    },
+    {
+      "source": "topological-qubit",
+      "target": "quantum-gate"
     },
     {
       "source": "transmon",

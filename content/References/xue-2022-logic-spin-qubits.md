@@ -4,7 +4,6 @@ authors: [Xiao Xue, Maximilian Russ, Nodar Samkharadze, Brennan Undseth, Amir Sa
 year: 2022
 journal: "Nature"
 doi: 10.1038/s41586-021-04273-w
-arxiv_id: '2107.00628'
 type: reference
 generated_by: scibok-audit-backfill
 last_updated: '2026-03-25'
@@ -19,7 +18,6 @@ AbstractHigh-fidelity control of quantum bits is paramount for the reliable exec
 
 ## Links
 - **Journal:** [Nature](https://doi.org/10.1038/s41586-021-04273-w)
-- **arXiv:** [2107.00628](https://arxiv.org/abs/2107.00628)
 
 ## Zoo Links
 - [[spin-qubit]]

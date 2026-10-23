@@ -116,6 +116,11 @@ where $\omega_r$ is the resonator frequency, $\omega_q$ the qubit frequency, and
 - [[li-2026-qubit-based-benchmarking-of-inp]]
 - [[hoefler-2026-quantum-computers-will-not]]
 - [[yadavalli-2026-protecting-quantum-computers-against]]
+- [[fime-2026-q-capsule-a-localized-capsule-based]]
+- [[minguzzi-2026-sub-mhz-swap-spectroscopy-of]]
+- [[zhang-2026-lifting-quantum-state-discrimination]]
+- [[mo-2026-constant-depth-quantum-barrier-option]]
+- [[ahn-2026-multimode-parametric-amplifier-for]]
 
 ## Evergreen context
 

@@ -3,7 +3,7 @@ title: Qubit Zoo Index MOC
 type: moc
 technology_family: index
 note_count: 82
-last_updated: '2026-10-06'
+last_updated: '2026-10-19'
 generated_by: pipeline-moc-v1
 ---
 
@@ -14,7 +14,7 @@ Top-level navigation for the Qubit Zoo through non-exclusive facets. An entry ma
 - [[classical-hardware-moc]] (2 entries)
 - [[codes-moc]] (6 entries)
 - [[color-center-moc]] (4 entries)
-- [[cross-platform-moc]] (10 entries)
+- [[cross-platform-moc]] (11 entries)
 - [[floating-electron-moc]] (1 entries)
 - [[molecular-moc]] (3 entries)
 - [[neutral-atom-moc]] (4 entries)
@@ -22,7 +22,7 @@ Top-level navigation for the Qubit Zoo through non-exclusive facets. An entry ma
 - [[semiconducting-moc]] (12 entries)
 - [[spin-photon-moc]] (5 entries)
 - [[super-semi-moc]] (6 entries)
-- [[superconducting-moc]] (22 entries)
+- [[superconducting-moc]] (21 entries)
 - [[topological-moc|Majorana / Topological]] (4 entries)
 - [[trapped-ion-moc]] (5 entries)
 
@@ -50,6 +50,14 @@ Top-level navigation for the Qubit Zoo through non-exclusive facets. An entry ma
 - Move through [[cross-platform-moc]] and [[quantum-transduction]] when the architecture must convert microwave quantum information into optical photons. Judge this route by end-to-end efficiency, added noise, bandwidth, and refrigerator heat load together; optimizing any one metric in isolation can hide the real systems cost.
 - Take the native-emitter alternative through [[spin-photon-moc]] when the stationary qubit already has a useful optical transition. This can remove a frequency-conversion stage, but it moves the burden to photon collection, indistinguishability, spectral stability, and the emitter's cryogenic envelope.
 - End in [[photonic-moc]] once the question becomes which flying encoding or optical computation model carries the information onward. Use [[divincenzo-criteria]] to compare the two interface strategies without confusing a good local qubit with a complete networking stack.
+
+## High-value cross-family slice: measurement-to-feedback closure
+
+- Start in the source platform MOC while the failure is still quantum-to-pointer physics: cavity pull in [[superconducting-moc]], state-selective fluorescence in [[trapped-ion-moc]] or [[neutral-atom-moc]], spin-to-charge conversion in [[semiconducting-moc]], and mode-resolved detection in [[photonic-moc]]. Use [[qubit-readout]] as the platform-comparative umbrella and [[dispersive-readout-mechanism]] only for the superconducting cavity branch.
+- Move to [[classical-hardware-moc]] once a physical pointer exists but must survive collection, gain, digitization, and discrimination. [[cryogenic-amplification]] is a specialization of the microwave route, not a universal readout stage; optical and charge-sensor branches reach the classical record through different front ends.
+- Move to [[cross-platform-moc]] and [[classical-control]] when the record must become a synchronized decision and corrective waveform. Budget the whole loop—measurement, capture, inference, decoding, routing, and actuation—because a fast decoder cannot recover time or information already lost upstream.
+- End in [[codes-moc]] and [[threshold-theorem]] when judging whether repeated syndrome extraction actually supports fault tolerance. Compare assignment error, back-action, leakage, cycle time, sustained throughput, and latency tails together; a high single-shot readout fidelity or a low component latency is not by itself a closed error-correction loop.
+- Route separately through [[erasure-error-vs-pauli-error]] when the measurement identifies *where* information was lost. A dark result, missing photon, or absent atom is only an erasure resource if the protocol distinguishes flagged loss from an ordinary hidden state-assignment error.
 
 ## High-value cross-family slice: semiconductor-superconductor boundary
 

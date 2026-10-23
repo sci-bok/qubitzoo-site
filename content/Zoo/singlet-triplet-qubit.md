@@ -139,6 +139,8 @@ where $\alpha$ depends on inter-DQD capacitance and on the charge admixture of t
 - [[tsoukalas-2026-dressed-singlet-triplet]]
 - [[ungerer-2024-strong-coupling-microwave-photon]]
 - [[zhang-2025-universal-control-four-singlet-triplet]]
+- [[minato-2026-bubble-sort-exchange-networks-symmetry]]
+- [[christov-2026-time-dependent-quantum-monte-carlo]]
 
 ## Evergreen context
 

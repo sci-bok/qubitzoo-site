@@ -65,6 +65,7 @@ where $\gamma_i$ are Majorana operators ($\gamma_i^\dagger = \gamma_i$, $\{\gamm
 - [[divincenzo-criteria]] clarifies the real bottlenecks, namely parity initialization, repeated high-fidelity measurement, and controlled two-qubit operations under quasiparticle-poisoning constraints.
 - [[threshold-theorem]] is the right lens for Microsoft's overhead claims, because a 10× savings matters only if the protected physical error model really moves the architecture deeper below fault-tolerance threshold.
 - [[spin-orbit-coupling-for-qubit-control]] remains upstream of the whole design, since the InAs/Al heterostructures rely on strong spin-orbit-coupled semiconductor physics to enter the topological regime in the first place.
+- [[erasure-error-vs-pauli-error]] supplies the flagging test for measurement-based protection: a parity or poisoning event helps the decoder as an erasure only if it is detected reliably and localized before becoming an unflagged logical fault.
 
 ## Key Metrics
 

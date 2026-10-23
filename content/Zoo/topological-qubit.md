@@ -129,6 +129,8 @@ No experiment has yet shown a scalable, materials-intrinsic non-Abelian topologi
 ## Evergreen context
 
 - [[threshold-theorem]] — topological encoding still needs a quantitative below-threshold noise model; digital anyon demonstrations are not evidence that passive protection has already been achieved.
+- [[noise-bias-and-asymmetric-error-channels]] — a protection claim must identify which hidden logical operators are actually suppressed and which residual Pauli channel remains; compiled digital braids inherit the processor's physical noise unless the experiment demonstrates a changed logical channel.
+- [[erasure-error-vs-pauli-error]] — anyon-charge or fusion measurements provide an erasure advantage only when they reliably flag the location of a fault; successful logical readout by itself does not turn unlocated control errors into erasures.
 
 ## Related Entries
 

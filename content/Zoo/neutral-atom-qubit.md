@@ -135,6 +135,9 @@ The blockade condition $C_6/R^6 \gg \hbar\Omega$ prevents simultaneous Rydberg e
 - [[saffman-2026-neutral-atom-quantum-computing]]
 - [[patil-2026-a-platform-aware-compilation-framework]]
 - [[sharma-2026-loss-correcting-fault-tolerant-quantum-computing]]
+- [[crookes-2026-programmable-all-to-all-entangling-gates]]
+- [[lu-2026-a-parameter-free-reference-hamiltonian]]
+- [[kuriyattil-2026-tuning-between-collective-dynamics]]
 
 ## Evergreen context
 

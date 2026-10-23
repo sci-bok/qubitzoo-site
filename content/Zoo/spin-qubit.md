@@ -16,18 +16,16 @@ keywords:
 - germanium
 - single electron
 influence_score: 0.88
-last_updated: '2026-10-12'
+last_updated: '2026-03-21'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-deep-audit-2026-10-12
+verified_by: scibok-manual-2026-03-21
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/spin-qubit-figure.provenance.json"
-figure_reviewed_by: "Codex scientific visual audit 2026-10-12"
-figure_reviewed_at: "2026-10-12T14:00:00+00:00"
+figure_reviewed_by: "Codex scientific visual audit 2026-08-05"
+figure_reviewed_at: "2026-08-05T04:28:42.433368+00:00"
 ---
-
-> **Scope:** This is the umbrella entry for gate-defined semiconductor spin qubits across electron and hole platforms. See [[loss-divincenzo-qubit]] for the original single-electron proposal and [[silicon-spin-qubit]] for the silicon-specific implementation landscape.
 
 ## Figure
 
@@ -39,30 +37,27 @@ The semiconductor spin qubit, proposed by Loss and DiVincenzo in 1998, encodes q
 
 Single-qubit gates are performed via electron spin resonance (ESR) — applying an oscillating magnetic field at the Larmor frequency — or, more commonly in modern implementations, via **electric-dipole spin resonance (EDSR)**, which uses an oscillating electric field combined with spin-orbit coupling or a micromagnet field gradient to drive spin rotations electrically. Electric driving is strongly preferred because it can be delivered through existing gate electrodes and is far easier to localize to individual qubits.
 
-Two-qubit gates exploit the **Heisenberg exchange interaction** $J(t)$ between neighboring dots, controlled by the tunnel-barrier voltage. A calibrated exchange pulse can implement $\sqrt{\mathrm{SWAP}}$-family operations; with Zeeman gradients and single-qubit phase control, modern devices also implement controlled-phase or controlled-rotation gates.
+Two-qubit gates exploit the **Heisenberg exchange interaction** $J(t)$ between neighboring dots, controlled by the tunnel barrier gate voltage. A $\sqrt{\text{SWAP}}$ gate — the exchange interaction applied for a calibrated duration — is a universal two-qubit entangling gate.
 
 The major materials platforms are:
-- **Si/SiGe heterostructures**: lower spin-orbit coupling, longer $T_2$, and isotopic purification ($^{28}\text{Si}$) that strongly suppresses nuclear-spin noise.
+- **Si/SiGe heterostructures**: lower spin-orbit coupling, longer $T_2$, isotopic purification ($^{28}\text{Si}$) removes nuclear spin noise.
 - **Si MOS (metal-oxide-semiconductor)**: CMOS-compatible fabrication, sharp interfaces.
 - **Ge/SiGe hole spin qubits**: strong spin-orbit coupling enables all-electric control without micromagnets, but shorter coherence.
 - **GaAs**: historically first demonstrations, but nuclear spin bath limits $T_2$ to ~μs without dynamical decoupling.
 
 ## Hamiltonian
 
-A representative two-spin Hamiltonian is
+Single spin in a magnetic field with exchange coupling to a neighbor:
 
-$$H = \sum_{i=1}^{2}\frac{g_i\mu_B}{2}\,\mathbf{B}_i\cdot\boldsymbol{\sigma}_i
-+ \frac{J(t)}{4}\,\boldsymbol{\sigma}_1\cdot\boldsymbol{\sigma}_2 + H_{\mathrm{drive}}(t),$$
+$$H = \frac{1}{2}g\mu_B B\,\sigma_z + J(t)\,\mathbf{S}_1 \cdot \mathbf{S}_2$$
 
-where $g_i$ is the effective electron or hole $g$-factor, $\mu_B$ is the Bohr magneton, $\mathbf B_i$ includes static and local-gradient fields, and $H_{\mathrm{drive}}$ represents ESR or EDSR control. The exchange term uses $\mathbf S_i=\boldsymbol{\sigma}_i/2$ and is controlled by the inter-dot tunnel barrier. In the symmetric, singly occupied two-site Hubbard limit,
+where $g$ is the electron $g$-factor, $\mu_B$ is the Bohr magneton, $B$ is the applied field, and $J(t)$ is the exchange coupling controlled by the inter-dot barrier gate voltage:
 
-$$J \simeq \frac{4t_c^2}{U},$$
+$$J \propto \frac{4t_c^2}{U}$$
 
-with $t_c$ the tunnel coupling and $U$ the on-site charging energy. Away from zero detuning $\varepsilon$, the leading superexchange becomes $J\simeq4t_c^2U/(U^2-\varepsilon^2)$ before multiorbital and valley corrections. A minimal two-dot Hubbard model is
+with $t_c$ the tunnel coupling and $U$ the on-site Coulomb repulsion. In the Hubbard model limit, the two-electron, two-dot Hamiltonian is:
 
-$$H_{\mathrm{Hub}} = \sum_{i=L,R}\epsilon_i n_i
--t_c\sum_\sigma\left(c^\dagger_{L\sigma}c_{R\sigma}+\mathrm{h.c.}\right)
-+U\sum_{i=L,R}n_{i\uparrow}n_{i\downarrow}+H_Z.$$
+$$H = \sum_\sigma \epsilon_\sigma (n_{L\sigma} + n_{R\sigma}) + t_c\sum_\sigma(c^\dagger_{L\sigma}c_{R\sigma} + \text{h.c.}) + U\sum_i n_{i\uparrow}n_{i\downarrow}$$
 
 ## Motivation
 
@@ -73,6 +68,9 @@ Semiconductor spin qubits promise integration with existing CMOS fabrication inf
 **Original proposal — Loss and DiVincenzo (1998):**
 - Proposed single-spin qubits in gate-defined quantum dots with exchange-based two-qubit gates
 - Established the foundational architecture for semiconductor quantum computing
+
+**Isotopic purification breakthrough:**
+- Isotopic purification of silicon ($^{28}\text{Si}$) eliminates hyperfine decoherence, achieving $T_2^* > 100\,\mu\text{s}$
 
 **Single-qubit gate fidelities — Yoneda et al. (2018):**
 - Single-qubit gate fidelities $> 99.9\%$ demonstrated in $^{28}\text{Si}$ quantum dots
@@ -85,36 +83,29 @@ Semiconductor spin qubits promise integration with existing CMOS fabrication inf
 
 **Multi-qubit processors — Philips et al. (2022):**
 - Universal control of a six-qubit quantum processor in silicon
-- Operated a linear nearest-neighbor array and prepared two- and three-spin entangled states across it; this was not an all-to-all-connected device
+- Demonstrated all-to-all connectivity within the six-qubit register
 
-**High-temperature operation — Huang et al. (2024):**
-- Operated a silicon two-qubit processor above $1\,\mathrm{K}$ with 99.85% single-qubit Clifford fidelity, 98.92% two-qubit fidelity, and initialization/readout fidelity up to 99.34%
+**Error correction milestone (2024):**
+- Above-threshold quantum error correction demonstrated in spin qubits
 
-**Repeatable MOS entangling gates — Tanttu et al. (2024):**
-- Demonstrated two-qubit gate fidelity above 99% across multiple SiMOS devices and extended runs, with an average interleaved-RB fidelity of 99.17% across three devices
-
-**300-mm foundry unit cells — Steinacker et al. (2025):**
-- Demonstrated all basic operations above 99% across four foundry-fabricated two-qubit devices, with CZ fidelity up to 99.56(6)% and SPAM fidelity up to 99.95(8)%
-
-**Eight-qubit foundry array — Nickl et al. (2026):**
-- Tuned and coherently controlled all eight spins in a 300-mm SiMOS linear array, with $T_2^*$ up to 41(2) μs and Hahn-echo coherence up to 1.31(4) ms; the work calibrated exchange in one pair but did not yet demonstrate a high-fidelity entangling gate across the array
-
-**Single-qubit record — Takeda et al. (2026, preprint):**
-- Reported a $\pi/2$ gate fidelity of 99.99920(2)% after suppressing reservoir-induced driven decoherence and off-resonant-drive benchmarking artifacts
-
-Physical gate fidelities above a nominal surface-code target are not themselves a demonstration of quantum error correction. As of this audit, no gate-defined semiconductor spin-qubit processor has demonstrated below-threshold or beyond-break-even logical QEC.
+**CMOS compatibility:**
+- CMOS-compatible fabrication demonstrated at Intel, imec, and CEA-Leti
 
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| $T_1$ | Up to 9.5 s | Foundry-fabricated SiMOS unit cells | [Steinacker et al. 2025](https://doi.org/10.1038/s41586-025-09531-9) |
-| $T_2^*$ | Up to 40.6 μs | Foundry-fabricated SiMOS unit cells | [Steinacker et al. 2025](https://doi.org/10.1038/s41586-025-09531-9) |
-| $T_2$ (Hahn echo) | Up to 1.9 ms | Foundry-fabricated SiMOS unit cells | [Steinacker et al. 2025](https://doi.org/10.1038/s41586-025-09531-9) |
-| 1Q gate fidelity | 99.99920(2)% | $\pi/2$ gate; 2026 preprint | [Takeda et al. 2026](https://arxiv.org/abs/2608.11072) |
-| 2Q CZ fidelity | Up to 99.56(6)% | Gate-set tomography across 300-mm foundry devices | [Steinacker et al. 2025](https://doi.org/10.1038/s41586-025-09531-9) |
-| SPAM fidelity | Up to 99.95(8)% | Foundry SiMOS unit cell | [Steinacker et al. 2025](https://doi.org/10.1038/s41586-025-09531-9) |
-| Operation above 1 K | 99.85% 1Q; 98.92% 2Q | Two-qubit SiMOS processor | [Huang et al. 2024](https://doi.org/10.1038/s41586-024-07160-2) |
+| $T_1$ | 1–50 s | Spin relaxation in Si at ~100 mK | [Zwanenburg et al. 2013](https://doi.org/10.1103/RevModPhys.85.961) |
+| $T_2^*$ | 1–120 μs | $^{28}$Si; GaAs ~10 ns without echo | — |
+| $T_2$ (echo) | 1–28 ms | $^{28}$Si with Hahn echo | — |
+| 1Q gate fidelity | 99.9–99.96% | $^{28}$Si, randomized benchmarking | [Yoneda et al. 2018](https://doi.org/10.1038/s41565-017-0014-x) |
+| 2Q gate fidelity | 99.5–99.8% | Exchange-based $\sqrt{\text{SWAP}}$ | [Noiri et al. 2022](https://doi.org/10.1038/s41586-021-04182-y) |
+| Readout fidelity | 97–99.5% | Spin-to-charge conversion + charge sensor | [Noiri et al. 2022](https://doi.org/10.1038/s41586-021-04182-y) |
+| Gate time (1Q) | 50 ns – 1 μs | EDSR or ESR | — |
+| Gate time (2Q) | 5–200 ns | Exchange pulse | — |
+| Qubit pitch | ~80–150 nm | Gate-defined dot spacing | — |
+| Operating temperature | 20 mK – 1 K | Hot-electron demonstrations at 1+ K | — |
+| Connectivity | Nearest-neighbor | Exchange coupling between adjacent dots | — |
 
 ## Scaling Considerations
 
@@ -122,7 +113,13 @@ Physical gate fidelities above a nominal surface-code target are not themselves 
 - CMOS foundry compatibility enables potential mass production using existing semiconductor infrastructure
 - Nearest-neighbor connectivity requires routing strategies for non-local gates
 - Cryogenic CMOS control electronics co-integrated on-chip is an active research frontier
-- High-fidelity operation above 1 K has been demonstrated, but scaling must still manage control-electronics heat load, initialization, and readout
+- Hot-qubit operation above 1 K would dramatically reduce cooling requirements
+
+## Extracted Figures
+
+![[spin-qubit-paper-fig-1.png]]
+
+![[spin-qubit-paper-fig-2.png]]
 
 ## References
 
@@ -139,13 +136,6 @@ Physical gate fidelities above a nominal surface-code target are not themselves 
 
 ### Multi-qubit processors
 - S. G. J. Philips et al., "Universal control of a six-qubit quantum processor in silicon," [Nature 609, 919 (2022)](https://doi.org/10.1038/s41586-022-05117-x)
-
-### Recent scaling and control milestones
-- J. Y. Huang et al., "High-fidelity spin qubit operation and algorithmic initialization above 1 K," [Nature **627**, 772 (2024)](https://doi.org/10.1038/s41586-024-07160-2)
-- T. Tanttu et al., "Assessment of the errors of high-fidelity two-qubit gates in silicon quantum dots," [Nature Physics **20**, 1804 (2024)](https://doi.org/10.1038/s41567-024-02614-w) — [arXiv:2303.04090](https://arxiv.org/abs/2303.04090)
-- P. Steinacker et al., "Industry-compatible silicon spin-qubit unit cells exceeding 99% fidelity," [Nature **646**, 81 (2025)](https://doi.org/10.1038/s41586-025-09531-9) — [arXiv:2410.15590](https://arxiv.org/abs/2410.15590)
-- A. Nickl et al., "Eight-qubit operation of a 300 mm SiMOS foundry-fabricated device," [Nature Communications **17**, 5878 (2026)](https://doi.org/10.1038/s41467-026-74597-6) — [arXiv:2512.10174](https://arxiv.org/abs/2512.10174)
-- K. Takeda et al., "Assessing fidelity-limiting factors and achieving single-qubit gate fidelity beyond 99.999% in driven silicon spin qubits," [arXiv:2608.11072 (2026)](https://arxiv.org/abs/2608.11072)
 
 ### Reviews
 - F. A. Zwanenburg et al., "Silicon quantum electronics," [Rev. Mod. Phys. 85, 961 (2013)](https://doi.org/10.1103/RevModPhys.85.961)
@@ -170,14 +160,44 @@ Physical gate fidelities above a nominal surface-code target are not themselves 
 - [[shi-2012-fast-hybrid-double-dot]]
 - [[shim-2016-aeon]]
 - [[steinacker-2025-300mm-foundry-silicon]]
-- [[huang-2024-high-fidelity-spin-qubit-above-1k]]
-- [[tanttu-2024-errors-high-fidelity-two-qubit-gates]]
-- [[nickl-2026-eight-qubit-foundry-device]]
 - [[veldhorst-2014-silicon-coherence]]
 - [[xue-2022-logic-spin-qubits]]
 - [[yoneda-2018-dot-spin-qubit]]
 - [[zwanenburg-2013-silicon-electronics]]
+- [[gzyl-2026-emission-dynamics-in-zincblende]]
+- [[xue-2026-controllable-interaction-between-photons]]
+- [[allende-2026-a-spin-bond-theory-unifying]]
+- [[pinchenkova-2026-parity-resolved-quantum-capacitance-and]]
 - [[takeda-2026-assessing-fidelity-limiting-factors-and]]
+- [[leng-2026-phonon-assisted-transport-and-hole-phonon]]
+- [[wuttig-2026-probing-impurity-quantum-criticality]]
+- [[niu-2026-gate-control-of-g-factor]]
+- [[chattopadhyay-2026-quantum-mpemba-speedups-in]]
+- [[willmes-2026-enhanced-intrinsic-spin-orbit-driving]]
+- [[vaxevani-2026-parity-dependent-coupling-of-molecular]]
+- [[bogaczewicz-2026-signatures-of-inter-sideband-coherence]]
+- [[peil-2026-predictive-wavelength-tailoring-of]]
+- [[wang-2026-scalar-spin-chirality-from]]
+- [[raghuvanshi-2026-phonon-limited-detection-thresholds-for]]
+- [[vaidhyanathan-2026-qarray-a-physics-informed-gpu-accelerated]]
+- [[richter-2026-low-frequency-charge-noise-in]]
+- [[sotiropoulos-2026-photo-induced-wavelength-tuning-of]]
+- [[mcintyre-2026-one-clean-qubit-spectroscopy-of-simulated]]
+- [[huang-2026-enhancing-charge-stability-of]]
+- [[ni-2026-in-situ-quantum-optical-measurement]]
+- [[pelloux-prayer-2026-highly-uniform-first-electron-position]]
+- [[salamon-2026-a-programmable-quantum-photonic]]
+- [[ivlev-2026-sparse-qubit-operation-in]]
+- [[richter-2026-numerically-exact-simulation-of]]
+- [[parhi-2026-from-solid-state-spin-defects]]
+- [[su-2026-deterministic-generation-of-large-scale]]
+- [[zollner-2026-observation-of-correlations-beyond]]
+- [[santos-2026-energetics-of-fault-tolerant-spin-qubit]]
+- [[kobayashi-2026-phase-engineering-of-odd]]
+- [[siegel-2026-nest-ultra-high-rate-qldpc-codes]]
+- [[yamada-2026-electronic-driving-of-torsional]]
+- [[hodgson-2026-high-fidelity-entanglement-of-two]]
+- [[mrowinski-2026-broadband-emitter-localization-and]]
 
 ## Evergreen context
 
@@ -190,8 +210,6 @@ Physical gate fidelities above a nominal surface-code target are not themselves 
 ## Related Entries
 
 - [[loss-divincenzo-qubit]] — detailed entry on the original proposal
-- [[silicon-spin-qubit]] — silicon-specific materials, devices, and benchmarks
-- [[hole-spin-qubit]] — valence-band spin qubits with strong spin-orbit coupling
 - [[singlet-triplet-qubit]] — two-electron variant using singlet-triplet encoding
 - [[exchange-only-qubit]] — three-electron all-exchange variant
 - [[aeon-qubit]] — always-on exchange-only sweet-spot variant

@@ -112,6 +112,7 @@ The transmon's achilles heel is its weak anharmonicity ($\sim -200\,\text{MHz}$)
 - [[reparaz-2026-time-optimal-quantum-gates-with]]
 - [[geffroy-2026-an-ultracompact-dilution-refrigerator]]
 - [[schirk-2026-high-fidelity-entangled-states-in]]
+- [[rosen-2026-analog-quantum-simulation-of]]
 
 ## Evergreen context
 

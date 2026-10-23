@@ -3,7 +3,7 @@ title: Majorana / Topological MOC
 type: moc
 technology_family: Topological
 note_count: 4
-last_updated: '2026-10-06'
+last_updated: '2026-10-10'
 generated_by: pipeline-moc-v1
 ---
 
@@ -24,15 +24,27 @@ Curated map of Zoo entries in the **Majorana / Topological** family.
 
 <!-- CURATED -->
 
-## Three-layer map
+## Four-note map
 
-- [[majorana-topological-qubit]] is the physics-layer note: nonlocal fermion-parity encoding, Majorana zero modes, and the requirement that splitting fall exponentially with separation.
+- [[topological-qubit]] is the anyon-algebra umbrella and the processor-demonstration branch: fusion spaces, braid representations, and digitally synthesized non-Abelian order. These experiments validate computational primitives without showing that the processor's physical gates are intrinsically protected.
+- [[majorana-topological-qubit]] is the materials-physics note: nonlocal fermion-parity encoding, Majorana zero modes, and the requirement that splitting fall exponentially with separation.
 - [[planar-josephson-junction-qubit]] is the fabrication-layer route: a lithographically defined InAs/Al-style junction where [[spin-orbit-coupling-for-qubit-control]] and phase bias near $\pi$ create a tunable topological channel.
 - [[tetron-qubit]] is the architecture-layer proposal: four Majorana modes arranged for parity measurement and measurement-only braiding, with the long-term promise judged against [[threshold-theorem]] rather than spectroscopy alone.
 
 ## What unifies this family
 
-Topological notes in the Zoo should read as a stack, not as three unrelated devices. The common claim is hardware-level error suppression from nonlocal parity encoding, but the practical bottleneck is still the same [[divincenzo-criteria]] scorecard as everywhere else: prepare a protected state, read parity reliably, and execute entangling operations before quasiparticle poisoning or mode overlap erases the advantage.
+Topological notes in the Zoo form **two evidence branches**, not one uniform device stack. The digital-anyon branch in [[topological-qubit]] asks whether fusion and braid algebra can be prepared, manipulated, and read on programmable hardware. The materials-native Majorana branch climbs from [[majorana-topological-qubit]] through [[planar-josephson-junction-qubit]] to [[tetron-qubit]], asking whether a nonlocal parity degree of freedom can become a protected computational architecture.
+
+The branches share fusion-space language, but protection claims do not transfer automatically between them. A circuit-compiled braid can demonstrate the target logical algebra while inheriting ordinary physical-gate errors; a materials platform can show increasingly persuasive topological-channel evidence without demonstrating a controlled logical braid. Both ultimately face the [[divincenzo-criteria]] scorecard: prepare a protected state, read its logical information reliably, and execute useful operations without erasing the advantage.
+
+## Digital anyons versus materials-native protection
+
+| Evidence branch | Primary notes | What would count as progress | Category error to avoid |
+|---|---|---|---|
+| Digital anyon / code-space realization | [[topological-qubit]] | Higher-fidelity state preparation, fusion/charge measurement, and braid-generated logical operations in a synthesized non-Abelian code space | Treating successful compiled braids as evidence that the underlying processor gates gained passive topological protection |
+| Materials-native Majorana route | [[majorana-topological-qubit]], [[planar-josephson-junction-qubit]], [[tetron-qubit]] | Nonlocal parity control, poisoning-lifetime and splitting measurements, four-mode encoding, then operations whose errors improve with a protection knob | Treating spectroscopy or gap reopening alone as an operational qubit, much less a fault-tolerance advantage |
+
+Use [[topological-qubit]] when the object being manipulated is an emergent anyon in a digitally prepared many-body state. Enter the Majorana stack when the claim depends on a native topological superconducting medium and nonlocal fermion parity. Compare either branch with [[threshold-theorem]] only after its physical error model and logical protection mechanism have been stated explicitly.
 
 ## Protection-claim ladder
 
@@ -62,6 +74,7 @@ This ladder prevents a common category error: a cleaner zero-bias or gap-reopeni
 
 | Entry | Why it stays in [[topological-moc]] | What nearby family it can be confused with |
 |---|---|---|
+| [[topological-qubit]] | the central object is a non-Abelian fusion space and its braid/fusion operations, even when that space is digitally synthesized rather than materials-native | [[codes-moc]] because present demonstrations use active programmable processors; the routing hinge is whether the note is about the anyon model itself or the underlying error-correcting architecture |
 | [[majorana-topological-qubit]] | the core claim is nonlocal fermion-parity encoding with exponentially suppressed mode overlap, even before a full four-mode computational encoding is assembled | [[super-semi-moc]] shares the same InAs/Al language, but not the topological-protection claim |
 | [[planar-josephson-junction-qubit]] | phase-biased Josephson geometry is being used to open a topological channel, not just to tune a qubit frequency | [[super-semi-moc]] if the junction is being discussed as an electrostatically tunable weak link rather than a topological medium |
 | [[tetron-qubit]] | the device is an architecture for repeated parity measurements and measurement-only braiding built on Majorana ingredients | [[cross-platform-moc]] at the systems level, because its real payoff is lower logical overhead if the physical protection holds |
@@ -74,4 +87,7 @@ A useful mental check is: if removing the words "topological phase" or "nonlocal
 
 ## Reading order
 
-If you want the shortest conceptual path through this family, start with [[majorana-topological-qubit]] for the protection mechanism, then [[planar-josephson-junction-qubit]] for the scalable materials platform, and finish with [[tetron-qubit]] for the control architecture that tries to turn those ingredients into a computable qubit.
+Choose the path that matches the claim:
+
+- **Anyon algebra and processor demonstrations:** start with [[topological-qubit]], then compare its digitally compiled operations with [[threshold-theorem]] to keep demonstration fidelity separate from passive protection.
+- **Materials-native protection:** start with [[majorana-topological-qubit]] for the protection mechanism, continue to [[planar-josephson-junction-qubit]] for the scalable materials platform, and finish with [[tetron-qubit]] for the control architecture that tries to turn those ingredients into a computable qubit.
