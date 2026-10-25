@@ -2,13 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "transmon-figure.png",
-    "sha256": "4d6dd733ea9a00d7b6e2f8f99227b2eccec0c30b397d31046cdec1f8aae548b4"
+    "sha256": "739dfe02d82b4dd88de9fed52bd127f6c1cec032e8fc2b78bf75a60d917e9d6f"
   },
   "artifact_role": "primary",
   "blueprint": null,
   "entry_slug": "transmon",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/transmon-figure-20260805T122441027493Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/transmon-figure-20261025T140653496994Z.png",
     "supersedes_file": "transmon-figure.png"
   },
   "renderer": {
@@ -19,17 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-05T12:24:41.027493+00:00",
-    "id": "gen-1785932667-Mn9W3wsqMp3C5tBdN8od",
-    "image_size": "1K",
-    "prompt_sha256": "6b0393d04b4dfeb2c33ba8dce32085d186875c641fa5e708a9961e442c8529b0",
+    "generated_at": "2026-10-25T14:06:53.496994+00:00",
+    "id": "gen-1792937196-AeUAhmlTZ8RRwWnxrzPe",
+    "image_size": "2K",
+    "prompt_sha256": "6d7cdcb4670d38a0dd6fdae98c48146eb4ca07bb418a143c28093b3a44d645ef",
     "source_media_type": "image/jpeg",
     "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Rich transmon device with unique E0-E3 levels and omega_01/12/23 transitions, drive, charge protection, and dispersive readout.",
-    "reviewed_at": "2026-08-05T12:35:46.480117+00:00",
-    "reviewer": "Codex corpus visual/physics audit 2026-08-05",
+    "notes": "Approved after full-resolution review. Central physics passes: exactly one Josephson junction shunted by C_Sigma; exact transmon Hamiltonian; ordered E0<E1<E2<E3 ladder with correctly assigned adjacent omega_01, omega_12, and omega_23 transitions; correct negative anharmonicity relation and exp[-sqrt(8E_J/E_C)] suppression; E0-E1 control with the E1-E2 leakage path crossed and DRAG-suppressed; and a causal transmon-to-CPW-to-Purcell-filter-to-feedline readout chain with |0>/|1> resonances split by 2chi. Rich apparatus and explanatory density pass. Tolerated ancillary imperfections: redundant ONLY prefixes in the control-panel state callouts and awkward small readout callouts; neither changes topology, state ordering, transitions, equations, or readout causality.",
+    "reviewed_at": "2026-10-25T14:07:29.444353+00:00",
+    "reviewer": "Codex daily deep audit 2026-10-25",
     "status": "passed"
   },
   "schema_version": 1

@@ -3,7 +3,7 @@ title: Transmon
 entry_type: qubit
 technology_family: Superconducting
 status: demonstrated
-figure_reviewed: false
+figure_reviewed: true
 first_proposed_year: 2007
 first_demonstrated_year: 2008
 keywords:
@@ -16,15 +16,15 @@ keywords:
 - circuit qed
 - dispersive readout
 influence_score: 0.95
-last_updated: '2026-10-24'
+last_updated: '2026-10-25'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-audit-2026-10-24
+verified_by: scibok-audit-2026-10-25
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/transmon-figure.provenance.json"
-figure_reviewed_by: "Codex corpus visual/physics audit 2026-08-05"
-figure_reviewed_at: "2026-08-05T12:35:46.480117+00:00"
+figure_reviewed_by: "Codex daily deep audit 2026-10-25"
+figure_reviewed_at: "2026-10-25T14:07:29.444353+00:00"
 ---
 
 ## Figure
