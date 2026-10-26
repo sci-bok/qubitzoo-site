@@ -6,9 +6,9 @@ authors:
 - K. Miyanishi
 - M. F. Gely
 - D. M. Lucas
-year: 2024
+year: 2025
 journal: Physical Review Letters
-doi: 10.1103/PhysRevLett.134.230601
+doi: 10.1103/42w2-6ccy
 arxiv_id: '2412.04421'
 type: reference
 generated_by: scibok-curation
@@ -26,8 +26,9 @@ Demonstrates single-qubit Clifford gate errors of 1.5(4) × 10⁻⁷ (fidelity 9
 - Nearly an order of magnitude improvement over Harty et al. 2014
 
 ## Links
-- **Journal:** [Physical Review Letters](https://doi.org/10.1103/PhysRevLett.134.230601)
+- **Journal:** [Physical Review Letters](https://doi.org/10.1103/42w2-6ccy)
 - **arXiv:** [2412.04421](https://arxiv.org/abs/2412.04421)
 
 ## Zoo Links
 - [[trapped-ion-qubit]]
+- [[quantum-gate]]

@@ -31,3 +31,4 @@ Abstract
 
 ## Zoo Links
 - [[transmon]]
+- [[quantum-gate]]

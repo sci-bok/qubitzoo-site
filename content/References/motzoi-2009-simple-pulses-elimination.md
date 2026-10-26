@@ -19,3 +19,4 @@ This paper presents work on simple pulses for elimination of leakage in weakly n
 
 ## Zoo Links
 - [[transmon]]
+- [[quantum-gate]]

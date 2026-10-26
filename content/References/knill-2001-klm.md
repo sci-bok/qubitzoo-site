@@ -24,3 +24,4 @@ The KLM scheme: proves that efficient quantum computation is possible using only
 - [[linear-optical-photonic-qubit]]
 - [[dual-rail-photonic-qubit]]
 - [[fusion-based-photonic-qubit]]
+- [[quantum-gate]]

@@ -9,3 +9,4 @@ H. Edlbauer, J. Wang et al., "An 11-qubit atom processor in silicon," [Nature 64
 ## Linked Entries
 - [[silicon-spin-qubit]]
 - [[kane-qubit]]
+- [[quantum-gate]]
