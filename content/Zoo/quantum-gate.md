@@ -15,16 +15,16 @@ keywords:
 - DRAG pulse
 - randomized benchmarking
 influence_score: 0.85
-last_updated: '2026-10-26'
+last_updated: '2026-10-27'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-manual-2026-10-26
-figure_reviewed: false
+verified_by: scibok-manual-2026-10-27
+figure_reviewed: true
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/quantum-gate-figure.provenance.json"
-figure_reviewed_by: "pending 2026-10-26 regeneration"
-figure_reviewed_at: "2026-10-26T14:00:00+00:00"
+figure_reviewed_by: "scibok-vision-2026-10-27"
+figure_reviewed_at: "2026-10-27T14:08:55.629066+00:00"
 ---
 
 ## Figure
@@ -117,7 +117,10 @@ Defining $\theta=\hbar^{-1}\int J(t)\,dt$, $\theta=\pi/2$ produces a $\sqrt{\mat
 **Balanced superconducting operation — Marxer et al. (2026):**
 - Demonstrated a $33\,\mathrm{ns}$ tunable-coupler CZ with $99.93\%$ fidelity averaged over 40 hours, alongside $>99.98\%$ one-qubit gates and $>99.94\%$ readout in the same device.
 
-The 2024–2026 literature search found no later peer-reviewed result that cleanly supersedes the cited one-qubit trapped-ion record, the Rower fluxonium result, the Tsai neutral-atom CZ benchmark, or the Marxer balanced superconducting benchmark as of this audit. Cross-platform rankings remain conditional on the benchmarking protocol and operating context.
+**Parallel silicon-spin control — Wu et al. (2026):**
+- Demonstrated primitive $X/Y$ gate fidelities above $99.99\%$ across a five-qubit silicon spin array, including an interleaved-RB $X_{\pi/2}$ fidelity of $99.9985(8)\%$ on one qubit. Fidelities remained above $99.99\%$ during simultaneous operation of up to three qubits, while five-qubit parallel operation stayed above $99.9\%$.
+
+The 2024–2026 literature search found no later peer-reviewed result that cleanly supersedes the cited one-qubit trapped-ion record, the Tsai neutral-atom CZ benchmark, or the Marxer balanced superconducting benchmark as of this audit. Wu 2026 slightly exceeds the cited Rower fluxonium value in isolated primitive-gate fidelity and adds a stronger parallel-control result, while Rower remains the representative few-cycle speed–fidelity benchmark. Cross-platform rankings remain conditional on the benchmarking protocol and operating context.
 
 ## Key Metrics
 
@@ -127,6 +130,7 @@ The 2024–2026 literature search found no later peer-reviewed result that clean
 | 1Q gate fidelity, fluxonium | $99.99807(7)\%$ | Best measured average; optimized $X$ pulse $\approx8.2\,\mathrm{ns}$ | [Rower et al. 2024](https://doi.org/10.1103/PRXQuantum.5.040342) |
 | 1Q gate fidelity, transmon | $99.99258(4)\%$ | RB error $(7.42\pm0.04)\times10^{-5}$ | [Li et al. 2023](https://doi.org/10.1038/s41534-023-00781-x) |
 | 1Q gate fidelity, silicon donor processor | up to $99.99\%$ | Best qubit in an 11-qubit atom processor | [Edlbauer et al. 2025](https://doi.org/10.1038/s41586-025-09827-w) |
+| 1Q primitive $X_{\pi/2}$ fidelity, silicon quantum dot | $99.9985(8)\%$ | Interleaved RB on one qubit; all five individually $>99.99\%$; up to three simultaneous qubits $>99.99\%$ | [Wu et al. 2026](https://doi.org/10.1038/s41567-026-03466-2) |
 | 2Q fidelity, trapped ion | $99.9916(7)\%$ | Smooth gate; no ground-state cooling; $225.8\,\mu\mathrm{s}$ | [Hughes et al. 2025](https://arxiv.org/abs/2510.17286) |
 | 2Q CZ fidelity, superconducting transmons | $99.93\%$ | 40-hour average; $33\,\mathrm{ns}$; PALEA calibration | [Marxer et al. 2026](https://doi.org/10.1103/n86s-2b88) |
 | 2Q CZ fidelity, neutral atoms | $99.71(5)\%$ | Symmetric-input average; leakage-downward-corrected | [Tsai et al. 2025](https://doi.org/10.1103/PRXQuantum.6.010331) |
@@ -159,6 +163,7 @@ These values are not a protocol-independent league table. RB, interleaved RB, le
 - H. Edlbauer et al., “An 11-qubit atom processor in silicon,” [Nature 648, 569 (2025)](https://doi.org/10.1038/s41586-025-09827-w) — [arXiv:2506.03567](https://arxiv.org/abs/2506.03567).
 - A. C. Hughes et al., “Trapped-ion two-qubit gates with $>99.99\%$ fidelity without ground-state cooling,” [arXiv:2510.17286 (2025)](https://arxiv.org/abs/2510.17286).
 - F. Marxer et al., “Above $99.9\%$ Fidelity Single-Qubit Gates, Two-Qubit Gates, and Readout in a Single Superconducting Quantum Device,” [PRX Quantum 7, 020333 (2026)](https://doi.org/10.1103/n86s-2b88) — [arXiv:2508.16437](https://arxiv.org/abs/2508.16437).
+- Y.-H. Wu et al., “Simultaneous high-fidelity single-qubit gates in a spin qubit array,” [Nature Physics (2026)](https://doi.org/10.1038/s41567-026-03466-2) — [arXiv:2507.11918](https://arxiv.org/abs/2507.11918).
 
 ## Linked Papers
 - [[monroe-1995-demonstration-fundamental-logic]]
@@ -171,6 +176,7 @@ These values are not a protocol-independent league table. RB, interleaved RB, le
 - [[edlbauer-2025-11-qubit-atom-processor]]
 - [[hughes-2025-trapped-ion-two-qubit-gates]]
 - [[marxer-2026-above-99-9-fidelity]]
+- [[wu-2026-simultaneous-high-fidelity-spin-array]]
 
 ## Related Entries
 - [[transmon]] — dominant superconducting qubit platform
