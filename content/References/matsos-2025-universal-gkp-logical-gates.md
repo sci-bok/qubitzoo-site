@@ -3,6 +3,8 @@ title: "Universal quantum gate set for Gottesman–Kitaev–Preskill logical qub
 authors: [V. G. Matsos, C. H. Valahu, M. J. Millican, T. Navickas, X. C. Kolesnikow, M. J. Biercuk, T. R. Tan]
 year: 2025
 journal: "Nature Physics"
+volume: "21"
+pages: "1664-1669"
 doi: 10.1038/s41567-025-03002-8
 arxiv_id: '2409.05455'
 type: reference

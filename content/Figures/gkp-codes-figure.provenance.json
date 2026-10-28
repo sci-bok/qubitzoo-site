@@ -27,10 +27,10 @@
     "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Approved rich explanatory Wave 2 plate after full-resolution scientific review. Central device/code structure, logical encoding, control, error mechanism, and readout/system consequence pass; minor ancillary typography is accepted.",
-    "reviewed_at": "2026-08-05T04:45:11.068340+00:00",
-    "reviewer": "Codex scientific visual audit 2026-08-05",
-    "status": "passed"
+    "notes": "Primary retained but review revoked: q-axis tick ordering is corrupted, a logical-operator label contains an extra q, and the figure equates Delta about 0.5 with 10 dB despite the entry convention. Three rich replacement candidates were generated and formally rejected for separate central-physics errors.",
+    "reviewed_at": "2026-10-28T14:08:22.543860+00:00",
+    "reviewer": "Codex scientific visual audit 2026-10-28",
+    "status": "rejected"
   },
   "schema_version": 1
 }
