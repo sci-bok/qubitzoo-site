@@ -13,10 +13,10 @@ keywords:
 - displacement error
 - squeezed state
 influence_score: 0.84
-last_updated: '2026-10-28'
+last_updated: '2026-10-29'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-deep-audit-2026-10-28
+verified_by: scibok-deep-audit-2026-10-29
 figure_reviewed: false
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"

@@ -27,3 +27,4 @@ Author order was checked against the arXiv v2 PDF title page on 2026-10-14.
 ## Zoo Links
 - [[bosonic-qubit]]
 - [[fluxonium]]
+- [[gkp-codes]]

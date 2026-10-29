@@ -57,3 +57,4 @@ Demonstrates an integrated silicon-nitride source of optical GKP states at 1550 
 ## Cited In
 
 - [[continuous-variable-photonic-qubit]]
+- [[gkp-codes]]
