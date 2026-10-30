@@ -13,16 +13,16 @@ keywords:
 - displacement error
 - squeezed state
 influence_score: 0.84
-last_updated: '2026-10-29'
+last_updated: '2026-10-30'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-deep-audit-2026-10-29
-figure_reviewed: false
+verified_by: scibok-deep-audit-2026-10-30
+figure_reviewed: true
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/gkp-codes-figure.provenance.json"
-figure_reviewed_by: "Codex scientific visual audit 2026-08-05"
-figure_reviewed_at: "2026-08-05T04:45:11.068340+00:00"
+figure_reviewed_by: "Codex scientific visual audit 2026-10-30"
+figure_reviewed_at: "2026-10-30T14:07:26.862837+00:00"
 ---
 
 ## Figure
@@ -93,6 +93,11 @@ GKP codes convert sufficiently small shifts in either phase-space quadrature int
 - Replaced the centimeter-scale 3D cavity/transmon stack with an on-chip spiral resonator controlled by a heavy-fluxonium ancilla
 - Demonstrated measurement-free stabilization with logical-lifetime gain $1.59\pm0.05$
 
+**Quasi-deterministic optical GKP generation — Yu et al. (2026):**
+- Combined near-deterministic photon-number-state injection, cat-state breeding, homodyne feedforward, and real-time displacement in a time-bin photonic processor
+- Generated approximately 2,000 optical GKP states per second while operating at 250 kHz
+- Demonstrated a one-dimensional approximate GKP state rather than a full two-dimensional fault-tolerant grid state; further squeezing and lower loss remain necessary for error correction
+
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
@@ -103,6 +108,7 @@ GKP codes convert sufficiently small shifts in either phase-space quadrature int
 | GKP Bell-state fidelity | 0.842 | Direct preparation from the two motional-mode ground states | [Matsos et al. 2025](https://doi.org/10.1038/s41567-025-03002-8) |
 | GKP qutrit / ququart coherence gain | $1.82\pm0.03$ / $1.87\pm0.03$ | Beyond-break-even higher-dimensional GKP memories | [Brock et al. 2025](https://doi.org/10.1038/s41586-025-08899-y) |
 | Planar GKP logical-lifetime gain | $1.59\pm0.05$ | Heavy-fluxonium ancilla and on-chip spiral resonator; preprint | [Jha et al. 2026](https://arxiv.org/abs/2609.26880) |
+| Quasi-deterministic optical GKP generation rate | $\sim2{,}000$ states/s | 250-kHz photonic experiment; demonstrated state was one-dimensional and not yet fault tolerant | [Yu et al. 2026](https://doi.org/10.1038/s41566-026-01962-8) |
 | Integrated-photonic symmetric effective squeezing | $0.62\pm0.02$ dB | Generated GKP state remained below fault-tolerant quality | [Larsen et al. 2025](https://doi.org/10.1038/s41586-025-09044-5) |
 | Ideal logical-comb spacing | $2\sqrt{\pi}$ | $q$-quadrature spacing within either logical basis state | [Gottesman et al. 2001](https://doi.org/10.1103/PhysRevA.64.012310) |
 | Ideal correctable shift radius | $<\sqrt{\pi}/2$ | For isolated square-lattice shift errors before modular ambiguity | [Gottesman et al. 2001](https://doi.org/10.1103/PhysRevA.64.012310) |
@@ -121,6 +127,7 @@ GKP codes convert sufficiently small shifts in either phase-space quadrature int
 - V. G. Matsos et al., "Universal quantum gate set for Gottesman–Kitaev–Preskill logical qubits," [Nature Physics 21, 1664 (2025)](https://doi.org/10.1038/s41567-025-03002-8) — [arXiv:2409.05455](https://arxiv.org/abs/2409.05455)
 - B. L. Brock et al., "Quantum error correction of qudits beyond break-even," [Nature 641, 612 (2025)](https://doi.org/10.1038/s41586-025-08899-y) — [arXiv:2409.15065](https://arxiv.org/abs/2409.15065)
 - M. V. Larsen et al., "Integrated photonic source of Gottesman–Kitaev–Preskill qubits," [Nature 642, 587 (2025)](https://doi.org/10.1038/s41586-025-09044-5)
+- S. Yu et al., "Extensible universal photonic quantum computing with nonlinearity," [Nature Photonics 20, 1166 (2026)](https://doi.org/10.1038/s41566-026-01962-8) — [arXiv:2602.06544](https://arxiv.org/abs/2602.06544)
 - S. R. Jha et al., "Bosonic Error Correction with Fluxonium," [arXiv:2609.26880 (2026)](https://arxiv.org/abs/2609.26880)
 
 ## Linked Papers
@@ -134,6 +141,7 @@ GKP codes convert sufficiently small shifts in either phase-space quadrature int
 - [[brock-2025-quantum-error-correction-qudits-beyond-break-even]]
 - [[larsen-2025-integrated-photonic-gkp-source]]
 - [[jha-2026-bosonic-error-correction-fluxonium]]
+- [[yu-2026-extensible-universal-photonic-computing]]
 - [[shiina-2026-high-rate-and-resource-efficient-all-photonic]]
 - [[vyas-2026-homomorphic-aggregation-of-continuous-variable]]
 - [[kumar-2026-deterministic-universal-logical-gates]]

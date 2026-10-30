@@ -2,13 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "gkp-codes-figure.png",
-    "sha256": "dafe057fef670f7e7c417384be540f56a3f12aeb694c4d4a213130e55f440b3e"
+    "sha256": "8c3282c2799df5e6a4220296844b9e593580f111cb9ee72ce42fa1cd1c6f9f79"
   },
   "artifact_role": "primary",
   "blueprint": null,
   "entry_slug": "gkp-codes",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/gkp-codes-figure-20260805T043743150119Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/vault/Figures/.candidates/gkp-codes-figure-20261030T140652550163Z.png",
     "supersedes_file": "gkp-codes-figure.png"
   },
   "renderer": {
@@ -19,18 +19,18 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-05T04:37:43.150119+00:00",
-    "id": "gen-1785904652-Q935Q7Iaxe1BoGqmYiCn",
-    "image_size": "1K",
-    "prompt_sha256": "6b0ca9892a63fdbeca81ee5c82d1dfaf8cc5a7842c3bdc3f1b54787426ee79a9",
+    "generated_at": "2026-10-30T14:06:52.550163+00:00",
+    "id": "gen-1793369194-HgCWfBd7cYUQCHmMqBI5",
+    "image_size": "2K",
+    "prompt_sha256": "ba016d1315c6585ecc55fa84ca8672066f2dcc860c200908bb363727061ead95",
     "source_media_type": "image/jpeg",
     "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Primary retained but review revoked: q-axis tick ordering is corrupted, a logical-operator label contains an extra q, and the figure equates Delta about 0.5 with 10 dB despite the entry convention. Three rich replacement candidates were generated and formally rejected for separate central-physics errors.",
-    "reviewed_at": "2026-10-28T14:08:22.543860+00:00",
-    "reviewer": "Codex scientific visual audit 2026-10-28",
-    "status": "rejected"
+    "notes": "APPROVE: full-resolution review verified the exact monotonic five-tick q axis, even/odd logical-comb locations, all four stabilizer/logical operators, q,p correction boundaries at plus/minus sqrt(pi)/2, the 10 dB to Delta 0.224 convention, source-backed platform metrics, and the 2026 one-dimensional non-fault-tolerant photonic qualifier. Rich apparatus, nested insets, syndrome feedback, and causal flow pass. Only minor ancillary apparatus-label artifacts remain (Htorage and one garbled ion-inset phrase).",
+    "reviewed_at": "2026-10-30T14:07:26.862837+00:00",
+    "reviewer": "Codex scientific visual audit 2026-10-30",
+    "status": "passed"
   },
   "schema_version": 1
 }
