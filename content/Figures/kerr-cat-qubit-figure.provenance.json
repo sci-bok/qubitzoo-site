@@ -2,13 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "kerr-cat-qubit-figure.png",
-    "sha256": "bd72ac5b96e515d5fead30cead7a4fd8a6b2647929f456b7aff7b902f9fda04b"
+    "sha256": "f277bf006f4aee9e44709f98232b4496ca378da31522edd6829f8c97bb3b6d27"
   },
   "artifact_role": "primary",
   "blueprint": null,
   "entry_slug": "kerr-cat-qubit",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/kerr-cat-qubit-figure-20260805T051844812688Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/kerr-cat-qubit-figure-20261031T140959243845Z.png",
     "supersedes_file": "kerr-cat-qubit-figure.png"
   },
   "renderer": {
@@ -19,17 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-05T05:18:44.812688+00:00",
-    "id": "gen-1785907109-cR8jmF8duR7OVW8tMyuH",
-    "image_size": "1K",
-    "prompt_sha256": "b27f503fe6d0dc78dc7ca11ebd1083882654f9992c94dc1702a98b87004d4928",
+    "generated_at": "2026-10-31T14:09:59.243845+00:00",
+    "id": "gen-1793455761-fqNpizN0LhTjIy7BZm9x",
+    "image_size": "2K",
+    "prompt_sha256": "0f75878ed1dbe55ac8bc85829decacd1e2ffce900e8a020f93892bf495c62949",
     "source_media_type": "image/jpeg",
     "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Approved rich explanatory Wave 3 plate after full-resolution review. The central hardware/encoding/control/readout or infrastructure narrative is sound; minor ancillary labels and rendering artifacts are accepted under the detail-first policy.",
-    "reviewed_at": "2026-08-05T05:30:31.996360+00:00",
-    "reviewer": "Codex scientific visual audit 2026-08-05",
+    "notes": "APPROVE: full-resolution review passes the central physics and rich-style gates. The SNAIL/pump/filter/readout apparatus is coherent; phase-space ordering is left |-alpha>, right |+alpha>; coherent Z basis and parity-cat X basis are explicitly two bases of one 2D manifold; tunnelling and photon-loss channels map to rare bit flips and dominant phase flips; eta=Gamma_phase/Gamma_bit; overlap, full detuned Hamiltonian, and 4K|alpha|^2 gap are correct; Hajr 2024 and Qing 2026 metrics are source-consistent. Minor ancillary issues remain: one small outer-code callout is grammatically garbled, and the compact energy-level inset repeats local-level labels awkwardly, but neither changes state ordering, error causality, equations, or numerical claims.",
+    "reviewed_at": "2026-10-31T14:10:33.749842+00:00",
+    "reviewer": "Codex scientific visual audit 2026-10-31",
     "status": "passed"
   },
   "schema_version": 1

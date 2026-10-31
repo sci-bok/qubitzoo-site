@@ -6,7 +6,8 @@ journal: "npj Quantum Information"
 doi: 10.1038/s41534-017-0019-1
 type: reference
 generated_by: scibok-audit-backfill
-last_updated: '2026-03-25'
+arxiv_id: '1605.09408'
+last_updated: '2026-10-31'
 ---
 
 AbstractPhotonic cat states stored in high-Q resonators show great promise for hardware efficient universal quantum computing.
@@ -18,6 +19,9 @@ AbstractPhotonic cat states stored in high-Q resonators show great promise for h
 
 ## Links
 - **Journal:** [npj Quantum Information](https://doi.org/10.1038/s41534-017-0019-1)
+- **arXiv:** [1605.09408](https://arxiv.org/abs/1605.09408)
 
 ## Zoo Links
-- [[singlet-triplet-qubit]]
+- [[kerr-cat-qubit]]
+- [[cat-codes]]
+- [[bosonic-qubit]]
