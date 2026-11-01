@@ -2,13 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "rare-earth-ion-qubit-figure.png",
-    "sha256": "58df4da5a22b18cde5d969023932203572ebe24e4e375444ce00949e4b286175"
+    "sha256": "f30bd8c4536a62933a142a9fb42f7ac25ac9572a3b706996ee80d1b89181880e"
   },
   "artifact_role": "primary",
   "blueprint": null,
   "entry_slug": "rare-earth-ion-qubit",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/rare-earth-ion-qubit-figure-20260805T121049755145Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/rare-earth-ion-qubit-figure-20261101T151738611274Z.png",
     "supersedes_file": "rare-earth-ion-qubit-figure.png"
   },
   "renderer": {
@@ -19,17 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-05T12:10:49.755145+00:00",
-    "id": "gen-1785931837-YZBms14i8gE0RmR1RIss",
-    "image_size": "1K",
-    "prompt_sha256": "e55c38b1ae895ea9a3f639813dcf6dd38de22083632a92e61d1997e1ba8c2c98",
+    "generated_at": "2026-11-01T15:17:38.611274+00:00",
+    "id": "gen-1793546160-5fOqwUrC2OoXXSYPT1xu",
+    "image_size": "2K",
+    "prompt_sha256": "58b3c1feada10a03686c8f693b78d30af9d4c998ba0dbe45dcbb2071812947d0",
     "source_media_type": "image/jpeg",
     "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Rich rare-earth cavity platform, Er/Eu encodings, QND readout, and multiplexed network context; central physics passed.",
-    "reviewed_at": "2026-08-05T12:35:46.034071+00:00",
-    "reviewer": "Codex corpus visual/physics audit 2026-08-05",
+    "notes": "APPROVE: full-resolution review passed rich-style and central-physics gates. Correct Er manifold ordering, exact two-level 167Er qubit subspace, I=7/2/eight-sublevel statement, selective Purcell readout with P=95(10), 65 MHz cavity and 0.9 GHz spacing, and explicit Er:CaWO4 local gate with J=5.40(3) kHz and Bell fidelity 0.76(2). Minor ancillary text glitches are tolerable and do not alter the scientific story.",
+    "reviewed_at": "2026-11-01T15:18:20.555036+00:00",
+    "reviewer": "Scibok independent full-resolution physics audit 2026-11-01",
     "status": "passed"
   },
   "schema_version": 1

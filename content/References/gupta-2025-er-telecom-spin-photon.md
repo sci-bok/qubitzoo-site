@@ -16,7 +16,7 @@ verified_by: scibok-crossref-2026-09-10
 Demonstrates dual epitaxial erbium-based telecom spin-photon interfaces with spin coherence exceeding 10 ms, kilohertz-level optical linewidths, and 92% single-shot readout fidelity in a fiber-integrated platform.
 
 ## Links
-- **Journal:** [Nature Communications 16, 10177 (2025)](https://doi.org/10.1038/s41467-025-64780-6)
+- **Journal:** [Nature Communications 16, 9814 (2025)](https://doi.org/10.1038/s41467-025-64780-6)
 
 ## Zoo Links
 - [[rare-earth-ion-qubit]]
