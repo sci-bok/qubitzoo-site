@@ -16,10 +16,10 @@ keywords:
 - sympathetic cooling
 - shuttling
 influence_score: 0.92
-last_updated: '2026-06-09'
+last_updated: '2026-11-02'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-audit-2026-03-25
+verified_by: scibok-deep-audit-2026-11-02
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/trapped-ion-qubit-figure.provenance.json"
@@ -76,7 +76,7 @@ Trapped ions offer natural identical qubits (every $^{171}\text{Yb}^+$ ion is id
 
 **Coherence records — hyperfine clock qubits:**
 - $T_2 > 10\,\text{min}$ demonstrated with sympathetic cooling in $^{171}\text{Yb}^+$ / $^{138}\text{Ba}^+$ (Wang et al. 2017).
-- $T_2 > 10\,\text{hours}$ demonstrated in a decoherence-free subspace using a Yb-Ba-Yb ion chain (2024).
+- $T_2 > 10\,\text{hours}$ demonstrated in a decoherence-free subspace using $^{171}\text{Yb}^+$ qubit pairs sympathetically cooled by $^{138}\text{Ba}^+$ (Pi et al. 2026, [arXiv:2603.19631](https://arxiv.org/abs/2603.19631)).
 
 **High-fidelity gates — Ballance et al. (2016), Gaebler et al. (2016):**
 - Two-qubit gate fidelities $> 99.9\%$ demonstrated via Mølmer-Sørensen gates.
@@ -101,12 +101,18 @@ Trapped ions offer natural identical qubits (every $^{171}\text{Yb}^+$ ion is id
 - Novel four-way "X" junction architecture with rotatable ion storage ring.
 - Full all-to-all connectivity among 98 qubits.
 
+**Beyond-break-even encoded computation — Dasu et al. (2026):**
+- Demonstrated encoded computations outperforming unencoded counterparts on the 98-qubit Helios processor using high-rate iceberg QED/QEC codes.
+- Scaled to 48–94 logical qubits across fault-tolerant and partially fault-tolerant benchmarks, with reasonable postselection rates.
+- First large-scale evidence that high-rate QED/QEC codes are viable for beyond-classical-scale computation on trapped-ion hardware.
+
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
 | $T_1$ | >10,000 s (hyperfine) | Hyperfine ground states have no decay | [Bruzewicz et al. 2019](https://doi.org/10.1063/1.5088164) |
 | $T_2$ (echo) | >600 s | $^{171}\text{Yb}^+$ with sympathetic cooling | [Wang et al. 2017](https://doi.org/10.1038/s41566-017-0007-1) |
+| $T_2$ (DFS logical) | >10 h | $^{171}\text{Yb}^+$ pair, DFS encoding | [Pi et al. 2026](https://arxiv.org/abs/2603.19631) |
 | 1Q gate fidelity | 99.999985% | $^{43}\text{Ca}^+$ microwave RB; error $1.5 \times 10^{-7}$ | [Smith et al. 2024](https://arxiv.org/abs/2412.04421) |
 | 2Q gate fidelity | 99.9% | MS gate, $^{43}\text{Ca}^+$ | [Ballance et al. 2016](https://doi.org/10.1103/PhysRevLett.117.060504) |
 | Readout fidelity | 99.99% | Electron shelving / fluorescence | [Myerson et al. 2008](https://doi.org/10.1103/PhysRevLett.100.200502) |
@@ -132,8 +138,8 @@ Trapped ions offer natural identical qubits (every $^{171}\text{Yb}^+$ ion is id
 - J. I. Cirac and P. Zoller, "Quantum Computations with Cold Trapped Ions," [Phys. Rev. Lett. 74, 4091 (1995)](https://doi.org/10.1103/PhysRevLett.74.4091)
 
 ### Gate proposals
-- A. Sørensen and K. Mølmer, "Quantum Computation with Ions in Thermal Motion," [Phys. Rev. Lett. 82, 1971 (1999)](https://doi.org/10.1103/PhysRevLett.82.1971) | [arXiv:quant-ph/9810060](https://arxiv.org/abs/quant-ph/9810060) — original Mølmer-Sørensen gate
-- D. Kielpinski, C. Monroe, and D. J. Wineland, "Architecture for a large-scale ion-trap quantum computer," [Nature 417, 709 (2002)](https://doi.org/10.1038/nature00784) | [arXiv:quant-ph/0110143](https://arxiv.org/abs/quant-ph/0110143) — QCCD architecture proposal
+- A. Sørensen and K. Mølmer, "Quantum Computation with Ions in Thermal Motion," [Phys. Rev. Lett. 82, 1971 (1999)](https://doi.org/10.1103/PhysRevLett.82.1971) | [arXiv:quant-ph/9810039](https://arxiv.org/abs/quant-ph/9810039) — original Mølmer-Sørensen gate
+- D. Kielpinski, C. Monroe, and D. J. Wineland, "Architecture for a large-scale ion-trap quantum computer," [Nature 417, 709 (2002)](https://doi.org/10.1038/nature00784) — QCCD architecture proposal (no arXiv preprint exists for this paper)
 
 ### Experimental demonstrations
 - C. Monroe et al., "Demonstration of a Fundamental Quantum Logic Gate," [Phys. Rev. Lett. 75, 4714 (1995)](https://doi.org/10.1103/PhysRevLett.75.4714) — first quantum logic gate
@@ -142,7 +148,9 @@ Trapped ions offer natural identical qubits (every $^{171}\text{Yb}^+$ ion is id
 - C. J. Ballance et al., "High-Fidelity Quantum Logic Gates Using Trapped-Ion Hyperfine Qubits," [Phys. Rev. Lett. 117, 060504 (2016)](https://doi.org/10.1103/PhysRevLett.117.060504) | [arXiv:1512.04600](https://arxiv.org/abs/1512.04600)
 - J. P. Gaebler et al., "High-Fidelity Universal Gate Set for $^{9}\text{Be}^+$ Ion Qubits," [Phys. Rev. Lett. 117, 060505 (2016)](https://doi.org/10.1103/PhysRevLett.117.060505) | [arXiv:1604.00032](https://arxiv.org/abs/1604.00032) — 2Q error $5.2 \times 10^{-4}$
 - Y. Wang et al., "Single-qubit quantum memory exceeding ten-minute coherence time," [Nature Photon. 11, 646 (2017)](https://doi.org/10.1038/s41566-017-0007-1) | [arXiv:1701.04195](https://arxiv.org/abs/1701.04195) — see also P. Wang et al., [Nature Commun. 12, 233 (2021)](https://doi.org/10.1038/s41467-020-20330-w) for $T_2 > 1$ hour
-- M. C. Smith et al., "Single-qubit gates with errors at the $10^{-7}$ level," [Phys. Rev. Lett. 134, 230601 (2025)](https://doi.org/10.1103/PhysRevLett.134.230601) | [arXiv:2412.04421](https://arxiv.org/abs/2412.04421) — 1Q fidelity 99.999985%
+- M. C. Smith et al., "Single-qubit gates with errors at the $10^{-7}$ level," [Phys. Rev. Lett. 134, 230601 (2025)](https://doi.org/10.1103/42w2-6ccy) | [arXiv:2412.04421](https://arxiv.org/abs/2412.04421) — 1Q fidelity 99.999985%
+- J. Pi et al., "Beyond-Ten-Hour Coherence in a Decoherence-Free Trapped-Ion Clock Qubit," [arXiv:2603.19631 (2026)](https://arxiv.org/abs/2603.19631) — DFS logical-memory coherence exceeding ten hours
+- S. Dasu et al., "Computing with many encoded logical qubits beyond break-even," [arXiv:2602.22211 (2026)](https://arxiv.org/abs/2602.22211) — beyond-break-even encoded computation on 98-qubit Helios
 
 ### Reviews
 - C. D. Bruzewicz et al., "Trapped-ion quantum computing: Progress and challenges," [Appl. Phys. Rev. 6, 021314 (2019)](https://doi.org/10.1063/1.5088164)
@@ -160,8 +168,9 @@ Trapped ions offer natural identical qubits (every $^{171}\text{Yb}^+$ ion is id
 - [[wang-2017-single-qubit-quantum-memory]]
 - [[smith-2024-single-qubit-gate-errors]]
 - [[olmschenk-2007-yb171-qubit]]
-- [[smith-2025-single-qubit-gates-10-7]]
 - [[wang-2017-ten-minute-coherence]]
+- [[pi-2026-beyond-ten-hour-coherence]]
+- [[dasu-2026-beyond-break-even]]
 - [[wahl-2026-ion-trap-on-borosilicate]]
 - [[brudney-2026-mid-circuit-ground-state-cooling-and]]
 - [[velasco-2026-extreme-ultraviolet-spectroscopy-using-quantum]]
