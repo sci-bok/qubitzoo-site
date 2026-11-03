@@ -3,7 +3,7 @@ title: Fluxonium
 entry_type: qubit
 technology_family: Superconducting
 status: demonstrated
-figure_reviewed: true
+figure_reviewed: false
 first_proposed_year: 2009
 first_demonstrated_year: 2009
 keywords:
@@ -15,15 +15,15 @@ keywords:
 - heavy fluxonium
 - disjoint support
 influence_score: 0.90
-last_updated: '2026-07-20'
+last_updated: '2026-11-03'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-editorial-audit-2026-03-26
+verified_by: scibok-deep-audit-2026-11-03
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/fluxonium-figure.provenance.json"
-figure_reviewed_by: "Codex scientific visual audit 2026-08-05"
-figure_reviewed_at: "2026-08-05T04:34:35.523219+00:00"
+figure_reviewed_by: null
+figure_reviewed_at: null
 ---
 
 ## Figure
@@ -32,23 +32,23 @@ figure_reviewed_at: "2026-08-05T04:34:35.523219+00:00"
 
 ## Description
 
-The fluxonium qubit, introduced by Manucharyan et al. (2009), consists of a small Josephson junction shunted by a superinductance — a very large inductance ($L \sim 1\,\mu\text{H}$, corresponding to $E_L/h \sim 0.5{-}1\,\text{GHz}$) realized as an array of larger Josephson junctions. This superinductance provides a DC path for phase slips, grounding the superconducting phase and enabling operation at the half-flux-quantum sweet spot $\Phi_\text{ext} = \Phi_0/2$, where the qubit transition is first-order insensitive to flux noise.
+The fluxonium qubit, introduced by Manucharyan et al. (2009), consists of a small Josephson junction shunted by a capacitance and a superinductance — a very large inductance ($L \sim 0.1{-}1\,\mu\text{H}$, often corresponding to $E_L/h \sim 0.5{-}1\,\text{GHz}$) usually realized as an array of roughly 100 larger Josephson junctions. The inductive shunt makes the circuit galvanically connected at low frequency and removes offset-charge periodicity without requiring the large shunt capacitance of a transmon. At the half-flux-quantum sweet spot $\Phi_\text{ext}=\Phi_0/2$, symmetry makes the qubit transition first-order insensitive to flux noise.
 
-Unlike the transmon (which operates in the weakly anharmonic oscillator regime), the fluxonium can have enormous anharmonicity — the $|0\rangle \to |1\rangle$ transition can be as low as $100{-}1000\,\text{MHz}$ while higher transitions are at $5{-}8\,\text{GHz}$. This spectral isolation makes leakage errors fundamentally smaller. The tradeoff is that the low transition frequency makes direct dispersive readout more challenging, typically requiring auxiliary readout schemes or coupling to a transmon for measurement.
+Unlike the weakly anharmonic transmon, half-flux-biased fluxonium combines a low $|0\rangle\!\leftrightarrow\!|1\rangle$ frequency (typically $100{-}1000\,\text{MHz}$) with noncomputational transitions several gigahertz higher. The large spectral separation suppresses leakage during well-designed gates. Low $\omega_{01}$ complicates thermal initialization and direct resonant control, but ordinary dispersive readout remains possible because higher fluxonium transitions can produce a sizable cavity shift; a transmon coupler is useful for some gate architectures but is not required for measurement.
 
-In the "heavy fluxonium" regime ($E_C/h \sim 0.5{-}1\,\text{GHz}$, $E_J/E_C \sim 3{-}8$), the wavefunctions of $|0\rangle$ and $|1\rangle$ have disjoint support in phase space: $|0\rangle$ is localized in one well of the cosine potential and $|1\rangle$ in the other. This disjoint support makes the qubit insensitive to virtually all local noise operators, enabling $T_1$ times exceeding $1\,\text{ms}$.
+In the heavy-fluxonium regime ($E_J/E_C$ of order a few), the localized persistent-current states $|L\rangle$ and $|R\rangle$ occupy opposite wells and have exponentially small wavefunction overlap. Exactly at half flux, however, the energy eigenstates are the symmetric and antisymmetric combinations $(|L\rangle\pm|R\rangle)/\sqrt{2}$; they are not individually localized in opposite wells. Small charge-transition matrix elements and first-order flux-noise cancellation suppress important relaxation and dephasing channels, but do not provide immunity to every local noise source. Dielectric loss, thermal excitation, flux noise away from the sweet spot, and phase slips in the junction array remain relevant.
 
 ## Hamiltonian
 
 $$H = 4E_C\hat{n}^2 - E_J\cos\hat{\varphi} + \frac{1}{2}E_L(\hat{\varphi} - 2\pi\Phi_\text{ext}/\Phi_0)^2$$
 
-where $E_C = e^2/2C$ is the charging energy, $E_J$ is the Josephson energy of the small junction, $E_L = (\Phi_0/2\pi)^2/L$ is the inductive energy of the superinductance, $\hat{n}$ and $\hat{\varphi}$ are conjugate charge and phase operators, and $\Phi_\text{ext}$ is the external flux threading the loop.
+where $E_C=e^2/2C$ is the charging energy, $E_J$ is the Josephson energy of the small junction, $E_L=(\Phi_0/2\pi)^2/L$ is the inductive energy, $\hat n$ and $\hat\varphi$ obey $[\hat\varphi,\hat n]=i$, and $\varphi_\text{ext}=2\pi\Phi_\text{ext}/\Phi_0$ is the reduced external flux. An equivalent gauge places $\varphi_\text{ext}$ inside the cosine rather than the inductive term.
 
-At the half-flux-quantum sweet spot ($\Phi_\text{ext} = \Phi_0/2$), the potential has a double-well structure with the two minima related by parity symmetry $\varphi \to -\varphi + 2\pi$. The qubit states are the symmetric and antisymmetric superpositions of the states localized in each well, split by the tunneling rate through the cosine barrier.
+At the half-flux-quantum sweet spot ($\varphi_\text{ext}=\pi$), the potential is symmetric under $\varphi\to2\pi-\varphi$ and has a double-well structure for the usual fluxonium parameters. If $|L\rangle$ and $|R\rangle$ denote states localized in the two wells, then the two lowest energy eigenstates are approximately $|0\rangle=(|L\rangle+|R\rangle)/\sqrt{2}$ and $|1\rangle=(|L\rangle-|R\rangle)/\sqrt{2}$, with their splitting set by interwell tunneling. Higher plasmon-like states remain separated by several gigahertz.
 
 ## Motivation
 
-The transmon's achilles heel is its weak anharmonicity ($\sim -200\,\text{MHz}$), which limits gate speeds and makes it vulnerable to leakage to $|2\rangle$. The fluxonium addresses this with GHz-scale anharmonicity while simultaneously achieving superior coherence through flux-sweet-spot operation and disjoint-support noise protection. The main challenge is implementing fast, high-fidelity gates at low qubit frequencies and achieving high-fidelity readout without a direct dispersive shift.
+The transmon's Achilles heel is its weak anharmonicity (typically about $-200\,\text{MHz}$), which constrains pulse bandwidth and increases leakage risk. Fluxonium trades a more complex junction-array circuit and low computational frequency for gigahertz-scale spectral separation, long coherence, and flexible access to noncomputational transitions. The engineering challenges are reproducible array fabrication, thermal initialization of sub-gigahertz qubits, scalable coupling and flux control, and fast QND readout without measurement-induced transitions.
 
 ## Experimental Status
 
@@ -57,35 +57,42 @@ The transmon's achilles heel is its weak anharmonicity ($\sim -200\,\text{MHz}$)
 - Demonstrated charge-offset insensitivity while preserving single-Cooper-pair anharmonicity.
 - Confirmed spectroscopic signatures consistent with the fluxonium Hamiltonian.
 
-**Superinductance characterization:**
-- Josephson junction arrays provide $L > 100\,\text{nH}$ with self-resonance above qubit operating frequencies.
-- Flux-sweet-spot operation at $\Phi_\text{ext} = \Phi_0/2$ eliminates first-order flux noise sensitivity.
-
 **High-coherence fluxonium — Nguyen et al. (2019):**
-- First demonstration of high-coherence fluxonium at the half-flux sweet spot.
-- Achieved $T_1 \sim 300\,\mu\text{s}$ and $T_2^{\text{echo}} > 100\,\mu\text{s}$ — an order-of-magnitude improvement over earlier fluxonium devices.
-- Established the flux sweet spot as the preferred operating point for coherence-optimized fluxonium.
+- Reported $T_2>100\,\mu\text{s}$ reproducibly across seven of eight devices and above $300\,\mu\text{s}$ in one device at half flux.
+- Established that an array of more than 100 junctions need not prevent high coherence.
 
 **Millisecond coherence — Somoroff et al. (2023):**
-- Heavy fluxonium regime achieved $T_1 > 1\,\text{ms}$ through disjoint-support protection.
+- Measured $T_2^*=1.48\pm0.13\,\text{ms}$, a 12-hour-averaged $T_1=1.20\pm0.03\,\text{ms}$, and average physical-gate fidelity $99.991(1)\%$.
 
 **High-fidelity gates — Ding et al. (2023):**
 - Two-qubit fluxonium gates demonstrated with a transmon coupler.
-- Single-qubit gate fidelities $> 99.99\%$ and two-qubit gate fidelities $> 99.7\%$.
+- Demonstrated a 50 ns microwave-activated CZ gate with average fidelity $99.922\pm0.009\%$ and static $ZZ$ coupling at the kilohertz scale.
+
+**Control-friendly and manufacturable variants — Mencia et al. (2024); Wang et al. (2025):**
+- Integer fluxonium at zero magnetic field operated near 4 GHz with Ramsey coherence above $100\,\mu\text{s}$ and average Clifford fidelity above $99.9\%$.
+- A CMOS-compatible overlap process achieved nearly 100% junction yield across a 2-inch wafer, below 5% variation for the phase-slip junction, below 2% for the array, and $T_1>1\,\text{ms}$ at half flux.
+
+**QND readout — Bothara et al. (2025):**
+- Published single-shot assignment fidelity was $97.8\pm0.4\%$ in 260 ns with a Josephson parametric amplifier; QND repeatability was $99.0\pm0.3\%$.
+- State mixing and measurement-induced transitions, rather than signal-to-noise alone, remained the limiting mechanisms.
+
+**Processor scaling — Zhan et al.; Schirk et al. (2026 preprints):**
+- A 22-qubit tunable-coupler processor demonstrated parallel 1Q fidelities approaching $99.99\%$, a best 32 ns CZ fidelity of $99.9\%$, and GHZ states involving up to 10 qubits.
+- A complementary connectivity-four resonator-coupled processor reported parallel 1Q fidelities above $99.9\%$, 2Q fidelities above $99\%$, residual static $ZZ<1\,\text{kHz}$, and a five-qubit GHZ-state fidelity of $90\%$.
 
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| $T_1$ | 100 μs – 1.5 ms | Heavy fluxonium at half-flux sweet spot | [Somoroff et al. 2023](https://doi.org/10.1103/PhysRevLett.130.267001) |
-| $T_2$ (echo) | 100–500 μs | Echo at sweet spot | [Somoroff et al. 2023](https://doi.org/10.1103/PhysRevLett.130.267001) |
-| Anharmonicity | 3–8 GHz | $\omega_{12} - \omega_{01}$; much larger than transmon | [Manucharyan et al. 2009](https://doi.org/10.1126/science.1175552) |
-| Qubit frequency $\omega_{01}/2\pi$ | 100 MHz – 1 GHz | Much lower than transmon | — |
-| $E_J/E_C$ | 3–8 | Heavy fluxonium regime | — |
-| 1Q gate fidelity | 99.97–99.998% | Microwave or charge-parity-protected gates | [Ding et al. 2023](https://doi.org/10.1103/PhysRevX.13.031035) |
-| 2Q gate fidelity | 99.2–99.92% | Capacitive or inductive coupling; CZ gate | [Ding et al. 2023](https://doi.org/10.1103/PhysRevX.13.031035) |
-| Gate time (1Q) | 20–100 ns | Frequency-dependent | — |
-| Operating temperature | 10–20 mK | Dilution refrigerator | — |
+| $T_1$ | $1.20\pm0.03\,\text{ms}$ (12 h average) | Half-flux sweet spot | [Somoroff et al. 2023](https://doi.org/10.1103/PhysRevLett.130.267001) |
+| $T_2^*$ | $1.48\pm0.13\,\text{ms}$ | Ramsey; highest reported trace in that device | [Somoroff et al. 2023](https://doi.org/10.1103/PhysRevLett.130.267001) |
+| Qubit frequency $\omega_{01}/2\pi$ | Typically $100\,\text{MHz}{-}1\,\text{GHz}$ at half flux | Sub-gigahertz fluxon transition | [Ding et al. 2023](https://doi.org/10.1103/PhysRevX.13.031035) |
+| 1Q gate fidelity | $99.991(1)\%$ | Average physical-gate fidelity; randomized benchmarking | [Somoroff et al. 2023](https://doi.org/10.1103/PhysRevLett.130.267001) |
+| 2Q gate fidelity (CZ) | $99.922\pm0.009\%$ | 50 ns microwave-activated gate with transmon coupler | [Ding et al. 2023](https://doi.org/10.1103/PhysRevX.13.031035) |
+| Readout fidelity | $97.8\pm0.4\%$ | Assignment fidelity; 260 ns, with JPA | [Bothara et al. 2025](https://doi.org/10.1063/5.0255892) |
+| QND repeatability | $99.0\pm0.3\%$ | Published value; limited by state mixing | [Bothara et al. 2025](https://doi.org/10.1063/5.0255892) |
+| Wafer-scale junction yield | Nearly $100\%$ | 2-inch wafer; $<5\%$ phase-slip-junction and $<2\%$ array variation | [Wang et al. 2025](https://doi.org/10.1103/PhysRevApplied.23.044064) |
+| Scaled processor | 22 qubits; best CZ $99.9\%$ in 32 ns | 2026 preprint; parallel 1Q fidelity approaches $99.99\%$ | [Zhan et al. 2026](https://arxiv.org/abs/2604.13363) |
 
 ## References
 
@@ -96,6 +103,11 @@ The transmon's achilles heel is its weak anharmonicity ($\sim -200\,\text{MHz}$)
 - L. B. Nguyen et al., "High-Coherence Fluxonium Qubit," [Phys. Rev. X 9, 041041 (2019)](https://doi.org/10.1103/PhysRevX.9.041041) · [arXiv:1810.11006](https://arxiv.org/abs/1810.11006)
 - A. Somoroff et al., "Millisecond Coherence in a Superconducting Qubit," [Phys. Rev. Lett. 130, 267001 (2023)](https://doi.org/10.1103/PhysRevLett.130.267001) · [arXiv:2103.08578](https://arxiv.org/abs/2103.08578)
 - L. Ding et al., "High-Fidelity, Frequency-Flexible Two-Qubit Fluxonium Gates with a Transmon Coupler," [Phys. Rev. X 13, 031035 (2023)](https://doi.org/10.1103/PhysRevX.13.031035) · [arXiv:2304.06087](https://arxiv.org/abs/2304.06087)
+- R. A. Mencia et al., "Integer Fluxonium Qubit," [PRX Quantum 5, 040318 (2024)](https://doi.org/10.1103/PRXQuantum.5.040318) · [arXiv:2403.16780](https://arxiv.org/abs/2403.16780)
+- F. Wang et al., "High-coherence fluxonium qubits manufactured with a wafer-scale-uniformity process," [Phys. Rev. Applied 23, 044064 (2025)](https://doi.org/10.1103/PhysRevApplied.23.044064) · [arXiv:2405.05481](https://arxiv.org/abs/2405.05481)
+- G. Bothara et al., "High-fidelity QND readout and measurement back-action in a tantalum-based high-coherence fluxonium qubit," [APL Quantum 2, 026103 (2025)](https://doi.org/10.1063/5.0255892) · [arXiv:2501.16691](https://arxiv.org/abs/2501.16691)
+- Z. Zhan et al., "Scalable Fluxonium Quantum Processors via Tunable-Coupler Architecture," [arXiv:2604.13363 (2026)](https://arxiv.org/abs/2604.13363)
+- J. Schirk et al., "High-Fidelity Entangled States in a Connectivity-Four Fluxonium Quantum Processor," [arXiv:2608.25503 (2026)](https://arxiv.org/abs/2608.25503)
 
 ## Linked Papers
 
@@ -103,16 +115,12 @@ The transmon's achilles heel is its weak anharmonicity ($\sim -200\,\text{MHz}$)
 - [[nguyen-2019-high-coherence-fluxonium]]
 - [[somoroff-2023-millisecond-coherence-superconducting]]
 - [[ding-2023-high-fidelity-frequency]]
-- [[brooks-2013-0-pi-qubit]]
-- [[kalashnikov-2019-cos2phi]]
 - [[lin-2018-heavy-fluxonium]]
-- [[pechenezhskiy-2020-blochnium]]
-- [[strickland-2024-gatemonium]]
-- [[n-2026-inductively-protected-andreev-ipa-spin]]
-- [[reparaz-2026-time-optimal-quantum-gates-with]]
-- [[geffroy-2026-an-ultracompact-dilution-refrigerator]]
+- [[mencia-2024-integer-fluxonium-qubit]]
+- [[wang-2025-high-coherence-fluxonium-wafer-scale]]
+- [[bothara-2025-high-fidelity-qnd-readout]]
+- [[zhan-2026-scalable-fluxonium-quantum-processors]]
 - [[schirk-2026-high-fidelity-entangled-states-in]]
-- [[rosen-2026-analog-quantum-simulation-of]]
 
 ## Evergreen context
 
