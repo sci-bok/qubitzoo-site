@@ -15,10 +15,10 @@ keywords:
 - heavy fluxonium
 - disjoint support
 influence_score: 0.90
-last_updated: '2026-11-03'
+last_updated: '2026-11-04'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-deep-audit-2026-11-03
+verified_by: scibok-deep-audit-2026-11-04
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/fluxonium-figure.provenance.json"
@@ -68,6 +68,10 @@ The transmon's Achilles heel is its weak anharmonicity (typically about $-200\,\
 - Two-qubit fluxonium gates demonstrated with a transmon coupler.
 - Demonstrated a 50 ns microwave-activated CZ gate with average fidelity $99.922\pm0.009\%$ and static $ZZ$ coupling at the kilohertz scale.
 
+**Stable direct CNOT — Lin et al. (2025):**
+- Demonstrated a 60 ns direct CNOT between two inductively coupled fluxonium qubits using selective darkening, with randomized-benchmarking fidelity as high as $99.94\%$.
+- The measured CNOT fidelity remained above $99.9\%$ for 24 days without recalibration.
+
 **Control-friendly and manufacturable variants — Mencia et al. (2024); Wang et al. (2025):**
 - Integer fluxonium at zero magnetic field operated near 4 GHz with Ramsey coherence above $100\,\mu\text{s}$ and average Clifford fidelity above $99.9\%$.
 - A CMOS-compatible overlap process achieved nearly 100% junction yield across a 2-inch wafer, below 5% variation for the phase-slip junction, below 2% for the array, and $T_1>1\,\text{ms}$ at half flux.
@@ -89,6 +93,7 @@ The transmon's Achilles heel is its weak anharmonicity (typically about $-200\,\
 | Qubit frequency $\omega_{01}/2\pi$ | Typically $100\,\text{MHz}{-}1\,\text{GHz}$ at half flux | Sub-gigahertz fluxon transition | [Ding et al. 2023](https://doi.org/10.1103/PhysRevX.13.031035) |
 | 1Q gate fidelity | $99.991(1)\%$ | Average physical-gate fidelity; randomized benchmarking | [Somoroff et al. 2023](https://doi.org/10.1103/PhysRevLett.130.267001) |
 | 2Q gate fidelity (CZ) | $99.922\pm0.009\%$ | 50 ns microwave-activated gate with transmon coupler | [Ding et al. 2023](https://doi.org/10.1103/PhysRevX.13.031035) |
+| 2Q gate fidelity (direct CNOT) | $99.94\%$ | 60 ns selective-darkening gate; remained $>99.9\%$ for 24 days without recalibration | [Lin et al. 2025](https://doi.org/10.1103/PRXQuantum.6.010349) |
 | Readout fidelity | $97.8\pm0.4\%$ | Assignment fidelity; 260 ns, with JPA | [Bothara et al. 2025](https://doi.org/10.1063/5.0255892) |
 | QND repeatability | $99.0\pm0.3\%$ | Published value; limited by state mixing | [Bothara et al. 2025](https://doi.org/10.1063/5.0255892) |
 | Wafer-scale junction yield | Nearly $100\%$ | 2-inch wafer; $<5\%$ phase-slip-junction and $<2\%$ array variation | [Wang et al. 2025](https://doi.org/10.1103/PhysRevApplied.23.044064) |
@@ -103,6 +108,7 @@ The transmon's Achilles heel is its weak anharmonicity (typically about $-200\,\
 - L. B. Nguyen et al., "High-Coherence Fluxonium Qubit," [Phys. Rev. X 9, 041041 (2019)](https://doi.org/10.1103/PhysRevX.9.041041) · [arXiv:1810.11006](https://arxiv.org/abs/1810.11006)
 - A. Somoroff et al., "Millisecond Coherence in a Superconducting Qubit," [Phys. Rev. Lett. 130, 267001 (2023)](https://doi.org/10.1103/PhysRevLett.130.267001) · [arXiv:2103.08578](https://arxiv.org/abs/2103.08578)
 - L. Ding et al., "High-Fidelity, Frequency-Flexible Two-Qubit Fluxonium Gates with a Transmon Coupler," [Phys. Rev. X 13, 031035 (2023)](https://doi.org/10.1103/PhysRevX.13.031035) · [arXiv:2304.06087](https://arxiv.org/abs/2304.06087)
+- W.-J. Lin et al., "24 Days-Stable CNOT Gate on Fluxonium Qubits with Over 99.9% Fidelity," [PRX Quantum 6, 010349 (2025)](https://doi.org/10.1103/PRXQuantum.6.010349) · [arXiv:2407.15783](https://arxiv.org/abs/2407.15783)
 - R. A. Mencia et al., "Integer Fluxonium Qubit," [PRX Quantum 5, 040318 (2024)](https://doi.org/10.1103/PRXQuantum.5.040318) · [arXiv:2403.16780](https://arxiv.org/abs/2403.16780)
 - F. Wang et al., "High-coherence fluxonium qubits manufactured with a wafer-scale-uniformity process," [Phys. Rev. Applied 23, 044064 (2025)](https://doi.org/10.1103/PhysRevApplied.23.044064) · [arXiv:2405.05481](https://arxiv.org/abs/2405.05481)
 - G. Bothara et al., "High-fidelity QND readout and measurement back-action in a tantalum-based high-coherence fluxonium qubit," [APL Quantum 2, 026103 (2025)](https://doi.org/10.1063/5.0255892) · [arXiv:2501.16691](https://arxiv.org/abs/2501.16691)
@@ -115,6 +121,7 @@ The transmon's Achilles heel is its weak anharmonicity (typically about $-200\,\
 - [[nguyen-2019-high-coherence-fluxonium]]
 - [[somoroff-2023-millisecond-coherence-superconducting]]
 - [[ding-2023-high-fidelity-frequency]]
+- [[lin-2025-24-days-stable-cnot-fluxonium]]
 - [[lin-2018-heavy-fluxonium]]
 - [[mencia-2024-integer-fluxonium-qubit]]
 - [[wang-2025-high-coherence-fluxonium-wafer-scale]]
