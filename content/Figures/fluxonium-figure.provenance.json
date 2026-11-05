@@ -2,13 +2,19 @@
   "artifact": {
     "media_type": "image/png",
     "path": "fluxonium-figure.png",
-    "sha256": "626433ebb89b12c14dede098dc6cf706b9041615f271966fc846dde926485993"
+    "sha256": "e67805853483cad943e1173f4067470d36c35294d21efc4f33aa9a3df8467b93"
   },
   "artifact_role": "primary",
-  "blueprint": null,
+  "blueprint": {
+    "media_type": "image/png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/fluxonium-figure.png",
+    "role": "physics-blueprint",
+    "sha256": "626433ebb89b12c14dede098dc6cf706b9041615f271966fc846dde926485993",
+    "strict": false
+  },
   "entry_slug": "fluxonium",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/fluxonium-figure-20260805T043342574523Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/fluxonium-figure-20261105T151508904987Z.png",
     "supersedes_file": "fluxonium-figure.png"
   },
   "renderer": {
@@ -19,17 +25,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-05T04:33:42.574523+00:00",
-    "id": "gen-1785904403-6XvfS2WDWFN1jXeoak1b",
-    "image_size": "1K",
-    "prompt_sha256": "f531904cdcb09c1b004c68cd21a2b2397f5c2dd2a609c75740d84e19d1d3251f",
+    "generated_at": "2026-11-05T15:15:08.904987+00:00",
+    "id": "gen-1793891687-mnPuS02tsiyhbaBohMgX",
+    "image_size": "2K",
+    "prompt_sha256": "48cd2d33d464fe070c2921ec29a3c1da189510744b2e0d2e4aef186a6b90252f",
     "source_media_type": "image/jpeg",
     "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Approved after narrow correction review. The rich apparatus-to-encoding/control/readout story and central physics pass. A few small ancillary label/rendering imperfections remain and are accepted under the user-approved detail-first figure policy.",
-    "reviewed_at": "2026-08-05T04:34:35.523219+00:00",
-    "reviewer": "Codex scientific visual audit 2026-08-05",
+    "notes": "Approved after full-resolution review. Central physics passes: the small junction, capacitor, and about-100-junction superinductance are parallel branches; half-flux potential and localized |L>/|R> states are consistent with the two exact symmetric/antisymmetric eigenstate equations; the three-level ladder has correct adjacent omega_01 and omega_12 endpoints and noncontradictory frequencies; dispersive readout has distinct |0> and |1> cavity responses; protection mechanisms, residual channels, coherence values, direct-CNOT milestone, and 22-qubit scaling result are correctly separated. Rich apparatus-to-states-to-control/readout-to-scaling composition passes. Minor ancillary wording and decorative duplication do not alter the scientific story.",
+    "reviewed_at": "2026-11-05T15:15:43.205261+00:00",
+    "reviewer": "Scibok deep audit 2026-11-05",
     "status": "passed"
   },
   "schema_version": 1

@@ -3,7 +3,7 @@ title: Fluxonium
 entry_type: qubit
 technology_family: Superconducting
 status: demonstrated
-figure_reviewed: false
+figure_reviewed: true
 first_proposed_year: 2009
 first_demonstrated_year: 2009
 keywords:
@@ -15,15 +15,15 @@ keywords:
 - heavy fluxonium
 - disjoint support
 influence_score: 0.90
-last_updated: '2026-11-04'
+last_updated: '2026-11-05'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-deep-audit-2026-11-04
+verified_by: scibok-deep-audit-2026-11-05
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/fluxonium-figure.provenance.json"
-figure_reviewed_by: null
-figure_reviewed_at: null
+figure_reviewed_by: "Scibok deep audit 2026-11-05"
+figure_reviewed_at: "2026-11-05T15:15:43.205261+00:00"
 ---
 
 ## Figure
@@ -80,6 +80,14 @@ The transmon's Achilles heel is its weak anharmonicity (typically about $-200\,\
 - Published single-shot assignment fidelity was $97.8\pm0.4\%$ in 260 ns with a Josephson parametric amplifier; QND repeatability was $99.0\pm0.3\%$.
 - State mixing and measurement-induced transitions, rather than signal-to-noise alone, remained the limiting mechanisms.
 
+**Hardware-efficient erasure conversion — Liu et al.; An et al. (2026 preprints):**
+- Liu et al. encoded a logical qubit in the $|0\rangle$-$|2\rangle$ subspace of a single zero-flux fluxonium and used the same resonator for mid-circuit erasure detection and final readout. Post-selection increased the logical lifetime from $193\,\mu\text{s}$ to $869\,\mu\text{s}$, with an inferred erasure-check dephasing error of $7.2\times10^{-5}$ per check.
+- An et al. used the $|g\rangle$-$|f\rangle$ subspace of a single integer fluxonium with $|e\rangle$ as the erasure state. Ancilla-free erasure checks increased the $|f\rangle$ lifetime by $8.4\times$, increased Hahn-echo time by $1.38\times$, and reduced the post-selected single-qubit gate error from $0.061(2)\%$ to $0.030(5)\%$.
+
+**Native three-qubit gate — Mazhorin et al. (2026 preprint):**
+- Experimentally realized a 65 ns native CCZ operation, locally equivalent to a Toffoli gate, with $99.39(5)\%$ fidelity in a three-fluxonium processor unit using a microwave-driven transmon coupler.
+- The single-pulse gate was coherence limited; reproducing its fidelity through a conventional decomposition would require approximately $99.94\%$ CZ fidelity.
+
 **Processor scaling — Zhan et al.; Schirk et al. (2026 preprints):**
 - A 22-qubit tunable-coupler processor demonstrated parallel 1Q fidelities approaching $99.99\%$, a best 32 ns CZ fidelity of $99.9\%$, and GHZ states involving up to 10 qubits.
 - A complementary connectivity-four resonator-coupled processor reported parallel 1Q fidelities above $99.9\%$, 2Q fidelities above $99\%$, residual static $ZZ<1\,\text{kHz}$, and a five-qubit GHZ-state fidelity of $90\%$.
@@ -96,6 +104,9 @@ The transmon's Achilles heel is its weak anharmonicity (typically about $-200\,\
 | 2Q gate fidelity (direct CNOT) | $99.94\%$ | 60 ns selective-darkening gate; remained $>99.9\%$ for 24 days without recalibration | [Lin et al. 2025](https://doi.org/10.1103/PRXQuantum.6.010349) |
 | Readout fidelity | $97.8\pm0.4\%$ | Assignment fidelity; 260 ns, with JPA | [Bothara et al. 2025](https://doi.org/10.1063/5.0255892) |
 | QND repeatability | $99.0\pm0.3\%$ | Published value; limited by state mixing | [Bothara et al. 2025](https://doi.org/10.1063/5.0255892) |
+| Single-fluxonium erasure conversion | Logical lifetime $193\to869\,\mu\text{s}$; $7.2\times10^{-5}$ error/check | $\lvert0\rangle$-$\lvert2\rangle$ encoding at zero flux; post-selected non-erasure outcomes | [Liu et al. 2026](https://arxiv.org/abs/2601.11086) |
+| Integer-fluxonium erasure detection | $8.4\times$ $\lvert f\rangle$ lifetime; gate error $0.061(2)\%\to0.030(5)\%$ | Ancilla-free mid-circuit checks with the readout resonator | [An et al. 2026](https://arxiv.org/abs/2607.27123) |
+| Native three-qubit gate | $99.39(5)\%$ CCZ in 65 ns | Single-pulse gate with a microwave-driven transmon coupler | [Mazhorin et al. 2026](https://arxiv.org/abs/2607.27094) |
 | Wafer-scale junction yield | Nearly $100\%$ | 2-inch wafer; $<5\%$ phase-slip-junction and $<2\%$ array variation | [Wang et al. 2025](https://doi.org/10.1103/PhysRevApplied.23.044064) |
 | Scaled processor | 22 qubits; best CZ $99.9\%$ in 32 ns | 2026 preprint; parallel 1Q fidelity approaches $99.99\%$ | [Zhan et al. 2026](https://arxiv.org/abs/2604.13363) |
 
@@ -112,7 +123,10 @@ The transmon's Achilles heel is its weak anharmonicity (typically about $-200\,\
 - R. A. Mencia et al., "Integer Fluxonium Qubit," [PRX Quantum 5, 040318 (2024)](https://doi.org/10.1103/PRXQuantum.5.040318) · [arXiv:2403.16780](https://arxiv.org/abs/2403.16780)
 - F. Wang et al., "High-coherence fluxonium qubits manufactured with a wafer-scale-uniformity process," [Phys. Rev. Applied 23, 044064 (2025)](https://doi.org/10.1103/PhysRevApplied.23.044064) · [arXiv:2405.05481](https://arxiv.org/abs/2405.05481)
 - G. Bothara et al., "High-fidelity QND readout and measurement back-action in a tantalum-based high-coherence fluxonium qubit," [APL Quantum 2, 026103 (2025)](https://doi.org/10.1063/5.0255892) · [arXiv:2501.16691](https://arxiv.org/abs/2501.16691)
+- C. Liu et al., "Converting qubit relaxation into erasures with a single fluxonium," [arXiv:2601.11086 (2026)](https://arxiv.org/abs/2601.11086)
 - Z. Zhan et al., "Scalable Fluxonium Quantum Processors via Tunable-Coupler Architecture," [arXiv:2604.13363 (2026)](https://arxiv.org/abs/2604.13363)
+- G. S. Mazhorin et al., "Native CCZ Gate with Fluxonium Qubits and a Microwave-Driven Coupler," [arXiv:2607.27094 (2026)](https://arxiv.org/abs/2607.27094)
+- J. An et al., "Hardware-efficient erasure-error detection with an integer fluxonium," [arXiv:2607.27123 (2026)](https://arxiv.org/abs/2607.27123)
 - J. Schirk et al., "High-Fidelity Entangled States in a Connectivity-Four Fluxonium Quantum Processor," [arXiv:2608.25503 (2026)](https://arxiv.org/abs/2608.25503)
 
 ## Linked Papers
@@ -126,7 +140,10 @@ The transmon's Achilles heel is its weak anharmonicity (typically about $-200\,\
 - [[mencia-2024-integer-fluxonium-qubit]]
 - [[wang-2025-high-coherence-fluxonium-wafer-scale]]
 - [[bothara-2025-high-fidelity-qnd-readout]]
+- [[liu-2026-converting-qubit-relaxation-erasures]]
 - [[zhan-2026-scalable-fluxonium-quantum-processors]]
+- [[mazhorin-2026-native-ccz-gate-fluxonium]]
+- [[an-2026-hardware-efficient-erasure-error-detection]]
 - [[schirk-2026-high-fidelity-entangled-states-in]]
 
 ## Evergreen context
