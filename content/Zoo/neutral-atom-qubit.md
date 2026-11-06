@@ -138,6 +138,7 @@ The blockade condition $C_6/R^6 \gg \hbar\Omega$ prevents simultaneous Rydberg e
 - [[crookes-2026-programmable-all-to-all-entangling-gates]]
 - [[lu-2026-a-parameter-free-reference-hamiltonian]]
 - [[kuriyattil-2026-tuning-between-collective-dynamics]]
+- [[wang-2026-correlation-sensitive-magic-state-distillation]]
 
 ## Evergreen context
 

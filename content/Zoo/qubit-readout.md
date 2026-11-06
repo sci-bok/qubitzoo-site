@@ -121,6 +121,10 @@ where $\omega_r$ is the resonator frequency, $\omega_q$ the qubit frequency, and
 - [[zhang-2026-lifting-quantum-state-discrimination]]
 - [[mo-2026-constant-depth-quantum-barrier-option]]
 - [[ahn-2026-multimode-parametric-amplifier-for]]
+- [[li-2026-a-control-line-multiplexing]]
+- [[kinyo-2026-bell-pair-distillation-under-imperfect]]
+- [[gong-2026-correlations-decide-a-shallow-circuit]]
+- [[ren-2026-quantum-nondemolition-probing-of-multiphoton]]
 
 ## Evergreen context
 

@@ -115,6 +115,8 @@ Standard bosonic codes (like GKP) require complex active error correction. The c
 - [[masuda-2026-engineered-two-photon-dissipative-confinement]]
 - [[vaartjes-2026-dynamical-decoupling-of-nonclassical]]
 - [[kinase-2026-mode-selective-micromotion-compensation-via]]
+- [[yurtseven-2026-bias-preserving-entanglement-of-kerr-cat]]
+- [[kim-2026-performance-analysis-of-cat]]
 
 ## Evergreen context
 

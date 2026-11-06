@@ -113,6 +113,7 @@ $$H_{2q} = J(t)\,\mathbf{S}_1\cdot\mathbf{S}_2$$
 - [[medeiros-2026-spin-to-polarization-mapping-with-a]]
 - [[wang-2026-chiral-classical-and-quantum]]
 - [[orekhov-2026-coherent-and-ultra-low-power-edsr]]
+- [[rodriguez-2026-modeling-the-cnot-gate]]
 
 ## Evergreen context
 

@@ -13,8 +13,7 @@ status: evergreen
 
 A shared resonator becomes a **quantum bus** when two qubits couple to the same cavity mode but both stay detuned from it. Each qubit has its own [[jaynes-cummings-in-circuits]] coupling to the mode, and after adiabatically eliminating the cavity the two interactions combine into an effective qubit-qubit exchange:
 
-$$H_{\mathrm{eff}} \supset J(\sigma_+^{(1)}\sigma_-^{(2)} + \sigma_-^{(1)}\sigma_+^{(2)}), \qquad
-J \approx \frac{g_1 g_2}{2}\left(\frac{1}{\Delta_1} + \frac{1}{\Delta_2}\right).$$
+$$H_{\mathrm{eff}} \supset J(\sigma_+^{(1)}\sigma_-^{(2)} + \sigma_-^{(1)}\sigma_+^{(2)}), \qquad J \approx \frac{g_1 g_2}{2}\left(\frac{1}{\Delta_1} + \frac{1}{\Delta_2}\right).$$
 
 In the symmetric case $\Delta_1 \approx \Delta_2 = \Delta$, this reduces to the familiar estimate $J \sim g_1 g_2/\Delta$. The cavity stays only **virtually** occupied, so the resonator mediates the interaction without storing a real photon during the gate.
 

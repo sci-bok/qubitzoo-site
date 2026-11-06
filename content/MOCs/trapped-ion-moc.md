@@ -3,7 +3,7 @@ title: Trapped Ion MOC
 type: moc
 technology_family: Trapped Ion
 note_count: 5
-last_updated: '2026-09-08'
+last_updated: '2026-10-27'
 generated_by: pipeline-moc-v1
 ---
 
@@ -65,6 +65,18 @@ The two gate notes and the shuttling note answer different questions. The first 
 | [[shuttling-ion-trap-qubit]] | Ions are transported between short-chain memory, interaction, and readout zones; a local MS or related gate still supplies entanglement inside each zone | Transport must preserve internal coherence and deliver a sufficiently cold, well-characterized motional state for the next local gate | Keeps local mode spectra tractable while scaling processor connectivity beyond one long Coulomb crystal | Junction routing, scheduling, transport-induced excitation, recooling, and calibration across many zones | the question has shifted from one gate pulse to machine-scale connectivity and throughput |
 
 This map prevents two common category errors. MS gates are less sensitive to the initial phonon occupation than Cirac-Zoller gates, but they are not independent of motion: residual phase-space displacement still leaves spin and motion entangled. Likewise, QCCD does not replace the phonon-bus gate; it repeatedly reconstructs a small, controllable local bus after transport. Read all three through [[motional-mode-coupling-in-ion-traps]] to track where motional complexity moves rather than assuming it disappears.
+
+## Boundary with the cross-platform gate map
+
+Use this MOC to understand the **physical realization** of trapped-ion entanglement: sideband selection, motional-mode closure, heating, spectator modes, and the transition from one shared crystal to QCCD zones. Hand off to [[quantum-gate]] when the question becomes **cross-platform control semantics**: which unitary is targeted, how leakage and spectators enter the error budget, or whether two reported fidelities are actually comparable under their benchmarking protocols.
+
+That boundary keeps three levels distinct:
+
+1. [[motional-mode-coupling-in-ion-traps]] explains the shared physical resource.
+2. [[cirac-zoller-gate]] and [[molmer-sorenson-gate]] explain two different ways to turn that resource into an entangling operation.
+3. [[quantum-gate]] supplies the platform-independent language for target unitaries, control Hamiltonians, leakage, concurrency, and fidelity claims.
+
+Do not use the generic gate entry as a substitute for the ion-specific mechanism, and do not use a Bell-state or subspace fidelity from an ion experiment as though it were automatically commensurate with randomized-benchmarking or process-fidelity numbers elsewhere in the Zoo.
 
 ## Coherence evidence ladder
 

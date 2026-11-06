@@ -162,6 +162,7 @@ Calibration and digital predistortion seek an inverse filter $g$ such that $g*h\
 - [[yang-2026-real-time-surface-code-error-correction]]
 - [[liu-2026-scalable-open-source-qec-system]]
 - [[ommen-2026-two-qubit-cryo-cmos-control-of]]
+- [[morisaka-2026-charge-coupled-device-based-arbitrary-waveform]]
 
 ## Related Entries
 

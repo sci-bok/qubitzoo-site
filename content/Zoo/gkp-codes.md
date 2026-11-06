@@ -150,6 +150,7 @@ GKP codes convert sufficiently small shifts in either phase-space quadrature int
 - [[burgath-2026-spin-grid-states-for]]
 - [[koudia-2026-joint-gkp-encoding-for]]
 - [[aoki-2026-remote-gottesman-kitaev-preskill-entanglement]]
+- [[chakraborty-2026-stabilizer-codes-over-general]]
 
 ## Evergreen context
 

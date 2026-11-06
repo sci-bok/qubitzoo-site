@@ -17,24 +17,17 @@ $$H_\mathrm{ex}(t) = J(t)\,\vec{S}_1 \cdot \vec{S}_2.$$
 
 This note is intentionally the **Hamiltonian-first** companion to [[exchange-interaction-in-quantum-dots]]. Use it when the question is what rotation an exchange pulse implements, how encoded spin manifolds inherit logical axes, or why $\sqrt{\text{SWAP}}$ keeps reappearing. For barrier-vs-detuning control, Hubbard-model intuition, and charge-noise tradeoffs, go back to the companion note.
 
-## Routing heuristic
+## Input/output contract
 
-- Start here only after accepting that a calibrated exchange coupling $J(t)$ already exists as a control resource.
-- Stay here when the question is about **unitaries and encoded manifolds**: pulse area, singlet-triplet phase accumulation, logical axes, or how pairwise exchange projects into a reduced qubit basis.
-- Go back to [[exchange-interaction-in-quantum-dots]] when the question turns back into **device physics**: where $J$ came from, why symmetric barrier control helps, or how materials and charge admixture set the noise floor.
+This note begins only after the charge sector has been integrated out:
 
-## Effective-model boundary
-
-This note deliberately starts **after** the charge sector has been integrated out. The upstream question, "what gate-voltage move produced this particular $J(t)$ and how noisy is that control surface?", belongs in [[exchange-interaction-in-quantum-dots]]. The downstream question, "what unitary or encoded logical axis follows from this pulse area?", belongs here.
-
-## Quick split from the device note
-
-| If the question is... | Start here? | Why |
+| Boundary | Object | Route |
 |---|---|---|
-| What does an exchange pulse do inside a two-spin or encoded-spin manifold? | Yes | This note is about the unitary action after projection. |
-| Why is $\sqrt{\mathrm{SWAP}}$ the native entangler of the Loss-DiVincenzo picture? | Yes | The pulse-area algebra lives here. |
-| Why does singlet-triplet treat exchange as a logical splitting while exchange-only turns it into non-collinear logical axes? | Yes | Those are projection questions, not fabrication questions. |
-| How do barrier gates, detuning, and charge admixture determine the usable $J(t)$ in the first place? | No, go to [[exchange-interaction-in-quantum-dots]] | That microscopic control story belongs in the companion note. |
+| Input | A calibrated scalar coupling $J(t)$ | If $J$ still depends explicitly on tunnel barriers, detuning, charge admixture, or materials noise, return to [[exchange-interaction-in-quantum-dots]]. |
+| Transformation | $J(t)$ becomes a pulse area or a projected Hamiltonian in an encoded spin manifold | Stay here for singlet-triplet phase, partial-SWAP angle, and exchange-only / RX / AEON logical axes. |
+| Output | A gate identity or platform-specific logical operation | Continue to [[sqrt-swap-as-universal-gate]] for the direct two-spin entangler or to the relevant encoded-qubit entry. |
+
+The routing hinge is therefore simple: **voltage-to-$J$ belongs upstream; $J$-to-unitary belongs here.**
 
 ## Two-spin algebra
 

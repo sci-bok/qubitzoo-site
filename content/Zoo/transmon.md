@@ -192,6 +192,8 @@ State-of-the-art snapshot (October 2026): planar tantalum-on-silicon transmons h
 - [[richard-2026-accurate-gap-control-of]]
 - [[chen-2026-controlled-z-gates-via-floquet]]
 - [[huang-2026-high-fidelity-and-robust-controlled-z]]
+- [[uchida-2026-epitaxial-nbn-junction-based-self-shunted]]
+- [[gao-2026-nonreciprocal-generation-of-bell]]
 
 ## Evergreen context
 

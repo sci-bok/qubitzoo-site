@@ -51,12 +51,9 @@ In a triangular device an additional term $J_{13}(t)\,\mathbf S_1\!\cdot\!\mathb
 
 In the $m_S=+1/2$ gauge sector, one standard convention is
 
-$$|0_L\rangle=|S\rangle_{12}|\!\uparrow\rangle_3
-=\frac{|\!\uparrow\downarrow\uparrow\rangle-|\!\downarrow\uparrow\uparrow\rangle}{\sqrt2},$$
+$$|0_L\rangle=|S\rangle_{12}|\!\uparrow\rangle_3=\frac{|\!\uparrow\downarrow\uparrow\rangle-|\!\downarrow\uparrow\uparrow\rangle}{\sqrt2},$$
 
-$$|1_L\rangle=\sqrt{\frac23}|T_+\rangle_{12}|\!\downarrow\rangle_3
--\sqrt{\frac13}|T_0\rangle_{12}|\!\uparrow\rangle_3
-=-\frac{|\!\uparrow\downarrow\uparrow\rangle+|\!\downarrow\uparrow\uparrow\rangle-2|\!\uparrow\uparrow\downarrow\rangle}{\sqrt6}.$$
+$$|1_L\rangle=\sqrt{\frac23}|T_+\rangle_{12}|\!\downarrow\rangle_3-\sqrt{\frac13}|T_0\rangle_{12}|\!\uparrow\rangle_3=-\frac{|\!\uparrow\downarrow\uparrow\rangle+|\!\downarrow\uparrow\uparrow\rangle-2|\!\uparrow\uparrow\downarrow\rangle}{\sqrt6}.$$
 
 Both logical states have $S=1/2$ and $m_S=+1/2$. The leakage state in this same gauge sector is the $S=3/2$ state
 

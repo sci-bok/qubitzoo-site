@@ -3,7 +3,7 @@ title: Spin-Photon MOC
 type: moc
 technology_family: Spin-Photon
 note_count: 5
-last_updated: '2026-08-25'
+last_updated: '2026-11-01'
 generated_by: pipeline-moc-v1
 ---
 
@@ -72,6 +72,19 @@ Read the columns in order. [[coherence-time-hierarchy]] tests whether the local 
 Do not substitute [[purcell-protection-via-detuning]] or [[resonator-as-quantum-bus]] for that middle layer. Those Evergreens describe off-resonant microwave cavity coupling in circuit QED—respectively suppressing cavity-mediated decay and mediating virtual qubit exchange—whereas these spin-photon nodes generally seek resonant optical Purcell enhancement and efficient photon extraction. Keeping that boundary explicit prevents a shared word, “cavity,” from collapsing two different physical jobs.
 
 This reading order keeps a native-telecom advantage distinct from a clean-emitter advantage: SiV can win the local optical interface while T centers or Er reduce the downstream fibre burden.
+
+## Rare-earth evidence ladder: memory is not yet a processor
+
+[[rare-earth-ion-qubit]] now spans several hardware roles that should not be compressed into a single maturity claim. Route each result by the architectural layer it actually establishes:
+
+| Evidence layer | Vault milestone | What it establishes | What remains open |
+|---|---|---|---|
+| Long-lived matter memory | [[wang-2025-prx-quantum-eu-coherence]] and [[lv-2025-minute-scale-photonic-memory]] | Eu ensembles can preserve spin coherence for hours and photonic time-bin states for tens of seconds | Ensemble storage does not provide individually addressable processor qubits or local entangling gates |
+| Integrated optical memory | [[meng-2026-efficient-integrated-quantum-memory]] | Cavity- and waveguide-integrated Eu memory can store telecom-heralded photons efficiently and in multiple temporal modes | Storage efficiency and multimode capacity do not by themselves create a networked spin register |
+| Multiplexed network node | [[ruskuc-2025-multiplexed-rare-earth-network]] | Spectrally distinct Yb ions can support multiple remote entangled pairs and a distributed three-ion state | Heralded remote entanglement does not imply deterministic, high-fidelity local two-ion logic |
+| Local processor primitive | [[xu-2026-interacting-rare-earth-spins]] and [[ulanowski-2026-er-nuclear-spin-readout]] | Er devices now combine resolved nearby spins, a dipolar entangling gate, electron–nuclear control, and single-shot nuclear-spin readout | The reported Bell-state fidelity and placement/yield constraints remain far from a scalable local processor |
+
+The species are doing different jobs: Eu is the strongest memory branch, Yb currently anchors multiplexed remote entanglement, and Er combines native C-band compatibility with emerging local control. The correct systems question is therefore which layers a proposed node integrates in one reproducible device—not which rare-earth result owns the largest headline number. Read the first two rows through [[coherence-time-hierarchy]], the optical and network rows through [[spin-photon-interfaces-separate-emission-collection-and-wavelength-matching]], and judge any processor claim against [[divincenzo-criteria]].
 
 ## Routing rule
 

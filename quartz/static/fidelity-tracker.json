@@ -1,69 +1,10 @@
 {
   "schema": "qubitzoo.fidelity_tracker.v1",
-  "generated_at": "2026-10-23T14:00:08.580930+00:00",
+  "generated_at": "2026-11-06T15:00:09.450194+00:00",
   "families": [
     {
       "name": "Superconducting",
       "entries": [
-        {
-          "slug": "transmon",
-          "title": "Transmon",
-          "year": 2007,
-          "status": "demonstrated",
-          "influence": 0.95,
-          "metrics": {
-            "1Q_fidelity": {
-              "value": 99.99,
-              "raw": "99.9\u201399.99%",
-              "ref": "[Z. Li et al. 2023](https://doi.org/10.1038/s41534-023-00781-x)"
-            },
-            "2Q_fidelity": {
-              "value": 99.95,
-              "raw": "99.0\u201399.95%",
-              "ref": "[IQM 2025](https://meetiqm.com/blog/quantum-fidelity-milestone/)"
-            },
-            "readout": {
-              "value": 99.9,
-              "raw": "97\u201399.9%",
-              "ref": "[Arute et al. 2019](https://doi.org/10.1038/s41586-019-1666-5)"
-            },
-            "T1": {
-              "value_us": 1680.0,
-              "raw": "100 \u03bcs \u2013 1.68 ms"
-            },
-            "T2": {
-              "value_us": 1060.0000000000002,
-              "raw": "100 \u03bcs \u2013 1.06 ms"
-            }
-          }
-        },
-        {
-          "slug": "fluxonium",
-          "title": "Fluxonium",
-          "year": 2009,
-          "status": "demonstrated",
-          "influence": 0.9,
-          "metrics": {
-            "1Q_fidelity": {
-              "value": 99.998,
-              "raw": "99.97\u201399.998%",
-              "ref": "[Ding et al. 2023](https://doi.org/10.1103/PhysRevX.13.031035)"
-            },
-            "2Q_fidelity": {
-              "value": 99.92,
-              "raw": "99.2\u201399.92%",
-              "ref": "[Ding et al. 2023](https://doi.org/10.1103/PhysRevX.13.031035)"
-            },
-            "T1": {
-              "value_us": 1500.0,
-              "raw": "100 \u03bcs \u2013 1.5 ms"
-            },
-            "T2": {
-              "value_us": 500.0,
-              "raw": "100\u2013500 \u03bcs"
-            }
-          }
-        },
         {
           "slug": "gmon",
           "title": "Gmon",
@@ -185,48 +126,6 @@
           }
         },
         {
-          "slug": "kerr-cat-qubit",
-          "title": "Kerr-Cat Qubit",
-          "year": 2019,
-          "status": "demonstrated",
-          "influence": 0.84,
-          "metrics": {
-            "1Q_fidelity": {
-              "value": 99.0,
-              "raw": "99%+",
-              "ref": "[Puri et al. 2020](https://doi.org/10.1126/sciadv.aay5901)"
-            },
-            "2Q_fidelity": {
-              "value": 99.0,
-              "raw": "98\u201399%",
-              "ref": "[Puri et al. 2020](https://doi.org/10.1126/sciadv.aay5901)"
-            }
-          }
-        },
-        {
-          "slug": "gkp-codes",
-          "title": "GKP Qubit (Gottesman-Kitaev-Preskill Code)",
-          "year": 2001,
-          "status": "demonstrated",
-          "influence": 0.84,
-          "metrics": {
-            "1Q_fidelity": {
-              "value": 99.7,
-              "raw": "99.7%",
-              "ref": "[Campagne-Ibarcq et al. 2020](https://doi.org/10.1038/s41586-020-2603-3)"
-            },
-            "2Q_fidelity": {
-              "value": 98.0,
-              "raw": "~96\u201398% (projected)",
-              "ref": "[Rojkov et al. 2024](https://doi.org/10.1103/PhysRevLett.133.100601)"
-            },
-            "T1": {
-              "value_us": 1800.0000000000002,
-              "raw": "~1.8 ms"
-            }
-          }
-        },
-        {
           "slug": "cooper-pair-box-charge-qubit",
           "title": "Cooper-Pair Box (Charge Qubit)",
           "year": 1999,
@@ -269,6 +168,33 @@
             "T1": {
               "value_us": 1.5999999999999999,
               "raw": "1.6 \u03bcs"
+            }
+          }
+        },
+        {
+          "slug": "transmon",
+          "title": "Transmon",
+          "year": 2007,
+          "status": "demonstrated",
+          "influence": 0.95,
+          "metrics": {
+            "1Q_fidelity": {
+              "value": 99.994,
+              "raw": "99.9\u201399.994%",
+              "ref": "[Bland et al. 2025](https://doi.org/10.1038/s41586-025-09687-4)"
+            },
+            "readout": {
+              "value": 99.94,
+              "raw": "97\u201399.94%",
+              "ref": "[Marxer et al. 2026](https://doi.org/10.1103/n86s-2b88)"
+            },
+            "T1": {
+              "value_us": 1680.0,
+              "raw": "100 \u03bcs \u2013 1.68 ms"
+            },
+            "T2": {
+              "value_us": 1060.0000000000002,
+              "raw": "100 \u03bcs \u2013 1.06 ms"
             }
           }
         },
@@ -739,25 +665,6 @@
             "T1": {
               "value_us": 10000000.0,
               "raw": "1\u201310 s"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "name": "Classical Hardware",
-      "entries": [
-        {
-          "slug": "cryogenic-amplification",
-          "title": "Cryogenic Amplification (Quantum-Limited)",
-          "year": 2010,
-          "status": "demonstrated",
-          "influence": 0.85,
-          "metrics": {
-            "readout": {
-              "value": 99.9,
-              "raw": ">99.9%",
-              "ref": "[Macklin et al. 2015](https://doi.org/10.1126/science.aaa8525)"
             }
           }
         }

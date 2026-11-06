@@ -43,5 +43,5 @@ The potential energy $U = -E_J\cos\varphi$ (with $E_J = \Phi_0 I_c / 2\pi$) is t
 
 ## References
 
-- [[nakamura-1999-cooper-pair-box]]
+- [[nakamura-1999-cpb-coherent-oscillation]]
 - [[blais-2004-circuit-qed]]

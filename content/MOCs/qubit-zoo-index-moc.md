@@ -3,7 +3,7 @@ title: Qubit Zoo Index MOC
 type: moc
 technology_family: index
 note_count: 82
-last_updated: '2026-10-19'
+last_updated: '2026-11-03'
 generated_by: pipeline-moc-v1
 ---
 
@@ -14,7 +14,7 @@ Top-level navigation for the Qubit Zoo through non-exclusive facets. An entry ma
 - [[classical-hardware-moc]] (2 entries)
 - [[codes-moc]] (6 entries)
 - [[color-center-moc]] (4 entries)
-- [[cross-platform-moc]] (11 entries)
+- [[cross-platform-moc]] (12 entries)
 - [[floating-electron-moc]] (1 entries)
 - [[molecular-moc]] (3 entries)
 - [[neutral-atom-moc]] (4 entries)
@@ -22,7 +22,7 @@ Top-level navigation for the Qubit Zoo through non-exclusive facets. An entry ma
 - [[semiconducting-moc]] (12 entries)
 - [[spin-photon-moc]] (5 entries)
 - [[super-semi-moc]] (6 entries)
-- [[superconducting-moc]] (21 entries)
+- [[superconducting-moc]] (20 entries)
 - [[topological-moc|Majorana / Topological]] (4 entries)
 - [[trapped-ion-moc]] (5 entries)
 
@@ -35,8 +35,12 @@ Top-level navigation for the Qubit Zoo through non-exclusive facets. An entry ma
 ## How to use this map
 
 - Start with a family MOC when you want modality-local comparisons.
+- Start with [[quantum-hardware]] when the first question is which layer of the machine you are looking at: physical qubit, local control/readout infrastructure, or cross-platform architectural glue.
+- Switch to [[divincenzo-criteria]] when the question changes from *where does this belong?* to *does this platform satisfy the requirements of a usable quantum computer or network node?*
 - Jump to Evergreen notes when you want mechanism-level synthesis that cuts across families.
 - Treat Reference notes as evidence nodes, not the main conceptual layer.
+
+This separation prevents three different tasks from collapsing into one page: this index owns exhaustive family navigation, [[quantum-hardware]] owns stack-layer routing, and [[divincenzo-criteria]] owns platform evaluation. A hardware note may legitimately point to all three, but each link should answer a different question.
 
 ## High-value cross-family slice: defect-spin networking
 
@@ -83,7 +87,8 @@ Top-level navigation for the Qubit Zoo through non-exclusive facets. An entry ma
 
 ## High-value cross-family slice: hardware-assisted fault tolerance
 
-- Start in [[superconducting-moc]] when the win is being claimed at the device layer: bosonic encodings, protected circuits, cat-bias engineering, or erasure-converting superconducting encodings all live there first.
-- Move through [[codes-moc]] when the next question is which check structure, measurement schedule, or connectivity tradeoff best matches that hardware; this is where Bacon-Shor, Floquet, qLDPC, surface-code, and color-code choices are compared as code families.
-- Move to [[cross-platform-moc]] when the comparison becomes hardware-wide overhead, decoder assumptions, feedback latency, or modular systems architecture via [[erasure-qubit]], [[surface-code-logical-qubit]], [[color-code-logical-qubit]], [[classical-control]], and [[quantum-transduction]].
-- Use [[bosonic-code-hierarchy]], [[noise-bias-and-asymmetric-error-channels]], [[erasure-error-vs-pauli-error]], and [[threshold-theorem]] as the four-note bridge from hardware mechanism to architectural consequence.
+- Start in the source-platform MOC and identify what the hardware changes about the effective error channel. [[superconducting-moc]] contains bosonic encodings, protected circuits, cat-bias engineering, and dual-rail erasure conversion; [[semiconducting-moc]] contains encoded-spin branches that use [[decoherence-free-subspace]] symmetry to reject collective magnetic noise; [[neutral-atom-moc]] and [[photonic-moc]] contain loss channels that can become erasures when the missing atom or photon is reliably localized.
+- Keep the mechanisms distinct. A DFS passively removes only the noise operators that respect its assumed symmetry; a biased qubit suppresses one hidden Pauli direction relative to another; an erasure-converting encoding exposes a fault location to the decoder. None of these facts alone demonstrates a fault-tolerant logical qubit, and a device may combine more than one axis.
+- Move through [[codes-moc]] when the next question is which check structure, measurement schedule, decoder, or connectivity tradeoff can actually exploit that channel. This is where the physical advantage must survive state preparation, gates, leakage checks, syndrome extraction, and measurement rather than appearing only in idle coherence.
+- Move to [[cross-platform-moc]] when the comparison becomes hardware-wide overhead, feedback latency, or modular systems architecture via [[erasure-qubit]], [[surface-code-logical-qubit]], [[color-code-logical-qubit]], [[classical-control]], and [[quantum-transduction]].
+- Use [[decoherence-free-subspace]], [[bosonic-code-hierarchy]], [[noise-bias-and-asymmetric-error-channels]], [[erasure-error-vs-pauli-error]], and [[threshold-theorem]] as the five-note bridge from hardware mechanism to architectural consequence. The routing question is: **what faults are removed, what faults are flagged, what hidden residual channel remains, and which outer code and decoder are assumed?**

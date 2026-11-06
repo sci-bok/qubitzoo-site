@@ -109,6 +109,8 @@ Rydberg neutral-atom qubits combine three key advantages: (1) native all-to-all 
 - [[jin-2026-a-programmable-rydberg-quantum]]
 - [[gong-2026-out-of-control-hamiltonian-learning]]
 - [[veroni-2026-end-to-end-optimization-of-partial]]
+- [[jin-2026-high-fidelity-universal-quantum-gates]]
+- [[sun-2026-nako-a-benchmarking-framework]]
 
 ## Evergreen context
 

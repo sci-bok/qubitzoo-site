@@ -3,7 +3,7 @@ title: Molecular MOC
 type: moc
 technology_family: Molecular
 note_count: 3
-last_updated: '2026-09-16'
+last_updated: '2026-10-24'
 generated_by: pipeline-moc-v1
 ---
 
@@ -47,10 +47,22 @@ This makes experimental age a poor proxy for architectural maturity. NMR reached
 | Branch | Logical degree of freedom | Interaction / control route | Readout model | Decisive scaling bottleneck |
 |---|---|---|---|---|
 | [[molecular-qubit]] | Electronic spin states engineered by ligand field, anisotropy, and hyperfine structure | Microwave, optical, or exchange-mediated electrical control; chemically coupled dimers | Ensemble EPR, optical detection, or local ESR-STM; no standard scalable readout stack | Convert chemically engineered coupling and local control into calibrated gates with repeatable initialization/readout |
-| [[polar-molecule-qubit]] | Rotational and hyperfine states of individually trapped molecules | Switchable electric dipole exchange, naturally producing iSWAP-family gates; see [[sqrt-swap-as-universal-gate]] | State-selective survival detection in optical tweezers | Molecule assembly, cooling, loss, and parallel control |
+| [[polar-molecule-qubit]] | Rotational and hyperfine states of individually trapped molecules | Switchable electric dipole exchange, naturally producing iSWAP-family gates; use [[sqrt-swap-as-universal-gate]] only for the SWAP-versus-iSWAP boundary | State-selective survival detection in optical tweezers | Molecule assembly, cooling, loss, and parallel control |
 | [[nuclear-magnetic-resonance-qubit]] | Nuclear spins within an ensemble of molecules | RF pulses plus intramolecular scalar $J$-coupling | Bulk ensemble magnetization | Pseudo-pure-state signal falls exponentially and cannot support single-shot error correction |
 
 Use this table as a routing test: chemical synthesis alone points to the first branch, individually trapped dipolar rotors to the second, and bulk spectroscopic ensembles to the third. A new molecular entry should not be merged into an existing branch merely because its carrier is a molecule.
+
+## Three couplings that should not be collapsed into “exchange”
+
+The family reuses the words *coupling*, *exchange*, and even the symbol $J$, but the resulting two-qubit generators are not interchangeable.
+
+| Branch | Native interaction in the relevant operating limit | Gate-level consequence | Correct routing |
+|---|---|---|---|
+| [[molecular-qubit]] | Chemistry-dependent magnetic exchange, dipolar coupling, or hyperfine-mediated interaction; no single family-wide form | A measured interaction timescale can show that coupling outruns decoherence, but does not identify a universal native gate or establish its fidelity | Stay in the entry until a particular molecule and projected Hamiltonian are specified |
+| [[polar-molecule-qubit]] | Resonant electric dipole flip-flop interaction, $H\propto \sigma_x\sigma_x+\sigma_y\sigma_y$ | iSWAP-family evolution in the single-excitation subspace | Read [[sqrt-swap-as-universal-gate]] as a contrast: this is XY exchange, not the isotropic Heisenberg interaction that generates $\sqrt{\mathrm{SWAP}}$ |
+| [[nuclear-magnetic-resonance-qubit]] | High-field weak-coupling secular term, $H\propto J I_z I_z$, after transverse scalar-coupling terms average away | Timed conditional phase plus single-spin rotations and refocusing; the scalar coupling alone is not a CNOT | Keep the NMR pulse/refocusing stack in the entry and route portable control ideas to [[classical-control]] |
+
+The practical test is to ask which operators survive in the effective Hamiltonian before naming the gate. “Exchange-mediated” is not enough: isotropic $\vec S_1\!\cdot\!\vec S_2$, XY flip-flop, and secular Ising coupling conserve different quantities and compile into different native entanglers.
 
 ## Molecular-spin evidence ladder
 

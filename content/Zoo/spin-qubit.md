@@ -198,6 +198,15 @@ Semiconductor spin qubits promise integration with existing CMOS fabrication inf
 - [[yamada-2026-electronic-driving-of-torsional]]
 - [[hodgson-2026-high-fidelity-entanglement-of-two]]
 - [[mrowinski-2026-broadband-emitter-localization-and]]
+- [[kawa-2026-a-semiconductor-photon-pair-source]]
+- [[strzaka-2026-qubit-environment-entanglement-in-pure]]
+- [[jiang-2026-coherent-optical-control-of]]
+- [[wijesundara-2026-probing-fluctuations-in-photon]]
+- [[gorski-2026-influence-of-pairing-and]]
+- [[wang-2026-micromagnet-engineering-for-enhanced]]
+- [[murphy-2026-radio-frequency-electron-cascade-in]]
+- [[johannsen-2026-exact-fermionic-matrix-elements]]
+- [[incerti-medici-2026-towards-optimal-routing-strategies]]
 
 ## Evergreen context
 
@@ -206,6 +215,7 @@ Semiconductor spin qubits promise integration with existing CMOS fabrication inf
 - [[exchange-interaction-in-quantum-dots]] — the device-and-materials view of how neighboring dots generate the native nearest-neighbor coupling resource
 - [[heisenberg-exchange-in-quantum-dots]] — the Hamiltonian-first lens for why barrier pulses turn that resource into partial-SWAP or exchange-phase gates rather than arbitrary two-qubit control
 - [[sqrt-swap-as-universal-gate]] — the gate-level consequence of pulsing that exchange interaction for the right area
+- [[decoherence-free-subspace]] — explains how the encoded singlet-triplet, exchange-only, and aeon variants achieve passive noise protection through collective-noise symmetry rather than active correction
 
 ## Related Entries
 

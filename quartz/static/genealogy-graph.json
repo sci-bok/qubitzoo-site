@@ -1,6 +1,6 @@
 {
   "schema": "qubitzoo.genealogy.v1",
-  "generated_at": "2026-10-23T14:00:08.616610+00:00",
+  "generated_at": "2026-11-06T15:00:09.493063+00:00",
   "nodes": [
     {
       "id": "0-pi-qubit",
@@ -177,7 +177,7 @@
       "id": "cryogenic-amplification",
       "title": "Cryogenic Amplification (Quantum-Limited)",
       "family": "Classical Hardware",
-      "year": 2010,
+      "year": 1982,
       "status": "demonstrated",
       "color": "#6b7280",
       "influence": 0.85
@@ -311,10 +311,10 @@
     {
       "id": "gkp-codes",
       "title": "GKP Qubit (Gottesman-Kitaev-Preskill Code)",
-      "family": "Superconducting",
+      "family": "Cross-Platform",
       "year": 2001,
       "status": "demonstrated",
-      "color": "#3b82f6",
+      "color": "#6b7280",
       "influence": 0.84
     },
     {
@@ -366,7 +366,7 @@
       "id": "kerr-cat-qubit",
       "title": "Kerr-Cat Qubit",
       "family": "Superconducting",
-      "year": 2019,
+      "year": 2017,
       "status": "demonstrated",
       "color": "#3b82f6",
       "influence": 0.84
@@ -1087,16 +1087,16 @@
       "target": "ferbo-qubit"
     },
     {
-      "source": "qubit-readout",
-      "target": "cryogenic-amplification"
+      "source": "cryogenic-amplification",
+      "target": "qubit-readout"
     },
     {
-      "source": "circuit-qed",
-      "target": "cryogenic-amplification"
+      "source": "cryogenic-amplification",
+      "target": "circuit-qed"
     },
     {
-      "source": "transmon",
-      "target": "cryogenic-amplification"
+      "source": "cryogenic-amplification",
+      "target": "transmon"
     },
     {
       "source": "photonic-qubit",
@@ -1317,6 +1317,14 @@
     {
       "source": "gkp-codes",
       "target": "circuit-qed"
+    },
+    {
+      "source": "trapped-ion-qubit",
+      "target": "gkp-codes"
+    },
+    {
+      "source": "gkp-codes",
+      "target": "fluxonium"
     },
     {
       "source": "xmon",
@@ -1603,11 +1611,19 @@
       "target": "quantum-gate"
     },
     {
+      "source": "kane-qubit",
+      "target": "quantum-gate"
+    },
+    {
       "source": "neutral-atom-qubit",
       "target": "quantum-gate"
     },
     {
       "source": "rydberg-neutral-atom-qubit",
+      "target": "quantum-gate"
+    },
+    {
+      "source": "photonic-qubit",
       "target": "quantum-gate"
     },
     {
@@ -1851,12 +1867,12 @@
       "target": "xmon"
     },
     {
-      "source": "trapped-ion-qubit",
-      "target": "ytterbium-hyperfine-qubit"
-    },
-    {
       "source": "transmon",
       "target": "tunable-coupler"
+    },
+    {
+      "source": "trapped-ion-qubit",
+      "target": "ytterbium-hyperfine-qubit"
     },
     {
       "source": "circuit-qed",

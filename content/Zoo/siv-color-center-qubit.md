@@ -112,6 +112,7 @@ Qubit states are typically the spin-up and spin-down states of the lower orbital
 - [[sukachev-2017-siv-coherence]]
 - [[debroux-2021-snv-coherence]]
 - [[knaut-2024-siv-entanglement]]
+- [[huang-2026-dissipation-dilution-enhances-siv]]
 
 ## Evergreen context
 

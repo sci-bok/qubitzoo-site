@@ -142,6 +142,7 @@ where the sign of $\chi$ follows the displayed convention. The number-dependent 
 - [[reagor-2016-quantum-memory-millisecond]]
 - [[roy-2026-error-semitransparent-bosonic-control]]
 - [[sivak-2023-real-time-error]]
+- [[bai-2026-force-sensing-in-a]]
 
 ## Evergreen context
 

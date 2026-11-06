@@ -27,4 +27,4 @@ Dispersive readout and [[purcell-protection-via-detuning]] are two consequences 
 
 This mechanism underpins essentially all modern superconducting qubit readout and was first proposed in [[blais-2004-circuit-qed]].
 
-Related: [[jaynes-cummings-in-circuits]], [[purcell-protection-via-detuning]], [[circuit-qed]], [[transmon]], [[high-quality-superconducting-cavities-coupled-to-nonlinear]]
+Related: [[jaynes-cummings-in-circuits]], [[purcell-protection-via-detuning]], [[circuit-qed]], [[transmon]], [[reagor-2016-quantum-memory-millisecond]]

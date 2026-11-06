@@ -47,11 +47,7 @@ $$H_\mathrm{BdG}=\left[\frac{p^2}{2m^*}-\mu+V(x,y)\right]\tau_z+\alpha(p_x\sigma
 
 where $\alpha$ is the Rashba coefficient, $E_Z$ is the Zeeman energy, $V(x,y)$ contains confinement and electrostatic gates, and $\tau_i$ and $\sigma_i$ act in Nambu and spin space. An ideal phase-biased pair potential can be written as
 
-$$\Delta(y)=\begin{cases}
-\Delta_0e^{-i\varphi/2}, & y<-W/2,\\
-0, & |y|<W/2,\\
-\Delta_0e^{+i\varphi/2}, & y>W/2,
-\end{cases}$$
+$$\Delta(y)=\begin{cases}\Delta_0e^{-i\varphi/2}, & y<-W/2,\\ 0, & |y|<W/2,\\ \Delta_0e^{+i\varphi/2}, & y>W/2.\end{cases}$$
 
 for a weak-link width $W$. The topological boundary is found from a closure and reopening of the full quasi-one-dimensional BdG spectrum, or equivalently a change of its class-D invariant. There is no universal pJJ criterion of the nanowire form $E_Z>\sqrt{\mu^2+\Delta^2}$: the boundary depends on $\varphi$, chemical potential, transverse-mode occupancy, junction width, transparency, spin-orbit coupling, orbital effects, and disorder. In the short, highly transparent idealization of Pientka et al., $\varphi\approx\pi$ strongly enlarges the topological region and can lower the required Zeeman field.
 

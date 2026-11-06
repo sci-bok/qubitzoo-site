@@ -127,6 +127,7 @@ Compared with earlier lumped-element proposals, lithographic transmission-line r
 - [[walter-2017-rapid-readout]]
 - [[rathnakaran-2026-squeezing-fueled-quantum-otto-engine]]
 - [[wang-2026-quantum-simulation-of-the]]
+- [[kulikov-2026-arbitrary-phase-cz-gate-and]]
 
 ## Evergreen context
 

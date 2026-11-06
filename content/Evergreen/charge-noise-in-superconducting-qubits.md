@@ -66,5 +66,5 @@ with $S_{n_g}(\omega)$ typically close to a $1/f$ spectrum. The practical signat
 
 ## References
 
-- [[nakamura-1999-cooper-pair-box]]
+- [[nakamura-1999-cpb-coherent-oscillation]]
 - [[koch-2007-transmon]]

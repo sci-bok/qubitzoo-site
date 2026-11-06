@@ -128,6 +128,7 @@ which motivates long wires and hard-gap devices for robust parity protection.
 - [[hanotel-2026-from-majorana-to-bloch]]
 - [[kanno-2026-quantum-classical-break-even-in-electronic]]
 - [[kam-2026-an-entanglement-band-structure]]
+- [[li-2026-gate-tunable-superconductor-semiconductor-coupling]]
 
 ## Related Entries
 

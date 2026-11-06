@@ -2,8 +2,8 @@
 title: Cross-Platform MOC
 type: moc
 technology_family: Cross-Platform
-note_count: 11
-last_updated: '2026-10-19'
+note_count: 12
+last_updated: '2026-10-29'
 generated_by: pipeline-moc-v1
 ---
 
@@ -13,24 +13,25 @@ Curated map of Zoo entries in the **Cross-Platform** family.
 
 | Entry | Type | Status |
 |---|---|---|
-| [[quantum-gate]] | concept | demonstrated |
 | [[bacon-shor-code]] | encoding | demonstrated |
 | [[color-code-logical-qubit]] | encoding | demonstrated |
 | [[erasure-qubit]] | encoding | demonstrated |
 | [[floquet-codes]] | encoding | proposed |
 | [[qldpc-codes]] | encoding | proposed |
 | [[surface-code-logical-qubit]] | encoding | demonstrated |
+| [[quantum-gate]] | gate | demonstrated |
 | [[classical-control]] | infrastructure | demonstrated |
 | [[quantum-transduction]] | infrastructure | demonstrated |
 | [[bosonic-qubit]] | qubit | demonstrated |
+| [[gkp-codes]] | qubit | demonstrated |
 | [[nuclear-magnetic-resonance-qubit]] | qubit | demonstrated |
 
 ## Composition
 
-- concept: 1
 - encoding: 6
+- gate: 1
 - infrastructure: 2
-- qubit: 2
+- qubit: 3
 
 <!-- CURATED -->
 

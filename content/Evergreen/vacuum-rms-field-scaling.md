@@ -42,4 +42,4 @@ This note owns the first arrow; [[jaynes-cummings-in-circuits]] owns the second.
 3. Branch to [[dispersive-readout-mechanism]] for measurement or [[resonator-as-quantum-bus]] for cavity-mediated qubit-qubit exchange.
 
 Source: [[blais-2004-circuit-qed]]
-Related: [[circuit-qed]], [[jaynes-cummings-in-circuits]], [[dispersive-readout-mechanism]], [[resonator-as-quantum-bus]], [[high-quality-superconducting-cavities-coupled-to-nonlinear]]
+Related: [[circuit-qed]], [[jaynes-cummings-in-circuits]], [[dispersive-readout-mechanism]], [[resonator-as-quantum-bus]], [[reagor-2016-quantum-memory-millisecond]]
