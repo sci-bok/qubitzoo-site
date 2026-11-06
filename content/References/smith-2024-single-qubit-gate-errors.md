@@ -15,7 +15,7 @@ generated_by: scibok-curation
 last_updated: '2026-03-25'
 ---
 
-Demonstrates single-qubit Clifford gate errors of 1.5(4) × 10⁻⁷ (fidelity 99.999985%) in a ⁴³Ca⁺ hyperfine clock qubit, setting the world record for single-qubit gate fidelity in any platform. Uses microwave-driven gates in a cryogenic surface-electrode trap at the University of Oxford.
+Demonstrates single-qubit Clifford gate errors of 1.5(4) × 10⁻⁷ (fidelity 99.999985%) in a ⁴³Ca⁺ hyperfine clock qubit, setting the world record for single-qubit gate fidelity in any platform. Uses microwave-driven gates in a room-temperature surface-electrode trap at the University of Oxford.
 
 ## Key Results
 - Single-qubit Clifford gate error: 1.5(4) × 10⁻⁷ (randomized benchmarking)
@@ -32,3 +32,4 @@ Demonstrates single-qubit Clifford gate errors of 1.5(4) × 10⁻⁷ (fidelity 9
 ## Zoo Links
 - [[trapped-ion-qubit]]
 - [[quantum-gate]]
+- [[cirac-zoller-gate]]

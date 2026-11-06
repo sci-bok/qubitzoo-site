@@ -2,13 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "cirac-zoller-gate-figure.png",
-    "sha256": "43fa7ab9fe961cfc72da6b7c5e29440c90ae42cc800caf2c16cf8eb86fdbcefe"
+    "sha256": "082c2b41de2e308888e914d9999d2d56c3b9c17701895746a316202e1d519c03"
   },
   "artifact_role": "primary",
   "blueprint": null,
   "entry_slug": "cirac-zoller-gate",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/cirac-zoller-gate-figure-20260805T043657983499Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/cirac-zoller-gate-figure-20261106T151050840781Z.png",
     "supersedes_file": "cirac-zoller-gate-figure.png"
   },
   "renderer": {
@@ -19,17 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-05T04:36:57.983499+00:00",
-    "id": "gen-1785904600-FGt883pmN0Z8auRY7pfe",
-    "image_size": "1K",
-    "prompt_sha256": "67b4cf9926ef55b25b5e92603bee559603717cfa30ba47921c42188bb97aaa52",
+    "generated_at": "2026-11-06T15:10:50.840781+00:00",
+    "id": "gen-1793977829-YColmI9GuekH2lFh3g0O",
+    "image_size": "2K",
+    "prompt_sha256": "c87c050cd0db1f3c921f37aa3b963ac3d3e3c62dbbb58e631623f059459316cf",
     "source_media_type": "image/jpeg",
     "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Approved rich explanatory Wave 2 plate after full-resolution scientific review. Central device/code structure, logical encoding, control, error mechanism, and readout/system consequence pass; minor ancillary typography is accepted.",
-    "reviewed_at": "2026-08-05T04:45:10.965161+00:00",
-    "reviewer": "Codex scientific visual audit 2026-08-05",
+    "notes": "Approved after full-resolution review. The rich four-panel plate correctly shows a two-ion linear Paul trap and shared axial bus; exact control transition |e_j,0><->|g_j,1>; exact conditional target transition |e_k,1><->|aux_k,0>; pulse order map/phase/unmap; correct branch evolution with only |ee> acquiring -1; bus reset to |0>; controlled-phase diag(1,1,1,-1); CNOT relation via target Hadamards; and correct 1995 proposal/2003 two-ion realization/modern-descendant separation. Minor ancillary defects are tolerated under policy: a stray small aux fragment near the control inset, a garbled word in the descendant prose, and a slightly malformed nbar requirements label; none changes topology, transition endpoints, pulse order, truth table, historical attribution, or numerical meaning.",
+    "reviewed_at": "2026-11-06T15:11:33.425803+00:00",
+    "reviewer": "Codex scientific visual audit 2026-11-06",
     "status": "passed"
   },
   "schema_version": 1

@@ -23,3 +23,4 @@ Introduces a smooth-detuning trapped-ion entangling gate that adiabatically supp
 - [[trapped-ion-qubit]]
 - [[molmer-sorenson-gate]]
 - [[quantum-gate]]
+- [[cirac-zoller-gate]]
