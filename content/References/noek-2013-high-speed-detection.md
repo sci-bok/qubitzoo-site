@@ -1,21 +1,23 @@
 ---
 title: "High speed, high fidelity detection of an atomic hyperfine qubit"
-authors: [R. Noek]
+authors: [Rachel Noek, Geert Vrijsen, Daniel Gaultney, Emily Mount, Taehyun Kim, Peter Maunz, Jungsang Kim]
 year: 2013
-journal: "Optics Express"
-doi: 10.1364/OE.21.021449
+journal: "Optics Letters"
+doi: 10.1364/OL.38.004735
+arxiv_id: '1304.3511'
 type: reference
 generated_by: scibok-audit-backfill
-last_updated: '2026-03-25'
+last_updated: '2026-11-07'
 ---
-Demonstrates high-speed, high-fidelity detection of an atomic hyperfine qubit using electron shelving, achieving 99.93% SPAM fidelity.
+Demonstrates direct fluorescence detection of a $^{171}$Yb$^+$ hyperfine qubit using high photon-collection efficiency, low background, and time-resolved photon counting. The title-page author order and DOI were reverified during the 2026-11-07 deep audit.
 
 ## Key Results
-- Achieved 99.93% SPAM fidelity for ytterbium hyperfine qubit
-- Used electron shelving detection technique for high-speed readout
+- Detection fidelities of 99%, 99.85(1)%, and 99.915(7)% at average detection times of 10.5, 28.1, and 99.8 $\mu$s
+- Direct bright/dark fluorescence discrimination; this experiment did not use electron shelving
 
 ## Links
-- **Journal:** [Optics Express](https://doi.org/10.1364/OE.21.021449)
+- **Journal:** [Optics Letters](https://doi.org/10.1364/OL.38.004735)
+- **arXiv:** [1304.3511](https://arxiv.org/abs/1304.3511)
 
 ## Zoo Links
 - [[ytterbium-hyperfine-qubit]]
