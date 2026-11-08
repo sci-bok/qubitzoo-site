@@ -3,7 +3,7 @@ title: Ytterbium-171 Hyperfine Qubit
 entry_type: qubit
 technology_family: Trapped Ion
 status: demonstrated
-figure_reviewed: false
+figure_reviewed: true
 first_proposed_year: 2002
 first_demonstrated_year: 2002
 keywords:
@@ -17,15 +17,15 @@ keywords:
 - Quantinuum
 - IonQ
 influence_score: 0.88
-last_updated: '2026-11-07'
+last_updated: '2026-11-08'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-deep-audit-2026-11-07
+verified_by: scibok-deep-audit-2026-11-08
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/ytterbium-hyperfine-qubit-figure.provenance.json"
-figure_reviewed_by: "codex-visual-physics-review-2026-08-01"
-figure_reviewed_at: "2026-08-02T02:59:41.136994+00:00"
+figure_reviewed_by: "codex-visual-physics-review-2026-11-08"
+figure_reviewed_at: "2026-11-08T15:08:37.224031+00:00"
 ---
 
 ## Figure

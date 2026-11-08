@@ -2,13 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "ytterbium-hyperfine-qubit-figure.png",
-    "sha256": "479819543425a6f3ac788624f2c872df3d7fb0aa72b91e5119f8842aec6f921e"
+    "sha256": "1804eb8d9b3beae605a7d1bcf5e76d9c5427fa4acff1cf7e320dc07535233541"
   },
   "artifact_role": "primary",
   "blueprint": null,
   "entry_slug": "ytterbium-hyperfine-qubit",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/ytterbium-hyperfine-qubit-figure-20260802T025701122360Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/ytterbium-hyperfine-qubit-figure-20261108T150759259747Z.png",
     "supersedes_file": "ytterbium-hyperfine-qubit-figure.png"
   },
   "renderer": {
@@ -19,16 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-02T02:57:01.122360+00:00",
-    "id": "gen-1785639410-PYT84gDN59W3qpa7uDNr",
-    "image_size": "1K",
-    "prompt_sha256": "95682be93850d834ad7107dd1fad47893fc7626a3f3911e998c4f01cc59ebee5",
-    "source_media_type": "image/jpeg"
+    "generated_at": "2026-11-08T15:07:59.259747+00:00",
+    "id": "gen-1794150458-cAS2VA5IToetuOBRkggI",
+    "image_size": "2K",
+    "prompt_sha256": "cd9d1474f86806220506fcdbe066da2f61b3a10e959b5d2959ab0e14a7b2e455",
+    "source_media_type": "image/jpeg",
+    "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Approved: correct 171Yb+ clock-state encoding, 12.642 GHz splitting, and 369.5 nm state-dependent fluorescence readout.",
-    "reviewed_at": "2026-08-02T02:59:41.136994+00:00",
-    "reviewer": "codex-visual-physics-review-2026-08-01",
+    "notes": "Approved after strict full-resolution review: rich four-panel explanatory plate; correct lower |0>=2S1/2,F=0,mF=0 and upper |1>=2S1/2,F=1,mF=0 ordering; direct 12.642812118 GHz microwave ground-ground transition; 369.5 nm readout starts from bright |1> and cycles through the single 2P1/2,F'=0,mF'=0 level back to F=1 while |0> remains dark; correct bichromatic 355 nm shared-mode MS causality and motion closure; exact H2 56-qubit, 99.843(5)% 2Q, 99.915(7)% at 99.8 us readout, and kZ claims. Minor ancillary 'croupling'/'diagramic' wording artifacts do not affect central physics.",
+    "reviewed_at": "2026-11-08T15:08:37.224031+00:00",
+    "reviewer": "codex-visual-physics-review-2026-11-08",
     "status": "passed"
   },
   "schema_version": 1
