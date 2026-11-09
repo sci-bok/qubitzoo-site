@@ -16,9 +16,9 @@ keywords:
 - nanowire
 - hardware-level protection
 influence_score: 0.55
-last_updated: '2026-04-02'
+last_updated: '2026-11-09'
 generated_by: scibok-curation
-verified_by: scibok-manual-2026-04-02
+verified_by: scibok-deep-audit-2026-11-09
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/ferbo-qubit-figure.provenance.json"
@@ -34,9 +34,9 @@ figure_reviewed_at: "2026-08-05T12:35:46.220699+00:00"
 
 The **FerBo qubit** is a superconducting quantum circuit proposed by Cáceres, Matute-Cañadas et al. (2026) at CEA-Saclay (Quantronics group) and UAM Madrid. Its name derives from **fermion-boson hybridization** — the central mechanism by which it achieves simultaneous protection against both relaxation and dephasing. The circuit consists of a parallel arrangement of a large inductance $L$, a small capacitor $C$, and a highly transmissive Josephson **weak link** (such as a semiconducting nanowire). Structurally, it resembles a **light fluxonium** ($E_L \ll E_J, E_C$), but with the conventional tunnel junction replaced by a weak link hosting **Andreev bound states**, introducing a fermionic degree of freedom that hybridizes with the bosonic LC mode.
 
-The key physical insight is that the qubit's computational states acquire **disjoint support** in the internal Andreev degree of freedom: the ground state $|0\rangle$ resides predominantly in the $|-\rangle$ Andreev manifold while the excited state $|1\rangle$ resides in the $|+\rangle$ manifold. This separation in Andreev space strongly suppresses matrix elements of bosonic operators — the charge relaxation susceptibility $|\langle 0|\hat{n}|1\rangle|^2$ drops by approximately four orders of magnitude at the operating point $\varphi_{\text{ext}} = 0$. Simultaneously, as in light fluxonium, the wavefunctions delocalize across multiple wells in phase space, exponentially suppressing flux dispersion with increasing impedance $Z$. These two protection mechanisms — one fermionic, one bosonic — operate simultaneously and independently.
+The key physical insight is that the qubit's computational states acquire **nearly disjoint support** in the internal Andreev degree of freedom in the protected regime: the ground state $|0\rangle$ resides predominantly in the $|-\rangle$ Andreev manifold while the excited state $|1\rangle$ resides predominantly in the $|+\rangle$ manifold. This separation in Andreev space strongly suppresses matrix elements of bosonic operators — the charge relaxation susceptibility $|\langle 0|\hat{n}|1\rangle|^2$ drops by approximately four orders of magnitude at the operating point $\varphi_{\text{ext}} = 0$ for the representative high-impedance parameters studied in the proposal. Simultaneously, as in light fluxonium, the wavefunctions delocalize across multiple wells in phase space, exponentially suppressing flux dispersion with increasing impedance $Z$. The Andreev-sector separation and phase delocalization therefore provide complementary suppression of relaxation and dephasing rather than immunity to every noise channel.
 
-The **protected regime** is reached when $Z/R_Q \gg 1$ (high impedance) and $\epsilon_r/E_C \ll 1$ (high transmission through the weak link), with a sharp boundary at $Z/R_Q \approx 2E_C/(\pi\epsilon_r)$. The qubit operates at a **zero external flux sweet spot** ($\varphi_{\text{ext}} = 0$), where both computational states share the same parity under phase inversion, providing additional selection-rule protection against relaxation. This is notably different from heavy fluxonium, which operates near $\varphi_{\text{ext}} = \pi$.
+The strongest simultaneous protection occurs at high circuit impedance and high weak-link transmission. For the Josephson quasi-resonant-level model, the transmission is $\tau=(\Gamma^2-\delta\Gamma^2)/(\Gamma^2+\epsilon_r^2)$, so both a small level detuning $\epsilon_r$ and small left-right asymmetry $\delta\Gamma$ favor the ballistic limit. When $E_C$ is the largest relevant circuit energy, the crossover into the low-relaxation-susceptibility region is approximately $\epsilon_r=\sqrt{2E_CE_L}$, or $Z/R_Q\approx2E_C/(\pi\epsilon_r)$; the paper shows that the numerical boundary shifts somewhat outside that approximation. The qubit operates at a **zero external flux sweet spot** ($\varphi_{\text{ext}} = 0$), where the two computational states have the same phase-inversion parity in the protected regime, adding a selection rule that suppresses relaxation. This differs from heavy fluxonium, whose usual sweet spot is near $\varphi_{\text{ext}} = \pi$.
 
 What distinguishes FerBo from other dual-protected qubits — the **0-$\pi$ qubit**, **cos(2$\varphi$) qubit**, **GKP qubit**, and **bifluxon** — is that those designs achieve simultaneous relaxation and dephasing protection through multiple bosonic degrees of freedom with stringent parameter requirements. FerBo achieves the same dual protection using only a **single bosonic mode** coupled to a **fermionic Andreev degree of freedom**, opening a wider and more experimentally accessible parameter window. The natural platform for implementation is a semiconducting **nanowire weak link** (e.g., InAs/Al), whose small intrinsic capacitance (~0.1 fF compared to several fF for tunnel junctions) makes the high-impedance regime significantly more accessible. The required superinductance can be realized with a Josephson junction array or a disordered superconductor.
 
@@ -52,30 +52,37 @@ In the **atomic limit** (weak link treated as a quantum dot with Andreev bound s
 
 $$H_{\rm WL}(\hat{\varphi}) = \Gamma\cos(\hat{\varphi}/2)\,\hat{\sigma}_x - \delta\Gamma\sin(\hat{\varphi}/2)\,\hat{\sigma}_y + \epsilon_r\,\hat{\sigma}_z$$
 
-where $\hat{\sigma}_i$ are Pauli matrices acting on the two-dimensional even-parity Andreev subspace, $\Gamma = \Gamma_L + \Gamma_R$ is the total coupling to the left and right leads, $\delta\Gamma = \Gamma_L - \Gamma_R$ is the coupling asymmetry, and $\epsilon_r$ is the resonant level position controlling the effective transmission. In the high-transmission limit ($\epsilon_r \to 0$), the Andreev bound states become nearly degenerate, and the hybridization with the bosonic mode produces the disjoint-support structure that protects against relaxation.
+where $[\hat\varphi,\hat n]=i$, $\hat{\sigma}_i$ are Pauli matrices acting on the two-dimensional even-parity Andreev subspace, $\Gamma = \Gamma_L + \Gamma_R$ is the total coupling to the left and right leads, $\delta\Gamma = \Gamma_L - \Gamma_R$ is the coupling asymmetry, and $\epsilon_r$ is the resonant level position. This atomic-limit model assumes $\Gamma_L,\Gamma_R\ll\Delta$, where $\Delta$ is the superconducting gap. In the ballistic limit $\epsilon_r,\delta\Gamma\to0$, the weak-link term reduces to $\Gamma\cos(\hat\varphi/2)\hat\sigma_x$; coupling this Andreev pseudospin to the high-impedance bosonic mode yields the nearly disjoint Andreev support and same-parity computational states that suppress relaxation.
 
 ## Motivation
 
 - **Dual noise protection from minimal hardware:** FerBo simultaneously suppresses both relaxation and dephasing using a single bosonic mode coupled to a fermionic Andreev degree of freedom — avoiding the multiple bosonic modes and stringent parameter matching required by the 0-$\pi$ qubit, cos(2$\varphi$) qubit, and bifluxon.
-- **Wide, experimentally accessible parameter range:** The protected regime ($Z/R_Q \gg 1$, $\epsilon_r/E_C \ll 1$) has a clearly defined sharp boundary and does not require extreme fine-tuning, making experimental realization more practical than many competing protected-qubit proposals.
+- **Wide, experimentally accessible parameter range:** The proposal identifies a broad low-susceptibility region in impedance, level detuning, and junction asymmetry. Its simple boundary formula is an approximation valid when $E_C$ is the largest energy scale, not a universal phase boundary.
 - **Natural platform compatibility:** Semiconducting nanowire weak links (InAs/Al), already developed for gatemon and Andreev qubit experiments, provide the high-transmission channels needed. Their small intrinsic capacitance (~0.1 fF) naturally favors the high-impedance regime.
-- **Relaxation suppression by four orders of magnitude:** The disjoint Andreev support of the computational states suppresses charge-induced relaxation matrix elements $|\langle 0|\hat{n}|1\rangle|^2$ by ~$10^{-4}$ at the zero-flux operating point, a substantial improvement enabled by the fermion-boson hybridization.
+- **Relaxation susceptibility reduced by four orders of magnitude:** For the proposal's representative high-impedance parameters, the nearly disjoint Andreev support and same-parity selection rule reduce $|\langle 0|\hat{n}|1\rangle|^2$ by roughly four orders of magnitude at the zero-flux operating point.
 - **Zero-flux sweet spot:** Operating at $\varphi_{\text{ext}} = 0$ simplifies experimental operation (no precision flux biasing required) and provides additional selection-rule protection due to shared parity of the computational states under phase inversion.
+
+## Experimental Status
+
+**Proposal stage (as of November 2026):**
+- FerBo remains a theoretical design presented in arXiv:2604.01145v1; no peer-reviewed journal version or experimental FerBo device was found in the 2024–2026 literature search.
+- The proposed experimental signature is a vanishingly weak $0\!\to\!1$ two-tone-spectroscopy line near zero external flux in the protected regime, rather than the suppressed $0\!\to\!2$ line expected after crossing into the unprotected regime.
+- The principal implementation risks identified by the proposal are gate-voltage noise in the semiconductor weak link, thermal or driven leakage into $|2\rangle$, junction asymmetry, and maintaining a high-impedance mode while preserving weak-link transparency.
 
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
 |--------|-------|-------|--------------------|
-| Charge relaxation suppression | ~10⁻⁴ | $(\langle 0 \rvert \hat{n} \lvert 1 \rangle)^2$ at $\varphi_{\text{ext}} = 0$, protected regime | [Cáceres, Matute-Cañadas et al. 2026](https://arxiv.org/abs/2604.01145) |
+| Charge relaxation susceptibility | ~10⁻⁴ of its unprotected value | Four-order reduction in $\lvert\langle 0 \rvert \hat{n} \lvert 1 \rangle\rvert^2$ at $\varphi_{\text{ext}} = 0$ for representative protected-regime parameters | [Cáceres, Matute-Cañadas et al. 2026](https://arxiv.org/abs/2604.01145) |
 | Flux dispersion | Exponentially suppressed | $\delta E_{01}$ vs $Z/R_Q$ | [Cáceres, Matute-Cañadas et al. 2026](https://arxiv.org/abs/2604.01145) |
-| Protection boundary | $Z/R_Q \approx 2E_C/(\pi\epsilon_r)$ | Sharp transition to protected regime | [Cáceres, Matute-Cañadas et al. 2026](https://arxiv.org/abs/2604.01145) |
-| Optimal $E_C$ | ~15 GHz | Representative parameter set | [Cáceres, Matute-Cañadas et al. 2026](https://arxiv.org/abs/2604.01145) |
+| Protection crossover | $Z/R_Q \approx 2E_C/(\pi\epsilon_r)$ | Approximate boundary when $E_C$ is the largest energy scale | [Cáceres, Matute-Cañadas et al. 2026](https://arxiv.org/abs/2604.01145) |
+| Representative $E_C$ | ~15 GHz | Parameter used for the proposal's transition-energy example; not an experimental optimum | [Cáceres, Matute-Cañadas et al. 2026](https://arxiv.org/abs/2604.01145) |
 | Operating point | $\varphi_{\text{ext}} = 0$ | Zero external flux sweet spot | [Cáceres, Matute-Cañadas et al. 2026](https://arxiv.org/abs/2604.01145) |
 
 ## References
 
 ### Original proposal
-- J. J. Cáceres, F. J. Matute-Cañadas et al., "FerBo: a noise resilient qubit hybridizing Andreev and fluxonium states," [arXiv:2604.01145 (2026)](https://arxiv.org/abs/2604.01145)
+- J. J. Cáceres, D. Sanz Marco, J. Ortuzar, E. Flurin, C. Urbina, H. Pothier, M. F. Goffman, F. J. Matute-Cañadas, and A. Levy Yeyati, "FerBo: a noise resilient qubit hybridizing Andreev and fluxonium states," [arXiv:2604.01145 (2026)](https://arxiv.org/abs/2604.01145)
 
 ## Linked Papers
 
