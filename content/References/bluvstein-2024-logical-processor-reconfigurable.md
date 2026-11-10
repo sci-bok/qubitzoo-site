@@ -22,3 +22,4 @@ AbstractSuppressing errors is the central challenge for useful quantum computing
 ## Zoo Links
 - [[neutral-atom-qubit]]
 - [[rydberg-neutral-atom-qubit]]
+- [[qubit-readout]]

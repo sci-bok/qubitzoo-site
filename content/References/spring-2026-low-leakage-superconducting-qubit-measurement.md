@@ -32,6 +32,10 @@ Fast, accurate, and low-leakage qubit measurement is a key requirement for quant
 ## Links
 - **arXiv:** [2608.25484](https://arxiv.org/abs/2608.25484)
 
+## Zoo Links
+- [[transmon]]
+- [[qubit-readout]]
+
 ## Verification Report
 Verification status: **verified**.
 Disputes resolved: **0**.

@@ -20,3 +20,4 @@ This paper presents work on high-fidelity readout of trapped-ion qubits.
 ## Zoo Links
 - [[cirac-zoller-gate]]
 - [[trapped-ion-qubit]]
+- [[qubit-readout]]

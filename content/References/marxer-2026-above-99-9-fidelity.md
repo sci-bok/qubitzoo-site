@@ -26,3 +26,4 @@ Demonstrates simultaneous high-fidelity operation across the three core function
 ## Zoo Links
 - [[transmon]]
 - [[quantum-gate]]
+- [[qubit-readout]]

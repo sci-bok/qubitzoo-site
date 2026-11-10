@@ -21,3 +21,4 @@ Enhanced-latching Pauli-spin-blockade readout of singlet and triplet states in a
 
 ## Zoo Links
 - [[singlet-triplet-qubit]]
+- [[qubit-readout]]
