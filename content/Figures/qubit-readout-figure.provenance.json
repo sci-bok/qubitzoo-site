@@ -2,19 +2,19 @@
   "artifact": {
     "media_type": "image/png",
     "path": "qubit-readout-figure.png",
-    "sha256": "7727b8ba07a0eee2b25d517dca43988c3948e482b48252a5968bdd8b8dc603be"
+    "sha256": "b1b8bc8784a48bc8966b660c1d1fc1d8e39c74d93349eb13cfb24441f844b221"
   },
   "artifact_role": "primary",
   "blueprint": {
     "media_type": "image/png",
-    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/qubit-readout-figure.png",
+    "path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/qubit-readout-figure-20261111T150900487965Z.png",
     "role": "physics-blueprint",
-    "sha256": "3acca3644fbabb7652bb455ed73a8b1ecd84db2ae9957695f3cfa5e4e9628791",
-    "strict": false
+    "sha256": "efe416bb5a58e5c9df82c8498ec063c725e9aa6fcde8866d0a6712fa8384d964",
+    "strict": true
   },
   "entry_slug": "qubit-readout",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/qubit-readout-figure-20260805T042354073450Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/qubit-readout-figure-20261111T151014611189Z.png",
     "supersedes_file": "qubit-readout-figure.png"
   },
   "renderer": {
@@ -25,17 +25,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-05T04:23:54.073450+00:00",
-    "id": "gen-1785903822-ZNZXfqOzlQ33i4Co0Im5",
-    "image_size": "1K",
-    "prompt_sha256": "feb198560bd4a60578b337443e152ab4fc4f73c77ed66e412d097452b6f8ed34",
+    "generated_at": "2026-11-11T15:10:14.611189+00:00",
+    "id": "gen-1794409795-QAKviBfFdqJ038aingdR",
+    "image_size": "2K",
+    "prompt_sha256": "3dbd73eea1fed799356ee3ecefdece941aca1109a82b07c5d538fa54bb56f068",
     "source_media_type": "image/jpeg",
     "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Approved rich explanatory plate after full-resolution review. Apparatus-to-encoding/control/readout narrative is strong; central physics is sound. Minor ancillary typography imperfections are acceptable under the approved visual policy.",
-    "reviewed_at": "2026-08-05T04:28:42.380406+00:00",
-    "reviewer": "Codex scientific visual audit 2026-08-05",
+    "notes": "Approved after full-resolution review. Rich explanatory plate passes the physical planar transmon topology, omega_r\u00b1chi pointer separation, omega_01 transition, calcium 4S1/2\u20133D5/2\u20134P1/2 ordering and allowed 397/729-nm transitions, spin-to-charge conversion, signal-chain order, and source-backed benchmark gates. Minor ancillary typos (Probability/resonator/fidelity) do not alter the scientific story.",
+    "reviewed_at": "2026-11-11T15:10:47.095279+00:00",
+    "reviewer": "codex-daily-audit-2026-11-11",
     "status": "passed"
   },
   "schema_version": 1
