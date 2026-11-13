@@ -2,13 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "cat-codes-figure.png",
-    "sha256": "65cf670607e953f352b30acaca26f4c2ff1df6ea3f70d65aa335412821170b9f"
+    "sha256": "7c0684d0d7756eac523d57c51d75792ab09eda0882f892dfdb5e59338948e199"
   },
   "artifact_role": "primary",
   "blueprint": null,
   "entry_slug": "cat-codes",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/cat-codes-figure-20260805T043637718452Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zoo-zettelkasten/vault/Figures/.candidates/cat-codes-figure-20261113T151431510089Z.png",
     "supersedes_file": "cat-codes-figure.png"
   },
   "renderer": {
@@ -19,17 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-05T04:36:37.718452+00:00",
-    "id": "gen-1785904587-IyMwBjf44vUiyx9qRHzH",
-    "image_size": "1K",
-    "prompt_sha256": "165167b22d0985559b63781b24dca7ab57c1c5c25540814e530750917d57aa22",
+    "generated_at": "2026-11-13T15:14:31.510089+00:00",
+    "id": "gen-1794582852-Mg3vW6kxv1TAzyLWWzbX",
+    "image_size": "2K",
+    "prompt_sha256": "a7b77187d078ad9f06f45e0f6e9a13562ba78f43dda5231f26bdb6a4dfd70f53",
     "source_media_type": "image/jpeg",
     "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Approved rich explanatory Wave 2 plate after full-resolution scientific review. Central device/code structure, logical encoding, control, error mechanism, and readout/system consequence pass; minor ancillary typography is accepted.",
-    "reviewed_at": "2026-08-05T04:45:10.913590+00:00",
-    "reviewer": "Codex scientific visual audit 2026-08-05",
+    "notes": "APPROVE: full-resolution review passed central topology, basis ordering, dual-basis photon-loss action, exponentially suppressed Gamma_X versus linear Gamma_Z, dissipative jump operator, Kerr Hamiltonian, repetition-code causality, and all source-backed numerical claims. Rich apparatus-to-state-to-mechanism-to-system composition passes. P3 only: Hamiltonion spelling typo in a small ancillary label.",
+    "reviewed_at": "2026-11-13T15:15:12.379312+00:00",
+    "reviewer": "codex-daily-audit-2026-11-13",
     "status": "passed"
   },
   "schema_version": 1

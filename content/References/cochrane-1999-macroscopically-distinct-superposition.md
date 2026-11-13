@@ -19,3 +19,4 @@ This paper presents work on macroscopically distinct quantum-superposition state
 
 ## Zoo Links
 - [[binomial-codes]]
+- [[cat-codes]]
