@@ -1,10 +1,45 @@
 {
   "schema": "qubitzoo.changelog.v1",
-  "generated_at_utc": "2026-11-13T15:00:10.444Z",
+  "generated_at_utc": "2026-11-13T15:05:20.989Z",
   "window_hours": 24,
   "site": {
     "repo_root": "/Users/scibok/.openclaw/workspace/repos/qubitzoo-site",
     "commits": [
+      {
+        "sha": "be3e2da7",
+        "iso": "2026-11-13T10:00:20-05:00",
+        "subject": "site: sync vault content (2026-11-02 06:00:01 EST)",
+        "files": [
+          "content/Evergreen/dispersive-readout-mechanism.md",
+          "content/Evergreen/purcell-protection-via-detuning.md",
+          "content/Evergreen/rydberg-blockade-mechanism.md",
+          "content/Evergreen/spin-photon-interfaces-separate-emission-collection-and-wavelength-matching.md",
+          "content/MOCs/color-center-moc.md",
+          "content/MOCs/qubit-zoo-index-moc.md",
+          "content/References/blume-kohout-2017-yb-gst.md",
+          "content/References/decross-2025-h2-random-circuits.md",
+          "content/References/han-2025-yb-zeeman-coefficients.md",
+          "content/References/hannemann-2002-self-learning-yb171.md",
+          "content/References/noek-2013-high-speed-detection.md",
+          "content/Zoo/0-pi-qubit.md",
+          "content/Zoo/aeon-qubit.md",
+          "content/Zoo/bifluxon-qubit.md",
+          "content/Zoo/cos2phi-qubit.md",
+          "content/Zoo/ferbo-qubit.md",
+          "content/Zoo/fluxonium.md",
+          "content/Zoo/hybrid-qubit.md",
+          "content/Zoo/mergemon.md",
+          "content/Zoo/quantum-gate.md",
+          "content/Zoo/rare-earth-ion-qubit.md",
+          "content/Zoo/siv-color-center-qubit.md",
+          "content/Zoo/ytterbium-hyperfine-qubit.md",
+          "content/_meta/changelog.json",
+          "content/_meta/content-sync.json",
+          "content/changelog.md",
+          "quartz/static/fidelity-tracker.json",
+          "quartz/static/genealogy-graph.json"
+        ]
+      },
       {
         "sha": "1cc9ebec",
         "iso": "2026-11-12T10:09:39-05:00",
