@@ -143,6 +143,7 @@ The mergemon regime is $C_J/C_\Sigma \rightarrow 1$, whereas an ordinary planar 
 - [[josephson-junction-as-nonlinear-element]] — the merged-element idea makes the junction itself supply both anharmonicity and most of the capacitance
 - [[charge-noise-sweet-spot]] — mergemon stays in the transmon logic of suppressing charge sensitivity by working at large effective capacitance
 - [[charge-noise-in-superconducting-qubits]] — the background decoherence story that motivates moving field participation away from lossy exposed interfaces
+- [[dispersive-readout-mechanism]] — the standard transmon-style cavity pull used to verify merged-element operation while materials participation is being re-engineered
 
 ## Related Entries
 

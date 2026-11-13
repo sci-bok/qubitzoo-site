@@ -1,21 +1,20 @@
 {
   "schema": "qubitzoo.changelog.v1",
-  "generated_at_utc": "2026-11-06T15:00:09.341Z",
+  "generated_at_utc": "2026-11-13T15:00:10.444Z",
   "window_hours": 24,
   "site": {
     "repo_root": "/Users/scibok/.openclaw/workspace/repos/qubitzoo-site",
     "commits": [
       {
-        "sha": "f9d716a8",
-        "iso": "2026-11-05T10:18:33-05:00",
-        "subject": "zoo: complete fluxonium deep audit",
+        "sha": "1cc9ebec",
+        "iso": "2026-11-12T10:09:39-05:00",
+        "subject": "audit: refresh surface-code logical qubit",
         "files": [
-          "content/Figures/fluxonium-figure.png",
-          "content/Figures/fluxonium-figure.provenance.json",
-          "content/References/an-2026-hardware-efficient-erasure-error-detection.md",
-          "content/References/liu-2026-converting-qubit-relaxation-erasures.md",
-          "content/References/mazhorin-2026-native-ccz-gate-fluxonium.md",
-          "content/Zoo/fluxonium.md"
+          "content/References/kan-2026-cloud-surface-code-error-suppression.md",
+          "content/References/marques-2022-logical-qubit-operations-error-detecting-surface-code.md",
+          "content/References/sivak-2026-reinforcement-learning-control-qec.md",
+          "content/References/wang-2026-superconducting-surface-code-lattice-surgery.md",
+          "content/Zoo/surface-code-logical-qubit.md"
         ]
       }
     ]
@@ -25,16 +24,24 @@
     "available": true,
     "commits": [
       {
-        "sha": "87b6a24f",
-        "iso": "2026-11-05T10:18:33-05:00",
-        "subject": "zoo: complete fluxonium deep audit",
+        "sha": "513b7667",
+        "iso": "2026-11-12T10:47:50-05:00",
+        "subject": "zettel synthesis: route Rydberg blockade evidence",
         "files": [
-          "Figures/fluxonium-figure.png",
-          "Figures/fluxonium-figure.provenance.json",
-          "References/an-2026-hardware-efficient-erasure-error-detection.md",
-          "References/liu-2026-converting-qubit-relaxation-erasures.md",
-          "References/mazhorin-2026-native-ccz-gate-fluxonium.md",
-          "Zoo/fluxonium.md"
+          "Evergreen/rydberg-blockade-mechanism.md",
+          "Zoo/quantum-gate.md"
+        ]
+      },
+      {
+        "sha": "ca63826c",
+        "iso": "2026-11-12T10:09:31-05:00",
+        "subject": "audit: refresh surface-code logical qubit",
+        "files": [
+          "References/kan-2026-cloud-surface-code-error-suppression.md",
+          "References/marques-2022-logical-qubit-operations-error-detecting-surface-code.md",
+          "References/sivak-2026-reinforcement-learning-control-qec.md",
+          "References/wang-2026-superconducting-surface-code-lattice-surgery.md",
+          "Zoo/surface-code-logical-qubit.md"
         ]
       }
     ]
@@ -44,12 +51,11 @@
     "available": true,
     "commits": [
       {
-        "sha": "c5cf7520",
-        "iso": "2026-11-05T10:20:49-05:00",
-        "subject": "audit: mark fluxonium PASS after deep review",
+        "sha": "26445a51",
+        "iso": "2026-11-12T10:10:36-05:00",
+        "subject": "audit: record surface-code logical qubit review",
         "files": [
-          "data/audit-tracker.json",
-          "scripts/regen-fluxonium-figure-2026-11-03.py"
+          "data/audit-tracker.json"
         ]
       }
     ]

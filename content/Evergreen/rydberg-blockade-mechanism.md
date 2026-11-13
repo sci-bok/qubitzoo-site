@@ -73,7 +73,22 @@ State-of-the-art implementations achieve CZ fidelities of 99.5% (Evered et al. 2
 - Saffman et al. (2010) provided a comprehensive review establishing the field.
 - Evered et al. (2023) demonstrated 99.5% CZ fidelity in $^{87}\text{Rb}$ tweezer arrays.
 
-## References
+## Graph Placement
+
+- [[neutral-atom-moc]] is the family map: use it to compare gate-first alkali processors with clock-state and nuclear-spin storage architectures that borrow the same Rydberg interaction only during entanglement.
+- [[neutral-atom-qubit]] is the systems-level route for array assembly, reconfiguration, atom loss, and processor scaling; [[rydberg-neutral-atom-qubit]] is the direct gate-execution route.
+- [[alkaline-earth-neutral-atom-clock-qubit]] and [[nuclear-spin-neutral-atom-qubit]] separate quiet storage from the excited interaction manifold, so blockade should not be mistaken for the qubit encoding itself.
+- [[erasure-error-vs-pauli-error]] tracks when Rydberg decay, leakage, or atom loss becomes a decoder-visible flag instead of an unlocated error. [[coherence-time-hierarchy]] tracks the separate storage-versus-gate timescale trade-off.
+- [[quantum-gate]] is the cross-platform comparison route. Benchmarking-domain differences matter: a symmetric-subspace fidelity and a full two-qubit Haar-average fidelity are not interchangeable.
+
+## Evidence Routes
+
+- [[jaksch-2000-rydberg-gate]] — foundational blockade-gate proposal.
+- [[bluvstein-2024-logical-processor-reconfigurable]] — blockade gates inside a reconfigurable logical-processor architecture.
+- [[scholl-2023-erasure-conversion-high]] and [[wu-2022-erasure-neutral-atoms]] — experimental and architectural routes from Rydberg-associated loss to flagged erasures.
+- [[tsai-2025-benchmarking-rydberg-entangling-gates]] — leakage-aware gate benchmarking and an error model tied to laser noise, Rydberg decay, and motion.
+
+## Related Notes
 
 - [[rydberg-neutral-atom-qubit]]
 - [[neutral-atom-qubit]]

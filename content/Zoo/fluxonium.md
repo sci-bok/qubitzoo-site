@@ -152,6 +152,7 @@ The transmon's Achilles heel is its weak anharmonicity (typically about $-200\,\
 - [[charge-noise-in-superconducting-qubits]] — fluxonium is the classic reminder that the CPB offset-charge problem can be pushed far down without abandoning Josephson-circuit physics.
 - [[charge-noise-sweet-spot]] — charge insensitivity is built into the architecture, but the best coherence still comes from the separate half-flux sweet-spot story.
 - [[coherence-time-hierarchy]] — how to read the sweet-spot versus off-sweet-spot coherence claims
+- [[dispersive-readout-mechanism]] — fluxonium retains a state-dependent cavity pull through its multilevel spectrum even when the computational transition itself is sub-gigahertz
 
 ## Related Entries
 

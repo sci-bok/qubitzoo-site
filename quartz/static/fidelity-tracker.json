@@ -1,6 +1,6 @@
 {
   "schema": "qubitzoo.fidelity_tracker.v1",
-  "generated_at": "2026-11-06T15:00:09.450194+00:00",
+  "generated_at": "2026-11-13T15:00:10.547890+00:00",
   "families": [
     {
       "name": "Superconducting",
@@ -403,34 +403,6 @@
       "name": "Trapped Ion",
       "entries": [
         {
-          "slug": "cirac-zoller-gate",
-          "title": "Cirac-Zoller Gate",
-          "year": 1995,
-          "status": "demonstrated",
-          "influence": 0.9,
-          "metrics": {
-            "1Q_fidelity": {
-              "value": 99.9999,
-              "raw": "99.9999%",
-              "ref": "[Harty et al. 2014](https://doi.org/10.1103/PhysRevLett.113.220501)"
-            },
-            "2Q_fidelity": {
-              "value": 99.9,
-              "raw": "99.5\u201399.9%",
-              "ref": "[Ballance et al. 2016](https://doi.org/10.1103/PhysRevLett.117.060504)"
-            },
-            "readout": {
-              "value": 99.9,
-              "raw": "99.9%+",
-              "ref": "[Myerson et al. 2008](https://doi.org/10.1103/PhysRevLett.100.200502)"
-            },
-            "T1": {
-              "value_us": 1000000000.0,
-              "raw": ">1000 s"
-            }
-          }
-        },
-        {
           "slug": "molmer-sorenson-gate",
           "title": "M\u00f8lmer-S\u00f8rensen Gate",
           "year": 1999,
@@ -512,63 +484,6 @@
       ]
     },
     {
-      "name": "Cross-Platform",
-      "entries": [
-        {
-          "slug": "erasure-qubit",
-          "title": "Erasure Qubit",
-          "year": 2022,
-          "status": "demonstrated",
-          "influence": 0.82,
-          "metrics": {
-            "2Q_fidelity": {
-              "value": 99.5,
-              "raw": "99.0\u201399.5%",
-              "ref": "[Scholl et al. 2023](https://doi.org/10.1038/s41586-023-06516-4)"
-            }
-          }
-        },
-        {
-          "slug": "color-code-logical-qubit",
-          "title": "Color-Code Logical Qubit",
-          "year": 2006,
-          "status": "demonstrated",
-          "influence": 0.77,
-          "metrics": {
-            "1Q_fidelity": {
-              "value": 99.0,
-              "raw": "99%+ (d=3)",
-              "ref": "[Ryan-Anderson et al. 2024](https://doi.org/10.1126/science.adp6016)"
-            },
-            "2Q_fidelity": {
-              "value": 99.0,
-              "raw": "~97\u201399% (d=3, small scale)",
-              "ref": "[Postler et al. 2022](https://doi.org/10.1038/s41586-022-04721-1)"
-            }
-          }
-        },
-        {
-          "slug": "surface-code-logical-qubit",
-          "title": "Surface-Code Logical Qubit",
-          "year": 1997,
-          "status": "demonstrated",
-          "influence": 0.83,
-          "metrics": {
-            "1Q_fidelity": {
-              "value": 99.8,
-              "raw": "99.6\u201399.8%",
-              "ref": "[Google Quantum AI 2024](https://doi.org/10.1038/s41586-024-08449-y)"
-            },
-            "2Q_fidelity": {
-              "value": 99.0,
-              "raw": "~99% (estimated)",
-              "ref": "[Erhard et al. 2021](https://doi.org/10.1038/s41586-021-03928-y)"
-            }
-          }
-        }
-      ]
-    },
-    {
       "name": "Super-Semi",
       "entries": [
         {
@@ -609,6 +524,44 @@
             "T1": {
               "value_us": 27.0,
               "raw": "27 \u03bcs"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Cross-Platform",
+      "entries": [
+        {
+          "slug": "erasure-qubit",
+          "title": "Erasure Qubit",
+          "year": 2022,
+          "status": "demonstrated",
+          "influence": 0.82,
+          "metrics": {
+            "2Q_fidelity": {
+              "value": 99.5,
+              "raw": "99.0\u201399.5%",
+              "ref": "[Scholl et al. 2023](https://doi.org/10.1038/s41586-023-06516-4)"
+            }
+          }
+        },
+        {
+          "slug": "color-code-logical-qubit",
+          "title": "Color-Code Logical Qubit",
+          "year": 2006,
+          "status": "demonstrated",
+          "influence": 0.77,
+          "metrics": {
+            "1Q_fidelity": {
+              "value": 99.0,
+              "raw": "99%+ (d=3)",
+              "ref": "[Ryan-Anderson et al. 2024](https://doi.org/10.1126/science.adp6016)"
+            },
+            "2Q_fidelity": {
+              "value": 99.0,
+              "raw": "~97\u201399% (d=3, small scale)",
+              "ref": "[Postler et al. 2022](https://doi.org/10.1038/s41586-022-04721-1)"
             }
           }
         }

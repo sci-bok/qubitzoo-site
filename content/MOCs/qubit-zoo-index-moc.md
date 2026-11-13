@@ -3,7 +3,7 @@ title: Qubit Zoo Index MOC
 type: moc
 technology_family: index
 note_count: 82
-last_updated: '2026-11-03'
+last_updated: '2026-11-07'
 generated_by: pipeline-moc-v1
 ---
 
@@ -54,6 +54,16 @@ This separation prevents three different tasks from collapsing into one page: th
 - Move through [[cross-platform-moc]] and [[quantum-transduction]] when the architecture must convert microwave quantum information into optical photons. Judge this route by end-to-end efficiency, added noise, bandwidth, and refrigerator heat load together; optimizing any one metric in isolation can hide the real systems cost.
 - Take the native-emitter alternative through [[spin-photon-moc]] when the stationary qubit already has a useful optical transition. This can remove a frequency-conversion stage, but it moves the burden to photon collection, indistinguishability, spectral stability, and the emitter's cryogenic envelope.
 - End in [[photonic-moc]] once the question becomes which flying encoding or optical computation model carries the information onward. Use [[divincenzo-criteria]] to compare the two interface strategies without confusing a good local qubit with a complete networking stack.
+
+## High-value cross-family slice: what job is the resonator doing?
+
+- Start with [[vacuum-rms-field-scaling]] when the resonator is still a **geometry resource**: mode volume, impedance, and capacitance determine the zero-point field available before any particular qubit is attached. Continue to [[jaynes-cummings-in-circuits]] only after a qubit dipole matrix element turns that field into a coupling rate $g$.
+- Stay in [[superconducting-moc]] or [[floating-electron-moc]] when a microwave resonator is used in the **dispersive regime**. [[dispersive-readout-mechanism]] owns the useful cavity pull $\chi\sim g^2/\Delta$; [[purcell-protection-via-detuning]] owns the unwanted decay channel $\gamma_\kappa\sim\kappa(g/\Delta)^2$. These are linked consequences of the same small admixture, not interchangeable labels.
+- Route to [[resonator-as-quantum-bus]] when the resonator mediates a **local two-qubit interaction** through virtual photons. The architectural question is then whether the bus returns to vacuum and how well residual exchange or $ZZ$ can be suppressed at idle—not how efficiently a real photon leaves the processor.
+- Route to [[spin-photon-moc]] and [[spin-photon-interfaces-separate-emission-collection-and-wavelength-matching]] when a resonant optical cavity is meant to **accelerate emission into a collected mode**. Judge that branch by cooperativity or Purcell factor, emitter-mode overlap, spectral stability, and extraction efficiency; do not continue the dispersive $\kappa(g/\Delta)^2$ formula to $\Delta=0$.
+- Move to [[cross-platform-moc]] and [[quantum-transduction]] only when the remaining task is to preserve an unmeasured quantum state while converting between local and network-compatible carriers. A readout resonator, a virtual-photon bus, and a cavity-enhanced optical emitter can all be excellent devices without yet being transducers.
+
+The routing test is therefore: **is the mode supplying a field, revealing a state, mediating a local interaction, shaping an emitted photon, or converting a carrier?** Naming that job first prevents the shared word “cavity” from collapsing incompatible operating regimes and evidence standards.
 
 ## High-value cross-family slice: measurement-to-feedback closure
 

@@ -107,6 +107,7 @@ The central challenge in superconducting quantum computing is decoherence from e
 ## Evergreen context
 
 - [[josephson-junction-as-nonlinear-element]] — the split CPB supplies the two phase-slip paths whose interference protects fluxon parity.
+- [[charge-noise-in-superconducting-qubits]] — identifies the physical offset-charge fluctuations that perturb the split CPB; the bifluxon suppresses their effect only at the Aharonov–Casher interference point and remains vulnerable to parity jumps.
 - [[charge-noise-sweet-spot]] — explains why the odd-charge operating point is useful and why charge-parity jumps remain dangerous.
 - [[noise-bias-and-asymmetric-error-channels]] — frames the distinction between suppressing relaxation and achieving full dephasing protection.
 

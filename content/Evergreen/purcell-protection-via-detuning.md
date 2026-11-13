@@ -23,7 +23,9 @@ The suppression is **quadratic**, not exponential, in the dispersive ratio $g/\D
 
 This note is the **lifetime branch** of the dispersive regime. Use it when the live question is how a lossy readout or bus cavity contributes to qubit relaxation. Use [[dispersive-readout-mechanism]] when the live question is how the same off-resonant interaction produces a qubit-state-dependent cavity shift for measurement. Both descend from [[jaynes-cummings-in-circuits]] after the cavity and qubit are detuned.
 
+Do not continue $\gamma_\kappa = \kappa(g/\Delta)^2$ to $\Delta=0$ or reinterpret resonant enhancement as this mechanism with the sign reversed: the dispersive approximation has already failed there. When a solid-state optical emitter is intentionally brought onto a nanophotonic-cavity resonance to accelerate emission into a collected mode, route instead to [[spin-photon-interfaces-separate-emission-collection-and-wavelength-matching]]. That branch is governed by resonant cooperativity / Purcell-factor and emitter-mode-overlap considerations, not detuned microwave lifetime protection.
+
 This is the central tension in circuit QED design: you want large $g/\Delta$ for strong readout signal, but small $g/\Delta$ for long qubit lifetime. The transmon solved this by operating at $E_J/E_C \gg 1$, which reduces charge dispersion (noise sensitivity) while keeping $g$ large.
 
 Source: [[blais-2004-circuit-qed]]
-Related: [[jaynes-cummings-in-circuits]], [[dispersive-readout-mechanism]], [[circuit-qed]], [[transmon]], [[fluxonium]]
+Related: [[jaynes-cummings-in-circuits]], [[dispersive-readout-mechanism]], [[spin-photon-interfaces-separate-emission-collection-and-wavelength-matching]], [[circuit-qed]], [[transmon]], [[fluxonium]]

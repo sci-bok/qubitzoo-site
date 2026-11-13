@@ -184,7 +184,6 @@ Rare-earth ions in crystals offer a unique combination: extremely long spin cohe
 - [[coherence-time-hierarchy]] — distinguishes hours-long Eu nuclear memories from faster optically active Er and Yb network qubits.
 - [[divincenzo-criteria]] — keeps exceptional memory time separate from the still-open requirements for practical local gates, readout, and a scalable node interface.
 - [[spin-photon-interfaces-separate-emission-collection-and-wavelength-matching]] — routes weak-oscillator-strength cavity enhancement through the resonant optical-emission mechanism rather than through off-resonant microwave circuit-QED notes.
-- [[purcell-protection-via-detuning]] — the same $\kappa(g/\Delta)^2$ framework that suppresses spontaneous emission in circuit QED produces >650× cavity-enhanced emission here; the sign reverses because the optical 4f–4f transition is Purcell-enhanced rather than Purcell-protected.
 
 ## Related Entries
 

@@ -81,6 +81,7 @@ with design target $E_L \ll E_J$ and anisotropic capacitances producing disjoint
 ## Evergreen context
 
 - [[cos2phi]] — the doubled-periodicity circuit intuition behind related protected superconducting designs
+- [[charge-noise-in-superconducting-qubits]] — separates the offset-charge fluctuation that enters island-based circuit Hamiltonians from the symmetry and parameter regime used here to suppress its matrix elements.
 - [[charge-noise-sweet-spot]] — frames the 0-π qubit as a multi-axis sweet-spot strategy against both charge and flux noise
 - [[noise-bias-and-asymmetric-error-channels]] — the protection target is not just lower error, but strongly biased residual error channels
 

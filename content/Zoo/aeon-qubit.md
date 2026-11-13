@@ -172,6 +172,7 @@ Two-qubit entangling gates and resonator coupling have **not yet been experiment
 - [[heisenberg-exchange-in-quantum-dots]] — the pairwise-exchange Hamiltonian that AEON reshapes into an always-on encoded qubit
 - [[decoherence-free-subspace]] — the encoded three-spin protection that AEON inherits
 - [[charge-noise-sweet-spot]] — the double-sweet-spot idea that makes AEON special
+- [[dispersive-readout-mechanism]] — a boundary case: AEON's proposed sweet-spot readout uses longitudinal curvature coupling because its transverse dipole vanishes, not the usual transverse Jaynes-Cummings cavity pull
 
 ## Related Entries
 - [[rx-qubit]]

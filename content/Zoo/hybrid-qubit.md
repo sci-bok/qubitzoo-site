@@ -134,6 +134,7 @@ where $d_z$ and $d_x$ are matrix elements of the detuning operator in the qubit 
 - [[exchange-interaction-in-quantum-dots]] — tunnel coupling and detuning set the exchange-mediated hybridization in the double dot.
 - [[heisenberg-exchange-in-quantum-dots]] — useful after projecting the charge sector into the logical $S=1/2$ subspace.
 - [[divincenzo-criteria]] — hybrid qubits make an explicit control-speed-versus-coherence trade rather than maximizing either quantity alone.
+- [[dispersive-readout-mechanism]] — a terminology boundary: the reported ultra-dispersive hybrid-qubit readout is parametrically activated longitudinal coupling, not the standard transverse Jaynes-Cummings mechanism
 
 ## Related Entries
 

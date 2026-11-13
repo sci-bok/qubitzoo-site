@@ -3,7 +3,7 @@ title: Color Center MOC
 type: moc
 technology_family: Color Center
 note_count: 4
-last_updated: '2026-08-31'
+last_updated: '2026-11-08'
 generated_by: pipeline-moc-v1
 ---
 
@@ -59,6 +59,18 @@ The useful family comparison starts with the microscopic property that makes eac
 | [[rare-earth-ion-qubit]] | Shielded 4f states in crystalline hosts | Extremely long memories, narrow transitions, and spectral multiplexing; erbium can add native telecom emission | Weak oscillator strength makes resonant cavity enhancement essential, while deterministic local multi-ion gates remain immature |
 
 Read this table from left to right before comparing headline records. [[coherence-time-hierarchy]] tests whether the local register survives a remote-entanglement cycle; [[spin-photon-interfaces-separate-emission-collection-and-wavelength-matching]] then separates the remaining optical debt into emission, collection, and link matching. Once those interface terms dominate the decision, hand off to [[spin-photon-moc]] rather than extending the materials taxonomy into a network-architecture ranking.
+
+## Evidence ladder: from defect control to a repeatable network node
+
+Color-center maturity claims should name the rung actually demonstrated. Clearing a lower rung is necessary but does not imply the higher ones.
+
+1. **Addressable defect:** Resolve a single defect, initialize and read out its spin, and demonstrate coherent control. This establishes a qubit candidate, not yet a useful optical node.
+2. **Local register:** Couple the electron spin to one or more nuclear memories and show that initialization, gates, and repeated readout preserve the stored state. [[coherence-time-hierarchy]] matters here because a long isolated-memory number is useful only if it survives the electron-spin interface cycle.
+3. **Collected spin–photon interface:** Produce state-dependent photons in a controlled optical mode. Report the zero-phonon branching, indistinguishability or linewidth stability, cavity enhancement, and waveguide/fibre collection separately; [[spin-photon-interfaces-separate-emission-collection-and-wavelength-matching]] explains why none can substitute for the others.
+4. **Remote entanglement operation:** Herald entanglement between independently controlled nodes and report fidelity together with success probability or rate, memory wait time, and post-selection. [[nv-center-qubit]] and [[siv-color-center-qubit]] have crossed this boundary through different local-register/optical-interface tradeoffs; a bright integrated emitter alone has not.
+5. **Repeatable node stack:** Demonstrate multiple spectrally matched devices, stable charge and optical environments, reproducible cavity or waveguide coupling, and a fabrication yield compatible with scaling. This is the unresolved systems rung across the family, including the wafer-compatible [[silicon-carbide-defect-qubit]] branch and the cavity-dependent [[rare-earth-ion-qubit]] branch.
+
+Use the ladder to prevent three common category errors: single-defect control is not network readiness, high collection is not photon indistinguishability, and one remote Bell pair is not yet a manufacturable node architecture. When the comparison reaches rungs 3–5, continue in [[spin-photon-moc]]; when it reaches wavelength conversion or refrigerator-to-fibre systems cost, continue in [[quantum-transduction]].
 
 ## Placement rule
 

@@ -21,6 +21,8 @@ A solid-state spin is not a useful network node merely because it has an optical
 
 The cavity step is therefore an **emission-and-extraction tool**, not a generic synonym for “better coherence.” In the weak-coupling regime, resonant cavity enhancement scales with the cavity quality-factor-to-mode-volume ratio, multiplied by the actual spatial, polarization, and spectral overlap between emitter and mode. Raising the ideal Purcell factor is useless if spectral diffusion moves the emitter out of the cavity linewidth, implantation misses the field maximum, or fabrication yield makes matched nodes rare.
 
+This resonant optical branch must not be described as a sign reversal of the dispersive circuit-QED rate $\kappa(g/\Delta)^2$. That expression assumes $|\Delta|\gg g$ and ceases to be valid as the emitter is tuned onto the cavity; resonant enhancement is instead judged through cooperativity / Purcell factor and the real emitter-mode overlap.
+
 ## Platform consequences
 
 - [[nv-center-qubit]] has a mature local electron-plus-nuclear register, but its weak zero-phonon fraction makes collection and cavity engineering a first-order networking burden.

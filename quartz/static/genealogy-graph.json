@@ -1,6 +1,6 @@
 {
   "schema": "qubitzoo.genealogy.v1",
-  "generated_at": "2026-11-06T15:00:09.493063+00:00",
+  "generated_at": "2026-11-13T15:00:10.587753+00:00",
   "nodes": [
     {
       "id": "0-pi-qubit",
@@ -975,6 +975,10 @@
       "target": "shuttling-ion-trap-qubit"
     },
     {
+      "source": "cirac-zoller-gate",
+      "target": "ytterbium-hyperfine-qubit"
+    },
+    {
       "source": "circuit-qed",
       "target": "transmon"
     },
@@ -1897,10 +1901,6 @@
     {
       "source": "circuit-qed",
       "target": "xmon"
-    },
-    {
-      "source": "cirac-zoller-gate",
-      "target": "ytterbium-hyperfine-qubit"
     },
     {
       "source": "molmer-sorenson-gate",

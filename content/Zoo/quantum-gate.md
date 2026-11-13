@@ -187,6 +187,7 @@ These values are not a protocol-independent league table. RB, interleaved RB, le
 - [[kane-qubit]] — donor nuclear and electron spins in silicon
 - [[neutral-atom-qubit]] — optically trapped atoms with Rydberg-mediated entanglers
 - [[rydberg-neutral-atom-qubit]] — Rydberg-excited encoding and control
+- [[rydberg-blockade-mechanism]] — conditional-interaction mechanism behind neutral-atom CZ gates and the route to blockade-specific error and benchmarking notes
 - [[photonic-qubit]] — flying-qubit platform based on optical modes
 - [[qubit-readout]] — measurement and SPAM, distinct from gate error
 - [[circuit-qed]] — microwave architecture for superconducting control and coupling

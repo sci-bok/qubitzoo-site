@@ -126,6 +126,7 @@ where the intended operating point has $E_1\approx0$. Residual $E_1$ and flux fl
 ## Evergreen context
 
 - [[cos2phi]] — the second-harmonic circuit element that gives the qubit its π-periodic protected potential
+- [[charge-noise-in-superconducting-qubits]] — supplies the offset-charge noise source against which Cooper-pair-parity selection suppresses transitions, while keeping that mechanism distinct from the device's residual flux-noise limit.
 - [[charge-noise-sweet-spot]] — the qubit is best understood as an engineered multi-axis sweet spot against both charge and flux fluctuations
 - [[josephson-junction-as-nonlinear-element]] — standard Josephson physics is being interference-cancelled here to expose the protected $\cos(2\phi)$ term
 
