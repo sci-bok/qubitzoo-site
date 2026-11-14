@@ -15,7 +15,7 @@ Introduces the gmon qubit: an Xmon transmon with an integrated tunable coupler b
 - Tunable coupling: 0 to 30 MHz, switchable in ~10 ns
 - Integrated coupler (no separate coupler qubit needed)
 - Two-qubit iSWAP gate time: ~12 ns
-- Architecture used in Google's quantum supremacy processor
+- Historical precursor to later Google tunable-coupling processor architectures
 
 ## Links
 - **Journal:** [Physical Review Letters](https://doi.org/10.1103/PhysRevLett.113.220502)

@@ -6,6 +6,7 @@ authors:
 - Y. Sung
 - M. Kjaergaard
 - D. L. Campbell
+- J. I. J. Wang
 - T. P. Orlando
 - S. Gustavsson
 - W. D. Oliver
@@ -18,14 +19,13 @@ generated_by: scibok-curation
 last_updated: '2026-03-15'
 ---
 
-Proposes and analyzes a tunable coupling scheme for superconducting qubits using a frequency-tunable transmon as a coupler element between two fixed-frequency qubits. Demonstrates that the effective qubit-qubit coupling can be tuned from positive through zero to negative, enabling high-fidelity two-qubit gates with suppressed always-on ZZ interaction.
+Proposes and analyzes a tunable coupling scheme for superconducting qubits using a frequency-tunable transmon as a coupler element between two fixed-frequency qubits. The effective qubit-qubit coupling can be tuned from positive through zero to negative, enabling simulated high-fidelity two-qubit gates with suppressed always-on exchange. This paper is a proposal and numerical study, not an experimental gate demonstration.
 
 ## Key Results
 - Coupling tunability: +5 MHz to −5 MHz (through zero)
-- ZZ suppression: residual ZZ < 10 kHz at the off point
-- Gate scheme: parametric modulation of coupler frequency
-- Theoretical CZ gate fidelity > 99.9% with realistic parameters
-- Foundation for Google Sycamore and IBM Eagle/Heron architectures
+- Gate scheme: dispersive modulation of the coupler frequency
+- Simulated iSWAP fidelity above 99.999% in 100 ns without decoherence
+- Author order verified from the arXiv PDF title page on 2026-11-14; the published Crossref record omits Joel I. J. Wang
 
 
 ## Links

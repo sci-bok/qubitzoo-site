@@ -34,7 +34,7 @@ Demonstrates high-fidelity CZ (99.76%) and ZZ-free iSWAP (99.87%) gates using a 
 - iSWAP gate fidelity: 99.87(3)%
 - Residual ZZ coupling < 10 kHz (vs ~100 kHz without coupler)
 - Gate time: ~200 ns (CZ), ~120 ns (iSWAP)
-- Architecture adopted by Google and IBM for next-generation processors
+- Demonstrates the pair-level gate and idle-isolation performance of a separate tunable-transmon coupler
 
 
 ## Links
