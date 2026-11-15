@@ -18,15 +18,15 @@ keywords:
 - Google Willow
 - modular architecture
 influence_score: 0.82
-last_updated: '2026-11-14'
+last_updated: '2026-11-15'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-deep-audit-2026-11-14
+verified_by: scibok-deep-audit-2026-11-15
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/tunable-coupler-figure.provenance.json"
-figure_reviewed_by: "Codex deep audit 2026-11-14"
-figure_reviewed_at: "2026-11-14T15:20:09.745227+00:00"
+figure_reviewed_by: "Codex daily deep audit 2026-11-15"
+figure_reviewed_at: "2026-11-15T15:07:58.837019+00:00"
 ---
 
 ## Figure
@@ -96,6 +96,11 @@ That combination is why tunable couplers became a dominant design choice for man
 - Experimentally mapped residual $ZZ$ and exchange in the one- and two-excitation manifolds in a five-transmon processor.
 - Showed that their nulls do not generally coincide, making idle-frequency placement and operation-dependent coupler bias a processor-level optimization problem.
 
+**Late-2026 architecture and control updates — Orell et al.; Gulácsi and Burkard; Kim et al. (2026):**
+- Orell et al. theoretically analyzed a high-connectivity transmon unit cell in which dedicated tunable couplers connect peripheral qubits through a shared central mode, with spectator-aware pulse schedules for pair-selective CZ gates.
+- Gulácsi and Burkard showed that time-dependent external flux can induce cross-voltage driving in capacitively linked circuits. The mechanism is both a newly identified crosstalk channel and a possible route to coupler-driven single-qubit control.
+- Kim et al. proposed a modeless SQUID coupler whose tunable intrinsic cross-Kerr interaction avoids introducing an additional hybridizing coupler mode; this remains a theoretical architecture rather than an experimental benchmark.
+
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
@@ -113,7 +118,7 @@ That combination is why tunable couplers became a dominant design choice for man
 - **Architecture fit:** Tunable couplers are especially attractive for fixed-frequency transmon chips because they decouple entangling control from qubit parking frequencies.
 - **Spectator-aware biasing:** The real optimization target is not just $J_{\mathrm{eff}}=0$, but jointly small exchange, small residual $ZZ$, low leakage, and weak spectator sensitivity.
 - **Variant landscape:** Double-transmon couplers, floating couplers, multichip links, and proposed centimeter-scale fluxonium couplers extend the idea beyond one canonical circuit.
-- **Tradeoffs:** The coupler adds a flux-sensitive mode, extra leakage channels, calibration overhead, pulse-distortion sensitivity, and fabrication complexity. Tunable does not mean error-free.
+- **Tradeoffs:** The coupler adds flux sensitivity, extra leakage or hybridization channels in mode-based designs, calibration overhead, pulse-distortion sensitivity, and fabrication complexity. Time-dependent flux can also induce cross-voltage driving in capacitively linked modes, creating a crosstalk channel that circuit quantization and control design must include. Tunable does not mean error-free.
 
 ## References
 
@@ -129,6 +134,9 @@ That combination is why tunable couplers became a dominant design choice for man
 - F. Marxer et al., "Above 99.9% Fidelity Single-Qubit Gates, Two-Qubit Gates, and Readout in a Single Superconducting Quantum Device," [PRX Quantum 7, 020333 (2026)](https://doi.org/10.1103/n86s-2b88) — [arXiv:2508.16437](https://arxiv.org/abs/2508.16437)
 - S. Vallés-Sanclemente et al., "Optimizing the Frequency Positioning of Tunable Couplers in a Circuit QED Processor to Mitigate Spectator Effects on Quantum Operations," [Phys. Rev. Lett. 136, 200801 (2026)](https://doi.org/10.1103/wdfj-4nbt) — [arXiv:2503.13225](https://arxiv.org/abs/2503.13225)
 - P. Zhao, P. Xu, and Z.-Y. Xue, "Long-range tunable coupler for modular fluxonium quantum processors," [arXiv:2604.12261](https://arxiv.org/abs/2604.12261) (2026)
+- T. Orell et al., "Two-qubit-gate operation in a high-connectivity transmon lattice utilizing a tunable coupling to a shared mode," [Phys. Rev. Applied 26, 054021 (2026)](https://doi.org/10.1103/5vv7-y2rj) — [arXiv:2603.10699](https://arxiv.org/abs/2603.10699)
+- B. Gulácsi and G. Burkard, "Inherent flux crosstalk and coupler-driven single-qubit gates in superconducting circuits," [Phys. Rev. Applied 26, 044056 (2026)](https://doi.org/10.1103/q2j3-mftf) — [arXiv:2606.10970](https://arxiv.org/abs/2606.10970)
+- G. Kim, A. Butler, and O. Painter, "Tunable, modeless, and hybridization-free cross-Kerr coupler for miniaturized superconducting qubits," [PRX Quantum, accepted (2026)](https://doi.org/10.1103/cx2t-3hq7) — [arXiv:2602.03186](https://arxiv.org/abs/2602.03186)
 
 ### Processor-scale deployment
 - F. Arute et al., "Quantum supremacy using a programmable superconducting processor," [Nature 574, 505-510 (2019)](https://doi.org/10.1038/s41586-019-1666-5)
