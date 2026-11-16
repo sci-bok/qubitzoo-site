@@ -18,10 +18,10 @@ keywords:
 - Google Willow
 - modular architecture
 influence_score: 0.82
-last_updated: '2026-11-15'
+last_updated: '2026-11-16'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-deep-audit-2026-11-15
+verified_by: scibok-deep-audit-2026-11-16
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/tunable-coupler-figure.provenance.json"
@@ -85,6 +85,11 @@ That combination is why tunable couplers became a dominant design choice for man
 - Li et al. realized a double-transmon coupler with 99.90% CZ and 99.98% single-qubit fidelity.
 - Field et al. demonstrated zero coupling and two-qubit gates across separate chips using a multichip floating tunable coupler.
 
+**Centimeter-scale hybrid-mode coupling — Xu et al. (2026):**
+- Experimentally demonstrated flux-tunable hybrid modes coupling transmons across a 1 cm structure.
+- Measured $XX$ and $ZZ$ coupling strengths above 23 MHz and 10 MHz, respectively; the same two-channel architecture is predicted to support $ZZ$ modulation contrast above $10^4$.
+- This long-range transmon result complements multichip and fluxonium-coupler approaches without superseding the local-gate fidelity records below.
+
 **Processor-scale deployment — Google Quantum AI and collaborators (2025):**
 - Willow-class below-threshold surface-code operation provided system-level evidence that tunable-coupler transmon hardware can support repeated error-correction experiments, not only isolated pair benchmarks.
 
@@ -111,13 +116,14 @@ That combination is why tunable couplers became a dominant design choice for man
 | CZ gate fidelity | 99.93% | 40-hour average; 33 ns total duration | [Marxer et al. 2026](https://doi.org/10.1103/n86s-2b88) |
 | iSWAP gate fidelity | 99.87(3)% | Approximately 120 ns; engineered to be nearly $ZZ$-free | [Sung et al. 2021](https://doi.org/10.1103/PhysRevX.11.021058) |
 | Double-transmon-coupler CZ fidelity | 99.90% | First experimental DTC realization | [Li et al. 2024](https://doi.org/10.1103/PhysRevX.14.041050) |
+| Centimeter-scale tunable coupling | $XX>23$ MHz; $ZZ>10$ MHz | Experimental 1 cm hybrid-mode coupler | [Xu et al. 2026](https://doi.org/10.1103/ls5b-279m) |
 | Processor-scale median entangling fidelity | 99.4% | Sycamore deployment benchmark | [Arute et al. 2019](https://doi.org/10.1038/s41586-019-1666-5) |
 
 ## Scaling Considerations
 
 - **Architecture fit:** Tunable couplers are especially attractive for fixed-frequency transmon chips because they decouple entangling control from qubit parking frequencies.
 - **Spectator-aware biasing:** The real optimization target is not just $J_{\mathrm{eff}}=0$, but jointly small exchange, small residual $ZZ$, low leakage, and weak spectator sensitivity.
-- **Variant landscape:** Double-transmon couplers, floating couplers, multichip links, and proposed centimeter-scale fluxonium couplers extend the idea beyond one canonical circuit.
+- **Variant landscape:** Double-transmon couplers, floating couplers, multichip links, the experimentally demonstrated 1 cm hybrid-mode transmon coupler, and proposed or demonstrated long-range fluxonium couplers extend the idea beyond one canonical circuit.
 - **Tradeoffs:** The coupler adds flux sensitivity, extra leakage or hybridization channels in mode-based designs, calibration overhead, pulse-distortion sensitivity, and fabrication complexity. Time-dependent flux can also induce cross-voltage driving in capacitively linked modes, creating a crosstalk channel that circuit quantization and control design must include. Tunable does not mean error-free.
 
 ## References
@@ -133,6 +139,7 @@ That combination is why tunable couplers became a dominant design choice for man
 - Google Quantum AI and Collaborators, "Quantum error correction below the surface code threshold," [Nature 638, 920-926 (2025)](https://doi.org/10.1038/s41586-024-08449-y) — [arXiv:2408.13687](https://arxiv.org/abs/2408.13687)
 - F. Marxer et al., "Above 99.9% Fidelity Single-Qubit Gates, Two-Qubit Gates, and Readout in a Single Superconducting Quantum Device," [PRX Quantum 7, 020333 (2026)](https://doi.org/10.1103/n86s-2b88) — [arXiv:2508.16437](https://arxiv.org/abs/2508.16437)
 - S. Vallés-Sanclemente et al., "Optimizing the Frequency Positioning of Tunable Couplers in a Circuit QED Processor to Mitigate Spectator Effects on Quantum Operations," [Phys. Rev. Lett. 136, 200801 (2026)](https://doi.org/10.1103/wdfj-4nbt) — [arXiv:2503.13225](https://arxiv.org/abs/2503.13225)
+- J. Xu et al., "Tunable Hybrid-Mode Coupler Enabling Strong Interactions between Transmons at Centimeter-Scale Distance," [Phys. Rev. Applied 25, 014016 (2026)](https://doi.org/10.1103/ls5b-279m) — [arXiv:2506.14128](https://arxiv.org/abs/2506.14128)
 - P. Zhao, P. Xu, and Z.-Y. Xue, "Long-range tunable coupler for modular fluxonium quantum processors," [arXiv:2604.12261](https://arxiv.org/abs/2604.12261) (2026)
 - T. Orell et al., "Two-qubit-gate operation in a high-connectivity transmon lattice utilizing a tunable coupling to a shared mode," [Phys. Rev. Applied 26, 054021 (2026)](https://doi.org/10.1103/5vv7-y2rj) — [arXiv:2603.10699](https://arxiv.org/abs/2603.10699)
 - B. Gulácsi and G. Burkard, "Inherent flux crosstalk and coupler-driven single-qubit gates in superconducting circuits," [Phys. Rev. Applied 26, 044056 (2026)](https://doi.org/10.1103/q2j3-mftf) — [arXiv:2606.10970](https://arxiv.org/abs/2606.10970)
