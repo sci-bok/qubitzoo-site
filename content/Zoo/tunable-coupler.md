@@ -18,15 +18,15 @@ keywords:
 - Google Willow
 - modular architecture
 influence_score: 0.82
-last_updated: '2026-11-16'
+last_updated: '2026-11-17'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-deep-audit-2026-11-16
+verified_by: scibok-deep-audit-2026-11-17
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/tunable-coupler-figure.provenance.json"
-figure_reviewed_by: "Codex daily deep audit 2026-11-15"
-figure_reviewed_at: "2026-11-15T15:07:58.837019+00:00"
+figure_reviewed_by: "Codex daily deep audit 2026-11-17"
+figure_reviewed_at: "2026-11-17T15:13:59.824196+00:00"
 ---
 
 ## Figure
@@ -90,6 +90,15 @@ That combination is why tunable couplers became a dominant design choice for man
 - Measured $XX$ and $ZZ$ coupling strengths above 23 MHz and 10 MHz, respectively; the same two-channel architecture is predicted to support $ZZ$ modulation contrast above $10^4$.
 - This long-range transmon result complements multichip and fluxonium-coupler approaches without superseding the local-gate fidelity records below.
 
+**Fast adiabatic CZ with a floating tunable coupler — Chen et al. (2026):**
+- Experimentally demonstrated a symmetric floating tunable coupler whose level structure supports both an exact residual-$ZZ$ cancellation point at idle and fast adiabatic CZ control.
+- Reported a 24 ns CZ fidelity of 99.927(15)% and an 8.5-hour average of 99.878(16)% in the November 2026 revision.
+- This remains an arXiv preprint, so the result is included as a current experimental milestone rather than an archival record.
+
+**Spectator-leakage suppression — Wang et al. (2026):**
+- Used tunable-coupler control to engineer an invariant two-dimensional subspace during CZ operation, suppressing near-resonant leakage into spectator states.
+- Demonstrated leakage at the $10^{-4}$ level across a wide detuning range with up to three simultaneous spectator qubits on a multiqubit superconducting processor.
+
 **Processor-scale deployment — Google Quantum AI and collaborators (2025):**
 - Willow-class below-threshold surface-code operation provided system-level evidence that tunable-coupler transmon hardware can support repeated error-correction experiments, not only isolated pair benchmarks.
 
@@ -117,6 +126,8 @@ That combination is why tunable couplers became a dominant design choice for man
 | iSWAP gate fidelity | 99.87(3)% | Approximately 120 ns; engineered to be nearly $ZZ$-free | [Sung et al. 2021](https://doi.org/10.1103/PhysRevX.11.021058) |
 | Double-transmon-coupler CZ fidelity | 99.90% | First experimental DTC realization | [Li et al. 2024](https://doi.org/10.1103/PhysRevX.14.041050) |
 | Centimeter-scale tunable coupling | $XX>23$ MHz; $ZZ>10$ MHz | Experimental 1 cm hybrid-mode coupler | [Xu et al. 2026](https://doi.org/10.1103/ls5b-279m) |
+| Fast adiabatic CZ fidelity | 99.927(15)% | 24 ns; 8.5-hour average 99.878(16)% | [Chen et al. 2026](https://arxiv.org/abs/2604.05048) |
+| Spectator leakage | order of $10^{-4}$ | Invariant-subspace control with up to three simultaneous spectators | [Wang et al. 2026](https://doi.org/10.1103/zywf-twfv) |
 | Processor-scale median entangling fidelity | 99.4% | Sycamore deployment benchmark | [Arute et al. 2019](https://doi.org/10.1038/s41586-019-1666-5) |
 
 ## Scaling Considerations
@@ -140,6 +151,8 @@ That combination is why tunable couplers became a dominant design choice for man
 - F. Marxer et al., "Above 99.9% Fidelity Single-Qubit Gates, Two-Qubit Gates, and Readout in a Single Superconducting Quantum Device," [PRX Quantum 7, 020333 (2026)](https://doi.org/10.1103/n86s-2b88) — [arXiv:2508.16437](https://arxiv.org/abs/2508.16437)
 - S. Vallés-Sanclemente et al., "Optimizing the Frequency Positioning of Tunable Couplers in a Circuit QED Processor to Mitigate Spectator Effects on Quantum Operations," [Phys. Rev. Lett. 136, 200801 (2026)](https://doi.org/10.1103/wdfj-4nbt) — [arXiv:2503.13225](https://arxiv.org/abs/2503.13225)
 - J. Xu et al., "Tunable Hybrid-Mode Coupler Enabling Strong Interactions between Transmons at Centimeter-Scale Distance," [Phys. Rev. Applied 25, 014016 (2026)](https://doi.org/10.1103/ls5b-279m) — [arXiv:2506.14128](https://arxiv.org/abs/2506.14128)
+- A. Q. Chen, S. Strong, X. Wu, and S. Poletto, "Unlocking a fast adiabatic CZ gate and exact residual $ZZ$ cancellation between fixed-frequency transmons using a floating tunable coupler," [arXiv:2604.05048](https://arxiv.org/abs/2604.05048) (2026)
+- P. Wang et al., "Spectator Leakage Suppression via Invariant Subspace Engineering for CZ Gates in Superconducting Quantum Circuits," [Phys. Rev. Lett. 137, 100802 (2026)](https://doi.org/10.1103/zywf-twfv) — [arXiv:2507.14531](https://arxiv.org/abs/2507.14531)
 - P. Zhao, P. Xu, and Z.-Y. Xue, "Long-range tunable coupler for modular fluxonium quantum processors," [arXiv:2604.12261](https://arxiv.org/abs/2604.12261) (2026)
 - T. Orell et al., "Two-qubit-gate operation in a high-connectivity transmon lattice utilizing a tunable coupling to a shared mode," [Phys. Rev. Applied 26, 054021 (2026)](https://doi.org/10.1103/5vv7-y2rj) — [arXiv:2603.10699](https://arxiv.org/abs/2603.10699)
 - B. Gulácsi and G. Burkard, "Inherent flux crosstalk and coupler-driven single-qubit gates in superconducting circuits," [Phys. Rev. Applied 26, 044056 (2026)](https://doi.org/10.1103/q2j3-mftf) — [arXiv:2606.10970](https://arxiv.org/abs/2606.10970)
@@ -157,6 +170,8 @@ That combination is why tunable couplers became a dominant design choice for man
 - [[acharya-2025-error-correction-below]]
 - [[marxer-2026-above-99-9-fidelity]]
 - [[valles-sanclemente-2026-optimizing-tunable-couplers]]
+- [[chen-2026-fast-adiabatic-cz-floating-coupler]]
+- [[wang-2026-spectator-leakage-suppression]]
 
 ## Evergreen context
 
