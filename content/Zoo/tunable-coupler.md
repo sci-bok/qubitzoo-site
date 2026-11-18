@@ -18,15 +18,15 @@ keywords:
 - Google Willow
 - modular architecture
 influence_score: 0.82
-last_updated: '2026-11-17'
+last_updated: '2026-11-18'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-deep-audit-2026-11-17
+verified_by: scibok-deep-audit-2026-11-18
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/tunable-coupler-figure.provenance.json"
-figure_reviewed_by: "Codex daily deep audit 2026-11-17"
-figure_reviewed_at: "2026-11-17T15:13:59.824196+00:00"
+figure_reviewed_by: "Codex daily deep audit 2026-11-18"
+figure_reviewed_at: "2026-11-18T15:06:11.405922+00:00"
 ---
 
 ## Figure
@@ -115,6 +115,10 @@ That combination is why tunable couplers became a dominant design choice for man
 - Gulácsi and Burkard showed that time-dependent external flux can induce cross-voltage driving in capacitively linked circuits. The mechanism is both a newly identified crosstalk channel and a possible route to coupler-driven single-qubit control.
 - Kim et al. proposed a modeless SQUID coupler whose tunable intrinsic cross-Kerr interaction avoids introducing an additional hybridizing coupler mode; this remains a theoretical architecture rather than an experimental benchmark.
 
+**Coupler-flux crosstalk calibration — Gao et al. (2026):**
+- Experimentally demonstrated two indirect calibration methods for tunable couplers without dedicated coupler drive or readout: zero-knowledge characterization through coupler-resonator shifts and symmetric-branch cancellation.
+- With iterative compensation, suppressed residual coupler flux crosstalk below $5\times10^{-5}$, addressing a processor bring-up and simultaneous-control bottleneck rather than setting a two-qubit-gate record.
+
 ## Key Metrics
 
 | Metric | Value | Notes | Fidelity reference |
@@ -128,6 +132,7 @@ That combination is why tunable couplers became a dominant design choice for man
 | Centimeter-scale tunable coupling | $XX>23$ MHz; $ZZ>10$ MHz | Experimental 1 cm hybrid-mode coupler | [Xu et al. 2026](https://doi.org/10.1103/ls5b-279m) |
 | Fast adiabatic CZ fidelity | 99.927(15)% | 24 ns; 8.5-hour average 99.878(16)% | [Chen et al. 2026](https://arxiv.org/abs/2604.05048) |
 | Spectator leakage | order of $10^{-4}$ | Invariant-subspace control with up to three simultaneous spectators | [Wang et al. 2026](https://doi.org/10.1103/zywf-twfv) |
+| Residual coupler flux crosstalk | $<5\times10^{-5}$ | Indirect calibration without dedicated coupler drive or readout | [Gao et al. 2026](https://arxiv.org/abs/2611.06656) |
 | Processor-scale median entangling fidelity | 99.4% | Sycamore deployment benchmark | [Arute et al. 2019](https://doi.org/10.1038/s41586-019-1666-5) |
 
 ## Scaling Considerations
@@ -135,7 +140,7 @@ That combination is why tunable couplers became a dominant design choice for man
 - **Architecture fit:** Tunable couplers are especially attractive for fixed-frequency transmon chips because they decouple entangling control from qubit parking frequencies.
 - **Spectator-aware biasing:** The real optimization target is not just $J_{\mathrm{eff}}=0$, but jointly small exchange, small residual $ZZ$, low leakage, and weak spectator sensitivity.
 - **Variant landscape:** Double-transmon couplers, floating couplers, multichip links, the experimentally demonstrated 1 cm hybrid-mode transmon coupler, and proposed or demonstrated long-range fluxonium couplers extend the idea beyond one canonical circuit.
-- **Tradeoffs:** The coupler adds flux sensitivity, extra leakage or hybridization channels in mode-based designs, calibration overhead, pulse-distortion sensitivity, and fabrication complexity. Time-dependent flux can also induce cross-voltage driving in capacitively linked modes, creating a crosstalk channel that circuit quantization and control design must include. Tunable does not mean error-free.
+- **Tradeoffs:** The coupler adds flux sensitivity, extra leakage or hybridization channels in mode-based designs, calibration overhead, pulse-distortion sensitivity, and fabrication complexity. Time-dependent flux can also induce cross-voltage driving in capacitively linked modes, creating a crosstalk channel that circuit quantization and control design must include. Indirect coupler-flux calibration can compensate residual classical crosstalk below $5\times10^{-5}$, but tunable does not mean error-free.
 
 ## References
 
@@ -157,6 +162,7 @@ That combination is why tunable couplers became a dominant design choice for man
 - T. Orell et al., "Two-qubit-gate operation in a high-connectivity transmon lattice utilizing a tunable coupling to a shared mode," [Phys. Rev. Applied 26, 054021 (2026)](https://doi.org/10.1103/5vv7-y2rj) — [arXiv:2603.10699](https://arxiv.org/abs/2603.10699)
 - B. Gulácsi and G. Burkard, "Inherent flux crosstalk and coupler-driven single-qubit gates in superconducting circuits," [Phys. Rev. Applied 26, 044056 (2026)](https://doi.org/10.1103/q2j3-mftf) — [arXiv:2606.10970](https://arxiv.org/abs/2606.10970)
 - G. Kim, A. Butler, and O. Painter, "Tunable, modeless, and hybridization-free cross-Kerr coupler for miniaturized superconducting qubits," [PRX Quantum, accepted (2026)](https://doi.org/10.1103/cx2t-3hq7) — [arXiv:2602.03186](https://arxiv.org/abs/2602.03186)
+- Y. Gao et al., "Flux Crosstalk Calibration from Zero Knowledge to High Precision in Fully Tunable Superconducting Circuits," [arXiv:2611.06656](https://arxiv.org/abs/2611.06656) (2026)
 
 ### Processor-scale deployment
 - F. Arute et al., "Quantum supremacy using a programmable superconducting processor," [Nature 574, 505-510 (2019)](https://doi.org/10.1038/s41586-019-1666-5)
@@ -172,6 +178,7 @@ That combination is why tunable couplers became a dominant design choice for man
 - [[valles-sanclemente-2026-optimizing-tunable-couplers]]
 - [[chen-2026-fast-adiabatic-cz-floating-coupler]]
 - [[wang-2026-spectator-leakage-suppression]]
+- [[gao-2026-flux-crosstalk-calibration]]
 
 ## Evergreen context
 
