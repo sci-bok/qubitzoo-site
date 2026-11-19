@@ -18,15 +18,15 @@ keywords:
 - Google Willow
 - modular architecture
 influence_score: 0.82
-last_updated: '2026-11-18'
+last_updated: '2026-11-19'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-deep-audit-2026-11-18
+verified_by: scibok-deep-audit-2026-11-19
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/tunable-coupler-figure.provenance.json"
-figure_reviewed_by: "Codex daily deep audit 2026-11-18"
-figure_reviewed_at: "2026-11-18T15:06:11.405922+00:00"
+figure_reviewed_by: "Codex daily deep audit 2026-11-19"
+figure_reviewed_at: "2026-11-19T15:07:03.347666+00:00"
 ---
 
 ## Figure
