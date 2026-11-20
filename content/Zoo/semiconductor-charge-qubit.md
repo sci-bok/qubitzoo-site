@@ -135,6 +135,7 @@ As of 2026, bare charge qubits remain valuable as ultrafast control elements and
 - [[charge-noise-sweet-spot]] — this entry is the simplest reminder of why sweet spots matter at all: raw charge control is fast, but living on a slope in detuning space destroys coherence.
 - [[divincenzo-criteria]] — semiconductor charge qubits satisfy initialization and control elegantly, but they fail the coherence margin badly enough to motivate the whole spin-qubit branch.
 - [[quantum-hardware]] — useful umbrella for placing the charge qubit historically as the first semiconductor proof-of-principle rather than the scaling endpoint.
+- [[resonator-as-quantum-bus]] — the large charge dipole has produced strong one-qubit–mode coupling, but that interface result is not evidence of a shared-mode two-qubit gate.
 
 ## Related Entries
 

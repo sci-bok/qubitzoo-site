@@ -173,6 +173,7 @@ Two-qubit entangling gates and resonator coupling have **not yet been experiment
 - [[decoherence-free-subspace]] — the encoded three-spin protection that AEON inherits
 - [[charge-noise-sweet-spot]] — the double-sweet-spot idea that makes AEON special
 - [[dispersive-readout-mechanism]] — a boundary case: AEON's proposed sweet-spot readout uses longitudinal curvature coupling because its transverse dipole vanishes, not the usual transverse Jaynes-Cummings cavity pull
+- [[resonator-as-quantum-bus]] — the long-range-coupling claim remains architectural: at the protected point it requires RX conversion or longitudinal modulation, and no resonator-mediated AEON two-qubit gate has been demonstrated
 
 ## Related Entries
 - [[rx-qubit]]

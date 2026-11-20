@@ -28,6 +28,8 @@ Do **not** use this note as the primary entry point for:
 - one-qubit cavity hybridization, which belongs in [[jaynes-cummings-in-circuits]], or
 - qubit-state-dependent cavity shifts for measurement, which belong in [[dispersive-readout-mechanism]].
 
+The semiconductor branch makes this boundary especially important. [[semiconductor-charge-qubit]] and [[singlet-triplet-qubit]] demonstrate strong one-qubit–mode coupling, while [[rx-qubit]] demonstrates a coherent spin–photon interface; none of those results alone establishes a shared-mode two-qubit entangler. [[aeon-qubit]] is one step more conditional because its protected operating point has no transverse dipole: a bus proposal must first convert it toward the RX regime or use a longitudinal modulation scheme. Read these four notes as an evidence ladder from cavity access to bus architecture, not as four demonstrations of the same mediated gate.
+
 ## Why the bus mattered historically
 
 1. **It broke the nearest-neighbor wiring constraint**

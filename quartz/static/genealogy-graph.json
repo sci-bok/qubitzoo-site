@@ -1,6 +1,6 @@
 {
   "schema": "qubitzoo.genealogy.v1",
-  "generated_at": "2026-11-13T15:05:21.111551+00:00",
+  "generated_at": "2026-11-20T15:00:11.535307+00:00",
   "nodes": [
     {
       "id": "0-pi-qubit",
@@ -708,7 +708,7 @@
       "id": "tunable-coupler",
       "title": "Tunable Coupler",
       "family": "Superconducting",
-      "year": 2018,
+      "year": 2014,
       "status": "demonstrated",
       "color": "#3b82f6",
       "influence": 0.82
@@ -1879,11 +1879,19 @@
       "target": "ytterbium-hyperfine-qubit"
     },
     {
+      "source": "xmon",
+      "target": "tunable-coupler"
+    },
+    {
       "source": "circuit-qed",
       "target": "tunable-coupler"
     },
     {
       "source": "fluxonium",
+      "target": "tunable-coupler"
+    },
+    {
+      "source": "surface-code-logical-qubit",
       "target": "tunable-coupler"
     },
     {

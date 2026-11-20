@@ -3,7 +3,7 @@ title: Qubit Zoo Index MOC
 type: moc
 technology_family: index
 note_count: 82
-last_updated: '2026-11-07'
+last_updated: '2026-11-15'
 generated_by: pipeline-moc-v1
 ---
 
@@ -86,6 +86,14 @@ The routing test is therefore: **is the mode supplying a field, revealing a stat
 - Use [[trapped-ion-moc]] when the carrier is a collective phonon mode. [[motional-mode-coupling-in-ion-traps]] explains why ions can interact across a chain and why that advantage eventually creates mode-crowding, heating, and closure constraints that motivate shuttling into smaller interaction zones.
 - Use [[neutral-atom-moc]] when the interaction is borrowed transiently from Rydberg excitation rather than stored in a persistent bus. [[rydberg-blockade-mechanism]] ties gate range to blockade strength and geometry, while tweezer rearrangement changes which pairs are brought into that interaction neighborhood.
 - Compare these branches by asking three questions in order: **what carries the interaction, how completely can it be turned off or disentangled at gate end, and what resource must be routed or recalibrated as the processor grows?** Raw two-qubit fidelity alone hides the architectural cost that distinguishes direct exchange, virtual photons, collective motion, and blockade.
+
+## High-value cross-family slice: the electric-dipole budget
+
+- Start with [[semiconductor-charge-qubit]] and [[electron-on-solid-neon-qubit]] when charge motion is the qubit itself. A large electric dipole buys fast drive and strong resonator coupling, but the same electrical accessibility exposes the transition to detuning noise, surface-potential fluctuations, phonons, and cavity-mediated decay. Compare useful coupling $g$ against dephasing and relaxation, not against another platform's $g$ in isolation.
+- Move through [[semiconducting-moc]] when spin-like storage deliberately borrows charge character for control or range. [[exchange-interaction-in-quantum-dots]] owns the tunnel-and-detuning route used by singlet-triplet and exchange encodings; [[spin-orbit-coupling-for-qubit-control]] owns the spin-electric route used most directly by hole-spin devices. [[hybrid-qubit]] and [[flip-flop-qubit]] are useful boundary cases because charge admixture is an explicit architectural resource rather than an accidental defect.
+- Use [[charge-noise-sweet-spot]] to separate **longitudinal susceptibility** from **transverse controllability**. A vanishing first derivative $\partial\omega_{01}/\partial\epsilon$ can suppress low-frequency dephasing while a nonzero transition matrix element still supports resonant drive or cavity coupling. It does not remove second-order curvature, tunnel-coupling noise, phonon relaxation, or loss inherited through the coupled mode.
+- Continue to [[superconducting-moc]] for the Cooper-pair-box-to-transmon version of the same bargain. The transmon flattens charge dispersion across an extended operating range while retaining a useful electric matrix element; [[charge-noise-in-superconducting-qubits]] explains the noise channel, while [[vacuum-rms-field-scaling]] and [[jaynes-cummings-in-circuits]] explain how resonator geometry and the device matrix element combine into $g$.
+- Compare all branches with a three-line ledger: **control/coupling matrix element, frequency susceptibility to the noisy electrical coordinate, and residual relaxation channel**. A sweet spot improves the second line; it does not certify the first or third. Use [[coherence-time-hierarchy]] to check whether the claimed protection changes $T_2^*$, echo coherence, or the $T_1$ ceiling.
 
 ## High-value cross-family slice: storage manifold versus interaction manifold
 

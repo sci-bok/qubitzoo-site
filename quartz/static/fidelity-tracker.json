@@ -1,10 +1,24 @@
 {
   "schema": "qubitzoo.fidelity_tracker.v1",
-  "generated_at": "2026-11-13T15:05:21.078821+00:00",
+  "generated_at": "2026-11-20T15:00:11.496384+00:00",
   "families": [
     {
       "name": "Superconducting",
       "entries": [
+        {
+          "slug": "tunable-coupler",
+          "title": "Tunable Coupler",
+          "year": 2014,
+          "status": "demonstrated",
+          "influence": 0.82,
+          "metrics": {
+            "2Q_fidelity": {
+              "value": 99.93,
+              "raw": "99.93%",
+              "ref": "[Marxer et al. 2026](https://doi.org/10.1103/n86s-2b88)"
+            }
+          }
+        },
         {
           "slug": "gmon",
           "title": "Gmon",
@@ -44,20 +58,6 @@
             "T1": {
               "value_us": 99.99999999999999,
               "raw": "20\u2013100 \u03bcs"
-            }
-          }
-        },
-        {
-          "slug": "tunable-coupler",
-          "title": "Tunable Coupler",
-          "year": 2018,
-          "status": "demonstrated",
-          "influence": 0.82,
-          "metrics": {
-            "2Q_fidelity": {
-              "value": 99.85,
-              "raw": "99.5\u201399.85%",
-              "ref": "[Google Quantum AI 2025](https://doi.org/10.1038/s41586-024-08449-y)"
             }
           }
         },

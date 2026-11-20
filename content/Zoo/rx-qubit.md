@@ -100,6 +100,7 @@ which at $J_{12} = J_{23} = J$ gives $\hbar\omega_q \propto J$.
 - [[heisenberg-exchange-in-quantum-dots]] — the Hamiltonian view makes clear that RX is still exchange-only physics, just operated in a resonantly driven regime.
 - [[charge-noise-sweet-spot]] — the symmetric operating point is the whole architectural point of RX: keep exchange control while flattening detuning sensitivity.
 - [[decoherence-free-subspace]] — RX inherits the exchange-only strategy of encoding and manipulating information inside a three-spin subspace that suppresses uniform magnetic-field noise.
+- [[resonator-as-quantum-bus]] — demonstrated coherent spin–photon coupling establishes the one-qubit–mode interface; a resonator-mediated RX two-qubit gate is the still-separate bus-layer milestone.
 
 ## Related Entries
 

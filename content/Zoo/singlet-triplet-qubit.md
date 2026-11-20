@@ -149,6 +149,7 @@ where $\alpha$ depends on inter-DQD capacitance and on the charge admixture of t
 - [[decoherence-free-subspace]] — why the `m_S = 0` manifold partially protects against uniform field noise
 - [[charge-noise-sweet-spot]] — where symmetric detuning helps, and where the tradeoffs remain
 - [[vacuum-rms-field-scaling]] — the resonator-side lever behind the high-impedance longitudinal-coupling route, distinct from the qubit-side charge admixture that supplies the electric response
+- [[resonator-as-quantum-bus]] — strong longitudinal or transverse coupling to one resonator demonstrates cavity access, not yet a shared-mode singlet--triplet entangling gate.
 
 ## Related Entries
 - [[loss-divincenzo-qubit]]

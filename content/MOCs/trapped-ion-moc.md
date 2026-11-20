@@ -3,7 +3,7 @@ title: Trapped Ion MOC
 type: moc
 technology_family: Trapped Ion
 note_count: 5
-last_updated: '2026-10-27'
+last_updated: '2026-11-19'
 generated_by: pipeline-moc-v1
 ---
 
@@ -65,6 +65,12 @@ The two gate notes and the shuttling note answer different questions. The first 
 | [[shuttling-ion-trap-qubit]] | Ions are transported between short-chain memory, interaction, and readout zones; a local MS or related gate still supplies entanglement inside each zone | Transport must preserve internal coherence and deliver a sufficiently cold, well-characterized motional state for the next local gate | Keeps local mode spectra tractable while scaling processor connectivity beyond one long Coulomb crystal | Junction routing, scheduling, transport-induced excitation, recooling, and calibration across many zones | the question has shifted from one gate pulse to machine-scale connectivity and throughput |
 
 This map prevents two common category errors. MS gates are less sensitive to the initial phonon occupation than Cirac-Zoller gates, but they are not independent of motion: residual phase-space displacement still leaves spin and motion entangled. Likewise, QCCD does not replace the phonon-bus gate; it repeatedly reconstructs a small, controllable local bus after transport. Read all three through [[motional-mode-coupling-in-ion-traps]] to track where motional complexity moves rather than assuming it disappears.
+
+## Boundary with the resonator-bus analogy
+
+The closest circuit-QED analogue is [[resonator-as-quantum-bus]], but the analogy should stop at the shared-mode layer. Both platforms couple separated qubits through a quantized bosonic mode and must return that mode to a state that does not retain logical information. Their engineering closure tests differ: a dispersive resonator bus suppresses real cavity occupation and budgets residual exchange, $ZZ$, and photon loss, while an ion gate closes one or more spin-dependent trajectories in motional phase space and budgets heating, spectator-mode displacement, and mode-frequency drift.
+
+Use [[motional-mode-coupling-in-ion-traps]] when the question is how sidebands and collective motion generate the ion-specific interaction. Use [[resonator-as-quantum-bus]] when the comparison has shifted to virtual-photon exchange between cavity-coupled qubits. The portable architectural question is not whether both are called buses, but **what evidence shows that the mediator is disentangled at gate end, and how that closure condition scales as more qubits or modes participate?**
 
 ## Boundary with the cross-platform gate map
 
