@@ -2,13 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "tunable-coupler-figure.png",
-    "sha256": "0e6368a97046415ee634e1402f467ec26030d7c51973a464af29416af2be511d"
+    "sha256": "a4a7b81c7a292c5177058ae36bd772de267c3312dc8beac1bdad8061dd5b4630"
   },
   "artifact_role": "primary",
   "blueprint": null,
   "entry_slug": "tunable-coupler",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/tunable-coupler-figure-20260805T123354630362Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/tunable-coupler-figure-20261122T150701925156Z.png",
     "supersedes_file": "tunable-coupler-figure.png"
   },
   "renderer": {
@@ -19,17 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-05T12:33:54.630362+00:00",
-    "id": "gen-1785933222-X4iTb1wGf72MFpB5hZaN",
-    "image_size": "1K",
-    "prompt_sha256": "4b0005844a52cbc78323505b3ccfcb6df1db64f1b7a21b54a33b680f7368c958",
+    "generated_at": "2026-11-22T15:07:01.925156+00:00",
+    "id": "gen-1795360003-fB2PyeFht0WFOEPOq4GX",
+    "image_size": "2K",
+    "prompt_sha256": "ac58a98c28780b5776599690b5d77a1b06afc4683e81726a778fd98c7315afe9",
     "source_media_type": "image/jpeg",
     "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Rich Q1-C-Q2 device, correct effective-coupling expression, OFF-point cancellation, residual-ZZ and gate metrics, and CZ |11>-|20> trajectory.",
-    "reviewed_at": "2026-08-05T12:35:46.517578+00:00",
-    "reviewer": "Codex corpus visual/physics audit 2026-08-05",
+    "notes": "APPROVE: full-resolution review passes central physics and rich-style gates. Correct fixed-frequency Q1/Q2 plus two-junction SQUID coupler C, unique g12/g1C/g2C paths, exact single J_eff equation with Delta_jC convention, distinct J_eff/ZZ/two-excitation nulls, Idle -> 33 ns flux pulse on C -> Idle and |11> -> -|11>, source-backed metrics, and exact Q1-C12-Q2-C23-Q3-C34-Q4 chain. Minor ancillary omega label placement and cosmetic bar scaling do not obscure the scientific story.",
+    "reviewed_at": "2026-11-22T15:07:47.375710+00:00",
+    "reviewer": "Codex daily deep audit 2026-11-22",
     "status": "passed"
   },
   "schema_version": 1

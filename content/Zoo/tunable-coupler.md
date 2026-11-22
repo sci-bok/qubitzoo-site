@@ -3,7 +3,7 @@ title: Tunable Coupler
 entry_type: coupling
 technology_family: Superconducting
 status: demonstrated
-figure_reviewed: false
+figure_reviewed: true
 first_proposed_year: 2014
 first_demonstrated_year: 2014
 keywords:
@@ -18,15 +18,15 @@ keywords:
 - Google Willow
 - modular architecture
 influence_score: 0.82
-last_updated: '2026-11-21'
+last_updated: '2026-11-22'
 generated_by: scibok-curation
 extracted_by: scibok
-verified_by: scibok-deep-audit-2026-11-21
+verified_by: scibok-deep-audit-2026-11-22
 figure_renderer: "nano-banana-2"
 figure_model: "google/gemini-3.1-flash-image-preview"
 figure_provenance: "Figures/tunable-coupler-figure.provenance.json"
-figure_reviewed_by: "Codex daily deep audit 2026-11-21"
-figure_reviewed_at: "2026-11-21T15:06:18+00:00"
+figure_reviewed_by: "Codex daily deep audit 2026-11-22"
+figure_reviewed_at: "2026-11-22T15:07:47.375710+00:00"
 ---
 
 ## Figure
