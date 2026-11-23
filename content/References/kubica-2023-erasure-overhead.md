@@ -6,7 +6,7 @@ authors:
 - Y. Vaknin
 - H. Levine
 - F. Brandão
-- A. Petrenko
+- A. Retzker
 year: 2023
 journal: Physical Review X (also arXiv:2208.05461)
 doi: 10.1103/PhysRevX.13.041022
