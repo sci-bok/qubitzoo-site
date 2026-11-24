@@ -2,13 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "erasure-qubit-figure.png",
-    "sha256": "1235f0f1a7d425241a8d1ae0ee57849838a3582b9ab53bf1c5e6da3a71787c5d"
+    "sha256": "5927a9c17597d35da71000c39fe26b591215cf799d855f57880cb4f018f2c94f"
   },
   "artifact_role": "primary",
   "blueprint": null,
   "entry_slug": "erasure-qubit",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/erasure-qubit-figure-20260805T042917045289Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/erasure-qubit-figure-20261124T150511886942Z.png",
     "supersedes_file": "erasure-qubit-figure.png"
   },
   "renderer": {
@@ -19,17 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-05T04:29:17.045289+00:00",
-    "id": "gen-1785904144-FaDnaeW2YecRHvGuYkHb",
-    "image_size": "1K",
-    "prompt_sha256": "12fcca82b95401fcf79f4178d6cc26ac3ea7c746df2fe42573fa3dea7674837e",
+    "generated_at": "2026-11-24T15:05:11.886942+00:00",
+    "id": "gen-1795532691-bi0gSWhm5hL0If2iyPSZ",
+    "image_size": "2K",
+    "prompt_sha256": "be5602235ea64075e485afbef190cf5d72bfc58174c0d67bfa7805553296f129",
     "source_media_type": "image/jpeg",
     "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Approved after targeted full-resolution scientific review. The candidate restores the rich explanatory visual language and its central encoding, topology, interactions, and readout/QEC story are sound; minor ancillary typography is acceptable.",
-    "reviewed_at": "2026-08-05T04:32:43.210815+00:00",
-    "reviewer": "Codex scientific visual audit 2026-08-05",
+    "notes": "PASS at full resolution: rich four-panel explanatory plate; exact dual-rail codewords and loss-to-|00> map; Hermitian symmetric QND readout H_disp/hbar = chi(n_1+n_2)n_r; correct detected/no-erasure routing; correct 171Yb and trapped-ion mechanisms; ideal ~50% threshold separated from Wu 0.937%->4.15%; Scholl, Zhang, and Hung milestones correct. Minor tolerated artifacts: duplicated (b) panel marker and second readout rail labeled Rail 1 rather than Rail 2; central topology and story remain unambiguous.",
+    "reviewed_at": "2026-11-24T15:05:57.264289+00:00",
+    "reviewer": "Codex scientific visual audit 2026-11-24",
     "status": "passed"
   },
   "schema_version": 1

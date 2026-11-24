@@ -46,3 +46,4 @@ The complete author order, printed date, and abstract-reported experimental metr
 ## Zoo Links
 
 - [[fluxonium]]
+- [[erasure-qubit]]
