@@ -2,13 +2,13 @@
   "artifact": {
     "media_type": "image/png",
     "path": "siv-color-center-qubit-figure.png",
-    "sha256": "cc3f37d22b652b0eab79cd7a350b9d417ab2e9c8280fa69c39a6765ba8e77f60"
+    "sha256": "38677e66dcb8071d7dfd651981805042c7ff1606f8311218cad549b56cbc6d95"
   },
   "artifact_role": "primary",
   "blueprint": null,
   "entry_slug": "siv-color-center-qubit",
   "lineage": {
-    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/siv-color-center-qubit-figure-20260805T043849369340Z.png",
+    "candidate_path": "/Users/scibok/.openclaw/workspace/repos/qubit-zettelkasten/Figures/.candidates/siv-color-center-qubit-figure-20261125T151729518048Z.png",
     "supersedes_file": "siv-color-center-qubit-figure.png"
   },
   "renderer": {
@@ -19,17 +19,17 @@
   },
   "request": {
     "aspect_ratio": "4:3",
-    "generated_at": "2026-08-05T04:38:49.369340+00:00",
-    "id": "gen-1785904709-fbjEifZtJrIzYLklDMZx",
-    "image_size": "1K",
-    "prompt_sha256": "ab312bdf1e05422d6be2d71c3ee4001596a088c0e1c6bf45d97ea3e705c360cd",
+    "generated_at": "2026-11-25T15:17:29.518048+00:00",
+    "id": "gen-1795619831-N2o8zPNWln935gnPHcXL",
+    "image_size": "2K",
+    "prompt_sha256": "da5bd7805a0b288df26d9602e3c2d68672d38a967442c1179b85670fe21b2443",
     "source_media_type": "image/jpeg",
     "style_profile": "qubit-zoo-rich-explanatory-v1"
   },
   "review": {
-    "notes": "Approved rich explanatory Wave 2 plate after full-resolution scientific review. Central device/code structure, logical encoding, control, error mechanism, and readout/system consequence pass; minor ancillary typography is accepted.",
-    "reviewed_at": "2026-08-05T04:45:11.171751+00:00",
-    "reviewer": "Codex scientific visual audit 2026-08-05",
+    "notes": "Approved after full-resolution review. Correct split-vacancy D3d topology and inversion center; correct E_g/E_u branch ordering for both species; |0>/<|1> confined to the lower ground branch; correct SiV 48/260 GHz and 737 nm labels; correct SnV 850 GHz/~3 THz and 619 nm labels; correct phonon/temperature assignment (SiV ~100 mK, SnV ~1.7 K); correct strain tradeoff and Delta=sqrt(lambda^2+4Upsilon^2); correct cavity/time-bin/737<->1350 nm network chain and 35 km F_Bell=0.69(7). Rich explanatory style passes. Minor noncentral typography defects retained: temperaty, phonnon, and a redundant small splitting caption.",
+    "reviewed_at": "2026-11-25T15:18:11.387828+00:00",
+    "reviewer": "Scibok deep audit 2026-11-25 full-resolution review",
     "status": "passed"
   },
   "schema_version": 1

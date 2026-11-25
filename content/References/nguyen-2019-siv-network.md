@@ -9,12 +9,13 @@ type: reference
 generated_by: scibok-curation
 last_updated: '2026-03-15'
 ---
-Demonstrates a quantum network node using a single SiV⁻ center in a diamond nanophotonic cavity with ~90% of photons collected into the zero-phonon line. Achieves efficient spin-photon entanglement as a building block for quantum repeaters.
+Demonstrates a quantum network node using a single SiV⁻ center in a diamond nanophotonic cavity. The measured cavity cooperativity above 30 produces a nearly deterministic photon–spin interface; the paper demonstrates heralded photonic-qubit storage and coherent control of a local SiV–$^{13}$C register, not remote two-node entanglement.
 
 ## Key Results
-- Nanophotonic cavity Purcell enhancement: >100×
-- System detection efficiency: ~85% into ZPL
-- Memory-enhanced quantum communication protocol demonstrated
+- Single-photon cooperativity: $C>30$
+- Waveguide-to-fiber reflected-photon collection efficiency: >90%
+- Heralded storage of photonic time-bin qubits in the electron-spin memory
+- Electron-spin coherence: >1 ms; proximal $^{13}$C nuclear-spin coherence: nearly 1 s
 - Platform: SiV⁻ in diamond photonic crystal cavity at 100 mK
 
 ## Links

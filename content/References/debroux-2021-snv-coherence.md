@@ -12,7 +12,9 @@ last_updated: '2026-03-15'
 First demonstration of coherent spin control of a SnV⁻ center in diamond at 1.7 K — accessible with a standard ³He cryostat rather than a dilution refrigerator. The larger spin-orbit splitting of SnV suppresses phonon-mediated relaxation at higher temperatures.
 
 ## Key Results
-- T₂ (Hahn echo): 0.3 ms at 1.7 K
+- $T_2^*$ (Ramsey): $1.3(3)\,\mu\text{s}$ at 1.7 K
+- $T_2$ (Hahn echo): $28.3(6)\,\mu\text{s}$
+- $T_2$ (CPMG-2): $0.33(14)$ ms
 - Coherent spin manipulation via microwave driving
 - Operating temperature: 1.7 K (³He, vs 100 mK for SiV)
 - Optical linewidth: near transform-limited
