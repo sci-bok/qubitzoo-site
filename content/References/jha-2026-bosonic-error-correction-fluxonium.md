@@ -7,7 +7,7 @@ doi: null
 arxiv_id: '2609.26880'
 type: reference
 generated_by: scibok-deep-audit
-last_updated: '2026-10-14'
+last_updated: '2026-11-26'
 ---
 
 First standalone bosonic quantum-error-correction demonstration in a fully planar superconducting circuit, using a heavy-fluxonium ancilla to control and stabilize finite-energy GKP states in an on-chip Archimedean spiral resonator.
@@ -28,3 +28,4 @@ Author order was checked against the arXiv v2 PDF title page on 2026-10-14.
 - [[bosonic-qubit]]
 - [[fluxonium]]
 - [[gkp-codes]]
+- [[heavy-fluxonium-qubit]]
